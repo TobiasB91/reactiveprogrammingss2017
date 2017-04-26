@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Übung 1</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="container">
+      <h1>Übung 1: Das Labyrinth</h1>
+      <!-- Include Scala.js compiled code -->
+      <script type="text/javascript" src="client.js"></script>
+      <div id="maze">
+        <div id="mazeStructure">Das Labyrinth wird geladen</div>        
+        <div id="playerWrapper"><div id="player"></div></div>
+      </div>
+      <div id="instructions">
+        <h3>Anleitung</h3>
+        <p>
+          <span class="cell player"></span> Der Spieler kann mit den Pfeiltasten bewegt werden.</br>
+          <span class="cell target"></span> Das Ziel des Spiels ist das Ziel zu erreichen.</br>
+          <span class="cell free"></span> Nur freie Zellen können betreten werden. </br>
+          <span class="cell blocked"></span> Geblockte Zellen können nicht betreten werden.
+        </p>      
+      </div>
+    </div>
+  </body>
+</html>

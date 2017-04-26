@@ -1,0 +1,1822 @@
+
+==================== FINAL INTERFACE ====================
+2017-04-26 09:55:56.437388 UTC
+
+interface main@main:Maze [family instance module] 8002
+  interface hash: 9b9249a5747d788bc7b4872920952ebf
+  ABI hash: a7a180c82cfa0832561bb2c0b0737b01
+  export-list hash: d5b2d6c02dbac28d154d3d250e99c1dd
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: 1cab32edc0691d37af4c6d33e771b8a9
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Maze.addPos
+  Maze.dist
+  Maze.freeCell
+  Maze.move
+  Maze.newGame
+  Maze.newMaze
+  Maze.won
+  Maze.Direction{Maze.East Maze.North Maze.South Maze.West}
+  Maze.GameState{Maze.GameState maze position target}
+  Maze.Maze{Maze.Maze blocked height width}
+  Maze.Position{Maze.Position x y}
+module dependencies: Cellular
+package dependencies: array-0.5.1.1@array-0.5.1.1 base-4.9.1.0*
+                      containers-0.5.7.1@containers-0.5.7.1
+                      deepseq-1.4.2.0@deepseq-1.4.2.0 ghc-prim-0.5.0.0
+                      integer-gmp-1.0.0.1 mtl-2.2.1@mtl-2.2.1-BLKBelFsPB3BoFeSWSOYj6
+                      random-1.1@random-1.1-9tceXaeYIMZ4JrKq20Egog*
+                      time-1.6.0.1@time-1.6.0.1 transformers-0.5.2.0@transformers-0.5.2.0
+orphans: base-4.9.1.0:GHC.Base base-4.9.1.0:GHC.Float
+         time-1.6.0.1@time-1.6.0.1:Data.Time.Calendar.Gregorian
+         time-1.6.0.1@time-1.6.0.1:Data.Time.Format.Parse
+         time-1.6.0.1@time-1.6.0.1:Data.Time.LocalTime.LocalTime
+         transformers-0.5.2.0@transformers-0.5.2.0:Control.Monad.Trans.Error
+family instance modules: base-4.9.1.0:Control.Applicative
+                         base-4.9.1.0:Data.Complex base-4.9.1.0:Data.Either
+                         base-4.9.1.0:Data.Functor.Const base-4.9.1.0:Data.Functor.Identity
+                         base-4.9.1.0:Data.List.NonEmpty base-4.9.1.0:Data.Monoid
+                         base-4.9.1.0:Data.Semigroup base-4.9.1.0:Data.Type.Equality
+                         base-4.9.1.0:Data.Version base-4.9.1.0:Data.Void
+                         base-4.9.1.0:GHC.Exts base-4.9.1.0:GHC.Generics
+                         base-4.9.1.0:GHC.IO.Exception base-4.9.1.0:GHC.TypeLits
+                         containers-0.5.7.1@containers-0.5.7.1:Data.Map.Base
+                         containers-0.5.7.1@containers-0.5.7.1:Data.Set.Base
+import  -/  base-4.9.1.0:Data.Foldable 3e0b6967a1da89945d0e2d47266337a2
+import  -/  base-4.9.1.0:Data.Function 7aca86bfbd92366def5f260e30cb2628
+import  -/  base-4.9.1.0:Data.List 07ae2acca6538aa0800bd0a993ac6ac1
+import  -/  base-4.9.1.0:GHC.Base c4231c43c07e46080a26bf94094c7aa1
+import  -/  base-4.9.1.0:GHC.Float 33e2b9ffe427edd6a5c2fd6a3b26703c
+import  -/  base-4.9.1.0:GHC.Generics 1dbec2bc7dd1c5bd8c89ed857eaed19b
+import  -/  base-4.9.1.0:GHC.Num 00bfaa7b2f9d6084913c0697a8a49ec8
+import  -/  base-4.9.1.0:GHC.Real 82e4e59051a13dba1da63e1e970a69e6
+import  -/  base-4.9.1.0:Prelude 22dd289b8469a8fa8dc81cab7b237771
+import  -/  ghc-prim-0.5.0.0:GHC.Classes 0bdf3d057a415ec1b84a7b1994efbe47
+import  -/  ghc-prim-0.5.0.0:GHC.Types 89f8de4f08018c9177c98d979eae0e45
+import  -/  Cellular ff12a2863189530591cdbf2375f06977
+  exports: 29f1cfb17af1e1e0415bc750f3177fc3
+  dead 11739c9a5bfae88ed9a10c95e1eacb7f
+  runCA e0821d595f5dae612bb876cd383dd172
+import  -/  random-1.1@random-1.1-9tceXaeYIMZ4JrKq20Egog:System.Random cc3ef358c669b194cf9fe94db6f2430f
+c979e20abe21b77204dc8ee0b1aa925b
+  $fEqPosition :: GHC.Classes.Eq Maze.Position
+  DFunId
+  {- HasNoCafRefs, Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ Maze.Position Maze.$fEqPosition_$c== Maze.$fEqPosition_$c/= -}
+c979e20abe21b77204dc8ee0b1aa925b
+  $fEqPosition_$c/= ::
+    Maze.Position -> Maze.Position -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S(S(S)L),1*U(1*U(U),1*U(U))><S(S(S)L),1*U(1*U(U),1*U(U))>,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (2, True, False)
+                (\ (w :: Maze.Position) (w1 :: Maze.Position) ->
+                 case w of ww { Maze.Position ww1 ww2 ->
+                 case ww1 of ww3 { GHC.Types.I# ww4 ->
+                 case w1 of ww5 { Maze.Position ww6 ww7 ->
+                 case ww6 of ww8 { GHC.Types.I# ww9 ->
+                 Maze.$w$c/= ww4 ww2 ww9 ww7 } } } }) -}
+c979e20abe21b77204dc8ee0b1aa925b
+  $fEqPosition_$c== ::
+    Maze.Position -> Maze.Position -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S(S(S)L),1*U(1*U(U),1*U(U))><S(S(S)L),1*U(1*U(U),1*U(U))>,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (2, True, False)
+                (\ (w :: Maze.Position) (w1 :: Maze.Position) ->
+                 case w of ww { Maze.Position ww1 ww2 ->
+                 case ww1 of ww3 { GHC.Types.I# ww4 ->
+                 case w1 of ww5 { Maze.Position ww6 ww7 ->
+                 case ww6 of ww8 { GHC.Types.I# ww9 ->
+                 Maze.$w$c== ww4 ww2 ww9 ww7 } } } }) -}
+a59d3a6515f1359e70764c2dbe15e55a
+  $fGenericDirection :: GHC.Generics.Generic Maze.Direction
+  DFunId
+  {- HasNoCafRefs, Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ Maze.Direction
+                  Maze.$fGenericDirection_$cfrom
+                  Maze.$fGenericDirection_$cto -}
+a59d3a6515f1359e70764c2dbe15e55a
+  $fGenericDirection1 ::
+    Maze.Direction
+    -> (GHC.Generics.:+:)
+         (GHC.Generics.M1
+            GHC.Generics.C
+            ('GHC.Generics.MetaCons
+               "East" 'GHC.Generics.PrefixI 'GHC.Types.False)
+            GHC.Generics.U1
+          GHC.Generics.:+: GHC.Generics.M1
+                             GHC.Generics.C
+                             ('GHC.Generics.MetaCons
+                                "North" 'GHC.Generics.PrefixI 'GHC.Types.False)
+                             GHC.Generics.U1)
+         (GHC.Generics.M1
+            GHC.Generics.C
+            ('GHC.Generics.MetaCons
+               "West" 'GHC.Generics.PrefixI 'GHC.Types.False)
+            GHC.Generics.U1
+          GHC.Generics.:+: GHC.Generics.M1
+                             GHC.Generics.C
+                             ('GHC.Generics.MetaCons
+                                "South" 'GHC.Generics.PrefixI 'GHC.Types.False)
+                             GHC.Generics.U1)
+         x
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ @ x1 (x2 :: Maze.Direction) ->
+                 case x2 of wild {
+                   Maze.East -> Maze.$fGenericDirection8 @ x1
+                   Maze.North -> Maze.$fGenericDirection6 @ x1
+                   Maze.West -> Maze.$fGenericDirection4 @ x1
+                   Maze.South -> Maze.$fGenericDirection2 @ x1 }) -}
+2e83aa6412e6cdafec023cbf6f795c57
+  $fGenericDirection2 ::
+    (GHC.Generics.:+:)
+      (GHC.Generics.M1
+         GHC.Generics.C
+         ('GHC.Generics.MetaCons
+            "East" 'GHC.Generics.PrefixI 'GHC.Types.False)
+         GHC.Generics.U1
+       GHC.Generics.:+: GHC.Generics.M1
+                          GHC.Generics.C
+                          ('GHC.Generics.MetaCons
+                             "North" 'GHC.Generics.PrefixI 'GHC.Types.False)
+                          GHC.Generics.U1)
+      (GHC.Generics.M1
+         GHC.Generics.C
+         ('GHC.Generics.MetaCons
+            "West" 'GHC.Generics.PrefixI 'GHC.Types.False)
+         GHC.Generics.U1
+       GHC.Generics.:+: GHC.Generics.M1
+                          GHC.Generics.C
+                          ('GHC.Generics.MetaCons
+                             "South" 'GHC.Generics.PrefixI 'GHC.Types.False)
+                          GHC.Generics.U1)
+      x
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (\ @ x1 ->
+                 GHC.Generics.R1
+                   @ (GHC.Generics.M1
+                        GHC.Generics.C
+                        ('GHC.Generics.MetaCons
+                           "East" 'GHC.Generics.PrefixI 'GHC.Types.False)
+                        GHC.Generics.U1
+                      GHC.Generics.:+: GHC.Generics.M1
+                                         GHC.Generics.C
+                                         ('GHC.Generics.MetaCons
+                                            "North" 'GHC.Generics.PrefixI 'GHC.Types.False)
+                                         GHC.Generics.U1)
+                   @ (GHC.Generics.M1
+                        GHC.Generics.C
+                        ('GHC.Generics.MetaCons
+                           "West" 'GHC.Generics.PrefixI 'GHC.Types.False)
+                        GHC.Generics.U1
+                      GHC.Generics.:+: GHC.Generics.M1
+                                         GHC.Generics.C
+                                         ('GHC.Generics.MetaCons
+                                            "South" 'GHC.Generics.PrefixI 'GHC.Types.False)
+                                         GHC.Generics.U1)
+                   @ x1
+                   (Maze.$fGenericDirection3 @ x1)) -}
+dd295bf00e32c5f4581bc0cae4488818
+  $fGenericDirection3 ::
+    (GHC.Generics.:+:)
+      (GHC.Generics.M1
+         GHC.Generics.C
+         ('GHC.Generics.MetaCons
+            "West" 'GHC.Generics.PrefixI 'GHC.Types.False)
+         GHC.Generics.U1)
+      (GHC.Generics.M1
+         GHC.Generics.C
+         ('GHC.Generics.MetaCons
+            "South" 'GHC.Generics.PrefixI 'GHC.Types.False)
+         GHC.Generics.U1)
+      x
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (\ @ x1 ->
+                 GHC.Generics.R1
+                   @ (GHC.Generics.M1
+                        GHC.Generics.C
+                        ('GHC.Generics.MetaCons
+                           "West" 'GHC.Generics.PrefixI 'GHC.Types.False)
+                        GHC.Generics.U1)
+                   @ (GHC.Generics.M1
+                        GHC.Generics.C
+                        ('GHC.Generics.MetaCons
+                           "South" 'GHC.Generics.PrefixI 'GHC.Types.False)
+                        GHC.Generics.U1)
+                   @ x1
+                   (GHC.Generics.U1 @ x1)
+                     `cast`
+                   (Sym (GHC.Generics.N:M1[0]
+                             <GHC.Generics.C>_P
+                             <'GHC.Generics.MetaCons
+                                "South" 'GHC.Generics.PrefixI 'GHC.Types.False>_P
+                             <GHC.Generics.U1>_R) <x1>_N)) -}
+4742e20ef72d72cdd50b54576c829068
+  $fGenericDirection4 ::
+    (GHC.Generics.:+:)
+      (GHC.Generics.M1
+         GHC.Generics.C
+         ('GHC.Generics.MetaCons
+            "East" 'GHC.Generics.PrefixI 'GHC.Types.False)
+         GHC.Generics.U1
+       GHC.Generics.:+: GHC.Generics.M1
+                          GHC.Generics.C
+                          ('GHC.Generics.MetaCons
+                             "North" 'GHC.Generics.PrefixI 'GHC.Types.False)
+                          GHC.Generics.U1)
+      (GHC.Generics.M1
+         GHC.Generics.C
+         ('GHC.Generics.MetaCons
+            "West" 'GHC.Generics.PrefixI 'GHC.Types.False)
+         GHC.Generics.U1
+       GHC.Generics.:+: GHC.Generics.M1
+                          GHC.Generics.C
+                          ('GHC.Generics.MetaCons
+                             "South" 'GHC.Generics.PrefixI 'GHC.Types.False)
+                          GHC.Generics.U1)
+      x
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (\ @ x1 ->
+                 GHC.Generics.R1
+                   @ (GHC.Generics.M1
+                        GHC.Generics.C
+                        ('GHC.Generics.MetaCons
+                           "East" 'GHC.Generics.PrefixI 'GHC.Types.False)
+                        GHC.Generics.U1
+                      GHC.Generics.:+: GHC.Generics.M1
+                                         GHC.Generics.C
+                                         ('GHC.Generics.MetaCons
+                                            "North" 'GHC.Generics.PrefixI 'GHC.Types.False)
+                                         GHC.Generics.U1)
+                   @ (GHC.Generics.M1
+                        GHC.Generics.C
+                        ('GHC.Generics.MetaCons
+                           "West" 'GHC.Generics.PrefixI 'GHC.Types.False)
+                        GHC.Generics.U1
+                      GHC.Generics.:+: GHC.Generics.M1
+                                         GHC.Generics.C
+                                         ('GHC.Generics.MetaCons
+                                            "South" 'GHC.Generics.PrefixI 'GHC.Types.False)
+                                         GHC.Generics.U1)
+                   @ x1
+                   (Maze.$fGenericDirection5 @ x1)) -}
+9eea1a17407abe90e6fa0d1d71983c9c
+  $fGenericDirection5 ::
+    (GHC.Generics.:+:)
+      (GHC.Generics.M1
+         GHC.Generics.C
+         ('GHC.Generics.MetaCons
+            "West" 'GHC.Generics.PrefixI 'GHC.Types.False)
+         GHC.Generics.U1)
+      (GHC.Generics.M1
+         GHC.Generics.C
+         ('GHC.Generics.MetaCons
+            "South" 'GHC.Generics.PrefixI 'GHC.Types.False)
+         GHC.Generics.U1)
+      x
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (\ @ x1 ->
+                 GHC.Generics.L1
+                   @ (GHC.Generics.M1
+                        GHC.Generics.C
+                        ('GHC.Generics.MetaCons
+                           "West" 'GHC.Generics.PrefixI 'GHC.Types.False)
+                        GHC.Generics.U1)
+                   @ (GHC.Generics.M1
+                        GHC.Generics.C
+                        ('GHC.Generics.MetaCons
+                           "South" 'GHC.Generics.PrefixI 'GHC.Types.False)
+                        GHC.Generics.U1)
+                   @ x1
+                   (GHC.Generics.U1 @ x1)
+                     `cast`
+                   (Sym (GHC.Generics.N:M1[0]
+                             <GHC.Generics.C>_P
+                             <'GHC.Generics.MetaCons
+                                "West" 'GHC.Generics.PrefixI 'GHC.Types.False>_P
+                             <GHC.Generics.U1>_R) <x1>_N)) -}
+bad4a5b8203603dab5841313c35a38fa
+  $fGenericDirection6 ::
+    (GHC.Generics.:+:)
+      (GHC.Generics.M1
+         GHC.Generics.C
+         ('GHC.Generics.MetaCons
+            "East" 'GHC.Generics.PrefixI 'GHC.Types.False)
+         GHC.Generics.U1
+       GHC.Generics.:+: GHC.Generics.M1
+                          GHC.Generics.C
+                          ('GHC.Generics.MetaCons
+                             "North" 'GHC.Generics.PrefixI 'GHC.Types.False)
+                          GHC.Generics.U1)
+      (GHC.Generics.M1
+         GHC.Generics.C
+         ('GHC.Generics.MetaCons
+            "West" 'GHC.Generics.PrefixI 'GHC.Types.False)
+         GHC.Generics.U1
+       GHC.Generics.:+: GHC.Generics.M1
+                          GHC.Generics.C
+                          ('GHC.Generics.MetaCons
+                             "South" 'GHC.Generics.PrefixI 'GHC.Types.False)
+                          GHC.Generics.U1)
+      x
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (\ @ x1 ->
+                 GHC.Generics.L1
+                   @ (GHC.Generics.M1
+                        GHC.Generics.C
+                        ('GHC.Generics.MetaCons
+                           "East" 'GHC.Generics.PrefixI 'GHC.Types.False)
+                        GHC.Generics.U1
+                      GHC.Generics.:+: GHC.Generics.M1
+                                         GHC.Generics.C
+                                         ('GHC.Generics.MetaCons
+                                            "North" 'GHC.Generics.PrefixI 'GHC.Types.False)
+                                         GHC.Generics.U1)
+                   @ (GHC.Generics.M1
+                        GHC.Generics.C
+                        ('GHC.Generics.MetaCons
+                           "West" 'GHC.Generics.PrefixI 'GHC.Types.False)
+                        GHC.Generics.U1
+                      GHC.Generics.:+: GHC.Generics.M1
+                                         GHC.Generics.C
+                                         ('GHC.Generics.MetaCons
+                                            "South" 'GHC.Generics.PrefixI 'GHC.Types.False)
+                                         GHC.Generics.U1)
+                   @ x1
+                   (Maze.$fGenericDirection7 @ x1)) -}
+5ede7f526df69a608685553ab14f644a
+  $fGenericDirection7 ::
+    (GHC.Generics.:+:)
+      (GHC.Generics.M1
+         GHC.Generics.C
+         ('GHC.Generics.MetaCons
+            "East" 'GHC.Generics.PrefixI 'GHC.Types.False)
+         GHC.Generics.U1)
+      (GHC.Generics.M1
+         GHC.Generics.C
+         ('GHC.Generics.MetaCons
+            "North" 'GHC.Generics.PrefixI 'GHC.Types.False)
+         GHC.Generics.U1)
+      x
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (\ @ x1 ->
+                 GHC.Generics.R1
+                   @ (GHC.Generics.M1
+                        GHC.Generics.C
+                        ('GHC.Generics.MetaCons
+                           "East" 'GHC.Generics.PrefixI 'GHC.Types.False)
+                        GHC.Generics.U1)
+                   @ (GHC.Generics.M1
+                        GHC.Generics.C
+                        ('GHC.Generics.MetaCons
+                           "North" 'GHC.Generics.PrefixI 'GHC.Types.False)
+                        GHC.Generics.U1)
+                   @ x1
+                   (GHC.Generics.U1 @ x1)
+                     `cast`
+                   (Sym (GHC.Generics.N:M1[0]
+                             <GHC.Generics.C>_P
+                             <'GHC.Generics.MetaCons
+                                "North" 'GHC.Generics.PrefixI 'GHC.Types.False>_P
+                             <GHC.Generics.U1>_R) <x1>_N)) -}
+e558cf58077502d097f860d0fb451e13
+  $fGenericDirection8 ::
+    (GHC.Generics.:+:)
+      (GHC.Generics.M1
+         GHC.Generics.C
+         ('GHC.Generics.MetaCons
+            "East" 'GHC.Generics.PrefixI 'GHC.Types.False)
+         GHC.Generics.U1
+       GHC.Generics.:+: GHC.Generics.M1
+                          GHC.Generics.C
+                          ('GHC.Generics.MetaCons
+                             "North" 'GHC.Generics.PrefixI 'GHC.Types.False)
+                          GHC.Generics.U1)
+      (GHC.Generics.M1
+         GHC.Generics.C
+         ('GHC.Generics.MetaCons
+            "West" 'GHC.Generics.PrefixI 'GHC.Types.False)
+         GHC.Generics.U1
+       GHC.Generics.:+: GHC.Generics.M1
+                          GHC.Generics.C
+                          ('GHC.Generics.MetaCons
+                             "South" 'GHC.Generics.PrefixI 'GHC.Types.False)
+                          GHC.Generics.U1)
+      x
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (\ @ x1 ->
+                 GHC.Generics.L1
+                   @ (GHC.Generics.M1
+                        GHC.Generics.C
+                        ('GHC.Generics.MetaCons
+                           "East" 'GHC.Generics.PrefixI 'GHC.Types.False)
+                        GHC.Generics.U1
+                      GHC.Generics.:+: GHC.Generics.M1
+                                         GHC.Generics.C
+                                         ('GHC.Generics.MetaCons
+                                            "North" 'GHC.Generics.PrefixI 'GHC.Types.False)
+                                         GHC.Generics.U1)
+                   @ (GHC.Generics.M1
+                        GHC.Generics.C
+                        ('GHC.Generics.MetaCons
+                           "West" 'GHC.Generics.PrefixI 'GHC.Types.False)
+                        GHC.Generics.U1
+                      GHC.Generics.:+: GHC.Generics.M1
+                                         GHC.Generics.C
+                                         ('GHC.Generics.MetaCons
+                                            "South" 'GHC.Generics.PrefixI 'GHC.Types.False)
+                                         GHC.Generics.U1)
+                   @ x1
+                   (Maze.$fGenericDirection9 @ x1)) -}
+76e4d84a9e2255763e97d77510f2b85c
+  $fGenericDirection9 ::
+    (GHC.Generics.:+:)
+      (GHC.Generics.M1
+         GHC.Generics.C
+         ('GHC.Generics.MetaCons
+            "East" 'GHC.Generics.PrefixI 'GHC.Types.False)
+         GHC.Generics.U1)
+      (GHC.Generics.M1
+         GHC.Generics.C
+         ('GHC.Generics.MetaCons
+            "North" 'GHC.Generics.PrefixI 'GHC.Types.False)
+         GHC.Generics.U1)
+      x
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (\ @ x1 ->
+                 GHC.Generics.L1
+                   @ (GHC.Generics.M1
+                        GHC.Generics.C
+                        ('GHC.Generics.MetaCons
+                           "East" 'GHC.Generics.PrefixI 'GHC.Types.False)
+                        GHC.Generics.U1)
+                   @ (GHC.Generics.M1
+                        GHC.Generics.C
+                        ('GHC.Generics.MetaCons
+                           "North" 'GHC.Generics.PrefixI 'GHC.Types.False)
+                        GHC.Generics.U1)
+                   @ x1
+                   (GHC.Generics.U1 @ x1)
+                     `cast`
+                   (Sym (GHC.Generics.N:M1[0]
+                             <GHC.Generics.C>_P
+                             <'GHC.Generics.MetaCons
+                                "East" 'GHC.Generics.PrefixI 'GHC.Types.False>_P
+                             <GHC.Generics.U1>_R) <x1>_N)) -}
+a59d3a6515f1359e70764c2dbe15e55a
+  $fGenericDirection_$cfrom ::
+    Maze.Direction -> GHC.Generics.Rep Maze.Direction x
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>,
+     Unfolding: InlineRule (0, True, True)
+                Maze.$fGenericDirection1
+                  `cast`
+                (forall (x1 :: <GHC.Types.*>_N).
+                 <Maze.Direction>_R
+                 ->_R Trans
+                          (Sym (GHC.Generics.N:M1[0]
+                                    <GHC.Generics.D>_P
+                                    <'GHC.Generics.MetaData
+                                       "Direction" "Maze" "main" 'GHC.Types.False>_P
+                                    <(GHC.Generics.M1
+                                        GHC.Generics.C
+                                        ('GHC.Generics.MetaCons
+                                           "East" 'GHC.Generics.PrefixI 'GHC.Types.False)
+                                        GHC.Generics.U1
+                                      GHC.Generics.:+: GHC.Generics.M1
+                                                         GHC.Generics.C
+                                                         ('GHC.Generics.MetaCons
+                                                            "North"
+                                                            'GHC.Generics.PrefixI
+                                                            'GHC.Types.False)
+                                                         GHC.Generics.U1)
+                                     GHC.Generics.:+: (GHC.Generics.M1
+                                                         GHC.Generics.C
+                                                         ('GHC.Generics.MetaCons
+                                                            "West"
+                                                            'GHC.Generics.PrefixI
+                                                            'GHC.Types.False)
+                                                         GHC.Generics.U1
+                                                       GHC.Generics.:+: GHC.Generics.M1
+                                                                          GHC.Generics.C
+                                                                          ('GHC.Generics.MetaCons
+                                                                             "South"
+                                                                             'GHC.Generics.PrefixI
+                                                                             'GHC.Types.False)
+                                                                          GHC.Generics.U1)>_R))
+                          (Sub (Sym (Maze.Rep_Direction[0]))) <x1>_N) -}
+a59d3a6515f1359e70764c2dbe15e55a
+  $fGenericDirection_$cto ::
+    GHC.Generics.Rep Maze.Direction x -> Maze.Direction
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>,
+     Unfolding: (\ @ x1 (ds :: GHC.Generics.Rep Maze.Direction x1) ->
+                 case ds
+                        `cast`
+                      (Trans
+                           (Sub (Maze.Rep_Direction[0]))
+                           (GHC.Generics.N:M1[0]
+                                <GHC.Generics.D>_P
+                                <'GHC.Generics.MetaData
+                                   "Direction" "Maze" "main" 'GHC.Types.False>_P
+                                <(GHC.Generics.M1
+                                    GHC.Generics.C
+                                    ('GHC.Generics.MetaCons
+                                       "East" 'GHC.Generics.PrefixI 'GHC.Types.False)
+                                    GHC.Generics.U1
+                                  GHC.Generics.:+: GHC.Generics.M1
+                                                     GHC.Generics.C
+                                                     ('GHC.Generics.MetaCons
+                                                        "North"
+                                                        'GHC.Generics.PrefixI
+                                                        'GHC.Types.False)
+                                                     GHC.Generics.U1)
+                                 GHC.Generics.:+: (GHC.Generics.M1
+                                                     GHC.Generics.C
+                                                     ('GHC.Generics.MetaCons
+                                                        "West"
+                                                        'GHC.Generics.PrefixI
+                                                        'GHC.Types.False)
+                                                     GHC.Generics.U1
+                                                   GHC.Generics.:+: GHC.Generics.M1
+                                                                      GHC.Generics.C
+                                                                      ('GHC.Generics.MetaCons
+                                                                         "South"
+                                                                         'GHC.Generics.PrefixI
+                                                                         'GHC.Types.False)
+                                                                      GHC.Generics.U1)>_R) <x1>_N) of wild {
+                   GHC.Generics.L1 ds1
+                   -> case ds1 of wild1 {
+                        GHC.Generics.L1 ds2 -> case ds2 of tpl { DEFAULT -> Maze.East }
+                        GHC.Generics.R1 ds2 -> case ds2 of tpl { DEFAULT -> Maze.North } }
+                   GHC.Generics.R1 ds1
+                   -> case ds1 of wild1 {
+                        GHC.Generics.L1 ds2 -> case ds2 of tpl { DEFAULT -> Maze.West }
+                        GHC.Generics.R1 ds2
+                        -> case ds2 of tpl { DEFAULT -> Maze.South } } }) -}
+dc7d356c805a014fb620732a9f21c144
+  $fGenericGameState :: GHC.Generics.Generic Maze.GameState
+  DFunId
+  {- HasNoCafRefs, Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ Maze.GameState
+                  Maze.$fGenericGameState_$cfrom
+                  Maze.$fGenericGameState_$cto -}
+dc7d356c805a014fb620732a9f21c144
+  $fGenericGameState1 ::
+    Maze.GameState
+    -> GHC.Generics.M1
+         GHC.Generics.C
+         ('GHC.Generics.MetaCons
+            "GameState" 'GHC.Generics.PrefixI 'GHC.Types.True)
+         (GHC.Generics.M1
+            GHC.Generics.S
+            ('GHC.Generics.MetaSel
+               ('GHC.Base.Just "maze")
+               'GHC.Generics.NoSourceUnpackedness
+               'GHC.Generics.NoSourceStrictness
+               'GHC.Generics.DecidedLazy)
+            (GHC.Generics.K1 GHC.Generics.R Maze.Maze)
+          GHC.Generics.:*: (GHC.Generics.M1
+                              GHC.Generics.S
+                              ('GHC.Generics.MetaSel
+                                 ('GHC.Base.Just "position")
+                                 'GHC.Generics.NoSourceUnpackedness
+                                 'GHC.Generics.NoSourceStrictness
+                                 'GHC.Generics.DecidedLazy)
+                              (GHC.Generics.K1 GHC.Generics.R Maze.Position)
+                            GHC.Generics.:*: GHC.Generics.M1
+                                               GHC.Generics.S
+                                               ('GHC.Generics.MetaSel
+                                                  ('GHC.Base.Just "target")
+                                                  'GHC.Generics.NoSourceUnpackedness
+                                                  'GHC.Generics.NoSourceStrictness
+                                                  'GHC.Generics.DecidedLazy)
+                                               (GHC.Generics.K1 GHC.Generics.R Maze.Position)))
+         x
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U(U,U,U)>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ @ x1 (x2 :: Maze.GameState) ->
+                 case x2 of wild { Maze.GameState g1 g2 g3 ->
+                 (GHC.Generics.:*:
+                    @ (GHC.Generics.M1
+                         GHC.Generics.S
+                         ('GHC.Generics.MetaSel
+                            ('GHC.Base.Just "maze")
+                            'GHC.Generics.NoSourceUnpackedness
+                            'GHC.Generics.NoSourceStrictness
+                            'GHC.Generics.DecidedLazy)
+                         (GHC.Generics.K1 GHC.Generics.R Maze.Maze))
+                    @ (GHC.Generics.M1
+                         GHC.Generics.S
+                         ('GHC.Generics.MetaSel
+                            ('GHC.Base.Just "position")
+                            'GHC.Generics.NoSourceUnpackedness
+                            'GHC.Generics.NoSourceStrictness
+                            'GHC.Generics.DecidedLazy)
+                         (GHC.Generics.K1 GHC.Generics.R Maze.Position)
+                       GHC.Generics.:*: GHC.Generics.M1
+                                          GHC.Generics.S
+                                          ('GHC.Generics.MetaSel
+                                             ('GHC.Base.Just "target")
+                                             'GHC.Generics.NoSourceUnpackedness
+                                             'GHC.Generics.NoSourceStrictness
+                                             'GHC.Generics.DecidedLazy)
+                                          (GHC.Generics.K1 GHC.Generics.R Maze.Position))
+                    @ x1
+                    g1
+                      `cast`
+                    (Trans
+                         (Sym (GHC.Generics.N:K1[0]
+                                   <GHC.Generics.R>_P <Maze.Maze>_R <x1>_P))
+                         (Sym (GHC.Generics.N:M1[0]
+                                   <GHC.Generics.S>_P
+                                   <'GHC.Generics.MetaSel
+                                      ('GHC.Base.Just "maze")
+                                      'GHC.Generics.NoSourceUnpackedness
+                                      'GHC.Generics.NoSourceStrictness
+                                      'GHC.Generics.DecidedLazy>_P
+                                   <GHC.Generics.K1 GHC.Generics.R Maze.Maze>_R) <x1>_N))
+                    (GHC.Generics.:*:
+                       @ (GHC.Generics.M1
+                            GHC.Generics.S
+                            ('GHC.Generics.MetaSel
+                               ('GHC.Base.Just "position")
+                               'GHC.Generics.NoSourceUnpackedness
+                               'GHC.Generics.NoSourceStrictness
+                               'GHC.Generics.DecidedLazy)
+                            (GHC.Generics.K1 GHC.Generics.R Maze.Position))
+                       @ (GHC.Generics.M1
+                            GHC.Generics.S
+                            ('GHC.Generics.MetaSel
+                               ('GHC.Base.Just "target")
+                               'GHC.Generics.NoSourceUnpackedness
+                               'GHC.Generics.NoSourceStrictness
+                               'GHC.Generics.DecidedLazy)
+                            (GHC.Generics.K1 GHC.Generics.R Maze.Position))
+                       @ x1
+                       g2
+                         `cast`
+                       (Trans
+                            (Sym (GHC.Generics.N:K1[0]
+                                      <GHC.Generics.R>_P <Maze.Position>_R <x1>_P))
+                            (Sym (GHC.Generics.N:M1[0]
+                                      <GHC.Generics.S>_P
+                                      <'GHC.Generics.MetaSel
+                                         ('GHC.Base.Just "position")
+                                         'GHC.Generics.NoSourceUnpackedness
+                                         'GHC.Generics.NoSourceStrictness
+                                         'GHC.Generics.DecidedLazy>_P
+                                      <GHC.Generics.K1 GHC.Generics.R Maze.Position>_R) <x1>_N))
+                       g3
+                         `cast`
+                       (Trans
+                            (Sym (GHC.Generics.N:K1[0]
+                                      <GHC.Generics.R>_P <Maze.Position>_R <x1>_P))
+                            (Sym (GHC.Generics.N:M1[0]
+                                      <GHC.Generics.S>_P
+                                      <'GHC.Generics.MetaSel
+                                         ('GHC.Base.Just "target")
+                                         'GHC.Generics.NoSourceUnpackedness
+                                         'GHC.Generics.NoSourceStrictness
+                                         'GHC.Generics.DecidedLazy>_P
+                                      <GHC.Generics.K1 GHC.Generics.R Maze.Position>_R) <x1>_N))))
+                   `cast`
+                 (Sym (GHC.Generics.N:M1[0]
+                           <GHC.Generics.C>_P
+                           <'GHC.Generics.MetaCons
+                              "GameState" 'GHC.Generics.PrefixI 'GHC.Types.True>_P
+                           <GHC.Generics.M1
+                              GHC.Generics.S
+                              ('GHC.Generics.MetaSel
+                                 ('GHC.Base.Just "maze")
+                                 'GHC.Generics.NoSourceUnpackedness
+                                 'GHC.Generics.NoSourceStrictness
+                                 'GHC.Generics.DecidedLazy)
+                              (GHC.Generics.K1 GHC.Generics.R Maze.Maze)
+                            GHC.Generics.:*: (GHC.Generics.M1
+                                                GHC.Generics.S
+                                                ('GHC.Generics.MetaSel
+                                                   ('GHC.Base.Just "position")
+                                                   'GHC.Generics.NoSourceUnpackedness
+                                                   'GHC.Generics.NoSourceStrictness
+                                                   'GHC.Generics.DecidedLazy)
+                                                (GHC.Generics.K1 GHC.Generics.R Maze.Position)
+                                              GHC.Generics.:*: GHC.Generics.M1
+                                                                 GHC.Generics.S
+                                                                 ('GHC.Generics.MetaSel
+                                                                    ('GHC.Base.Just "target")
+                                                                    'GHC.Generics.NoSourceUnpackedness
+                                                                    'GHC.Generics.NoSourceStrictness
+                                                                    'GHC.Generics.DecidedLazy)
+                                                                 (GHC.Generics.K1
+                                                                    GHC.Generics.R
+                                                                    Maze.Position))>_R) <x1>_N) }) -}
+dc7d356c805a014fb620732a9f21c144
+  $fGenericGameState_$cfrom ::
+    Maze.GameState -> GHC.Generics.Rep Maze.GameState x
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U(U,U,U)>m,
+     Unfolding: InlineRule (0, True, True)
+                Maze.$fGenericGameState1
+                  `cast`
+                (forall (x1 :: <GHC.Types.*>_N).
+                 <Maze.GameState>_R
+                 ->_R Trans
+                          (Sym (GHC.Generics.N:M1[0]
+                                    <GHC.Generics.D>_P
+                                    <'GHC.Generics.MetaData
+                                       "GameState" "Maze" "main" 'GHC.Types.False>_P
+                                    <GHC.Generics.M1
+                                       GHC.Generics.C
+                                       ('GHC.Generics.MetaCons
+                                          "GameState" 'GHC.Generics.PrefixI 'GHC.Types.True)
+                                       (GHC.Generics.M1
+                                          GHC.Generics.S
+                                          ('GHC.Generics.MetaSel
+                                             ('GHC.Base.Just "maze")
+                                             'GHC.Generics.NoSourceUnpackedness
+                                             'GHC.Generics.NoSourceStrictness
+                                             'GHC.Generics.DecidedLazy)
+                                          (GHC.Generics.K1 GHC.Generics.R Maze.Maze)
+                                        GHC.Generics.:*: (GHC.Generics.M1
+                                                            GHC.Generics.S
+                                                            ('GHC.Generics.MetaSel
+                                                               ('GHC.Base.Just "position")
+                                                               'GHC.Generics.NoSourceUnpackedness
+                                                               'GHC.Generics.NoSourceStrictness
+                                                               'GHC.Generics.DecidedLazy)
+                                                            (GHC.Generics.K1
+                                                               GHC.Generics.R Maze.Position)
+                                                          GHC.Generics.:*: GHC.Generics.M1
+                                                                             GHC.Generics.S
+                                                                             ('GHC.Generics.MetaSel
+                                                                                ('GHC.Base.Just
+                                                                                   "target")
+                                                                                'GHC.Generics.NoSourceUnpackedness
+                                                                                'GHC.Generics.NoSourceStrictness
+                                                                                'GHC.Generics.DecidedLazy)
+                                                                             (GHC.Generics.K1
+                                                                                GHC.Generics.R
+                                                                                Maze.Position)))>_R))
+                          (Sub (Sym (Maze.Rep_GameState[0]))) <x1>_N) -}
+dc7d356c805a014fb620732a9f21c144
+  $fGenericGameState_$cto ::
+    GHC.Generics.Rep Maze.GameState x -> Maze.GameState
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(LS),1*U(U,1*U(U,U))>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ @ x1 (ds :: GHC.Generics.Rep Maze.GameState x1) ->
+                 case ds
+                        `cast`
+                      (Trans
+                           (Sub (Maze.Rep_GameState[0]))
+                           (Trans
+                                (GHC.Generics.N:M1[0]
+                                     <GHC.Generics.D>_P
+                                     <'GHC.Generics.MetaData
+                                        "GameState" "Maze" "main" 'GHC.Types.False>_P
+                                     <GHC.Generics.M1
+                                        GHC.Generics.C
+                                        ('GHC.Generics.MetaCons
+                                           "GameState" 'GHC.Generics.PrefixI 'GHC.Types.True)
+                                        (GHC.Generics.M1
+                                           GHC.Generics.S
+                                           ('GHC.Generics.MetaSel
+                                              ('GHC.Base.Just "maze")
+                                              'GHC.Generics.NoSourceUnpackedness
+                                              'GHC.Generics.NoSourceStrictness
+                                              'GHC.Generics.DecidedLazy)
+                                           (GHC.Generics.K1 GHC.Generics.R Maze.Maze)
+                                         GHC.Generics.:*: (GHC.Generics.M1
+                                                             GHC.Generics.S
+                                                             ('GHC.Generics.MetaSel
+                                                                ('GHC.Base.Just "position")
+                                                                'GHC.Generics.NoSourceUnpackedness
+                                                                'GHC.Generics.NoSourceStrictness
+                                                                'GHC.Generics.DecidedLazy)
+                                                             (GHC.Generics.K1
+                                                                GHC.Generics.R Maze.Position)
+                                                           GHC.Generics.:*: GHC.Generics.M1
+                                                                              GHC.Generics.S
+                                                                              ('GHC.Generics.MetaSel
+                                                                                 ('GHC.Base.Just
+                                                                                    "target")
+                                                                                 'GHC.Generics.NoSourceUnpackedness
+                                                                                 'GHC.Generics.NoSourceStrictness
+                                                                                 'GHC.Generics.DecidedLazy)
+                                                                              (GHC.Generics.K1
+                                                                                 GHC.Generics.R
+                                                                                 Maze.Position)))>_R)
+                                (GHC.Generics.N:M1[0]
+                                     <GHC.Generics.C>_P
+                                     <'GHC.Generics.MetaCons
+                                        "GameState" 'GHC.Generics.PrefixI 'GHC.Types.True>_P
+                                     <GHC.Generics.M1
+                                        GHC.Generics.S
+                                        ('GHC.Generics.MetaSel
+                                           ('GHC.Base.Just "maze")
+                                           'GHC.Generics.NoSourceUnpackedness
+                                           'GHC.Generics.NoSourceStrictness
+                                           'GHC.Generics.DecidedLazy)
+                                        (GHC.Generics.K1 GHC.Generics.R Maze.Maze)
+                                      GHC.Generics.:*: (GHC.Generics.M1
+                                                          GHC.Generics.S
+                                                          ('GHC.Generics.MetaSel
+                                                             ('GHC.Base.Just "position")
+                                                             'GHC.Generics.NoSourceUnpackedness
+                                                             'GHC.Generics.NoSourceStrictness
+                                                             'GHC.Generics.DecidedLazy)
+                                                          (GHC.Generics.K1
+                                                             GHC.Generics.R Maze.Position)
+                                                        GHC.Generics.:*: GHC.Generics.M1
+                                                                           GHC.Generics.S
+                                                                           ('GHC.Generics.MetaSel
+                                                                              ('GHC.Base.Just
+                                                                                 "target")
+                                                                              'GHC.Generics.NoSourceUnpackedness
+                                                                              'GHC.Generics.NoSourceStrictness
+                                                                              'GHC.Generics.DecidedLazy)
+                                                                           (GHC.Generics.K1
+                                                                              GHC.Generics.R
+                                                                              Maze.Position))>_R)) <x1>_N) of wild { GHC.Generics.:*: ds1 ds2 ->
+                 case ds2 of wild1 { GHC.Generics.:*: ds3 ds4 ->
+                 Maze.GameState
+                   ds1
+                     `cast`
+                   (Trans
+                        (GHC.Generics.N:M1[0]
+                             <GHC.Generics.S>_P
+                             <'GHC.Generics.MetaSel
+                                ('GHC.Base.Just "maze")
+                                'GHC.Generics.NoSourceUnpackedness
+                                'GHC.Generics.NoSourceStrictness
+                                'GHC.Generics.DecidedLazy>_P
+                             <GHC.Generics.K1 GHC.Generics.R Maze.Maze>_R <x1>_N)
+                        (GHC.Generics.N:K1[0] <GHC.Generics.R>_P <Maze.Maze>_R <x1>_P))
+                   ds3
+                     `cast`
+                   (Trans
+                        (GHC.Generics.N:M1[0]
+                             <GHC.Generics.S>_P
+                             <'GHC.Generics.MetaSel
+                                ('GHC.Base.Just "position")
+                                'GHC.Generics.NoSourceUnpackedness
+                                'GHC.Generics.NoSourceStrictness
+                                'GHC.Generics.DecidedLazy>_P
+                             <GHC.Generics.K1 GHC.Generics.R Maze.Position>_R <x1>_N)
+                        (GHC.Generics.N:K1[0] <GHC.Generics.R>_P <Maze.Position>_R <x1>_P))
+                   ds4
+                     `cast`
+                   (Trans
+                        (GHC.Generics.N:M1[0]
+                             <GHC.Generics.S>_P
+                             <'GHC.Generics.MetaSel
+                                ('GHC.Base.Just "target")
+                                'GHC.Generics.NoSourceUnpackedness
+                                'GHC.Generics.NoSourceStrictness
+                                'GHC.Generics.DecidedLazy>_P
+                             <GHC.Generics.K1 GHC.Generics.R Maze.Position>_R <x1>_N)
+                        (GHC.Generics.N:K1[0]
+                             <GHC.Generics.R>_P <Maze.Position>_R <x1>_P)) } }) -}
+c979e20abe21b77204dc8ee0b1aa925b
+  $fGenericPosition :: GHC.Generics.Generic Maze.Position
+  DFunId
+  {- HasNoCafRefs, Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ Maze.Position
+                  Maze.$fGenericPosition_$cfrom
+                  Maze.$fGenericPosition_$cto -}
+c979e20abe21b77204dc8ee0b1aa925b
+  $fGenericPosition1 ::
+    Maze.Position
+    -> GHC.Generics.M1
+         GHC.Generics.C
+         ('GHC.Generics.MetaCons
+            "Position" 'GHC.Generics.PrefixI 'GHC.Types.True)
+         (GHC.Generics.M1
+            GHC.Generics.S
+            ('GHC.Generics.MetaSel
+               ('GHC.Base.Just "x")
+               'GHC.Generics.NoSourceUnpackedness
+               'GHC.Generics.NoSourceStrictness
+               'GHC.Generics.DecidedLazy)
+            (GHC.Generics.K1 GHC.Generics.R GHC.Types.Int)
+          GHC.Generics.:*: GHC.Generics.M1
+                             GHC.Generics.S
+                             ('GHC.Generics.MetaSel
+                                ('GHC.Base.Just "y")
+                                'GHC.Generics.NoSourceUnpackedness
+                                'GHC.Generics.NoSourceStrictness
+                                'GHC.Generics.DecidedLazy)
+                             (GHC.Generics.K1 GHC.Generics.R GHC.Types.Int))
+         x
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U(U,U)>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ @ x1 (x2 :: Maze.Position) ->
+                 case x2 of wild { Maze.Position g1 g2 ->
+                 (GHC.Generics.:*:
+                    @ (GHC.Generics.M1
+                         GHC.Generics.S
+                         ('GHC.Generics.MetaSel
+                            ('GHC.Base.Just "x")
+                            'GHC.Generics.NoSourceUnpackedness
+                            'GHC.Generics.NoSourceStrictness
+                            'GHC.Generics.DecidedLazy)
+                         (GHC.Generics.K1 GHC.Generics.R GHC.Types.Int))
+                    @ (GHC.Generics.M1
+                         GHC.Generics.S
+                         ('GHC.Generics.MetaSel
+                            ('GHC.Base.Just "y")
+                            'GHC.Generics.NoSourceUnpackedness
+                            'GHC.Generics.NoSourceStrictness
+                            'GHC.Generics.DecidedLazy)
+                         (GHC.Generics.K1 GHC.Generics.R GHC.Types.Int))
+                    @ x1
+                    g1
+                      `cast`
+                    (Trans
+                         (Sym (GHC.Generics.N:K1[0]
+                                   <GHC.Generics.R>_P <GHC.Types.Int>_R <x1>_P))
+                         (Sym (GHC.Generics.N:M1[0]
+                                   <GHC.Generics.S>_P
+                                   <'GHC.Generics.MetaSel
+                                      ('GHC.Base.Just "x")
+                                      'GHC.Generics.NoSourceUnpackedness
+                                      'GHC.Generics.NoSourceStrictness
+                                      'GHC.Generics.DecidedLazy>_P
+                                   <GHC.Generics.K1 GHC.Generics.R GHC.Types.Int>_R) <x1>_N))
+                    g2
+                      `cast`
+                    (Trans
+                         (Sym (GHC.Generics.N:K1[0]
+                                   <GHC.Generics.R>_P <GHC.Types.Int>_R <x1>_P))
+                         (Sym (GHC.Generics.N:M1[0]
+                                   <GHC.Generics.S>_P
+                                   <'GHC.Generics.MetaSel
+                                      ('GHC.Base.Just "y")
+                                      'GHC.Generics.NoSourceUnpackedness
+                                      'GHC.Generics.NoSourceStrictness
+                                      'GHC.Generics.DecidedLazy>_P
+                                   <GHC.Generics.K1 GHC.Generics.R GHC.Types.Int>_R) <x1>_N)))
+                   `cast`
+                 (Sym (GHC.Generics.N:M1[0]
+                           <GHC.Generics.C>_P
+                           <'GHC.Generics.MetaCons
+                              "Position" 'GHC.Generics.PrefixI 'GHC.Types.True>_P
+                           <GHC.Generics.M1
+                              GHC.Generics.S
+                              ('GHC.Generics.MetaSel
+                                 ('GHC.Base.Just "x")
+                                 'GHC.Generics.NoSourceUnpackedness
+                                 'GHC.Generics.NoSourceStrictness
+                                 'GHC.Generics.DecidedLazy)
+                              (GHC.Generics.K1 GHC.Generics.R GHC.Types.Int)
+                            GHC.Generics.:*: GHC.Generics.M1
+                                               GHC.Generics.S
+                                               ('GHC.Generics.MetaSel
+                                                  ('GHC.Base.Just "y")
+                                                  'GHC.Generics.NoSourceUnpackedness
+                                                  'GHC.Generics.NoSourceStrictness
+                                                  'GHC.Generics.DecidedLazy)
+                                               (GHC.Generics.K1
+                                                  GHC.Generics.R GHC.Types.Int)>_R) <x1>_N) }) -}
+c979e20abe21b77204dc8ee0b1aa925b
+  $fGenericPosition_$cfrom ::
+    Maze.Position -> GHC.Generics.Rep Maze.Position x
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U(U,U)>m,
+     Unfolding: InlineRule (0, True, True)
+                Maze.$fGenericPosition1
+                  `cast`
+                (forall (x1 :: <GHC.Types.*>_N).
+                 <Maze.Position>_R
+                 ->_R Trans
+                          (Sym (GHC.Generics.N:M1[0]
+                                    <GHC.Generics.D>_P
+                                    <'GHC.Generics.MetaData
+                                       "Position" "Maze" "main" 'GHC.Types.False>_P
+                                    <GHC.Generics.M1
+                                       GHC.Generics.C
+                                       ('GHC.Generics.MetaCons
+                                          "Position" 'GHC.Generics.PrefixI 'GHC.Types.True)
+                                       (GHC.Generics.M1
+                                          GHC.Generics.S
+                                          ('GHC.Generics.MetaSel
+                                             ('GHC.Base.Just "x")
+                                             'GHC.Generics.NoSourceUnpackedness
+                                             'GHC.Generics.NoSourceStrictness
+                                             'GHC.Generics.DecidedLazy)
+                                          (GHC.Generics.K1 GHC.Generics.R GHC.Types.Int)
+                                        GHC.Generics.:*: GHC.Generics.M1
+                                                           GHC.Generics.S
+                                                           ('GHC.Generics.MetaSel
+                                                              ('GHC.Base.Just "y")
+                                                              'GHC.Generics.NoSourceUnpackedness
+                                                              'GHC.Generics.NoSourceStrictness
+                                                              'GHC.Generics.DecidedLazy)
+                                                           (GHC.Generics.K1
+                                                              GHC.Generics.R GHC.Types.Int))>_R))
+                          (Sub (Sym (Maze.Rep_Position[0]))) <x1>_N) -}
+c979e20abe21b77204dc8ee0b1aa925b
+  $fGenericPosition_$cto ::
+    GHC.Generics.Rep Maze.Position x -> Maze.Position
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U(U,U)>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ @ x1 (ds :: GHC.Generics.Rep Maze.Position x1) ->
+                 case ds
+                        `cast`
+                      (Trans
+                           (Sub (Maze.Rep_Position[0]))
+                           (Trans
+                                (GHC.Generics.N:M1[0]
+                                     <GHC.Generics.D>_P
+                                     <'GHC.Generics.MetaData
+                                        "Position" "Maze" "main" 'GHC.Types.False>_P
+                                     <GHC.Generics.M1
+                                        GHC.Generics.C
+                                        ('GHC.Generics.MetaCons
+                                           "Position" 'GHC.Generics.PrefixI 'GHC.Types.True)
+                                        (GHC.Generics.M1
+                                           GHC.Generics.S
+                                           ('GHC.Generics.MetaSel
+                                              ('GHC.Base.Just "x")
+                                              'GHC.Generics.NoSourceUnpackedness
+                                              'GHC.Generics.NoSourceStrictness
+                                              'GHC.Generics.DecidedLazy)
+                                           (GHC.Generics.K1 GHC.Generics.R GHC.Types.Int)
+                                         GHC.Generics.:*: GHC.Generics.M1
+                                                            GHC.Generics.S
+                                                            ('GHC.Generics.MetaSel
+                                                               ('GHC.Base.Just "y")
+                                                               'GHC.Generics.NoSourceUnpackedness
+                                                               'GHC.Generics.NoSourceStrictness
+                                                               'GHC.Generics.DecidedLazy)
+                                                            (GHC.Generics.K1
+                                                               GHC.Generics.R GHC.Types.Int))>_R)
+                                (GHC.Generics.N:M1[0]
+                                     <GHC.Generics.C>_P
+                                     <'GHC.Generics.MetaCons
+                                        "Position" 'GHC.Generics.PrefixI 'GHC.Types.True>_P
+                                     <GHC.Generics.M1
+                                        GHC.Generics.S
+                                        ('GHC.Generics.MetaSel
+                                           ('GHC.Base.Just "x")
+                                           'GHC.Generics.NoSourceUnpackedness
+                                           'GHC.Generics.NoSourceStrictness
+                                           'GHC.Generics.DecidedLazy)
+                                        (GHC.Generics.K1 GHC.Generics.R GHC.Types.Int)
+                                      GHC.Generics.:*: GHC.Generics.M1
+                                                         GHC.Generics.S
+                                                         ('GHC.Generics.MetaSel
+                                                            ('GHC.Base.Just "y")
+                                                            'GHC.Generics.NoSourceUnpackedness
+                                                            'GHC.Generics.NoSourceStrictness
+                                                            'GHC.Generics.DecidedLazy)
+                                                         (GHC.Generics.K1
+                                                            GHC.Generics.R
+                                                            GHC.Types.Int)>_R)) <x1>_N) of wild { GHC.Generics.:*: ds1 ds2 ->
+                 Maze.Position
+                   ds1
+                     `cast`
+                   (Trans
+                        (GHC.Generics.N:M1[0]
+                             <GHC.Generics.S>_P
+                             <'GHC.Generics.MetaSel
+                                ('GHC.Base.Just "x")
+                                'GHC.Generics.NoSourceUnpackedness
+                                'GHC.Generics.NoSourceStrictness
+                                'GHC.Generics.DecidedLazy>_P
+                             <GHC.Generics.K1 GHC.Generics.R GHC.Types.Int>_R <x1>_N)
+                        (GHC.Generics.N:K1[0] <GHC.Generics.R>_P <GHC.Types.Int>_R <x1>_P))
+                   ds2
+                     `cast`
+                   (Trans
+                        (GHC.Generics.N:M1[0]
+                             <GHC.Generics.S>_P
+                             <'GHC.Generics.MetaSel
+                                ('GHC.Base.Just "y")
+                                'GHC.Generics.NoSourceUnpackedness
+                                'GHC.Generics.NoSourceStrictness
+                                'GHC.Generics.DecidedLazy>_P
+                             <GHC.Generics.K1 GHC.Generics.R GHC.Types.Int>_R <x1>_N)
+                        (GHC.Generics.N:K1[0]
+                             <GHC.Generics.R>_P <GHC.Types.Int>_R <x1>_P)) }) -}
+f08c044daefd032b243bd403b61a71bf
+  $tc'East :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   15520324840980602255##
+                   6617012472515806825##
+                   Maze.$trModule
+                   Maze.$tc'East1) -}
+cb2c12e66ecd76fbfdd98a2bd692c76b
+  $tc'East1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'East"#) -}
+c4584a578d8a2943a7524ca9a20fafb4
+  $tc'GameState :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   5646874613205572071##
+                   16216451414842556486##
+                   Maze.$trModule
+                   Maze.$tc'GameState1) -}
+667298f320f2a1e6faa5f440623f3db7
+  $tc'GameState1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'GameState"#) -}
+5b9b342bf27d5cccf153696a1cbba195
+  $tc'Maze :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   761158226928067055##
+                   3076071030552312306##
+                   Maze.$trModule
+                   Maze.$tc'Maze1) -}
+6c37f8400b57a8bc86914e4f2897a77c
+  $tc'Maze1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'Maze"#) -}
+c288c42ed8549e5b7faa5901eb62ed16
+  $tc'North :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   3706891639485840763##
+                   9921301261341984463##
+                   Maze.$trModule
+                   Maze.$tc'North1) -}
+4f1c13c824c349c9601158abfecf198d
+  $tc'North1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'North"#) -}
+b68feaaa37574cd56e41254f5e2cc380
+  $tc'Position :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   11706589522883194240##
+                   10100612666631871119##
+                   Maze.$trModule
+                   Maze.$tc'Position1) -}
+e79349a00ddfb7459cfe6cb1eddf1aab
+  $tc'Position1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'Position"#) -}
+d14b4ca01e172889c29a30646446b069
+  $tc'South :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   10398516966492305789##
+                   13575207854904819860##
+                   Maze.$trModule
+                   Maze.$tc'South1) -}
+05fc97f841e3d47656de225d271d5af8
+  $tc'South1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'South"#) -}
+39b8247e9f2f7982e974e94e6ca0c575
+  $tc'West :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   12314719919552210236##
+                   5163274094208904307##
+                   Maze.$trModule
+                   Maze.$tc'West1) -}
+9e5e4c1205314a37f1924b8044dcfb60
+  $tc'West1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'West"#) -}
+8733eac36c9e03ab9d1c5b01650b8ffc
+  $tcDirection :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   5117135576071781957##
+                   5386318178466842676##
+                   Maze.$trModule
+                   Maze.$tcDirection1) -}
+e2fed01fd06eb5a49ab3e3c5a90dd9c3
+  $tcDirection1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "Direction"#) -}
+fc34f862afefa38d7583aba5dc8ab2b0
+  $tcGameState :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   1734465629816056889##
+                   7137559735121376071##
+                   Maze.$trModule
+                   Maze.$tcGameState1) -}
+b79cc2b2fbbb5f7c67e8723ed3444251
+  $tcGameState1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "GameState"#) -}
+3284b5fc03a74aa5af20f3af95fb49f1
+  $tcMaze :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   18108212712857831332##
+                   9146134624135070598##
+                   Maze.$trModule
+                   Maze.$trModule1) -}
+5788b969222fdd476d552c42c0d872b3
+  $tcPosition :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   15836978950315828564##
+                   11431607712049861070##
+                   Maze.$trModule
+                   Maze.$tcPosition1) -}
+07a2ffe0cf43f79ad80c2f1a4a33a89f
+  $tcPosition1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "Position"#) -}
+e97222aa43a47167507ac24995864a26
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module Maze.$trModule2 Maze.$trModule1) -}
+6a34bc3b3e3b03314ef67c0d07228d98
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "Maze"#) -}
+c510c8c09dba18e65426708f5b69fd2e
+  $trModule2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "main"#) -}
+f9e99e4890a971a24d52fc5475f4140b
+  $w$c/= ::
+    GHC.Prim.Int#
+    -> GHC.Types.Int
+    -> GHC.Prim.Int#
+    -> GHC.Types.Int
+    -> GHC.Types.Bool
+  {- Arity: 4, HasNoCafRefs,
+     Strictness: <S,U><L,1*U(U)><S,U><L,1*U(U)>, Inline: [0],
+     Unfolding: (\ (ww :: GHC.Prim.Int#)
+                   (ww1 :: GHC.Types.Int)
+                   (ww2 :: GHC.Prim.Int#)
+                   (ww3 :: GHC.Types.Int) ->
+                 case GHC.Prim.tagToEnum#
+                        @ GHC.Types.Bool
+                        (GHC.Prim.==# ww ww2) of wild {
+                   GHC.Types.False -> GHC.Types.True
+                   GHC.Types.True
+                   -> case ww1 of wild1 { GHC.Types.I# x1 ->
+                      case ww3 of wild2 { GHC.Types.I# y1 ->
+                      case GHC.Prim.tagToEnum#
+                             @ GHC.Types.Bool
+                             (GHC.Prim.==# x1 y1) of wild3 {
+                        GHC.Types.False -> GHC.Types.True
+                        GHC.Types.True -> GHC.Types.False } } } }) -}
+f0dd9fb2f93dd4dd8aec2b61e40f2fe1
+  $w$c== ::
+    GHC.Prim.Int#
+    -> GHC.Types.Int
+    -> GHC.Prim.Int#
+    -> GHC.Types.Int
+    -> GHC.Types.Bool
+  {- Arity: 4, HasNoCafRefs,
+     Strictness: <S,U><L,1*U(U)><S,U><L,1*U(U)>, Inline: [0],
+     Unfolding: (\ (ww :: GHC.Prim.Int#)
+                   (ww1 :: GHC.Types.Int)
+                   (ww2 :: GHC.Prim.Int#)
+                   (ww3 :: GHC.Types.Int) ->
+                 case GHC.Prim.tagToEnum#
+                        @ GHC.Types.Bool
+                        (GHC.Prim.==# ww ww2) of wild {
+                   GHC.Types.False -> GHC.Types.False
+                   GHC.Types.True -> GHC.Classes.eqInt ww1 ww3 }) -}
+e66bfcc48ee8b8486ce143db87643757
+  $wfreeCell ::
+    GHC.Prim.Int#
+    -> Maze.Position
+    -> (Maze.Position -> GHC.Types.Bool)
+    -> Maze.Position
+  {- Arity: 3, Strictness: <S,U><L,U(U(U),U(U))><L,C(U)>,
+     Inline: [0],
+     Unfolding: (\ (ww :: GHC.Prim.Int#)
+                   (w :: Maze.Position)
+                   (w1 :: Maze.Position -> GHC.Types.Bool) ->
+                 case GHC.Prim.tagToEnum#
+                        @ GHC.Types.Bool
+                        (GHC.Prim.># 0# ww) of wild {
+                   GHC.Types.False
+                   -> let {
+                        lvl1 :: [GHC.Types.Int] = GHC.Enum.eftInt 0# ww
+                      } in
+                      letrec {
+                        go :: GHC.Prim.Int# -> [Maze.Position]
+                          {- Arity: 1, Strictness: <L,U> -}
+                        = \ (x1 :: GHC.Prim.Int#) ->
+                          let {
+                            ds :: GHC.Types.Int {- Strictness: m -} = GHC.Types.I# x1
+                          } in
+                          let {
+                            z :: [Maze.Position]
+                            = case GHC.Prim.tagToEnum#
+                                     @ GHC.Types.Bool
+                                     (GHC.Prim.==# x1 ww) of wild1 {
+                                GHC.Types.False -> go (GHC.Prim.+# x1 1#)
+                                GHC.Types.True -> GHC.Types.[] @ Maze.Position }
+                          } in
+                          letrec {
+                            go1 :: [GHC.Types.Int] -> [Maze.Position]
+                              {- Arity: 1, Strictness: <S,1*U> -}
+                            = \ (ds1 :: [GHC.Types.Int]) ->
+                              case ds1 of wild1 {
+                                [] -> z
+                                : y1 ys
+                                -> case w1 (Maze.Position ds y1) of wild2 {
+                                     GHC.Types.False
+                                     -> GHC.Types.: @ Maze.Position (Maze.Position ds y1) (go1 ys)
+                                     GHC.Types.True -> go1 ys } }
+                          } in
+                          go1 lvl1
+                      } in
+                      case go 0# of wild1 {
+                        [] -> Maze.freeCell2
+                        : ipv ipv1
+                        -> letrec {
+                             go1 :: [Maze.Position] -> Maze.Position
+                               {- Arity: 1, Strictness: <S,1*U> -}
+                             = \ (ds :: [Maze.Position]) ->
+                               case ds of wild2 {
+                                 [] -> Maze.freeCell1
+                                 : x1 ds1
+                                 -> case ds1 of wild3 {
+                                      [] -> x1
+                                      : ipv2 ipv3
+                                      -> case w of wild4 { Maze.Position x2 y1 ->
+                                         case x1 of wild5 { Maze.Position x3 y2 ->
+                                         case x3 of wild6 { GHC.Types.I# x4 ->
+                                         case x2 of wild7 { GHC.Types.I# y4 ->
+                                         case y2 of wild8 { GHC.Types.I# x5 ->
+                                         case y1 of wild9 { GHC.Types.I# y5 ->
+                                         let {
+                                           x6 :: GHC.Prim.Int# = GHC.Prim.-# x4 y4
+                                         } in
+                                         let {
+                                           x7 :: GHC.Prim.Int# = GHC.Prim.-# x5 y5
+                                         } in
+                                         case {__pkg_ccall base-4.9.1.0 rintDouble GHC.Prim.Double#
+                                                                                   -> GHC.Prim.State#
+                                                                                        GHC.Prim.RealWorld
+                                                                                   -> (# GHC.Prim.State#
+                                                                                           GHC.Prim.RealWorld,
+                                                                                         GHC.Prim.Double# #)}
+                                                (GHC.Prim.sqrtDouble#
+                                                   (GHC.Prim.int2Double#
+                                                      (GHC.Prim.+#
+                                                         (GHC.Prim.*# x6 x6)
+                                                         (GHC.Prim.*# x7 x7))))
+                                                GHC.Prim.realWorld# of wild10 { (#,#) ds2 ds3 ->
+                                         case go1 wild3 of wild11 { Maze.Position x8 y6 ->
+                                         case x8 of wild12 { GHC.Types.I# x9 ->
+                                         case y6 of wild13 { GHC.Types.I# x10 ->
+                                         let {
+                                           x11 :: GHC.Prim.Int# = GHC.Prim.-# x9 y4
+                                         } in
+                                         let {
+                                           x12 :: GHC.Prim.Int# = GHC.Prim.-# x10 y5
+                                         } in
+                                         case {__pkg_ccall base-4.9.1.0 rintDouble GHC.Prim.Double#
+                                                                                   -> GHC.Prim.State#
+                                                                                        GHC.Prim.RealWorld
+                                                                                   -> (# GHC.Prim.State#
+                                                                                           GHC.Prim.RealWorld,
+                                                                                         GHC.Prim.Double# #)}
+                                                (GHC.Prim.sqrtDouble#
+                                                   (GHC.Prim.int2Double#
+                                                      (GHC.Prim.+#
+                                                         (GHC.Prim.*# x11 x11)
+                                                         (GHC.Prim.*# x12 x12))))
+                                                GHC.Prim.realWorld# of wild14 { (#,#) ds4 ds5 ->
+                                         let {
+                                           x# :: GHC.Prim.Int# = GHC.Prim.double2Int# ds3
+                                         } in
+                                         let {
+                                           y# :: GHC.Prim.Int# = GHC.Prim.double2Int# ds5
+                                         } in
+                                         case GHC.Prim.tagToEnum#
+                                                @ GHC.Types.Bool
+                                                (GHC.Prim.<# x# y#) of wild15 {
+                                           GHC.Types.False
+                                           -> case GHC.Prim.tagToEnum#
+                                                     @ GHC.Types.Bool
+                                                     (GHC.Prim.==# x# y#) of wild16 {
+                                                GHC.Types.False -> wild11 GHC.Types.True -> wild5 }
+                                           GHC.Types.True -> wild5 } } } } } } } } } } } } } }
+                           } in
+                           go1 wild1 }
+                   GHC.Types.True -> Maze.freeCell2 }) -}
+4965f8e7ebad0a479b337d66afc4218a
+  $wmove ::
+    Maze.Maze
+    -> Maze.Position
+    -> Maze.Position
+    -> Maze.Direction
+    -> (# Maze.Maze, Maze.Position, Maze.Position #)
+  {- Arity: 4, HasNoCafRefs,
+     Strictness: <L,U(U(U),U(U),U)><L,1*U(U(U),U(U))><L,U><L,1*U>,
+     Inline: [0],
+     Unfolding: (\ (ww :: Maze.Maze)
+                   (ww1 :: Maze.Position)
+                   (ww2 :: Maze.Position)
+                   (w :: Maze.Direction) ->
+                 (# ww,
+                    case ww1 of wild { Maze.Position x1 y1 ->
+                    let {
+                      $w$j :: GHC.Prim.Int#
+                              -> GHC.Types.Int -> Maze.Position -> Maze.Position
+                        {- Arity: 3, Strictness: <S,U><L,U(U)><L,U(U,U)>, Inline: [0] -}
+                      = \ (ww3 :: GHC.Prim.Int#)[OneShot]
+                          (w1 :: GHC.Types.Int)[OneShot]
+                          (w2 :: Maze.Position)[OneShot] ->
+                        case GHC.Prim.tagToEnum#
+                               @ GHC.Types.Bool
+                               (GHC.Prim.<# ww3 0#) of wild1 {
+                          GHC.Types.False
+                          -> case w1 of wild2 { GHC.Types.I# x2 ->
+                             case GHC.Prim.tagToEnum#
+                                    @ GHC.Types.Bool
+                                    (GHC.Prim.<# x2 0#) of wild3 {
+                               GHC.Types.False
+                               -> case ww of wild4 { Maze.Maze ds ds1 ds2 ->
+                                  case ds of wild5 { GHC.Types.I# y2 ->
+                                  case GHC.Prim.tagToEnum#
+                                         @ GHC.Types.Bool
+                                         (GHC.Prim.>=# ww3 y2) of wild6 {
+                                    GHC.Types.False
+                                    -> case ds1 of wild7 { GHC.Types.I# y3 ->
+                                       case GHC.Prim.tagToEnum#
+                                              @ GHC.Types.Bool
+                                              (GHC.Prim.>=# x2 y3) of wild8 {
+                                         GHC.Types.False
+                                         -> case ds2 w2 of wild9 {
+                                              GHC.Types.False -> w2 GHC.Types.True -> wild }
+                                         GHC.Types.True -> wild } }
+                                    GHC.Types.True -> wild } } }
+                               GHC.Types.True -> wild } }
+                          GHC.Types.True -> wild }
+                    } in
+                    case w of wild1 {
+                      Maze.East
+                      -> case x1 of wild2 { GHC.Types.I# x2 ->
+                         let {
+                           ds :: GHC.Prim.Int# = GHC.Prim.+# x2 1#
+                         } in
+                         $w$j ds y1 (Maze.Position (GHC.Types.I# ds) y1) }
+                      Maze.North
+                      -> case x1 of ww3 { GHC.Types.I# ww4 ->
+                         let {
+                           ds :: GHC.Types.Int
+                           = case y1 of wild2 { GHC.Types.I# x2 ->
+                             GHC.Types.I# (GHC.Prim.+# x2 -1#) }
+                         } in
+                         $w$j ww4 ds (Maze.Position ww3 ds) }
+                      Maze.West
+                      -> case x1 of wild2 { GHC.Types.I# x2 ->
+                         let {
+                           ds :: GHC.Prim.Int# = GHC.Prim.+# x2 -1#
+                         } in
+                         $w$j ds y1 (Maze.Position (GHC.Types.I# ds) y1) }
+                      Maze.South
+                      -> case x1 of ww3 { GHC.Types.I# ww4 ->
+                         let {
+                           ds :: GHC.Types.Int
+                           = case y1 of wild2 { GHC.Types.I# x2 ->
+                             GHC.Types.I# (GHC.Prim.+# x2 1#) }
+                         } in
+                         $w$j ww4 ds (Maze.Position ww3 ds) } } },
+                    ww2 #)) -}
+64025bbe65a75b5993c64b8fde153faf
+  $wwon ::
+    GHC.Prim.Int#
+    -> GHC.Types.Int
+    -> GHC.Prim.Int#
+    -> GHC.Types.Int
+    -> GHC.Types.Bool
+  {- Arity: 4, HasNoCafRefs,
+     Strictness: <S,U><L,1*U(U)><S,U><L,1*U(U)>, Inline: [0],
+     Unfolding: (\ (ww :: GHC.Prim.Int#)
+                   (ww1 :: GHC.Types.Int)
+                   (ww2 :: GHC.Prim.Int#)
+                   (ww3 :: GHC.Types.Int) ->
+                 case GHC.Prim.tagToEnum#
+                        @ GHC.Types.Bool
+                        (GHC.Prim.==# ww2 ww) of wild {
+                   GHC.Types.False -> GHC.Types.False
+                   GHC.Types.True -> GHC.Classes.eqInt ww3 ww1 }) -}
+a59d3a6515f1359e70764c2dbe15e55a
+  data Direction = East | North | West | South
+dc7d356c805a014fb620732a9f21c144
+  data GameState
+    = GameState {maze :: Maze.Maze,
+                 position :: Maze.Position,
+                 target :: Maze.Position}
+38dc2932652e4e320786ae1c3dfcbe1d
+  data Maze
+    = Maze {width :: GHC.Types.Int,
+            height :: GHC.Types.Int,
+            blocked :: Maze.Position -> GHC.Types.Bool}
+c979e20abe21b77204dc8ee0b1aa925b
+  data Position = Position {x :: GHC.Types.Int, y :: GHC.Types.Int}
+a59d3a6515f1359e70764c2dbe15e55a
+  axiom Rep_Direction::
+      GHC.Generics.Rep Maze.Direction
+        = GHC.Generics.D1
+            ('GHC.Generics.MetaData "Direction" "Maze" "main" 'GHC.Types.False)
+            ((GHC.Generics.C1
+                ('GHC.Generics.MetaCons
+                   "East" 'GHC.Generics.PrefixI 'GHC.Types.False)
+                GHC.Generics.U1
+              GHC.Generics.:+: GHC.Generics.C1
+                                 ('GHC.Generics.MetaCons
+                                    "North" 'GHC.Generics.PrefixI 'GHC.Types.False)
+                                 GHC.Generics.U1)
+             GHC.Generics.:+: (GHC.Generics.C1
+                                 ('GHC.Generics.MetaCons
+                                    "West" 'GHC.Generics.PrefixI 'GHC.Types.False)
+                                 GHC.Generics.U1
+                               GHC.Generics.:+: GHC.Generics.C1
+                                                  ('GHC.Generics.MetaCons
+                                                     "South" 'GHC.Generics.PrefixI 'GHC.Types.False)
+                                                  GHC.Generics.U1))
+dc7d356c805a014fb620732a9f21c144
+  axiom Rep_GameState::
+      GHC.Generics.Rep Maze.GameState
+        = GHC.Generics.D1
+            ('GHC.Generics.MetaData "GameState" "Maze" "main" 'GHC.Types.False)
+            (GHC.Generics.C1
+               ('GHC.Generics.MetaCons
+                  "GameState" 'GHC.Generics.PrefixI 'GHC.Types.True)
+               (GHC.Generics.S1
+                  ('GHC.Generics.MetaSel
+                     ('GHC.Base.Just "maze")
+                     'GHC.Generics.NoSourceUnpackedness
+                     'GHC.Generics.NoSourceStrictness
+                     'GHC.Generics.DecidedLazy)
+                  (GHC.Generics.Rec0 Maze.Maze)
+                GHC.Generics.:*: (GHC.Generics.S1
+                                    ('GHC.Generics.MetaSel
+                                       ('GHC.Base.Just "position")
+                                       'GHC.Generics.NoSourceUnpackedness
+                                       'GHC.Generics.NoSourceStrictness
+                                       'GHC.Generics.DecidedLazy)
+                                    (GHC.Generics.Rec0 Maze.Position)
+                                  GHC.Generics.:*: GHC.Generics.S1
+                                                     ('GHC.Generics.MetaSel
+                                                        ('GHC.Base.Just "target")
+                                                        'GHC.Generics.NoSourceUnpackedness
+                                                        'GHC.Generics.NoSourceStrictness
+                                                        'GHC.Generics.DecidedLazy)
+                                                     (GHC.Generics.Rec0 Maze.Position))))
+c979e20abe21b77204dc8ee0b1aa925b
+  axiom Rep_Position::
+      GHC.Generics.Rep Maze.Position
+        = GHC.Generics.D1
+            ('GHC.Generics.MetaData "Position" "Maze" "main" 'GHC.Types.False)
+            (GHC.Generics.C1
+               ('GHC.Generics.MetaCons
+                  "Position" 'GHC.Generics.PrefixI 'GHC.Types.True)
+               (GHC.Generics.S1
+                  ('GHC.Generics.MetaSel
+                     ('GHC.Base.Just "x")
+                     'GHC.Generics.NoSourceUnpackedness
+                     'GHC.Generics.NoSourceStrictness
+                     'GHC.Generics.DecidedLazy)
+                  (GHC.Generics.Rec0 GHC.Types.Int)
+                GHC.Generics.:*: GHC.Generics.S1
+                                   ('GHC.Generics.MetaSel
+                                      ('GHC.Base.Just "y")
+                                      'GHC.Generics.NoSourceUnpackedness
+                                      'GHC.Generics.NoSourceStrictness
+                                      'GHC.Generics.DecidedLazy)
+                                   (GHC.Generics.Rec0 GHC.Types.Int)))
+03614f13fc0d5b981ed6d160d3d170b1
+  addPos :: Maze.Position -> Maze.Position -> Maze.Position
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S,1*U(1*U(U),1*U(U))><S,1*U(1*U(U),1*U(U))>m,
+     Unfolding: InlineRule (2, True, False)
+                (\ (ds :: Maze.Position) (ds1 :: Maze.Position) ->
+                 case ds of wild { Maze.Position x1 y1 ->
+                 case ds1 of wild1 { Maze.Position x2 y2 ->
+                 Maze.Position
+                   (GHC.Num.$fNumInt_$c+ x1 x2)
+                   (GHC.Num.$fNumInt_$c+ y1 y2) } }) -}
+a5f71e6cb7fe42fd4b298e927b790674
+  blocked :: Maze.Maze -> Maze.Position -> GHC.Types.Bool
+  RecSel Left Maze.Maze
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(LLS),1*U(A,A,1*U)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: Maze.Maze) ->
+                 case ds of wild { Maze.Maze ds1 ds2 ds3 -> ds3 }) -}
+0d951a26882cfb4575ec32e479b2d34f
+  dist :: Maze.Position -> Maze.Position -> GHC.Types.Int
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S(S(S)S(S)),1*U(1*U(U),1*U(U))><S(S(S)S(S)),1*U(1*U(U),1*U(U))>m,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (2, True, False)
+                (\ (w :: Maze.Position) (w1 :: Maze.Position) ->
+                 case w of ww { Maze.Position ww1 ww2 ->
+                 case ww1 of ww3 { GHC.Types.I# ww4 ->
+                 case ww2 of ww5 { GHC.Types.I# ww6 ->
+                 case w1 of ww7 { Maze.Position ww8 ww9 ->
+                 case ww8 of ww10 { GHC.Types.I# ww11 ->
+                 case ww9 of ww12 { GHC.Types.I# ww13 ->
+                 let {
+                   x1 :: GHC.Prim.Int# = GHC.Prim.-# ww13 ww6
+                 } in
+                 let {
+                   x2 :: GHC.Prim.Int# = GHC.Prim.-# ww11 ww4
+                 } in
+                 case {__pkg_ccall base-4.9.1.0 rintDouble GHC.Prim.Double#
+                                                           -> GHC.Prim.State# GHC.Prim.RealWorld
+                                                           -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+                                                                 GHC.Prim.Double# #)}
+                        (GHC.Prim.sqrtDouble#
+                           (GHC.Prim.int2Double#
+                              (GHC.Prim.+# (GHC.Prim.*# x2 x2) (GHC.Prim.*# x1 x1))))
+                        GHC.Prim.realWorld# of wild { (#,#) ds2 ds3 ->
+                 GHC.Types.I# (GHC.Prim.double2Int# ds3) } } } } } } }) -}
+a209782934be04d5786d04587a5a1da8
+  freeCell ::
+    GHC.Types.Int
+    -> Maze.Position
+    -> (Maze.Position -> GHC.Types.Bool)
+    -> Maze.Position
+  {- Arity: 3, Strictness: <S(S),1*U(U)><L,U(U(U),U(U))><L,C(U)>,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (3, True, False)
+                (\ (w :: GHC.Types.Int)
+                   (w1 :: Maze.Position)
+                   (w2 :: Maze.Position -> GHC.Types.Bool) ->
+                 case w of ww { GHC.Types.I# ww1 -> Maze.$wfreeCell ww1 w1 w2 }) -}
+b472a9968ee59b94d7d01050a6b18cc7
+  freeCell1 :: Maze.Position
+  {- Strictness: x -}
+5254cf526f14bec39256e10cd5aee80b
+  freeCell2 :: Maze.Position
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (Maze.Position Maze.freeCell3 Maze.freeCell3) -}
+4da5caaccab67717a2aeeb3eb84a209f
+  freeCell3 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 0#) -}
+b44c8fa5aa86a83a00bb836d22693983
+  height :: Maze.Maze -> GHC.Types.Int
+  RecSel Left Maze.Maze
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(LSL),1*U(A,1*U(U),A)>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: Maze.Maze) ->
+                 case ds of wild { Maze.Maze ds1 ds2 ds3 -> ds2 }) -}
+375496613668309df2ae5c96d9c6b72d
+  maze :: Maze.GameState -> Maze.Maze
+  RecSel Left Maze.GameState
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <S(SLL),1*U(1*U(U,U,U),A,A)>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: Maze.GameState) ->
+                 case ds of wild { Maze.GameState ds1 ds2 ds3 -> ds1 }) -}
+51ea509a1609b4d2c68a29b8e6311751
+  move :: Maze.GameState -> Maze.Direction -> Maze.GameState
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S,1*U(U(U(U),U(U),U),1*U(U(U),U(U)),U)><L,1*U>m,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (2, True, False)
+                (\ (w :: Maze.GameState) (w1 :: Maze.Direction) ->
+                 case w of ww { Maze.GameState ww1 ww2 ww3 ->
+                 case Maze.$wmove ww1 ww2 ww3 w1 of ww4 { (#,,#) ww5 ww6 ww7 ->
+                 Maze.GameState ww5 ww6 ww7 } }) -}
+2ca5cb8cae6631195e4bb088766443d1
+  newGame :: GHC.Types.Int -> GHC.Types.IO Maze.GameState
+  {- Arity: 2, Strictness: <L,U(U)><S,U>,
+     Unfolding: InlineRule (0, True, True)
+                Maze.newGame1
+                  `cast`
+                (<GHC.Types.Int>_R
+                 ->_R Sym (GHC.Types.N:IO[0] <Maze.GameState>_R)) -}
+67e431482a2e5b136b4548b477a603e0
+  newGame1 ::
+    GHC.Types.Int
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, Maze.GameState #)
+  {- Arity: 2, Strictness: <L,U(U)><S,U>,
+     Unfolding: (\ (s :: GHC.Types.Int)
+                   (eta :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                 case Maze.newGame2 s eta of ds1 { (#,#) ipv ipv1 ->
+                 (# ipv,
+                    Maze.GameState
+                      ipv1
+                      (case s of ww { GHC.Types.I# ww1 ->
+                       Maze.$wfreeCell
+                         ww1
+                         Maze.freeCell2
+                         (case ipv1 of wild { Maze.Maze ds ds2 ds3 -> ds3 }) })
+                      (case s of ww { GHC.Types.I# ww1 ->
+                       Maze.$wfreeCell
+                         ww1
+                         (Maze.Position
+                            (GHC.Types.I# (GHC.Prim.-# ww1 1#))
+                            (GHC.Types.I# (GHC.Prim.-# ww1 1#)))
+                         (case ipv1 of wild { Maze.Maze ds ds2 ds3 -> ds3 }) }) #) }) -}
+81064575ad69d7a4d06fd7bb05b2e607
+  newGame2 ::
+    GHC.Types.Int
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, Maze.Maze #)
+  {- Arity: 2, Strictness: <L,U(U)><S,U>,
+     Unfolding: (\ (s :: GHC.Types.Int)
+                   (eta :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                 case Cellular.runCA1 s eta of ds1 { (#,#) ipv ipv1 ->
+                 (# ipv,
+                    Maze.Maze
+                      s
+                      s
+                      (\ (p :: Maze.Position) ->
+                       case Cellular.$wpoly_go10
+                              @ Cellular.Status
+                              (case p of wild { Maze.Position ds ds2 -> ds })
+                              (case p of wild { Maze.Position ds ds2 -> ds2 })
+                              ipv1 of wild {
+                         GHC.Base.Nothing -> GHC.Types.True
+                         GHC.Base.Just ds
+                         -> case ds of wild1 {
+                              Cellular.Alive -> GHC.Types.True
+                              Cellular.Dead -> GHC.Types.False } }) #) }) -}
+4707bf14ab2cc06281015aadfb89e133
+  newMaze :: GHC.Types.Int -> GHC.Types.IO Maze.Maze
+  {- Arity: 2, Strictness: <L,U(U)><S,U>,
+     Unfolding: InlineRule (0, True, True)
+                Maze.newGame2
+                  `cast`
+                (<GHC.Types.Int>_R ->_R Sym (GHC.Types.N:IO[0] <Maze.Maze>_R)) -}
+643aa6f2139e00278a662dfef0a47d60
+  position :: Maze.GameState -> Maze.Position
+  RecSel Left Maze.GameState
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(LSL),1*U(A,1*U(U,U),A)>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: Maze.GameState) ->
+                 case ds of wild { Maze.GameState ds1 ds2 ds3 -> ds2 }) -}
+78cb3ec87424c2ab82f4712e6b8f459a
+  target :: Maze.GameState -> Maze.Position
+  RecSel Left Maze.GameState
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(LLS),1*U(A,A,1*U(U,U))>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: Maze.GameState) ->
+                 case ds of wild { Maze.GameState ds1 ds2 ds3 -> ds3 }) -}
+6571fbe3f794395f8d70db00a785dff8
+  width :: Maze.Maze -> GHC.Types.Int
+  RecSel Left Maze.Maze
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(SLL),1*U(1*U(U),A,A)>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: Maze.Maze) ->
+                 case ds of wild { Maze.Maze ds1 ds2 ds3 -> ds1 }) -}
+6f8045bcda82d74cf11573244725bb72
+  won :: Maze.GameState -> GHC.Types.Bool
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <S(LS(S(S)L)S(S(S)L)),1*U(A,1*U(1*U(U),1*U(U)),1*U(1*U(U),1*U(U)))>,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (1, True, False)
+                (\ (w :: Maze.GameState) ->
+                 case w of ww { Maze.GameState ww1 ww2 ww3 ->
+                 case ww2 of ww4 { Maze.Position ww5 ww6 ->
+                 case ww5 of ww7 { GHC.Types.I# ww8 ->
+                 case ww3 of ww9 { Maze.Position ww10 ww11 ->
+                 case ww10 of ww12 { GHC.Types.I# ww13 ->
+                 Maze.$wwon ww8 ww6 ww13 ww11 } } } } }) -}
+7e31fc828fd6ab069ec850725544c346
+  x :: Maze.Position -> GHC.Types.Int
+  RecSel Left Maze.Position
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(SL),1*U(1*U(U),A)>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: Maze.Position) ->
+                 case ds of wild { Maze.Position ds1 ds2 -> ds1 }) -}
+659a36782a9e6a93ec793162541dccc5
+  y :: Maze.Position -> GHC.Types.Int
+  RecSel Left Maze.Position
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(LS),1*U(A,1*U(U))>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: Maze.Position) ->
+                 case ds of wild { Maze.Position ds1 ds2 -> ds2 }) -}
+instance [safe] GHC.Classes.Eq [Maze.Position] = Maze.$fEqPosition
+instance [safe] GHC.Generics.Generic [Maze.Direction]
+  = Maze.$fGenericDirection
+instance [safe] GHC.Generics.Generic [Maze.GameState]
+  = Maze.$fGenericGameState
+instance [safe] GHC.Generics.Generic [Maze.Position]
+  = Maze.$fGenericPosition
+family instance GHC.Generics.Rep [Maze.Direction]
+  = Maze.Rep_Direction
+family instance GHC.Generics.Rep [Maze.GameState]
+  = Maze.Rep_GameState
+family instance GHC.Generics.Rep [Maze.Position]
+  = Maze.Rep_Position
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: safe
+require own pkg trusted: False
+

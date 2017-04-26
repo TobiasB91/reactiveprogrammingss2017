@@ -1,0 +1,78 @@
+\documentclass{rp}
+
+\begin{document}
+
+%% Daten der Übungsgruppe (am besten in separater Datei defs.tex ablegen,
+%% und mit \input{defs} immer wieder einbinden):
+
+% Name des Tutors:
+\tutor{Martin Ring}
+% Nummer der Übungsgruppe:
+\uebungsgruppe{1} 
+% Teilnehmer (bis zu drei, mit '\\' getrennt):
+\teilnehmer{Tobias Brandt \\ Stefan Heitmann \\ }
+
+\maketitle{1}          % Übungsblatt-Nr.
+{27.04.2017} % Abgabe-Datum
+
+\exercise{Labyrinthe erzeugen}
+\section*{Cellular.hs}
+Ein zellulärer Automat ist bei uns ein \textit{State Monad Transformer}, der ein Board hält. Ein Board ist bei uns einfach eine Map von Koordinaten auf den Status der jeweiligen Zelle.
+\IncludeFun{9}{12}{../server/Cellular.hs}
+
+Regeln werden bei uns als eine Funktion repräsentiert, die eine Zelle und ein Board entgegennimmt und einen entsprechenden neuen Status für diese Zelle liefert. 
+\IncludeFun{13}{13}{../server/Cellular.hs}
+
+Die Maze-Regel ist demnach ebenfalls eine Funktion.
+\IncludeFun{15}{29}{../server/Cellular.hs}
+
+Die Funktion \textit{initialState} erzeugt einen zufälligen Anfangsstatus des Automaten. Die \textit{inner monad} des zellulären Automaten, ermöglicht es uns dabei die IO-Aktion \textit{randomRIO} direkt zu benutzen.
+\IncludeFun{44}{50}{../server/Cellular.hs}
+\newpage
+\textit{stepCellular} wendet eine Regel auf den gesamten Automaten an.
+\IncludeFun{31}{36}{../server/Cellular.hs}
+
+Die Funktion \textit{convergeCellular} wendet \textit{stepCellular} solange an, bis der Automat konvergiert. 
+\IncludeFun{38}{42}{../server/Cellular.hs}
+
+Um später den Automat leichter von außen benutzen zu können, wurden die Hilfsfunktion \textit{dead} und \textit{runCA} implementiert.\textit{dead} gibt Auskunft darüber, ob eine Zelle tot ist oder nicht. \textit{runCA} startet den Automaten und gibt den zuletzt gültigen Board-Zustand zurück. 
+\IncludeFun{52}{58}{../server/Cellular.hs}
+
+\section*{Maze.hs}
+Um neue Labyrinthe zu erzeugen, wurde die Funktion \textit{newMaze} so angepasst, dass sie alle Zellen, die nicht tot sind als \textit{blocked} ansieht. 
+\IncludeFun{43}{46}{../server/Maze.hs}
+
+Um eine (einigermaßen) geeignete Startposition zu suchen, wurde die Funktion \textit{freeCell} implementiert, die von einer gegeben Position aus, die am nähsten gelegende freie Zellenposition zurückgibt. 
+\IncludeFun{57}{63}{../server/Maze.hs}
+\newpage
+Die Funktion \textit{newGame} wurde so angepasst, dass sie die zuvor beschriebenen Funktionen aufruft und einen neuen GameState zurückgibt.
+\IncludeFun{48}{55}{../server/Maze.hs}
+
+\section*{Main.hs}
+Innerhalb von \textit{startGame} wurde das \textit{let-binding} in ein monadisches Binding geändert. Ebenso wurde der Zufallsgenerator entfernt. 
+\IncludeFun{18}{27}{../server/Main.hs}
+
+\exercise{Labyrinthe lösen}
+\section*{Main.scala}
+Das Lösen der Labyrinthe wurde mithilfe einer Breitensuche auf einer Warteschlange einer Richtungssequenz zum Lösen des Labyrinthes implementiert, welche terminiert, sobald sie den kürzesten Pfad findet. Diese wird innerhalb der Hilfsfunktionen \textit{solveMaze}, welche wiederum \textit{solve} enthält, aufgerufen.\\
+\textit{solveMaze} führt intern das Labyrinthlösen unter Berücksichtigung der Start- und Endposition sowie des Labyrinthes aus und verarbeitet dessen Lösung:
+\IncludeFun{62}{67}{../client/src/main/scala/Main.scala}
+\textit{solve} initialisiert die Warteschlange sowie eine für den Algorithmus notwendige Menge an besuchten Positionen:
+\IncludeFun{70}{74}{../client/src/main/scala/Main.scala} 
+Der Hauptalgorithmus der Berechnung des (kürzesten) Pfades \textit{shortestPath} sieht folgendermaßen aus:
+\IncludeFun{76}{96}{../client/src/main/scala/Main.scala}
+Wir prüfen, ob die Warteschlange leer ist. Ist diese leer, bedeutet es, dass es keinen Weg gibt und es wird zurückgegeben, dass es keine Lösung gibt (durch None).\\
+Ist die Warteschlange nicht leer, so prüfen wir zuerst, ob die momentan betrachtete Position die Endposition ist. Ist sie die Endposition, so geben wir die Richtungssequenz zu dieser Position aus.\\
+Wenn wir diese Position bereits besucht haben, so führen wir die Suche mit der nächsten Position fort.\\
+Anderenfalls extrahieren wir den aktuell betrachteten Pfad (Richtungssequenz \textit{newVisited}) der aktuell betrachteten Position, und fügen alle validen Nachbarpositionen mit dem jeweiligen Pfad von der aktuellen Position zur Warteschlange hinzu. Danach rufen wir \textit{shortestPath} auf den aktualisierten Werten auf.\\\\
+Interessant ist noch die Funktion zum Berechnen der Nachbarpositionen und dessen Richtung namens \textit{neighbours}:
+\IncludeFun{98}{115}{../client/src/main/scala/Main.scala}
+Innerhalb des for-Teils wird lediglich eine simple XOR-Schaltung implementiert, welche genau die Richtungen von der aktuellen Positionen berechnet, die jeweils ein Feld zur Seite sind (nicht diagonal). Zusätzlich werden die Grenzen des Labyrinths beachtet und nur nicht blockierte Felder als Nachbarn anerkannt.\\
+Für alle benachbarten Positionen wird danach die Richtungsbezeichnung von der aktuellen Position sowie die Position selbst zurückgegeben.\\\\\\
+Sollte ein Pfad gefunden worden sein, wird dieser dann mithilfe der \textit{sendPath}-Funktion an den Server weitergeleitet.
+\IncludeFun{52}{60}{../client/src/main/scala/Main.scala}
+\exercise{Tests}
+Die erste Aufgabe wurde durch mehrmaliges Aktualisieren des Webbrowsers getestet. So haben wir feststellen können, dass beim Aktualisieren jedesmal ein neues Labyrinth generiert wird.\\\\
+Da der Server durch die \textit{newGame}-Funktion es ermöglicht, verschiedene Labyrinthgrößen zu erzeugen, haben wir während des Testens die Größe verkleinert, sodass bei zureichender Größe Labyrinthe erzeugt worden sind, bei denen es einen Pfad vom Start zum Ende gab. Der kürzeste Weg wurde durch unseren Pfadealgorithmus in allen bekannten Fällen gefunden.
+\end{document}
+

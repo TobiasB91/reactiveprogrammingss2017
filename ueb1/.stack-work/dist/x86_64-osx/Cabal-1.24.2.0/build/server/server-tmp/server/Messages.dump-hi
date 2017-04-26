@@ -1,0 +1,905 @@
+
+==================== FINAL INTERFACE ====================
+2017-04-14 18:58:13.712518 UTC
+
+interface main@main:Messages [family instance module] 8002
+  interface hash: 991df70f9b4bd9610f23e00ff63fb027
+  ABI hash: 86ded7e996f4cc979c0d94c45676ef3b
+  export-list hash: 011281b2cee1606f32379d8cf7f515ab
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: 1cab32edc0691d37af4c6d33e771b8a9
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Messages.ClientMessage{Messages.Move}
+  Messages.ServerMessage{Messages.NewGame Messages.PositionUpdate Messages.ShowMessage}
+module dependencies: Cellular Maze
+package dependencies: array-0.5.1.1@array-0.5.1.1 base-4.9.1.0*
+                      containers-0.5.7.1@containers-0.5.7.1
+                      deepseq-1.4.2.0@deepseq-1.4.2.0 ghc-prim-0.5.0.0
+                      integer-gmp-1.0.0.1 mtl-2.2.1@mtl-2.2.1-BLKBelFsPB3BoFeSWSOYj6
+                      random-1.1@random-1.1-9tceXaeYIMZ4JrKq20Egog
+                      time-1.6.0.1@time-1.6.0.1 transformers-0.5.2.0@transformers-0.5.2.0
+orphans: base-4.9.1.0:GHC.Base base-4.9.1.0:GHC.Float
+         time-1.6.0.1@time-1.6.0.1:Data.Time.Calendar.Gregorian
+         time-1.6.0.1@time-1.6.0.1:Data.Time.Format.Parse
+         time-1.6.0.1@time-1.6.0.1:Data.Time.LocalTime.LocalTime
+         transformers-0.5.2.0@transformers-0.5.2.0:Control.Monad.Trans.Error
+family instance modules: base-4.9.1.0:Control.Applicative
+                         base-4.9.1.0:Data.Complex base-4.9.1.0:Data.Either
+                         base-4.9.1.0:Data.Functor.Const base-4.9.1.0:Data.Functor.Identity
+                         base-4.9.1.0:Data.List.NonEmpty base-4.9.1.0:Data.Monoid
+                         base-4.9.1.0:Data.Semigroup base-4.9.1.0:Data.Type.Equality
+                         base-4.9.1.0:Data.Version base-4.9.1.0:Data.Void
+                         base-4.9.1.0:GHC.Exts base-4.9.1.0:GHC.Generics
+                         base-4.9.1.0:GHC.IO.Exception base-4.9.1.0:GHC.TypeLits
+                         containers-0.5.7.1@containers-0.5.7.1:Data.Map.Base
+                         containers-0.5.7.1@containers-0.5.7.1:Data.Set.Base main@main:Maze
+import  -/  base-4.9.1.0:GHC.Base c4231c43c07e46080a26bf94094c7aa1
+import  -/  base-4.9.1.0:GHC.Generics 1dbec2bc7dd1c5bd8c89ed857eaed19b
+import  -/  base-4.9.1.0:Prelude 22dd289b8469a8fa8dc81cab7b237771
+import  -/  Maze 0ccad4cefa4955cb1ca462944b787f76
+  exports: d5b2d6c02dbac28d154d3d250e99c1dd
+  Direction a59d3a6515f1359e70764c2dbe15e55a
+  GameState dc7d356c805a014fb620732a9f21c144
+  Position c979e20abe21b77204dc8ee0b1aa925b
+aca3b5c4d6631c5a33e1097fee91614b
+  $fGenericClientMessage ::
+    GHC.Generics.Generic Messages.ClientMessage
+  DFunId
+  {- HasNoCafRefs, Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ Messages.ClientMessage
+                  Messages.$fGenericClientMessage_$cfrom
+                  Messages.$fGenericClientMessage_$cto -}
+aca3b5c4d6631c5a33e1097fee91614b
+  $fGenericClientMessage1 ::
+    Messages.ClientMessage
+    -> GHC.Generics.M1
+         GHC.Generics.C
+         ('GHC.Generics.MetaCons
+            "Move" 'GHC.Generics.PrefixI 'GHC.Types.True)
+         (GHC.Generics.M1
+            GHC.Generics.S
+            ('GHC.Generics.MetaSel
+               ('GHC.Base.Just "direction")
+               'GHC.Generics.NoSourceUnpackedness
+               'GHC.Generics.NoSourceStrictness
+               'GHC.Generics.DecidedLazy)
+            (GHC.Generics.K1 GHC.Generics.R Maze.Direction))
+         x
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(S),1*U(1*U)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ @ x (x1 :: Messages.ClientMessage) ->
+                 case x1 of wild { Messages.Move g1 ->
+                 g1
+                   `cast`
+                 (Trans
+                      (Sym (GHC.Generics.N:K1[0]
+                                <GHC.Generics.R>_P <Maze.Direction>_R <x>_P))
+                      (Trans
+                           (Sym (GHC.Generics.N:M1[0]
+                                     <GHC.Generics.S>_P
+                                     <'GHC.Generics.MetaSel
+                                        ('GHC.Base.Just "direction")
+                                        'GHC.Generics.NoSourceUnpackedness
+                                        'GHC.Generics.NoSourceStrictness
+                                        'GHC.Generics.DecidedLazy>_P
+                                     <GHC.Generics.K1 GHC.Generics.R Maze.Direction>_R))
+                           (Sym (GHC.Generics.N:M1[0]
+                                     <GHC.Generics.C>_P
+                                     <'GHC.Generics.MetaCons
+                                        "Move" 'GHC.Generics.PrefixI 'GHC.Types.True>_P
+                                     <GHC.Generics.M1
+                                        GHC.Generics.S
+                                        ('GHC.Generics.MetaSel
+                                           ('GHC.Base.Just "direction")
+                                           'GHC.Generics.NoSourceUnpackedness
+                                           'GHC.Generics.NoSourceStrictness
+                                           'GHC.Generics.DecidedLazy)
+                                        (GHC.Generics.K1
+                                           GHC.Generics.R Maze.Direction)>_R)) <x>_N)) }) -}
+aca3b5c4d6631c5a33e1097fee91614b
+  $fGenericClientMessage_$cfrom ::
+    Messages.ClientMessage -> GHC.Generics.Rep Messages.ClientMessage x
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(S),1*U(1*U)>,
+     Unfolding: InlineRule (0, True, True)
+                Messages.$fGenericClientMessage1
+                  `cast`
+                (forall (x :: <GHC.Types.*>_N).
+                 <Messages.ClientMessage>_R
+                 ->_R Trans
+                          (Sym (GHC.Generics.N:M1[0]
+                                    <GHC.Generics.D>_P
+                                    <'GHC.Generics.MetaData
+                                       "ClientMessage" "Messages" "main" 'GHC.Types.False>_P
+                                    <GHC.Generics.M1
+                                       GHC.Generics.C
+                                       ('GHC.Generics.MetaCons
+                                          "Move" 'GHC.Generics.PrefixI 'GHC.Types.True)
+                                       (GHC.Generics.M1
+                                          GHC.Generics.S
+                                          ('GHC.Generics.MetaSel
+                                             ('GHC.Base.Just "direction")
+                                             'GHC.Generics.NoSourceUnpackedness
+                                             'GHC.Generics.NoSourceStrictness
+                                             'GHC.Generics.DecidedLazy)
+                                          (GHC.Generics.K1 GHC.Generics.R Maze.Direction))>_R))
+                          (Sub (Sym (Messages.Rep_ClientMessage[0]))) <x>_N) -}
+aca3b5c4d6631c5a33e1097fee91614b
+  $fGenericClientMessage_$cto ::
+    GHC.Generics.Rep Messages.ClientMessage x -> Messages.ClientMessage
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,U>m,
+     Unfolding: InlineRule (1, True, True)
+                (\ @ x (ds :: GHC.Generics.Rep Messages.ClientMessage x) ->
+                 Messages.Move
+                   ds
+                     `cast`
+                   (Trans
+                        (Trans
+                             (Sub (Messages.Rep_ClientMessage[0]))
+                             (Trans
+                                  (GHC.Generics.N:M1[0]
+                                       <GHC.Generics.D>_P
+                                       <'GHC.Generics.MetaData
+                                          "ClientMessage" "Messages" "main" 'GHC.Types.False>_P
+                                       <GHC.Generics.M1
+                                          GHC.Generics.C
+                                          ('GHC.Generics.MetaCons
+                                             "Move" 'GHC.Generics.PrefixI 'GHC.Types.True)
+                                          (GHC.Generics.M1
+                                             GHC.Generics.S
+                                             ('GHC.Generics.MetaSel
+                                                ('GHC.Base.Just "direction")
+                                                'GHC.Generics.NoSourceUnpackedness
+                                                'GHC.Generics.NoSourceStrictness
+                                                'GHC.Generics.DecidedLazy)
+                                             (GHC.Generics.K1 GHC.Generics.R Maze.Direction))>_R)
+                                  (Trans
+                                       (GHC.Generics.N:M1[0]
+                                            <GHC.Generics.C>_P
+                                            <'GHC.Generics.MetaCons
+                                               "Move" 'GHC.Generics.PrefixI 'GHC.Types.True>_P
+                                            <GHC.Generics.M1
+                                               GHC.Generics.S
+                                               ('GHC.Generics.MetaSel
+                                                  ('GHC.Base.Just "direction")
+                                                  'GHC.Generics.NoSourceUnpackedness
+                                                  'GHC.Generics.NoSourceStrictness
+                                                  'GHC.Generics.DecidedLazy)
+                                               (GHC.Generics.K1 GHC.Generics.R Maze.Direction)>_R)
+                                       (GHC.Generics.N:M1[0]
+                                            <GHC.Generics.S>_P
+                                            <'GHC.Generics.MetaSel
+                                               ('GHC.Base.Just "direction")
+                                               'GHC.Generics.NoSourceUnpackedness
+                                               'GHC.Generics.NoSourceStrictness
+                                               'GHC.Generics.DecidedLazy>_P
+                                            <GHC.Generics.K1
+                                               GHC.Generics.R Maze.Direction>_R))) <x>_N)
+                        (GHC.Generics.N:K1[0]
+                             <GHC.Generics.R>_P <Maze.Direction>_R <x>_P))) -}
+48076effc3a43e7375e9218f059a2df1
+  $fGenericServerMessage ::
+    GHC.Generics.Generic Messages.ServerMessage
+  DFunId
+  {- HasNoCafRefs, Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ Messages.ServerMessage
+                  Messages.$fGenericServerMessage_$cfrom
+                  Messages.$fGenericServerMessage_$cto -}
+48076effc3a43e7375e9218f059a2df1
+  $fGenericServerMessage1 ::
+    Messages.ServerMessage
+    -> (GHC.Generics.:+:)
+         (GHC.Generics.M1
+            GHC.Generics.C
+            ('GHC.Generics.MetaCons
+               "NewGame" 'GHC.Generics.PrefixI 'GHC.Types.True)
+            (GHC.Generics.M1
+               GHC.Generics.S
+               ('GHC.Generics.MetaSel
+                  ('GHC.Base.Just "state")
+                  'GHC.Generics.NoSourceUnpackedness
+                  'GHC.Generics.NoSourceStrictness
+                  'GHC.Generics.DecidedLazy)
+               (GHC.Generics.K1 GHC.Generics.R Maze.GameState)))
+         (GHC.Generics.M1
+            GHC.Generics.C
+            ('GHC.Generics.MetaCons
+               "PositionUpdate" 'GHC.Generics.PrefixI 'GHC.Types.True)
+            (GHC.Generics.M1
+               GHC.Generics.S
+               ('GHC.Generics.MetaSel
+                  ('GHC.Base.Just "pos")
+                  'GHC.Generics.NoSourceUnpackedness
+                  'GHC.Generics.NoSourceStrictness
+                  'GHC.Generics.DecidedLazy)
+               (GHC.Generics.K1 GHC.Generics.R Maze.Position))
+          GHC.Generics.:+: GHC.Generics.M1
+                             GHC.Generics.C
+                             ('GHC.Generics.MetaCons
+                                "ShowMessage" 'GHC.Generics.PrefixI 'GHC.Types.True)
+                             (GHC.Generics.M1
+                                GHC.Generics.S
+                                ('GHC.Generics.MetaSel
+                                   ('GHC.Base.Just "text")
+                                   'GHC.Generics.NoSourceUnpackedness
+                                   'GHC.Generics.NoSourceStrictness
+                                   'GHC.Generics.DecidedLazy)
+                                (GHC.Generics.K1 GHC.Generics.R GHC.Base.String)))
+         x
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ @ x (x1 :: Messages.ServerMessage) ->
+                 case x1 of wild {
+                   Messages.NewGame g1
+                   -> GHC.Generics.L1
+                        @ (GHC.Generics.M1
+                             GHC.Generics.C
+                             ('GHC.Generics.MetaCons
+                                "NewGame" 'GHC.Generics.PrefixI 'GHC.Types.True)
+                             (GHC.Generics.M1
+                                GHC.Generics.S
+                                ('GHC.Generics.MetaSel
+                                   ('GHC.Base.Just "state")
+                                   'GHC.Generics.NoSourceUnpackedness
+                                   'GHC.Generics.NoSourceStrictness
+                                   'GHC.Generics.DecidedLazy)
+                                (GHC.Generics.K1 GHC.Generics.R Maze.GameState)))
+                        @ (GHC.Generics.M1
+                             GHC.Generics.C
+                             ('GHC.Generics.MetaCons
+                                "PositionUpdate" 'GHC.Generics.PrefixI 'GHC.Types.True)
+                             (GHC.Generics.M1
+                                GHC.Generics.S
+                                ('GHC.Generics.MetaSel
+                                   ('GHC.Base.Just "pos")
+                                   'GHC.Generics.NoSourceUnpackedness
+                                   'GHC.Generics.NoSourceStrictness
+                                   'GHC.Generics.DecidedLazy)
+                                (GHC.Generics.K1 GHC.Generics.R Maze.Position))
+                           GHC.Generics.:+: GHC.Generics.M1
+                                              GHC.Generics.C
+                                              ('GHC.Generics.MetaCons
+                                                 "ShowMessage"
+                                                 'GHC.Generics.PrefixI
+                                                 'GHC.Types.True)
+                                              (GHC.Generics.M1
+                                                 GHC.Generics.S
+                                                 ('GHC.Generics.MetaSel
+                                                    ('GHC.Base.Just "text")
+                                                    'GHC.Generics.NoSourceUnpackedness
+                                                    'GHC.Generics.NoSourceStrictness
+                                                    'GHC.Generics.DecidedLazy)
+                                                 (GHC.Generics.K1 GHC.Generics.R GHC.Base.String)))
+                        @ x
+                        g1
+                          `cast`
+                        (Trans
+                             (Sym (GHC.Generics.N:K1[0]
+                                       <GHC.Generics.R>_P <Maze.GameState>_R <x>_P))
+                             (Trans
+                                  (Sym (GHC.Generics.N:M1[0]
+                                            <GHC.Generics.S>_P
+                                            <'GHC.Generics.MetaSel
+                                               ('GHC.Base.Just "state")
+                                               'GHC.Generics.NoSourceUnpackedness
+                                               'GHC.Generics.NoSourceStrictness
+                                               'GHC.Generics.DecidedLazy>_P
+                                            <GHC.Generics.K1 GHC.Generics.R Maze.GameState>_R))
+                                  (Sym (GHC.Generics.N:M1[0]
+                                            <GHC.Generics.C>_P
+                                            <'GHC.Generics.MetaCons
+                                               "NewGame" 'GHC.Generics.PrefixI 'GHC.Types.True>_P
+                                            <GHC.Generics.M1
+                                               GHC.Generics.S
+                                               ('GHC.Generics.MetaSel
+                                                  ('GHC.Base.Just "state")
+                                                  'GHC.Generics.NoSourceUnpackedness
+                                                  'GHC.Generics.NoSourceStrictness
+                                                  'GHC.Generics.DecidedLazy)
+                                               (GHC.Generics.K1
+                                                  GHC.Generics.R Maze.GameState)>_R)) <x>_N))
+                   Messages.PositionUpdate g1
+                   -> GHC.Generics.R1
+                        @ (GHC.Generics.M1
+                             GHC.Generics.C
+                             ('GHC.Generics.MetaCons
+                                "NewGame" 'GHC.Generics.PrefixI 'GHC.Types.True)
+                             (GHC.Generics.M1
+                                GHC.Generics.S
+                                ('GHC.Generics.MetaSel
+                                   ('GHC.Base.Just "state")
+                                   'GHC.Generics.NoSourceUnpackedness
+                                   'GHC.Generics.NoSourceStrictness
+                                   'GHC.Generics.DecidedLazy)
+                                (GHC.Generics.K1 GHC.Generics.R Maze.GameState)))
+                        @ (GHC.Generics.M1
+                             GHC.Generics.C
+                             ('GHC.Generics.MetaCons
+                                "PositionUpdate" 'GHC.Generics.PrefixI 'GHC.Types.True)
+                             (GHC.Generics.M1
+                                GHC.Generics.S
+                                ('GHC.Generics.MetaSel
+                                   ('GHC.Base.Just "pos")
+                                   'GHC.Generics.NoSourceUnpackedness
+                                   'GHC.Generics.NoSourceStrictness
+                                   'GHC.Generics.DecidedLazy)
+                                (GHC.Generics.K1 GHC.Generics.R Maze.Position))
+                           GHC.Generics.:+: GHC.Generics.M1
+                                              GHC.Generics.C
+                                              ('GHC.Generics.MetaCons
+                                                 "ShowMessage"
+                                                 'GHC.Generics.PrefixI
+                                                 'GHC.Types.True)
+                                              (GHC.Generics.M1
+                                                 GHC.Generics.S
+                                                 ('GHC.Generics.MetaSel
+                                                    ('GHC.Base.Just "text")
+                                                    'GHC.Generics.NoSourceUnpackedness
+                                                    'GHC.Generics.NoSourceStrictness
+                                                    'GHC.Generics.DecidedLazy)
+                                                 (GHC.Generics.K1 GHC.Generics.R GHC.Base.String)))
+                        @ x
+                        (GHC.Generics.L1
+                           @ (GHC.Generics.M1
+                                GHC.Generics.C
+                                ('GHC.Generics.MetaCons
+                                   "PositionUpdate" 'GHC.Generics.PrefixI 'GHC.Types.True)
+                                (GHC.Generics.M1
+                                   GHC.Generics.S
+                                   ('GHC.Generics.MetaSel
+                                      ('GHC.Base.Just "pos")
+                                      'GHC.Generics.NoSourceUnpackedness
+                                      'GHC.Generics.NoSourceStrictness
+                                      'GHC.Generics.DecidedLazy)
+                                   (GHC.Generics.K1 GHC.Generics.R Maze.Position)))
+                           @ (GHC.Generics.M1
+                                GHC.Generics.C
+                                ('GHC.Generics.MetaCons
+                                   "ShowMessage" 'GHC.Generics.PrefixI 'GHC.Types.True)
+                                (GHC.Generics.M1
+                                   GHC.Generics.S
+                                   ('GHC.Generics.MetaSel
+                                      ('GHC.Base.Just "text")
+                                      'GHC.Generics.NoSourceUnpackedness
+                                      'GHC.Generics.NoSourceStrictness
+                                      'GHC.Generics.DecidedLazy)
+                                   (GHC.Generics.K1 GHC.Generics.R GHC.Base.String)))
+                           @ x
+                           g1
+                             `cast`
+                           (Trans
+                                (Sym (GHC.Generics.N:K1[0]
+                                          <GHC.Generics.R>_P <Maze.Position>_R <x>_P))
+                                (Trans
+                                     (Sym (GHC.Generics.N:M1[0]
+                                               <GHC.Generics.S>_P
+                                               <'GHC.Generics.MetaSel
+                                                  ('GHC.Base.Just "pos")
+                                                  'GHC.Generics.NoSourceUnpackedness
+                                                  'GHC.Generics.NoSourceStrictness
+                                                  'GHC.Generics.DecidedLazy>_P
+                                               <GHC.Generics.K1 GHC.Generics.R Maze.Position>_R))
+                                     (Sym (GHC.Generics.N:M1[0]
+                                               <GHC.Generics.C>_P
+                                               <'GHC.Generics.MetaCons
+                                                  "PositionUpdate"
+                                                  'GHC.Generics.PrefixI
+                                                  'GHC.Types.True>_P
+                                               <GHC.Generics.M1
+                                                  GHC.Generics.S
+                                                  ('GHC.Generics.MetaSel
+                                                     ('GHC.Base.Just "pos")
+                                                     'GHC.Generics.NoSourceUnpackedness
+                                                     'GHC.Generics.NoSourceStrictness
+                                                     'GHC.Generics.DecidedLazy)
+                                                  (GHC.Generics.K1
+                                                     GHC.Generics.R Maze.Position)>_R)) <x>_N)))
+                   Messages.ShowMessage g1
+                   -> GHC.Generics.R1
+                        @ (GHC.Generics.M1
+                             GHC.Generics.C
+                             ('GHC.Generics.MetaCons
+                                "NewGame" 'GHC.Generics.PrefixI 'GHC.Types.True)
+                             (GHC.Generics.M1
+                                GHC.Generics.S
+                                ('GHC.Generics.MetaSel
+                                   ('GHC.Base.Just "state")
+                                   'GHC.Generics.NoSourceUnpackedness
+                                   'GHC.Generics.NoSourceStrictness
+                                   'GHC.Generics.DecidedLazy)
+                                (GHC.Generics.K1 GHC.Generics.R Maze.GameState)))
+                        @ (GHC.Generics.M1
+                             GHC.Generics.C
+                             ('GHC.Generics.MetaCons
+                                "PositionUpdate" 'GHC.Generics.PrefixI 'GHC.Types.True)
+                             (GHC.Generics.M1
+                                GHC.Generics.S
+                                ('GHC.Generics.MetaSel
+                                   ('GHC.Base.Just "pos")
+                                   'GHC.Generics.NoSourceUnpackedness
+                                   'GHC.Generics.NoSourceStrictness
+                                   'GHC.Generics.DecidedLazy)
+                                (GHC.Generics.K1 GHC.Generics.R Maze.Position))
+                           GHC.Generics.:+: GHC.Generics.M1
+                                              GHC.Generics.C
+                                              ('GHC.Generics.MetaCons
+                                                 "ShowMessage"
+                                                 'GHC.Generics.PrefixI
+                                                 'GHC.Types.True)
+                                              (GHC.Generics.M1
+                                                 GHC.Generics.S
+                                                 ('GHC.Generics.MetaSel
+                                                    ('GHC.Base.Just "text")
+                                                    'GHC.Generics.NoSourceUnpackedness
+                                                    'GHC.Generics.NoSourceStrictness
+                                                    'GHC.Generics.DecidedLazy)
+                                                 (GHC.Generics.K1 GHC.Generics.R GHC.Base.String)))
+                        @ x
+                        (GHC.Generics.R1
+                           @ (GHC.Generics.M1
+                                GHC.Generics.C
+                                ('GHC.Generics.MetaCons
+                                   "PositionUpdate" 'GHC.Generics.PrefixI 'GHC.Types.True)
+                                (GHC.Generics.M1
+                                   GHC.Generics.S
+                                   ('GHC.Generics.MetaSel
+                                      ('GHC.Base.Just "pos")
+                                      'GHC.Generics.NoSourceUnpackedness
+                                      'GHC.Generics.NoSourceStrictness
+                                      'GHC.Generics.DecidedLazy)
+                                   (GHC.Generics.K1 GHC.Generics.R Maze.Position)))
+                           @ (GHC.Generics.M1
+                                GHC.Generics.C
+                                ('GHC.Generics.MetaCons
+                                   "ShowMessage" 'GHC.Generics.PrefixI 'GHC.Types.True)
+                                (GHC.Generics.M1
+                                   GHC.Generics.S
+                                   ('GHC.Generics.MetaSel
+                                      ('GHC.Base.Just "text")
+                                      'GHC.Generics.NoSourceUnpackedness
+                                      'GHC.Generics.NoSourceStrictness
+                                      'GHC.Generics.DecidedLazy)
+                                   (GHC.Generics.K1 GHC.Generics.R GHC.Base.String)))
+                           @ x
+                           g1
+                             `cast`
+                           (Trans
+                                (Sym (GHC.Generics.N:K1[0]
+                                          <GHC.Generics.R>_P <GHC.Base.String>_R <x>_P))
+                                (Trans
+                                     (Sym (GHC.Generics.N:M1[0]
+                                               <GHC.Generics.S>_P
+                                               <'GHC.Generics.MetaSel
+                                                  ('GHC.Base.Just "text")
+                                                  'GHC.Generics.NoSourceUnpackedness
+                                                  'GHC.Generics.NoSourceStrictness
+                                                  'GHC.Generics.DecidedLazy>_P
+                                               <GHC.Generics.K1 GHC.Generics.R GHC.Base.String>_R))
+                                     (Sym (GHC.Generics.N:M1[0]
+                                               <GHC.Generics.C>_P
+                                               <'GHC.Generics.MetaCons
+                                                  "ShowMessage"
+                                                  'GHC.Generics.PrefixI
+                                                  'GHC.Types.True>_P
+                                               <GHC.Generics.M1
+                                                  GHC.Generics.S
+                                                  ('GHC.Generics.MetaSel
+                                                     ('GHC.Base.Just "text")
+                                                     'GHC.Generics.NoSourceUnpackedness
+                                                     'GHC.Generics.NoSourceStrictness
+                                                     'GHC.Generics.DecidedLazy)
+                                                  (GHC.Generics.K1
+                                                     GHC.Generics.R
+                                                     GHC.Base.String)>_R)) <x>_N))) }) -}
+48076effc3a43e7375e9218f059a2df1
+  $fGenericServerMessage_$cfrom ::
+    Messages.ServerMessage -> GHC.Generics.Rep Messages.ServerMessage x
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>,
+     Unfolding: InlineRule (0, True, True)
+                Messages.$fGenericServerMessage1
+                  `cast`
+                (forall (x :: <GHC.Types.*>_N).
+                 <Messages.ServerMessage>_R
+                 ->_R Trans
+                          (Sym (GHC.Generics.N:M1[0]
+                                    <GHC.Generics.D>_P
+                                    <'GHC.Generics.MetaData
+                                       "ServerMessage" "Messages" "main" 'GHC.Types.False>_P
+                                    <GHC.Generics.M1
+                                       GHC.Generics.C
+                                       ('GHC.Generics.MetaCons
+                                          "NewGame" 'GHC.Generics.PrefixI 'GHC.Types.True)
+                                       (GHC.Generics.M1
+                                          GHC.Generics.S
+                                          ('GHC.Generics.MetaSel
+                                             ('GHC.Base.Just "state")
+                                             'GHC.Generics.NoSourceUnpackedness
+                                             'GHC.Generics.NoSourceStrictness
+                                             'GHC.Generics.DecidedLazy)
+                                          (GHC.Generics.K1 GHC.Generics.R Maze.GameState))
+                                     GHC.Generics.:+: (GHC.Generics.M1
+                                                         GHC.Generics.C
+                                                         ('GHC.Generics.MetaCons
+                                                            "PositionUpdate"
+                                                            'GHC.Generics.PrefixI
+                                                            'GHC.Types.True)
+                                                         (GHC.Generics.M1
+                                                            GHC.Generics.S
+                                                            ('GHC.Generics.MetaSel
+                                                               ('GHC.Base.Just "pos")
+                                                               'GHC.Generics.NoSourceUnpackedness
+                                                               'GHC.Generics.NoSourceStrictness
+                                                               'GHC.Generics.DecidedLazy)
+                                                            (GHC.Generics.K1
+                                                               GHC.Generics.R Maze.Position))
+                                                       GHC.Generics.:+: GHC.Generics.M1
+                                                                          GHC.Generics.C
+                                                                          ('GHC.Generics.MetaCons
+                                                                             "ShowMessage"
+                                                                             'GHC.Generics.PrefixI
+                                                                             'GHC.Types.True)
+                                                                          (GHC.Generics.M1
+                                                                             GHC.Generics.S
+                                                                             ('GHC.Generics.MetaSel
+                                                                                ('GHC.Base.Just
+                                                                                   "text")
+                                                                                'GHC.Generics.NoSourceUnpackedness
+                                                                                'GHC.Generics.NoSourceStrictness
+                                                                                'GHC.Generics.DecidedLazy)
+                                                                             (GHC.Generics.K1
+                                                                                GHC.Generics.R
+                                                                                GHC.Base.String)))>_R))
+                          (Sub (Sym (Messages.Rep_ServerMessage[0]))) <x>_N) -}
+48076effc3a43e7375e9218f059a2df1
+  $fGenericServerMessage_$cto ::
+    GHC.Generics.Rep Messages.ServerMessage x -> Messages.ServerMessage
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ @ x (ds :: GHC.Generics.Rep Messages.ServerMessage x) ->
+                 case ds
+                        `cast`
+                      (Trans
+                           (Sub (Messages.Rep_ServerMessage[0]))
+                           (GHC.Generics.N:M1[0]
+                                <GHC.Generics.D>_P
+                                <'GHC.Generics.MetaData
+                                   "ServerMessage" "Messages" "main" 'GHC.Types.False>_P
+                                <GHC.Generics.M1
+                                   GHC.Generics.C
+                                   ('GHC.Generics.MetaCons
+                                      "NewGame" 'GHC.Generics.PrefixI 'GHC.Types.True)
+                                   (GHC.Generics.M1
+                                      GHC.Generics.S
+                                      ('GHC.Generics.MetaSel
+                                         ('GHC.Base.Just "state")
+                                         'GHC.Generics.NoSourceUnpackedness
+                                         'GHC.Generics.NoSourceStrictness
+                                         'GHC.Generics.DecidedLazy)
+                                      (GHC.Generics.K1 GHC.Generics.R Maze.GameState))
+                                 GHC.Generics.:+: (GHC.Generics.M1
+                                                     GHC.Generics.C
+                                                     ('GHC.Generics.MetaCons
+                                                        "PositionUpdate"
+                                                        'GHC.Generics.PrefixI
+                                                        'GHC.Types.True)
+                                                     (GHC.Generics.M1
+                                                        GHC.Generics.S
+                                                        ('GHC.Generics.MetaSel
+                                                           ('GHC.Base.Just "pos")
+                                                           'GHC.Generics.NoSourceUnpackedness
+                                                           'GHC.Generics.NoSourceStrictness
+                                                           'GHC.Generics.DecidedLazy)
+                                                        (GHC.Generics.K1
+                                                           GHC.Generics.R Maze.Position))
+                                                   GHC.Generics.:+: GHC.Generics.M1
+                                                                      GHC.Generics.C
+                                                                      ('GHC.Generics.MetaCons
+                                                                         "ShowMessage"
+                                                                         'GHC.Generics.PrefixI
+                                                                         'GHC.Types.True)
+                                                                      (GHC.Generics.M1
+                                                                         GHC.Generics.S
+                                                                         ('GHC.Generics.MetaSel
+                                                                            ('GHC.Base.Just "text")
+                                                                            'GHC.Generics.NoSourceUnpackedness
+                                                                            'GHC.Generics.NoSourceStrictness
+                                                                            'GHC.Generics.DecidedLazy)
+                                                                         (GHC.Generics.K1
+                                                                            GHC.Generics.R
+                                                                            GHC.Base.String)))>_R) <x>_N) of wild {
+                   GHC.Generics.L1 ds1
+                   -> Messages.NewGame
+                        ds1
+                          `cast`
+                        (Trans
+                             (Trans
+                                  (GHC.Generics.N:M1[0]
+                                       <GHC.Generics.C>_P
+                                       <'GHC.Generics.MetaCons
+                                          "NewGame" 'GHC.Generics.PrefixI 'GHC.Types.True>_P
+                                       <GHC.Generics.M1
+                                          GHC.Generics.S
+                                          ('GHC.Generics.MetaSel
+                                             ('GHC.Base.Just "state")
+                                             'GHC.Generics.NoSourceUnpackedness
+                                             'GHC.Generics.NoSourceStrictness
+                                             'GHC.Generics.DecidedLazy)
+                                          (GHC.Generics.K1 GHC.Generics.R Maze.GameState)>_R)
+                                  (GHC.Generics.N:M1[0]
+                                       <GHC.Generics.S>_P
+                                       <'GHC.Generics.MetaSel
+                                          ('GHC.Base.Just "state")
+                                          'GHC.Generics.NoSourceUnpackedness
+                                          'GHC.Generics.NoSourceStrictness
+                                          'GHC.Generics.DecidedLazy>_P
+                                       <GHC.Generics.K1 GHC.Generics.R Maze.GameState>_R) <x>_N)
+                             (GHC.Generics.N:K1[0] <GHC.Generics.R>_P <Maze.GameState>_R <x>_P))
+                   GHC.Generics.R1 ds1
+                   -> case ds1 of wild1 {
+                        GHC.Generics.L1 ds2
+                        -> Messages.PositionUpdate
+                             ds2
+                               `cast`
+                             (Trans
+                                  (Trans
+                                       (GHC.Generics.N:M1[0]
+                                            <GHC.Generics.C>_P
+                                            <'GHC.Generics.MetaCons
+                                               "PositionUpdate"
+                                               'GHC.Generics.PrefixI
+                                               'GHC.Types.True>_P
+                                            <GHC.Generics.M1
+                                               GHC.Generics.S
+                                               ('GHC.Generics.MetaSel
+                                                  ('GHC.Base.Just "pos")
+                                                  'GHC.Generics.NoSourceUnpackedness
+                                                  'GHC.Generics.NoSourceStrictness
+                                                  'GHC.Generics.DecidedLazy)
+                                               (GHC.Generics.K1 GHC.Generics.R Maze.Position)>_R)
+                                       (GHC.Generics.N:M1[0]
+                                            <GHC.Generics.S>_P
+                                            <'GHC.Generics.MetaSel
+                                               ('GHC.Base.Just "pos")
+                                               'GHC.Generics.NoSourceUnpackedness
+                                               'GHC.Generics.NoSourceStrictness
+                                               'GHC.Generics.DecidedLazy>_P
+                                            <GHC.Generics.K1 GHC.Generics.R Maze.Position>_R) <x>_N)
+                                  (GHC.Generics.N:K1[0] <GHC.Generics.R>_P <Maze.Position>_R <x>_P))
+                        GHC.Generics.R1 ds2
+                        -> Messages.ShowMessage
+                             ds2
+                               `cast`
+                             (Trans
+                                  (Trans
+                                       (GHC.Generics.N:M1[0]
+                                            <GHC.Generics.C>_P
+                                            <'GHC.Generics.MetaCons
+                                               "ShowMessage"
+                                               'GHC.Generics.PrefixI
+                                               'GHC.Types.True>_P
+                                            <GHC.Generics.M1
+                                               GHC.Generics.S
+                                               ('GHC.Generics.MetaSel
+                                                  ('GHC.Base.Just "text")
+                                                  'GHC.Generics.NoSourceUnpackedness
+                                                  'GHC.Generics.NoSourceStrictness
+                                                  'GHC.Generics.DecidedLazy)
+                                               (GHC.Generics.K1 GHC.Generics.R GHC.Base.String)>_R)
+                                       (GHC.Generics.N:M1[0]
+                                            <GHC.Generics.S>_P
+                                            <'GHC.Generics.MetaSel
+                                               ('GHC.Base.Just "text")
+                                               'GHC.Generics.NoSourceUnpackedness
+                                               'GHC.Generics.NoSourceStrictness
+                                               'GHC.Generics.DecidedLazy>_P
+                                            <GHC.Generics.K1
+                                               GHC.Generics.R GHC.Base.String>_R) <x>_N)
+                                  (GHC.Generics.N:K1[0]
+                                       <GHC.Generics.R>_P <GHC.Base.String>_R <x>_P)) } }) -}
+5a76586419d0166e00437b908fe628ce
+  $tc'Move :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   3622678744737160858##
+                   1363750576889671052##
+                   Messages.$trModule
+                   Messages.$tc'Move1) -}
+a1b5f1e5237a79d3ad8045c020ab1bc7
+  $tc'Move1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'Move"#) -}
+9f288f87b54a689b8e8b6ebc3dd9e77c
+  $tc'NewGame :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   2729808854593269566##
+                   3100340764350088329##
+                   Messages.$trModule
+                   Messages.$tc'NewGame1) -}
+b659f3d2af2408b29e0e6fd3b80d660d
+  $tc'NewGame1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'NewGame"#) -}
+e5f5bff42800cd1e4f8d806cd8486a7c
+  $tc'PositionUpdate :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   6309804316850948500##
+                   799580555189415490##
+                   Messages.$trModule
+                   Messages.$tc'PositionUpdate1) -}
+f4f19375ea8e4b6e8e1897b19170b0f7
+  $tc'PositionUpdate1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'PositionUpdate"#) -}
+775f389f52779057391db376ccec2108
+  $tc'ShowMessage :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   2667075320492221096##
+                   4270580584949364140##
+                   Messages.$trModule
+                   Messages.$tc'ShowMessage1) -}
+230d51774740133fa53b3d9ee8a85617
+  $tc'ShowMessage1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'ShowMessage"#) -}
+8297187a05cd567ca781f85a3f42adad
+  $tcClientMessage :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   1233330178487470421##
+                   10727648457450807887##
+                   Messages.$trModule
+                   Messages.$tcClientMessage1) -}
+a6ae5269509913c650850130a8131527
+  $tcClientMessage1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "ClientMessage"#) -}
+ddb9b7e9def30f7f59fadf1a4513f9e7
+  $tcServerMessage :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   3518430313486436082##
+                   12244313370949313986##
+                   Messages.$trModule
+                   Messages.$tcServerMessage1) -}
+f42810dbf47ee9b05f40922bac21d473
+  $tcServerMessage1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "ServerMessage"#) -}
+3e4fdda85bfc2e5efd7c650d183e450b
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   Messages.$trModule2
+                   Messages.$trModule1) -}
+4b506b6facb47e9364f89536d290f9ee
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "Messages"#) -}
+bea13b9a66820821e4769705cadabd17
+  $trModule2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "main"#) -}
+aca3b5c4d6631c5a33e1097fee91614b
+  data ClientMessage = Move {direction :: Maze.Direction}
+aca3b5c4d6631c5a33e1097fee91614b
+  axiom Rep_ClientMessage::
+      GHC.Generics.Rep Messages.ClientMessage
+        = GHC.Generics.D1
+            ('GHC.Generics.MetaData
+               "ClientMessage" "Messages" "main" 'GHC.Types.False)
+            (GHC.Generics.C1
+               ('GHC.Generics.MetaCons
+                  "Move" 'GHC.Generics.PrefixI 'GHC.Types.True)
+               (GHC.Generics.S1
+                  ('GHC.Generics.MetaSel
+                     ('GHC.Base.Just "direction")
+                     'GHC.Generics.NoSourceUnpackedness
+                     'GHC.Generics.NoSourceStrictness
+                     'GHC.Generics.DecidedLazy)
+                  (GHC.Generics.Rec0 Maze.Direction)))
+48076effc3a43e7375e9218f059a2df1
+  axiom Rep_ServerMessage::
+      GHC.Generics.Rep Messages.ServerMessage
+        = GHC.Generics.D1
+            ('GHC.Generics.MetaData
+               "ServerMessage" "Messages" "main" 'GHC.Types.False)
+            (GHC.Generics.C1
+               ('GHC.Generics.MetaCons
+                  "NewGame" 'GHC.Generics.PrefixI 'GHC.Types.True)
+               (GHC.Generics.S1
+                  ('GHC.Generics.MetaSel
+                     ('GHC.Base.Just "state")
+                     'GHC.Generics.NoSourceUnpackedness
+                     'GHC.Generics.NoSourceStrictness
+                     'GHC.Generics.DecidedLazy)
+                  (GHC.Generics.Rec0 Maze.GameState))
+             GHC.Generics.:+: (GHC.Generics.C1
+                                 ('GHC.Generics.MetaCons
+                                    "PositionUpdate" 'GHC.Generics.PrefixI 'GHC.Types.True)
+                                 (GHC.Generics.S1
+                                    ('GHC.Generics.MetaSel
+                                       ('GHC.Base.Just "pos")
+                                       'GHC.Generics.NoSourceUnpackedness
+                                       'GHC.Generics.NoSourceStrictness
+                                       'GHC.Generics.DecidedLazy)
+                                    (GHC.Generics.Rec0 Maze.Position))
+                               GHC.Generics.:+: GHC.Generics.C1
+                                                  ('GHC.Generics.MetaCons
+                                                     "ShowMessage"
+                                                     'GHC.Generics.PrefixI
+                                                     'GHC.Types.True)
+                                                  (GHC.Generics.S1
+                                                     ('GHC.Generics.MetaSel
+                                                        ('GHC.Base.Just "text")
+                                                        'GHC.Generics.NoSourceUnpackedness
+                                                        'GHC.Generics.NoSourceStrictness
+                                                        'GHC.Generics.DecidedLazy)
+                                                     (GHC.Generics.Rec0 GHC.Base.String))))
+48076effc3a43e7375e9218f059a2df1
+  data ServerMessage
+    = NewGame {state :: Maze.GameState}
+    | PositionUpdate {pos :: Maze.Position}
+    | ShowMessage {text :: GHC.Base.String}
+e05ccf60f81b8a65e668e0f603adab09
+  direction :: Messages.ClientMessage -> Maze.Direction
+  RecSel Left Messages.ClientMessage
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(S),1*U(1*U)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: Messages.ClientMessage) ->
+                 case ds of wild { Messages.Move ds1 -> ds1 }) -}
+44418214b6daa301d0f0bf2ad52fb262
+  pos :: Messages.ServerMessage -> Maze.Position
+  RecSel Left Messages.ServerMessage
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: Messages.ServerMessage) ->
+                 case ds of wild {
+                   DEFAULT -> Messages.pos1 Messages.PositionUpdate ds1 -> ds1 }) -}
+9c05ea6788e7940d92aeed18139f708f
+  pos1 :: Maze.Position
+  {- Strictness: x -}
+3b5a08f850a3a00378c98262b174767d
+  state :: Messages.ServerMessage -> Maze.GameState
+  RecSel Left Messages.ServerMessage
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: Messages.ServerMessage) ->
+                 case ds of wild {
+                   DEFAULT -> Messages.state1 Messages.NewGame ds1 -> ds1 }) -}
+00dff05c0825839850723d5cce467695
+  state1 :: Maze.GameState
+  {- Strictness: x -}
+345515840b8223bd32878cb371bac62b
+  text :: Messages.ServerMessage -> GHC.Base.String
+  RecSel Left Messages.ServerMessage
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: Messages.ServerMessage) ->
+                 case ds of wild {
+                   DEFAULT -> Messages.text1 Messages.ShowMessage ds1 -> ds1 }) -}
+dbcf6a593ddd3573faa605f47e40443e
+  text1 :: GHC.Base.String
+  {- Strictness: x -}
+instance [safe] GHC.Generics.Generic [Messages.ClientMessage]
+  = Messages.$fGenericClientMessage
+instance [safe] GHC.Generics.Generic [Messages.ServerMessage]
+  = Messages.$fGenericServerMessage
+family instance GHC.Generics.Rep [Messages.ClientMessage]
+  = Messages.Rep_ClientMessage
+family instance GHC.Generics.Rep [Messages.ServerMessage]
+  = Messages.Rep_ServerMessage
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: safe
+require own pkg trusted: False
+
