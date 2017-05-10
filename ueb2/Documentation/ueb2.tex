@@ -35,15 +35,15 @@ class MVar[A] {
 \end{lstlisting}
 
 \exercise{6 nimmt!}
-Wir habens uns dazu entschlossen, die gesamte Funktionalität auf dem Server zu realisieren. Sodass Programme wie \textit{Telnet} als Client verwendet werden können.\\\\
+Wir habens uns dazu entschlossen, die gesamte Funktionalität auf dem Server zu realisieren, sodass Programme wie \textit{Telnet} als Client verwendet werden können.\\\\
 
 In der Funktion \texttt{startServer} wird ein Socket geöffnet. Anschließend wird bereits ein Thread für die Handhabung des Spielens gestartet (\texttt{newGame}). Danach wird in diesem Thread nur noch auf ankommende Verbindungen gewartet. 
 \IncludeFun{29}{43}{../exercise2/takeFive/src/Server.hs}
 
-Sollte eine neue Verbindung eingehen, wird ein neuer Thread gestartet, der für die Identifizierung einer Person zuständig ist. Dieser erfragt einen Namen von der eigehenden Verbindung. Sollte der eingegangene Name valide sein, wird diese Verbindung als neuer Spieler in die Spielerlisten-MVar eingetragen. Zusätzlich wird der Spieler als ''noch nicht bereit'' markiert. 
+Sollte eine neue Verbindung eingehen, wird ein neuer Thread gestartet, der für die Identifizierung einer Person zuständig ist. Dieser erfragt einen Namen von der eingehenden Verbindung. Sollte der eingegangene Name valide sein, wird diese Verbindung als neuer Spieler in die Spielerlisten-MVar eingetragen. Zusätzlich wird der Spieler als ''noch nicht bereit'' markiert. 
 \IncludeFun{45}{63}{../exercise2/takeFive/src/Server.hs}
 
-Zusätzlich wird für jeden akzeptierten Client jeweils ein Thread zum Einlesen von Eingaben und zum Ausgeben vom Nachrichten vom Server gestartet. Die Kommunikation wird dabei über Channels realisiert. Damit benutzen wir MVars indirekt, da Channels \textit{''lediglich''} einen Stream von MVars darstellen. Die Channels werden dabei immer von dem Wurzel-Eingabe- bzw. Wurzel-Ausgabe-Channel dupliziert, welche ebenfalls in dem Spiele-Thread bekannt sind. 
+Darüber hinaus wird für jeden akzeptierten Client jeweils ein Thread zum Einlesen von Eingaben und zum Ausgeben vom Nachrichten vom Server gestartet. Die Kommunikation wird dabei über Channels realisiert. Damit benutzen wir MVars indirekt, da Channels \textit{''lediglich''} einen Stream von MVars darstellen. Die Channels werden dabei immer von dem Wurzel-Eingabe- bzw. Wurzel-Ausgabe-Channel dupliziert, welche ebenfalls in dem Spiele-Thread bekannt sind. 
 \IncludeFun{65}{77}{../exercise2/takeFive/src/Server.hs}
 
 Der Spiele-Thread besteht aus zwei Phasen.
@@ -58,16 +58,16 @@ In der zweiten Phase findet das eigentliche Spiel statt. Dazu haben wir zunächs
 Außerdem haben wir eine Reihe an Funktionen geschrieben, die den entsprechenden Spielzustand an die Clients ausgibt. 
 \IncludeFun{147}{170}{../exercise2/takeFive/src/Server.hs}
 
-Die \texttt{game}-Funktion initialisiert das Spiel, startet es und spielt solange Spielrunden bis ein Spieler mindestens 66 Minuspunkte gesammelt hat. 
+Die \texttt{game}-Funktion initialisiert das Spiel, startet es und führt solange Spielrunden aus, bis ein Spieler mindestens 66 Minuspunkte gesammelt hat. 
 \IncludeFun{105}{145}{../exercise2/takeFive/src/Server.hs}
 
-Eine einzelne Spielrunde beginnt durch das Auswählen der Karten durch die Spieler. \texttt{selectCards} liest die Eingaben der Spieler aus dem Eingabe-Channel aus und überprüft, ob die Eingabe valide war. Sollten alle Spieler valide Eingaben getätigt haben, wird das Einsortieren gestartet. 
+Eine einzelne Spielrunde beginnt durch das Auswählen der Karten durch die Spieler. \texttt{selectCards} liest die Eingaben der Spieler aus dem Eingabe-Channel aus und überprüft, ob die Eingabe valide war. Sollten alle Spieler valide Eingaben getätigt haben wird das Einsortieren gestartet. 
 \IncludeFun{172}{198}{../exercise2/takeFive/src/Server.hs}
 
-Das Einsortieren wird dann in der (etwas langen) Funktion \texttt{sortIn} realisiert. 
+Das Einsortieren wird dann in der Funktion \texttt{sortIn} realisiert. 
 \IncludeFun{200}{251}{../exercise2/takeFive/src/Server.hs}
 
-Sollte eine Karte so niedrig sein, dass sie nirgends auf dem Tisch einsortiert werden kann, wird der User in durch die Funktion \texttt{selectRow} befragt, welche Reihe der User auf seinen Hornochsenstapel nehmen möchte. 
+Sollte eine Karte so niedrig sein, dass sie nirgends auf dem Tisch einsortiert werden kann, wird der User durch die Funktion \texttt{selectRow} befragt, welche Reihe der User auf seinen Hornochsenstapel nehmen möchte. 
 \IncludeFun{253}{277}{../exercise2/takeFive/src/Server.hs}
 
 Das Programm wurde funktional getestet, indem mehrere Partien gespielt wurden. 
