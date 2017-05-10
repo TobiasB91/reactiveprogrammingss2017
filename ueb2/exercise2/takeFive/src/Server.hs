@@ -36,6 +36,45 @@ startServer = withSocketsDo $ do
   forkIO $ newGame inChan outChan players
   handleSocket sock inChan outChan players
 
+handleSocket :: Socket -> Chan Msg -> Chan Msg -> MVar [(Id, Bool)] -> IO ()
+handleSocket sock inChan outChan ps = forever $ do
+  (handle, _, _) <- accept sock
+  inChan' <- dupChan inChan
+  forkIO $ identify handle inChan' outChan ps
+
+identify :: Handle -> Chan Msg -> Chan Msg -> MVar [(Id, Bool)] -> IO ()
+identify handle inChan outChan ps = fix $ \loop -> do
+  hPutStrLn handle "Please enter your name"
+  msg <- readHandle handle
+  ps' <- takeMVar ps
+  if null msg && isJust (lookup msg ps') then do
+    putMVar ps ps'
+    loop
+  else if length ps' > 9 || (all snd ps' && length ps' > 1) then do
+    putMVar ps ps'
+    hPutStrLn handle $ "Sorry, " ++ msg ++ ", but there is currently a game in progress. Try again later." 
+  else let id = msg in do
+    hPutStrLn handle $ "Welcome " ++ id ++ "!"
+    forkIO $ readClient handle inChan id
+    outChan' <- dupChan outChan
+    forkIO $ writeClient handle outChan' id
+    writeChan outChan' ("", id ++ " joined the session.")
+    putMVar ps $ (id,False):ps'
+    return ()
+
+readClient :: Handle -> Chan Msg -> Id -> IO ()
+readClient handle ch id = forever $ do
+  msg <- readHandle handle 
+  writeChan ch (id, msg)  
+
+readHandle :: Handle -> IO String
+readHandle handle = filterMsg <$> hGetLine handle where
+  filterMsg = filter (not . flip elem ['\r','\n'])
+
+writeClient :: Handle -> Chan Msg -> Id -> IO ()
+writeClient handle ch id = forever $ do
+  (id', msg) <- readChan ch
+  when (null id' || id==id') $ hPutStrLn handle msg
 
 newGame :: Chan Msg -> Chan Msg -> MVar [(Id, Bool)] -> IO ()
 newGame inChan outChan ps = do 
@@ -89,6 +128,21 @@ game inChan outChan var = do
   endState <- readIORef varST 
   let winner = minimumBy (compare `on` score) $ players endState
   writeChan outChan ("", "The winner is " ++ name winner ++ "! Congratulations!")
+
+initialPlayers :: MVar [(Id, Bool)] -> IO [Player]
+initialPlayers var = do
+  ps <- (map fst) <$> readMVar var 
+  return $ map (\n -> Player n 0 []) ps
+
+dealOut :: [Player] -> IO ST
+dealOut ps = do
+  cards <- shuffleCards 
+  let ps' = map (\i -> (ps !! i) {hand = cards !! i}) [0..length ps-1]
+  let table = Table . map (:[]) $ last cards
+  return $ ST ps' table
+
+shuffleCards :: IO [[Int]] 
+shuffleCards = chunksOf 10 <$> shuffleM [1..104]  
 
 printScores :: Chan Msg -> ST -> IO ()
 printScores out st = forM_ (players st) $ printScore out
@@ -164,7 +218,7 @@ sortIn st inChan outChan chosenCards = do
       let newRows = insertIntoRows (reverse . rows . table $ st') card 
       let (bigRow, rest) = partition ((>5) . length) newRows 
       ps <- readIORef varP 
-      if null bigRow -- no row is full 
+      if null bigRow -- no row is full after insertion 
       then do 
         writeIORef varP $ p:ps
         writeIORef varST $ st' {table = Table newRows }
@@ -222,60 +276,4 @@ selectRow st inChan outChan (p,card) = do
     else 
       loop 
 
-initialPlayers :: MVar [(Id, Bool)] -> IO [Player]
-initialPlayers var = do
-  ps <- (map fst) <$> readMVar var 
-  return $ map (\n -> Player n 0 []) ps
 
-dealOut :: [Player] -> IO ST
-dealOut ps = do
-  cards <- shuffleCards 
-  let ps' = map (\i -> (ps !! i) {hand = cards !! i}) [0..length ps-1]
-  let table = Table . map (:[]) $ last cards
-  return $ ST ps' table
-
-maxScore :: ST -> Int
-maxScore = maximum . map score . players
-
-shuffleCards :: IO [[Int]] 
-shuffleCards = chunksOf 10 <$> shuffleM [1..104]  
-
-handleSocket :: Socket -> Chan Msg -> Chan Msg -> MVar [(Id, Bool)] -> IO ()
-handleSocket sock inChan outChan ps = forever $ do
-  (handle, _, _) <- accept sock
-  inChan' <- dupChan inChan
-  forkIO $ identify handle inChan' outChan ps
-
-identify :: Handle -> Chan Msg -> Chan Msg -> MVar [(Id, Bool)] -> IO ()
-identify handle inChan outChan ps = fix $ \loop -> do
-  hPutStrLn handle "Please enter your name"
-  msg <- readHandle handle
-  ps' <- takeMVar ps
-  if null msg && isJust (lookup msg ps') then do
-    putMVar ps ps'
-    loop
-  else if length ps' > 9 || (all snd ps' && length ps' > 1) then do
-    putMVar ps ps'
-    hPutStrLn handle $ "Sorry, " ++ msg ++ ", but there is currently a game in progress. Try again later." 
-  else let id = msg in do
-    hPutStrLn handle $ "Welcome " ++ id ++ "!"
-    forkIO $ readClient handle inChan id
-    outChan' <- dupChan outChan
-    forkIO $ writeClient handle outChan' id
-    writeChan outChan' ("", id ++ " joined the session.")
-    putMVar ps $ (id,False):ps'
-    return ()
-
-readClient :: Handle -> Chan Msg -> Id -> IO ()
-readClient handle ch id = forever $ do
-  msg <- readHandle handle 
-  writeChan ch (id, msg)  
-
-readHandle :: Handle -> IO String
-readHandle handle = filterMsg <$> hGetLine handle where
-  filterMsg = filter (not . flip elem ['\r','\n'])
-
-writeClient :: Handle -> Chan Msg -> Id -> IO ()
-writeClient handle ch id = forever $ do
-  (id', msg) <- readChan ch
-  when (null id' || id==id') $ hPutStrLn handle msg
