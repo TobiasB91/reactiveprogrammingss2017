@@ -1,0 +1,61 @@
+\documentclass{rp}
+
+\begin{document}
+
+%% Daten der Übungsgruppe (am besten in separater Datei defs.tex ablegen,
+%% und mit \input{defs} immer wieder einbinden):
+
+% Name des Tutors:
+\tutor{Martin Ring}
+% Nummer der Übungsgruppe:
+\uebungsgruppe{1} 
+% Teilnehmer (bis zu drei, mit '\\' getrennt):
+\teilnehmer{Tobias Brandt \\ Stefan Heitmann \\ }
+
+\maketitle{3}          % Übungsblatt-Nr.
+{25.05.2017} % Abgabe-Datum
+
+\exercise{Aktoren in Haskell}%
+\textbf{Punkt 1}\\
+Um diesen Punkt umzusetzen, haben wir uns dazu entschieden, den Datentyp so zu erweitern, dass die Wurzel eines Aktorensystem durch einen besonderen Konstruktor gekennzeichnet wird. 
+
+\textbf{Punkt 2}\\
+Dieser Punkt ist bereits in dem vorgegebenen Framework umgesetzt. 
+
+\textbf{Punkt 3}\\
+Dieser Punkt ist ebenfalls bereits in dem vorgebenen Framework umgesetzt, da die MVars die wartenden Threads automatisch in FIFO-Reihenfolge aufwecken.
+
+\textbf{Punkt 4}\\
+Diese Punkte sind ebenfalls in dem Framework umgesetzt. 
+
+\textbf{Punkt 5}\\
+Dieser Punkt wurde implementiert, indem das Herein- und Herausnehmen, der Nachrichten in die MVars in einem neuen Thread gestartet wird. 
+
+\textbf{Punkt 6}\\
+Dieser Punkt wurde implementiert, indem der Message-Datentyp um eine Fehler-Nachricht erweitert wurde. Zusätzlich wird in der Verhaltsschleife überprüft, ob es beim Auswerten des Verhaltens zu einem Fehler gekommen ist. Sollte dies der Fall sein, wird eine Nachricht an den Erzeuger des Aktors gesendet.
+
+\textbf{Quelltext}\\
+\IncludeFun{1}{90}{../haskell-server/Actors.hs}
+
+\exercise{Hoogle Sheets}
+Wir haben uns dazu entschieden, den Server in Haskell zu implementieren. Dazu haben wir zunächst einen Parser mit der Bibliothek \textit{Parsec} implementiert. Dabei haben wir uns ebenfalls dazu entschieden, den Reduce-Befehl in eine Faltung von Zellreferenzen zu übersetzten. 
+\IncludeFun{1}{64}{../haskell-server/Parser.hs}
+
+Da unsere Implementierung hauptsächlich aus Aktoren besteht, mussten zunächst alle Nachrichten für die Aktoren definiert werden. 
+\IncludeFun{48}{56}{../haskell-server/Main.hs}
+
+Zunächst haben wir den Spreadsheet-Aktor implementiert. Dieser hält eine Abbildung von alle bestehenden Zellaktoren. Der Aktor kann bei Nachrichtenerhalt einen neuen Zellaktor mit den mitgesendeten Koordinaten erstellen. Sollte an dieser Position bereits eine Zelle existieren, werden die Abonennten dieser Zelle über die neue Zelle informiert und die neue Zelle wird mit der alten Zelle ersetzt. \\
+Ebenso stellt der Aktor eine Funktion zum Nachschlagen von Zellaktoren bereit.
+\IncludeFun{58}{75}{../haskell-server/Main.hs}
+
+Als nächstes wurde der Zellaktor implementiert. Dieser stellt eine Zelle im Spreadsheet dar. Bei Erhalt einer ''Parse''-Nachricht wird die Expression der Zelle parsiert und für jeden Knoten im AST ein neuer Aktor erzeugt. Zusätzlich wird überprüft, ob der AST eine Selbstreferenz enthält. Sollte dies der Fall sein, wird die Zelle als Fehlerhaft dargestellt. \\ 
+Ebenso wird bei Erhalt einer ''Evaluate''-Nachricht der entsprechende Ausdruck der Zelle ausgewertet und das Ergebnis an den Client gesendet. Außerdem wartet die Zelle auf Nachrichten, die das Abonieren und Deabonieren von Zellreferenzen handhaben.
+\IncludeFun{77}{129}{../haskell-server/Main.hs}
+
+Die AST-Aktoren stellen Knoten im AST dar. Bei Erhalt von ''Build''-Nachrichten erzeugen die Aktoren eventuell für ihre Auswertung notwendige weitere AST-Aktoren. Bei Erhalt einer ''Evaluate''-Nachricht wird dann der Unterausdruck ausgewertet und das Ergebnis an den Erzeuger des Aktors weitergeleitet.
+\IncludeFun{131}{271}{../haskell-server/Main.hs}
+
+\textbf{Tests}\\
+Getestet wurden beide Aufgaben, indem das Spreadsheet funktional ausprobiert wurde. Die Tests verliefen erfolgreich.
+\end{document}
+
