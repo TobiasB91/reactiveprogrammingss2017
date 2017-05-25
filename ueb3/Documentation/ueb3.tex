@@ -44,12 +44,12 @@ Wir haben uns dazu entschieden, den Server in Haskell zu implementieren. Dazu ha
 Da unsere Implementierung hauptsächlich aus Aktoren besteht, mussten zunächst alle Nachrichten für die Aktoren definiert werden. 
 \IncludeFun{48}{56}{../haskell-server/Main.hs}
 
-Zunächst haben wir den Spreadsheet-Aktor implementiert. Dieser hält eine Abbildung von alle bestehenden Zellaktoren. Der Aktor kann bei Nachrichtenerhalt einen neuen Zellaktor mit den mitgesendeten Koordinaten erstellen. Sollte an dieser Position bereits eine Zelle existieren, werden die Abonennten dieser Zelle über die neue Zelle informiert und die neue Zelle wird mit der alten Zelle ersetzt. \\
+Zunächst haben wir den Spreadsheet-Aktor implementiert. Dieser hält eine Abbildung von allen bestehenden Zellaktoren. Der Aktor kann bei Nachrichtenerhalt einen neuen Zellaktor mit den mitgesendeten Koordinaten erstellen. Sollte an dieser Position bereits eine Zelle existieren, werden die Abonennten dieser Zelle über die neue Zelle informiert und die neue Zelle wird mit der alten Zelle ersetzt. \\
 Ebenso stellt der Aktor eine Funktion zum Nachschlagen von Zellaktoren bereit.
 \IncludeFun{58}{75}{../haskell-server/Main.hs}
 
-Als nächstes wurde der Zellaktor implementiert. Dieser stellt eine Zelle im Spreadsheet dar. Bei Erhalt einer ''Parse''-Nachricht wird die Expression der Zelle parsiert und für jeden Knoten im AST ein neuer Aktor erzeugt. Zusätzlich wird überprüft, ob der AST eine Selbstreferenz enthält. Sollte dies der Fall sein, wird die Zelle als Fehlerhaft dargestellt. \\ 
-Ebenso wird bei Erhalt einer ''Evaluate''-Nachricht der entsprechende Ausdruck der Zelle ausgewertet und das Ergebnis an den Client gesendet. Außerdem wartet die Zelle auf Nachrichten, die das Abonieren und Deabonieren von Zellreferenzen handhaben.
+Als Nächstes wurde der Zellaktor implementiert. Dieser stellt eine Zelle im Spreadsheet dar. Bei Erhalt einer ''Parse''-Nachricht wird die Expression der Zelle parsiert und für jeden Knoten im AST ein neuer Aktor erzeugt. Zusätzlich wird überprüft, ob der AST eine Selbstreferenz enthält. Sollte dies der Fall sein, wird die Zelle als fehlerhaft dargestellt. \\ 
+Ebenso wird bei Erhalt einer ''Evaluate''-Nachricht der entsprechende Ausdruck der Zelle ausgewertet und das Ergebnis an den Client gesendet. Außerdem wartet die Zelle auf Nachrichten, die das Abonnieren und Deabonnieren von Zellreferenzen handhaben.
 \IncludeFun{77}{129}{../haskell-server/Main.hs}
 
 Die AST-Aktoren stellen Knoten im AST dar. Bei Erhalt von ''Build''-Nachrichten erzeugen die Aktoren eventuell für ihre Auswertung notwendige weitere AST-Aktoren. Bei Erhalt einer ''Evaluate''-Nachricht wird dann der Unterausdruck ausgewertet und das Ergebnis an den Erzeuger des Aktors weitergeleitet.
