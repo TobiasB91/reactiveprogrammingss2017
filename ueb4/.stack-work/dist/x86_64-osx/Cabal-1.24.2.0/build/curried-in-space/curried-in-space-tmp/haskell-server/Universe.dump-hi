@@ -1,0 +1,379 @@
+
+==================== FINAL INTERFACE ====================
+2017-06-15 13:25:24.03538 UTC
+
+interface main@main:Universe 8002
+  interface hash: c7a9715c3f93a63eeada871c7ae25c92
+  ABI hash: 236e812e2168f5d0db9180322a4a13fb
+  export-list hash: f4e5c2b53d977092d79dad371ed60c5a
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: 4bd9776d72815bb47b1eba785e6c5056
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Universe.asteroid
+  Universe.universe
+module dependencies: Connection Messages
+package dependencies: aeson-1.0.2.1@aeson-1.0.2.1-1PgNnQdZpa7BG8cq9P3bMU
+                      array-0.5.1.1@array-0.5.1.1
+                      attoparsec-0.13.1.0@attoparsec-0.13.1.0-HCAgpBrKCLJ5li8FbfXxE1
+                      base-4.9.1.0
+                      base-compat-0.9.1@base-compat-0.9.1-B9geVZFtCvE8ERS7UcvkRz
+                      binary-0.8.3.0@binary-0.8.3.0
+                      bytestring-0.10.8.1@bytestring-0.10.8.1
+                      containers-0.5.7.1@containers-0.5.7.1
+                      deepseq-1.4.2.0@deepseq-1.4.2.0
+                      dlist-0.8.0.2@dlist-0.8.0.2-6Wnps4GD7EFnRucVzXIFD
+                      ghc-boot-th-8.0.2@ghc-boot-th-8.0.2 ghc-prim-0.5.0.0
+                      hakka-0.3.0@hakka-0.3.0-810FebrIp7M3XJ8vuXC123
+                      hashable-1.2.5.0@hashable-1.2.5.0-F4MWeNuv2sjJRqBd2T5ul4
+                      integer-gmp-1.0.0.1
+                      integer-logarithms-1.0.1@integer-logarithms-1.0.1-IEHCuEd5sG4JjSjlx7m5JF
+                      primitive-0.6.1.0@primitive-0.6.1.0-6AbSTw9JXz141LE5p6LGH
+                      random-1.1@random-1.1-9tceXaeYIMZ4JrKq20Egog
+                      scientific-0.3.4.10@scientific-0.3.4.10-HRQd1hS6vMV6hvjSlMi8B0
+                      tagged-0.8.5@tagged-0.8.5-1mTloBSoUxv8dqUr8XBGBt
+                      template-haskell-2.11.1.0
+                      text-1.2.2.1@text-1.2.2.1-Ji7hMs2U4BkBwavd4taEVR
+                      time-1.6.0.1@time-1.6.0.1
+                      time-locale-compat-0.1.1.3@time-locale-compat-0.1.1.3-KZ1jqNx8uhlHjmuPPj6V1Y
+                      transformers-0.5.2.0@transformers-0.5.2.0
+                      unordered-containers-0.2.7.2@unordered-containers-0.2.7.2-8AmrySQXjRGF6VciYs51fM
+                      vector-0.11.0.0@vector-0.11.0.0-LMwQhhnXj8U3T5Bm1JFxG
+orphans: attoparsec-0.13.1.0@attoparsec-0.13.1.0-HCAgpBrKCLJ5li8FbfXxE1:Data.Attoparsec.ByteString.Char8
+         attoparsec-0.13.1.0@attoparsec-0.13.1.0-HCAgpBrKCLJ5li8FbfXxE1:Data.Attoparsec.Text.Internal
+         base-4.9.1.0:GHC.Base base-4.9.1.0:GHC.Float
+         binary-0.8.3.0@binary-0.8.3.0:Data.Binary.Generic
+         bytestring-0.10.8.1@bytestring-0.10.8.1:Data.ByteString.Builder
+         hashable-1.2.5.0@hashable-1.2.5.0-F4MWeNuv2sjJRqBd2T5ul4:Data.Hashable.Generic
+         text-1.2.2.1@text-1.2.2.1-Ji7hMs2U4BkBwavd4taEVR:Data.Text
+         text-1.2.2.1@text-1.2.2.1-Ji7hMs2U4BkBwavd4taEVR:Data.Text.Lazy
+         text-1.2.2.1@text-1.2.2.1-Ji7hMs2U4BkBwavd4taEVR:Data.Text.Show
+         time-1.6.0.1@time-1.6.0.1:Data.Time.Calendar.Gregorian
+         time-1.6.0.1@time-1.6.0.1:Data.Time.Format.Parse
+         time-1.6.0.1@time-1.6.0.1:Data.Time.LocalTime.LocalTime
+         transformers-0.5.2.0@transformers-0.5.2.0:Control.Monad.Trans.Error
+         vector-0.11.0.0@vector-0.11.0.0-LMwQhhnXj8U3T5Bm1JFxG:Data.Vector.Fusion.Bundle
+         vector-0.11.0.0@vector-0.11.0.0-LMwQhhnXj8U3T5Bm1JFxG:Data.Vector.Unboxed
+family instance modules: attoparsec-0.13.1.0@attoparsec-0.13.1.0-HCAgpBrKCLJ5li8FbfXxE1:Data.Attoparsec.Internal.Types
+                         base-4.9.1.0:Control.Applicative base-4.9.1.0:Data.Complex
+                         base-4.9.1.0:Data.Either base-4.9.1.0:Data.Functor.Compose
+                         base-4.9.1.0:Data.Functor.Const base-4.9.1.0:Data.Functor.Identity
+                         base-4.9.1.0:Data.Functor.Product base-4.9.1.0:Data.Functor.Sum
+                         base-4.9.1.0:Data.List.NonEmpty base-4.9.1.0:Data.Monoid
+                         base-4.9.1.0:Data.Semigroup base-4.9.1.0:Data.Type.Equality
+                         base-4.9.1.0:Data.Version base-4.9.1.0:Data.Void
+                         base-4.9.1.0:GHC.Exts base-4.9.1.0:GHC.Generics
+                         base-4.9.1.0:GHC.IO.Exception base-4.9.1.0:GHC.TypeLits
+                         containers-0.5.7.1@containers-0.5.7.1:Data.IntMap.Base
+                         containers-0.5.7.1@containers-0.5.7.1:Data.IntSet.Base
+                         containers-0.5.7.1@containers-0.5.7.1:Data.Map.Base
+                         containers-0.5.7.1@containers-0.5.7.1:Data.Sequence
+                         containers-0.5.7.1@containers-0.5.7.1:Data.Set.Base
+                         dlist-0.8.0.2@dlist-0.8.0.2-6Wnps4GD7EFnRucVzXIFD:Data.DList
+                         ghc-boot-th-8.0.2@ghc-boot-th-8.0.2:GHC.LanguageExtensions.Type
+                         main@main:Messages
+                         primitive-0.6.1.0@primitive-0.6.1.0-6AbSTw9JXz141LE5p6LGH:Control.Monad.Primitive
+                         tagged-0.8.5@tagged-0.8.5-1mTloBSoUxv8dqUr8XBGBt:Data.Tagged
+                         template-haskell-2.11.1.0:Language.Haskell.TH.Syntax
+                         text-1.2.2.1@text-1.2.2.1-Ji7hMs2U4BkBwavd4taEVR:Data.Text
+                         text-1.2.2.1@text-1.2.2.1-Ji7hMs2U4BkBwavd4taEVR:Data.Text.Lazy
+                         unordered-containers-0.2.7.2@unordered-containers-0.2.7.2-8AmrySQXjRGF6VciYs51fM:Data.HashMap.Base
+                         unordered-containers-0.2.7.2@unordered-containers-0.2.7.2-8AmrySQXjRGF6VciYs51fM:Data.HashSet
+                         vector-0.11.0.0@vector-0.11.0.0-LMwQhhnXj8U3T5Bm1JFxG:Data.Vector
+                         vector-0.11.0.0@vector-0.11.0.0-LMwQhhnXj8U3T5Bm1JFxG:Data.Vector.Primitive
+                         vector-0.11.0.0@vector-0.11.0.0-LMwQhhnXj8U3T5Bm1JFxG:Data.Vector.Storable
+                         vector-0.11.0.0@vector-0.11.0.0-LMwQhhnXj8U3T5Bm1JFxG:Data.Vector.Unboxed
+                         vector-0.11.0.0@vector-0.11.0.0-LMwQhhnXj8U3T5Bm1JFxG:Data.Vector.Unboxed.Base
+import  -/  base-4.9.1.0:Control.Concurrent 2ee6a0a58489520b9a96d8fef10380fa
+import  -/  base-4.9.1.0:Control.Monad a6784c5dab0d75c63dabec5a37843f98
+import  -/  base-4.9.1.0:Control.Monad.IO.Class 1a4384f66ee999caf5366398edb6ca7b
+import  -/  base-4.9.1.0:Data.Foldable 3e0b6967a1da89945d0e2d47266337a2
+import  -/  base-4.9.1.0:Data.Traversable 556020d7cf3c4a34a774600512918a37
+import  -/  base-4.9.1.0:GHC.Base c4231c43c07e46080a26bf94094c7aa1
+import  -/  base-4.9.1.0:GHC.Conc.IO def2d34849634fa07308965605821da6
+import  -/  base-4.9.1.0:GHC.Float 33e2b9ffe427edd6a5c2fd6a3b26703c
+import  -/  base-4.9.1.0:GHC.List ab8c4e523e6c479c549d3bcd5fc4a439
+import  -/  base-4.9.1.0:GHC.Num 00bfaa7b2f9d6084913c0697a8a49ec8
+import  -/  base-4.9.1.0:GHC.Real 82e4e59051a13dba1da63e1e970a69e6
+import  -/  base-4.9.1.0:GHC.Show a027f5ac24879eaba752f44aa90fe511
+import  -/  base-4.9.1.0:Prelude 22dd289b8469a8fa8dc81cab7b237771
+import  -/  hakka-0.3.0@hakka-0.3.0-810FebrIp7M3XJ8vuXC123:Hakka.Actor 3c7c12b577574b26de1f42e6c7f41ae6
+import  -/  Connection b761e2161c6952fb037f14f2b3f3a2f2
+  exports: 17814339c6f470574af2bcd199f7fd15
+  connection c5c32add461815e7ec3d1a15d95ff893
+import  -/  Messages 8f3a468226dd5df70b1f8189671b8edc
+  exports: 35848a6e93d875a086817bd4da5eb216
+  AColor bfb7debab22c14dae7c35e09406c68d1
+  ASize 6117e04314aaeff4dbdae3cc288cd847
+  Asteroid fd8ae40ec26c27c1a934b91e407389a2
+  Big 3ef1d0247c945177156a22a91b2fa1df
+  Brown c1273244adbe822ca2efae3445c268c0
+  CommonState e707d699a429b71278099ab330037a16
+  Connect 5e15d936737c6cef0b566d388f7a132f
+  Gray 4a1ef5eba2b1a30474910b55b8180ea6
+  Init 901e64453e19fc6e01a776483501dd0e
+  Medium bd2605c661b14f23fa8ddc2fa5407976
+  Msg 29c2a22aa7320a7dd0035781d7f1e1e5
+  ServerMessage 043fdc03ddcbdc12e98acfc0533c0db8
+  Small 43b2519299117019077fde0d9d6a5fe8
+  TimestampedMessage 20bd7e09c1f9564c48d6c755bfd80ec3
+  Tiny 8aba63b10007450611e1feb1d43966a2
+  Update af2e0061661b2797060b82bfc1343ecc
+  currentTimeMillis dbe2061b00a50fde4aff7ec7478c40fc
+import  -/  random-1.1@random-1.1-9tceXaeYIMZ4JrKq20Egog:System.Random cc3ef358c669b194cf9fe94db6f2430f
+fbf2ad2507070a370f6fd2a0d1641147
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   Universe.$trModule2
+                   Universe.$trModule1) -}
+caff09ad2423d1abc40a399374ff0df6
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "Universe"#) -}
+93fef27be4896d327cd4063003053c07
+  $trModule2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "main"#) -}
+5c460e85536fe2ab7fd2b88f03128b53
+  $wasteroid ::
+    GHC.Types.Int
+    -> GHC.Types.Double
+    -> GHC.Types.Double
+    -> GHC.Types.Double
+    -> GHC.Types.Double
+    -> GHC.Types.Double
+    -> GHC.Types.Double
+    -> GHC.Types.Double
+    -> Messages.ASize
+    -> Messages.AColor
+    -> Hakka.Actor.ActorIO
+         Messages.ServerMessage
+         (Hakka.Actor.ActorRef Messages.ServerMessage)
+  {- Arity: 10,
+     Strictness: <L,U(U)><L,U(U)><L,U(U)><L,U(U)><L,U(U)><L,U(U)><L,U(U)><L,U(U)><L,U><L,U>,
+     Inline: [0] -}
+f331e5b43a3e56e966580277a91c9b65
+  $wreceive ::
+    [Hakka.Actor.ActorRef Messages.ServerMessage]
+    -> Messages.ServerMessage
+    -> Hakka.Actor.ActorIO Messages.ServerMessage ()
+  {- Arity: 2, Strictness: <L,U><S,1*U>, Inline: [0] -}
+8be4d808040725585ed1b34490fb0522
+  asteroid ::
+    GHC.Types.Int
+    -> (GHC.Types.Double, GHC.Types.Double)
+    -> (GHC.Types.Double, GHC.Types.Double)
+    -> GHC.Types.Double
+    -> GHC.Types.Double
+    -> GHC.Types.Double
+    -> Messages.ASize
+    -> Messages.AColor
+    -> Hakka.Actor.ActorIO
+         Messages.ServerMessage
+         (Hakka.Actor.ActorRef Messages.ServerMessage)
+  {- Arity: 8,
+     Strictness: <L,U(U)><S,1*U(U(U),U(U))><S,1*U(U(U),U(U))><L,U(U)><L,U(U)><L,U(U)><L,U><L,U>,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (8, True, False)
+                (\ (w :: GHC.Types.Int)
+                   (w1 :: (GHC.Types.Double, GHC.Types.Double))
+                   (w2 :: (GHC.Types.Double, GHC.Types.Double))
+                   (w3 :: GHC.Types.Double)
+                   (w4 :: GHC.Types.Double)
+                   (w5 :: GHC.Types.Double)
+                   (w6 :: Messages.ASize)
+                   (w7 :: Messages.AColor) ->
+                 case w1 of ww { (,) ww1 ww2 ->
+                 case w2 of ww3 { (,) ww4 ww5 ->
+                 Universe.$wasteroid w ww1 ww2 ww4 ww5 w3 w4 w5 w6 w7 } }) -}
+ed0ade71f03c6fa783cdeb8481e1635c
+  universe ::
+    Hakka.Actor.ActorIO
+      Messages.ServerMessage
+      (Hakka.Actor.ActorRef Messages.ServerMessage)
+  {- Arity: 2,
+     Strictness: <S(LLLLC(C(C(S(SL))))),1*U(U,U,U,U,U)><S,U>,
+     Unfolding: InlineRule (0, True, True)
+                Universe.universe1
+                  `cast`
+                (Trans
+                     (<Hakka.Actor.ActorContext Messages.ServerMessage>_R
+                      ->_R Sym (GHC.Types.N:IO[0]
+                                    <(Hakka.Actor.ActorRef Messages.ServerMessage,
+                                      Hakka.Actor.ActorContext Messages.ServerMessage)>_R))
+                     (Trans
+                          (Sym (Control.Monad.Trans.State.Strict.N:StateT[0]
+                                    <Hakka.Actor.ActorContext Messages.ServerMessage>_N
+                                    <GHC.Types.IO>_R
+                                    <Hakka.Actor.ActorRef Messages.ServerMessage>_N))
+                          (Sym (Hakka.Actor.N:ActorIO[0]
+                                    <Messages.ServerMessage>_N) <Hakka.Actor.ActorRef
+                                                                   Messages.ServerMessage>_N))) -}
+e3f317da2f79ccd5d876ba75b3823fdd
+  universe1 ::
+    Hakka.Actor.ActorContext Messages.ServerMessage
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          (Hakka.Actor.ActorRef Messages.ServerMessage,
+           Hakka.Actor.ActorContext Messages.ServerMessage) #)
+  {- Arity: 2,
+     Strictness: <S(LLLLC(C(C(S(SL))))),1*U(U,U,U,U,U)><S,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (eta2 :: Hakka.Actor.ActorContext Messages.ServerMessage)
+                   (eta3 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                 case eta2 of wild { Hakka.Actor.ActorContext ds ds1 ds2 ds3 ds4 ->
+                 case (ds4
+                         Universe.universe_name1
+                         (Hakka.Actor.Behavior
+                            @ Messages.ServerMessage
+                            Universe.universe_b
+                            (Hakka.Actor.actor2 @ Messages.ServerMessage)))
+                        `cast`
+                      (GHC.Types.N:IO[0] <Hakka.Actor.ActorRef Messages.ServerMessage>_R)
+                        eta3 of ds5 { (#,#) ipv ipv1 ->
+                 (# ipv, (ipv1, wild) #) } }) -}
+c757e3c7ea1b655e8ca7d07983eace41
+  universe2 ::
+    Messages.ServerMessage
+    -> Hakka.Actor.ActorContext Messages.ServerMessage
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          ((), Hakka.Actor.ActorContext Messages.ServerMessage) #)
+  {- Arity: 3, Strictness: <S,1*U>,
+     Unfolding: (\ (ds :: Messages.ServerMessage)
+                   (eta2 :: Hakka.Actor.ActorContext Messages.ServerMessage)
+                   (eta3 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                 case ds of wild {
+                   DEFAULT
+                   -> case Universe.universe6
+                      ret_ty (# GHC.Prim.State# GHC.Prim.RealWorld,
+                                ((), Hakka.Actor.ActorContext Messages.ServerMessage) #)
+                      of {}
+                   Messages.Msg ds1
+                   -> case ds1 of wild1 { Messages.TimestampedMessage t ds2 ->
+                      case ds2 of wild2 {
+                        DEFAULT
+                        -> case Universe.universe6
+                           ret_ty (# GHC.Prim.State# GHC.Prim.RealWorld,
+                                     ((), Hakka.Actor.ActorContext Messages.ServerMessage) #)
+                           of {}
+                        Messages.Init
+                        -> case Universe.universe5
+                                  Universe.universe4
+                                  eta2
+                                  eta3 of ds3 { (#,#) ipv ipv1 ->
+                           case ipv1 of wild3 { (,) a1 s' ->
+                           let {
+                             ds4 :: Messages.TimestampedMessage {- Strictness: m -}
+                             = Messages.TimestampedMessage t Messages.Update
+                           } in
+                           let {
+                             ds5 :: Messages.ServerMessage = Messages.Msg ds4
+                           } in
+                           let {
+                             lvl9 :: Hakka.Actor.Message Messages.ServerMessage
+                             = Hakka.Actor.Message @ Messages.ServerMessage ds5
+                           } in
+                           letrec {
+                             go :: [Hakka.Actor.ActorRef Messages.ServerMessage]
+                                   -> Hakka.Actor.ActorContext Messages.ServerMessage
+                                   -> GHC.Prim.State# GHC.Prim.RealWorld
+                                   -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+                                         ((), Hakka.Actor.ActorContext Messages.ServerMessage) #)
+                               {- Arity: 3, Strictness: <S,1*U><L,U(U,U,U,U,U)><S,U> -}
+                             = \ (ds6 :: [Hakka.Actor.ActorRef Messages.ServerMessage])
+                                 (eta4 :: Hakka.Actor.ActorContext Messages.ServerMessage)
+                                 (eta5 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                               case ds6 of wild4 {
+                                 [] -> (# eta5, (GHC.Tuple.(), eta4) #)
+                                 : y ys
+                                 -> case eta4 of wild5 { Hakka.Actor.ActorContext ds7 ds8 ds9 ds10 ds11 ->
+                                    case (ds10
+                                            (Hakka.Actor.Deliver
+                                               @ Messages.ServerMessage
+                                               (Hakka.Actor.Envelope
+                                                  @ Messages.ServerMessage
+                                                  ds9
+                                                  y
+                                                  lvl9)))
+                                           `cast`
+                                         (GHC.Types.N:IO[0] <()>_R)
+                                           eta5 of ds12 { (#,#) ipv2 ipv3 ->
+                                    go ys wild5 ipv2 } } }
+                           } in
+                           go
+                             a1
+                             (case s' of wild4 { Hakka.Actor.ActorContext ds6 ds7 ds8 ds9 ds10 ->
+                              Hakka.Actor.ActorContext
+                                @ Messages.ServerMessage
+                                (case ds6 of wild5 {
+                                   Hakka.Actor.Behavior ds11 ds12
+                                   -> Hakka.Actor.Behavior
+                                        @ Messages.ServerMessage
+                                        Universe.universe3
+                                        ds12
+                                   Hakka.Actor.Stopped
+                                   -> Hakka.Actor.become2 @ Messages.ServerMessage })
+                                ds7
+                                ds8
+                                ds9
+                                ds10 })
+                             ipv } } } } }) -}
+5f72dd801fb2a7b151f042c27fe57f40
+  universe3 ::
+    Messages.ServerMessage
+    -> Hakka.Actor.ActorIO Messages.ServerMessage ()
+  {- Arity: 1,
+     Unfolding: (\ (w :: Messages.ServerMessage) ->
+                 Universe.$wreceive
+                   (GHC.Types.[] @ (Hakka.Actor.ActorRef Messages.ServerMessage))
+                   w) -}
+2c984f8b184e899fb32ce23db4f8f36f
+  universe4 :: [GHC.Types.Int]
+  {- Unfolding: (GHC.Enum.eftInt 0# 9#) -}
+093bb0dd20607f38cdb919532291269b
+  universe5 ::
+    [GHC.Types.Int]
+    -> Hakka.Actor.ActorContext Messages.ServerMessage
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          ([Hakka.Actor.ActorRef Messages.ServerMessage],
+           Hakka.Actor.ActorContext Messages.ServerMessage) #)
+  {- Arity: 3, Strictness: <S,1*U><L,U><S,U> -}
+9b04d3fa544bb73688bab3c1c72c0f90
+  universe6 :: Hakka.Actor.ActorIO Messages.ServerMessage ()
+  {- Strictness: x -}
+4e855a25ba1a20c87ca5d141ec61623c
+  universe_b ::
+    Messages.ServerMessage
+    -> Hakka.Actor.ActorIO Messages.ServerMessage ()
+  {- Arity: 3, Strictness: <S,1*U>,
+     Unfolding: (Universe.universe2
+                   `cast`
+                 (<Messages.ServerMessage>_R
+                  ->_R Trans
+                           (<Hakka.Actor.ActorContext Messages.ServerMessage>_R
+                            ->_R Sym (GHC.Types.N:IO[0]
+                                          <((),
+                                            Hakka.Actor.ActorContext Messages.ServerMessage)>_R))
+                           (Trans
+                                (Sym (Control.Monad.Trans.State.Strict.N:StateT[0]
+                                          <Hakka.Actor.ActorContext Messages.ServerMessage>_N
+                                          <GHC.Types.IO>_R
+                                          <()>_N))
+                                (Sym (Hakka.Actor.N:ActorIO[0]
+                                          <Messages.ServerMessage>_N) <()>_N)))) -}
+3f6c82dd7869aed97c9c7978ee042c5f
+  universe_name1 :: GHC.Base.String
+  {- Unfolding: (GHC.CString.unpackCString# "universe"#) -}
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: none
+require own pkg trusted: False
+

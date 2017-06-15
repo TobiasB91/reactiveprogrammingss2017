@@ -1,0 +1,302 @@
+
+==================== FINAL INTERFACE ====================
+2017-06-15 13:01:26.802254 UTC
+
+interface main@main:Connection 8002
+  interface hash: dcd5f905b3bff187ad511e78fda7fef3
+  ABI hash: b761e2161c6952fb037f14f2b3f3a2f2
+  export-list hash: 17814339c6f470574af2bcd199f7fd15
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: 4bd9776d72815bb47b1eba785e6c5056
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Connection.connection
+module dependencies: Messages
+package dependencies: aeson-1.0.2.1@aeson-1.0.2.1-1PgNnQdZpa7BG8cq9P3bMU
+                      array-0.5.1.1@array-0.5.1.1
+                      attoparsec-0.13.1.0@attoparsec-0.13.1.0-HCAgpBrKCLJ5li8FbfXxE1
+                      base-4.9.1.0
+                      base-compat-0.9.1@base-compat-0.9.1-B9geVZFtCvE8ERS7UcvkRz
+                      binary-0.8.3.0@binary-0.8.3.0
+                      bytestring-0.10.8.1@bytestring-0.10.8.1
+                      containers-0.5.7.1@containers-0.5.7.1
+                      deepseq-1.4.2.0@deepseq-1.4.2.0
+                      dlist-0.8.0.2@dlist-0.8.0.2-6Wnps4GD7EFnRucVzXIFD
+                      ghc-boot-th-8.0.2@ghc-boot-th-8.0.2 ghc-prim-0.5.0.0
+                      hakka-0.3.0@hakka-0.3.0-810FebrIp7M3XJ8vuXC123
+                      hashable-1.2.5.0@hashable-1.2.5.0-F4MWeNuv2sjJRqBd2T5ul4
+                      integer-gmp-1.0.0.1
+                      integer-logarithms-1.0.1@integer-logarithms-1.0.1-IEHCuEd5sG4JjSjlx7m5JF
+                      primitive-0.6.1.0@primitive-0.6.1.0-6AbSTw9JXz141LE5p6LGH
+                      scientific-0.3.4.10@scientific-0.3.4.10-HRQd1hS6vMV6hvjSlMi8B0
+                      tagged-0.8.5@tagged-0.8.5-1mTloBSoUxv8dqUr8XBGBt
+                      template-haskell-2.11.1.0
+                      text-1.2.2.1@text-1.2.2.1-Ji7hMs2U4BkBwavd4taEVR
+                      time-1.6.0.1@time-1.6.0.1
+                      time-locale-compat-0.1.1.3@time-locale-compat-0.1.1.3-KZ1jqNx8uhlHjmuPPj6V1Y
+                      transformers-0.5.2.0@transformers-0.5.2.0
+                      unordered-containers-0.2.7.2@unordered-containers-0.2.7.2-8AmrySQXjRGF6VciYs51fM
+                      vector-0.11.0.0@vector-0.11.0.0-LMwQhhnXj8U3T5Bm1JFxG
+orphans: attoparsec-0.13.1.0@attoparsec-0.13.1.0-HCAgpBrKCLJ5li8FbfXxE1:Data.Attoparsec.ByteString.Char8
+         attoparsec-0.13.1.0@attoparsec-0.13.1.0-HCAgpBrKCLJ5li8FbfXxE1:Data.Attoparsec.Text.Internal
+         base-4.9.1.0:GHC.Base base-4.9.1.0:GHC.Float
+         binary-0.8.3.0@binary-0.8.3.0:Data.Binary.Generic
+         bytestring-0.10.8.1@bytestring-0.10.8.1:Data.ByteString.Builder
+         hashable-1.2.5.0@hashable-1.2.5.0-F4MWeNuv2sjJRqBd2T5ul4:Data.Hashable.Generic
+         text-1.2.2.1@text-1.2.2.1-Ji7hMs2U4BkBwavd4taEVR:Data.Text
+         text-1.2.2.1@text-1.2.2.1-Ji7hMs2U4BkBwavd4taEVR:Data.Text.Lazy
+         text-1.2.2.1@text-1.2.2.1-Ji7hMs2U4BkBwavd4taEVR:Data.Text.Show
+         time-1.6.0.1@time-1.6.0.1:Data.Time.Calendar.Gregorian
+         time-1.6.0.1@time-1.6.0.1:Data.Time.Format.Parse
+         time-1.6.0.1@time-1.6.0.1:Data.Time.LocalTime.LocalTime
+         transformers-0.5.2.0@transformers-0.5.2.0:Control.Monad.Trans.Error
+         vector-0.11.0.0@vector-0.11.0.0-LMwQhhnXj8U3T5Bm1JFxG:Data.Vector.Fusion.Bundle
+         vector-0.11.0.0@vector-0.11.0.0-LMwQhhnXj8U3T5Bm1JFxG:Data.Vector.Unboxed
+family instance modules: attoparsec-0.13.1.0@attoparsec-0.13.1.0-HCAgpBrKCLJ5li8FbfXxE1:Data.Attoparsec.Internal.Types
+                         base-4.9.1.0:Control.Applicative base-4.9.1.0:Data.Complex
+                         base-4.9.1.0:Data.Either base-4.9.1.0:Data.Functor.Compose
+                         base-4.9.1.0:Data.Functor.Const base-4.9.1.0:Data.Functor.Identity
+                         base-4.9.1.0:Data.Functor.Product base-4.9.1.0:Data.Functor.Sum
+                         base-4.9.1.0:Data.List.NonEmpty base-4.9.1.0:Data.Monoid
+                         base-4.9.1.0:Data.Semigroup base-4.9.1.0:Data.Type.Equality
+                         base-4.9.1.0:Data.Version base-4.9.1.0:Data.Void
+                         base-4.9.1.0:GHC.Exts base-4.9.1.0:GHC.Generics
+                         base-4.9.1.0:GHC.IO.Exception base-4.9.1.0:GHC.TypeLits
+                         containers-0.5.7.1@containers-0.5.7.1:Data.IntMap.Base
+                         containers-0.5.7.1@containers-0.5.7.1:Data.IntSet.Base
+                         containers-0.5.7.1@containers-0.5.7.1:Data.Map.Base
+                         containers-0.5.7.1@containers-0.5.7.1:Data.Sequence
+                         containers-0.5.7.1@containers-0.5.7.1:Data.Set.Base
+                         dlist-0.8.0.2@dlist-0.8.0.2-6Wnps4GD7EFnRucVzXIFD:Data.DList
+                         ghc-boot-th-8.0.2@ghc-boot-th-8.0.2:GHC.LanguageExtensions.Type
+                         main@main:Messages
+                         primitive-0.6.1.0@primitive-0.6.1.0-6AbSTw9JXz141LE5p6LGH:Control.Monad.Primitive
+                         tagged-0.8.5@tagged-0.8.5-1mTloBSoUxv8dqUr8XBGBt:Data.Tagged
+                         template-haskell-2.11.1.0:Language.Haskell.TH.Syntax
+                         text-1.2.2.1@text-1.2.2.1-Ji7hMs2U4BkBwavd4taEVR:Data.Text
+                         text-1.2.2.1@text-1.2.2.1-Ji7hMs2U4BkBwavd4taEVR:Data.Text.Lazy
+                         unordered-containers-0.2.7.2@unordered-containers-0.2.7.2-8AmrySQXjRGF6VciYs51fM:Data.HashMap.Base
+                         unordered-containers-0.2.7.2@unordered-containers-0.2.7.2-8AmrySQXjRGF6VciYs51fM:Data.HashSet
+                         vector-0.11.0.0@vector-0.11.0.0-LMwQhhnXj8U3T5Bm1JFxG:Data.Vector
+                         vector-0.11.0.0@vector-0.11.0.0-LMwQhhnXj8U3T5Bm1JFxG:Data.Vector.Primitive
+                         vector-0.11.0.0@vector-0.11.0.0-LMwQhhnXj8U3T5Bm1JFxG:Data.Vector.Storable
+                         vector-0.11.0.0@vector-0.11.0.0-LMwQhhnXj8U3T5Bm1JFxG:Data.Vector.Unboxed
+                         vector-0.11.0.0@vector-0.11.0.0-LMwQhhnXj8U3T5Bm1JFxG:Data.Vector.Unboxed.Base
+import  -/  base-4.9.1.0:Control.Concurrent 2ee6a0a58489520b9a96d8fef10380fa
+import  -/  base-4.9.1.0:Control.Concurrent.MVar 1e4f68fc63da1d1a554d5258431dd0c6
+import  -/  base-4.9.1.0:Control.Monad.IO.Class 1a4384f66ee999caf5366398edb6ca7b
+import  -/  base-4.9.1.0:GHC.Base c4231c43c07e46080a26bf94094c7aa1
+import  -/  base-4.9.1.0:GHC.MVar 2b6c6f2887cffa9e72fc08229ba0f346
+import  -/  base-4.9.1.0:GHC.Show a027f5ac24879eaba752f44aa90fe511
+import  -/  base-4.9.1.0:Prelude 22dd289b8469a8fa8dc81cab7b237771
+import  -/  base-4.9.1.0:System.IO c9de64c5f5407c4cf1c52500c4d15200
+import  -/  hakka-0.3.0@hakka-0.3.0-810FebrIp7M3XJ8vuXC123:Hakka.Actor 3c7c12b577574b26de1f42e6c7f41ae6
+import  -/  Messages 8f3a468226dd5df70b1f8189671b8edc
+  exports: 35848a6e93d875a086817bd4da5eb216
+  Asteroid fd8ae40ec26c27c1a934b91e407389a2
+  Connect 5e15d936737c6cef0b566d388f7a132f
+  Disconnect abe01a4c32343d9848981209d5939f8e
+  Msg 29c2a22aa7320a7dd0035781d7f1e1e5
+  Ping ea6a485a20a9a0494bd5610739103bfe
+  Pong ec49c801ffee920cf2f11e2e2c6e1bc3
+  ServerMessage 043fdc03ddcbdc12e98acfc0533c0db8
+  TimestampedMessage 20bd7e09c1f9564c48d6c755bfd80ec3
+  timestamped ab430d3954da5a4f418f0ad0ac97b19e
+f3b6ed3ca1c24eb012875b80978fb9cc
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   Connection.$trModule2
+                   Connection.$trModule1) -}
+6983593e2b0ce0d7816ad3cf77a71a58
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "Connection"#) -}
+12e890dff0ed62aa03f22e0d55b2141c
+  $trModule2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "main"#) -}
+e3eb139cbc70d714a85d4f417b0fe390
+  $wlvl ::
+    Messages.ServerMessage
+    -> Hakka.Actor.Behavior Messages.ServerMessage
+    -> Hakka.Actor.ActorRef Messages.ServerMessage
+    -> Hakka.Actor.ActorRef Messages.ServerMessage
+    -> (Hakka.Actor.SystemMessage Messages.ServerMessage
+        -> GHC.Types.IO ())
+    -> (GHC.Base.String
+        -> Hakka.Actor.Behavior Messages.ServerMessage
+        -> GHC.Types.IO (Hakka.Actor.ActorRef Messages.ServerMessage))
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          ((), Hakka.Actor.ActorContext Messages.ServerMessage) #)
+  {- Arity: 7,
+     Strictness: <S,1*U><L,1*U><L,U><L,U><C(C(S(SL))),U><L,U><S,U>,
+     Inline: [0],
+     Unfolding: (\ (w :: Messages.ServerMessage)
+                   (ww :: Hakka.Actor.Behavior Messages.ServerMessage)
+                   (ww1 :: Hakka.Actor.ActorRef Messages.ServerMessage)
+                   (ww2 :: Hakka.Actor.ActorRef Messages.ServerMessage)
+                   (ww3 :: Hakka.Actor.SystemMessage Messages.ServerMessage
+                           -> GHC.Types.IO ())
+                   (ww4 :: GHC.Base.String
+                           -> Hakka.Actor.Behavior Messages.ServerMessage
+                           -> GHC.Types.IO (Hakka.Actor.ActorRef Messages.ServerMessage))
+                   (w1 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                 case w of wild {
+                   DEFAULT
+                   -> case Connection.connection5
+                      ret_ty (# GHC.Prim.State# GHC.Prim.RealWorld,
+                                ((), Hakka.Actor.ActorContext Messages.ServerMessage) #)
+                      of {}
+                   Messages.Connect out res
+                   -> case (ww3
+                              (Hakka.Actor.Log
+                                 @ Messages.ServerMessage
+                                 ww2 `cast` (Hakka.Actor.N:ActorRef[0] <Messages.ServerMessage>_P)
+                                 Hakka.Actor.Info
+                                 Connection.connection4))
+                             `cast`
+                           (GHC.Types.N:IO[0] <()>_R)
+                             w1 of ds5 { (#,#) ipv ipv1 ->
+                      case res of wild1 { GHC.MVar.MVar mvar# ->
+                      case GHC.Prim.putMVar#
+                             @ GHC.Prim.RealWorld
+                             @ (Hakka.Actor.ActorRef Messages.ServerMessage)
+                             mvar#
+                             ww2
+                             ipv of s2# { DEFAULT ->
+                      (# s2#,
+                         (GHC.Tuple.(),
+                          Hakka.Actor.ActorContext
+                            @ Messages.ServerMessage
+                            (case ww of wild2 {
+                               Hakka.Actor.Behavior ds1 ds6
+                               -> Hakka.Actor.Behavior
+                                    @ Messages.ServerMessage
+                                    (Connection.connection_connected out)
+                                    ds6
+                               Hakka.Actor.Stopped
+                               -> Hakka.Actor.become2 @ Messages.ServerMessage })
+                            ww1
+                            ww2
+                            ww3
+                            ww4) #) } } }
+                   Messages.Disconnect
+                   -> case (ww3
+                              (Hakka.Actor.Log
+                                 @ Messages.ServerMessage
+                                 ww2 `cast` (Hakka.Actor.N:ActorRef[0] <Messages.ServerMessage>_P)
+                                 Hakka.Actor.Info
+                                 Connection.connection3))
+                             `cast`
+                           (GHC.Types.N:IO[0] <()>_R)
+                             w1 of ds5 { (#,#) ipv ipv1 ->
+                      (# ipv,
+                         (GHC.Tuple.(),
+                          Hakka.Actor.ActorContext
+                            @ Messages.ServerMessage
+                            (Hakka.Actor.Stopped @ Messages.ServerMessage)
+                            ww1
+                            ww2
+                            ww3
+                            ww4) #) } }) -}
+c5c32add461815e7ec3d1a15d95ff893
+  connection ::
+    GHC.Show.Show a =>
+    a
+    -> Hakka.Actor.ActorIO
+         Messages.ServerMessage
+         (Hakka.Actor.ActorRef Messages.ServerMessage)
+  {- Arity: 2, Strictness: <L,1*U(A,1*C1(U),A)><L,U>,
+     Unfolding: (\ @ a ($dShow :: GHC.Show.Show a) (n :: a) ->
+                 let {
+                   name1 :: GHC.Base.String
+                   = GHC.CString.unpackAppendCString#
+                       "connection"#
+                       (GHC.Show.show @ a $dShow n)
+                 } in
+                 (\ (eta :: Hakka.Actor.ActorContext Messages.ServerMessage)
+                    (eta1 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                  case eta of wild { Hakka.Actor.ActorContext ds ds1 ds2 ds3 ds4 ->
+                  case (ds4 name1 Connection.connection1)
+                         `cast`
+                       (GHC.Types.N:IO[0] <Hakka.Actor.ActorRef Messages.ServerMessage>_R)
+                         eta1 of ds5 { (#,#) ipv ipv1 ->
+                  (# ipv, (ipv1, wild) #) } })
+                   `cast`
+                 (Trans
+                      (<Hakka.Actor.ActorContext Messages.ServerMessage>_R
+                       ->_R Sym (GHC.Types.N:IO[0]
+                                     <(Hakka.Actor.ActorRef Messages.ServerMessage,
+                                       Hakka.Actor.ActorContext Messages.ServerMessage)>_R))
+                      (Trans
+                           (Sym (Control.Monad.Trans.State.Strict.N:StateT[0]
+                                     <Hakka.Actor.ActorContext Messages.ServerMessage>_N
+                                     <GHC.Types.IO>_R
+                                     <Hakka.Actor.ActorRef Messages.ServerMessage>_N))
+                           (Sym (Hakka.Actor.N:ActorIO[0]
+                                     <Messages.ServerMessage>_N) <Hakka.Actor.ActorRef
+                                                                    Messages.ServerMessage>_N)))) -}
+c645efbd1b563a47fbb88a66a84af9fb
+  connection1 :: Hakka.Actor.Behavior Messages.ServerMessage
+  {- Unfolding: (Hakka.Actor.Behavior
+                   @ Messages.ServerMessage
+                   Connection.connection2
+                     `cast`
+                   (<Messages.ServerMessage>_R
+                    ->_R Trans
+                             (<Hakka.Actor.ActorContext Messages.ServerMessage>_R
+                              ->_R Sym (GHC.Types.N:IO[0]
+                                            <((),
+                                              Hakka.Actor.ActorContext Messages.ServerMessage)>_R))
+                             (Trans
+                                  (Sym (Control.Monad.Trans.State.Strict.N:StateT[0]
+                                            <Hakka.Actor.ActorContext Messages.ServerMessage>_N
+                                            <GHC.Types.IO>_R
+                                            <()>_N))
+                                  (Sym (Hakka.Actor.N:ActorIO[0]
+                                            <Messages.ServerMessage>_N) <()>_N)))
+                   (Hakka.Actor.actor2 @ Messages.ServerMessage)) -}
+2a105b4ffd27b07e031289832d07d1b0
+  connection2 ::
+    Messages.ServerMessage
+    -> Hakka.Actor.ActorContext Messages.ServerMessage
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          ((), Hakka.Actor.ActorContext Messages.ServerMessage) #)
+  {- Arity: 3,
+     Strictness: <S,1*U><S(LLLC(C(S(SL)))L),1*U(1*U,U,U,U,U)><S,U>,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (3, True, False)
+                (\ (w :: Messages.ServerMessage)
+                   (w1 :: Hakka.Actor.ActorContext Messages.ServerMessage)
+                   (w2 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                 case w1 of ww { Hakka.Actor.ActorContext ww1 ww2 ww3 ww4 ww5 ->
+                 Connection.$wlvl w ww1 ww2 ww3 ww4 ww5 w2 }) -}
+398f9b07d0d69afbca64bbf3a968195a
+  connection3 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "connection closed"#) -}
+853ffd3bf82ad84dc16638f36ae8ceb6
+  connection4 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "new client connected"#) -}
+f92a6293c11c431e6439b9865b201bf2
+  connection5 :: Hakka.Actor.ActorIO Messages.ServerMessage ()
+  {- Strictness: x -}
+66bb06acfcf6d90461c2a9002da14e3b
+  connection_connected ::
+    (Messages.TimestampedMessage -> GHC.Types.IO ())
+    -> Messages.ServerMessage
+    -> Hakka.Actor.ActorIO Messages.ServerMessage ()
+  {- Arity: 2, Strictness: <L,C(U)><S,1*U> -}
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: none
+require own pkg trusted: False
+

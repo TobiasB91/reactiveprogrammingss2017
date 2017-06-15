@@ -1,0 +1,628 @@
+
+==================== FINAL INTERFACE ====================
+2017-06-15 13:24:08.590932 UTC
+
+interface main@main:Main 8002
+  interface hash: cb92d3396994abb25ba330eb7f8b0da6
+  ABI hash: f03ed731a0eee53d317708606d0c6b28
+  export-list hash: 2acba0199ce0f61024dc3cc7cd6af37b
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: db7ca85ce18f28b554c59ba9385aa31d
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Main.handleSocket
+  Main.main
+  Main.socket
+  Main.static
+  Main.staticSettings
+  Main.ConnectionState
+  Main.UniverseState
+module dependencies: Connection Messages Universe
+package dependencies: SHA-1.6.4.2@SHA-1.6.4.2-6ZuKopcglGG4yoCGsd9koJ
+                      aeson-1.0.2.1@aeson-1.0.2.1-1PgNnQdZpa7BG8cq9P3bMU
+                      appar-0.1.4@appar-0.1.4-DGWHHt2WRn9FI49prcwO9
+                      array-0.5.1.1@array-0.5.1.1
+                      async-2.1.1@async-2.1.1-4n6HEMPJR2eJK0JpvCfuPK
+                      attoparsec-0.13.1.0@attoparsec-0.13.1.0-HCAgpBrKCLJ5li8FbfXxE1
+                      auto-update-0.1.4@auto-update-0.1.4-EmUvNdmhEju51bHrtaEMpz
+                      base-4.9.1.0
+                      base-compat-0.9.1@base-compat-0.9.1-B9geVZFtCvE8ERS7UcvkRz
+                      base64-bytestring-1.0.0.1@base64-bytestring-1.0.0.1-4O9TExPPz6eI82Yj7L4SIj
+                      binary-0.8.3.0@binary-0.8.3.0
+                      blaze-builder-0.4.0.2@blaze-builder-0.4.0.2-CGB8BvrFgghHy5bLy0SFOg
+                      blaze-html-0.8.1.3@blaze-html-0.8.1.3-4x5sR7CihaZBuBa398ibiy
+                      blaze-markup-0.7.1.1@blaze-markup-0.7.1.1-7tIWNv8iALFJhJ4kVxNmNT
+                      byteorder-1.0.4@byteorder-1.0.4-9NlNHkBVdo7F1prFVKrkcH
+                      bytestring-0.10.8.1@bytestring-0.10.8.1
+                      case-insensitive-1.2.0.8@case-insensitive-1.2.0.8-JH9TmxTHpl01TJ0h86Xqcf
+                      containers-0.5.7.1@containers-0.5.7.1
+                      cryptonite-0.21@cryptonite-0.21-BpO3rZu57xu84Yfxwqkb5K
+                      deepseq-1.4.2.0@deepseq-1.4.2.0 directory-1.3.0.0@directory-1.3.0.0
+                      dlist-0.8.0.2@dlist-0.8.0.2-6Wnps4GD7EFnRucVzXIFD
+                      entropy-0.3.7@entropy-0.3.7-GVoReSVE1cZ4Y1pKgzhBYO
+                      file-embed-0.0.10@file-embed-0.0.10-KWMmUDaNSRP7AxWSEHlrrK
+                      filepath-1.4.1.1@filepath-1.4.1.1
+                      ghc-boot-th-8.0.2@ghc-boot-th-8.0.2 ghc-prim-0.5.0.0
+                      hakka-0.3.0@hakka-0.3.0-810FebrIp7M3XJ8vuXC123
+                      hashable-1.2.5.0@hashable-1.2.5.0-F4MWeNuv2sjJRqBd2T5ul4
+                      http-date-0.0.6.1@http-date-0.0.6.1-I9CE9BHCJzIDsnojCE46i
+                      http-types-0.9.1@http-types-0.9.1-5F2YjZNOfOTCho80klHZFM
+                      http2-1.6.3@http2-1.6.3-AztirFAAzjluWi6d9XlAh integer-gmp-1.0.0.1
+                      integer-logarithms-1.0.1@integer-logarithms-1.0.1-IEHCuEd5sG4JjSjlx7m5JF
+                      iproute-1.7.1@iproute-1.7.1-4HULutk0xITKNjI1pwYrD4
+                      memory-0.14.1@memory-0.14.1-J8LClTQE9ts1CQQG3Fd7ul
+                      mime-types-0.1.0.7@mime-types-0.1.0.7-31dnC2ifQ9r5TApUZagLPk
+                      network-2.6.3.1@network-2.6.3.1-ABFtZSq90Z9BfMXNiqgBoe
+                      pretty-1.1.3.3@pretty-1.1.3.3
+                      primitive-0.6.1.0@primitive-0.6.1.0-6AbSTw9JXz141LE5p6LGH
+                      psqueues-0.2.2.3@psqueues-0.2.2.3-GauKnoBPgvr4cpGo1pqheE
+                      random-1.1@random-1.1-9tceXaeYIMZ4JrKq20Egog
+                      scientific-0.3.4.10@scientific-0.3.4.10-HRQd1hS6vMV6hvjSlMi8B0
+                      simple-sendfile-0.2.25@simple-sendfile-0.2.25-JJ9zm1wZxYIARxlVa3oQgs
+                      stm-2.4.4.1@stm-2.4.4.1-JQn4hNPyYjP5m9AcbI88Ve
+                      streaming-commons-0.1.17@streaming-commons-0.1.17-Ec7F62APEFzLqTOvsWpyBa
+                      tagged-0.8.5@tagged-0.8.5-1mTloBSoUxv8dqUr8XBGBt
+                      template-haskell-2.11.1.0
+                      text-1.2.2.1@text-1.2.2.1-Ji7hMs2U4BkBwavd4taEVR
+                      time-1.6.0.1@time-1.6.0.1
+                      time-locale-compat-0.1.1.3@time-locale-compat-0.1.1.3-KZ1jqNx8uhlHjmuPPj6V1Y
+                      transformers-0.5.2.0@transformers-0.5.2.0 unix-2.7.2.1@unix-2.7.2.1
+                      unix-compat-0.4.3.1@unix-compat-0.4.3.1-Ausmw6d7KIwA7sl52mzqxC
+                      unordered-containers-0.2.7.2@unordered-containers-0.2.7.2-8AmrySQXjRGF6VciYs51fM
+                      vault-0.3.0.6@vault-0.3.0.6-LaXzEmUAZNyLZeEpsXBRv2
+                      vector-0.11.0.0@vector-0.11.0.0-LMwQhhnXj8U3T5Bm1JFxG
+                      wai-3.2.1.1@wai-3.2.1.1-8NcmuA9FbmNFdjqmYFUkuU
+                      wai-app-static-3.1.6.1@wai-app-static-3.1.6.1-EJ22hRRsrq66ryjo1J1Ixh
+                      wai-websockets-3.0.1.1@wai-websockets-3.0.1.1-MCms6WZ1cwCkdX4Ag9gdS
+                      warp-3.2.11.1@warp-3.2.11.1-FHI12TXy46i2m3Pr3T0UPD
+                      websockets-0.10.0.0@websockets-0.10.0.0-EPlPBNzz36p9j22hjJqFLN
+                      word8-0.1.2@word8-0.1.2-9WDPGCTpW7JJnsiAQavtd1
+                      zlib-0.6.1.2@zlib-0.6.1.2-7negTfm2ujt1gW4wr40MUp
+orphans: attoparsec-0.13.1.0@attoparsec-0.13.1.0-HCAgpBrKCLJ5li8FbfXxE1:Data.Attoparsec.ByteString.Char8
+         attoparsec-0.13.1.0@attoparsec-0.13.1.0-HCAgpBrKCLJ5li8FbfXxE1:Data.Attoparsec.Text.Internal
+         base-4.9.1.0:GHC.Base base-4.9.1.0:GHC.Float
+         binary-0.8.3.0@binary-0.8.3.0:Data.Binary.Generic
+         bytestring-0.10.8.1@bytestring-0.10.8.1:Data.ByteString.Builder
+         hashable-1.2.5.0@hashable-1.2.5.0-F4MWeNuv2sjJRqBd2T5ul4:Data.Hashable.Generic
+         network-2.6.3.1@network-2.6.3.1-ABFtZSq90Z9BfMXNiqgBoe:Network.Socket
+         stm-2.4.4.1@stm-2.4.4.1-JQn4hNPyYjP5m9AcbI88Ve:Control.Monad.STM
+         text-1.2.2.1@text-1.2.2.1-Ji7hMs2U4BkBwavd4taEVR:Data.Text
+         text-1.2.2.1@text-1.2.2.1-Ji7hMs2U4BkBwavd4taEVR:Data.Text.Lazy
+         text-1.2.2.1@text-1.2.2.1-Ji7hMs2U4BkBwavd4taEVR:Data.Text.Show
+         time-1.6.0.1@time-1.6.0.1:Data.Time.Calendar.Gregorian
+         time-1.6.0.1@time-1.6.0.1:Data.Time.Format.Parse
+         time-1.6.0.1@time-1.6.0.1:Data.Time.LocalTime.LocalTime
+         transformers-0.5.2.0@transformers-0.5.2.0:Control.Monad.Trans.Error
+         vector-0.11.0.0@vector-0.11.0.0-LMwQhhnXj8U3T5Bm1JFxG:Data.Vector.Fusion.Bundle
+         vector-0.11.0.0@vector-0.11.0.0-LMwQhhnXj8U3T5Bm1JFxG:Data.Vector.Unboxed
+family instance modules: attoparsec-0.13.1.0@attoparsec-0.13.1.0-HCAgpBrKCLJ5li8FbfXxE1:Data.Attoparsec.Internal.Types
+                         base-4.9.1.0:Control.Applicative base-4.9.1.0:Data.Complex
+                         base-4.9.1.0:Data.Either base-4.9.1.0:Data.Functor.Compose
+                         base-4.9.1.0:Data.Functor.Const base-4.9.1.0:Data.Functor.Identity
+                         base-4.9.1.0:Data.Functor.Product base-4.9.1.0:Data.Functor.Sum
+                         base-4.9.1.0:Data.List.NonEmpty base-4.9.1.0:Data.Monoid
+                         base-4.9.1.0:Data.Semigroup base-4.9.1.0:Data.Type.Equality
+                         base-4.9.1.0:Data.Version base-4.9.1.0:Data.Void
+                         base-4.9.1.0:GHC.Exts base-4.9.1.0:GHC.Generics
+                         base-4.9.1.0:GHC.IO.Exception base-4.9.1.0:GHC.TypeLits
+                         containers-0.5.7.1@containers-0.5.7.1:Data.IntMap.Base
+                         containers-0.5.7.1@containers-0.5.7.1:Data.IntSet.Base
+                         containers-0.5.7.1@containers-0.5.7.1:Data.Map.Base
+                         containers-0.5.7.1@containers-0.5.7.1:Data.Sequence
+                         containers-0.5.7.1@containers-0.5.7.1:Data.Set.Base
+                         dlist-0.8.0.2@dlist-0.8.0.2-6Wnps4GD7EFnRucVzXIFD:Data.DList
+                         ghc-boot-th-8.0.2@ghc-boot-th-8.0.2:GHC.LanguageExtensions.Type
+                         iproute-1.7.1@iproute-1.7.1-4HULutk0xITKNjI1pwYrD4:Data.IP.Addr
+                         iproute-1.7.1@iproute-1.7.1-4HULutk0xITKNjI1pwYrD4:Data.IP.Range
+                         main@main:Messages
+                         pretty-1.1.3.3@pretty-1.1.3.3:Text.PrettyPrint.Annotated.HughesPJ
+                         pretty-1.1.3.3@pretty-1.1.3.3:Text.PrettyPrint.HughesPJ
+                         primitive-0.6.1.0@primitive-0.6.1.0-6AbSTw9JXz141LE5p6LGH:Control.Monad.Primitive
+                         tagged-0.8.5@tagged-0.8.5-1mTloBSoUxv8dqUr8XBGBt:Data.Tagged
+                         template-haskell-2.11.1.0:Language.Haskell.TH.Syntax
+                         text-1.2.2.1@text-1.2.2.1-Ji7hMs2U4BkBwavd4taEVR:Data.Text
+                         text-1.2.2.1@text-1.2.2.1-Ji7hMs2U4BkBwavd4taEVR:Data.Text.Lazy
+                         unordered-containers-0.2.7.2@unordered-containers-0.2.7.2-8AmrySQXjRGF6VciYs51fM:Data.HashMap.Base
+                         unordered-containers-0.2.7.2@unordered-containers-0.2.7.2-8AmrySQXjRGF6VciYs51fM:Data.HashSet
+                         vector-0.11.0.0@vector-0.11.0.0-LMwQhhnXj8U3T5Bm1JFxG:Data.Vector
+                         vector-0.11.0.0@vector-0.11.0.0-LMwQhhnXj8U3T5Bm1JFxG:Data.Vector.Primitive
+                         vector-0.11.0.0@vector-0.11.0.0-LMwQhhnXj8U3T5Bm1JFxG:Data.Vector.Storable
+                         vector-0.11.0.0@vector-0.11.0.0-LMwQhhnXj8U3T5Bm1JFxG:Data.Vector.Unboxed
+                         vector-0.11.0.0@vector-0.11.0.0-LMwQhhnXj8U3T5Bm1JFxG:Data.Vector.Unboxed.Base
+                         zlib-0.6.1.2@zlib-0.6.1.2-7negTfm2ujt1gW4wr40MUp:Codec.Compression.Zlib.Stream
+import  -/  aeson-1.0.2.1@aeson-1.0.2.1-1PgNnQdZpa7BG8cq9P3bMU:Data.Aeson 1d291d79cf65b5bfc957825ffb28275f
+import  -/  base-4.9.1.0:Control.Concurrent.MVar 1e4f68fc63da1d1a554d5258431dd0c6
+import  -/  base-4.9.1.0:Control.Exception a76dd9666251322fe34dbcca3a0817bf
+import  -/  base-4.9.1.0:Control.Exception.Base 1e106916283856f4d9caeddab92cd861
+import  -/  base-4.9.1.0:Control.Monad.IO.Class 1a4384f66ee999caf5366398edb6ca7b
+import  -/  base-4.9.1.0:Data.Maybe d876c4ffe4b3c43755a781e8ad860d88
+import  -/  base-4.9.1.0:Data.String b34df69c7b6358cd40a379c8a0a78dcf
+import  -/  base-4.9.1.0:GHC.Base c4231c43c07e46080a26bf94094c7aa1
+import  -/  base-4.9.1.0:GHC.Exception e38fa3e73d54022fb9e3ce06477dfd07
+import  -/  base-4.9.1.0:GHC.MVar 2b6c6f2887cffa9e72fc08229ba0f346
+import  -/  base-4.9.1.0:GHC.Show a027f5ac24879eaba752f44aa90fe511
+import  -/  base-4.9.1.0:Prelude 22dd289b8469a8fa8dc81cab7b237771
+import  -/  base-4.9.1.0:System.IO c9de64c5f5407c4cf1c52500c4d15200
+import  -/  ghc-prim-0.5.0.0:GHC.Types 89f8de4f08018c9177c98d979eae0e45
+import  -/  hakka-0.3.0@hakka-0.3.0-810FebrIp7M3XJ8vuXC123:Hakka.Actor 3c7c12b577574b26de1f42e6c7f41ae6
+import  -/  Messages 8f3a468226dd5df70b1f8189671b8edc
+  exports: 35848a6e93d875a086817bd4da5eb216
+  Connect 5e15d936737c6cef0b566d388f7a132f
+  Disconnect abe01a4c32343d9848981209d5939f8e
+  Init 901e64453e19fc6e01a776483501dd0e
+  Msg 29c2a22aa7320a7dd0035781d7f1e1e5
+  ServerMessage 043fdc03ddcbdc12e98acfc0533c0db8
+  timestamped ab430d3954da5a4f418f0ad0ac97b19e
+import  -/  Universe 236e812e2168f5d0db9180322a4a13fb
+  exports: f4e5c2b53d977092d79dad371ed60c5a
+  universe ed0ade71f03c6fa783cdeb8481e1635c
+import  -/  random-1.1@random-1.1-9tceXaeYIMZ4JrKq20Egog:System.Random cc3ef358c669b194cf9fe94db6f2430f
+import  -/  wai-app-static-3.1.6.1@wai-app-static-3.1.6.1-EJ22hRRsrq66ryjo1J1Ixh:Network.Wai.Application.Static e19f75f1b591e2aeacdadaeef1a4bc72
+import  -/  wai-app-static-3.1.6.1@wai-app-static-3.1.6.1-EJ22hRRsrq66ryjo1J1Ixh:WaiAppStatic.Storage.Filesystem 0dd4bf79ae8adb863e22edb3d2a49417
+import  -/  wai-app-static-3.1.6.1@wai-app-static-3.1.6.1-EJ22hRRsrq66ryjo1J1Ixh:WaiAppStatic.Types e849c8788f51c0502945110ecf9cde1c
+import  -/  wai-websockets-3.0.1.1@wai-websockets-3.0.1.1-MCms6WZ1cwCkdX4Ag9gdS:Network.Wai.Handler.WebSockets db4be46f3c106dbaee4d25cd3a784fe8
+import  -/  warp-3.2.11.1@warp-3.2.11.1-FHI12TXy46i2m3Pr3T0UPD:Network.Wai.Handler.Warp a1cb277c8d92bda483fbe0df576474b4
+import  -/  warp-3.2.11.1@warp-3.2.11.1-FHI12TXy46i2m3Pr3T0UPD:Network.Wai.Handler.Warp.Run ebfc70a1ccd06e780a97043162e3faa4
+import  -/  websockets-0.10.0.0@websockets-0.10.0.0-EPlPBNzz36p9j22hjJqFLN:Network.WebSockets c4afb7f99cb36efed54f0c855d2c852f
+import  -/  websockets-0.10.0.0@websockets-0.10.0.0-EPlPBNzz36p9j22hjJqFLN:Network.WebSockets.Connection 4dd135d1497da11d7d020a93fd51d0d9
+import  -/  websockets-0.10.0.0@websockets-0.10.0.0-EPlPBNzz36p9j22hjJqFLN:Network.WebSockets.Types e096d729938883593e22657eaf0d110a
+d6831ef04cb9301b090dfae6f7bb7ec7
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module Main.$trModule2 Main.$trModule1) -}
+847d9fc3b8e6f0b424199f36b4999bb2
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "Main"#) -}
+24ef6042833e75ffd7aa98b83ecca98d
+  $trModule2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "main"#) -}
+6f98b8ec6c00514937e4fb3fdb2233bc
+  $whandleSocket ::
+    Hakka.Actor.ActorSystem Messages.ServerMessage
+    -> Hakka.Actor.ActorRef Messages.ServerMessage
+    -> Network.WebSockets.Connection.Connection
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 4,
+     Strictness: <L,U(A,C(C1(C1(U(U,U)))))><L,U><L,U(C(U(U,A)),A,C(U(U,1*U)),C(C1(U(U,U))),U)><S,U>,
+     Inline: [0] -}
+04ea913144800765b8254aeae5fece78
+  $wsocket ::
+    Hakka.Actor.ActorSystem Messages.ServerMessage
+    -> Hakka.Actor.ActorRef Messages.ServerMessage
+    -> GHC.Types.IO ()
+    -> Data.ByteString.Internal.ByteString
+    -> Network.WebSockets.Http.Headers
+    -> GHC.Types.Bool
+    -> (Network.WebSockets.Connection.Connection -> GHC.Types.IO ())
+    -> GHC.Types.IO
+         (GHC.Base.Maybe Data.ByteString.Internal.ByteString)
+    -> (GHC.Base.Maybe Data.ByteString.Lazy.Internal.ByteString
+        -> GHC.Types.IO ())
+    -> GHC.Prim.MutVar#
+         GHC.Prim.RealWorld Network.WebSockets.Stream.StreamState
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 11,
+     Strictness: <L,1*U(A,C(C1(C1(U(U,U)))))><L,U><S,U><S,U><S,U><L,U><S,C(C1(U(U,A)))><L,C(U(U,1*U))><C(C(S(SL))),C(C1(U(U,U)))><S,U><S,U>,
+     Inline: [0],
+     Unfolding: (\ (w :: Hakka.Actor.ActorSystem Messages.ServerMessage)
+                   (w1 :: Hakka.Actor.ActorRef Messages.ServerMessage)
+                   (ww :: GHC.Types.IO ())
+                   (ww1 :: Data.ByteString.Internal.ByteString)
+                   (ww2 :: Network.WebSockets.Http.Headers)
+                   (ww3 :: GHC.Types.Bool)
+                   (ww4 :: Network.WebSockets.Connection.Connection
+                           -> GHC.Types.IO ())
+                   (ww5 :: GHC.Types.IO
+                             (GHC.Base.Maybe Data.ByteString.Internal.ByteString))
+                   (ww6 :: GHC.Base.Maybe Data.ByteString.Lazy.Internal.ByteString
+                           -> GHC.Types.IO ())
+                   (ww7 :: GHC.Prim.MutVar#
+                             GHC.Prim.RealWorld Network.WebSockets.Stream.StreamState)
+                   (w2 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                 case Network.WebSockets.Connection.$wacceptRequestWith
+                        ww
+                        ww1
+                        ww2
+                        ww3
+                        ww4
+                        ww5
+                        ww6
+                        ww7
+                        Network.WebSockets.Connection.defaultAcceptRequest
+                        w2 of ds1 { (#,#) ipv ipv1 ->
+                 case GHC.Prim.newMVar#
+                        @ GHC.Prim.RealWorld
+                        @ (Hakka.Actor.ActorRef Messages.ServerMessage)
+                        ipv of ds { (#,#) ipv2 ipv3 ->
+                 case w of wild { Hakka.Actor.ActorSystem ds2 ds3 ->
+                 case (ds3
+                         w1
+                         (Messages.Connect
+                            (\ (x :: Messages.TimestampedMessage)
+                               (eta1 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                             case ipv1 of ww8 { Network.WebSockets.Connection.Connection ww9 ww10 ww11 ww12 ww13 ->
+                             let {
+                               w3 :: [Network.WebSockets.Types.Message]
+                               = GHC.Base.map
+                                   @ Network.WebSockets.Types.DataMessage
+                                   @ Network.WebSockets.Types.Message
+                                   Network.WebSockets.Types.DataMessage
+                                   (GHC.Base.map
+                                      @ Data.ByteString.Lazy.Internal.ByteString
+                                      @ Network.WebSockets.Types.DataMessage
+                                      Network.WebSockets.Types.Text
+                                      (GHC.Types.:
+                                         @ Data.ByteString.Lazy.Internal.ByteString
+                                         (Data.ByteString.Builder.toLazyByteString
+                                            (Messages.$fToJSONTimestampedMessage1 x)
+                                              `cast`
+                                            (Trans
+                                                 (Data.Tagged.N:Tagged[0]
+                                                      <*>_N
+                                                      <Data.Aeson.Types.Generic.True>_P
+                                                      <Data.Aeson.Encoding.Internal.Encoding>_R)
+                                                 (Data.Aeson.Encoding.Internal.N:Encoding'[0]
+                                                      <Data.Aeson.Types.Internal.Value>_P)))
+                                         (GHC.Types.[] @ Data.ByteString.Lazy.Internal.ByteString)))
+                             } in
+                             case (Network.WebSockets.Connection.forkPingThread_go w3)
+                                    `cast`
+                                  (Data.Monoid.N:Any[0]) of wild1 {
+                               GHC.Types.False -> (ww12 w3) `cast` (GHC.Types.N:IO[0] <()>_R) eta1
+                               GHC.Types.True
+                               -> case GHC.Prim.writeMutVar#
+                                         @ GHC.Prim.RealWorld
+                                         @ GHC.Types.Bool
+                                         ww13
+                                         GHC.Types.True
+                                         eta1 of s2# { DEFAULT ->
+                                  (ww12 w3) `cast` (GHC.Types.N:IO[0] <()>_R) s2# } } })
+                              `cast`
+                            (<Messages.TimestampedMessage>_R
+                             ->_R Sym (GHC.Types.N:IO[0] <()>_R))
+                            (GHC.MVar.MVar
+                               @ (Hakka.Actor.ActorRef Messages.ServerMessage)
+                               ipv3)))
+                        `cast`
+                      (GHC.Types.N:IO[0] <()>_R)
+                        ipv2 of ds4 { (#,#) ipv4 ipv5 ->
+                 case GHC.Prim.takeMVar#
+                        @ GHC.Prim.RealWorld
+                        @ (Hakka.Actor.ActorRef Messages.ServerMessage)
+                        ipv3
+                        ipv4 of ds5 { (#,#) ipv6 ipv7 ->
+                 case Network.WebSockets.Connection.$wforkPingThread
+                        ipv1
+                        30#
+                        ipv6 of ds6 { (#,#) ipv8 ipv9 ->
+                 Main.$whandleSocket wild ipv7 ipv1 ipv8 } } } } } }) -}
+a17147086bb46d3ff4938cf46d0e5de8
+  type ConnectionState = ()
+f2df6db543d10dbe0a764967484b9999
+  type UniverseState = ()
+7ce2f799a862e8697ab6ec70513427fe
+  handleSocket ::
+    Hakka.Actor.ActorSystem Messages.ServerMessage
+    -> Hakka.Actor.ActorRef Messages.ServerMessage
+    -> Network.WebSockets.Connection.Connection
+    -> Main.ConnectionState
+    -> GHC.Types.IO ()
+  {- Arity: 5,
+     Strictness: <L,U(A,C(C1(C1(U(U,U)))))><L,U><L,U(C(U(U,A)),A,C(U(U,1*U)),C(C1(U(U,U))),U)><L,A><S,U>,
+     Unfolding: InlineRule (0, True, True)
+                Main.handleSocket1
+                  `cast`
+                (<Hakka.Actor.ActorSystem Messages.ServerMessage>_R
+                 ->_R <Hakka.Actor.ActorRef Messages.ServerMessage>_R
+                 ->_R <Network.WebSockets.Connection.Connection>_R
+                 ->_R <Main.ConnectionState>_R
+                 ->_R Sym (GHC.Types.N:IO[0] <()>_R)) -}
+ddd7ae15b998e00f3e1b321e39662ac2
+  handleSocket1 ::
+    Hakka.Actor.ActorSystem Messages.ServerMessage
+    -> Hakka.Actor.ActorRef Messages.ServerMessage
+    -> Network.WebSockets.Connection.Connection
+    -> Main.ConnectionState
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 5,
+     Strictness: <L,U(A,C(C1(C1(U(U,U)))))><L,U><L,U(C(U(U,A)),A,C(U(U,1*U)),C(C1(U(U,U))),U)><L,A><S,U>,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (5, True, True)
+                (\ (w :: Hakka.Actor.ActorSystem Messages.ServerMessage)
+                   (w1 :: Hakka.Actor.ActorRef Messages.ServerMessage)
+                   (w2 :: Network.WebSockets.Connection.Connection)
+                   (w3 :: Main.ConnectionState)
+                   (w4 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                 Main.$whandleSocket w w1 w2 w4) -}
+6198f9096a32d5146682ed1aa2f6cb1c
+  main :: GHC.Types.IO ()
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: InlineRule (0, True, True)
+                Main.main1 `cast` (Sym (GHC.Types.N:IO[0] <()>_R)) -}
+ce5d673de340c21037ebbfe09c1a2e6d
+  main1 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: (\ (s :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                 case Hakka.Actor.actorSystem1
+                        @ Messages.ServerMessage
+                        @ (Hakka.Actor.ActorRef Messages.ServerMessage)
+                        Messages.$fShowServerMessage
+                        Main.main6
+                        Main.main4
+                          `cast`
+                        (Trans
+                             (<Hakka.Actor.ActorContext Messages.ServerMessage>_R
+                              ->_R Sym (GHC.Types.N:IO[0]
+                                            <(Hakka.Actor.ActorRef Messages.ServerMessage,
+                                              Hakka.Actor.ActorContext Messages.ServerMessage)>_R))
+                             (Trans
+                                  (Sym (Control.Monad.Trans.State.Strict.N:StateT[0]
+                                            <Hakka.Actor.ActorContext Messages.ServerMessage>_N
+                                            <GHC.Types.IO>_R
+                                            <Hakka.Actor.ActorRef Messages.ServerMessage>_N))
+                                  (Sym (Hakka.Actor.N:ActorIO[0]
+                                            <Messages.ServerMessage>_N) <Hakka.Actor.ActorRef
+                                                                           Messages.ServerMessage>_N)))
+                        s of ds1 { (#,#) ipv ipv1 ->
+                 case ipv1 of wild { (,) system universe ->
+                 case Network.Wai.Handler.Warp.Run.$wrunSettings
+                        Main.main3
+                        Network.Wai.Handler.Warp.Settings.defaultSettings16
+                        Network.Wai.Handler.Warp.Settings.defaultOnException1
+                          `cast`
+                        (<GHC.Base.Maybe Network.Wai.Internal.Request>_R
+                         ->_R <GHC.Exception.SomeException>_R
+                         ->_R Sym (GHC.Types.N:IO[0] <()>_R))
+                        Network.Wai.Handler.Warp.Settings.defaultOnExceptionResponse
+                        Network.Wai.Handler.Warp.Settings.defaultSettings14
+                          `cast`
+                        (<Network.Socket.Types.SockAddr>_R
+                         ->_R Sym (GHC.Types.N:IO[0] <GHC.Types.Bool>_R))
+                        Network.Wai.Handler.Warp.Settings.defaultSettings13
+                          `cast`
+                        (<Network.Socket.Types.SockAddr>_R
+                         ->_R Sym (GHC.Types.N:IO[0] <()>_R))
+                        Network.Wai.Handler.Warp.Settings.defaultSettings12
+                        (GHC.Base.Nothing @ Network.Wai.Handler.Warp.Timeout.Manager)
+                        Network.Wai.Handler.Warp.Settings.defaultSettings11
+                        Network.Wai.Handler.Warp.Settings.defaultSettings11
+                        Network.Wai.Handler.Warp.Settings.defaultSettings9
+                          `cast`
+                        (Sym (GHC.Types.N:IO[0] <()>_R))
+                        Network.Wai.Handler.Warp.Settings.defaultSettings10
+                          `cast`
+                        (<(forall a. GHC.Types.IO a -> GHC.Types.IO a)
+                          -> GHC.Types.IO ()>_R
+                         ->_R Sym (GHC.Types.N:IO[0] <()>_R))
+                        GHC.Types.False
+                        Network.Wai.Handler.Warp.Settings.defaultSettings8
+                          `cast`
+                        (<GHC.Types.IO ()>_R ->_R Sym (GHC.Types.N:IO[0] <()>_R))
+                        Network.Wai.Handler.Warp.Settings.defaultSettings6
+                        Network.Wai.Handler.Warp.Settings.defaultSettings4
+                        Network.Wai.Handler.Warp.Settings.ProxyProtocolNone
+                        Network.Wai.Handler.Warp.Settings.defaultSettings3
+                        GHC.Types.True
+                        Network.Wai.Handler.Warp.Settings.defaultSettings2
+                          `cast`
+                        (<Network.Wai.Internal.Request>_R
+                         ->_R <Network.HTTP.Types.Status.Status>_R
+                         ->_R <GHC.Base.Maybe GHC.Integer.Type.Integer>_R
+                         ->_R Sym (GHC.Types.N:IO[0] <()>_R))
+                        Network.Wai.Handler.Warp.Settings.defaultSettings1
+                          `cast`
+                        (<Network.Wai.Internal.Request>_R
+                         ->_R <Data.ByteString.Internal.ByteString>_R
+                         ->_R <GHC.Integer.Type.Integer>_R
+                         ->_R Sym (GHC.Types.N:IO[0] <()>_R))
+                        (GHC.Base.Nothing @ GHC.Types.Int)
+                        (let {
+                           app :: Network.WebSockets.Connection.PendingConnection
+                                  -> GHC.Prim.State# GHC.Prim.RealWorld
+                                  -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+                             {- Arity: 2 -}
+                           = Main.main2 system universe
+                         } in
+                         (\ (req :: Network.Wai.Internal.Request)
+                            (sendResponse :: Network.Wai.Internal.Response
+                                             -> GHC.Types.IO
+                                                  Network.Wai.Internal.ResponseReceived)[OneShot]
+                            (eta :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                          case req of ww { Network.Wai.Internal.Request ww1 ww2 ww3 ww4 ww5 ww6 ww7 ww8 ww9 ww10 ww11 ww12 ww13 ww14 ww15 ww16 ->
+                          case Network.Wai.Handler.WebSockets.$wwebsocketsApp
+                                 Network.WebSockets.Connection.defaultConnectionOptions
+                                 app
+                                   `cast`
+                                 (<Network.WebSockets.Connection.PendingConnection>_R
+                                  ->_R Sym (GHC.Types.N:IO[0] <()>_R))
+                                 ww3
+                                 ww4
+                                 ww5
+                                 ww6 of wild1 {
+                            GHC.Base.Nothing
+                            -> Network.Wai.Application.Static.staticApp1
+                                 Main.staticSettings
+                                 ww
+                                 sendResponse
+                                 eta
+                            GHC.Base.Just res
+                            -> (sendResponse res)
+                                 `cast`
+                               (GHC.Types.N:IO[0] <Network.Wai.Internal.ResponseReceived>_R)
+                                 eta } })
+                           `cast`
+                         (<Network.Wai.Internal.Request>_R
+                          ->_R <Network.Wai.Internal.Response
+                                -> GHC.Types.IO Network.Wai.Internal.ResponseReceived>_R
+                          ->_R Sym (GHC.Types.N:IO[0]
+                                        <Network.Wai.Internal.ResponseReceived>_R)))
+                        ipv of ds2 { (#,#) ipv2 ipv3 ->
+                 case GHC.IO.Handle.Internals.wantReadableHandle_1
+                        @ GHC.Base.String
+                        GHC.IO.Handle.Text.hGetLine4
+                        GHC.IO.Handle.FD.stdin
+                        GHC.IO.Handle.Text.hGetLine2
+                          `cast`
+                        (<GHC.IO.Handle.Types.Handle__>_R
+                         ->_R Sym (GHC.Types.N:IO[0] <GHC.Base.String>_R))
+                        ipv2 of ds3 { (#,#) ipv4 ipv5 ->
+                 case system of wild1 { Hakka.Actor.ActorSystem ds4 ds5 ->
+                 ds4 `cast` (GHC.Types.N:IO[0] <()>_R) ipv4 } } } } }) -}
+c1d99d1fb293d8a78e62f9d3425b1c3e
+  main2 ::
+    Hakka.Actor.ActorSystem Messages.ServerMessage
+    -> Hakka.Actor.ActorRef Messages.ServerMessage
+    -> Network.WebSockets.Connection.PendingConnection
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 4,
+     Strictness: <L,1*U(A,C(C1(C1(U(U,U)))))><L,U><S(SS(SSL)SS(LC(C(S(SL)))S)),1*U(U,U(U,U,U),C(C1(U(U,A))),U(C(U(U,1*U)),C(C1(U(U,U))),U))><S,U>,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (4, True, False)
+                (\ (w :: Hakka.Actor.ActorSystem Messages.ServerMessage)
+                   (w1 :: Hakka.Actor.ActorRef Messages.ServerMessage)
+                   (w2 :: Network.WebSockets.Connection.PendingConnection)
+                   (w3 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                 case w2 of ww { Network.WebSockets.Connection.PendingConnection ww1 ww2 ww3 ww4 ->
+                 case ww2 of ww5 { Network.WebSockets.Http.RequestHead ww6 ww7 ww8 ->
+                 case ww4 of ww9 { Network.WebSockets.Stream.Stream ww10 ww11 ww12 ->
+                 Main.$wsocket w w1 ww1 ww6 ww7 ww8 ww3 ww10 ww11 ww12 w3 } } }) -}
+46eca1bb497df3d5bd485ec57a67f6ba
+  main3 :: GHC.Types.Int
+  {- HasNoCafRefs, Unfolding: (GHC.Types.I# 3000#) -}
+da77e983778003f2cb12d5458940afed
+  main4 ::
+    Hakka.Actor.ActorContext Messages.ServerMessage
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          (Hakka.Actor.ActorRef Messages.ServerMessage,
+           Hakka.Actor.ActorContext Messages.ServerMessage) #)
+  {- Arity: 2,
+     Unfolding: (\ (s1 :: Hakka.Actor.ActorContext
+                            Messages.ServerMessage)[OneShot]
+                   (s :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                 case s1 of wild { Hakka.Actor.ActorContext ds ds1 ds2 ds3 ds4 ->
+                 case (ds4 Universe.universe_name1 Main.main5)
+                        `cast`
+                      (GHC.Types.N:IO[0] <Hakka.Actor.ActorRef Messages.ServerMessage>_R)
+                        s of ds5 { (#,#) ipv ipv1 ->
+                 case Messages.currentTimeMillis1 ipv of ds7 { (#,#) ipv2 ipv3 ->
+                 case (ds3
+                         (Hakka.Actor.Deliver
+                            @ Messages.ServerMessage
+                            (Hakka.Actor.Envelope
+                               @ Messages.ServerMessage
+                               ds2
+                               ipv1
+                               (Hakka.Actor.Message
+                                  @ Messages.ServerMessage
+                                  (Messages.Msg
+                                     (Messages.TimestampedMessage ipv3 Messages.Init))))))
+                        `cast`
+                      (GHC.Types.N:IO[0] <()>_R)
+                        ipv2 of ds8 { (#,#) ipv4 ipv5 ->
+                 (# ipv4, (ipv1, wild) #) } } } }) -}
+9ef3caea235f49a6b55daa0ecfb5e2b3
+  main5 :: Hakka.Actor.Behavior Messages.ServerMessage
+  {- Unfolding: (Hakka.Actor.Behavior
+                   @ Messages.ServerMessage
+                   Universe.universe2
+                     `cast`
+                   (<Messages.ServerMessage>_R
+                    ->_R Trans
+                             (<Hakka.Actor.ActorContext Messages.ServerMessage>_R
+                              ->_R Sym (GHC.Types.N:IO[0]
+                                            <((),
+                                              Hakka.Actor.ActorContext Messages.ServerMessage)>_R))
+                             (Trans
+                                  (Sym (Control.Monad.Trans.State.Strict.N:StateT[0]
+                                            <Hakka.Actor.ActorContext Messages.ServerMessage>_N
+                                            <GHC.Types.IO>_R
+                                            <()>_N))
+                                  (Sym (Hakka.Actor.N:ActorIO[0]
+                                            <Messages.ServerMessage>_N) <()>_N)))
+                   (Hakka.Actor.actor2 @ Messages.ServerMessage)) -}
+056b5258332a3cb0691a8a54860124a7
+  main6 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "curried-in-space"#) -}
+2d4464850b25d69cf266f07f8c6627b0
+  main7 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 1,
+     Unfolding: (GHC.TopHandler.runMainIO1
+                   @ ()
+                   Main.main1 `cast` (Sym (GHC.Types.N:IO[0] <()>_R))) -}
+b0ea0b383e5d526710be6fcf8f951b00
+  socket ::
+    Hakka.Actor.ActorSystem Messages.ServerMessage
+    -> Hakka.Actor.ActorRef Messages.ServerMessage
+    -> Network.WebSockets.Connection.PendingConnection
+    -> GHC.Types.IO ()
+  {- Arity: 4,
+     Strictness: <L,1*U(A,C(C1(C1(U(U,U)))))><L,U><S(SS(SSL)SS(LC(C(S(SL)))S)),1*U(U,U(U,U,U),C(C1(U(U,A))),U(C(U(U,1*U)),C(C1(U(U,U))),U))><S,U>,
+     Unfolding: InlineRule (0, True, True)
+                Main.main2
+                  `cast`
+                (<Hakka.Actor.ActorSystem Messages.ServerMessage>_R
+                 ->_R <Hakka.Actor.ActorRef Messages.ServerMessage>_R
+                 ->_R <Network.WebSockets.Connection.PendingConnection>_R
+                 ->_R Sym (GHC.Types.N:IO[0] <()>_R)) -}
+6a65ea651c844e4e0b1d2fb5616daf65
+  static :: Network.Wai.Application
+  {- Arity: 3,
+     Unfolding: InlineRule (0, True, True)
+                Main.static1
+                  `cast`
+                (<Network.Wai.Internal.Request>_R
+                 ->_R <Network.Wai.Internal.Response
+                       -> GHC.Types.IO Network.Wai.Internal.ResponseReceived>_R
+                 ->_R Sym (GHC.Types.N:IO[0]
+                               <Network.Wai.Internal.ResponseReceived>_R)) -}
+897d70d26a5f298d547a70195f073c63
+  static1 ::
+    Network.Wai.Internal.Request
+    -> (Network.Wai.Internal.Response
+        -> GHC.Types.IO Network.Wai.Internal.ResponseReceived)
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          Network.Wai.Internal.ResponseReceived #)
+  {- Arity: 3,
+     Unfolding: (Network.Wai.Application.Static.staticApp1
+                   Main.staticSettings) -}
+a52df9ae7395d72bbebd99cbece6d38d
+  staticSettings :: WaiAppStatic.Types.StaticSettings
+  {- Unfolding: (case WaiAppStatic.Storage.Filesystem.$wdefaultFileServerSettings
+                        Main.staticSettings1 of ww { (#,,,,,,,,,#) ww1 ww2 ww3 ww4 ww5 ww6 ww7 ww8 ww9 ww10 ->
+                 WaiAppStatic.Types.StaticSettings
+                   ww1
+                   ww2
+                   ww3
+                   ww4
+                   WaiAppStatic.Types.NoMaxAge
+                   ww6
+                   ww7
+                   ww8
+                   ww9
+                   ww10 }) -}
+f0b6769b6fc514d2c1cc890193b06d94
+  staticSettings1 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "scala-client/assets"#) -}
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: none
+require own pkg trusted: False
+
