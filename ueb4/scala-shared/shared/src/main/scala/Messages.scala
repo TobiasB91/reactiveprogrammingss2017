@@ -14,6 +14,8 @@ case class Spaceship(common : CommonState) extends Message
 case class Laser(common : CommonState, shooter : Int) extends Message
 case class Cmd(sId : Int, cmd : Command) extends Message
 case class ClientId(clientId : Int) extends Message
+case class Destroy(destroy : Int) extends Message
+case class SetLifes(sId : Int, lifes : Int) extends Message
 
 case class CommonState(ident : Int, pos : (Double, Double), velo : (Double, Double), acc : Double, omega : Double, phi : Double)  
 

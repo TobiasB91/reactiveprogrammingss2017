@@ -20,7 +20,10 @@ import Control.Concurrent.MVar
 import Hakka.Actor (ActorRef)
 
 data Message = Ping | Pong | Init | Update |   
-  CreateLaser Int (Double, Double) (Double, Double) Double | 
+  CreateLaser Int (Double, Double) (Double, Double) Double |
+  CreateAsteroid (Double, Double) ASize AColor |
+  Destroy { destroy :: Int } |
+  SetLifes { sId :: Int, lifes :: Int } |
   Cmd { sId :: Int, cmd :: Command } | 
   ClientId { clientId :: Int } |
   Asteroid { 
@@ -41,8 +44,8 @@ data CommonState = CommonState {
   phi :: Double
 } deriving (Generic, Show) 
 
-data ASize = Tiny | Small | Medium | Big deriving (Generic, Show) 
-data AColor = Brown | Gray deriving (Generic, Show) 
+data ASize = Tiny | Small | Medium | Big deriving (Generic, Show, Eq) 
+data AColor = Brown | Gray deriving (Generic, Show, Eq) 
 
 currentTimeMillis :: IO Integer
 currentTimeMillis = (round . (1000 *)) <$> getPOSIXTime

@@ -41,6 +41,17 @@ object Main extends JSApp {
       socket.onMessage { msg =>
         console.log(msg.toString)
         msg match {
+          case TimestampedMessage (t, SetLifes (sId, lifes)) =>
+           view.setLifes(lifes) 
+          case TimestampedMessage (t, Destroy (id)) =>
+            var e = view.lookup(id)
+            e match {
+              case Some(v) => 
+                console.log("Destroying object with id: " + id)
+                view.remove(v)
+                v.remove()
+              case None => console.log("Deleting non existant object with id: " + id) 
+            }
           case TimestampedMessage (t, ClientId (cId)) =>
                 val player = view.factory.player(cId, Color.Blue)
                 view.spawn(player)

@@ -9,13 +9,15 @@ import Control.Monad
 import System.Random
 import Control.Concurrent
 import Data.List
+import Data.Maybe
 import qualified Data.Map.Lazy as Map 
 
 universe :: ActorIO ServerMessage (ActorRef ServerMessage)
 universe = actor "universe" $ initialize 0 where
   initialize idCount = \case 
     Msg (TimestampedMessage t Init) -> do
-      asteroids <- forM [idCount..idCount+9] $ \index -> do 
+      num <- liftIO $ randomRIO (8,20)
+      asteroids <- forM [idCount..idCount+num] $ \index -> do 
         rnds <- liftIO . replicateM 8 $ randomRIO (0,1.0) 
         let pos = (500 - (rnds !! 0) * 1000, 500 - (rnds !! 1) * 1000) 
         let omega = (rnds !! 2) * pi * 2 
@@ -30,7 +32,7 @@ universe = actor "universe" $ initialize 0 where
               0 -> Brown
               _ -> Gray 
         asteroid index pos velo 0 omega phi size color 
-      become $ receive (idCount + length asteroids) Map.empty asteroids Map.empty [] 
+      become $ receive (idCount + length asteroids) Map.empty (Map.fromList $ zip [idCount..idCount+num] asteroids) Map.empty Map.empty 
       forM_ asteroids (! (Msg (TimestampedMessage t Update)))
   receive idCount connections asteroids spaceships lasers = \case
     Connect out res -> do
@@ -42,6 +44,14 @@ universe = actor "universe" $ initialize 0 where
       sender >>= \con -> do 
         let connections' = Map.delete conId connections 
         become $ receive idCount connections' asteroids spaceships lasers
+    destroy@(Msg (TimestampedMessage t (Destroy id))) -> do
+      let new = map (Map.delete id) [asteroids, spaceships, lasers]
+      forM_ connections (! destroy)
+      become $ receive idCount connections (new !! 0) (new !! 1) (new !! 2) 
+    msg@(Msg (TimestampedMessage t (SetLifes id lifes))) -> do
+      let con = Map.lookup id connections
+      when (isJust con) $ fromJust con ! msg
+      become $ receive idCount connections asteroids spaceships lasers
     Msg (TimestampedMessage t (ClientId cId)) -> 
       case Map.lookup cId connections of
         Just connection -> do
@@ -54,17 +64,28 @@ universe = actor "universe" $ initialize 0 where
           become $ receive idCount connections asteroids spaceships lasers
     update@(Msg (TimestampedMessage t (Asteroid _ _ _))) -> do  
       become $ receive idCount connections asteroids spaceships lasers
+      forM_ spaceships (! update)
       forM_ connections (! update) 
+    Msg (TimestampedMessage t (CreateAsteroid pos size color)) -> do
+      rnds <- liftIO . replicateM 4 $ randomRIO (0,1.0) 
+      let omega = (rnds !! 0) * pi * 2 
+      let phi = (rnds !! 1) - 0.5 
+      let velo = (50 - (rnds !! 2) * 100, 50 - (rnds !! 3) * 100) 
+      asteroid <- asteroid idCount pos velo 0 omega phi size color  
+      let asteroids' = Map.insert idCount asteroid asteroids
+      asteroid ! Msg (TimestampedMessage t Update)
+      become $ receive (idCount+1) connections asteroids' spaceships lasers
     update@(Msg (TimestampedMessage t (Spaceship _))) -> do 
       become $ receive idCount connections asteroids spaceships lasers
       forM_ connections (! update)
-    update@(Msg (TimestampedMessage t (Laser _ _))) -> do 
+    update@(Msg (TimestampedMessage t (Laser st sId))) -> do 
       become $ receive idCount connections asteroids spaceships lasers
+      forM_ asteroids (! update) 
       forM_ connections (! update)
     msg@(Msg (TimestampedMessage t (Cmd sId cmd))) -> do
       case Map.lookup sId spaceships of 
         Just sp -> sp ! msg
-        _ -> liftIO $ print "err: not connected anymore" 
+        _ -> liftIO $ print "spaceship is dead" 
       become $ receive idCount connections asteroids spaceships lasers
     msg@(Msg (TimestampedMessage t (CreateLaser sId pos v@(vx,vy) omega))) -> do
       let velo' = add v $ scalarMult (rotate (0,1) omega) 1000 
@@ -72,7 +93,7 @@ universe = actor "universe" $ initialize 0 where
       let phi = 0
       laser <- laser idCount sId pos velo' a omega phi 
       laser ! Msg (TimestampedMessage t Update)
-      become $ receive (idCount+1) connections asteroids spaceships (laser:lasers) 
+      become $ receive (idCount+1) connections asteroids spaceships (Map.insert idCount laser lasers)
 
 
 asteroid :: Int -> (Double,Double) -> (Double, Double) -> Double -> Double -> Double -> ASize -> AColor -> ActorIO ServerMessage (ActorRef ServerMessage)
@@ -85,15 +106,28 @@ asteroid id p@(px,py) v@(vx,vy) a omega phi size color = actor (show id) (receiv
       let v' = (vx - deltaS * sin omega * a, vy + deltaS * cos omega * a)
       let omega' = omega + deltaS * phi
       parent >>= (! (Msg (TimestampedMessage time $ Asteroid (CommonState id p' v' a omega' phi) size color)))
-      --liftIO $ threadDelay 50000
-      --self >>= (! (Msg (TimestampedMessage time Update)))
-      self >>= \s -> scheduleOnce 50 s (Msg (TimestampedMessage time Update))
+      self >>= \s -> scheduleOnce 300 s (Msg (TimestampedMessage time Update))
       become $ receive p' v' omega'
+    Msg (TimestampedMessage t (Laser st sId)) -> do
+      if (intersects (px,py) (sizeToRadius size) $ pos st) then do
+        when (size /= Tiny) $ do
+          let size' = case size of 
+                Small -> Tiny 
+                Medium -> Small
+                Big -> Medium
+          numAst <- liftIO $ randomRIO (2,4)
+          replicateM_ numAst $ do
+            parent >>= (! Msg (TimestampedMessage t $ CreateAsteroid (px,py) size' color))
+        parent >>= (! Msg (TimestampedMessage t $ Destroy id))
+        stop
+      else 
+        become $ receive (px,py) (vx,vy) omega 
 
+          
 
 spaceship :: Int -> (Double, Double) -> (Double, Double) -> Double -> Double -> Double -> ActorIO ServerMessage (ActorRef ServerMessage)
-spaceship id p@(px,py) v@(vx,vy) aInit omega phiInit = actor (show id) (receive p v aInit omega phiInit) where
- receive (px,py) (vx,vy) a omega phi = \case 
+spaceship id p@(px,py) v@(vx,vy) aInit omega phiInit = actor (show id) (receive p v aInit omega phiInit 3 0) where
+ receive (px,py) (vx,vy) a omega phi lifes lastCollisionTime = \case 
     Msg (TimestampedMessage prevTime Update) -> do  
       time <- liftIO $ currentTimeMillis 
       let deltaS = (fromIntegral $ time - prevTime) / 1000 
@@ -101,34 +135,53 @@ spaceship id p@(px,py) v@(vx,vy) aInit omega phiInit = actor (show id) (receive 
       let v' = (vx - deltaS * sin omega * a, vy + deltaS * cos omega * a)
       let omega' = omega + deltaS * phi
       parent >>= (! (Msg (TimestampedMessage time $ Spaceship (CommonState id p' v' a omega' phi))))
-      --liftIO $ threadDelay 110000
-      --self >>= (! (Msg (TimestampedMessage time Update)))
       self >>= \s -> scheduleOnce 100 s (Msg (TimestampedMessage time Update))
-      become $ receive p' v' aInit omega' phiInit
+      become $ receive p' v' aInit omega' phiInit lifes lastCollisionTime
     Msg (TimestampedMessage time (Cmd _ S)) -> do
       parent >>= (! Msg (TimestampedMessage time (CreateLaser id (px,py) (vx,vy) omega)))
-      become $ receive (px,py) (vx,vy) a omega phi
-    Msg (TimestampedMessage time (Cmd _ cmd)) -> do
+      become $ receive (px,py) (vx,vy) a omega phi lifes lastCollisionTime
+    Msg (TimestampedMessage _ (Cmd _ cmd)) -> do
       let (a', phi') = case cmd of 
             F -> (500, phi) 
             B -> (-200, phi) 
             L -> (a, -3)
             R -> (a, 3) 
             _ -> (a, phi) 
-      become $ receive (px,py) (vx,vy) a' omega phi'  
+      become $ receive (px,py) (vx,vy) a' omega phi' lifes lastCollisionTime  
+    Msg (TimestampedMessage t (Asteroid st size _)) -> do
+      now <- liftIO $ currentTimeMillis
+      if now - lastCollisionTime >= 3000 then
+        if intersectsC (px,py) spaceshipSize (pos st) (sizeToRadius size) then do 
+          parent >>= (! Msg (TimestampedMessage now (SetLifes id $ lifes - 1)))
+          become $ receive (px,py) (vx,vy) a omega phi (lifes - 1) now
+          when (lifes == 1) $ do
+            parent >>= (! Msg (TimestampedMessage now (Destroy id)))
+            stop
+        else 
+          become $ receive (px,py) (vx,vy) a omega phi lifes lastCollisionTime
+      else 
+        become $ receive (px,py) (vx,vy) a omega phi lifes lastCollisionTime 
 
 laser :: Int -> Int -> (Double, Double) -> (Double, Double) -> Double -> Double -> Double -> ActorIO ServerMessage (ActorRef ServerMessage) 
-laser id shooterId pos velo aInit omegaInit phiInit = actor (show id) (receive pos velo aInit omegaInit phiInit) where
-  receive (px,py) (vx,vy) a omega phi = \case 
-    Msg (TimestampedMessage prevTime Update) -> do 
-      time <- liftIO $ currentTimeMillis 
-      let deltaS = (fromIntegral $ time - prevTime) / 1000 
-      let p' = (px+vx*deltaS, py+vy*deltaS)
-      let v' = (vx - deltaS * sin omega * a, vy + deltaS * cos omega * a)
-      let omega' = omega + deltaS * phi
-      parent >>= (! (Msg (TimestampedMessage time $ Laser (CommonState id p' v' a omega' phi) shooterId)))
-      self >>= \s -> scheduleOnce 1000 s (Msg (TimestampedMessage time Update)) 
-      become $ receive p' v' a omega' phi
+laser id shooterId pos velo aInit omegaInit phiInit = do 
+  time <- liftIO $ currentTimeMillis
+  actor (show id) (receive pos velo aInit omegaInit phiInit time) where
+    receive (px,py) (vx,vy) a omega phi t = \case 
+      Msg (TimestampedMessage prevTime Update) -> do 
+        if prevTime - t > 1000 then do
+          msg <- liftIO $ timestamped $ Destroy id
+          parent >>= (! Msg msg)
+          stop 
+        else do
+          time <- liftIO $ currentTimeMillis 
+          let deltaS = (fromIntegral $ time - prevTime) / 1000 
+          let p' = (px+vx*deltaS, py+vy*deltaS)
+          let v' = (vx - deltaS * sin omega * a, vy + deltaS * cos omega * a)
+          let omega' = omega + deltaS * phi
+          parent >>= (! (Msg (TimestampedMessage time $ Laser (CommonState id p' v' a omega' phi) shooterId)))
+          self >>= \s -> scheduleOnce 100 s (Msg (TimestampedMessage time Update)) 
+          become $ receive p' v' a omega' phi t
+
 
 rotate :: (Double, Double) -> Double -> (Double, Double)
 rotate (x,y) rad = let cos' = cos rad; sin' = sin rad in (x * cos' - y * sin', x * sin' + y * cos')
@@ -138,3 +191,21 @@ add (x, y) (x', y') = (x+x', y+y')
 
 scalarMult :: (Double, Double) -> Double -> (Double, Double)
 scalarMult (x,y) k = (x*k, y*k)
+
+dist :: (Double, Double) -> (Double, Double) -> Double
+dist (px,py) (px', py') = sqrt $ (px-px')^2 + (py-py')^2 
+
+intersects :: (Double, Double) -> Double -> (Double, Double) -> Bool
+intersects c r p = dist c p <= r  
+
+intersectsC :: (Double, Double) -> Double -> (Double, Double) -> Double -> Bool
+intersectsC p r p' r' = dist p p' < r + r' 
+
+sizeToRadius :: ASize -> Double
+sizeToRadius Tiny = 16 
+sizeToRadius Small = 27
+sizeToRadius Medium = 44
+sizeToRadius Big = 95
+
+spaceshipSize :: Double
+spaceshipSize = 60
