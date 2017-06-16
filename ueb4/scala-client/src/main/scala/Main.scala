@@ -41,6 +41,14 @@ object Main extends JSApp {
       socket.onMessage { msg =>
         console.log(msg.toString)
         msg match {
+          case TimestampedMessage (t, ClientId (cId)) =>
+                val player = view.factory.player(cId, Color.Blue)
+                view.spawn(player)
+                view.focus(player)
+                val delta = (System.currentTimeMillis() - t) / 1000
+                player.update(delta)
+                Control.bindKeyboard(socket,player,view)
+                view.addAmination(Animation.fade(player.sprite, 0.0, 1.0, 0.5 seconds)) 
           case TimestampedMessage (t, Spaceship (state)) => 
             val m = view.lookup(state.ident)
             m match {
@@ -52,13 +60,11 @@ object Main extends JSApp {
                 val delta = (System.currentTimeMillis() - t) / 1000
                 v.update(delta)
               case None =>
-                val player = view.factory.player(state.ident, Color.Blue)
-                view.spawn(player)
-                view.focus(player)
+                val spaceship = view.factory.player(state.ident, Util.choose(Color.Blue, Color.Green, Color.Orange, Color.Red))
+                view.spawn(spaceship)
                 val delta = (System.currentTimeMillis() - t) / 1000
-                player.update(delta)
-                Control.bindKeyboard(socket,player,view)
-                view.addAmination(Animation.fade(player.sprite, 0.0, 1.0, 0.5 seconds))
+                spaceship.update(delta)
+                view.addAmination(Animation.fade(spaceship.sprite, 0.0, 1.0, 0.5 seconds))
             }
           case TimestampedMessage (t, Laser (state, sId)) => 
             val m = view.lookup(state.ident) 

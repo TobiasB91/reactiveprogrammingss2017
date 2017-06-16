@@ -30,20 +30,28 @@ universe = actor "universe" $ initialize 0 where
               0 -> Brown
               _ -> Gray 
         asteroid index pos velo 0 omega phi size color 
-      become $ receive (idCount + length asteroids) [] asteroids Map.empty [] 
+      become $ receive (idCount + length asteroids) Map.empty asteroids Map.empty [] 
       forM_ asteroids (! (Msg (TimestampedMessage t Update)))
   receive idCount connections asteroids spaceships lasers = \case
     Connect out res -> do
       self >>= \s -> do 
         connection <- connection idCount s    
         forward connection (Connect out res)
-        sp <- spaceship idCount (0,0) (0,0) 0 0 0 
-        (liftIO $ timestamped Update) >>= \msg -> (sp ! Msg msg)
-        become $ receive (idCount+1) (connection:connections) asteroids (Map.insert idCount sp spaceships) lasers 
-    Disconnect -> do
+        become $ receive (idCount+1) (Map.insert idCount connection connections) asteroids spaceships lasers 
+    Disconnect conId-> do
       sender >>= \con -> do 
-        let connections' = delete con connections 
+        let connections' = Map.delete conId connections 
         become $ receive idCount connections' asteroids spaceships lasers
+    Msg (TimestampedMessage t (ClientId cId)) -> 
+      case Map.lookup cId connections of
+        Just connection -> do
+          sp <- spaceship cId (0,0) (0,0) 0 0 0 
+          (liftIO $ timestamped (ClientId cId)) >>= \msg -> connection ! Msg msg
+          (liftIO $ timestamped Update) >>= \msg -> (sp ! Msg msg)
+          become $ receive idCount connections asteroids (Map.insert cId sp spaceships) lasers
+        Nothing -> do
+          liftIO $ print "Unexpected: connection not avaible" 
+          become $ receive idCount connections asteroids spaceships lasers
     update@(Msg (TimestampedMessage t (Asteroid _ _ _))) -> do  
       become $ receive idCount connections asteroids spaceships lasers
       forM_ connections (! update) 

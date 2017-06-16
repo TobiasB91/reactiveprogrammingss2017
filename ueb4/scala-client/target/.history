@@ -2,3 +2,6 @@ fastOptJS
 :q
 exit
 fastOptJS
+clean
+fastOptJS
+clean

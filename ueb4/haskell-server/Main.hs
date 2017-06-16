@@ -27,9 +27,9 @@ handleSocket system actor conn state = catch handleMessage handleClose where
   send msg = WS.sendTextData conn (encode msg)
   handleClose e = case e of
     WS.CloseRequest _ _ ->
-      tellIO system actor Disconnect
+      tellIO system actor $ Disconnect undefined
     WS.ConnectionClosed ->
-      tellIO system actor Disconnect
+      tellIO system actor $ Disconnect undefined
     other ->
       throw other
   handleMessage = do

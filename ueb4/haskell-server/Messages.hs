@@ -19,9 +19,10 @@ import Data.Time.Clock.POSIX (getPOSIXTime)
 import Control.Concurrent.MVar
 import Hakka.Actor (ActorRef)
 
-data Message = Ping | Pong | Init | Update | 
+data Message = Ping | Pong | Init | Update |   
   CreateLaser Int (Double, Double) (Double, Double) Double | 
   Cmd { sId :: Int, cmd :: Command } | 
+  ClientId { clientId :: Int } |
   Asteroid { 
     common :: CommonState,
     size :: ASize,
@@ -59,13 +60,13 @@ data ServerMessage =
       socketOut :: (TimestampedMessage -> IO ()),
       connectionActor :: MVar (ActorRef ServerMessage)
     }
-  | Disconnect
+  | Disconnect Int
   | Msg TimestampedMessage
   | Ok
 
 instance Show ServerMessage where
   show (Connect _ _)  = "Connect <...>"
-  show Disconnect = "Disconnect"
+  show (Disconnect _) = "Disconnect"
   show (Msg x) = "Msg " ++ show x
   show Ok = "Ok"
 
