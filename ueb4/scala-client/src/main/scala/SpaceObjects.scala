@@ -57,8 +57,8 @@ class SimpleSpaceObject(val id: Int, val sprite: Sprite, initialPos: Vector2d = 
   * Creates Space Objects
   */
 class SpaceObjectFactory(val textures: Resources.SpaceTextures) {
-  def player(color: Color.Player, variant: Int = 0): PlayerShip =
-    new PlayerShip(color,variant)(textures)
+  def player(id : Int, color: Color.Player, variant: Int = 0): PlayerShip =
+    new PlayerShip(id,color,variant)(textures)
 
   def meteor(id : Int, size: Size.Meteor, color: Color.Meteor): SpaceObject =
     new SimpleSpaceObject(id, new Sprite(Util.chooseFrom(textures.meteors(color)(size)))) {
@@ -73,7 +73,7 @@ class SpaceObjectFactory(val textures: Resources.SpaceTextures) {
     val laser = new SimpleSpaceObject(id, sprite, rel.pos, rel.orientation) {
       override def update(delta: Double) = {
         alpha -= delta / 2
-        if (alpha <= 0.0) this.remove()
+        //if (alpha <= 0.0) this.remove()
         super.update(delta)
       }
     }
@@ -82,8 +82,9 @@ class SpaceObjectFactory(val textures: Resources.SpaceTextures) {
   }
 }
 
-class PlayerShip(color: Color.Player, variant: Int)(textures: SpaceTextures) extends SpaceObject {
+class PlayerShip(id : Int, color: Color.Player, variant: Int)(textures: SpaceTextures) extends SpaceObject {
   val sprite = new Sprite(textures.players.ships(color)(variant))
+  ident = id
 
   sprite.anchor.set(0.5,0.5)
 

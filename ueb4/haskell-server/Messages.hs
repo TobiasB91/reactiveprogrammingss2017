@@ -5,6 +5,7 @@ module Messages (
   CommonState (..),
   AColor (..),
   ASize (..),
+  Command (..),
   TimestampedMessage (..),
   currentTimeMillis,
   timestamped,
@@ -19,10 +20,16 @@ import Control.Concurrent.MVar
 import Hakka.Actor (ActorRef)
 
 data Message = Ping | Pong | Init | Update | 
+  CreateLaser Int (Double, Double) (Double, Double) Double | 
+  Cmd { sId :: Int, cmd :: Command } | 
   Asteroid { 
     common :: CommonState,
     size :: ASize,
-    color :: AColor } deriving (Generic, Show)
+    color :: AColor } | 
+  Spaceship { common :: CommonState } |
+  Laser { common :: CommonState, shooter :: Int } deriving (Generic, Show)
+
+data Command = F | B | L | R | S deriving (Generic, Show) 
 
 data CommonState = CommonState { 
   ident :: Int,
@@ -99,4 +106,10 @@ instance ToJSON AColor where
   toEncoding = genericToEncoding jsonOptions
 
 instance FromJSON AColor where
+  parseJSON = genericParseJSON jsonOptions
+
+instance ToJSON Command where
+  toEncoding = genericToEncoding jsonOptions
+
+instance FromJSON Command where
   parseJSON = genericParseJSON jsonOptions

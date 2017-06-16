@@ -10,6 +10,9 @@ sealed trait Message
 case object Ping extends Message
 case object Pong extends Message
 case class Asteroid(common : CommonState, size : ASize, color : AColor) extends Message 
+case class Spaceship(common : CommonState) extends Message 
+case class Laser(common : CommonState, shooter : Int) extends Message
+case class Cmd(sId : Int, cmd : Command) extends Message
 
 case class CommonState(ident : Int, pos : (Double, Double), velo : (Double, Double), acc : Double, omega : Double, phi : Double)  
 
@@ -22,6 +25,13 @@ case object Tiny extends ASize
 case object Small extends ASize
 case object Medium extends ASize
 case object Big extends ASize
+
+sealed trait Command 
+case object F extends Command
+case object B extends Command
+case object L extends Command
+case object R extends Command
+case object S extends Command
 
 ///////////////////////////
 // JSON De/serialization //
@@ -76,4 +86,12 @@ object ASize extends JSONConfig {
 
   implicit val decodeMessage: Decoder[ASize] =
     deriveDecoder[ASize]
+}
+
+object Command extends JSONConfig {
+  implicit val encodeMessage: Encoder[Command] =
+    deriveEncoder[Command]
+
+  implicit val decodeMessage: Decoder[Command] =
+    deriveDecoder[Command]
 }

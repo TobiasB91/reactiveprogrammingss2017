@@ -26,14 +26,19 @@ object Control {
   /**
     * Binds the keyboard control to a player ship
     */
-  def bindKeyboard(playerShip: PlayerShip, view: SpaceView) = {
+  def bindKeyboard(socket : MessageSocket, playerShip: PlayerShip, view: SpaceView) = {
     window.addEventListener("keydown", (e: KeyboardEvent) => {
       e.keyCode match {
         case KeyCode.Left  => playerShip.angularVelocity = -3.0
+          socket.send(Cmd (0, L))
         case KeyCode.Right => playerShip.angularVelocity = 3.0
+          socket.send(Cmd (0, R))
         case KeyCode.Up => playerShip.acceleration = 500.0
+          socket.send(Cmd (0, F))
         case KeyCode.Down => playerShip.acceleration = -200.0
+          socket.send(Cmd (0, B))
         case KeyCode.Space =>
+          socket.send(Cmd (0, S))
           Sound.shoot()
           //view.spawnBelow(view.factory.laser(playerShip), playerShip)
         case KeyCode.D =>

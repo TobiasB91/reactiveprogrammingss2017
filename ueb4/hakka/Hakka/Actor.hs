@@ -322,11 +322,11 @@ actorSystem name init = do
                 return $ Just $ state { actors = retain }
               Schedule initialDuration duration smvar msg -> do
                 forkIO $ do                  
-                  threadDelay $ duration * 1000
+                  threadDelay $ initialDuration * 1000
                   stop <- tryTakeMVar smvar
                   when (isNothing stop) $ do
                     writeChan system $ Deliver msg
-                    when (duration >= 0) $ writeChan system $ Schedule initialDuration duration smvar msg
+                    when (duration >= 0) $ writeChan system $ Schedule duration duration smvar msg
                 return $ Just state
               Log path s msg -> do
                 putStrLn $ "[" ++ show s ++ "] [" ++ show path ++ "]: " ++ msg

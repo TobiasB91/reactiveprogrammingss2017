@@ -41,8 +41,50 @@ object Main extends JSApp {
       socket.onMessage { msg =>
         console.log(msg.toString)
         msg match {
+          case TimestampedMessage (t, Spaceship (state)) => 
+            val m = view.lookup(state.ident)
+            m match {
+              case Some(v) =>
+                v.pos = Vector2d(state.pos._1, state.pos._2)
+                v.orientation = state.omega
+                v.angularVelocity = state.phi
+                v.velocity = Vector2d(state.velo._1, state.velo._2)
+                val delta = (System.currentTimeMillis() - t) / 1000
+                v.update(delta)
+              case None =>
+                val player = view.factory.player(state.ident, Color.Blue)
+                view.spawn(player)
+                view.focus(player)
+                val delta = (System.currentTimeMillis() - t) / 1000
+                player.update(delta)
+                Control.bindKeyboard(socket,player,view)
+                view.addAmination(Animation.fade(player.sprite, 0.0, 1.0, 0.5 seconds))
+            }
+          case TimestampedMessage (t, Laser (state, sId)) => 
+            val m = view.lookup(state.ident) 
+            m match {
+              case Some(v) =>
+                console.log("Lazorz coordz: x:" + state.pos._1 + "y: " + state.pos._2)
+                v.pos = Vector2d(state.pos._1, state.pos._2)
+                v.orientation = state.omega
+                v.angularVelocity = state.phi
+                v.velocity = Vector2d(state.velo._1, state.velo._2)
+                val delta = (System.currentTimeMillis() - t) / 1000
+                v.update(delta)
+              case None =>
+                val p = view.lookup(sId)
+                p match {
+                  case Some (p) =>
+                    val laser = view.factory.laser(state.ident, p)
+                    view.spawnBelow(laser, p)
+                    laser.velocity = Vector2d(state.velo._1, state.velo._2)
+                    val delta = (System.currentTimeMillis() - t) / 1000
+                    laser.update(delta)
+                  case None => Unit
+                }
+            }
           case TimestampedMessage (t, Asteroid (state, size, color)) =>
-            var m = view.lookup(state.ident)
+            val m = view.lookup(state.ident)
             m match {
               case Some (v) =>
                 v.pos = Vector2d(state.pos._1, state.pos._2)
@@ -74,7 +116,7 @@ object Main extends JSApp {
           case _ => Unit
         }
       }
-      populateExample(view)
+      populateExample(socket, view)
       def loop(t0: Double)(now: Double): Unit = {
         val delta = (now - t0) / 1000
         view.update(delta)
@@ -93,41 +135,26 @@ object Main extends JSApp {
   }
 
   /* Example setup */
-  def populateExample(view: SpaceView): Unit = {
-    view.text = "Uebung 4: Curried in Space"
-    val player = view.factory.player(Color.Blue)
-   /* val meteors = Seq.fill(10) {
-      val color = Util.choose(Color.Brown,Color.Grey)
-      val size = Util.choose(Size.Big,Size.Medium,Size.Small,Size.Tiny)
-      val meteor = view.factory.meteor(size,color)
-      meteor.pos = Vector2d(500 - Random.nextDouble() * 1000, 500 - Random.nextDouble() * 1000)
-      meteor.orientation = Random.nextDouble() * Math.PI * 2
-      meteor.angularVelocity = Random.nextDouble() - 0.5
-      meteor.velocity = Vector2d(50 - Random.nextDouble() * 100, 50 - Random.nextDouble() * 100)
-      meteor
-    }
-    meteors.foreach(view.spawn)*/
-    view.focus(Vector2d(0,0))
-    val opts = new TextStyleOptions {
-      fontFamily = "retro"
-      fontSize = 16
-      fill = "#ffffff"
-      stroke = "#000000"
-      strokeThickness = 4.0
-    }
-    val text = new pixijs.Text("Press SPACE to Start", opts)
-    text.anchor.set(0.5,0.5)
-    view.objectStage.addChild(text)
-    view.setLifes(3)
-    Control.waitFor(KeyCode.Space).foreach { _ =>
-      view.addAmination(Animation.combine(
-        Animation.fade(text, 1.0, 0.0, 0.5 seconds),
-        Animation.scale(text, 1.0, 5.0, 0.5 seconds)
-      )).done.foreach(_ => { view.objectStage.removeChild(text) })
-      view.addAmination(Animation.fade(player.sprite, 0.0, 1.0, 0.5 seconds))
-      view.spawn(player)
-      view.focus(player)
-      Control.bindKeyboard(player,view)
+  def populateExample(socket : MessageSocket, view: SpaceView): Unit = {
+      view.text = "Uebung 4: Curried in Space"
+      //val player = view.factory.player(Color.Blue)
+      view.focus(Vector2d(0,0))
+      val opts = new TextStyleOptions {
+        fontFamily = "retro"
+        fontSize = 16
+        fill = "#ffffff"
+        stroke = "#000000"
+        strokeThickness = 4.0
+      }
+      val text = new pixijs.Text("Press SPACE to Start", opts)
+      text.anchor.set(0.5,0.5)
+      view.objectStage.addChild(text)
+      view.setLifes(3)
+      Control.waitFor(KeyCode.Space).foreach { _ =>
+        view.addAmination(Animation.combine(
+          Animation.fade(text, 1.0, 0.0, 0.5 seconds),
+          Animation.scale(text, 1.0, 5.0, 0.5 seconds)
+        )).done.foreach(_ => { view.objectStage.removeChild(text) })
     }
   }
 }
