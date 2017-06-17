@@ -41,6 +41,23 @@ object Main extends JSApp {
       socket.onMessage { msg =>
         console.log(msg.toString)
         msg match {
+          case TimestampedMessage (t, Zorg (state)) =>
+            val m = view.lookup(state.ident)
+            m match {
+              case Some(v) =>
+                v.pos = Vector2d(state.pos._1, state.pos._2)
+                v.orientation = state.omega
+                v.angularVelocity = state.phi
+                v.velocity = Vector2d(state.velo._1, state.velo._2)
+                val delta = (System.currentTimeMillis() - t) / 1000
+                v.update(delta)
+              case None =>
+                val zorg = view.factory.player(state.ident, true, Color.Green, 2)
+                view.spawn(zorg)
+                val delta = (System.currentTimeMillis() - t) / 1000
+                zorg.update(delta)
+                view.addAmination(Animation.fade(zorg.sprite, 0.0, 1.0, 0.5 seconds))
+            }
           case TimestampedMessage (t, SetLifes (sId, lifes)) =>
            view.setLifes(lifes) 
           case TimestampedMessage (t, Destroy (id)) =>
@@ -53,7 +70,7 @@ object Main extends JSApp {
               case None => console.log("Deleting non existant object with id: " + id) 
             }
           case TimestampedMessage (t, ClientId (cId)) =>
-                val player = view.factory.player(cId, Color.Blue)
+                val player = view.factory.player(cId, false, Color.Blue)
                 view.spawn(player)
                 view.focus(player)
                 val delta = (System.currentTimeMillis() - t) / 1000
@@ -71,7 +88,7 @@ object Main extends JSApp {
                 val delta = (System.currentTimeMillis() - t) / 1000
                 v.update(delta)
               case None =>
-                val spaceship = view.factory.player(state.ident, Util.choose(Color.Blue, Color.Green, Color.Orange, Color.Red))
+                val spaceship = view.factory.player(state.ident, false, Util.choose(Color.Blue, Color.Green, Color.Orange, Color.Red))
                 view.spawn(spaceship)
                 val delta = (System.currentTimeMillis() - t) / 1000
                 spaceship.update(delta)
@@ -92,11 +109,24 @@ object Main extends JSApp {
                 val p = view.lookup(sId)
                 p match {
                   case Some (p) =>
-                    val laser = view.factory.laser(state.ident, p)
-                    view.spawnBelow(laser, p)
-                    laser.velocity = Vector2d(state.velo._1, state.velo._2)
-                    val delta = (System.currentTimeMillis() - t) / 1000
-                    laser.update(delta)
+                    val o = view.lookup(sId)
+                    o match {
+                      case Some (PlayerShip(_,isZ,_,_)) =>
+                          if (!isZ) {
+                            val laser = view.factory.laser(state.ident, p)
+                            view.spawnBelow(laser, p)
+                            laser.velocity = Vector2d(state.velo._1, state.velo._2)
+                            val delta = (System.currentTimeMillis() - t) / 1000
+                            laser.update(delta)
+                          } else {
+                            val laser = view.factory.laser(state.ident, p, Color.Green, 1)
+                            view.spawnBelow(laser, p)
+                            laser.velocity = Vector2d(state.velo._1, state.velo._2)
+                            val delta = (System.currentTimeMillis() - t) / 1000
+                            laser.update(delta)
+                          }
+                      case _ => Unit
+                    }
                   case None => Unit
                 }
             }

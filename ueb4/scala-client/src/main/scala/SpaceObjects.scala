@@ -6,7 +6,8 @@ import scala.scalajs.js
 
 trait SpaceObject {
   val sprite: Sprite
- 
+
+  var zorg : Boolean = false
   var ident : Int = -1
 
   def pos = Vector2d(sprite.position.x,sprite.position.y)
@@ -57,8 +58,8 @@ class SimpleSpaceObject(val id: Int, val sprite: Sprite, initialPos: Vector2d = 
   * Creates Space Objects
   */
 class SpaceObjectFactory(val textures: Resources.SpaceTextures) {
-  def player(id : Int, color: Color.Player, variant: Int = 0): PlayerShip =
-    new PlayerShip(id,color,variant)(textures)
+  def player(id : Int, isZorg : Boolean, color: Color.Player, variant: Int = 0): PlayerShip =
+    new PlayerShip(id,isZorg,color,variant)(textures)
 
   def meteor(id : Int, size: Size.Meteor, color: Color.Meteor): SpaceObject =
     new SimpleSpaceObject(id, new Sprite(Util.chooseFrom(textures.meteors(color)(size)))) {
@@ -82,10 +83,10 @@ class SpaceObjectFactory(val textures: Resources.SpaceTextures) {
   }
 }
 
-class PlayerShip(id : Int, color: Color.Player, variant: Int)(textures: SpaceTextures) extends SpaceObject {
+case class PlayerShip(id : Int, isZorg : Boolean, color: Color.Player, variant: Int)(textures: SpaceTextures) extends SpaceObject {
   val sprite = new Sprite(textures.players.ships(color)(variant))
   ident = id
-
+  zorg = isZorg
   sprite.anchor.set(0.5,0.5)
 
   val thrustContainer = new Container()

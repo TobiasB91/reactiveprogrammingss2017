@@ -19,13 +19,14 @@ import Data.Time.Clock.POSIX (getPOSIXTime)
 import Control.Concurrent.MVar
 import Hakka.Actor (ActorRef)
 
-data Message = Ping | Pong | Init | Update |   
+data Message = Ping | Pong | Init | Update | Seek |
   CreateLaser Int (Double, Double) (Double, Double) Double |
-  CreateAsteroid (Double, Double) ASize AColor |
+  CreateAsteroid (Double, Double) ASize AColor | 
   Destroy { destroy :: Int } |
   SetLifes { sId :: Int, lifes :: Int } |
   Cmd { sId :: Int, cmd :: Command } | 
   ClientId { clientId :: Int } |
+  Zorg { common :: CommonState } |
   Asteroid { 
     common :: CommonState,
     size :: ASize,

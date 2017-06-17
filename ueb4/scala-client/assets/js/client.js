@@ -1184,6 +1184,7 @@ function $f_LSpaceObject__pos$und$eq__LVector2d__V($thiz, value) {
   $thiz.sprite__Lpixijs_Sprite().position.set(value.x$1, value.y$1)
 }
 function $f_LSpaceObject__$$init$__V($thiz) {
+  $thiz.zorg$und$eq__Z__V(false);
   $thiz.ident$und$eq__I__V((-1));
   $thiz.angularVelocity$und$eq__D__V(0.0);
   $thiz.velocity$und$eq__LVector2d__V(new $c_LVector2d().init___D__D(0.0, 0.0));
@@ -10004,20 +10005,20 @@ function $h_LAColor$() {
 $h_LAColor$.prototype = $c_LAColor$.prototype;
 $c_LAColor$.prototype.init___ = (function() {
   $n_LAColor$ = this;
-  var inst$macro$349 = new $c_LAColor$anon$lazy$macro$348$1().init___().inst$macro$336__Lio_circe_generic_encoding_DerivedObjectEncoder();
-  var t = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function($this, inst$macro$349$1) {
+  var inst$macro$367 = new $c_LAColor$anon$lazy$macro$366$1().init___().inst$macro$354__Lio_circe_generic_encoding_DerivedObjectEncoder();
+  var t = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function($this, inst$macro$367$1) {
     return (function() {
-      return inst$macro$349$1
+      return inst$macro$367$1
     })
-  })(this, inst$macro$349));
+  })(this, inst$macro$367));
   var encode = new $c_Lshapeless_Lazy$$anon$1().init___F0(t);
   this.encodeMessage$1 = $as_Lio_circe_ObjectEncoder(encode.value__O());
-  var inst$macro$364 = new $c_LAColor$anon$lazy$macro$363$1().init___().inst$macro$350__Lio_circe_generic_decoding_DerivedDecoder();
-  var t$1 = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function(this$2$1, inst$macro$364$1) {
+  var inst$macro$382 = new $c_LAColor$anon$lazy$macro$381$1().init___().inst$macro$368__Lio_circe_generic_decoding_DerivedDecoder();
+  var t$1 = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function(this$2$1, inst$macro$382$1) {
     return (function() {
-      return inst$macro$364$1
+      return inst$macro$382$1
     })
-  })(this, inst$macro$364));
+  })(this, inst$macro$382));
   var decode = new $c_Lshapeless_Lazy$$anon$1().init___F0(t$1);
   this.decodeMessage$1 = $as_Lio_circe_Decoder(decode.value__O());
   return this
@@ -10052,20 +10053,20 @@ function $h_LASize$() {
 $h_LASize$.prototype = $c_LASize$.prototype;
 $c_LASize$.prototype.init___ = (function() {
   $n_LASize$ = this;
-  var inst$macro$386 = new $c_LASize$anon$lazy$macro$385$1().init___().inst$macro$365__Lio_circe_generic_encoding_DerivedObjectEncoder();
-  var t = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function($this, inst$macro$386$1) {
+  var inst$macro$404 = new $c_LASize$anon$lazy$macro$403$1().init___().inst$macro$383__Lio_circe_generic_encoding_DerivedObjectEncoder();
+  var t = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function($this, inst$macro$404$1) {
     return (function() {
-      return inst$macro$386$1
+      return inst$macro$404$1
     })
-  })(this, inst$macro$386));
+  })(this, inst$macro$404));
   var encode = new $c_Lshapeless_Lazy$$anon$1().init___F0(t);
   this.encodeMessage$1 = $as_Lio_circe_ObjectEncoder(encode.value__O());
-  var inst$macro$409 = new $c_LASize$anon$lazy$macro$408$1().init___().inst$macro$387__Lio_circe_generic_decoding_DerivedDecoder();
-  var t$1 = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function(this$2$1, inst$macro$409$1) {
+  var inst$macro$427 = new $c_LASize$anon$lazy$macro$426$1().init___().inst$macro$405__Lio_circe_generic_decoding_DerivedDecoder();
+  var t$1 = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function(this$2$1, inst$macro$427$1) {
     return (function() {
-      return inst$macro$409$1
+      return inst$macro$427$1
     })
-  })(this, inst$macro$409));
+  })(this, inst$macro$427));
   var decode = new $c_Lshapeless_Lazy$$anon$1().init___F0(t$1);
   this.decodeMessage$1 = $as_Lio_circe_Decoder(decode.value__O());
   return this
@@ -10127,20 +10128,20 @@ function $h_LCommand$() {
 $h_LCommand$.prototype = $c_LCommand$.prototype;
 $c_LCommand$.prototype.init___ = (function() {
   $n_LCommand$ = this;
-  var inst$macro$435 = new $c_LCommand$anon$lazy$macro$434$1().init___().inst$macro$410__Lio_circe_generic_encoding_DerivedObjectEncoder();
-  var t = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function($this, inst$macro$435$1) {
+  var inst$macro$453 = new $c_LCommand$anon$lazy$macro$452$1().init___().inst$macro$428__Lio_circe_generic_encoding_DerivedObjectEncoder();
+  var t = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function($this, inst$macro$453$1) {
     return (function() {
-      return inst$macro$435$1
+      return inst$macro$453$1
     })
-  })(this, inst$macro$435));
+  })(this, inst$macro$453));
   var encode = new $c_Lshapeless_Lazy$$anon$1().init___F0(t);
   this.encodeMessage$1 = $as_Lio_circe_ObjectEncoder(encode.value__O());
-  var inst$macro$462 = new $c_LCommand$anon$lazy$macro$461$1().init___().inst$macro$436__Lio_circe_generic_decoding_DerivedDecoder();
-  var t$1 = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function(this$2$1, inst$macro$462$1) {
+  var inst$macro$480 = new $c_LCommand$anon$lazy$macro$479$1().init___().inst$macro$454__Lio_circe_generic_decoding_DerivedDecoder();
+  var t$1 = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function(this$2$1, inst$macro$480$1) {
     return (function() {
-      return inst$macro$462$1
+      return inst$macro$480$1
     })
-  })(this, inst$macro$462));
+  })(this, inst$macro$480));
   var decode = new $c_Lshapeless_Lazy$$anon$1().init___F0(t$1);
   this.decodeMessage$1 = $as_Lio_circe_Decoder(decode.value__O());
   return this
@@ -10245,113 +10246,174 @@ $c_LMain$.prototype.main__V = (function() {
                       var jsx$1 = $m_Lorg_scalajs_dom_package$().console__Lorg_scalajs_dom_raw_Console();
                       var s = $m_sr_ScalaRunTime$().$$undtoString__s_Product__T(msg);
                       jsx$1.log(s);
-                      matchEnd15: {
-                        if ((msg !== null)) {
-                          var p2 = msg.payload$1;
-                          if ($is_LSetLifes(p2)) {
-                            var x3 = $as_LSetLifes(p2);
-                            var lifes = x3.lifes$1;
-                            view$2.setLifes__I__LColor$Player__I__V(lifes, $m_LColor$Player$().Blue$1, 0);
-                            break matchEnd15
-                          }
-                        };
-                        if ((msg !== null)) {
-                          var p4 = msg.payload$1;
-                          if ($is_LDestroy(p4)) {
-                            var x5 = $as_LDestroy(p4);
-                            var id = x5.destroy$1;
-                            var e = view$2.lookup__I__s_Option(id);
-                            if ($is_s_Some(e)) {
-                              var x2 = $as_s_Some(e);
-                              var v = $as_LSpaceObject(x2.value$2);
-                              var jsx$2 = $m_Lorg_scalajs_dom_package$().console__Lorg_scalajs_dom_raw_Console();
-                              var s$1 = ("Destroying object with id: " + id);
-                              jsx$2.log(s$1);
-                              view$2.remove__LSpaceObject__V(v);
-                              v.exists$und$eq__Z__V(false)
-                            } else {
-                              var x = $m_s_None$();
-                              if ((!(x === e))) {
-                                throw new $c_s_MatchError().init___O(e)
-                              };
-                              var jsx$3 = $m_Lorg_scalajs_dom_package$().console__Lorg_scalajs_dom_raw_Console();
-                              var s$2 = ("Deleting non existant object with id: " + id);
-                              jsx$3.log(s$2)
-                            };
-                            break matchEnd15
-                          }
-                        };
+                      matchEnd17: {
                         if ((msg !== null)) {
                           var t = msg.timestamp$1;
                           var lo = t.lo$2;
                           var hi = t.hi$2;
-                          var p6 = msg.payload$1;
-                          if ($is_LClientId(p6)) {
-                            var x7 = $as_LClientId(p6);
-                            var cId = x7.clientId$1;
-                            var this$5 = view$2.factory$1;
-                            var color = $m_LColor$Blue$();
-                            var player = new $c_LPlayerShip().init___I__LColor$Player__I__LResources$SpaceTextures(cId, color, 0, this$5.textures$1);
-                            view$2.spawn__LSpaceObject__V(player);
-                            view$2.focus__LSpaceObject__V(player);
-                            var t$1 = $m_jl_System$().currentTimeMillis__J();
-                            var lo$1 = t$1.lo$2;
-                            var hi$1 = t$1.hi$2;
-                            var lo$2 = ((lo$1 - lo) | 0);
-                            var hi$2 = ((((-2147483648) ^ lo$2) > ((-2147483648) ^ lo$1)) ? (((-1) + ((hi$1 - hi) | 0)) | 0) : ((hi$1 - hi) | 0));
-                            var this$7 = $m_sjsr_RuntimeLong$();
-                            var lo$3 = this$7.divideImpl__I__I__I__I__I(lo$2, hi$2, 1000, 0);
-                            var hi$3 = this$7.scala$scalajs$runtime$RuntimeLong$$hiReturn$f;
-                            player.update__D__V($m_sjsr_RuntimeLong$().scala$scalajs$runtime$RuntimeLong$$toDouble__I__I__D(lo$3, hi$3));
-                            $m_LControl$().bindKeyboard__LMessageSocket__LPlayerShip__LSpaceView__V(socket$4, player, view$2);
-                            var jsx$5 = $m_LAnimation$();
-                            var jsx$4 = player.sprite$1;
-                            var this$9 = new $c_s_concurrent_duration_package$DurationDouble().init___D(0.5);
-                            var unit = $m_ju_concurrent_TimeUnit$().SECONDS$1;
-                            view$2.addAmination__LAnimation__LRunningAnimation(jsx$5.fade__Lpixijs_DisplayObject__D__D__s_concurrent_duration_FiniteDuration__LAnimation(jsx$4, 0.0, 1.0, $m_s_concurrent_duration_package$DurationDouble$().durationIn$extension__D__ju_concurrent_TimeUnit__s_concurrent_duration_FiniteDuration(this$9.scala$concurrent$duration$DurationDouble$$d$1, unit)));
-                            break matchEnd15
+                          var p2 = msg.payload$1;
+                          if ($is_LZorg(p2)) {
+                            var x3 = $as_LZorg(p2);
+                            var state = x3.common$1;
+                            var m = view$2.lookup__I__s_Option(state.ident$1);
+                            if ($is_s_Some(m)) {
+                              var x2 = $as_s_Some(m);
+                              var v = $as_LSpaceObject(x2.value$2);
+                              var this$3 = state.pos$1;
+                              var jsx$2 = $uD(this$3.$$und1__O());
+                              var this$4 = state.pos$1;
+                              var value = new $c_LVector2d().init___D__D(jsx$2, $uD(this$4.$$und2__O()));
+                              $f_LSpaceObject__pos$und$eq__LVector2d__V(v, value);
+                              var value$1 = state.omega$1;
+                              $f_LSpaceObject__orientation$und$eq__D__V(v, value$1);
+                              v.angularVelocity$und$eq__D__V(state.phi$1);
+                              var this$5 = state.velo$1;
+                              var jsx$3 = $uD(this$5.$$und1__O());
+                              var this$6 = state.velo$1;
+                              v.velocity$und$eq__LVector2d__V(new $c_LVector2d().init___D__D(jsx$3, $uD(this$6.$$und2__O())));
+                              var t$1 = $m_jl_System$().currentTimeMillis__J();
+                              var lo$1 = t$1.lo$2;
+                              var hi$1 = t$1.hi$2;
+                              var lo$2 = ((lo$1 - lo) | 0);
+                              var hi$2 = ((((-2147483648) ^ lo$2) > ((-2147483648) ^ lo$1)) ? (((-1) + ((hi$1 - hi) | 0)) | 0) : ((hi$1 - hi) | 0));
+                              var this$8 = $m_sjsr_RuntimeLong$();
+                              var lo$3 = this$8.divideImpl__I__I__I__I__I(lo$2, hi$2, 1000, 0);
+                              var hi$3 = this$8.scala$scalajs$runtime$RuntimeLong$$hiReturn$f;
+                              v.update__D__V($m_sjsr_RuntimeLong$().scala$scalajs$runtime$RuntimeLong$$toDouble__I__I__D(lo$3, hi$3))
+                            } else {
+                              var x = $m_s_None$();
+                              if ((!(x === m))) {
+                                throw new $c_s_MatchError().init___O(m)
+                              };
+                              var this$9 = view$2.factory$1;
+                              var id = state.ident$1;
+                              var color = $m_LColor$Green$();
+                              var zorg = new $c_LPlayerShip().init___I__Z__LColor$Player__I__LResources$SpaceTextures(id, true, color, 2, this$9.textures$1);
+                              view$2.spawn__LSpaceObject__V(zorg);
+                              var t$2 = $m_jl_System$().currentTimeMillis__J();
+                              var lo$4 = t$2.lo$2;
+                              var hi$4 = t$2.hi$2;
+                              var lo$5 = ((lo$4 - lo) | 0);
+                              var hi$5 = ((((-2147483648) ^ lo$5) > ((-2147483648) ^ lo$4)) ? (((-1) + ((hi$4 - hi) | 0)) | 0) : ((hi$4 - hi) | 0));
+                              var this$11 = $m_sjsr_RuntimeLong$();
+                              var lo$6 = this$11.divideImpl__I__I__I__I__I(lo$5, hi$5, 1000, 0);
+                              var hi$6 = this$11.scala$scalajs$runtime$RuntimeLong$$hiReturn$f;
+                              zorg.update__D__V($m_sjsr_RuntimeLong$().scala$scalajs$runtime$RuntimeLong$$toDouble__I__I__D(lo$6, hi$6));
+                              var jsx$5 = $m_LAnimation$();
+                              var jsx$4 = zorg.sprite$1;
+                              var this$13 = new $c_s_concurrent_duration_package$DurationDouble().init___D(0.5);
+                              var unit = $m_ju_concurrent_TimeUnit$().SECONDS$1;
+                              view$2.addAmination__LAnimation__LRunningAnimation(jsx$5.fade__Lpixijs_DisplayObject__D__D__s_concurrent_duration_FiniteDuration__LAnimation(jsx$4, 0.0, 1.0, $m_s_concurrent_duration_package$DurationDouble$().durationIn$extension__D__ju_concurrent_TimeUnit__s_concurrent_duration_FiniteDuration(this$13.scala$concurrent$duration$DurationDouble$$d$1, unit)))
+                            };
+                            break matchEnd17
                           }
                         };
                         if ((msg !== null)) {
-                          var t$2 = msg.timestamp$1;
-                          var lo$4 = t$2.lo$2;
-                          var hi$4 = t$2.hi$2;
-                          var p8 = msg.payload$1;
-                          if ($is_LSpaceship(p8)) {
-                            var x9 = $as_LSpaceship(p8);
-                            var state = x9.common$1;
-                            var m = view$2.lookup__I__s_Option(state.ident$1);
-                            if ($is_s_Some(m)) {
-                              var x2$2 = $as_s_Some(m);
+                          var p4 = msg.payload$1;
+                          if ($is_LSetLifes(p4)) {
+                            var x5 = $as_LSetLifes(p4);
+                            var lifes = x5.lifes$1;
+                            view$2.setLifes__I__LColor$Player__I__V(lifes, $m_LColor$Player$().Blue$1, 0);
+                            break matchEnd17
+                          }
+                        };
+                        if ((msg !== null)) {
+                          var p6 = msg.payload$1;
+                          if ($is_LDestroy(p6)) {
+                            var x7 = $as_LDestroy(p6);
+                            var id$1 = x7.destroy$1;
+                            var e = view$2.lookup__I__s_Option(id$1);
+                            if ($is_s_Some(e)) {
+                              var x2$2 = $as_s_Some(e);
                               var v$2 = $as_LSpaceObject(x2$2.value$2);
-                              var this$10 = state.pos$1;
-                              var jsx$6 = $uD(this$10.$$und1__O());
-                              var this$11 = state.pos$1;
-                              var value = new $c_LVector2d().init___D__D(jsx$6, $uD(this$11.$$und2__O()));
-                              $f_LSpaceObject__pos$und$eq__LVector2d__V(v$2, value);
-                              var value$1 = state.omega$1;
-                              $f_LSpaceObject__orientation$und$eq__D__V(v$2, value$1);
-                              v$2.angularVelocity$und$eq__D__V(state.phi$1);
-                              var this$12 = state.velo$1;
-                              var jsx$7 = $uD(this$12.$$und1__O());
-                              var this$13 = state.velo$1;
-                              v$2.velocity$und$eq__LVector2d__V(new $c_LVector2d().init___D__D(jsx$7, $uD(this$13.$$und2__O())));
-                              var t$3 = $m_jl_System$().currentTimeMillis__J();
-                              var lo$5 = t$3.lo$2;
-                              var hi$5 = t$3.hi$2;
-                              var lo$6 = ((lo$5 - lo$4) | 0);
-                              var hi$6 = ((((-2147483648) ^ lo$6) > ((-2147483648) ^ lo$5)) ? (((-1) + ((hi$5 - hi$4) | 0)) | 0) : ((hi$5 - hi$4) | 0));
-                              var this$15 = $m_sjsr_RuntimeLong$();
-                              var lo$7 = this$15.divideImpl__I__I__I__I__I(lo$6, hi$6, 1000, 0);
-                              var hi$7 = this$15.scala$scalajs$runtime$RuntimeLong$$hiReturn$f;
-                              v$2.update__D__V($m_sjsr_RuntimeLong$().scala$scalajs$runtime$RuntimeLong$$toDouble__I__I__D(lo$7, hi$7))
+                              var jsx$6 = $m_Lorg_scalajs_dom_package$().console__Lorg_scalajs_dom_raw_Console();
+                              var s$1 = ("Destroying object with id: " + id$1);
+                              jsx$6.log(s$1);
+                              view$2.remove__LSpaceObject__V(v$2);
+                              v$2.exists$und$eq__Z__V(false)
                             } else {
                               var x$4 = $m_s_None$();
-                              if ((!(x$4 === m))) {
-                                throw new $c_s_MatchError().init___O(m)
+                              if ((!(x$4 === e))) {
+                                throw new $c_s_MatchError().init___O(e)
                               };
-                              var this$20 = view$2.factory$1;
-                              var id$1 = state.ident$1;
+                              var jsx$7 = $m_Lorg_scalajs_dom_package$().console__Lorg_scalajs_dom_raw_Console();
+                              var s$2 = ("Deleting non existant object with id: " + id$1);
+                              jsx$7.log(s$2)
+                            };
+                            break matchEnd17
+                          }
+                        };
+                        if ((msg !== null)) {
+                          var t$3 = msg.timestamp$1;
+                          var lo$7 = t$3.lo$2;
+                          var hi$7 = t$3.hi$2;
+                          var p8 = msg.payload$1;
+                          if ($is_LClientId(p8)) {
+                            var x9 = $as_LClientId(p8);
+                            var cId = x9.clientId$1;
+                            var this$16 = view$2.factory$1;
+                            var color$1 = $m_LColor$Blue$();
+                            var player = new $c_LPlayerShip().init___I__Z__LColor$Player__I__LResources$SpaceTextures(cId, false, color$1, 0, this$16.textures$1);
+                            view$2.spawn__LSpaceObject__V(player);
+                            view$2.focus__LSpaceObject__V(player);
+                            var t$4 = $m_jl_System$().currentTimeMillis__J();
+                            var lo$8 = t$4.lo$2;
+                            var hi$8 = t$4.hi$2;
+                            var lo$9 = ((lo$8 - lo$7) | 0);
+                            var hi$9 = ((((-2147483648) ^ lo$9) > ((-2147483648) ^ lo$8)) ? (((-1) + ((hi$8 - hi$7) | 0)) | 0) : ((hi$8 - hi$7) | 0));
+                            var this$18 = $m_sjsr_RuntimeLong$();
+                            var lo$10 = this$18.divideImpl__I__I__I__I__I(lo$9, hi$9, 1000, 0);
+                            var hi$10 = this$18.scala$scalajs$runtime$RuntimeLong$$hiReturn$f;
+                            player.update__D__V($m_sjsr_RuntimeLong$().scala$scalajs$runtime$RuntimeLong$$toDouble__I__I__D(lo$10, hi$10));
+                            $m_LControl$().bindKeyboard__LMessageSocket__LPlayerShip__LSpaceView__V(socket$4, player, view$2);
+                            var jsx$9 = $m_LAnimation$();
+                            var jsx$8 = player.sprite$1;
+                            var this$20 = new $c_s_concurrent_duration_package$DurationDouble().init___D(0.5);
+                            var unit$1 = $m_ju_concurrent_TimeUnit$().SECONDS$1;
+                            view$2.addAmination__LAnimation__LRunningAnimation(jsx$9.fade__Lpixijs_DisplayObject__D__D__s_concurrent_duration_FiniteDuration__LAnimation(jsx$8, 0.0, 1.0, $m_s_concurrent_duration_package$DurationDouble$().durationIn$extension__D__ju_concurrent_TimeUnit__s_concurrent_duration_FiniteDuration(this$20.scala$concurrent$duration$DurationDouble$$d$1, unit$1)));
+                            break matchEnd17
+                          }
+                        };
+                        if ((msg !== null)) {
+                          var t$5 = msg.timestamp$1;
+                          var lo$11 = t$5.lo$2;
+                          var hi$11 = t$5.hi$2;
+                          var p10 = msg.payload$1;
+                          if ($is_LSpaceship(p10)) {
+                            var x11 = $as_LSpaceship(p10);
+                            var state$2 = x11.common$1;
+                            var m$2 = view$2.lookup__I__s_Option(state$2.ident$1);
+                            if ($is_s_Some(m$2)) {
+                              var x2$3 = $as_s_Some(m$2);
+                              var v$3 = $as_LSpaceObject(x2$3.value$2);
+                              var this$21 = state$2.pos$1;
+                              var jsx$10 = $uD(this$21.$$und1__O());
+                              var this$22 = state$2.pos$1;
+                              var value$2 = new $c_LVector2d().init___D__D(jsx$10, $uD(this$22.$$und2__O()));
+                              $f_LSpaceObject__pos$und$eq__LVector2d__V(v$3, value$2);
+                              var value$3 = state$2.omega$1;
+                              $f_LSpaceObject__orientation$und$eq__D__V(v$3, value$3);
+                              v$3.angularVelocity$und$eq__D__V(state$2.phi$1);
+                              var this$23 = state$2.velo$1;
+                              var jsx$11 = $uD(this$23.$$und1__O());
+                              var this$24 = state$2.velo$1;
+                              v$3.velocity$und$eq__LVector2d__V(new $c_LVector2d().init___D__D(jsx$11, $uD(this$24.$$und2__O())));
+                              var t$6 = $m_jl_System$().currentTimeMillis__J();
+                              var lo$12 = t$6.lo$2;
+                              var hi$12 = t$6.hi$2;
+                              var lo$13 = ((lo$12 - lo$11) | 0);
+                              var hi$13 = ((((-2147483648) ^ lo$13) > ((-2147483648) ^ lo$12)) ? (((-1) + ((hi$12 - hi$11) | 0)) | 0) : ((hi$12 - hi$11) | 0));
+                              var this$26 = $m_sjsr_RuntimeLong$();
+                              var lo$14 = this$26.divideImpl__I__I__I__I__I(lo$13, hi$13, 1000, 0);
+                              var hi$14 = this$26.scala$scalajs$runtime$RuntimeLong$$hiReturn$f;
+                              v$3.update__D__V($m_sjsr_RuntimeLong$().scala$scalajs$runtime$RuntimeLong$$toDouble__I__I__D(lo$14, hi$14))
+                            } else {
+                              var x$7 = $m_s_None$();
+                              if ((!(x$7 === m$2))) {
+                                throw new $c_s_MatchError().init___O(m$2)
+                              };
+                              var this$31 = view$2.factory$1;
+                              var id$2 = state$2.ident$1;
                               var firstOption = $m_LColor$Blue$();
                               var array = [$m_LColor$Green$(), $m_LColor$Orange$(), $m_LColor$Red$()];
                               $m_sc_Seq$();
@@ -10366,102 +10428,28 @@ $c_LMain$.prototype.main__V = (function() {
                                 array$1.push(arg1);
                                 i = ((1 + i) | 0)
                               };
-                              var this$19 = $m_s_util_Random$();
+                              var this$30 = $m_s_util_Random$();
                               var n = ((1 + $uI(array.length)) | 0);
-                              var index$1 = this$19.self$1.nextInt__I__I(n);
-                              var color$1 = $as_LColor$Player(array$1[index$1]);
-                              var spaceship = new $c_LPlayerShip().init___I__LColor$Player__I__LResources$SpaceTextures(id$1, color$1, 0, this$20.textures$1);
+                              var index$1 = this$30.self$1.nextInt__I__I(n);
+                              var color$2 = $as_LColor$Player(array$1[index$1]);
+                              var spaceship = new $c_LPlayerShip().init___I__Z__LColor$Player__I__LResources$SpaceTextures(id$2, false, color$2, 0, this$31.textures$1);
                               view$2.spawn__LSpaceObject__V(spaceship);
-                              var t$4 = $m_jl_System$().currentTimeMillis__J();
-                              var lo$8 = t$4.lo$2;
-                              var hi$8 = t$4.hi$2;
-                              var lo$9 = ((lo$8 - lo$4) | 0);
-                              var hi$9 = ((((-2147483648) ^ lo$9) > ((-2147483648) ^ lo$8)) ? (((-1) + ((hi$8 - hi$4) | 0)) | 0) : ((hi$8 - hi$4) | 0));
-                              var this$22 = $m_sjsr_RuntimeLong$();
-                              var lo$10 = this$22.divideImpl__I__I__I__I__I(lo$9, hi$9, 1000, 0);
-                              var hi$10 = this$22.scala$scalajs$runtime$RuntimeLong$$hiReturn$f;
-                              spaceship.update__D__V($m_sjsr_RuntimeLong$().scala$scalajs$runtime$RuntimeLong$$toDouble__I__I__D(lo$10, hi$10));
-                              var jsx$9 = $m_LAnimation$();
-                              var jsx$8 = spaceship.sprite$1;
-                              var this$24 = new $c_s_concurrent_duration_package$DurationDouble().init___D(0.5);
-                              var unit$1 = $m_ju_concurrent_TimeUnit$().SECONDS$1;
-                              view$2.addAmination__LAnimation__LRunningAnimation(jsx$9.fade__Lpixijs_DisplayObject__D__D__s_concurrent_duration_FiniteDuration__LAnimation(jsx$8, 0.0, 1.0, $m_s_concurrent_duration_package$DurationDouble$().durationIn$extension__D__ju_concurrent_TimeUnit__s_concurrent_duration_FiniteDuration(this$24.scala$concurrent$duration$DurationDouble$$d$1, unit$1)))
-                            };
-                            break matchEnd15
-                          }
-                        };
-                        if ((msg !== null)) {
-                          var t$5 = msg.timestamp$1;
-                          var lo$11 = t$5.lo$2;
-                          var hi$11 = t$5.hi$2;
-                          var p10 = msg.payload$1;
-                          if ($is_LLaser(p10)) {
-                            var x11 = $as_LLaser(p10);
-                            var state$2 = x11.common$1;
-                            var sId = x11.shooter$1;
-                            var m$2 = view$2.lookup__I__s_Option(state$2.ident$1);
-                            if ($is_s_Some(m$2)) {
-                              var x2$3 = $as_s_Some(m$2);
-                              var v$3 = $as_LSpaceObject(x2$3.value$2);
-                              var jsx$11 = $m_Lorg_scalajs_dom_package$().console__Lorg_scalajs_dom_raw_Console();
-                              var this$25 = state$2.pos$1;
-                              var jsx$10 = $uD(this$25.$$und1__O());
-                              var this$26 = state$2.pos$1;
-                              var s$3 = ((("Lazorz coordz: x:" + jsx$10) + "y: ") + $uD(this$26.$$und2__O()));
-                              jsx$11.log(s$3);
-                              var this$28 = state$2.pos$1;
-                              var jsx$12 = $uD(this$28.$$und1__O());
-                              var this$29 = state$2.pos$1;
-                              var value$2 = new $c_LVector2d().init___D__D(jsx$12, $uD(this$29.$$und2__O()));
-                              $f_LSpaceObject__pos$und$eq__LVector2d__V(v$3, value$2);
-                              var value$3 = state$2.omega$1;
-                              $f_LSpaceObject__orientation$und$eq__D__V(v$3, value$3);
-                              v$3.angularVelocity$und$eq__D__V(state$2.phi$1);
-                              var this$30 = state$2.velo$1;
-                              var jsx$13 = $uD(this$30.$$und1__O());
-                              var this$31 = state$2.velo$1;
-                              v$3.velocity$und$eq__LVector2d__V(new $c_LVector2d().init___D__D(jsx$13, $uD(this$31.$$und2__O())));
-                              var t$6 = $m_jl_System$().currentTimeMillis__J();
-                              var lo$12 = t$6.lo$2;
-                              var hi$12 = t$6.hi$2;
-                              var lo$13 = ((lo$12 - lo$11) | 0);
-                              var hi$13 = ((((-2147483648) ^ lo$13) > ((-2147483648) ^ lo$12)) ? (((-1) + ((hi$12 - hi$11) | 0)) | 0) : ((hi$12 - hi$11) | 0));
+                              var t$7 = $m_jl_System$().currentTimeMillis__J();
+                              var lo$15 = t$7.lo$2;
+                              var hi$15 = t$7.hi$2;
+                              var lo$16 = ((lo$15 - lo$11) | 0);
+                              var hi$16 = ((((-2147483648) ^ lo$16) > ((-2147483648) ^ lo$15)) ? (((-1) + ((hi$15 - hi$11) | 0)) | 0) : ((hi$15 - hi$11) | 0));
                               var this$33 = $m_sjsr_RuntimeLong$();
-                              var lo$14 = this$33.divideImpl__I__I__I__I__I(lo$13, hi$13, 1000, 0);
-                              var hi$14 = this$33.scala$scalajs$runtime$RuntimeLong$$hiReturn$f;
-                              v$3.update__D__V($m_sjsr_RuntimeLong$().scala$scalajs$runtime$RuntimeLong$$toDouble__I__I__D(lo$14, hi$14))
-                            } else {
-                              var x$7 = $m_s_None$();
-                              if ((!(x$7 === m$2))) {
-                                throw new $c_s_MatchError().init___O(m$2)
-                              };
-                              var p = view$2.lookup__I__s_Option(sId);
-                              if ($is_s_Some(p)) {
-                                var x2$4 = $as_s_Some(p);
-                                var p$2 = $as_LSpaceObject(x2$4.value$2);
-                                var laser = view$2.factory$1.laser__I__LSpaceObject__LColor$Laser__I__LSimpleSpaceObject(state$2.ident$1, p$2, $m_LColor$Laser$().Red$1, 0);
-                                view$2.spawnBelow__LSpaceObject__LSpaceObject__V(laser, p$2);
-                                var this$35 = state$2.velo$1;
-                                var jsx$14 = $uD(this$35.$$und1__O());
-                                var this$36 = state$2.velo$1;
-                                laser.velocity$1 = new $c_LVector2d().init___D__D(jsx$14, $uD(this$36.$$und2__O()));
-                                var t$7 = $m_jl_System$().currentTimeMillis__J();
-                                var lo$15 = t$7.lo$2;
-                                var hi$15 = t$7.hi$2;
-                                var lo$16 = ((lo$15 - lo$11) | 0);
-                                var hi$16 = ((((-2147483648) ^ lo$16) > ((-2147483648) ^ lo$15)) ? (((-1) + ((hi$15 - hi$11) | 0)) | 0) : ((hi$15 - hi$11) | 0));
-                                var this$38 = $m_sjsr_RuntimeLong$();
-                                var lo$17 = this$38.divideImpl__I__I__I__I__I(lo$16, hi$16, 1000, 0);
-                                var hi$17 = this$38.scala$scalajs$runtime$RuntimeLong$$hiReturn$f;
-                                laser.update__D__V($m_sjsr_RuntimeLong$().scala$scalajs$runtime$RuntimeLong$$toDouble__I__I__D(lo$17, hi$17))
-                              } else {
-                                var x$9 = $m_s_None$();
-                                if ((!(x$9 === p))) {
-                                  throw new $c_s_MatchError().init___O(p)
-                                }
-                              }
+                              var lo$17 = this$33.divideImpl__I__I__I__I__I(lo$16, hi$16, 1000, 0);
+                              var hi$17 = this$33.scala$scalajs$runtime$RuntimeLong$$hiReturn$f;
+                              spaceship.update__D__V($m_sjsr_RuntimeLong$().scala$scalajs$runtime$RuntimeLong$$toDouble__I__I__D(lo$17, hi$17));
+                              var jsx$13 = $m_LAnimation$();
+                              var jsx$12 = spaceship.sprite$1;
+                              var this$35 = new $c_s_concurrent_duration_package$DurationDouble().init___D(0.5);
+                              var unit$2 = $m_ju_concurrent_TimeUnit$().SECONDS$1;
+                              view$2.addAmination__LAnimation__LRunningAnimation(jsx$13.fade__Lpixijs_DisplayObject__D__D__s_concurrent_duration_FiniteDuration__LAnimation(jsx$12, 0.0, 1.0, $m_s_concurrent_duration_package$DurationDouble$().durationIn$extension__D__ju_concurrent_TimeUnit__s_concurrent_duration_FiniteDuration(this$35.scala$concurrent$duration$DurationDouble$$d$1, unit$2)))
                             };
-                            break matchEnd15
+                            break matchEnd17
                           }
                         };
                         if ((msg !== null)) {
@@ -10469,27 +10457,32 @@ $c_LMain$.prototype.main__V = (function() {
                           var lo$18 = t$8.lo$2;
                           var hi$18 = t$8.hi$2;
                           var p12 = msg.payload$1;
-                          if ($is_LAsteroid(p12)) {
-                            var x13 = $as_LAsteroid(p12);
+                          if ($is_LLaser(p12)) {
+                            var x13 = $as_LLaser(p12);
                             var state$3 = x13.common$1;
-                            var size = x13.size$1;
-                            var color$2 = x13.color$1;
+                            var sId = x13.shooter$1;
                             var m$3 = view$2.lookup__I__s_Option(state$3.ident$1);
                             if ($is_s_Some(m$3)) {
-                              var x2$5 = $as_s_Some(m$3);
-                              var v$4 = $as_LSpaceObject(x2$5.value$2);
+                              var x2$4 = $as_s_Some(m$3);
+                              var v$4 = $as_LSpaceObject(x2$4.value$2);
+                              var jsx$15 = $m_Lorg_scalajs_dom_package$().console__Lorg_scalajs_dom_raw_Console();
+                              var this$36 = state$3.pos$1;
+                              var jsx$14 = $uD(this$36.$$und1__O());
+                              var this$37 = state$3.pos$1;
+                              var s$3 = ((("Lazorz coordz: x:" + jsx$14) + "y: ") + $uD(this$37.$$und2__O()));
+                              jsx$15.log(s$3);
                               var this$39 = state$3.pos$1;
-                              var jsx$15 = $uD(this$39.$$und1__O());
+                              var jsx$16 = $uD(this$39.$$und1__O());
                               var this$40 = state$3.pos$1;
-                              var value$4 = new $c_LVector2d().init___D__D(jsx$15, $uD(this$40.$$und2__O()));
+                              var value$4 = new $c_LVector2d().init___D__D(jsx$16, $uD(this$40.$$und2__O()));
                               $f_LSpaceObject__pos$und$eq__LVector2d__V(v$4, value$4);
                               var value$5 = state$3.omega$1;
                               $f_LSpaceObject__orientation$und$eq__D__V(v$4, value$5);
                               v$4.angularVelocity$und$eq__D__V(state$3.phi$1);
                               var this$41 = state$3.velo$1;
-                              var jsx$16 = $uD(this$41.$$und1__O());
+                              var jsx$17 = $uD(this$41.$$und1__O());
                               var this$42 = state$3.velo$1;
-                              v$4.velocity$und$eq__LVector2d__V(new $c_LVector2d().init___D__D(jsx$16, $uD(this$42.$$und2__O())));
+                              v$4.velocity$und$eq__LVector2d__V(new $c_LVector2d().init___D__D(jsx$17, $uD(this$42.$$und2__O())));
                               var t$9 = $m_jl_System$().currentTimeMillis__J();
                               var lo$19 = t$9.lo$2;
                               var hi$19 = t$9.hi$2;
@@ -10500,60 +10493,160 @@ $c_LMain$.prototype.main__V = (function() {
                               var hi$21 = this$44.scala$scalajs$runtime$RuntimeLong$$hiReturn$f;
                               v$4.update__D__V($m_sjsr_RuntimeLong$().scala$scalajs$runtime$RuntimeLong$$toDouble__I__I__D(lo$21, hi$21))
                             } else {
-                              var x$13 = $m_s_None$();
-                              if ((!(x$13 === m$3))) {
+                              var x$10 = $m_s_None$();
+                              if ((!(x$10 === m$3))) {
                                 throw new $c_s_MatchError().init___O(m$3)
                               };
-                              var x$15 = $m_LTiny$();
-                              if ((x$15 === size)) {
+                              var p = view$2.lookup__I__s_Option(sId);
+                              if ($is_s_Some(p)) {
+                                var x2$5 = $as_s_Some(p);
+                                var p$2 = $as_LSpaceObject(x2$5.value$2);
+                                var o = view$2.lookup__I__s_Option(sId);
+                                matchEnd9: {
+                                  if ($is_s_Some(o)) {
+                                    var x2$6 = $as_s_Some(o);
+                                    var p3 = $as_LSpaceObject(x2$6.value$2);
+                                    if ($is_LPlayerShip(p3)) {
+                                      var x4 = $as_LPlayerShip(p3);
+                                      var isZ = x4.isZorg$1;
+                                      if ((!isZ)) {
+                                        var laser = view$2.factory$1.laser__I__LSpaceObject__LColor$Laser__I__LSimpleSpaceObject(state$3.ident$1, p$2, $m_LColor$Laser$().Red$1, 0);
+                                        view$2.spawnBelow__LSpaceObject__LSpaceObject__V(laser, p$2);
+                                        var this$46 = state$3.velo$1;
+                                        var jsx$18 = $uD(this$46.$$und1__O());
+                                        var this$47 = state$3.velo$1;
+                                        laser.velocity$1 = new $c_LVector2d().init___D__D(jsx$18, $uD(this$47.$$und2__O()));
+                                        var t$10 = $m_jl_System$().currentTimeMillis__J();
+                                        var lo$22 = t$10.lo$2;
+                                        var hi$22 = t$10.hi$2;
+                                        var lo$23 = ((lo$22 - lo$18) | 0);
+                                        var hi$23 = ((((-2147483648) ^ lo$23) > ((-2147483648) ^ lo$22)) ? (((-1) + ((hi$22 - hi$18) | 0)) | 0) : ((hi$22 - hi$18) | 0));
+                                        var this$49 = $m_sjsr_RuntimeLong$();
+                                        var lo$24 = this$49.divideImpl__I__I__I__I__I(lo$23, hi$23, 1000, 0);
+                                        var hi$24 = this$49.scala$scalajs$runtime$RuntimeLong$$hiReturn$f;
+                                        laser.update__D__V($m_sjsr_RuntimeLong$().scala$scalajs$runtime$RuntimeLong$$toDouble__I__I__D(lo$24, hi$24));
+                                        break matchEnd9
+                                      } else {
+                                        var laser$2 = view$2.factory$1.laser__I__LSpaceObject__LColor$Laser__I__LSimpleSpaceObject(state$3.ident$1, p$2, $m_LColor$Green$(), 1);
+                                        view$2.spawnBelow__LSpaceObject__LSpaceObject__V(laser$2, p$2);
+                                        var this$50 = state$3.velo$1;
+                                        var jsx$19 = $uD(this$50.$$und1__O());
+                                        var this$51 = state$3.velo$1;
+                                        laser$2.velocity$1 = new $c_LVector2d().init___D__D(jsx$19, $uD(this$51.$$und2__O()));
+                                        var t$11 = $m_jl_System$().currentTimeMillis__J();
+                                        var lo$25 = t$11.lo$2;
+                                        var hi$25 = t$11.hi$2;
+                                        var lo$26 = ((lo$25 - lo$18) | 0);
+                                        var hi$26 = ((((-2147483648) ^ lo$26) > ((-2147483648) ^ lo$25)) ? (((-1) + ((hi$25 - hi$18) | 0)) | 0) : ((hi$25 - hi$18) | 0));
+                                        var this$53 = $m_sjsr_RuntimeLong$();
+                                        var lo$27 = this$53.divideImpl__I__I__I__I__I(lo$26, hi$26, 1000, 0);
+                                        var hi$27 = this$53.scala$scalajs$runtime$RuntimeLong$$hiReturn$f;
+                                        laser$2.update__D__V($m_sjsr_RuntimeLong$().scala$scalajs$runtime$RuntimeLong$$toDouble__I__I__D(lo$27, hi$27));
+                                        break matchEnd9
+                                      }
+                                    }
+                                  }
+                                }
+                              } else {
+                                var x$13 = $m_s_None$();
+                                if ((!(x$13 === p))) {
+                                  throw new $c_s_MatchError().init___O(p)
+                                }
+                              }
+                            };
+                            break matchEnd17
+                          }
+                        };
+                        if ((msg !== null)) {
+                          var t$12 = msg.timestamp$1;
+                          var lo$28 = t$12.lo$2;
+                          var hi$28 = t$12.hi$2;
+                          var p14 = msg.payload$1;
+                          if ($is_LAsteroid(p14)) {
+                            var x15 = $as_LAsteroid(p14);
+                            var state$4 = x15.common$1;
+                            var size = x15.size$1;
+                            var color$3 = x15.color$1;
+                            var m$4 = view$2.lookup__I__s_Option(state$4.ident$1);
+                            if ($is_s_Some(m$4)) {
+                              var x2$7 = $as_s_Some(m$4);
+                              var v$5 = $as_LSpaceObject(x2$7.value$2);
+                              var this$54 = state$4.pos$1;
+                              var jsx$20 = $uD(this$54.$$und1__O());
+                              var this$55 = state$4.pos$1;
+                              var value$6 = new $c_LVector2d().init___D__D(jsx$20, $uD(this$55.$$und2__O()));
+                              $f_LSpaceObject__pos$und$eq__LVector2d__V(v$5, value$6);
+                              var value$7 = state$4.omega$1;
+                              $f_LSpaceObject__orientation$und$eq__D__V(v$5, value$7);
+                              v$5.angularVelocity$und$eq__D__V(state$4.phi$1);
+                              var this$56 = state$4.velo$1;
+                              var jsx$21 = $uD(this$56.$$und1__O());
+                              var this$57 = state$4.velo$1;
+                              v$5.velocity$und$eq__LVector2d__V(new $c_LVector2d().init___D__D(jsx$21, $uD(this$57.$$und2__O())));
+                              var t$13 = $m_jl_System$().currentTimeMillis__J();
+                              var lo$29 = t$13.lo$2;
+                              var hi$29 = t$13.hi$2;
+                              var lo$30 = ((lo$29 - lo$28) | 0);
+                              var hi$30 = ((((-2147483648) ^ lo$30) > ((-2147483648) ^ lo$29)) ? (((-1) + ((hi$29 - hi$28) | 0)) | 0) : ((hi$29 - hi$28) | 0));
+                              var this$59 = $m_sjsr_RuntimeLong$();
+                              var lo$31 = this$59.divideImpl__I__I__I__I__I(lo$30, hi$30, 1000, 0);
+                              var hi$31 = this$59.scala$scalajs$runtime$RuntimeLong$$hiReturn$f;
+                              v$5.update__D__V($m_sjsr_RuntimeLong$().scala$scalajs$runtime$RuntimeLong$$toDouble__I__I__D(lo$31, hi$31))
+                            } else {
+                              var x$17 = $m_s_None$();
+                              if ((!(x$17 === m$4))) {
+                                throw new $c_s_MatchError().init___O(m$4)
+                              };
+                              var x$19 = $m_LTiny$();
+                              if ((x$19 === size)) {
                                 var s$4 = $m_LSize$Tiny$()
                               } else {
-                                var x$17 = $m_LSmall$();
-                                if ((x$17 === size)) {
+                                var x$21 = $m_LSmall$();
+                                if ((x$21 === size)) {
                                   var s$4 = $m_LSize$Small$()
                                 } else {
-                                  var x$19 = $m_LMedium$();
-                                  if ((x$19 === size)) {
+                                  var x$23 = $m_LMedium$();
+                                  if ((x$23 === size)) {
                                     var s$4 = $m_LSize$Medium$()
                                   } else {
-                                    var x$21 = $m_LBig$();
-                                    if ((!(x$21 === size))) {
+                                    var x$25 = $m_LBig$();
+                                    if ((!(x$25 === size))) {
                                       throw new $c_s_MatchError().init___O(size)
                                     };
                                     var s$4 = $m_LSize$Big$()
                                   }
                                 }
                               };
-                              var x$23 = $m_LBrown$();
-                              if ((x$23 === color$2)) {
+                              var x$27 = $m_LBrown$();
+                              if ((x$27 === color$3)) {
                                 var c = $m_LColor$Brown$()
                               } else {
-                                var x$25 = $m_LGray$();
-                                if ((!(x$25 === color$2))) {
-                                  throw new $c_s_MatchError().init___O(color$2)
+                                var x$29 = $m_LGray$();
+                                if ((!(x$29 === color$3))) {
+                                  throw new $c_s_MatchError().init___O(color$3)
                                 };
                                 var c = $m_LColor$Grey$()
                               };
-                              var this$45 = view$2.factory$1;
-                              var id$2 = state$3.ident$1;
-                              var meteor = new $c_LSpaceObjectFactory$$anon$2().init___LSpaceObjectFactory__I__LSize$Meteor__LColor$Meteor(this$45, id$2, s$4, c);
-                              var this$46 = state$3.pos$1;
-                              var jsx$17 = $uD(this$46.$$und1__O());
-                              var this$47 = state$3.pos$1;
-                              var value$6 = new $c_LVector2d().init___D__D(jsx$17, $uD(this$47.$$und2__O()));
-                              $f_LSpaceObject__pos$und$eq__LVector2d__V(meteor, value$6);
-                              var value$7 = state$3.omega$1;
-                              $f_LSpaceObject__orientation$und$eq__D__V(meteor, value$7);
-                              meteor.angularVelocity$1 = state$3.phi$1;
-                              var this$48 = state$3.velo$1;
-                              var jsx$18 = $uD(this$48.$$und1__O());
-                              var this$49 = state$3.velo$1;
-                              meteor.velocity$1 = new $c_LVector2d().init___D__D(jsx$18, $uD(this$49.$$und2__O()));
+                              var this$60 = view$2.factory$1;
+                              var id$3 = state$4.ident$1;
+                              var meteor = new $c_LSpaceObjectFactory$$anon$2().init___LSpaceObjectFactory__I__LSize$Meteor__LColor$Meteor(this$60, id$3, s$4, c);
+                              var this$61 = state$4.pos$1;
+                              var jsx$22 = $uD(this$61.$$und1__O());
+                              var this$62 = state$4.pos$1;
+                              var value$8 = new $c_LVector2d().init___D__D(jsx$22, $uD(this$62.$$und2__O()));
+                              $f_LSpaceObject__pos$und$eq__LVector2d__V(meteor, value$8);
+                              var value$9 = state$4.omega$1;
+                              $f_LSpaceObject__orientation$und$eq__D__V(meteor, value$9);
+                              meteor.angularVelocity$1 = state$4.phi$1;
+                              var this$63 = state$4.velo$1;
+                              var jsx$23 = $uD(this$63.$$und1__O());
+                              var this$64 = state$4.velo$1;
+                              meteor.velocity$1 = new $c_LVector2d().init___D__D(jsx$23, $uD(this$64.$$und2__O()));
                               view$2.spawn__LSpaceObject__V(meteor);
-                              var delta$7 = (($uD($m_Lorg_scalajs_dom_package$().window__Lorg_scalajs_dom_raw_Window().performance.now()) - $m_sjsr_RuntimeLong$().scala$scalajs$runtime$RuntimeLong$$toDouble__I__I__D(lo$18, hi$18)) / 1000);
-                              $f_LSpaceObject__update__D__V(meteor, delta$7)
+                              var delta$10 = (($uD($m_Lorg_scalajs_dom_package$().window__Lorg_scalajs_dom_raw_Window().performance.now()) - $m_sjsr_RuntimeLong$().scala$scalajs$runtime$RuntimeLong$$toDouble__I__I__D(lo$28, hi$28)) / 1000);
+                              $f_LSpaceObject__update__D__V(meteor, delta$10)
                             };
-                            break matchEnd15
+                            break matchEnd17
                           }
                         }
                       }
@@ -10626,20 +10719,20 @@ function $h_LMessage$() {
 $h_LMessage$.prototype = $c_LMessage$.prototype;
 $c_LMessage$.prototype.init___ = (function() {
   $n_LMessage$ = this;
-  var inst$macro$199 = new $c_LMessage$anon$lazy$macro$198$1().init___().inst$macro$28__Lio_circe_generic_encoding_DerivedObjectEncoder();
-  var t = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function($this, inst$macro$199$1) {
+  var inst$macro$211 = new $c_LMessage$anon$lazy$macro$210$1().init___().inst$macro$28__Lio_circe_generic_encoding_DerivedObjectEncoder();
+  var t = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function($this, inst$macro$211$1) {
     return (function() {
-      return inst$macro$199$1
+      return inst$macro$211$1
     })
-  })(this, inst$macro$199));
+  })(this, inst$macro$211));
   var encode = new $c_Lshapeless_Lazy$$anon$1().init___F0(t);
   this.encodeMessage$1 = $as_Lio_circe_ObjectEncoder(encode.value__O());
-  var inst$macro$284 = new $c_LMessage$anon$lazy$macro$283$1().init___().inst$macro$200__Lio_circe_generic_decoding_DerivedDecoder();
-  var t$1 = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function(this$2$1, inst$macro$284$1) {
+  var inst$macro$302 = new $c_LMessage$anon$lazy$macro$301$1().init___().inst$macro$212__Lio_circe_generic_decoding_DerivedDecoder();
+  var t$1 = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function(this$2$1, inst$macro$302$1) {
     return (function() {
-      return inst$macro$284$1
+      return inst$macro$302$1
     })
-  })(this, inst$macro$284));
+  })(this, inst$macro$302));
   var decode = new $c_Lshapeless_Lazy$$anon$1().init___F0(t$1);
   this.decodeMessage$1 = $as_Lio_circe_Decoder(decode.value__O());
   return this
@@ -10728,230 +10821,11 @@ var $d_LMessageSocket$$anon$1 = new $TypeData().initClass({
 });
 $c_LMessageSocket$$anon$1.prototype.$classData = $d_LMessageSocket$$anon$1;
 /** @constructor */
-function $c_LPlayerShip() {
-  $c_O.call(this);
-  this.textures$1 = null;
-  this.sprite$1 = null;
-  this.thrustContainer$1 = null;
-  this.x$1$1 = null;
-  this.thrustBL$1 = null;
-  this.thrustBR$1 = null;
-  this.thrustFL$1 = null;
-  this.thrustFR$1 = null;
-  this.damages$1 = null;
-  this.damageLevel$und$1 = 0;
-  this.damaged$1 = 0.0;
-  this.damageFilter$1 = null;
-  this.ident$1 = 0;
-  this.angularVelocity$1 = 0.0;
-  this.velocity$1 = null;
-  this.acceleration$1 = 0.0;
-  this.exists$1 = false
-}
-$c_LPlayerShip.prototype = new $h_O();
-$c_LPlayerShip.prototype.constructor = $c_LPlayerShip;
-/** @constructor */
-function $h_LPlayerShip() {
-  /*<skip>*/
-}
-$h_LPlayerShip.prototype = $c_LPlayerShip.prototype;
-$c_LPlayerShip.prototype.velocity$und$eq__LVector2d__V = (function(x$1) {
-  this.velocity$1 = x$1
-});
-$c_LPlayerShip.prototype.angularVelocity$und$eq__D__V = (function(x$1) {
-  this.angularVelocity$1 = x$1
-});
-$c_LPlayerShip.prototype.updateThrust__D__V = (function(delta) {
-  this.thrustContainer$1.rotation = (-$uD(this.sprite$1.rotation));
-  this.thrustBL$1.emit = ((this.acceleration$1 > 0) || ((this.angularVelocity$1 > 0) && (this.acceleration$1 === 0)));
-  this.thrustBR$1.emit = ((this.acceleration$1 > 0) || ((this.angularVelocity$1 < 0) && (this.acceleration$1 === 0)));
-  this.thrustFL$1.emit = ((this.acceleration$1 < 0) || ((this.angularVelocity$1 < 0) && (this.acceleration$1 === 0)));
-  this.thrustFR$1.emit = ((this.acceleration$1 < 0) || ((this.angularVelocity$1 > 0) && (this.acceleration$1 === 0)));
-  var rot = ($uD(this.sprite$1.rotation) * $uD($g.PIXI.RAD_TO_DEG));
-  this.thrustBL$1.rotate(rot);
-  this.thrustBR$1.rotate(rot);
-  this.thrustFL$1.rotate(rot);
-  this.thrustFR$1.rotate(rot);
-  var spawnBL = new $c_LVector2d().init___D__D((-45.0), 25.0).rotate__D__LVector2d($uD(this.sprite$1.rotation));
-  var spawnBR = new $c_LVector2d().init___D__D(45.0, 25.0).rotate__D__LVector2d($uD(this.sprite$1.rotation));
-  var spawnFL = new $c_LVector2d().init___D__D((-47.0), (-8.0)).rotate__D__LVector2d($uD(this.sprite$1.rotation));
-  var spawnFR = new $c_LVector2d().init___D__D(47.0, (-8.0)).rotate__D__LVector2d($uD(this.sprite$1.rotation));
-  this.thrustBL$1.updateSpawnPos(spawnBL.x$1, spawnBL.y$1);
-  this.thrustBR$1.updateSpawnPos(spawnBR.x$1, spawnBR.y$1);
-  this.thrustFL$1.updateSpawnPos(spawnFL.x$1, spawnFL.y$1);
-  this.thrustFR$1.updateSpawnPos(spawnFR.x$1, spawnFR.y$1);
-  this.thrustBL$1.update(delta);
-  this.thrustBR$1.update(delta);
-  this.thrustFL$1.update(delta);
-  this.thrustFR$1.update(delta)
-});
-$c_LPlayerShip.prototype.exists__Z = (function() {
-  return this.exists$1
-});
-$c_LPlayerShip.prototype.velocity__LVector2d = (function() {
-  return this.velocity$1
-});
-$c_LPlayerShip.prototype.angularVelocity__D = (function() {
-  return this.angularVelocity$1
-});
-$c_LPlayerShip.prototype.thrustEmitterSettings$1__p1__Z__Z__sjs_js_Object = (function(back, left) {
-  return {
-    "alpha": {
-      "start": 0.8,
-      "end": 0.0
-    },
-    "scale": {
-      "start": 0.1,
-      "end": 2
-    },
-    "color": {
-      "start": "ffffff",
-      "end": "331100"
-    },
-    "speed": {
-      "start": (back ? 300 : 250),
-      "end": (back ? 300 : 250)
-    },
-    "startRotation": (back ? {
-      "min": 89,
-      "max": 91
-    } : {
-      "min": 265,
-      "max": 275
-    }),
-    "lifetime": {
-      "min": 0.5,
-      "max": 1
-    },
-    "frequency": (back ? 0.003 : 0.003),
-    "maxParticles": 256,
-    "pos": {
-      "x": (-45),
-      "y": 25
-    },
-    "spawnType": "circle",
-    "spawnCircle": new $g.PIXI.Circle(0.0, 0.0, (back ? 10.0 : 5.0))
-  }
-});
-$c_LPlayerShip.prototype.sprite__Lpixijs_Sprite = (function() {
-  return this.sprite$1
-});
-$c_LPlayerShip.prototype.ident__I = (function() {
-  return this.ident$1
-});
-$c_LPlayerShip.prototype.update__D__V = (function(delta) {
-  $f_LSpaceObject__update__D__V(this, delta);
-  if ((this.damaged$1 > 0)) {
-    var b = (this.damaged$1 - delta);
-    this.damaged$1 = $uD($g.Math.max(0.0, b));
-    this.sprite$1.tint = ((16777215 - $imul(257, $doubleToInt((255 * this.damaged$1)))) | 0);
-    this.damageFilter$1.angle = (360 * this.damaged$1)
-  } else if ((this.damaged$1 === 0)) {
-    this.damaged$1 = (-1.0);
-    this.sprite$1.tint = 1.6777215E7;
-    this.damageFilter$1.angle = 0.0
-  };
-  this.updateThrust__D__V(delta)
-});
-$c_LPlayerShip.prototype.exists$und$eq__Z__V = (function(x$1) {
-  this.exists$1 = x$1
-});
-$c_LPlayerShip.prototype.acceleration__D = (function() {
-  return this.acceleration$1
-});
-$c_LPlayerShip.prototype.ident$und$eq__I__V = (function(x$1) {
-  this.ident$1 = x$1
-});
-$c_LPlayerShip.prototype.acceleration$und$eq__D__V = (function(x$1) {
-  this.acceleration$1 = x$1
-});
-$c_LPlayerShip.prototype.thrustEmitter$1__p1__Z__Z__Lpixijs_particles_Emitter = (function(back, left) {
-  return new $g.PIXI.particles.Emitter(this.thrustContainer$1, [this.textures$1.stars$1.get(2)], this.thrustEmitterSettings$1__p1__Z__Z__sjs_js_Object(back, left))
-});
-$c_LPlayerShip.prototype.damageLevel$und$eq__I__V = (function(level) {
-  var this$1 = $m_s_Predef$().wrapRefArray__AO__scm_WrappedArray(this.damages$1);
-  var this$2 = new $c_s_PartialFunction$Lifted().init___s_PartialFunction(this$1);
-  var v1 = (((-1) + this.damageLevel$und$1) | 0);
-  var this$3 = this$2.apply__O__s_Option(v1);
-  if ((!this$3.isEmpty__Z())) {
-    var arg1 = this$3.get__O();
-    this.sprite$1.removeChild(arg1)
-  };
-  var this$4 = $m_s_Predef$().wrapRefArray__AO__scm_WrappedArray(this.damages$1);
-  var this$5 = new $c_s_PartialFunction$Lifted().init___s_PartialFunction(this$4);
-  var v1$1 = (((-1) + level) | 0);
-  var this$6 = this$5.apply__O__s_Option(v1$1);
-  if ((!this$6.isEmpty__Z())) {
-    var arg1$1 = this$6.get__O();
-    this.sprite$1.addChild(arg1$1)
-  };
-  var xs = this.damages$1;
-  if ((level > xs.u.length)) {
-    this.damageLevel$und$1 = 0
-  } else {
-    this.damageLevel$und$1 = level
-  }
-});
-$c_LPlayerShip.prototype.init___I__LColor$Player__I__LResources$SpaceTextures = (function(id, color, variant, textures) {
-  this.textures$1 = textures;
-  $f_LSpaceObject__$$init$__V(this);
-  this.sprite$1 = new $g.PIXI.Sprite($asArrayOf_Lpixijs_Texture(textures.players__LResources$SpaceTextures$players$().ships$1.apply__O__O(color), 1).get(variant));
-  this.ident$1 = id;
-  this.sprite$1.anchor.set(0.5, 0.5);
-  this.thrustContainer$1 = new $g.PIXI.Container();
-  this.sprite$1.addChild(this.thrustContainer$1);
-  var _1 = this.thrustEmitter$1__p1__Z__Z__Lpixijs_particles_Emitter(true, true);
-  var _2 = this.thrustEmitter$1__p1__Z__Z__Lpixijs_particles_Emitter(true, false);
-  var _3 = this.thrustEmitter$1__p1__Z__Z__Lpixijs_particles_Emitter(false, true);
-  var _4 = this.thrustEmitter$1__p1__Z__Z__Lpixijs_particles_Emitter(false, false);
-  this.x$1$1 = new $c_T4().init___O__O__O__O(_1, _2, _3, _4);
-  this.thrustBL$1 = this.x$1$1.$$und1$1;
-  this.thrustBR$1 = this.x$1$1.$$und2$1;
-  this.thrustFL$1 = this.x$1$1.$$und3$1;
-  this.thrustFR$1 = this.x$1$1.$$und4$1;
-  var xs = textures.players__LResources$SpaceTextures$players$().damage$1.get(variant);
-  var elems$2 = null;
-  elems$2 = [];
-  var x1 = xs.u.length;
-  switch (x1) {
-    case (-1): {
-      break
-    }
-  };
-  var i = 0;
-  var len = xs.u.length;
-  while ((i < len)) {
-    var index = i;
-    var arg1 = xs.get(index);
-    var ds = new $g.PIXI.Sprite(arg1);
-    ds.blendMode = $uD($g.PIXI.BLEND_MODES.MULTIPLY);
-    ds.anchor.set(0.5, 0.5);
-    var unboxedElem = ((ds === null) ? null : ds);
-    elems$2.push(unboxedElem);
-    i = ((1 + i) | 0)
-  };
-  this.damages$1 = $makeNativeArrayWrapper($d_Lpixijs_Sprite.getArrayOf(), elems$2);
-  this.damageLevel$und$1 = 0;
-  this.damaged$1 = 0.0;
-  this.damageFilter$1 = new $g.PIXI.filters.TwistFilter();
-  this.damageFilter$1.radius = ($uD(this.sprite$1.width) / 2);
-  this.damageFilter$1.offset = new $g.PIXI.Point(($uD(this.sprite$1.width) / 2), ($uD(this.sprite$1.height) / 2));
-  this.sprite$1.filters = [this.damageFilter$1];
-  return this
-});
-var $d_LPlayerShip = new $TypeData().initClass({
-  LPlayerShip: 0
-}, false, "PlayerShip", {
-  LPlayerShip: 1,
-  O: 1,
-  LSpaceObject: 1
-});
-$c_LPlayerShip.prototype.$classData = $d_LPlayerShip;
-/** @constructor */
 function $c_LSimpleSpaceObject() {
   $c_O.call(this);
   this.id$1 = 0;
   this.sprite$1 = null;
+  this.zorg$1 = false;
   this.ident$1 = 0;
   this.angularVelocity$1 = 0.0;
   this.velocity$1 = null;
@@ -11003,23 +10877,26 @@ $c_LSimpleSpaceObject.prototype.sprite__Lpixijs_Sprite = (function() {
 $c_LSimpleSpaceObject.prototype.ident__I = (function() {
   return this.ident$1
 });
-$c_LSimpleSpaceObject.prototype.exists$und$eq__Z__V = (function(x$1) {
-  this.exists$1 = x$1
-});
 $c_LSimpleSpaceObject.prototype.update__D__V = (function(delta) {
   $f_LSpaceObject__update__D__V(this, delta)
+});
+$c_LSimpleSpaceObject.prototype.exists$und$eq__Z__V = (function(x$1) {
+  this.exists$1 = x$1
 });
 $c_LSimpleSpaceObject.prototype.acceleration__D = (function() {
   return this.acceleration$1
 });
-$c_LSimpleSpaceObject.prototype.acceleration$und$eq__D__V = (function(x$1) {
-  this.acceleration$1 = x$1
-});
 $c_LSimpleSpaceObject.prototype.ident$und$eq__I__V = (function(x$1) {
   this.ident$1 = x$1
 });
+$c_LSimpleSpaceObject.prototype.acceleration$und$eq__D__V = (function(x$1) {
+  this.acceleration$1 = x$1
+});
 $c_LSimpleSpaceObject.prototype.hashCode__I = (function() {
   return this.ident$1
+});
+$c_LSimpleSpaceObject.prototype.zorg$und$eq__Z__V = (function(x$1) {
+  this.zorg$1 = x$1
 });
 function $is_LSimpleSpaceObject(obj) {
   return (!(!((obj && obj.$classData) && obj.$classData.ancestors.LSimpleSpaceObject)))
@@ -12522,29 +12399,29 @@ var $d_sr_ObjectRef = new $TypeData().initClass({
 });
 $c_sr_ObjectRef.prototype.$classData = $d_sr_ObjectRef;
 /** @constructor */
-function $c_LAColor$anon$lazy$macro$348$1() {
+function $c_LAColor$anon$lazy$macro$366$1() {
   $c_O.call(this);
-  this.inst$macro$339$1 = null;
-  this.inst$macro$336$1 = null;
+  this.inst$macro$357$1 = null;
+  this.inst$macro$354$1 = null;
   this.bitmap$0$1 = 0
 }
-$c_LAColor$anon$lazy$macro$348$1.prototype = new $h_O();
-$c_LAColor$anon$lazy$macro$348$1.prototype.constructor = $c_LAColor$anon$lazy$macro$348$1;
+$c_LAColor$anon$lazy$macro$366$1.prototype = new $h_O();
+$c_LAColor$anon$lazy$macro$366$1.prototype.constructor = $c_LAColor$anon$lazy$macro$366$1;
 /** @constructor */
-function $h_LAColor$anon$lazy$macro$348$1() {
+function $h_LAColor$anon$lazy$macro$366$1() {
   /*<skip>*/
 }
-$h_LAColor$anon$lazy$macro$348$1.prototype = $c_LAColor$anon$lazy$macro$348$1.prototype;
-$c_LAColor$anon$lazy$macro$348$1.prototype.init___ = (function() {
+$h_LAColor$anon$lazy$macro$366$1.prototype = $c_LAColor$anon$lazy$macro$366$1.prototype;
+$c_LAColor$anon$lazy$macro$366$1.prototype.init___ = (function() {
   return this
 });
-$c_LAColor$anon$lazy$macro$348$1.prototype.inst$macro$339__Lio_circe_generic_encoding_ReprObjectEncoder = (function() {
-  return (((1 & this.bitmap$0$1) === 0) ? this.inst$macro$339$lzycompute__p1__Lio_circe_generic_encoding_ReprObjectEncoder() : this.inst$macro$339$1)
+$c_LAColor$anon$lazy$macro$366$1.prototype.inst$macro$357__Lio_circe_generic_encoding_ReprObjectEncoder = (function() {
+  return (((1 & this.bitmap$0$1) === 0) ? this.inst$macro$357$lzycompute__p1__Lio_circe_generic_encoding_ReprObjectEncoder() : this.inst$macro$357$1)
 });
-$c_LAColor$anon$lazy$macro$348$1.prototype.inst$macro$336$lzycompute__p1__Lio_circe_generic_encoding_DerivedObjectEncoder = (function() {
+$c_LAColor$anon$lazy$macro$366$1.prototype.inst$macro$354$lzycompute__p1__Lio_circe_generic_encoding_DerivedObjectEncoder = (function() {
   if (((2 & this.bitmap$0$1) === 0)) {
-    new $c_LAColor$anon$lazy$macro$348$1$$anon$46().init___LAColor$anon$lazy$macro$348$1(this);
-    var gen = new $c_LAColor$anon$lazy$macro$348$1$anon$macro$337$1().init___LAColor$anon$lazy$macro$348$1(this);
+    new $c_LAColor$anon$lazy$macro$366$1$$anon$48().init___LAColor$anon$lazy$macro$366$1(this);
+    var gen = new $c_LAColor$anon$lazy$macro$366$1$anon$macro$355$1().init___LAColor$anon$lazy$macro$366$1(this);
     $m_Lshapeless_ops_coproduct$ZipWithKeys$();
     $m_Lshapeless_ops_coproduct$ZipWithKeys$();
     var zipWithKeys = $m_Lshapeless_ops_coproduct$ZipWithKeys$().cnilZipWithKeys$1;
@@ -12562,123 +12439,82 @@ $c_LAColor$anon$lazy$macro$348$1.prototype.inst$macro$336$lzycompute__p1__Lio_ci
     var gen$1 = new $c_Lshapeless_LabelledGeneric$$anon$2().init___Lshapeless_Generic__Lshapeless_ops_coproduct$ZipWithKeys__s_Predef$$less$colon$less(gen, zip, ev);
     var t = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function($this) {
       return (function() {
-        return $this.inst$macro$339__Lio_circe_generic_encoding_ReprObjectEncoder()
+        return $this.inst$macro$357__Lio_circe_generic_encoding_ReprObjectEncoder()
       })
     })(this));
     var encode = new $c_Lshapeless_Lazy$$anon$1().init___F0(t);
-    this.inst$macro$336$1 = new $c_Lio_circe_generic_encoding_DerivedObjectEncoder$$anon$1().init___Lshapeless_LabelledGeneric__Lshapeless_Lazy(gen$1, encode);
+    this.inst$macro$354$1 = new $c_Lio_circe_generic_encoding_DerivedObjectEncoder$$anon$1().init___Lshapeless_LabelledGeneric__Lshapeless_Lazy(gen$1, encode);
     this.bitmap$0$1 = (((2 | this.bitmap$0$1) << 24) >> 24)
   };
-  return this.inst$macro$336$1
+  return this.inst$macro$354$1
 });
-$c_LAColor$anon$lazy$macro$348$1.prototype.inst$macro$336__Lio_circe_generic_encoding_DerivedObjectEncoder = (function() {
-  return (((2 & this.bitmap$0$1) === 0) ? this.inst$macro$336$lzycompute__p1__Lio_circe_generic_encoding_DerivedObjectEncoder() : this.inst$macro$336$1)
+$c_LAColor$anon$lazy$macro$366$1.prototype.inst$macro$354__Lio_circe_generic_encoding_DerivedObjectEncoder = (function() {
+  return (((2 & this.bitmap$0$1) === 0) ? this.inst$macro$354$lzycompute__p1__Lio_circe_generic_encoding_DerivedObjectEncoder() : this.inst$macro$354$1)
 });
-$c_LAColor$anon$lazy$macro$348$1.prototype.inst$macro$339$lzycompute__p1__Lio_circe_generic_encoding_ReprObjectEncoder = (function() {
+$c_LAColor$anon$lazy$macro$366$1.prototype.inst$macro$357$lzycompute__p1__Lio_circe_generic_encoding_ReprObjectEncoder = (function() {
   if (((1 & this.bitmap$0$1) === 0)) {
-    this.inst$macro$339$1 = new $c_LAColor$anon$lazy$macro$348$1$$anon$11().init___LAColor$anon$lazy$macro$348$1(this);
+    this.inst$macro$357$1 = new $c_LAColor$anon$lazy$macro$366$1$$anon$11().init___LAColor$anon$lazy$macro$366$1(this);
     this.bitmap$0$1 = (((1 | this.bitmap$0$1) << 24) >> 24)
   };
-  return this.inst$macro$339$1
+  return this.inst$macro$357$1
 });
-var $d_LAColor$anon$lazy$macro$348$1 = new $TypeData().initClass({
-  LAColor$anon$lazy$macro$348$1: 0
-}, false, "AColor$anon$lazy$macro$348$1", {
-  LAColor$anon$lazy$macro$348$1: 1,
+var $d_LAColor$anon$lazy$macro$366$1 = new $TypeData().initClass({
+  LAColor$anon$lazy$macro$366$1: 0
+}, false, "AColor$anon$lazy$macro$366$1", {
+  LAColor$anon$lazy$macro$366$1: 1,
   O: 1,
   s_Serializable: 1,
   Ljava_io_Serializable: 1
 });
-$c_LAColor$anon$lazy$macro$348$1.prototype.$classData = $d_LAColor$anon$lazy$macro$348$1;
+$c_LAColor$anon$lazy$macro$366$1.prototype.$classData = $d_LAColor$anon$lazy$macro$366$1;
 /** @constructor */
-function $c_LAColor$anon$lazy$macro$363$1() {
+function $c_LAColor$anon$lazy$macro$381$1() {
   $c_O.call(this);
-  this.inst$macro$358$1 = null;
-  this.inst$macro$355$1 = null;
-  this.inst$macro$360$1 = null;
-  this.inst$macro$353$1 = null;
-  this.inst$macro$350$1 = null;
+  this.inst$macro$376$1 = null;
+  this.inst$macro$373$1 = null;
+  this.inst$macro$378$1 = null;
+  this.inst$macro$371$1 = null;
+  this.inst$macro$368$1 = null;
   this.bitmap$0$1 = 0
 }
-$c_LAColor$anon$lazy$macro$363$1.prototype = new $h_O();
-$c_LAColor$anon$lazy$macro$363$1.prototype.constructor = $c_LAColor$anon$lazy$macro$363$1;
+$c_LAColor$anon$lazy$macro$381$1.prototype = new $h_O();
+$c_LAColor$anon$lazy$macro$381$1.prototype.constructor = $c_LAColor$anon$lazy$macro$381$1;
 /** @constructor */
-function $h_LAColor$anon$lazy$macro$363$1() {
+function $h_LAColor$anon$lazy$macro$381$1() {
   /*<skip>*/
 }
-$h_LAColor$anon$lazy$macro$363$1.prototype = $c_LAColor$anon$lazy$macro$363$1.prototype;
-$c_LAColor$anon$lazy$macro$363$1.prototype.inst$macro$358__Lio_circe_generic_decoding_ReprDecoder = (function() {
-  return (((1 & this.bitmap$0$1) === 0) ? this.inst$macro$358$lzycompute__p1__Lio_circe_generic_decoding_ReprDecoder() : this.inst$macro$358$1)
-});
-$c_LAColor$anon$lazy$macro$363$1.prototype.init___ = (function() {
+$h_LAColor$anon$lazy$macro$381$1.prototype = $c_LAColor$anon$lazy$macro$381$1.prototype;
+$c_LAColor$anon$lazy$macro$381$1.prototype.init___ = (function() {
   return this
 });
-$c_LAColor$anon$lazy$macro$363$1.prototype.inst$macro$358$lzycompute__p1__Lio_circe_generic_decoding_ReprDecoder = (function() {
-  if (((1 & this.bitmap$0$1) === 0)) {
-    this.inst$macro$358$1 = $m_Lio_circe_generic_decoding_ReprDecoder$().hnilReprDecoder$1;
-    this.bitmap$0$1 = (((1 | this.bitmap$0$1) << 24) >> 24)
-  };
-  return this.inst$macro$358$1
-});
-$c_LAColor$anon$lazy$macro$363$1.prototype.inst$macro$355$lzycompute__p1__Lio_circe_generic_decoding_DerivedDecoder = (function() {
+$c_LAColor$anon$lazy$macro$381$1.prototype.inst$macro$373$lzycompute__p1__Lio_circe_generic_decoding_DerivedDecoder = (function() {
   if (((2 & this.bitmap$0$1) === 0)) {
-    new $c_LAColor$anon$lazy$macro$363$1$$anon$47().init___LAColor$anon$lazy$macro$363$1(this);
-    var gen = new $c_LAColor$anon$lazy$macro$363$1$anon$macro$357$1().init___LAColor$anon$lazy$macro$363$1(this);
+    new $c_LAColor$anon$lazy$macro$381$1$$anon$49().init___LAColor$anon$lazy$macro$381$1(this);
+    var gen = new $c_LAColor$anon$lazy$macro$381$1$anon$macro$375$1().init___LAColor$anon$lazy$macro$381$1(this);
     var zip = $m_Lshapeless_ops_hlist$ZipWithKeys$().hnilZipWithKeys$1;
     var ev = $m_s_Predef$().singleton$und$less$colon$less$2;
     var gen$1 = new $c_Lshapeless_LabelledGeneric$$anon$1().init___Lshapeless_Generic__Lshapeless_ops_hlist$ZipWithKeys__s_Predef$$less$colon$less(gen, zip, ev);
     var t = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function($this) {
       return (function() {
-        return $this.inst$macro$358__Lio_circe_generic_decoding_ReprDecoder()
+        return $this.inst$macro$376__Lio_circe_generic_decoding_ReprDecoder()
       })
     })(this));
     var decode = new $c_Lshapeless_Lazy$$anon$1().init___F0(t);
-    this.inst$macro$355$1 = new $c_Lio_circe_generic_decoding_DerivedDecoder$$anon$1().init___Lshapeless_LabelledGeneric__Lshapeless_Lazy(gen$1, decode);
+    this.inst$macro$373$1 = new $c_Lio_circe_generic_decoding_DerivedDecoder$$anon$1().init___Lshapeless_LabelledGeneric__Lshapeless_Lazy(gen$1, decode);
     this.bitmap$0$1 = (((2 | this.bitmap$0$1) << 24) >> 24)
   };
-  return this.inst$macro$355$1
+  return this.inst$macro$373$1
 });
-$c_LAColor$anon$lazy$macro$363$1.prototype.inst$macro$350__Lio_circe_generic_decoding_DerivedDecoder = (function() {
-  return (((16 & this.bitmap$0$1) === 0) ? this.inst$macro$350$lzycompute__p1__Lio_circe_generic_decoding_DerivedDecoder() : this.inst$macro$350$1)
+$c_LAColor$anon$lazy$macro$381$1.prototype.inst$macro$368__Lio_circe_generic_decoding_DerivedDecoder = (function() {
+  return (((16 & this.bitmap$0$1) === 0) ? this.inst$macro$368$lzycompute__p1__Lio_circe_generic_decoding_DerivedDecoder() : this.inst$macro$368$1)
 });
-$c_LAColor$anon$lazy$macro$363$1.prototype.inst$macro$355__Lio_circe_generic_decoding_DerivedDecoder = (function() {
-  return (((2 & this.bitmap$0$1) === 0) ? this.inst$macro$355$lzycompute__p1__Lio_circe_generic_decoding_DerivedDecoder() : this.inst$macro$355$1)
+$c_LAColor$anon$lazy$macro$381$1.prototype.inst$macro$376__Lio_circe_generic_decoding_ReprDecoder = (function() {
+  return (((1 & this.bitmap$0$1) === 0) ? this.inst$macro$376$lzycompute__p1__Lio_circe_generic_decoding_ReprDecoder() : this.inst$macro$376$1)
 });
-$c_LAColor$anon$lazy$macro$363$1.prototype.inst$macro$353__Lio_circe_generic_decoding_ReprDecoder = (function() {
-  return (((8 & this.bitmap$0$1) === 0) ? this.inst$macro$353$lzycompute__p1__Lio_circe_generic_decoding_ReprDecoder() : this.inst$macro$353$1)
-});
-$c_LAColor$anon$lazy$macro$363$1.prototype.inst$macro$353$lzycompute__p1__Lio_circe_generic_decoding_ReprDecoder = (function() {
-  if (((8 & this.bitmap$0$1) === 0)) {
-    this.inst$macro$353$1 = new $c_LAColor$anon$lazy$macro$363$1$$anon$49().init___LAColor$anon$lazy$macro$363$1(this);
-    this.bitmap$0$1 = (((8 | this.bitmap$0$1) << 24) >> 24)
-  };
-  return this.inst$macro$353$1
-});
-$c_LAColor$anon$lazy$macro$363$1.prototype.inst$macro$360__Lio_circe_generic_decoding_DerivedDecoder = (function() {
-  return (((4 & this.bitmap$0$1) === 0) ? this.inst$macro$360$lzycompute__p1__Lio_circe_generic_decoding_DerivedDecoder() : this.inst$macro$360$1)
-});
-$c_LAColor$anon$lazy$macro$363$1.prototype.inst$macro$360$lzycompute__p1__Lio_circe_generic_decoding_DerivedDecoder = (function() {
-  if (((4 & this.bitmap$0$1) === 0)) {
-    new $c_LAColor$anon$lazy$macro$363$1$$anon$48().init___LAColor$anon$lazy$macro$363$1(this);
-    var gen = new $c_LAColor$anon$lazy$macro$363$1$anon$macro$362$1().init___LAColor$anon$lazy$macro$363$1(this);
-    var zip = $m_Lshapeless_ops_hlist$ZipWithKeys$().hnilZipWithKeys$1;
-    var ev = $m_s_Predef$().singleton$und$less$colon$less$2;
-    var gen$1 = new $c_Lshapeless_LabelledGeneric$$anon$1().init___Lshapeless_Generic__Lshapeless_ops_hlist$ZipWithKeys__s_Predef$$less$colon$less(gen, zip, ev);
-    var t = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function($this) {
-      return (function() {
-        return $this.inst$macro$358__Lio_circe_generic_decoding_ReprDecoder()
-      })
-    })(this));
-    var decode = new $c_Lshapeless_Lazy$$anon$1().init___F0(t);
-    this.inst$macro$360$1 = new $c_Lio_circe_generic_decoding_DerivedDecoder$$anon$1().init___Lshapeless_LabelledGeneric__Lshapeless_Lazy(gen$1, decode);
-    this.bitmap$0$1 = (((4 | this.bitmap$0$1) << 24) >> 24)
-  };
-  return this.inst$macro$360$1
-});
-$c_LAColor$anon$lazy$macro$363$1.prototype.inst$macro$350$lzycompute__p1__Lio_circe_generic_decoding_DerivedDecoder = (function() {
+$c_LAColor$anon$lazy$macro$381$1.prototype.inst$macro$368$lzycompute__p1__Lio_circe_generic_decoding_DerivedDecoder = (function() {
   if (((16 & this.bitmap$0$1) === 0)) {
-    new $c_LAColor$anon$lazy$macro$363$1$$anon$50().init___LAColor$anon$lazy$macro$363$1(this);
-    var gen = new $c_LAColor$anon$lazy$macro$363$1$anon$macro$351$1().init___LAColor$anon$lazy$macro$363$1(this);
+    new $c_LAColor$anon$lazy$macro$381$1$$anon$52().init___LAColor$anon$lazy$macro$381$1(this);
+    var gen = new $c_LAColor$anon$lazy$macro$381$1$anon$macro$369$1().init___LAColor$anon$lazy$macro$381$1(this);
     $m_Lshapeless_ops_coproduct$ZipWithKeys$();
     $m_Lshapeless_ops_coproduct$ZipWithKeys$();
     var zipWithKeys = $m_Lshapeless_ops_coproduct$ZipWithKeys$().cnilZipWithKeys$1;
@@ -12696,51 +12532,89 @@ $c_LAColor$anon$lazy$macro$363$1.prototype.inst$macro$350$lzycompute__p1__Lio_ci
     var gen$1 = new $c_Lshapeless_LabelledGeneric$$anon$2().init___Lshapeless_Generic__Lshapeless_ops_coproduct$ZipWithKeys__s_Predef$$less$colon$less(gen, zip, ev);
     var t = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function($this) {
       return (function() {
-        return $this.inst$macro$353__Lio_circe_generic_decoding_ReprDecoder()
+        return $this.inst$macro$371__Lio_circe_generic_decoding_ReprDecoder()
       })
     })(this));
     var decode = new $c_Lshapeless_Lazy$$anon$1().init___F0(t);
-    this.inst$macro$350$1 = new $c_Lio_circe_generic_decoding_DerivedDecoder$$anon$1().init___Lshapeless_LabelledGeneric__Lshapeless_Lazy(gen$1, decode);
+    this.inst$macro$368$1 = new $c_Lio_circe_generic_decoding_DerivedDecoder$$anon$1().init___Lshapeless_LabelledGeneric__Lshapeless_Lazy(gen$1, decode);
     this.bitmap$0$1 = (((16 | this.bitmap$0$1) << 24) >> 24)
   };
-  return this.inst$macro$350$1
+  return this.inst$macro$368$1
 });
-var $d_LAColor$anon$lazy$macro$363$1 = new $TypeData().initClass({
-  LAColor$anon$lazy$macro$363$1: 0
-}, false, "AColor$anon$lazy$macro$363$1", {
-  LAColor$anon$lazy$macro$363$1: 1,
+$c_LAColor$anon$lazy$macro$381$1.prototype.inst$macro$376$lzycompute__p1__Lio_circe_generic_decoding_ReprDecoder = (function() {
+  if (((1 & this.bitmap$0$1) === 0)) {
+    this.inst$macro$376$1 = $m_Lio_circe_generic_decoding_ReprDecoder$().hnilReprDecoder$1;
+    this.bitmap$0$1 = (((1 | this.bitmap$0$1) << 24) >> 24)
+  };
+  return this.inst$macro$376$1
+});
+$c_LAColor$anon$lazy$macro$381$1.prototype.inst$macro$373__Lio_circe_generic_decoding_DerivedDecoder = (function() {
+  return (((2 & this.bitmap$0$1) === 0) ? this.inst$macro$373$lzycompute__p1__Lio_circe_generic_decoding_DerivedDecoder() : this.inst$macro$373$1)
+});
+$c_LAColor$anon$lazy$macro$381$1.prototype.inst$macro$378$lzycompute__p1__Lio_circe_generic_decoding_DerivedDecoder = (function() {
+  if (((4 & this.bitmap$0$1) === 0)) {
+    new $c_LAColor$anon$lazy$macro$381$1$$anon$50().init___LAColor$anon$lazy$macro$381$1(this);
+    var gen = new $c_LAColor$anon$lazy$macro$381$1$anon$macro$380$1().init___LAColor$anon$lazy$macro$381$1(this);
+    var zip = $m_Lshapeless_ops_hlist$ZipWithKeys$().hnilZipWithKeys$1;
+    var ev = $m_s_Predef$().singleton$und$less$colon$less$2;
+    var gen$1 = new $c_Lshapeless_LabelledGeneric$$anon$1().init___Lshapeless_Generic__Lshapeless_ops_hlist$ZipWithKeys__s_Predef$$less$colon$less(gen, zip, ev);
+    var t = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function($this) {
+      return (function() {
+        return $this.inst$macro$376__Lio_circe_generic_decoding_ReprDecoder()
+      })
+    })(this));
+    var decode = new $c_Lshapeless_Lazy$$anon$1().init___F0(t);
+    this.inst$macro$378$1 = new $c_Lio_circe_generic_decoding_DerivedDecoder$$anon$1().init___Lshapeless_LabelledGeneric__Lshapeless_Lazy(gen$1, decode);
+    this.bitmap$0$1 = (((4 | this.bitmap$0$1) << 24) >> 24)
+  };
+  return this.inst$macro$378$1
+});
+$c_LAColor$anon$lazy$macro$381$1.prototype.inst$macro$378__Lio_circe_generic_decoding_DerivedDecoder = (function() {
+  return (((4 & this.bitmap$0$1) === 0) ? this.inst$macro$378$lzycompute__p1__Lio_circe_generic_decoding_DerivedDecoder() : this.inst$macro$378$1)
+});
+$c_LAColor$anon$lazy$macro$381$1.prototype.inst$macro$371__Lio_circe_generic_decoding_ReprDecoder = (function() {
+  return (((8 & this.bitmap$0$1) === 0) ? this.inst$macro$371$lzycompute__p1__Lio_circe_generic_decoding_ReprDecoder() : this.inst$macro$371$1)
+});
+$c_LAColor$anon$lazy$macro$381$1.prototype.inst$macro$371$lzycompute__p1__Lio_circe_generic_decoding_ReprDecoder = (function() {
+  if (((8 & this.bitmap$0$1) === 0)) {
+    this.inst$macro$371$1 = new $c_LAColor$anon$lazy$macro$381$1$$anon$51().init___LAColor$anon$lazy$macro$381$1(this);
+    this.bitmap$0$1 = (((8 | this.bitmap$0$1) << 24) >> 24)
+  };
+  return this.inst$macro$371$1
+});
+var $d_LAColor$anon$lazy$macro$381$1 = new $TypeData().initClass({
+  LAColor$anon$lazy$macro$381$1: 0
+}, false, "AColor$anon$lazy$macro$381$1", {
+  LAColor$anon$lazy$macro$381$1: 1,
   O: 1,
   s_Serializable: 1,
   Ljava_io_Serializable: 1
 });
-$c_LAColor$anon$lazy$macro$363$1.prototype.$classData = $d_LAColor$anon$lazy$macro$363$1;
+$c_LAColor$anon$lazy$macro$381$1.prototype.$classData = $d_LAColor$anon$lazy$macro$381$1;
 /** @constructor */
-function $c_LASize$anon$lazy$macro$385$1() {
+function $c_LASize$anon$lazy$macro$403$1() {
   $c_O.call(this);
-  this.inst$macro$368$1 = null;
-  this.inst$macro$365$1 = null;
+  this.inst$macro$386$1 = null;
+  this.inst$macro$383$1 = null;
   this.bitmap$0$1 = 0
 }
-$c_LASize$anon$lazy$macro$385$1.prototype = new $h_O();
-$c_LASize$anon$lazy$macro$385$1.prototype.constructor = $c_LASize$anon$lazy$macro$385$1;
+$c_LASize$anon$lazy$macro$403$1.prototype = new $h_O();
+$c_LASize$anon$lazy$macro$403$1.prototype.constructor = $c_LASize$anon$lazy$macro$403$1;
 /** @constructor */
-function $h_LASize$anon$lazy$macro$385$1() {
+function $h_LASize$anon$lazy$macro$403$1() {
   /*<skip>*/
 }
-$h_LASize$anon$lazy$macro$385$1.prototype = $c_LASize$anon$lazy$macro$385$1.prototype;
-$c_LASize$anon$lazy$macro$385$1.prototype.init___ = (function() {
+$h_LASize$anon$lazy$macro$403$1.prototype = $c_LASize$anon$lazy$macro$403$1.prototype;
+$c_LASize$anon$lazy$macro$403$1.prototype.init___ = (function() {
   return this
 });
-$c_LASize$anon$lazy$macro$385$1.prototype.inst$macro$365__Lio_circe_generic_encoding_DerivedObjectEncoder = (function() {
-  return (((2 & this.bitmap$0$1) === 0) ? this.inst$macro$365$lzycompute__p1__Lio_circe_generic_encoding_DerivedObjectEncoder() : this.inst$macro$365$1)
+$c_LASize$anon$lazy$macro$403$1.prototype.inst$macro$383__Lio_circe_generic_encoding_DerivedObjectEncoder = (function() {
+  return (((2 & this.bitmap$0$1) === 0) ? this.inst$macro$383$lzycompute__p1__Lio_circe_generic_encoding_DerivedObjectEncoder() : this.inst$macro$383$1)
 });
-$c_LASize$anon$lazy$macro$385$1.prototype.inst$macro$368__Lio_circe_generic_encoding_ReprObjectEncoder = (function() {
-  return (((1 & this.bitmap$0$1) === 0) ? this.inst$macro$368$lzycompute__p1__Lio_circe_generic_encoding_ReprObjectEncoder() : this.inst$macro$368$1)
-});
-$c_LASize$anon$lazy$macro$385$1.prototype.inst$macro$365$lzycompute__p1__Lio_circe_generic_encoding_DerivedObjectEncoder = (function() {
+$c_LASize$anon$lazy$macro$403$1.prototype.inst$macro$383$lzycompute__p1__Lio_circe_generic_encoding_DerivedObjectEncoder = (function() {
   if (((2 & this.bitmap$0$1) === 0)) {
-    new $c_LASize$anon$lazy$macro$385$1$$anon$51().init___LASize$anon$lazy$macro$385$1(this);
-    var gen = new $c_LASize$anon$lazy$macro$385$1$anon$macro$366$1().init___LASize$anon$lazy$macro$385$1(this);
+    new $c_LASize$anon$lazy$macro$403$1$$anon$53().init___LASize$anon$lazy$macro$403$1(this);
+    var gen = new $c_LASize$anon$lazy$macro$403$1$anon$macro$384$1().init___LASize$anon$lazy$macro$403$1(this);
     $m_Lshapeless_ops_coproduct$ZipWithKeys$();
     $m_Lshapeless_ops_coproduct$ZipWithKeys$();
     $m_Lshapeless_ops_coproduct$ZipWithKeys$();
@@ -12770,328 +12644,235 @@ $c_LASize$anon$lazy$macro$385$1.prototype.inst$macro$365$lzycompute__p1__Lio_cir
     var gen$1 = new $c_Lshapeless_LabelledGeneric$$anon$2().init___Lshapeless_Generic__Lshapeless_ops_coproduct$ZipWithKeys__s_Predef$$less$colon$less(gen, zip, ev);
     var t = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function($this) {
       return (function() {
-        return $this.inst$macro$368__Lio_circe_generic_encoding_ReprObjectEncoder()
+        return $this.inst$macro$386__Lio_circe_generic_encoding_ReprObjectEncoder()
       })
     })(this));
     var encode = new $c_Lshapeless_Lazy$$anon$1().init___F0(t);
-    this.inst$macro$365$1 = new $c_Lio_circe_generic_encoding_DerivedObjectEncoder$$anon$1().init___Lshapeless_LabelledGeneric__Lshapeless_Lazy(gen$1, encode);
+    this.inst$macro$383$1 = new $c_Lio_circe_generic_encoding_DerivedObjectEncoder$$anon$1().init___Lshapeless_LabelledGeneric__Lshapeless_Lazy(gen$1, encode);
     this.bitmap$0$1 = (((2 | this.bitmap$0$1) << 24) >> 24)
   };
-  return this.inst$macro$365$1
+  return this.inst$macro$383$1
 });
-$c_LASize$anon$lazy$macro$385$1.prototype.inst$macro$368$lzycompute__p1__Lio_circe_generic_encoding_ReprObjectEncoder = (function() {
+$c_LASize$anon$lazy$macro$403$1.prototype.inst$macro$386__Lio_circe_generic_encoding_ReprObjectEncoder = (function() {
+  return (((1 & this.bitmap$0$1) === 0) ? this.inst$macro$386$lzycompute__p1__Lio_circe_generic_encoding_ReprObjectEncoder() : this.inst$macro$386$1)
+});
+$c_LASize$anon$lazy$macro$403$1.prototype.inst$macro$386$lzycompute__p1__Lio_circe_generic_encoding_ReprObjectEncoder = (function() {
   if (((1 & this.bitmap$0$1) === 0)) {
-    this.inst$macro$368$1 = new $c_LASize$anon$lazy$macro$385$1$$anon$12().init___LASize$anon$lazy$macro$385$1(this);
+    this.inst$macro$386$1 = new $c_LASize$anon$lazy$macro$403$1$$anon$12().init___LASize$anon$lazy$macro$403$1(this);
     this.bitmap$0$1 = (((1 | this.bitmap$0$1) << 24) >> 24)
   };
-  return this.inst$macro$368$1
+  return this.inst$macro$386$1
 });
-var $d_LASize$anon$lazy$macro$385$1 = new $TypeData().initClass({
-  LASize$anon$lazy$macro$385$1: 0
-}, false, "ASize$anon$lazy$macro$385$1", {
-  LASize$anon$lazy$macro$385$1: 1,
+var $d_LASize$anon$lazy$macro$403$1 = new $TypeData().initClass({
+  LASize$anon$lazy$macro$403$1: 0
+}, false, "ASize$anon$lazy$macro$403$1", {
+  LASize$anon$lazy$macro$403$1: 1,
   O: 1,
   s_Serializable: 1,
   Ljava_io_Serializable: 1
 });
-$c_LASize$anon$lazy$macro$385$1.prototype.$classData = $d_LASize$anon$lazy$macro$385$1;
+$c_LASize$anon$lazy$macro$403$1.prototype.$classData = $d_LASize$anon$lazy$macro$403$1;
 /** @constructor */
-function $c_LASize$anon$lazy$macro$408$1() {
+function $c_LASize$anon$lazy$macro$426$1() {
   $c_O.call(this);
-  this.inst$macro$395$1 = null;
-  this.inst$macro$392$1 = null;
-  this.inst$macro$397$1 = null;
-  this.inst$macro$401$1 = null;
+  this.inst$macro$413$1 = null;
+  this.inst$macro$410$1 = null;
+  this.inst$macro$415$1 = null;
+  this.inst$macro$419$1 = null;
+  this.inst$macro$423$1 = null;
+  this.inst$macro$408$1 = null;
   this.inst$macro$405$1 = null;
-  this.inst$macro$390$1 = null;
-  this.inst$macro$387$1 = null;
   this.bitmap$0$1 = 0
 }
-$c_LASize$anon$lazy$macro$408$1.prototype = new $h_O();
-$c_LASize$anon$lazy$macro$408$1.prototype.constructor = $c_LASize$anon$lazy$macro$408$1;
+$c_LASize$anon$lazy$macro$426$1.prototype = new $h_O();
+$c_LASize$anon$lazy$macro$426$1.prototype.constructor = $c_LASize$anon$lazy$macro$426$1;
 /** @constructor */
-function $h_LASize$anon$lazy$macro$408$1() {
+function $h_LASize$anon$lazy$macro$426$1() {
   /*<skip>*/
 }
-$h_LASize$anon$lazy$macro$408$1.prototype = $c_LASize$anon$lazy$macro$408$1.prototype;
-$c_LASize$anon$lazy$macro$408$1.prototype.init___ = (function() {
+$h_LASize$anon$lazy$macro$426$1.prototype = $c_LASize$anon$lazy$macro$426$1.prototype;
+$c_LASize$anon$lazy$macro$426$1.prototype.init___ = (function() {
   return this
 });
-$c_LASize$anon$lazy$macro$408$1.prototype.inst$macro$401__Lio_circe_generic_decoding_DerivedDecoder = (function() {
-  return (((8 & this.bitmap$0$1) === 0) ? this.inst$macro$401$lzycompute__p1__Lio_circe_generic_decoding_DerivedDecoder() : this.inst$macro$401$1)
-});
-$c_LASize$anon$lazy$macro$408$1.prototype.inst$macro$390__Lio_circe_generic_decoding_ReprDecoder = (function() {
-  return (((32 & this.bitmap$0$1) === 0) ? this.inst$macro$390$lzycompute__p1__Lio_circe_generic_decoding_ReprDecoder() : this.inst$macro$390$1)
-});
-$c_LASize$anon$lazy$macro$408$1.prototype.inst$macro$392__Lio_circe_generic_decoding_DerivedDecoder = (function() {
-  return (((2 & this.bitmap$0$1) === 0) ? this.inst$macro$392$lzycompute__p1__Lio_circe_generic_decoding_DerivedDecoder() : this.inst$macro$392$1)
-});
-$c_LASize$anon$lazy$macro$408$1.prototype.inst$macro$405$lzycompute__p1__Lio_circe_generic_decoding_DerivedDecoder = (function() {
+$c_LASize$anon$lazy$macro$426$1.prototype.inst$macro$423$lzycompute__p1__Lio_circe_generic_decoding_DerivedDecoder = (function() {
   if (((16 & this.bitmap$0$1) === 0)) {
-    new $c_LASize$anon$lazy$macro$408$1$$anon$55().init___LASize$anon$lazy$macro$408$1(this);
-    var gen = new $c_LASize$anon$lazy$macro$408$1$anon$macro$406$1().init___LASize$anon$lazy$macro$408$1(this);
+    new $c_LASize$anon$lazy$macro$426$1$$anon$57().init___LASize$anon$lazy$macro$426$1(this);
+    var gen = new $c_LASize$anon$lazy$macro$426$1$anon$macro$424$1().init___LASize$anon$lazy$macro$426$1(this);
     var zip = $m_Lshapeless_ops_hlist$ZipWithKeys$().hnilZipWithKeys$1;
     var ev = $m_s_Predef$().singleton$und$less$colon$less$2;
     var gen$1 = new $c_Lshapeless_LabelledGeneric$$anon$1().init___Lshapeless_Generic__Lshapeless_ops_hlist$ZipWithKeys__s_Predef$$less$colon$less(gen, zip, ev);
     var t = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function($this) {
       return (function() {
-        return $this.inst$macro$395__Lio_circe_generic_decoding_ReprDecoder()
+        return $this.inst$macro$413__Lio_circe_generic_decoding_ReprDecoder()
+      })
+    })(this));
+    var decode = new $c_Lshapeless_Lazy$$anon$1().init___F0(t);
+    this.inst$macro$423$1 = new $c_Lio_circe_generic_decoding_DerivedDecoder$$anon$1().init___Lshapeless_LabelledGeneric__Lshapeless_Lazy(gen$1, decode);
+    this.bitmap$0$1 = (((16 | this.bitmap$0$1) << 24) >> 24)
+  };
+  return this.inst$macro$423$1
+});
+$c_LASize$anon$lazy$macro$426$1.prototype.inst$macro$413__Lio_circe_generic_decoding_ReprDecoder = (function() {
+  return (((1 & this.bitmap$0$1) === 0) ? this.inst$macro$413$lzycompute__p1__Lio_circe_generic_decoding_ReprDecoder() : this.inst$macro$413$1)
+});
+$c_LASize$anon$lazy$macro$426$1.prototype.inst$macro$410__Lio_circe_generic_decoding_DerivedDecoder = (function() {
+  return (((2 & this.bitmap$0$1) === 0) ? this.inst$macro$410$lzycompute__p1__Lio_circe_generic_decoding_DerivedDecoder() : this.inst$macro$410$1)
+});
+$c_LASize$anon$lazy$macro$426$1.prototype.inst$macro$405$lzycompute__p1__Lio_circe_generic_decoding_DerivedDecoder = (function() {
+  if (((64 & this.bitmap$0$1) === 0)) {
+    new $c_LASize$anon$lazy$macro$426$1$$anon$59().init___LASize$anon$lazy$macro$426$1(this);
+    var gen = new $c_LASize$anon$lazy$macro$426$1$anon$macro$406$1().init___LASize$anon$lazy$macro$426$1(this);
+    $m_Lshapeless_ops_coproduct$ZipWithKeys$();
+    $m_Lshapeless_ops_coproduct$ZipWithKeys$();
+    $m_Lshapeless_ops_coproduct$ZipWithKeys$();
+    $m_Lshapeless_ops_coproduct$ZipWithKeys$();
+    var zipWithKeys = $m_Lshapeless_ops_coproduct$ZipWithKeys$().cnilZipWithKeys$1;
+    $m_Lshapeless_Witness$();
+    var this$1 = $m_s_Symbol$();
+    var value0 = $as_s_Symbol($c_s_JSUniquenessCache.prototype.apply__T__O.call(this$1, "Tiny"));
+    new $c_Lshapeless_Witness$$anon$1().init___O(value0);
+    var zipWithKeys$1 = new $c_Lshapeless_ops_coproduct$ZipWithKeys$$anon$22().init___Lshapeless_ops_coproduct$ZipWithKeys(zipWithKeys);
+    $m_Lshapeless_Witness$();
+    var this$4 = $m_s_Symbol$();
+    var value0$1 = $as_s_Symbol($c_s_JSUniquenessCache.prototype.apply__T__O.call(this$4, "Small"));
+    new $c_Lshapeless_Witness$$anon$1().init___O(value0$1);
+    var zipWithKeys$2 = new $c_Lshapeless_ops_coproduct$ZipWithKeys$$anon$22().init___Lshapeless_ops_coproduct$ZipWithKeys(zipWithKeys$1);
+    $m_Lshapeless_Witness$();
+    var this$7 = $m_s_Symbol$();
+    var value0$2 = $as_s_Symbol($c_s_JSUniquenessCache.prototype.apply__T__O.call(this$7, "Medium"));
+    new $c_Lshapeless_Witness$$anon$1().init___O(value0$2);
+    var zipWithKeys$3 = new $c_Lshapeless_ops_coproduct$ZipWithKeys$$anon$22().init___Lshapeless_ops_coproduct$ZipWithKeys(zipWithKeys$2);
+    $m_Lshapeless_Witness$();
+    var this$10 = $m_s_Symbol$();
+    var value0$3 = $as_s_Symbol($c_s_JSUniquenessCache.prototype.apply__T__O.call(this$10, "Big"));
+    new $c_Lshapeless_Witness$$anon$1().init___O(value0$3);
+    var zip = new $c_Lshapeless_ops_coproduct$ZipWithKeys$$anon$22().init___Lshapeless_ops_coproduct$ZipWithKeys(zipWithKeys$3);
+    var ev = $m_s_Predef$().singleton$und$less$colon$less$2;
+    var gen$1 = new $c_Lshapeless_LabelledGeneric$$anon$2().init___Lshapeless_Generic__Lshapeless_ops_coproduct$ZipWithKeys__s_Predef$$less$colon$less(gen, zip, ev);
+    var t = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function($this) {
+      return (function() {
+        return $this.inst$macro$408__Lio_circe_generic_decoding_ReprDecoder()
       })
     })(this));
     var decode = new $c_Lshapeless_Lazy$$anon$1().init___F0(t);
     this.inst$macro$405$1 = new $c_Lio_circe_generic_decoding_DerivedDecoder$$anon$1().init___Lshapeless_LabelledGeneric__Lshapeless_Lazy(gen$1, decode);
-    this.bitmap$0$1 = (((16 | this.bitmap$0$1) << 24) >> 24)
+    this.bitmap$0$1 = (((64 | this.bitmap$0$1) << 24) >> 24)
   };
   return this.inst$macro$405$1
 });
-$c_LASize$anon$lazy$macro$408$1.prototype.inst$macro$390$lzycompute__p1__Lio_circe_generic_decoding_ReprDecoder = (function() {
-  if (((32 & this.bitmap$0$1) === 0)) {
-    this.inst$macro$390$1 = new $c_LASize$anon$lazy$macro$408$1$$anon$56().init___LASize$anon$lazy$macro$408$1(this);
-    this.bitmap$0$1 = (((32 | this.bitmap$0$1) << 24) >> 24)
-  };
-  return this.inst$macro$390$1
+$c_LASize$anon$lazy$macro$426$1.prototype.inst$macro$419__Lio_circe_generic_decoding_DerivedDecoder = (function() {
+  return (((8 & this.bitmap$0$1) === 0) ? this.inst$macro$419$lzycompute__p1__Lio_circe_generic_decoding_DerivedDecoder() : this.inst$macro$419$1)
 });
-$c_LASize$anon$lazy$macro$408$1.prototype.inst$macro$397__Lio_circe_generic_decoding_DerivedDecoder = (function() {
-  return (((4 & this.bitmap$0$1) === 0) ? this.inst$macro$397$lzycompute__p1__Lio_circe_generic_decoding_DerivedDecoder() : this.inst$macro$397$1)
-});
-$c_LASize$anon$lazy$macro$408$1.prototype.inst$macro$401$lzycompute__p1__Lio_circe_generic_decoding_DerivedDecoder = (function() {
-  if (((8 & this.bitmap$0$1) === 0)) {
-    new $c_LASize$anon$lazy$macro$408$1$$anon$54().init___LASize$anon$lazy$macro$408$1(this);
-    var gen = new $c_LASize$anon$lazy$macro$408$1$anon$macro$402$1().init___LASize$anon$lazy$macro$408$1(this);
-    var zip = $m_Lshapeless_ops_hlist$ZipWithKeys$().hnilZipWithKeys$1;
-    var ev = $m_s_Predef$().singleton$und$less$colon$less$2;
-    var gen$1 = new $c_Lshapeless_LabelledGeneric$$anon$1().init___Lshapeless_Generic__Lshapeless_ops_hlist$ZipWithKeys__s_Predef$$less$colon$less(gen, zip, ev);
-    var t = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function($this) {
-      return (function() {
-        return $this.inst$macro$395__Lio_circe_generic_decoding_ReprDecoder()
-      })
-    })(this));
-    var decode = new $c_Lshapeless_Lazy$$anon$1().init___F0(t);
-    this.inst$macro$401$1 = new $c_Lio_circe_generic_decoding_DerivedDecoder$$anon$1().init___Lshapeless_LabelledGeneric__Lshapeless_Lazy(gen$1, decode);
-    this.bitmap$0$1 = (((8 | this.bitmap$0$1) << 24) >> 24)
-  };
-  return this.inst$macro$401$1
-});
-$c_LASize$anon$lazy$macro$408$1.prototype.inst$macro$392$lzycompute__p1__Lio_circe_generic_decoding_DerivedDecoder = (function() {
-  if (((2 & this.bitmap$0$1) === 0)) {
-    new $c_LASize$anon$lazy$macro$408$1$$anon$52().init___LASize$anon$lazy$macro$408$1(this);
-    var gen = new $c_LASize$anon$lazy$macro$408$1$anon$macro$394$1().init___LASize$anon$lazy$macro$408$1(this);
-    var zip = $m_Lshapeless_ops_hlist$ZipWithKeys$().hnilZipWithKeys$1;
-    var ev = $m_s_Predef$().singleton$und$less$colon$less$2;
-    var gen$1 = new $c_Lshapeless_LabelledGeneric$$anon$1().init___Lshapeless_Generic__Lshapeless_ops_hlist$ZipWithKeys__s_Predef$$less$colon$less(gen, zip, ev);
-    var t = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function($this) {
-      return (function() {
-        return $this.inst$macro$395__Lio_circe_generic_decoding_ReprDecoder()
-      })
-    })(this));
-    var decode = new $c_Lshapeless_Lazy$$anon$1().init___F0(t);
-    this.inst$macro$392$1 = new $c_Lio_circe_generic_decoding_DerivedDecoder$$anon$1().init___Lshapeless_LabelledGeneric__Lshapeless_Lazy(gen$1, decode);
-    this.bitmap$0$1 = (((2 | this.bitmap$0$1) << 24) >> 24)
-  };
-  return this.inst$macro$392$1
-});
-$c_LASize$anon$lazy$macro$408$1.prototype.inst$macro$395__Lio_circe_generic_decoding_ReprDecoder = (function() {
-  return (((1 & this.bitmap$0$1) === 0) ? this.inst$macro$395$lzycompute__p1__Lio_circe_generic_decoding_ReprDecoder() : this.inst$macro$395$1)
-});
-$c_LASize$anon$lazy$macro$408$1.prototype.inst$macro$387__Lio_circe_generic_decoding_DerivedDecoder = (function() {
-  return (((64 & this.bitmap$0$1) === 0) ? this.inst$macro$387$lzycompute__p1__Lio_circe_generic_decoding_DerivedDecoder() : this.inst$macro$387$1)
-});
-$c_LASize$anon$lazy$macro$408$1.prototype.inst$macro$405__Lio_circe_generic_decoding_DerivedDecoder = (function() {
-  return (((16 & this.bitmap$0$1) === 0) ? this.inst$macro$405$lzycompute__p1__Lio_circe_generic_decoding_DerivedDecoder() : this.inst$macro$405$1)
-});
-$c_LASize$anon$lazy$macro$408$1.prototype.inst$macro$397$lzycompute__p1__Lio_circe_generic_decoding_DerivedDecoder = (function() {
+$c_LASize$anon$lazy$macro$426$1.prototype.inst$macro$415$lzycompute__p1__Lio_circe_generic_decoding_DerivedDecoder = (function() {
   if (((4 & this.bitmap$0$1) === 0)) {
-    new $c_LASize$anon$lazy$macro$408$1$$anon$53().init___LASize$anon$lazy$macro$408$1(this);
-    var gen = new $c_LASize$anon$lazy$macro$408$1$anon$macro$399$1().init___LASize$anon$lazy$macro$408$1(this);
+    new $c_LASize$anon$lazy$macro$426$1$$anon$55().init___LASize$anon$lazy$macro$426$1(this);
+    var gen = new $c_LASize$anon$lazy$macro$426$1$anon$macro$417$1().init___LASize$anon$lazy$macro$426$1(this);
     var zip = $m_Lshapeless_ops_hlist$ZipWithKeys$().hnilZipWithKeys$1;
     var ev = $m_s_Predef$().singleton$und$less$colon$less$2;
     var gen$1 = new $c_Lshapeless_LabelledGeneric$$anon$1().init___Lshapeless_Generic__Lshapeless_ops_hlist$ZipWithKeys__s_Predef$$less$colon$less(gen, zip, ev);
     var t = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function($this) {
       return (function() {
-        return $this.inst$macro$395__Lio_circe_generic_decoding_ReprDecoder()
+        return $this.inst$macro$413__Lio_circe_generic_decoding_ReprDecoder()
       })
     })(this));
     var decode = new $c_Lshapeless_Lazy$$anon$1().init___F0(t);
-    this.inst$macro$397$1 = new $c_Lio_circe_generic_decoding_DerivedDecoder$$anon$1().init___Lshapeless_LabelledGeneric__Lshapeless_Lazy(gen$1, decode);
+    this.inst$macro$415$1 = new $c_Lio_circe_generic_decoding_DerivedDecoder$$anon$1().init___Lshapeless_LabelledGeneric__Lshapeless_Lazy(gen$1, decode);
     this.bitmap$0$1 = (((4 | this.bitmap$0$1) << 24) >> 24)
   };
-  return this.inst$macro$397$1
+  return this.inst$macro$415$1
 });
-$c_LASize$anon$lazy$macro$408$1.prototype.inst$macro$395$lzycompute__p1__Lio_circe_generic_decoding_ReprDecoder = (function() {
+$c_LASize$anon$lazy$macro$426$1.prototype.inst$macro$415__Lio_circe_generic_decoding_DerivedDecoder = (function() {
+  return (((4 & this.bitmap$0$1) === 0) ? this.inst$macro$415$lzycompute__p1__Lio_circe_generic_decoding_DerivedDecoder() : this.inst$macro$415$1)
+});
+$c_LASize$anon$lazy$macro$426$1.prototype.inst$macro$413$lzycompute__p1__Lio_circe_generic_decoding_ReprDecoder = (function() {
   if (((1 & this.bitmap$0$1) === 0)) {
-    this.inst$macro$395$1 = $m_Lio_circe_generic_decoding_ReprDecoder$().hnilReprDecoder$1;
-    this.bitmap$0$1 = (((1 | this.bitmap$0$1) << 24) >> 24)
-  };
-  return this.inst$macro$395$1
-});
-$c_LASize$anon$lazy$macro$408$1.prototype.inst$macro$387$lzycompute__p1__Lio_circe_generic_decoding_DerivedDecoder = (function() {
-  if (((64 & this.bitmap$0$1) === 0)) {
-    new $c_LASize$anon$lazy$macro$408$1$$anon$57().init___LASize$anon$lazy$macro$408$1(this);
-    var gen = new $c_LASize$anon$lazy$macro$408$1$anon$macro$388$1().init___LASize$anon$lazy$macro$408$1(this);
-    $m_Lshapeless_ops_coproduct$ZipWithKeys$();
-    $m_Lshapeless_ops_coproduct$ZipWithKeys$();
-    $m_Lshapeless_ops_coproduct$ZipWithKeys$();
-    $m_Lshapeless_ops_coproduct$ZipWithKeys$();
-    var zipWithKeys = $m_Lshapeless_ops_coproduct$ZipWithKeys$().cnilZipWithKeys$1;
-    $m_Lshapeless_Witness$();
-    var this$1 = $m_s_Symbol$();
-    var value0 = $as_s_Symbol($c_s_JSUniquenessCache.prototype.apply__T__O.call(this$1, "Tiny"));
-    new $c_Lshapeless_Witness$$anon$1().init___O(value0);
-    var zipWithKeys$1 = new $c_Lshapeless_ops_coproduct$ZipWithKeys$$anon$22().init___Lshapeless_ops_coproduct$ZipWithKeys(zipWithKeys);
-    $m_Lshapeless_Witness$();
-    var this$4 = $m_s_Symbol$();
-    var value0$1 = $as_s_Symbol($c_s_JSUniquenessCache.prototype.apply__T__O.call(this$4, "Small"));
-    new $c_Lshapeless_Witness$$anon$1().init___O(value0$1);
-    var zipWithKeys$2 = new $c_Lshapeless_ops_coproduct$ZipWithKeys$$anon$22().init___Lshapeless_ops_coproduct$ZipWithKeys(zipWithKeys$1);
-    $m_Lshapeless_Witness$();
-    var this$7 = $m_s_Symbol$();
-    var value0$2 = $as_s_Symbol($c_s_JSUniquenessCache.prototype.apply__T__O.call(this$7, "Medium"));
-    new $c_Lshapeless_Witness$$anon$1().init___O(value0$2);
-    var zipWithKeys$3 = new $c_Lshapeless_ops_coproduct$ZipWithKeys$$anon$22().init___Lshapeless_ops_coproduct$ZipWithKeys(zipWithKeys$2);
-    $m_Lshapeless_Witness$();
-    var this$10 = $m_s_Symbol$();
-    var value0$3 = $as_s_Symbol($c_s_JSUniquenessCache.prototype.apply__T__O.call(this$10, "Big"));
-    new $c_Lshapeless_Witness$$anon$1().init___O(value0$3);
-    var zip = new $c_Lshapeless_ops_coproduct$ZipWithKeys$$anon$22().init___Lshapeless_ops_coproduct$ZipWithKeys(zipWithKeys$3);
-    var ev = $m_s_Predef$().singleton$und$less$colon$less$2;
-    var gen$1 = new $c_Lshapeless_LabelledGeneric$$anon$2().init___Lshapeless_Generic__Lshapeless_ops_coproduct$ZipWithKeys__s_Predef$$less$colon$less(gen, zip, ev);
-    var t = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function($this) {
-      return (function() {
-        return $this.inst$macro$390__Lio_circe_generic_decoding_ReprDecoder()
-      })
-    })(this));
-    var decode = new $c_Lshapeless_Lazy$$anon$1().init___F0(t);
-    this.inst$macro$387$1 = new $c_Lio_circe_generic_decoding_DerivedDecoder$$anon$1().init___Lshapeless_LabelledGeneric__Lshapeless_Lazy(gen$1, decode);
-    this.bitmap$0$1 = (((64 | this.bitmap$0$1) << 24) >> 24)
-  };
-  return this.inst$macro$387$1
-});
-var $d_LASize$anon$lazy$macro$408$1 = new $TypeData().initClass({
-  LASize$anon$lazy$macro$408$1: 0
-}, false, "ASize$anon$lazy$macro$408$1", {
-  LASize$anon$lazy$macro$408$1: 1,
-  O: 1,
-  s_Serializable: 1,
-  Ljava_io_Serializable: 1
-});
-$c_LASize$anon$lazy$macro$408$1.prototype.$classData = $d_LASize$anon$lazy$macro$408$1;
-/** @constructor */
-function $c_LCommand$anon$lazy$macro$434$1() {
-  $c_O.call(this);
-  this.inst$macro$413$1 = null;
-  this.inst$macro$410$1 = null;
-  this.bitmap$0$1 = 0
-}
-$c_LCommand$anon$lazy$macro$434$1.prototype = new $h_O();
-$c_LCommand$anon$lazy$macro$434$1.prototype.constructor = $c_LCommand$anon$lazy$macro$434$1;
-/** @constructor */
-function $h_LCommand$anon$lazy$macro$434$1() {
-  /*<skip>*/
-}
-$h_LCommand$anon$lazy$macro$434$1.prototype = $c_LCommand$anon$lazy$macro$434$1.prototype;
-$c_LCommand$anon$lazy$macro$434$1.prototype.init___ = (function() {
-  return this
-});
-$c_LCommand$anon$lazy$macro$434$1.prototype.inst$macro$413$lzycompute__p1__Lio_circe_generic_encoding_ReprObjectEncoder = (function() {
-  if (((1 & this.bitmap$0$1) === 0)) {
-    this.inst$macro$413$1 = new $c_LCommand$anon$lazy$macro$434$1$$anon$13().init___LCommand$anon$lazy$macro$434$1(this);
+    this.inst$macro$413$1 = $m_Lio_circe_generic_decoding_ReprDecoder$().hnilReprDecoder$1;
     this.bitmap$0$1 = (((1 | this.bitmap$0$1) << 24) >> 24)
   };
   return this.inst$macro$413$1
 });
-$c_LCommand$anon$lazy$macro$434$1.prototype.inst$macro$413__Lio_circe_generic_encoding_ReprObjectEncoder = (function() {
-  return (((1 & this.bitmap$0$1) === 0) ? this.inst$macro$413$lzycompute__p1__Lio_circe_generic_encoding_ReprObjectEncoder() : this.inst$macro$413$1)
+$c_LASize$anon$lazy$macro$426$1.prototype.inst$macro$423__Lio_circe_generic_decoding_DerivedDecoder = (function() {
+  return (((16 & this.bitmap$0$1) === 0) ? this.inst$macro$423$lzycompute__p1__Lio_circe_generic_decoding_DerivedDecoder() : this.inst$macro$423$1)
 });
-$c_LCommand$anon$lazy$macro$434$1.prototype.inst$macro$410$lzycompute__p1__Lio_circe_generic_encoding_DerivedObjectEncoder = (function() {
+$c_LASize$anon$lazy$macro$426$1.prototype.inst$macro$405__Lio_circe_generic_decoding_DerivedDecoder = (function() {
+  return (((64 & this.bitmap$0$1) === 0) ? this.inst$macro$405$lzycompute__p1__Lio_circe_generic_decoding_DerivedDecoder() : this.inst$macro$405$1)
+});
+$c_LASize$anon$lazy$macro$426$1.prototype.inst$macro$408__Lio_circe_generic_decoding_ReprDecoder = (function() {
+  return (((32 & this.bitmap$0$1) === 0) ? this.inst$macro$408$lzycompute__p1__Lio_circe_generic_decoding_ReprDecoder() : this.inst$macro$408$1)
+});
+$c_LASize$anon$lazy$macro$426$1.prototype.inst$macro$410$lzycompute__p1__Lio_circe_generic_decoding_DerivedDecoder = (function() {
   if (((2 & this.bitmap$0$1) === 0)) {
-    new $c_LCommand$anon$lazy$macro$434$1$$anon$58().init___LCommand$anon$lazy$macro$434$1(this);
-    var gen = new $c_LCommand$anon$lazy$macro$434$1$anon$macro$411$1().init___LCommand$anon$lazy$macro$434$1(this);
-    $m_Lshapeless_ops_coproduct$ZipWithKeys$();
-    $m_Lshapeless_ops_coproduct$ZipWithKeys$();
-    $m_Lshapeless_ops_coproduct$ZipWithKeys$();
-    $m_Lshapeless_ops_coproduct$ZipWithKeys$();
-    $m_Lshapeless_ops_coproduct$ZipWithKeys$();
-    var zipWithKeys = $m_Lshapeless_ops_coproduct$ZipWithKeys$().cnilZipWithKeys$1;
-    $m_Lshapeless_Witness$();
-    var this$1 = $m_s_Symbol$();
-    var value0 = $as_s_Symbol($c_s_JSUniquenessCache.prototype.apply__T__O.call(this$1, "S"));
-    new $c_Lshapeless_Witness$$anon$1().init___O(value0);
-    var zipWithKeys$1 = new $c_Lshapeless_ops_coproduct$ZipWithKeys$$anon$22().init___Lshapeless_ops_coproduct$ZipWithKeys(zipWithKeys);
-    $m_Lshapeless_Witness$();
-    var this$4 = $m_s_Symbol$();
-    var value0$1 = $as_s_Symbol($c_s_JSUniquenessCache.prototype.apply__T__O.call(this$4, "R"));
-    new $c_Lshapeless_Witness$$anon$1().init___O(value0$1);
-    var zipWithKeys$2 = new $c_Lshapeless_ops_coproduct$ZipWithKeys$$anon$22().init___Lshapeless_ops_coproduct$ZipWithKeys(zipWithKeys$1);
-    $m_Lshapeless_Witness$();
-    var this$7 = $m_s_Symbol$();
-    var value0$2 = $as_s_Symbol($c_s_JSUniquenessCache.prototype.apply__T__O.call(this$7, "L"));
-    new $c_Lshapeless_Witness$$anon$1().init___O(value0$2);
-    var zipWithKeys$3 = new $c_Lshapeless_ops_coproduct$ZipWithKeys$$anon$22().init___Lshapeless_ops_coproduct$ZipWithKeys(zipWithKeys$2);
-    $m_Lshapeless_Witness$();
-    var this$10 = $m_s_Symbol$();
-    var value0$3 = $as_s_Symbol($c_s_JSUniquenessCache.prototype.apply__T__O.call(this$10, "F"));
-    new $c_Lshapeless_Witness$$anon$1().init___O(value0$3);
-    var zipWithKeys$4 = new $c_Lshapeless_ops_coproduct$ZipWithKeys$$anon$22().init___Lshapeless_ops_coproduct$ZipWithKeys(zipWithKeys$3);
-    $m_Lshapeless_Witness$();
-    var this$13 = $m_s_Symbol$();
-    var value0$4 = $as_s_Symbol($c_s_JSUniquenessCache.prototype.apply__T__O.call(this$13, "B"));
-    new $c_Lshapeless_Witness$$anon$1().init___O(value0$4);
-    var zip = new $c_Lshapeless_ops_coproduct$ZipWithKeys$$anon$22().init___Lshapeless_ops_coproduct$ZipWithKeys(zipWithKeys$4);
+    new $c_LASize$anon$lazy$macro$426$1$$anon$54().init___LASize$anon$lazy$macro$426$1(this);
+    var gen = new $c_LASize$anon$lazy$macro$426$1$anon$macro$412$1().init___LASize$anon$lazy$macro$426$1(this);
+    var zip = $m_Lshapeless_ops_hlist$ZipWithKeys$().hnilZipWithKeys$1;
     var ev = $m_s_Predef$().singleton$und$less$colon$less$2;
-    var gen$1 = new $c_Lshapeless_LabelledGeneric$$anon$2().init___Lshapeless_Generic__Lshapeless_ops_coproduct$ZipWithKeys__s_Predef$$less$colon$less(gen, zip, ev);
+    var gen$1 = new $c_Lshapeless_LabelledGeneric$$anon$1().init___Lshapeless_Generic__Lshapeless_ops_hlist$ZipWithKeys__s_Predef$$less$colon$less(gen, zip, ev);
     var t = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function($this) {
       return (function() {
-        return $this.inst$macro$413__Lio_circe_generic_encoding_ReprObjectEncoder()
+        return $this.inst$macro$413__Lio_circe_generic_decoding_ReprDecoder()
       })
     })(this));
-    var encode = new $c_Lshapeless_Lazy$$anon$1().init___F0(t);
-    this.inst$macro$410$1 = new $c_Lio_circe_generic_encoding_DerivedObjectEncoder$$anon$1().init___Lshapeless_LabelledGeneric__Lshapeless_Lazy(gen$1, encode);
+    var decode = new $c_Lshapeless_Lazy$$anon$1().init___F0(t);
+    this.inst$macro$410$1 = new $c_Lio_circe_generic_decoding_DerivedDecoder$$anon$1().init___Lshapeless_LabelledGeneric__Lshapeless_Lazy(gen$1, decode);
     this.bitmap$0$1 = (((2 | this.bitmap$0$1) << 24) >> 24)
   };
   return this.inst$macro$410$1
 });
-$c_LCommand$anon$lazy$macro$434$1.prototype.inst$macro$410__Lio_circe_generic_encoding_DerivedObjectEncoder = (function() {
-  return (((2 & this.bitmap$0$1) === 0) ? this.inst$macro$410$lzycompute__p1__Lio_circe_generic_encoding_DerivedObjectEncoder() : this.inst$macro$410$1)
+$c_LASize$anon$lazy$macro$426$1.prototype.inst$macro$419$lzycompute__p1__Lio_circe_generic_decoding_DerivedDecoder = (function() {
+  if (((8 & this.bitmap$0$1) === 0)) {
+    new $c_LASize$anon$lazy$macro$426$1$$anon$56().init___LASize$anon$lazy$macro$426$1(this);
+    var gen = new $c_LASize$anon$lazy$macro$426$1$anon$macro$420$1().init___LASize$anon$lazy$macro$426$1(this);
+    var zip = $m_Lshapeless_ops_hlist$ZipWithKeys$().hnilZipWithKeys$1;
+    var ev = $m_s_Predef$().singleton$und$less$colon$less$2;
+    var gen$1 = new $c_Lshapeless_LabelledGeneric$$anon$1().init___Lshapeless_Generic__Lshapeless_ops_hlist$ZipWithKeys__s_Predef$$less$colon$less(gen, zip, ev);
+    var t = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function($this) {
+      return (function() {
+        return $this.inst$macro$413__Lio_circe_generic_decoding_ReprDecoder()
+      })
+    })(this));
+    var decode = new $c_Lshapeless_Lazy$$anon$1().init___F0(t);
+    this.inst$macro$419$1 = new $c_Lio_circe_generic_decoding_DerivedDecoder$$anon$1().init___Lshapeless_LabelledGeneric__Lshapeless_Lazy(gen$1, decode);
+    this.bitmap$0$1 = (((8 | this.bitmap$0$1) << 24) >> 24)
+  };
+  return this.inst$macro$419$1
 });
-var $d_LCommand$anon$lazy$macro$434$1 = new $TypeData().initClass({
-  LCommand$anon$lazy$macro$434$1: 0
-}, false, "Command$anon$lazy$macro$434$1", {
-  LCommand$anon$lazy$macro$434$1: 1,
+$c_LASize$anon$lazy$macro$426$1.prototype.inst$macro$408$lzycompute__p1__Lio_circe_generic_decoding_ReprDecoder = (function() {
+  if (((32 & this.bitmap$0$1) === 0)) {
+    this.inst$macro$408$1 = new $c_LASize$anon$lazy$macro$426$1$$anon$58().init___LASize$anon$lazy$macro$426$1(this);
+    this.bitmap$0$1 = (((32 | this.bitmap$0$1) << 24) >> 24)
+  };
+  return this.inst$macro$408$1
+});
+var $d_LASize$anon$lazy$macro$426$1 = new $TypeData().initClass({
+  LASize$anon$lazy$macro$426$1: 0
+}, false, "ASize$anon$lazy$macro$426$1", {
+  LASize$anon$lazy$macro$426$1: 1,
   O: 1,
   s_Serializable: 1,
   Ljava_io_Serializable: 1
 });
-$c_LCommand$anon$lazy$macro$434$1.prototype.$classData = $d_LCommand$anon$lazy$macro$434$1;
+$c_LASize$anon$lazy$macro$426$1.prototype.$classData = $d_LASize$anon$lazy$macro$426$1;
 /** @constructor */
-function $c_LCommand$anon$lazy$macro$461$1() {
+function $c_LCommand$anon$lazy$macro$452$1() {
   $c_O.call(this);
-  this.inst$macro$444$1 = null;
-  this.inst$macro$441$1 = null;
-  this.inst$macro$446$1 = null;
-  this.inst$macro$450$1 = null;
-  this.inst$macro$454$1 = null;
-  this.inst$macro$458$1 = null;
-  this.inst$macro$439$1 = null;
-  this.inst$macro$436$1 = null;
+  this.inst$macro$431$1 = null;
+  this.inst$macro$428$1 = null;
   this.bitmap$0$1 = 0
 }
-$c_LCommand$anon$lazy$macro$461$1.prototype = new $h_O();
-$c_LCommand$anon$lazy$macro$461$1.prototype.constructor = $c_LCommand$anon$lazy$macro$461$1;
+$c_LCommand$anon$lazy$macro$452$1.prototype = new $h_O();
+$c_LCommand$anon$lazy$macro$452$1.prototype.constructor = $c_LCommand$anon$lazy$macro$452$1;
 /** @constructor */
-function $h_LCommand$anon$lazy$macro$461$1() {
+function $h_LCommand$anon$lazy$macro$452$1() {
   /*<skip>*/
 }
-$h_LCommand$anon$lazy$macro$461$1.prototype = $c_LCommand$anon$lazy$macro$461$1.prototype;
-$c_LCommand$anon$lazy$macro$461$1.prototype.inst$macro$439__Lio_circe_generic_decoding_ReprDecoder = (function() {
-  return (((64 & this.bitmap$0$1) === 0) ? this.inst$macro$439$lzycompute__p1__Lio_circe_generic_decoding_ReprDecoder() : this.inst$macro$439$1)
-});
-$c_LCommand$anon$lazy$macro$461$1.prototype.init___ = (function() {
+$h_LCommand$anon$lazy$macro$452$1.prototype = $c_LCommand$anon$lazy$macro$452$1.prototype;
+$c_LCommand$anon$lazy$macro$452$1.prototype.init___ = (function() {
   return this
 });
-$c_LCommand$anon$lazy$macro$461$1.prototype.inst$macro$436$lzycompute__p1__Lio_circe_generic_decoding_DerivedDecoder = (function() {
-  if (((128 & this.bitmap$0$1) === 0)) {
-    new $c_LCommand$anon$lazy$macro$461$1$$anon$65().init___LCommand$anon$lazy$macro$461$1(this);
-    var gen = new $c_LCommand$anon$lazy$macro$461$1$anon$macro$437$1().init___LCommand$anon$lazy$macro$461$1(this);
+$c_LCommand$anon$lazy$macro$452$1.prototype.inst$macro$428$lzycompute__p1__Lio_circe_generic_encoding_DerivedObjectEncoder = (function() {
+  if (((2 & this.bitmap$0$1) === 0)) {
+    new $c_LCommand$anon$lazy$macro$452$1$$anon$60().init___LCommand$anon$lazy$macro$452$1(this);
+    var gen = new $c_LCommand$anon$lazy$macro$452$1$anon$macro$429$1().init___LCommand$anon$lazy$macro$452$1(this);
     $m_Lshapeless_ops_coproduct$ZipWithKeys$();
     $m_Lshapeless_ops_coproduct$ZipWithKeys$();
     $m_Lshapeless_ops_coproduct$ZipWithKeys$();
@@ -13127,379 +12908,587 @@ $c_LCommand$anon$lazy$macro$461$1.prototype.inst$macro$436$lzycompute__p1__Lio_c
     var gen$1 = new $c_Lshapeless_LabelledGeneric$$anon$2().init___Lshapeless_Generic__Lshapeless_ops_coproduct$ZipWithKeys__s_Predef$$less$colon$less(gen, zip, ev);
     var t = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function($this) {
       return (function() {
-        return $this.inst$macro$439__Lio_circe_generic_decoding_ReprDecoder()
+        return $this.inst$macro$431__Lio_circe_generic_encoding_ReprObjectEncoder()
       })
     })(this));
-    var decode = new $c_Lshapeless_Lazy$$anon$1().init___F0(t);
-    this.inst$macro$436$1 = new $c_Lio_circe_generic_decoding_DerivedDecoder$$anon$1().init___Lshapeless_LabelledGeneric__Lshapeless_Lazy(gen$1, decode);
-    this.bitmap$0$1 = (((128 | this.bitmap$0$1) << 24) >> 24)
-  };
-  return this.inst$macro$436$1
-});
-$c_LCommand$anon$lazy$macro$461$1.prototype.inst$macro$450$lzycompute__p1__Lio_circe_generic_decoding_DerivedDecoder = (function() {
-  if (((8 & this.bitmap$0$1) === 0)) {
-    new $c_LCommand$anon$lazy$macro$461$1$$anon$61().init___LCommand$anon$lazy$macro$461$1(this);
-    var gen = new $c_LCommand$anon$lazy$macro$461$1$anon$macro$451$1().init___LCommand$anon$lazy$macro$461$1(this);
-    var zip = $m_Lshapeless_ops_hlist$ZipWithKeys$().hnilZipWithKeys$1;
-    var ev = $m_s_Predef$().singleton$und$less$colon$less$2;
-    var gen$1 = new $c_Lshapeless_LabelledGeneric$$anon$1().init___Lshapeless_Generic__Lshapeless_ops_hlist$ZipWithKeys__s_Predef$$less$colon$less(gen, zip, ev);
-    var t = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function($this) {
-      return (function() {
-        return $this.inst$macro$444__Lio_circe_generic_decoding_ReprDecoder()
-      })
-    })(this));
-    var decode = new $c_Lshapeless_Lazy$$anon$1().init___F0(t);
-    this.inst$macro$450$1 = new $c_Lio_circe_generic_decoding_DerivedDecoder$$anon$1().init___Lshapeless_LabelledGeneric__Lshapeless_Lazy(gen$1, decode);
-    this.bitmap$0$1 = (((8 | this.bitmap$0$1) << 24) >> 24)
-  };
-  return this.inst$macro$450$1
-});
-$c_LCommand$anon$lazy$macro$461$1.prototype.inst$macro$444__Lio_circe_generic_decoding_ReprDecoder = (function() {
-  return (((1 & this.bitmap$0$1) === 0) ? this.inst$macro$444$lzycompute__p1__Lio_circe_generic_decoding_ReprDecoder() : this.inst$macro$444$1)
-});
-$c_LCommand$anon$lazy$macro$461$1.prototype.inst$macro$446$lzycompute__p1__Lio_circe_generic_decoding_DerivedDecoder = (function() {
-  if (((4 & this.bitmap$0$1) === 0)) {
-    new $c_LCommand$anon$lazy$macro$461$1$$anon$60().init___LCommand$anon$lazy$macro$461$1(this);
-    var gen = new $c_LCommand$anon$lazy$macro$461$1$anon$macro$448$1().init___LCommand$anon$lazy$macro$461$1(this);
-    var zip = $m_Lshapeless_ops_hlist$ZipWithKeys$().hnilZipWithKeys$1;
-    var ev = $m_s_Predef$().singleton$und$less$colon$less$2;
-    var gen$1 = new $c_Lshapeless_LabelledGeneric$$anon$1().init___Lshapeless_Generic__Lshapeless_ops_hlist$ZipWithKeys__s_Predef$$less$colon$less(gen, zip, ev);
-    var t = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function($this) {
-      return (function() {
-        return $this.inst$macro$444__Lio_circe_generic_decoding_ReprDecoder()
-      })
-    })(this));
-    var decode = new $c_Lshapeless_Lazy$$anon$1().init___F0(t);
-    this.inst$macro$446$1 = new $c_Lio_circe_generic_decoding_DerivedDecoder$$anon$1().init___Lshapeless_LabelledGeneric__Lshapeless_Lazy(gen$1, decode);
-    this.bitmap$0$1 = (((4 | this.bitmap$0$1) << 24) >> 24)
-  };
-  return this.inst$macro$446$1
-});
-$c_LCommand$anon$lazy$macro$461$1.prototype.inst$macro$444$lzycompute__p1__Lio_circe_generic_decoding_ReprDecoder = (function() {
-  if (((1 & this.bitmap$0$1) === 0)) {
-    this.inst$macro$444$1 = $m_Lio_circe_generic_decoding_ReprDecoder$().hnilReprDecoder$1;
-    this.bitmap$0$1 = (((1 | this.bitmap$0$1) << 24) >> 24)
-  };
-  return this.inst$macro$444$1
-});
-$c_LCommand$anon$lazy$macro$461$1.prototype.inst$macro$454__Lio_circe_generic_decoding_DerivedDecoder = (function() {
-  return (((16 & this.bitmap$0$1) === 0) ? this.inst$macro$454$lzycompute__p1__Lio_circe_generic_decoding_DerivedDecoder() : this.inst$macro$454$1)
-});
-$c_LCommand$anon$lazy$macro$461$1.prototype.inst$macro$436__Lio_circe_generic_decoding_DerivedDecoder = (function() {
-  return (((128 & this.bitmap$0$1) === 0) ? this.inst$macro$436$lzycompute__p1__Lio_circe_generic_decoding_DerivedDecoder() : this.inst$macro$436$1)
-});
-$c_LCommand$anon$lazy$macro$461$1.prototype.inst$macro$439$lzycompute__p1__Lio_circe_generic_decoding_ReprDecoder = (function() {
-  if (((64 & this.bitmap$0$1) === 0)) {
-    this.inst$macro$439$1 = new $c_LCommand$anon$lazy$macro$461$1$$anon$64().init___LCommand$anon$lazy$macro$461$1(this);
-    this.bitmap$0$1 = (((64 | this.bitmap$0$1) << 24) >> 24)
-  };
-  return this.inst$macro$439$1
-});
-$c_LCommand$anon$lazy$macro$461$1.prototype.inst$macro$458$lzycompute__p1__Lio_circe_generic_decoding_DerivedDecoder = (function() {
-  if (((32 & this.bitmap$0$1) === 0)) {
-    new $c_LCommand$anon$lazy$macro$461$1$$anon$63().init___LCommand$anon$lazy$macro$461$1(this);
-    var gen = new $c_LCommand$anon$lazy$macro$461$1$anon$macro$459$1().init___LCommand$anon$lazy$macro$461$1(this);
-    var zip = $m_Lshapeless_ops_hlist$ZipWithKeys$().hnilZipWithKeys$1;
-    var ev = $m_s_Predef$().singleton$und$less$colon$less$2;
-    var gen$1 = new $c_Lshapeless_LabelledGeneric$$anon$1().init___Lshapeless_Generic__Lshapeless_ops_hlist$ZipWithKeys__s_Predef$$less$colon$less(gen, zip, ev);
-    var t = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function($this) {
-      return (function() {
-        return $this.inst$macro$444__Lio_circe_generic_decoding_ReprDecoder()
-      })
-    })(this));
-    var decode = new $c_Lshapeless_Lazy$$anon$1().init___F0(t);
-    this.inst$macro$458$1 = new $c_Lio_circe_generic_decoding_DerivedDecoder$$anon$1().init___Lshapeless_LabelledGeneric__Lshapeless_Lazy(gen$1, decode);
-    this.bitmap$0$1 = (((32 | this.bitmap$0$1) << 24) >> 24)
-  };
-  return this.inst$macro$458$1
-});
-$c_LCommand$anon$lazy$macro$461$1.prototype.inst$macro$450__Lio_circe_generic_decoding_DerivedDecoder = (function() {
-  return (((8 & this.bitmap$0$1) === 0) ? this.inst$macro$450$lzycompute__p1__Lio_circe_generic_decoding_DerivedDecoder() : this.inst$macro$450$1)
-});
-$c_LCommand$anon$lazy$macro$461$1.prototype.inst$macro$441__Lio_circe_generic_decoding_DerivedDecoder = (function() {
-  return (((2 & this.bitmap$0$1) === 0) ? this.inst$macro$441$lzycompute__p1__Lio_circe_generic_decoding_DerivedDecoder() : this.inst$macro$441$1)
-});
-$c_LCommand$anon$lazy$macro$461$1.prototype.inst$macro$441$lzycompute__p1__Lio_circe_generic_decoding_DerivedDecoder = (function() {
-  if (((2 & this.bitmap$0$1) === 0)) {
-    new $c_LCommand$anon$lazy$macro$461$1$$anon$59().init___LCommand$anon$lazy$macro$461$1(this);
-    var gen = new $c_LCommand$anon$lazy$macro$461$1$anon$macro$443$1().init___LCommand$anon$lazy$macro$461$1(this);
-    var zip = $m_Lshapeless_ops_hlist$ZipWithKeys$().hnilZipWithKeys$1;
-    var ev = $m_s_Predef$().singleton$und$less$colon$less$2;
-    var gen$1 = new $c_Lshapeless_LabelledGeneric$$anon$1().init___Lshapeless_Generic__Lshapeless_ops_hlist$ZipWithKeys__s_Predef$$less$colon$less(gen, zip, ev);
-    var t = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function($this) {
-      return (function() {
-        return $this.inst$macro$444__Lio_circe_generic_decoding_ReprDecoder()
-      })
-    })(this));
-    var decode = new $c_Lshapeless_Lazy$$anon$1().init___F0(t);
-    this.inst$macro$441$1 = new $c_Lio_circe_generic_decoding_DerivedDecoder$$anon$1().init___Lshapeless_LabelledGeneric__Lshapeless_Lazy(gen$1, decode);
+    var encode = new $c_Lshapeless_Lazy$$anon$1().init___F0(t);
+    this.inst$macro$428$1 = new $c_Lio_circe_generic_encoding_DerivedObjectEncoder$$anon$1().init___Lshapeless_LabelledGeneric__Lshapeless_Lazy(gen$1, encode);
     this.bitmap$0$1 = (((2 | this.bitmap$0$1) << 24) >> 24)
   };
-  return this.inst$macro$441$1
+  return this.inst$macro$428$1
 });
-$c_LCommand$anon$lazy$macro$461$1.prototype.inst$macro$458__Lio_circe_generic_decoding_DerivedDecoder = (function() {
-  return (((32 & this.bitmap$0$1) === 0) ? this.inst$macro$458$lzycompute__p1__Lio_circe_generic_decoding_DerivedDecoder() : this.inst$macro$458$1)
+$c_LCommand$anon$lazy$macro$452$1.prototype.inst$macro$431__Lio_circe_generic_encoding_ReprObjectEncoder = (function() {
+  return (((1 & this.bitmap$0$1) === 0) ? this.inst$macro$431$lzycompute__p1__Lio_circe_generic_encoding_ReprObjectEncoder() : this.inst$macro$431$1)
 });
-$c_LCommand$anon$lazy$macro$461$1.prototype.inst$macro$454$lzycompute__p1__Lio_circe_generic_decoding_DerivedDecoder = (function() {
-  if (((16 & this.bitmap$0$1) === 0)) {
-    new $c_LCommand$anon$lazy$macro$461$1$$anon$62().init___LCommand$anon$lazy$macro$461$1(this);
-    var gen = new $c_LCommand$anon$lazy$macro$461$1$anon$macro$455$1().init___LCommand$anon$lazy$macro$461$1(this);
+$c_LCommand$anon$lazy$macro$452$1.prototype.inst$macro$428__Lio_circe_generic_encoding_DerivedObjectEncoder = (function() {
+  return (((2 & this.bitmap$0$1) === 0) ? this.inst$macro$428$lzycompute__p1__Lio_circe_generic_encoding_DerivedObjectEncoder() : this.inst$macro$428$1)
+});
+$c_LCommand$anon$lazy$macro$452$1.prototype.inst$macro$431$lzycompute__p1__Lio_circe_generic_encoding_ReprObjectEncoder = (function() {
+  if (((1 & this.bitmap$0$1) === 0)) {
+    this.inst$macro$431$1 = new $c_LCommand$anon$lazy$macro$452$1$$anon$13().init___LCommand$anon$lazy$macro$452$1(this);
+    this.bitmap$0$1 = (((1 | this.bitmap$0$1) << 24) >> 24)
+  };
+  return this.inst$macro$431$1
+});
+var $d_LCommand$anon$lazy$macro$452$1 = new $TypeData().initClass({
+  LCommand$anon$lazy$macro$452$1: 0
+}, false, "Command$anon$lazy$macro$452$1", {
+  LCommand$anon$lazy$macro$452$1: 1,
+  O: 1,
+  s_Serializable: 1,
+  Ljava_io_Serializable: 1
+});
+$c_LCommand$anon$lazy$macro$452$1.prototype.$classData = $d_LCommand$anon$lazy$macro$452$1;
+/** @constructor */
+function $c_LCommand$anon$lazy$macro$479$1() {
+  $c_O.call(this);
+  this.inst$macro$462$1 = null;
+  this.inst$macro$459$1 = null;
+  this.inst$macro$464$1 = null;
+  this.inst$macro$468$1 = null;
+  this.inst$macro$472$1 = null;
+  this.inst$macro$476$1 = null;
+  this.inst$macro$457$1 = null;
+  this.inst$macro$454$1 = null;
+  this.bitmap$0$1 = 0
+}
+$c_LCommand$anon$lazy$macro$479$1.prototype = new $h_O();
+$c_LCommand$anon$lazy$macro$479$1.prototype.constructor = $c_LCommand$anon$lazy$macro$479$1;
+/** @constructor */
+function $h_LCommand$anon$lazy$macro$479$1() {
+  /*<skip>*/
+}
+$h_LCommand$anon$lazy$macro$479$1.prototype = $c_LCommand$anon$lazy$macro$479$1.prototype;
+$c_LCommand$anon$lazy$macro$479$1.prototype.init___ = (function() {
+  return this
+});
+$c_LCommand$anon$lazy$macro$479$1.prototype.inst$macro$457__Lio_circe_generic_decoding_ReprDecoder = (function() {
+  return (((64 & this.bitmap$0$1) === 0) ? this.inst$macro$457$lzycompute__p1__Lio_circe_generic_decoding_ReprDecoder() : this.inst$macro$457$1)
+});
+$c_LCommand$anon$lazy$macro$479$1.prototype.inst$macro$472__Lio_circe_generic_decoding_DerivedDecoder = (function() {
+  return (((16 & this.bitmap$0$1) === 0) ? this.inst$macro$472$lzycompute__p1__Lio_circe_generic_decoding_DerivedDecoder() : this.inst$macro$472$1)
+});
+$c_LCommand$anon$lazy$macro$479$1.prototype.inst$macro$454__Lio_circe_generic_decoding_DerivedDecoder = (function() {
+  return (((128 & this.bitmap$0$1) === 0) ? this.inst$macro$454$lzycompute__p1__Lio_circe_generic_decoding_DerivedDecoder() : this.inst$macro$454$1)
+});
+$c_LCommand$anon$lazy$macro$479$1.prototype.inst$macro$459$lzycompute__p1__Lio_circe_generic_decoding_DerivedDecoder = (function() {
+  if (((2 & this.bitmap$0$1) === 0)) {
+    new $c_LCommand$anon$lazy$macro$479$1$$anon$61().init___LCommand$anon$lazy$macro$479$1(this);
+    var gen = new $c_LCommand$anon$lazy$macro$479$1$anon$macro$461$1().init___LCommand$anon$lazy$macro$479$1(this);
     var zip = $m_Lshapeless_ops_hlist$ZipWithKeys$().hnilZipWithKeys$1;
     var ev = $m_s_Predef$().singleton$und$less$colon$less$2;
     var gen$1 = new $c_Lshapeless_LabelledGeneric$$anon$1().init___Lshapeless_Generic__Lshapeless_ops_hlist$ZipWithKeys__s_Predef$$less$colon$less(gen, zip, ev);
     var t = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function($this) {
       return (function() {
-        return $this.inst$macro$444__Lio_circe_generic_decoding_ReprDecoder()
+        return $this.inst$macro$462__Lio_circe_generic_decoding_ReprDecoder()
+      })
+    })(this));
+    var decode = new $c_Lshapeless_Lazy$$anon$1().init___F0(t);
+    this.inst$macro$459$1 = new $c_Lio_circe_generic_decoding_DerivedDecoder$$anon$1().init___Lshapeless_LabelledGeneric__Lshapeless_Lazy(gen$1, decode);
+    this.bitmap$0$1 = (((2 | this.bitmap$0$1) << 24) >> 24)
+  };
+  return this.inst$macro$459$1
+});
+$c_LCommand$anon$lazy$macro$479$1.prototype.inst$macro$462__Lio_circe_generic_decoding_ReprDecoder = (function() {
+  return (((1 & this.bitmap$0$1) === 0) ? this.inst$macro$462$lzycompute__p1__Lio_circe_generic_decoding_ReprDecoder() : this.inst$macro$462$1)
+});
+$c_LCommand$anon$lazy$macro$479$1.prototype.inst$macro$476$lzycompute__p1__Lio_circe_generic_decoding_DerivedDecoder = (function() {
+  if (((32 & this.bitmap$0$1) === 0)) {
+    new $c_LCommand$anon$lazy$macro$479$1$$anon$65().init___LCommand$anon$lazy$macro$479$1(this);
+    var gen = new $c_LCommand$anon$lazy$macro$479$1$anon$macro$477$1().init___LCommand$anon$lazy$macro$479$1(this);
+    var zip = $m_Lshapeless_ops_hlist$ZipWithKeys$().hnilZipWithKeys$1;
+    var ev = $m_s_Predef$().singleton$und$less$colon$less$2;
+    var gen$1 = new $c_Lshapeless_LabelledGeneric$$anon$1().init___Lshapeless_Generic__Lshapeless_ops_hlist$ZipWithKeys__s_Predef$$less$colon$less(gen, zip, ev);
+    var t = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function($this) {
+      return (function() {
+        return $this.inst$macro$462__Lio_circe_generic_decoding_ReprDecoder()
+      })
+    })(this));
+    var decode = new $c_Lshapeless_Lazy$$anon$1().init___F0(t);
+    this.inst$macro$476$1 = new $c_Lio_circe_generic_decoding_DerivedDecoder$$anon$1().init___Lshapeless_LabelledGeneric__Lshapeless_Lazy(gen$1, decode);
+    this.bitmap$0$1 = (((32 | this.bitmap$0$1) << 24) >> 24)
+  };
+  return this.inst$macro$476$1
+});
+$c_LCommand$anon$lazy$macro$479$1.prototype.inst$macro$462$lzycompute__p1__Lio_circe_generic_decoding_ReprDecoder = (function() {
+  if (((1 & this.bitmap$0$1) === 0)) {
+    this.inst$macro$462$1 = $m_Lio_circe_generic_decoding_ReprDecoder$().hnilReprDecoder$1;
+    this.bitmap$0$1 = (((1 | this.bitmap$0$1) << 24) >> 24)
+  };
+  return this.inst$macro$462$1
+});
+$c_LCommand$anon$lazy$macro$479$1.prototype.inst$macro$459__Lio_circe_generic_decoding_DerivedDecoder = (function() {
+  return (((2 & this.bitmap$0$1) === 0) ? this.inst$macro$459$lzycompute__p1__Lio_circe_generic_decoding_DerivedDecoder() : this.inst$macro$459$1)
+});
+$c_LCommand$anon$lazy$macro$479$1.prototype.inst$macro$468__Lio_circe_generic_decoding_DerivedDecoder = (function() {
+  return (((8 & this.bitmap$0$1) === 0) ? this.inst$macro$468$lzycompute__p1__Lio_circe_generic_decoding_DerivedDecoder() : this.inst$macro$468$1)
+});
+$c_LCommand$anon$lazy$macro$479$1.prototype.inst$macro$472$lzycompute__p1__Lio_circe_generic_decoding_DerivedDecoder = (function() {
+  if (((16 & this.bitmap$0$1) === 0)) {
+    new $c_LCommand$anon$lazy$macro$479$1$$anon$64().init___LCommand$anon$lazy$macro$479$1(this);
+    var gen = new $c_LCommand$anon$lazy$macro$479$1$anon$macro$473$1().init___LCommand$anon$lazy$macro$479$1(this);
+    var zip = $m_Lshapeless_ops_hlist$ZipWithKeys$().hnilZipWithKeys$1;
+    var ev = $m_s_Predef$().singleton$und$less$colon$less$2;
+    var gen$1 = new $c_Lshapeless_LabelledGeneric$$anon$1().init___Lshapeless_Generic__Lshapeless_ops_hlist$ZipWithKeys__s_Predef$$less$colon$less(gen, zip, ev);
+    var t = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function($this) {
+      return (function() {
+        return $this.inst$macro$462__Lio_circe_generic_decoding_ReprDecoder()
+      })
+    })(this));
+    var decode = new $c_Lshapeless_Lazy$$anon$1().init___F0(t);
+    this.inst$macro$472$1 = new $c_Lio_circe_generic_decoding_DerivedDecoder$$anon$1().init___Lshapeless_LabelledGeneric__Lshapeless_Lazy(gen$1, decode);
+    this.bitmap$0$1 = (((16 | this.bitmap$0$1) << 24) >> 24)
+  };
+  return this.inst$macro$472$1
+});
+$c_LCommand$anon$lazy$macro$479$1.prototype.inst$macro$457$lzycompute__p1__Lio_circe_generic_decoding_ReprDecoder = (function() {
+  if (((64 & this.bitmap$0$1) === 0)) {
+    this.inst$macro$457$1 = new $c_LCommand$anon$lazy$macro$479$1$$anon$66().init___LCommand$anon$lazy$macro$479$1(this);
+    this.bitmap$0$1 = (((64 | this.bitmap$0$1) << 24) >> 24)
+  };
+  return this.inst$macro$457$1
+});
+$c_LCommand$anon$lazy$macro$479$1.prototype.inst$macro$468$lzycompute__p1__Lio_circe_generic_decoding_DerivedDecoder = (function() {
+  if (((8 & this.bitmap$0$1) === 0)) {
+    new $c_LCommand$anon$lazy$macro$479$1$$anon$63().init___LCommand$anon$lazy$macro$479$1(this);
+    var gen = new $c_LCommand$anon$lazy$macro$479$1$anon$macro$469$1().init___LCommand$anon$lazy$macro$479$1(this);
+    var zip = $m_Lshapeless_ops_hlist$ZipWithKeys$().hnilZipWithKeys$1;
+    var ev = $m_s_Predef$().singleton$und$less$colon$less$2;
+    var gen$1 = new $c_Lshapeless_LabelledGeneric$$anon$1().init___Lshapeless_Generic__Lshapeless_ops_hlist$ZipWithKeys__s_Predef$$less$colon$less(gen, zip, ev);
+    var t = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function($this) {
+      return (function() {
+        return $this.inst$macro$462__Lio_circe_generic_decoding_ReprDecoder()
+      })
+    })(this));
+    var decode = new $c_Lshapeless_Lazy$$anon$1().init___F0(t);
+    this.inst$macro$468$1 = new $c_Lio_circe_generic_decoding_DerivedDecoder$$anon$1().init___Lshapeless_LabelledGeneric__Lshapeless_Lazy(gen$1, decode);
+    this.bitmap$0$1 = (((8 | this.bitmap$0$1) << 24) >> 24)
+  };
+  return this.inst$macro$468$1
+});
+$c_LCommand$anon$lazy$macro$479$1.prototype.inst$macro$476__Lio_circe_generic_decoding_DerivedDecoder = (function() {
+  return (((32 & this.bitmap$0$1) === 0) ? this.inst$macro$476$lzycompute__p1__Lio_circe_generic_decoding_DerivedDecoder() : this.inst$macro$476$1)
+});
+$c_LCommand$anon$lazy$macro$479$1.prototype.inst$macro$464__Lio_circe_generic_decoding_DerivedDecoder = (function() {
+  return (((4 & this.bitmap$0$1) === 0) ? this.inst$macro$464$lzycompute__p1__Lio_circe_generic_decoding_DerivedDecoder() : this.inst$macro$464$1)
+});
+$c_LCommand$anon$lazy$macro$479$1.prototype.inst$macro$454$lzycompute__p1__Lio_circe_generic_decoding_DerivedDecoder = (function() {
+  if (((128 & this.bitmap$0$1) === 0)) {
+    new $c_LCommand$anon$lazy$macro$479$1$$anon$67().init___LCommand$anon$lazy$macro$479$1(this);
+    var gen = new $c_LCommand$anon$lazy$macro$479$1$anon$macro$455$1().init___LCommand$anon$lazy$macro$479$1(this);
+    $m_Lshapeless_ops_coproduct$ZipWithKeys$();
+    $m_Lshapeless_ops_coproduct$ZipWithKeys$();
+    $m_Lshapeless_ops_coproduct$ZipWithKeys$();
+    $m_Lshapeless_ops_coproduct$ZipWithKeys$();
+    $m_Lshapeless_ops_coproduct$ZipWithKeys$();
+    var zipWithKeys = $m_Lshapeless_ops_coproduct$ZipWithKeys$().cnilZipWithKeys$1;
+    $m_Lshapeless_Witness$();
+    var this$1 = $m_s_Symbol$();
+    var value0 = $as_s_Symbol($c_s_JSUniquenessCache.prototype.apply__T__O.call(this$1, "S"));
+    new $c_Lshapeless_Witness$$anon$1().init___O(value0);
+    var zipWithKeys$1 = new $c_Lshapeless_ops_coproduct$ZipWithKeys$$anon$22().init___Lshapeless_ops_coproduct$ZipWithKeys(zipWithKeys);
+    $m_Lshapeless_Witness$();
+    var this$4 = $m_s_Symbol$();
+    var value0$1 = $as_s_Symbol($c_s_JSUniquenessCache.prototype.apply__T__O.call(this$4, "R"));
+    new $c_Lshapeless_Witness$$anon$1().init___O(value0$1);
+    var zipWithKeys$2 = new $c_Lshapeless_ops_coproduct$ZipWithKeys$$anon$22().init___Lshapeless_ops_coproduct$ZipWithKeys(zipWithKeys$1);
+    $m_Lshapeless_Witness$();
+    var this$7 = $m_s_Symbol$();
+    var value0$2 = $as_s_Symbol($c_s_JSUniquenessCache.prototype.apply__T__O.call(this$7, "L"));
+    new $c_Lshapeless_Witness$$anon$1().init___O(value0$2);
+    var zipWithKeys$3 = new $c_Lshapeless_ops_coproduct$ZipWithKeys$$anon$22().init___Lshapeless_ops_coproduct$ZipWithKeys(zipWithKeys$2);
+    $m_Lshapeless_Witness$();
+    var this$10 = $m_s_Symbol$();
+    var value0$3 = $as_s_Symbol($c_s_JSUniquenessCache.prototype.apply__T__O.call(this$10, "F"));
+    new $c_Lshapeless_Witness$$anon$1().init___O(value0$3);
+    var zipWithKeys$4 = new $c_Lshapeless_ops_coproduct$ZipWithKeys$$anon$22().init___Lshapeless_ops_coproduct$ZipWithKeys(zipWithKeys$3);
+    $m_Lshapeless_Witness$();
+    var this$13 = $m_s_Symbol$();
+    var value0$4 = $as_s_Symbol($c_s_JSUniquenessCache.prototype.apply__T__O.call(this$13, "B"));
+    new $c_Lshapeless_Witness$$anon$1().init___O(value0$4);
+    var zip = new $c_Lshapeless_ops_coproduct$ZipWithKeys$$anon$22().init___Lshapeless_ops_coproduct$ZipWithKeys(zipWithKeys$4);
+    var ev = $m_s_Predef$().singleton$und$less$colon$less$2;
+    var gen$1 = new $c_Lshapeless_LabelledGeneric$$anon$2().init___Lshapeless_Generic__Lshapeless_ops_coproduct$ZipWithKeys__s_Predef$$less$colon$less(gen, zip, ev);
+    var t = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function($this) {
+      return (function() {
+        return $this.inst$macro$457__Lio_circe_generic_decoding_ReprDecoder()
       })
     })(this));
     var decode = new $c_Lshapeless_Lazy$$anon$1().init___F0(t);
     this.inst$macro$454$1 = new $c_Lio_circe_generic_decoding_DerivedDecoder$$anon$1().init___Lshapeless_LabelledGeneric__Lshapeless_Lazy(gen$1, decode);
-    this.bitmap$0$1 = (((16 | this.bitmap$0$1) << 24) >> 24)
+    this.bitmap$0$1 = (((128 | this.bitmap$0$1) << 24) >> 24)
   };
   return this.inst$macro$454$1
 });
-$c_LCommand$anon$lazy$macro$461$1.prototype.inst$macro$446__Lio_circe_generic_decoding_DerivedDecoder = (function() {
-  return (((4 & this.bitmap$0$1) === 0) ? this.inst$macro$446$lzycompute__p1__Lio_circe_generic_decoding_DerivedDecoder() : this.inst$macro$446$1)
-});
-var $d_LCommand$anon$lazy$macro$461$1 = new $TypeData().initClass({
-  LCommand$anon$lazy$macro$461$1: 0
-}, false, "Command$anon$lazy$macro$461$1", {
-  LCommand$anon$lazy$macro$461$1: 1,
-  O: 1,
-  s_Serializable: 1,
-  Ljava_io_Serializable: 1
-});
-$c_LCommand$anon$lazy$macro$461$1.prototype.$classData = $d_LCommand$anon$lazy$macro$461$1;
-/** @constructor */
-function $c_LCommonState$anon$lazy$macro$313$1() {
-  $c_O.call(this);
-  this.inst$macro$300$1 = null;
-  this.inst$macro$285$1 = null;
-  this.bitmap$0$1 = 0
-}
-$c_LCommonState$anon$lazy$macro$313$1.prototype = new $h_O();
-$c_LCommonState$anon$lazy$macro$313$1.prototype.constructor = $c_LCommonState$anon$lazy$macro$313$1;
-/** @constructor */
-function $h_LCommonState$anon$lazy$macro$313$1() {
-  /*<skip>*/
-}
-$h_LCommonState$anon$lazy$macro$313$1.prototype = $c_LCommonState$anon$lazy$macro$313$1.prototype;
-$c_LCommonState$anon$lazy$macro$313$1.prototype.init___ = (function() {
-  return this
-});
-$c_LCommonState$anon$lazy$macro$313$1.prototype.inst$macro$285__Lio_circe_generic_encoding_DerivedObjectEncoder = (function() {
-  return (((2 & this.bitmap$0$1) === 0) ? this.inst$macro$285$lzycompute__p1__Lio_circe_generic_encoding_DerivedObjectEncoder() : this.inst$macro$285$1)
-});
-$c_LCommonState$anon$lazy$macro$313$1.prototype.inst$macro$285$lzycompute__p1__Lio_circe_generic_encoding_DerivedObjectEncoder = (function() {
-  if (((2 & this.bitmap$0$1) === 0)) {
-    new $c_LCommonState$anon$lazy$macro$313$1$$anon$43().init___LCommonState$anon$lazy$macro$313$1(this);
-    var gen = new $c_LCommonState$anon$lazy$macro$313$1$anon$macro$299$1().init___LCommonState$anon$lazy$macro$313$1(this);
-    $m_Lshapeless_ops_hlist$ZipWithKeys$();
-    $m_Lshapeless_ops_hlist$ZipWithKeys$();
-    $m_Lshapeless_ops_hlist$ZipWithKeys$();
-    $m_Lshapeless_ops_hlist$ZipWithKeys$();
-    $m_Lshapeless_ops_hlist$ZipWithKeys$();
-    $m_Lshapeless_ops_hlist$ZipWithKeys$();
-    var zipWithKeys = $m_Lshapeless_ops_hlist$ZipWithKeys$().hnilZipWithKeys$1;
-    $m_Lshapeless_Witness$();
-    var this$1 = $m_s_Symbol$();
-    var value0 = $as_s_Symbol($c_s_JSUniquenessCache.prototype.apply__T__O.call(this$1, "phi"));
-    new $c_Lshapeless_Witness$$anon$1().init___O(value0);
-    var zipWithKeys$1 = new $c_Lshapeless_ops_hlist$ZipWithKeys$$anon$109().init___Lshapeless_ops_hlist$ZipWithKeys(zipWithKeys);
-    $m_Lshapeless_Witness$();
-    var this$4 = $m_s_Symbol$();
-    var value0$1 = $as_s_Symbol($c_s_JSUniquenessCache.prototype.apply__T__O.call(this$4, "omega"));
-    new $c_Lshapeless_Witness$$anon$1().init___O(value0$1);
-    var zipWithKeys$2 = new $c_Lshapeless_ops_hlist$ZipWithKeys$$anon$109().init___Lshapeless_ops_hlist$ZipWithKeys(zipWithKeys$1);
-    $m_Lshapeless_Witness$();
-    var this$7 = $m_s_Symbol$();
-    var value0$2 = $as_s_Symbol($c_s_JSUniquenessCache.prototype.apply__T__O.call(this$7, "acc"));
-    new $c_Lshapeless_Witness$$anon$1().init___O(value0$2);
-    var zipWithKeys$3 = new $c_Lshapeless_ops_hlist$ZipWithKeys$$anon$109().init___Lshapeless_ops_hlist$ZipWithKeys(zipWithKeys$2);
-    $m_Lshapeless_Witness$();
-    var this$10 = $m_s_Symbol$();
-    var value0$3 = $as_s_Symbol($c_s_JSUniquenessCache.prototype.apply__T__O.call(this$10, "velo"));
-    new $c_Lshapeless_Witness$$anon$1().init___O(value0$3);
-    var zipWithKeys$4 = new $c_Lshapeless_ops_hlist$ZipWithKeys$$anon$109().init___Lshapeless_ops_hlist$ZipWithKeys(zipWithKeys$3);
-    $m_Lshapeless_Witness$();
-    var this$13 = $m_s_Symbol$();
-    var value0$4 = $as_s_Symbol($c_s_JSUniquenessCache.prototype.apply__T__O.call(this$13, "pos"));
-    new $c_Lshapeless_Witness$$anon$1().init___O(value0$4);
-    var zipWithKeys$5 = new $c_Lshapeless_ops_hlist$ZipWithKeys$$anon$109().init___Lshapeless_ops_hlist$ZipWithKeys(zipWithKeys$4);
-    $m_Lshapeless_Witness$();
-    var this$16 = $m_s_Symbol$();
-    var value0$5 = $as_s_Symbol($c_s_JSUniquenessCache.prototype.apply__T__O.call(this$16, "ident"));
-    new $c_Lshapeless_Witness$$anon$1().init___O(value0$5);
-    var zip = new $c_Lshapeless_ops_hlist$ZipWithKeys$$anon$109().init___Lshapeless_ops_hlist$ZipWithKeys(zipWithKeys$5);
+$c_LCommand$anon$lazy$macro$479$1.prototype.inst$macro$464$lzycompute__p1__Lio_circe_generic_decoding_DerivedDecoder = (function() {
+  if (((4 & this.bitmap$0$1) === 0)) {
+    new $c_LCommand$anon$lazy$macro$479$1$$anon$62().init___LCommand$anon$lazy$macro$479$1(this);
+    var gen = new $c_LCommand$anon$lazy$macro$479$1$anon$macro$466$1().init___LCommand$anon$lazy$macro$479$1(this);
+    var zip = $m_Lshapeless_ops_hlist$ZipWithKeys$().hnilZipWithKeys$1;
     var ev = $m_s_Predef$().singleton$und$less$colon$less$2;
     var gen$1 = new $c_Lshapeless_LabelledGeneric$$anon$1().init___Lshapeless_Generic__Lshapeless_ops_hlist$ZipWithKeys__s_Predef$$less$colon$less(gen, zip, ev);
     var t = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function($this) {
       return (function() {
-        return $this.inst$macro$300__Lio_circe_generic_encoding_ReprObjectEncoder()
-      })
-    })(this));
-    var encode = new $c_Lshapeless_Lazy$$anon$1().init___F0(t);
-    this.inst$macro$285$1 = new $c_Lio_circe_generic_encoding_DerivedObjectEncoder$$anon$1().init___Lshapeless_LabelledGeneric__Lshapeless_Lazy(gen$1, encode);
-    this.bitmap$0$1 = (((2 | this.bitmap$0$1) << 24) >> 24)
-  };
-  return this.inst$macro$285$1
-});
-$c_LCommonState$anon$lazy$macro$313$1.prototype.inst$macro$300$lzycompute__p1__Lio_circe_generic_encoding_ReprObjectEncoder = (function() {
-  if (((1 & this.bitmap$0$1) === 0)) {
-    this.inst$macro$300$1 = new $c_LCommonState$anon$lazy$macro$313$1$$anon$10().init___LCommonState$anon$lazy$macro$313$1(this);
-    this.bitmap$0$1 = (((1 | this.bitmap$0$1) << 24) >> 24)
-  };
-  return this.inst$macro$300$1
-});
-$c_LCommonState$anon$lazy$macro$313$1.prototype.inst$macro$300__Lio_circe_generic_encoding_ReprObjectEncoder = (function() {
-  return (((1 & this.bitmap$0$1) === 0) ? this.inst$macro$300$lzycompute__p1__Lio_circe_generic_encoding_ReprObjectEncoder() : this.inst$macro$300$1)
-});
-var $d_LCommonState$anon$lazy$macro$313$1 = new $TypeData().initClass({
-  LCommonState$anon$lazy$macro$313$1: 0
-}, false, "CommonState$anon$lazy$macro$313$1", {
-  LCommonState$anon$lazy$macro$313$1: 1,
-  O: 1,
-  s_Serializable: 1,
-  Ljava_io_Serializable: 1
-});
-$c_LCommonState$anon$lazy$macro$313$1.prototype.$classData = $d_LCommonState$anon$lazy$macro$313$1;
-/** @constructor */
-function $c_LCommonState$anon$lazy$macro$334$1() {
-  $c_O.call(this);
-  this.inst$macro$330$1 = null;
-  this.inst$macro$315$1 = null;
-  this.bitmap$0$1 = 0
-}
-$c_LCommonState$anon$lazy$macro$334$1.prototype = new $h_O();
-$c_LCommonState$anon$lazy$macro$334$1.prototype.constructor = $c_LCommonState$anon$lazy$macro$334$1;
-/** @constructor */
-function $h_LCommonState$anon$lazy$macro$334$1() {
-  /*<skip>*/
-}
-$h_LCommonState$anon$lazy$macro$334$1.prototype = $c_LCommonState$anon$lazy$macro$334$1.prototype;
-$c_LCommonState$anon$lazy$macro$334$1.prototype.init___ = (function() {
-  return this
-});
-$c_LCommonState$anon$lazy$macro$334$1.prototype.inst$macro$315__Lio_circe_generic_decoding_DerivedDecoder = (function() {
-  return (((2 & this.bitmap$0$1) === 0) ? this.inst$macro$315$lzycompute__p1__Lio_circe_generic_decoding_DerivedDecoder() : this.inst$macro$315$1)
-});
-$c_LCommonState$anon$lazy$macro$334$1.prototype.inst$macro$315$lzycompute__p1__Lio_circe_generic_decoding_DerivedDecoder = (function() {
-  if (((2 & this.bitmap$0$1) === 0)) {
-    new $c_LCommonState$anon$lazy$macro$334$1$$anon$45().init___LCommonState$anon$lazy$macro$334$1(this);
-    var gen = new $c_LCommonState$anon$lazy$macro$334$1$anon$macro$329$1().init___LCommonState$anon$lazy$macro$334$1(this);
-    $m_Lshapeless_ops_hlist$ZipWithKeys$();
-    $m_Lshapeless_ops_hlist$ZipWithKeys$();
-    $m_Lshapeless_ops_hlist$ZipWithKeys$();
-    $m_Lshapeless_ops_hlist$ZipWithKeys$();
-    $m_Lshapeless_ops_hlist$ZipWithKeys$();
-    $m_Lshapeless_ops_hlist$ZipWithKeys$();
-    var zipWithKeys = $m_Lshapeless_ops_hlist$ZipWithKeys$().hnilZipWithKeys$1;
-    $m_Lshapeless_Witness$();
-    var this$1 = $m_s_Symbol$();
-    var value0 = $as_s_Symbol($c_s_JSUniquenessCache.prototype.apply__T__O.call(this$1, "phi"));
-    new $c_Lshapeless_Witness$$anon$1().init___O(value0);
-    var zipWithKeys$1 = new $c_Lshapeless_ops_hlist$ZipWithKeys$$anon$109().init___Lshapeless_ops_hlist$ZipWithKeys(zipWithKeys);
-    $m_Lshapeless_Witness$();
-    var this$4 = $m_s_Symbol$();
-    var value0$1 = $as_s_Symbol($c_s_JSUniquenessCache.prototype.apply__T__O.call(this$4, "omega"));
-    new $c_Lshapeless_Witness$$anon$1().init___O(value0$1);
-    var zipWithKeys$2 = new $c_Lshapeless_ops_hlist$ZipWithKeys$$anon$109().init___Lshapeless_ops_hlist$ZipWithKeys(zipWithKeys$1);
-    $m_Lshapeless_Witness$();
-    var this$7 = $m_s_Symbol$();
-    var value0$2 = $as_s_Symbol($c_s_JSUniquenessCache.prototype.apply__T__O.call(this$7, "acc"));
-    new $c_Lshapeless_Witness$$anon$1().init___O(value0$2);
-    var zipWithKeys$3 = new $c_Lshapeless_ops_hlist$ZipWithKeys$$anon$109().init___Lshapeless_ops_hlist$ZipWithKeys(zipWithKeys$2);
-    $m_Lshapeless_Witness$();
-    var this$10 = $m_s_Symbol$();
-    var value0$3 = $as_s_Symbol($c_s_JSUniquenessCache.prototype.apply__T__O.call(this$10, "velo"));
-    new $c_Lshapeless_Witness$$anon$1().init___O(value0$3);
-    var zipWithKeys$4 = new $c_Lshapeless_ops_hlist$ZipWithKeys$$anon$109().init___Lshapeless_ops_hlist$ZipWithKeys(zipWithKeys$3);
-    $m_Lshapeless_Witness$();
-    var this$13 = $m_s_Symbol$();
-    var value0$4 = $as_s_Symbol($c_s_JSUniquenessCache.prototype.apply__T__O.call(this$13, "pos"));
-    new $c_Lshapeless_Witness$$anon$1().init___O(value0$4);
-    var zipWithKeys$5 = new $c_Lshapeless_ops_hlist$ZipWithKeys$$anon$109().init___Lshapeless_ops_hlist$ZipWithKeys(zipWithKeys$4);
-    $m_Lshapeless_Witness$();
-    var this$16 = $m_s_Symbol$();
-    var value0$5 = $as_s_Symbol($c_s_JSUniquenessCache.prototype.apply__T__O.call(this$16, "ident"));
-    new $c_Lshapeless_Witness$$anon$1().init___O(value0$5);
-    var zip = new $c_Lshapeless_ops_hlist$ZipWithKeys$$anon$109().init___Lshapeless_ops_hlist$ZipWithKeys(zipWithKeys$5);
-    var ev = $m_s_Predef$().singleton$und$less$colon$less$2;
-    var gen$1 = new $c_Lshapeless_LabelledGeneric$$anon$1().init___Lshapeless_Generic__Lshapeless_ops_hlist$ZipWithKeys__s_Predef$$less$colon$less(gen, zip, ev);
-    var t = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function($this) {
-      return (function() {
-        return $this.inst$macro$330__Lio_circe_generic_decoding_ReprDecoder()
+        return $this.inst$macro$462__Lio_circe_generic_decoding_ReprDecoder()
       })
     })(this));
     var decode = new $c_Lshapeless_Lazy$$anon$1().init___F0(t);
-    this.inst$macro$315$1 = new $c_Lio_circe_generic_decoding_DerivedDecoder$$anon$1().init___Lshapeless_LabelledGeneric__Lshapeless_Lazy(gen$1, decode);
-    this.bitmap$0$1 = (((2 | this.bitmap$0$1) << 24) >> 24)
+    this.inst$macro$464$1 = new $c_Lio_circe_generic_decoding_DerivedDecoder$$anon$1().init___Lshapeless_LabelledGeneric__Lshapeless_Lazy(gen$1, decode);
+    this.bitmap$0$1 = (((4 | this.bitmap$0$1) << 24) >> 24)
   };
-  return this.inst$macro$315$1
+  return this.inst$macro$464$1
 });
-$c_LCommonState$anon$lazy$macro$334$1.prototype.inst$macro$330$lzycompute__p1__Lio_circe_generic_decoding_ReprDecoder = (function() {
-  if (((1 & this.bitmap$0$1) === 0)) {
-    this.inst$macro$330$1 = new $c_LCommonState$anon$lazy$macro$334$1$$anon$44().init___LCommonState$anon$lazy$macro$334$1(this);
-    this.bitmap$0$1 = (((1 | this.bitmap$0$1) << 24) >> 24)
-  };
-  return this.inst$macro$330$1
-});
-$c_LCommonState$anon$lazy$macro$334$1.prototype.inst$macro$330__Lio_circe_generic_decoding_ReprDecoder = (function() {
-  return (((1 & this.bitmap$0$1) === 0) ? this.inst$macro$330$lzycompute__p1__Lio_circe_generic_decoding_ReprDecoder() : this.inst$macro$330$1)
-});
-var $d_LCommonState$anon$lazy$macro$334$1 = new $TypeData().initClass({
-  LCommonState$anon$lazy$macro$334$1: 0
-}, false, "CommonState$anon$lazy$macro$334$1", {
-  LCommonState$anon$lazy$macro$334$1: 1,
+var $d_LCommand$anon$lazy$macro$479$1 = new $TypeData().initClass({
+  LCommand$anon$lazy$macro$479$1: 0
+}, false, "Command$anon$lazy$macro$479$1", {
+  LCommand$anon$lazy$macro$479$1: 1,
   O: 1,
   s_Serializable: 1,
   Ljava_io_Serializable: 1
 });
-$c_LCommonState$anon$lazy$macro$334$1.prototype.$classData = $d_LCommonState$anon$lazy$macro$334$1;
+$c_LCommand$anon$lazy$macro$479$1.prototype.$classData = $d_LCommand$anon$lazy$macro$479$1;
 /** @constructor */
-function $c_LMessage$anon$lazy$macro$198$1() {
+function $c_LCommonState$anon$lazy$macro$331$1() {
+  $c_O.call(this);
+  this.inst$macro$318$1 = null;
+  this.inst$macro$303$1 = null;
+  this.bitmap$0$1 = 0
+}
+$c_LCommonState$anon$lazy$macro$331$1.prototype = new $h_O();
+$c_LCommonState$anon$lazy$macro$331$1.prototype.constructor = $c_LCommonState$anon$lazy$macro$331$1;
+/** @constructor */
+function $h_LCommonState$anon$lazy$macro$331$1() {
+  /*<skip>*/
+}
+$h_LCommonState$anon$lazy$macro$331$1.prototype = $c_LCommonState$anon$lazy$macro$331$1.prototype;
+$c_LCommonState$anon$lazy$macro$331$1.prototype.init___ = (function() {
+  return this
+});
+$c_LCommonState$anon$lazy$macro$331$1.prototype.inst$macro$303__Lio_circe_generic_encoding_DerivedObjectEncoder = (function() {
+  return (((2 & this.bitmap$0$1) === 0) ? this.inst$macro$303$lzycompute__p1__Lio_circe_generic_encoding_DerivedObjectEncoder() : this.inst$macro$303$1)
+});
+$c_LCommonState$anon$lazy$macro$331$1.prototype.inst$macro$318__Lio_circe_generic_encoding_ReprObjectEncoder = (function() {
+  return (((1 & this.bitmap$0$1) === 0) ? this.inst$macro$318$lzycompute__p1__Lio_circe_generic_encoding_ReprObjectEncoder() : this.inst$macro$318$1)
+});
+$c_LCommonState$anon$lazy$macro$331$1.prototype.inst$macro$318$lzycompute__p1__Lio_circe_generic_encoding_ReprObjectEncoder = (function() {
+  if (((1 & this.bitmap$0$1) === 0)) {
+    this.inst$macro$318$1 = new $c_LCommonState$anon$lazy$macro$331$1$$anon$10().init___LCommonState$anon$lazy$macro$331$1(this);
+    this.bitmap$0$1 = (((1 | this.bitmap$0$1) << 24) >> 24)
+  };
+  return this.inst$macro$318$1
+});
+$c_LCommonState$anon$lazy$macro$331$1.prototype.inst$macro$303$lzycompute__p1__Lio_circe_generic_encoding_DerivedObjectEncoder = (function() {
+  if (((2 & this.bitmap$0$1) === 0)) {
+    new $c_LCommonState$anon$lazy$macro$331$1$$anon$45().init___LCommonState$anon$lazy$macro$331$1(this);
+    var gen = new $c_LCommonState$anon$lazy$macro$331$1$anon$macro$317$1().init___LCommonState$anon$lazy$macro$331$1(this);
+    $m_Lshapeless_ops_hlist$ZipWithKeys$();
+    $m_Lshapeless_ops_hlist$ZipWithKeys$();
+    $m_Lshapeless_ops_hlist$ZipWithKeys$();
+    $m_Lshapeless_ops_hlist$ZipWithKeys$();
+    $m_Lshapeless_ops_hlist$ZipWithKeys$();
+    $m_Lshapeless_ops_hlist$ZipWithKeys$();
+    var zipWithKeys = $m_Lshapeless_ops_hlist$ZipWithKeys$().hnilZipWithKeys$1;
+    $m_Lshapeless_Witness$();
+    var this$1 = $m_s_Symbol$();
+    var value0 = $as_s_Symbol($c_s_JSUniquenessCache.prototype.apply__T__O.call(this$1, "phi"));
+    new $c_Lshapeless_Witness$$anon$1().init___O(value0);
+    var zipWithKeys$1 = new $c_Lshapeless_ops_hlist$ZipWithKeys$$anon$109().init___Lshapeless_ops_hlist$ZipWithKeys(zipWithKeys);
+    $m_Lshapeless_Witness$();
+    var this$4 = $m_s_Symbol$();
+    var value0$1 = $as_s_Symbol($c_s_JSUniquenessCache.prototype.apply__T__O.call(this$4, "omega"));
+    new $c_Lshapeless_Witness$$anon$1().init___O(value0$1);
+    var zipWithKeys$2 = new $c_Lshapeless_ops_hlist$ZipWithKeys$$anon$109().init___Lshapeless_ops_hlist$ZipWithKeys(zipWithKeys$1);
+    $m_Lshapeless_Witness$();
+    var this$7 = $m_s_Symbol$();
+    var value0$2 = $as_s_Symbol($c_s_JSUniquenessCache.prototype.apply__T__O.call(this$7, "acc"));
+    new $c_Lshapeless_Witness$$anon$1().init___O(value0$2);
+    var zipWithKeys$3 = new $c_Lshapeless_ops_hlist$ZipWithKeys$$anon$109().init___Lshapeless_ops_hlist$ZipWithKeys(zipWithKeys$2);
+    $m_Lshapeless_Witness$();
+    var this$10 = $m_s_Symbol$();
+    var value0$3 = $as_s_Symbol($c_s_JSUniquenessCache.prototype.apply__T__O.call(this$10, "velo"));
+    new $c_Lshapeless_Witness$$anon$1().init___O(value0$3);
+    var zipWithKeys$4 = new $c_Lshapeless_ops_hlist$ZipWithKeys$$anon$109().init___Lshapeless_ops_hlist$ZipWithKeys(zipWithKeys$3);
+    $m_Lshapeless_Witness$();
+    var this$13 = $m_s_Symbol$();
+    var value0$4 = $as_s_Symbol($c_s_JSUniquenessCache.prototype.apply__T__O.call(this$13, "pos"));
+    new $c_Lshapeless_Witness$$anon$1().init___O(value0$4);
+    var zipWithKeys$5 = new $c_Lshapeless_ops_hlist$ZipWithKeys$$anon$109().init___Lshapeless_ops_hlist$ZipWithKeys(zipWithKeys$4);
+    $m_Lshapeless_Witness$();
+    var this$16 = $m_s_Symbol$();
+    var value0$5 = $as_s_Symbol($c_s_JSUniquenessCache.prototype.apply__T__O.call(this$16, "ident"));
+    new $c_Lshapeless_Witness$$anon$1().init___O(value0$5);
+    var zip = new $c_Lshapeless_ops_hlist$ZipWithKeys$$anon$109().init___Lshapeless_ops_hlist$ZipWithKeys(zipWithKeys$5);
+    var ev = $m_s_Predef$().singleton$und$less$colon$less$2;
+    var gen$1 = new $c_Lshapeless_LabelledGeneric$$anon$1().init___Lshapeless_Generic__Lshapeless_ops_hlist$ZipWithKeys__s_Predef$$less$colon$less(gen, zip, ev);
+    var t = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function($this) {
+      return (function() {
+        return $this.inst$macro$318__Lio_circe_generic_encoding_ReprObjectEncoder()
+      })
+    })(this));
+    var encode = new $c_Lshapeless_Lazy$$anon$1().init___F0(t);
+    this.inst$macro$303$1 = new $c_Lio_circe_generic_encoding_DerivedObjectEncoder$$anon$1().init___Lshapeless_LabelledGeneric__Lshapeless_Lazy(gen$1, encode);
+    this.bitmap$0$1 = (((2 | this.bitmap$0$1) << 24) >> 24)
+  };
+  return this.inst$macro$303$1
+});
+var $d_LCommonState$anon$lazy$macro$331$1 = new $TypeData().initClass({
+  LCommonState$anon$lazy$macro$331$1: 0
+}, false, "CommonState$anon$lazy$macro$331$1", {
+  LCommonState$anon$lazy$macro$331$1: 1,
+  O: 1,
+  s_Serializable: 1,
+  Ljava_io_Serializable: 1
+});
+$c_LCommonState$anon$lazy$macro$331$1.prototype.$classData = $d_LCommonState$anon$lazy$macro$331$1;
+/** @constructor */
+function $c_LCommonState$anon$lazy$macro$352$1() {
+  $c_O.call(this);
+  this.inst$macro$348$1 = null;
+  this.inst$macro$333$1 = null;
+  this.bitmap$0$1 = 0
+}
+$c_LCommonState$anon$lazy$macro$352$1.prototype = new $h_O();
+$c_LCommonState$anon$lazy$macro$352$1.prototype.constructor = $c_LCommonState$anon$lazy$macro$352$1;
+/** @constructor */
+function $h_LCommonState$anon$lazy$macro$352$1() {
+  /*<skip>*/
+}
+$h_LCommonState$anon$lazy$macro$352$1.prototype = $c_LCommonState$anon$lazy$macro$352$1.prototype;
+$c_LCommonState$anon$lazy$macro$352$1.prototype.init___ = (function() {
+  return this
+});
+$c_LCommonState$anon$lazy$macro$352$1.prototype.inst$macro$333__Lio_circe_generic_decoding_DerivedDecoder = (function() {
+  return (((2 & this.bitmap$0$1) === 0) ? this.inst$macro$333$lzycompute__p1__Lio_circe_generic_decoding_DerivedDecoder() : this.inst$macro$333$1)
+});
+$c_LCommonState$anon$lazy$macro$352$1.prototype.inst$macro$348__Lio_circe_generic_decoding_ReprDecoder = (function() {
+  return (((1 & this.bitmap$0$1) === 0) ? this.inst$macro$348$lzycompute__p1__Lio_circe_generic_decoding_ReprDecoder() : this.inst$macro$348$1)
+});
+$c_LCommonState$anon$lazy$macro$352$1.prototype.inst$macro$348$lzycompute__p1__Lio_circe_generic_decoding_ReprDecoder = (function() {
+  if (((1 & this.bitmap$0$1) === 0)) {
+    this.inst$macro$348$1 = new $c_LCommonState$anon$lazy$macro$352$1$$anon$46().init___LCommonState$anon$lazy$macro$352$1(this);
+    this.bitmap$0$1 = (((1 | this.bitmap$0$1) << 24) >> 24)
+  };
+  return this.inst$macro$348$1
+});
+$c_LCommonState$anon$lazy$macro$352$1.prototype.inst$macro$333$lzycompute__p1__Lio_circe_generic_decoding_DerivedDecoder = (function() {
+  if (((2 & this.bitmap$0$1) === 0)) {
+    new $c_LCommonState$anon$lazy$macro$352$1$$anon$47().init___LCommonState$anon$lazy$macro$352$1(this);
+    var gen = new $c_LCommonState$anon$lazy$macro$352$1$anon$macro$347$1().init___LCommonState$anon$lazy$macro$352$1(this);
+    $m_Lshapeless_ops_hlist$ZipWithKeys$();
+    $m_Lshapeless_ops_hlist$ZipWithKeys$();
+    $m_Lshapeless_ops_hlist$ZipWithKeys$();
+    $m_Lshapeless_ops_hlist$ZipWithKeys$();
+    $m_Lshapeless_ops_hlist$ZipWithKeys$();
+    $m_Lshapeless_ops_hlist$ZipWithKeys$();
+    var zipWithKeys = $m_Lshapeless_ops_hlist$ZipWithKeys$().hnilZipWithKeys$1;
+    $m_Lshapeless_Witness$();
+    var this$1 = $m_s_Symbol$();
+    var value0 = $as_s_Symbol($c_s_JSUniquenessCache.prototype.apply__T__O.call(this$1, "phi"));
+    new $c_Lshapeless_Witness$$anon$1().init___O(value0);
+    var zipWithKeys$1 = new $c_Lshapeless_ops_hlist$ZipWithKeys$$anon$109().init___Lshapeless_ops_hlist$ZipWithKeys(zipWithKeys);
+    $m_Lshapeless_Witness$();
+    var this$4 = $m_s_Symbol$();
+    var value0$1 = $as_s_Symbol($c_s_JSUniquenessCache.prototype.apply__T__O.call(this$4, "omega"));
+    new $c_Lshapeless_Witness$$anon$1().init___O(value0$1);
+    var zipWithKeys$2 = new $c_Lshapeless_ops_hlist$ZipWithKeys$$anon$109().init___Lshapeless_ops_hlist$ZipWithKeys(zipWithKeys$1);
+    $m_Lshapeless_Witness$();
+    var this$7 = $m_s_Symbol$();
+    var value0$2 = $as_s_Symbol($c_s_JSUniquenessCache.prototype.apply__T__O.call(this$7, "acc"));
+    new $c_Lshapeless_Witness$$anon$1().init___O(value0$2);
+    var zipWithKeys$3 = new $c_Lshapeless_ops_hlist$ZipWithKeys$$anon$109().init___Lshapeless_ops_hlist$ZipWithKeys(zipWithKeys$2);
+    $m_Lshapeless_Witness$();
+    var this$10 = $m_s_Symbol$();
+    var value0$3 = $as_s_Symbol($c_s_JSUniquenessCache.prototype.apply__T__O.call(this$10, "velo"));
+    new $c_Lshapeless_Witness$$anon$1().init___O(value0$3);
+    var zipWithKeys$4 = new $c_Lshapeless_ops_hlist$ZipWithKeys$$anon$109().init___Lshapeless_ops_hlist$ZipWithKeys(zipWithKeys$3);
+    $m_Lshapeless_Witness$();
+    var this$13 = $m_s_Symbol$();
+    var value0$4 = $as_s_Symbol($c_s_JSUniquenessCache.prototype.apply__T__O.call(this$13, "pos"));
+    new $c_Lshapeless_Witness$$anon$1().init___O(value0$4);
+    var zipWithKeys$5 = new $c_Lshapeless_ops_hlist$ZipWithKeys$$anon$109().init___Lshapeless_ops_hlist$ZipWithKeys(zipWithKeys$4);
+    $m_Lshapeless_Witness$();
+    var this$16 = $m_s_Symbol$();
+    var value0$5 = $as_s_Symbol($c_s_JSUniquenessCache.prototype.apply__T__O.call(this$16, "ident"));
+    new $c_Lshapeless_Witness$$anon$1().init___O(value0$5);
+    var zip = new $c_Lshapeless_ops_hlist$ZipWithKeys$$anon$109().init___Lshapeless_ops_hlist$ZipWithKeys(zipWithKeys$5);
+    var ev = $m_s_Predef$().singleton$und$less$colon$less$2;
+    var gen$1 = new $c_Lshapeless_LabelledGeneric$$anon$1().init___Lshapeless_Generic__Lshapeless_ops_hlist$ZipWithKeys__s_Predef$$less$colon$less(gen, zip, ev);
+    var t = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function($this) {
+      return (function() {
+        return $this.inst$macro$348__Lio_circe_generic_decoding_ReprDecoder()
+      })
+    })(this));
+    var decode = new $c_Lshapeless_Lazy$$anon$1().init___F0(t);
+    this.inst$macro$333$1 = new $c_Lio_circe_generic_decoding_DerivedDecoder$$anon$1().init___Lshapeless_LabelledGeneric__Lshapeless_Lazy(gen$1, decode);
+    this.bitmap$0$1 = (((2 | this.bitmap$0$1) << 24) >> 24)
+  };
+  return this.inst$macro$333$1
+});
+var $d_LCommonState$anon$lazy$macro$352$1 = new $TypeData().initClass({
+  LCommonState$anon$lazy$macro$352$1: 0
+}, false, "CommonState$anon$lazy$macro$352$1", {
+  LCommonState$anon$lazy$macro$352$1: 1,
+  O: 1,
+  s_Serializable: 1,
+  Ljava_io_Serializable: 1
+});
+$c_LCommonState$anon$lazy$macro$352$1.prototype.$classData = $d_LCommonState$anon$lazy$macro$352$1;
+/** @constructor */
+function $c_LMessage$anon$lazy$macro$210$1() {
   $c_O.call(this);
   this.inst$macro$42$1 = null;
   this.inst$macro$37$1 = null;
-  this.inst$macro$68$1 = null;
-  this.inst$macro$61$1 = null;
-  this.inst$macro$96$1 = null;
-  this.inst$macro$89$1 = null;
-  this.inst$macro$120$1 = null;
-  this.inst$macro$115$1 = null;
-  this.inst$macro$139$1 = null;
+  this.inst$macro$59$1 = null;
+  this.inst$macro$80$1 = null;
+  this.inst$macro$73$1 = null;
+  this.inst$macro$108$1 = null;
+  this.inst$macro$101$1 = null;
   this.inst$macro$132$1 = null;
-  this.inst$macro$157$1 = null;
-  this.inst$macro$152$1 = null;
-  this.inst$macro$180$1 = null;
-  this.inst$macro$171$1 = null;
+  this.inst$macro$127$1 = null;
+  this.inst$macro$151$1 = null;
+  this.inst$macro$144$1 = null;
+  this.inst$macro$169$1 = null;
+  this.inst$macro$164$1 = null;
+  this.inst$macro$192$1 = null;
+  this.inst$macro$183$1 = null;
   this.inst$macro$31$1 = null;
   this.inst$macro$28$1 = null;
   this.bitmap$0$1 = 0
 }
-$c_LMessage$anon$lazy$macro$198$1.prototype = new $h_O();
-$c_LMessage$anon$lazy$macro$198$1.prototype.constructor = $c_LMessage$anon$lazy$macro$198$1;
+$c_LMessage$anon$lazy$macro$210$1.prototype = new $h_O();
+$c_LMessage$anon$lazy$macro$210$1.prototype.constructor = $c_LMessage$anon$lazy$macro$210$1;
 /** @constructor */
-function $h_LMessage$anon$lazy$macro$198$1() {
+function $h_LMessage$anon$lazy$macro$210$1() {
   /*<skip>*/
 }
-$h_LMessage$anon$lazy$macro$198$1.prototype = $c_LMessage$anon$lazy$macro$198$1.prototype;
-$c_LMessage$anon$lazy$macro$198$1.prototype.inst$macro$132__Lio_circe_generic_encoding_DerivedObjectEncoder = (function() {
-  return (((512 & this.bitmap$0$1) === 0) ? this.inst$macro$132$lzycompute__p1__Lio_circe_generic_encoding_DerivedObjectEncoder() : this.inst$macro$132$1)
+$h_LMessage$anon$lazy$macro$210$1.prototype = $c_LMessage$anon$lazy$macro$210$1.prototype;
+$c_LMessage$anon$lazy$macro$210$1.prototype.inst$macro$108$lzycompute__p1__Lio_circe_generic_encoding_ReprObjectEncoder = (function() {
+  if (((32 & this.bitmap$0$1) === 0)) {
+    this.inst$macro$108$1 = new $c_LMessage$anon$lazy$macro$210$1$$anon$4().init___LMessage$anon$lazy$macro$210$1(this);
+    this.bitmap$0$1 = (32 | this.bitmap$0$1)
+  };
+  return this.inst$macro$108$1
 });
-$c_LMessage$anon$lazy$macro$198$1.prototype.init___ = (function() {
+$c_LMessage$anon$lazy$macro$210$1.prototype.init___ = (function() {
   return this
 });
-$c_LMessage$anon$lazy$macro$198$1.prototype.inst$macro$152__Lio_circe_generic_encoding_DerivedObjectEncoder = (function() {
-  return (((2048 & this.bitmap$0$1) === 0) ? this.inst$macro$152$lzycompute__p1__Lio_circe_generic_encoding_DerivedObjectEncoder() : this.inst$macro$152$1)
+$c_LMessage$anon$lazy$macro$210$1.prototype.inst$macro$151__Lio_circe_generic_encoding_ReprObjectEncoder = (function() {
+  return (((512 & this.bitmap$0$1) === 0) ? this.inst$macro$151$lzycompute__p1__Lio_circe_generic_encoding_ReprObjectEncoder() : this.inst$macro$151$1)
 });
-$c_LMessage$anon$lazy$macro$198$1.prototype.inst$macro$28__Lio_circe_generic_encoding_DerivedObjectEncoder = (function() {
-  return (((32768 & this.bitmap$0$1) === 0) ? this.inst$macro$28$lzycompute__p1__Lio_circe_generic_encoding_DerivedObjectEncoder() : this.inst$macro$28$1)
+$c_LMessage$anon$lazy$macro$210$1.prototype.inst$macro$73$lzycompute__p1__Lio_circe_generic_encoding_DerivedObjectEncoder = (function() {
+  if (((16 & this.bitmap$0$1) === 0)) {
+    new $c_LMessage$anon$lazy$macro$210$1$$anon$19().init___LMessage$anon$lazy$macro$210$1(this);
+    var gen = new $c_LMessage$anon$lazy$macro$210$1$anon$macro$76$1().init___LMessage$anon$lazy$macro$210$1(this);
+    $m_Lshapeless_ops_hlist$ZipWithKeys$();
+    $m_Lshapeless_ops_hlist$ZipWithKeys$();
+    var zipWithKeys = $m_Lshapeless_ops_hlist$ZipWithKeys$().hnilZipWithKeys$1;
+    $m_Lshapeless_Witness$();
+    var this$1 = $m_s_Symbol$();
+    var value0 = $as_s_Symbol($c_s_JSUniquenessCache.prototype.apply__T__O.call(this$1, "lifes"));
+    new $c_Lshapeless_Witness$$anon$1().init___O(value0);
+    var zipWithKeys$1 = new $c_Lshapeless_ops_hlist$ZipWithKeys$$anon$109().init___Lshapeless_ops_hlist$ZipWithKeys(zipWithKeys);
+    $m_Lshapeless_Witness$();
+    var this$4 = $m_s_Symbol$();
+    var value0$1 = $as_s_Symbol($c_s_JSUniquenessCache.prototype.apply__T__O.call(this$4, "sId"));
+    new $c_Lshapeless_Witness$$anon$1().init___O(value0$1);
+    var zip = new $c_Lshapeless_ops_hlist$ZipWithKeys$$anon$109().init___Lshapeless_ops_hlist$ZipWithKeys(zipWithKeys$1);
+    var ev = $m_s_Predef$().singleton$und$less$colon$less$2;
+    var gen$1 = new $c_Lshapeless_LabelledGeneric$$anon$1().init___Lshapeless_Generic__Lshapeless_ops_hlist$ZipWithKeys__s_Predef$$less$colon$less(gen, zip, ev);
+    var t = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function($this) {
+      return (function() {
+        return $this.inst$macro$80__Lio_circe_generic_encoding_ReprObjectEncoder()
+      })
+    })(this));
+    var encode = new $c_Lshapeless_Lazy$$anon$1().init___F0(t);
+    this.inst$macro$73$1 = new $c_Lio_circe_generic_encoding_DerivedObjectEncoder$$anon$1().init___Lshapeless_LabelledGeneric__Lshapeless_Lazy(gen$1, encode);
+    this.bitmap$0$1 = (16 | this.bitmap$0$1)
+  };
+  return this.inst$macro$73$1
 });
-$c_LMessage$anon$lazy$macro$198$1.prototype.inst$macro$89$lzycompute__p1__Lio_circe_generic_encoding_DerivedObjectEncoder = (function() {
-  if (((32 & this.bitmap$0$1) === 0)) {
-    new $c_LMessage$anon$lazy$macro$198$1$$anon$19().init___LMessage$anon$lazy$macro$198$1(this);
-    var gen = new $c_LMessage$anon$lazy$macro$198$1$anon$macro$92$1().init___LMessage$anon$lazy$macro$198$1(this);
+$c_LMessage$anon$lazy$macro$210$1.prototype.inst$macro$28__Lio_circe_generic_encoding_DerivedObjectEncoder = (function() {
+  return (((65536 & this.bitmap$0$1) === 0) ? this.inst$macro$28$lzycompute__p1__Lio_circe_generic_encoding_DerivedObjectEncoder() : this.inst$macro$28$1)
+});
+$c_LMessage$anon$lazy$macro$210$1.prototype.inst$macro$192$lzycompute__p1__Lio_circe_generic_encoding_ReprObjectEncoder = (function() {
+  if (((8192 & this.bitmap$0$1) === 0)) {
+    this.inst$macro$192$1 = new $c_LMessage$anon$lazy$macro$210$1$$anon$8().init___LMessage$anon$lazy$macro$210$1(this);
+    this.bitmap$0$1 = (8192 | this.bitmap$0$1)
+  };
+  return this.inst$macro$192$1
+});
+$c_LMessage$anon$lazy$macro$210$1.prototype.inst$macro$80$lzycompute__p1__Lio_circe_generic_encoding_ReprObjectEncoder = (function() {
+  if (((8 & this.bitmap$0$1) === 0)) {
+    this.inst$macro$80$1 = new $c_LMessage$anon$lazy$macro$210$1$$anon$3().init___LMessage$anon$lazy$macro$210$1(this);
+    this.bitmap$0$1 = (8 | this.bitmap$0$1)
+  };
+  return this.inst$macro$80$1
+});
+$c_LMessage$anon$lazy$macro$210$1.prototype.inst$macro$183$lzycompute__p1__Lio_circe_generic_encoding_DerivedObjectEncoder = (function() {
+  if (((16384 & this.bitmap$0$1) === 0)) {
+    new $c_LMessage$anon$lazy$macro$210$1$$anon$24().init___LMessage$anon$lazy$macro$210$1(this);
+    var gen = new $c_LMessage$anon$lazy$macro$210$1$anon$macro$187$1().init___LMessage$anon$lazy$macro$210$1(this);
+    $m_Lshapeless_ops_hlist$ZipWithKeys$();
+    $m_Lshapeless_ops_hlist$ZipWithKeys$();
+    $m_Lshapeless_ops_hlist$ZipWithKeys$();
+    var zipWithKeys = $m_Lshapeless_ops_hlist$ZipWithKeys$().hnilZipWithKeys$1;
+    $m_Lshapeless_Witness$();
+    var this$1 = $m_s_Symbol$();
+    var value0 = $as_s_Symbol($c_s_JSUniquenessCache.prototype.apply__T__O.call(this$1, "color"));
+    new $c_Lshapeless_Witness$$anon$1().init___O(value0);
+    var zipWithKeys$1 = new $c_Lshapeless_ops_hlist$ZipWithKeys$$anon$109().init___Lshapeless_ops_hlist$ZipWithKeys(zipWithKeys);
+    $m_Lshapeless_Witness$();
+    var this$4 = $m_s_Symbol$();
+    var value0$1 = $as_s_Symbol($c_s_JSUniquenessCache.prototype.apply__T__O.call(this$4, "size"));
+    new $c_Lshapeless_Witness$$anon$1().init___O(value0$1);
+    var zipWithKeys$2 = new $c_Lshapeless_ops_hlist$ZipWithKeys$$anon$109().init___Lshapeless_ops_hlist$ZipWithKeys(zipWithKeys$1);
+    $m_Lshapeless_Witness$();
+    var this$7 = $m_s_Symbol$();
+    var value0$2 = $as_s_Symbol($c_s_JSUniquenessCache.prototype.apply__T__O.call(this$7, "common"));
+    new $c_Lshapeless_Witness$$anon$1().init___O(value0$2);
+    var zip = new $c_Lshapeless_ops_hlist$ZipWithKeys$$anon$109().init___Lshapeless_ops_hlist$ZipWithKeys(zipWithKeys$2);
+    var ev = $m_s_Predef$().singleton$und$less$colon$less$2;
+    var gen$1 = new $c_Lshapeless_LabelledGeneric$$anon$1().init___Lshapeless_Generic__Lshapeless_ops_hlist$ZipWithKeys__s_Predef$$less$colon$less(gen, zip, ev);
+    var t = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function($this) {
+      return (function() {
+        return $this.inst$macro$192__Lio_circe_generic_encoding_ReprObjectEncoder()
+      })
+    })(this));
+    var encode = new $c_Lshapeless_Lazy$$anon$1().init___F0(t);
+    this.inst$macro$183$1 = new $c_Lio_circe_generic_encoding_DerivedObjectEncoder$$anon$1().init___Lshapeless_LabelledGeneric__Lshapeless_Lazy(gen$1, encode);
+    this.bitmap$0$1 = (16384 | this.bitmap$0$1)
+  };
+  return this.inst$macro$183$1
+});
+$c_LMessage$anon$lazy$macro$210$1.prototype.inst$macro$59$lzycompute__p1__Lio_circe_generic_encoding_DerivedObjectEncoder = (function() {
+  if (((4 & this.bitmap$0$1) === 0)) {
+    new $c_LMessage$anon$lazy$macro$210$1$$anon$18().init___LMessage$anon$lazy$macro$210$1(this);
+    var gen = new $c_LMessage$anon$lazy$macro$210$1$anon$macro$63$1().init___LMessage$anon$lazy$macro$210$1(this);
+    $m_Lshapeless_ops_hlist$ZipWithKeys$();
+    var zipWithKeys = $m_Lshapeless_ops_hlist$ZipWithKeys$().hnilZipWithKeys$1;
+    $m_Lshapeless_Witness$();
+    var this$1 = $m_s_Symbol$();
+    var value0 = $as_s_Symbol($c_s_JSUniquenessCache.prototype.apply__T__O.call(this$1, "common"));
+    new $c_Lshapeless_Witness$$anon$1().init___O(value0);
+    var zip = new $c_Lshapeless_ops_hlist$ZipWithKeys$$anon$109().init___Lshapeless_ops_hlist$ZipWithKeys(zipWithKeys);
+    var ev = $m_s_Predef$().singleton$und$less$colon$less$2;
+    var gen$1 = new $c_Lshapeless_LabelledGeneric$$anon$1().init___Lshapeless_Generic__Lshapeless_ops_hlist$ZipWithKeys__s_Predef$$less$colon$less(gen, zip, ev);
+    var t = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function($this) {
+      return (function() {
+        return $this.inst$macro$42__Lio_circe_generic_encoding_ReprObjectEncoder()
+      })
+    })(this));
+    var encode = new $c_Lshapeless_Lazy$$anon$1().init___F0(t);
+    this.inst$macro$59$1 = new $c_Lio_circe_generic_encoding_DerivedObjectEncoder$$anon$1().init___Lshapeless_LabelledGeneric__Lshapeless_Lazy(gen$1, encode);
+    this.bitmap$0$1 = (4 | this.bitmap$0$1)
+  };
+  return this.inst$macro$59$1
+});
+$c_LMessage$anon$lazy$macro$210$1.prototype.inst$macro$80__Lio_circe_generic_encoding_ReprObjectEncoder = (function() {
+  return (((8 & this.bitmap$0$1) === 0) ? this.inst$macro$80$lzycompute__p1__Lio_circe_generic_encoding_ReprObjectEncoder() : this.inst$macro$80$1)
+});
+$c_LMessage$anon$lazy$macro$210$1.prototype.inst$macro$101$lzycompute__p1__Lio_circe_generic_encoding_DerivedObjectEncoder = (function() {
+  if (((64 & this.bitmap$0$1) === 0)) {
+    new $c_LMessage$anon$lazy$macro$210$1$$anon$20().init___LMessage$anon$lazy$macro$210$1(this);
+    var gen = new $c_LMessage$anon$lazy$macro$210$1$anon$macro$104$1().init___LMessage$anon$lazy$macro$210$1(this);
     $m_Lshapeless_ops_hlist$ZipWithKeys$();
     $m_Lshapeless_ops_hlist$ZipWithKeys$();
     var zipWithKeys = $m_Lshapeless_ops_hlist$ZipWithKeys$().hnilZipWithKeys$1;
@@ -13517,96 +13506,52 @@ $c_LMessage$anon$lazy$macro$198$1.prototype.inst$macro$89$lzycompute__p1__Lio_ci
     var gen$1 = new $c_Lshapeless_LabelledGeneric$$anon$1().init___Lshapeless_Generic__Lshapeless_ops_hlist$ZipWithKeys__s_Predef$$less$colon$less(gen, zip, ev);
     var t = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function($this) {
       return (function() {
-        return $this.inst$macro$96__Lio_circe_generic_encoding_ReprObjectEncoder()
+        return $this.inst$macro$108__Lio_circe_generic_encoding_ReprObjectEncoder()
       })
     })(this));
     var encode = new $c_Lshapeless_Lazy$$anon$1().init___F0(t);
-    this.inst$macro$89$1 = new $c_Lio_circe_generic_encoding_DerivedObjectEncoder$$anon$1().init___Lshapeless_LabelledGeneric__Lshapeless_Lazy(gen$1, encode);
-    this.bitmap$0$1 = (32 | this.bitmap$0$1)
-  };
-  return this.inst$macro$89$1
-});
-$c_LMessage$anon$lazy$macro$198$1.prototype.inst$macro$96__Lio_circe_generic_encoding_ReprObjectEncoder = (function() {
-  return (((16 & this.bitmap$0$1) === 0) ? this.inst$macro$96$lzycompute__p1__Lio_circe_generic_encoding_ReprObjectEncoder() : this.inst$macro$96$1)
-});
-$c_LMessage$anon$lazy$macro$198$1.prototype.inst$macro$115__Lio_circe_generic_encoding_DerivedObjectEncoder = (function() {
-  return (((128 & this.bitmap$0$1) === 0) ? this.inst$macro$115$lzycompute__p1__Lio_circe_generic_encoding_DerivedObjectEncoder() : this.inst$macro$115$1)
-});
-$c_LMessage$anon$lazy$macro$198$1.prototype.inst$macro$120$lzycompute__p1__Lio_circe_generic_encoding_ReprObjectEncoder = (function() {
-  if (((64 & this.bitmap$0$1) === 0)) {
-    this.inst$macro$120$1 = new $c_LMessage$anon$lazy$macro$198$1$$anon$5().init___LMessage$anon$lazy$macro$198$1(this);
+    this.inst$macro$101$1 = new $c_Lio_circe_generic_encoding_DerivedObjectEncoder$$anon$1().init___Lshapeless_LabelledGeneric__Lshapeless_Lazy(gen$1, encode);
     this.bitmap$0$1 = (64 | this.bitmap$0$1)
   };
-  return this.inst$macro$120$1
+  return this.inst$macro$101$1
 });
-$c_LMessage$anon$lazy$macro$198$1.prototype.inst$macro$89__Lio_circe_generic_encoding_DerivedObjectEncoder = (function() {
-  return (((32 & this.bitmap$0$1) === 0) ? this.inst$macro$89$lzycompute__p1__Lio_circe_generic_encoding_DerivedObjectEncoder() : this.inst$macro$89$1)
+$c_LMessage$anon$lazy$macro$210$1.prototype.inst$macro$192__Lio_circe_generic_encoding_ReprObjectEncoder = (function() {
+  return (((8192 & this.bitmap$0$1) === 0) ? this.inst$macro$192$lzycompute__p1__Lio_circe_generic_encoding_ReprObjectEncoder() : this.inst$macro$192$1)
 });
-$c_LMessage$anon$lazy$macro$198$1.prototype.inst$macro$132$lzycompute__p1__Lio_circe_generic_encoding_DerivedObjectEncoder = (function() {
-  if (((512 & this.bitmap$0$1) === 0)) {
-    new $c_LMessage$anon$lazy$macro$198$1$$anon$21().init___LMessage$anon$lazy$macro$198$1(this);
-    var gen = new $c_LMessage$anon$lazy$macro$198$1$anon$macro$135$1().init___LMessage$anon$lazy$macro$198$1(this);
-    $m_Lshapeless_ops_hlist$ZipWithKeys$();
-    $m_Lshapeless_ops_hlist$ZipWithKeys$();
-    var zipWithKeys = $m_Lshapeless_ops_hlist$ZipWithKeys$().hnilZipWithKeys$1;
-    $m_Lshapeless_Witness$();
-    var this$1 = $m_s_Symbol$();
-    var value0 = $as_s_Symbol($c_s_JSUniquenessCache.prototype.apply__T__O.call(this$1, "cmd"));
-    new $c_Lshapeless_Witness$$anon$1().init___O(value0);
-    var zipWithKeys$1 = new $c_Lshapeless_ops_hlist$ZipWithKeys$$anon$109().init___Lshapeless_ops_hlist$ZipWithKeys(zipWithKeys);
-    $m_Lshapeless_Witness$();
-    var this$4 = $m_s_Symbol$();
-    var value0$1 = $as_s_Symbol($c_s_JSUniquenessCache.prototype.apply__T__O.call(this$4, "sId"));
-    new $c_Lshapeless_Witness$$anon$1().init___O(value0$1);
-    var zip = new $c_Lshapeless_ops_hlist$ZipWithKeys$$anon$109().init___Lshapeless_ops_hlist$ZipWithKeys(zipWithKeys$1);
-    var ev = $m_s_Predef$().singleton$und$less$colon$less$2;
-    var gen$1 = new $c_Lshapeless_LabelledGeneric$$anon$1().init___Lshapeless_Generic__Lshapeless_ops_hlist$ZipWithKeys__s_Predef$$less$colon$less(gen, zip, ev);
-    var t = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function($this) {
-      return (function() {
-        return $this.inst$macro$139__Lio_circe_generic_encoding_ReprObjectEncoder()
-      })
-    })(this));
-    var encode = new $c_Lshapeless_Lazy$$anon$1().init___F0(t);
-    this.inst$macro$132$1 = new $c_Lio_circe_generic_encoding_DerivedObjectEncoder$$anon$1().init___Lshapeless_LabelledGeneric__Lshapeless_Lazy(gen$1, encode);
-    this.bitmap$0$1 = (512 | this.bitmap$0$1)
-  };
-  return this.inst$macro$132$1
+$c_LMessage$anon$lazy$macro$210$1.prototype.inst$macro$73__Lio_circe_generic_encoding_DerivedObjectEncoder = (function() {
+  return (((16 & this.bitmap$0$1) === 0) ? this.inst$macro$73$lzycompute__p1__Lio_circe_generic_encoding_DerivedObjectEncoder() : this.inst$macro$73$1)
 });
-$c_LMessage$anon$lazy$macro$198$1.prototype.inst$macro$157$lzycompute__p1__Lio_circe_generic_encoding_ReprObjectEncoder = (function() {
-  if (((1024 & this.bitmap$0$1) === 0)) {
-    this.inst$macro$157$1 = new $c_LMessage$anon$lazy$macro$198$1$$anon$7().init___LMessage$anon$lazy$macro$198$1(this);
-    this.bitmap$0$1 = (1024 | this.bitmap$0$1)
-  };
-  return this.inst$macro$157$1
-});
-$c_LMessage$anon$lazy$macro$198$1.prototype.inst$macro$115$lzycompute__p1__Lio_circe_generic_encoding_DerivedObjectEncoder = (function() {
-  if (((128 & this.bitmap$0$1) === 0)) {
-    new $c_LMessage$anon$lazy$macro$198$1$$anon$20().init___LMessage$anon$lazy$macro$198$1(this);
-    var gen = new $c_LMessage$anon$lazy$macro$198$1$anon$macro$117$1().init___LMessage$anon$lazy$macro$198$1(this);
+$c_LMessage$anon$lazy$macro$210$1.prototype.inst$macro$164$lzycompute__p1__Lio_circe_generic_encoding_DerivedObjectEncoder = (function() {
+  if (((4096 & this.bitmap$0$1) === 0)) {
+    new $c_LMessage$anon$lazy$macro$210$1$$anon$23().init___LMessage$anon$lazy$macro$210$1(this);
+    var gen = new $c_LMessage$anon$lazy$macro$210$1$anon$macro$166$1().init___LMessage$anon$lazy$macro$210$1(this);
     $m_Lshapeless_ops_hlist$ZipWithKeys$();
     var zipWithKeys = $m_Lshapeless_ops_hlist$ZipWithKeys$().hnilZipWithKeys$1;
     $m_Lshapeless_Witness$();
     var this$1 = $m_s_Symbol$();
-    var value0 = $as_s_Symbol($c_s_JSUniquenessCache.prototype.apply__T__O.call(this$1, "destroy"));
+    var value0 = $as_s_Symbol($c_s_JSUniquenessCache.prototype.apply__T__O.call(this$1, "clientId"));
     new $c_Lshapeless_Witness$$anon$1().init___O(value0);
     var zip = new $c_Lshapeless_ops_hlist$ZipWithKeys$$anon$109().init___Lshapeless_ops_hlist$ZipWithKeys(zipWithKeys);
     var ev = $m_s_Predef$().singleton$und$less$colon$less$2;
     var gen$1 = new $c_Lshapeless_LabelledGeneric$$anon$1().init___Lshapeless_Generic__Lshapeless_ops_hlist$ZipWithKeys__s_Predef$$less$colon$less(gen, zip, ev);
     var t = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function($this) {
       return (function() {
-        return $this.inst$macro$120__Lio_circe_generic_encoding_ReprObjectEncoder()
+        return $this.inst$macro$169__Lio_circe_generic_encoding_ReprObjectEncoder()
       })
     })(this));
     var encode = new $c_Lshapeless_Lazy$$anon$1().init___F0(t);
-    this.inst$macro$115$1 = new $c_Lio_circe_generic_encoding_DerivedObjectEncoder$$anon$1().init___Lshapeless_LabelledGeneric__Lshapeless_Lazy(gen$1, encode);
-    this.bitmap$0$1 = (128 | this.bitmap$0$1)
+    this.inst$macro$164$1 = new $c_Lio_circe_generic_encoding_DerivedObjectEncoder$$anon$1().init___Lshapeless_LabelledGeneric__Lshapeless_Lazy(gen$1, encode);
+    this.bitmap$0$1 = (4096 | this.bitmap$0$1)
   };
-  return this.inst$macro$115$1
+  return this.inst$macro$164$1
 });
-$c_LMessage$anon$lazy$macro$198$1.prototype.inst$macro$37$lzycompute__p1__Lio_circe_generic_encoding_DerivedObjectEncoder = (function() {
+$c_LMessage$anon$lazy$macro$210$1.prototype.inst$macro$101__Lio_circe_generic_encoding_DerivedObjectEncoder = (function() {
+  return (((64 & this.bitmap$0$1) === 0) ? this.inst$macro$101$lzycompute__p1__Lio_circe_generic_encoding_DerivedObjectEncoder() : this.inst$macro$101$1)
+});
+$c_LMessage$anon$lazy$macro$210$1.prototype.inst$macro$37$lzycompute__p1__Lio_circe_generic_encoding_DerivedObjectEncoder = (function() {
   if (((2 & this.bitmap$0$1) === 0)) {
-    new $c_LMessage$anon$lazy$macro$198$1$$anon$17().init___LMessage$anon$lazy$macro$198$1(this);
-    var gen = new $c_LMessage$anon$lazy$macro$198$1$anon$macro$41$1().init___LMessage$anon$lazy$macro$198$1(this);
+    new $c_LMessage$anon$lazy$macro$210$1$$anon$17().init___LMessage$anon$lazy$macro$210$1(this);
+    var gen = new $c_LMessage$anon$lazy$macro$210$1$anon$macro$41$1().init___LMessage$anon$lazy$macro$210$1(this);
     $m_Lshapeless_ops_hlist$ZipWithKeys$();
     var zipWithKeys = $m_Lshapeless_ops_hlist$ZipWithKeys$().hnilZipWithKeys$1;
     $m_Lshapeless_Witness$();
@@ -13627,302 +13572,13 @@ $c_LMessage$anon$lazy$macro$198$1.prototype.inst$macro$37$lzycompute__p1__Lio_ci
   };
   return this.inst$macro$37$1
 });
-$c_LMessage$anon$lazy$macro$198$1.prototype.inst$macro$42__Lio_circe_generic_encoding_ReprObjectEncoder = (function() {
+$c_LMessage$anon$lazy$macro$210$1.prototype.inst$macro$42__Lio_circe_generic_encoding_ReprObjectEncoder = (function() {
   return (((1 & this.bitmap$0$1) === 0) ? this.inst$macro$42$lzycompute__p1__Lio_circe_generic_encoding_ReprObjectEncoder() : this.inst$macro$42$1)
 });
-$c_LMessage$anon$lazy$macro$198$1.prototype.inst$macro$180__Lio_circe_generic_encoding_ReprObjectEncoder = (function() {
-  return (((4096 & this.bitmap$0$1) === 0) ? this.inst$macro$180$lzycompute__p1__Lio_circe_generic_encoding_ReprObjectEncoder() : this.inst$macro$180$1)
-});
-$c_LMessage$anon$lazy$macro$198$1.prototype.inst$macro$37__Lio_circe_generic_encoding_DerivedObjectEncoder = (function() {
-  return (((2 & this.bitmap$0$1) === 0) ? this.inst$macro$37$lzycompute__p1__Lio_circe_generic_encoding_DerivedObjectEncoder() : this.inst$macro$37$1)
-});
-$c_LMessage$anon$lazy$macro$198$1.prototype.inst$macro$139$lzycompute__p1__Lio_circe_generic_encoding_ReprObjectEncoder = (function() {
-  if (((256 & this.bitmap$0$1) === 0)) {
-    this.inst$macro$139$1 = new $c_LMessage$anon$lazy$macro$198$1$$anon$6().init___LMessage$anon$lazy$macro$198$1(this);
-    this.bitmap$0$1 = (256 | this.bitmap$0$1)
-  };
-  return this.inst$macro$139$1
-});
-$c_LMessage$anon$lazy$macro$198$1.prototype.inst$macro$61__Lio_circe_generic_encoding_DerivedObjectEncoder = (function() {
-  return (((8 & this.bitmap$0$1) === 0) ? this.inst$macro$61$lzycompute__p1__Lio_circe_generic_encoding_DerivedObjectEncoder() : this.inst$macro$61$1)
-});
-$c_LMessage$anon$lazy$macro$198$1.prototype.inst$macro$180$lzycompute__p1__Lio_circe_generic_encoding_ReprObjectEncoder = (function() {
-  if (((4096 & this.bitmap$0$1) === 0)) {
-    this.inst$macro$180$1 = new $c_LMessage$anon$lazy$macro$198$1$$anon$8().init___LMessage$anon$lazy$macro$198$1(this);
-    this.bitmap$0$1 = (4096 | this.bitmap$0$1)
-  };
-  return this.inst$macro$180$1
-});
-$c_LMessage$anon$lazy$macro$198$1.prototype.inst$macro$96$lzycompute__p1__Lio_circe_generic_encoding_ReprObjectEncoder = (function() {
-  if (((16 & this.bitmap$0$1) === 0)) {
-    this.inst$macro$96$1 = new $c_LMessage$anon$lazy$macro$198$1$$anon$4().init___LMessage$anon$lazy$macro$198$1(this);
-    this.bitmap$0$1 = (16 | this.bitmap$0$1)
-  };
-  return this.inst$macro$96$1
-});
-$c_LMessage$anon$lazy$macro$198$1.prototype.inst$macro$139__Lio_circe_generic_encoding_ReprObjectEncoder = (function() {
-  return (((256 & this.bitmap$0$1) === 0) ? this.inst$macro$139$lzycompute__p1__Lio_circe_generic_encoding_ReprObjectEncoder() : this.inst$macro$139$1)
-});
-$c_LMessage$anon$lazy$macro$198$1.prototype.inst$macro$42$lzycompute__p1__Lio_circe_generic_encoding_ReprObjectEncoder = (function() {
-  if (((1 & this.bitmap$0$1) === 0)) {
-    this.inst$macro$42$1 = new $c_LMessage$anon$lazy$macro$198$1$$anon$2().init___LMessage$anon$lazy$macro$198$1(this);
-    this.bitmap$0$1 = (1 | this.bitmap$0$1)
-  };
-  return this.inst$macro$42$1
-});
-$c_LMessage$anon$lazy$macro$198$1.prototype.inst$macro$157__Lio_circe_generic_encoding_ReprObjectEncoder = (function() {
-  return (((1024 & this.bitmap$0$1) === 0) ? this.inst$macro$157$lzycompute__p1__Lio_circe_generic_encoding_ReprObjectEncoder() : this.inst$macro$157$1)
-});
-$c_LMessage$anon$lazy$macro$198$1.prototype.inst$macro$61$lzycompute__p1__Lio_circe_generic_encoding_DerivedObjectEncoder = (function() {
-  if (((8 & this.bitmap$0$1) === 0)) {
-    new $c_LMessage$anon$lazy$macro$198$1$$anon$18().init___LMessage$anon$lazy$macro$198$1(this);
-    var gen = new $c_LMessage$anon$lazy$macro$198$1$anon$macro$67$1().init___LMessage$anon$lazy$macro$198$1(this);
-    $m_Lshapeless_ops_hlist$ZipWithKeys$();
-    $m_Lshapeless_ops_hlist$ZipWithKeys$();
-    var zipWithKeys = $m_Lshapeless_ops_hlist$ZipWithKeys$().hnilZipWithKeys$1;
-    $m_Lshapeless_Witness$();
-    var this$1 = $m_s_Symbol$();
-    var value0 = $as_s_Symbol($c_s_JSUniquenessCache.prototype.apply__T__O.call(this$1, "lifes"));
-    new $c_Lshapeless_Witness$$anon$1().init___O(value0);
-    var zipWithKeys$1 = new $c_Lshapeless_ops_hlist$ZipWithKeys$$anon$109().init___Lshapeless_ops_hlist$ZipWithKeys(zipWithKeys);
-    $m_Lshapeless_Witness$();
-    var this$4 = $m_s_Symbol$();
-    var value0$1 = $as_s_Symbol($c_s_JSUniquenessCache.prototype.apply__T__O.call(this$4, "sId"));
-    new $c_Lshapeless_Witness$$anon$1().init___O(value0$1);
-    var zip = new $c_Lshapeless_ops_hlist$ZipWithKeys$$anon$109().init___Lshapeless_ops_hlist$ZipWithKeys(zipWithKeys$1);
-    var ev = $m_s_Predef$().singleton$und$less$colon$less$2;
-    var gen$1 = new $c_Lshapeless_LabelledGeneric$$anon$1().init___Lshapeless_Generic__Lshapeless_ops_hlist$ZipWithKeys__s_Predef$$less$colon$less(gen, zip, ev);
-    var t = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function($this) {
-      return (function() {
-        return $this.inst$macro$68__Lio_circe_generic_encoding_ReprObjectEncoder()
-      })
-    })(this));
-    var encode = new $c_Lshapeless_Lazy$$anon$1().init___F0(t);
-    this.inst$macro$61$1 = new $c_Lio_circe_generic_encoding_DerivedObjectEncoder$$anon$1().init___Lshapeless_LabelledGeneric__Lshapeless_Lazy(gen$1, encode);
-    this.bitmap$0$1 = (8 | this.bitmap$0$1)
-  };
-  return this.inst$macro$61$1
-});
-$c_LMessage$anon$lazy$macro$198$1.prototype.inst$macro$31$lzycompute__p1__Lio_circe_generic_encoding_ReprObjectEncoder = (function() {
-  if (((16384 & this.bitmap$0$1) === 0)) {
-    this.inst$macro$31$1 = new $c_LMessage$anon$lazy$macro$198$1$$anon$9().init___LMessage$anon$lazy$macro$198$1(this);
-    this.bitmap$0$1 = (16384 | this.bitmap$0$1)
-  };
-  return this.inst$macro$31$1
-});
-$c_LMessage$anon$lazy$macro$198$1.prototype.inst$macro$171$lzycompute__p1__Lio_circe_generic_encoding_DerivedObjectEncoder = (function() {
-  if (((8192 & this.bitmap$0$1) === 0)) {
-    new $c_LMessage$anon$lazy$macro$198$1$$anon$23().init___LMessage$anon$lazy$macro$198$1(this);
-    var gen = new $c_LMessage$anon$lazy$macro$198$1$anon$macro$175$1().init___LMessage$anon$lazy$macro$198$1(this);
-    $m_Lshapeless_ops_hlist$ZipWithKeys$();
-    $m_Lshapeless_ops_hlist$ZipWithKeys$();
-    $m_Lshapeless_ops_hlist$ZipWithKeys$();
-    var zipWithKeys = $m_Lshapeless_ops_hlist$ZipWithKeys$().hnilZipWithKeys$1;
-    $m_Lshapeless_Witness$();
-    var this$1 = $m_s_Symbol$();
-    var value0 = $as_s_Symbol($c_s_JSUniquenessCache.prototype.apply__T__O.call(this$1, "color"));
-    new $c_Lshapeless_Witness$$anon$1().init___O(value0);
-    var zipWithKeys$1 = new $c_Lshapeless_ops_hlist$ZipWithKeys$$anon$109().init___Lshapeless_ops_hlist$ZipWithKeys(zipWithKeys);
-    $m_Lshapeless_Witness$();
-    var this$4 = $m_s_Symbol$();
-    var value0$1 = $as_s_Symbol($c_s_JSUniquenessCache.prototype.apply__T__O.call(this$4, "size"));
-    new $c_Lshapeless_Witness$$anon$1().init___O(value0$1);
-    var zipWithKeys$2 = new $c_Lshapeless_ops_hlist$ZipWithKeys$$anon$109().init___Lshapeless_ops_hlist$ZipWithKeys(zipWithKeys$1);
-    $m_Lshapeless_Witness$();
-    var this$7 = $m_s_Symbol$();
-    var value0$2 = $as_s_Symbol($c_s_JSUniquenessCache.prototype.apply__T__O.call(this$7, "common"));
-    new $c_Lshapeless_Witness$$anon$1().init___O(value0$2);
-    var zip = new $c_Lshapeless_ops_hlist$ZipWithKeys$$anon$109().init___Lshapeless_ops_hlist$ZipWithKeys(zipWithKeys$2);
-    var ev = $m_s_Predef$().singleton$und$less$colon$less$2;
-    var gen$1 = new $c_Lshapeless_LabelledGeneric$$anon$1().init___Lshapeless_Generic__Lshapeless_ops_hlist$ZipWithKeys__s_Predef$$less$colon$less(gen, zip, ev);
-    var t = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function($this) {
-      return (function() {
-        return $this.inst$macro$180__Lio_circe_generic_encoding_ReprObjectEncoder()
-      })
-    })(this));
-    var encode = new $c_Lshapeless_Lazy$$anon$1().init___F0(t);
-    this.inst$macro$171$1 = new $c_Lio_circe_generic_encoding_DerivedObjectEncoder$$anon$1().init___Lshapeless_LabelledGeneric__Lshapeless_Lazy(gen$1, encode);
-    this.bitmap$0$1 = (8192 | this.bitmap$0$1)
-  };
-  return this.inst$macro$171$1
-});
-$c_LMessage$anon$lazy$macro$198$1.prototype.inst$macro$120__Lio_circe_generic_encoding_ReprObjectEncoder = (function() {
-  return (((64 & this.bitmap$0$1) === 0) ? this.inst$macro$120$lzycompute__p1__Lio_circe_generic_encoding_ReprObjectEncoder() : this.inst$macro$120$1)
-});
-$c_LMessage$anon$lazy$macro$198$1.prototype.inst$macro$68__Lio_circe_generic_encoding_ReprObjectEncoder = (function() {
-  return (((4 & this.bitmap$0$1) === 0) ? this.inst$macro$68$lzycompute__p1__Lio_circe_generic_encoding_ReprObjectEncoder() : this.inst$macro$68$1)
-});
-$c_LMessage$anon$lazy$macro$198$1.prototype.inst$macro$68$lzycompute__p1__Lio_circe_generic_encoding_ReprObjectEncoder = (function() {
-  if (((4 & this.bitmap$0$1) === 0)) {
-    this.inst$macro$68$1 = new $c_LMessage$anon$lazy$macro$198$1$$anon$3().init___LMessage$anon$lazy$macro$198$1(this);
-    this.bitmap$0$1 = (4 | this.bitmap$0$1)
-  };
-  return this.inst$macro$68$1
-});
-$c_LMessage$anon$lazy$macro$198$1.prototype.inst$macro$28$lzycompute__p1__Lio_circe_generic_encoding_DerivedObjectEncoder = (function() {
-  if (((32768 & this.bitmap$0$1) === 0)) {
-    new $c_LMessage$anon$lazy$macro$198$1$$anon$24().init___LMessage$anon$lazy$macro$198$1(this);
-    var gen = new $c_LMessage$anon$lazy$macro$198$1$anon$macro$29$1().init___LMessage$anon$lazy$macro$198$1(this);
-    $m_Lshapeless_ops_coproduct$ZipWithKeys$();
-    $m_Lshapeless_ops_coproduct$ZipWithKeys$();
-    $m_Lshapeless_ops_coproduct$ZipWithKeys$();
-    $m_Lshapeless_ops_coproduct$ZipWithKeys$();
-    $m_Lshapeless_ops_coproduct$ZipWithKeys$();
-    $m_Lshapeless_ops_coproduct$ZipWithKeys$();
-    $m_Lshapeless_ops_coproduct$ZipWithKeys$();
-    $m_Lshapeless_ops_coproduct$ZipWithKeys$();
-    $m_Lshapeless_ops_coproduct$ZipWithKeys$();
-    var zipWithKeys = $m_Lshapeless_ops_coproduct$ZipWithKeys$().cnilZipWithKeys$1;
-    $m_Lshapeless_Witness$();
-    var this$1 = $m_s_Symbol$();
-    var value0 = $as_s_Symbol($c_s_JSUniquenessCache.prototype.apply__T__O.call(this$1, "Spaceship"));
-    new $c_Lshapeless_Witness$$anon$1().init___O(value0);
-    var zipWithKeys$1 = new $c_Lshapeless_ops_coproduct$ZipWithKeys$$anon$22().init___Lshapeless_ops_coproduct$ZipWithKeys(zipWithKeys);
-    $m_Lshapeless_Witness$();
-    var this$4 = $m_s_Symbol$();
-    var value0$1 = $as_s_Symbol($c_s_JSUniquenessCache.prototype.apply__T__O.call(this$4, "SetLifes"));
-    new $c_Lshapeless_Witness$$anon$1().init___O(value0$1);
-    var zipWithKeys$2 = new $c_Lshapeless_ops_coproduct$ZipWithKeys$$anon$22().init___Lshapeless_ops_coproduct$ZipWithKeys(zipWithKeys$1);
-    $m_Lshapeless_Witness$();
-    var this$7 = $m_s_Symbol$();
-    var value0$2 = $as_s_Symbol($c_s_JSUniquenessCache.prototype.apply__T__O.call(this$7, "Pong"));
-    new $c_Lshapeless_Witness$$anon$1().init___O(value0$2);
-    var zipWithKeys$3 = new $c_Lshapeless_ops_coproduct$ZipWithKeys$$anon$22().init___Lshapeless_ops_coproduct$ZipWithKeys(zipWithKeys$2);
-    $m_Lshapeless_Witness$();
-    var this$10 = $m_s_Symbol$();
-    var value0$3 = $as_s_Symbol($c_s_JSUniquenessCache.prototype.apply__T__O.call(this$10, "Ping"));
-    new $c_Lshapeless_Witness$$anon$1().init___O(value0$3);
-    var zipWithKeys$4 = new $c_Lshapeless_ops_coproduct$ZipWithKeys$$anon$22().init___Lshapeless_ops_coproduct$ZipWithKeys(zipWithKeys$3);
-    $m_Lshapeless_Witness$();
-    var this$13 = $m_s_Symbol$();
-    var value0$4 = $as_s_Symbol($c_s_JSUniquenessCache.prototype.apply__T__O.call(this$13, "Laser"));
-    new $c_Lshapeless_Witness$$anon$1().init___O(value0$4);
-    var zipWithKeys$5 = new $c_Lshapeless_ops_coproduct$ZipWithKeys$$anon$22().init___Lshapeless_ops_coproduct$ZipWithKeys(zipWithKeys$4);
-    $m_Lshapeless_Witness$();
-    var this$16 = $m_s_Symbol$();
-    var value0$5 = $as_s_Symbol($c_s_JSUniquenessCache.prototype.apply__T__O.call(this$16, "Destroy"));
-    new $c_Lshapeless_Witness$$anon$1().init___O(value0$5);
-    var zipWithKeys$6 = new $c_Lshapeless_ops_coproduct$ZipWithKeys$$anon$22().init___Lshapeless_ops_coproduct$ZipWithKeys(zipWithKeys$5);
-    $m_Lshapeless_Witness$();
-    var this$19 = $m_s_Symbol$();
-    var value0$6 = $as_s_Symbol($c_s_JSUniquenessCache.prototype.apply__T__O.call(this$19, "Cmd"));
-    new $c_Lshapeless_Witness$$anon$1().init___O(value0$6);
-    var zipWithKeys$7 = new $c_Lshapeless_ops_coproduct$ZipWithKeys$$anon$22().init___Lshapeless_ops_coproduct$ZipWithKeys(zipWithKeys$6);
-    $m_Lshapeless_Witness$();
-    var this$22 = $m_s_Symbol$();
-    var value0$7 = $as_s_Symbol($c_s_JSUniquenessCache.prototype.apply__T__O.call(this$22, "ClientId"));
-    new $c_Lshapeless_Witness$$anon$1().init___O(value0$7);
-    var zipWithKeys$8 = new $c_Lshapeless_ops_coproduct$ZipWithKeys$$anon$22().init___Lshapeless_ops_coproduct$ZipWithKeys(zipWithKeys$7);
-    $m_Lshapeless_Witness$();
-    var this$25 = $m_s_Symbol$();
-    var value0$8 = $as_s_Symbol($c_s_JSUniquenessCache.prototype.apply__T__O.call(this$25, "Asteroid"));
-    new $c_Lshapeless_Witness$$anon$1().init___O(value0$8);
-    var zip = new $c_Lshapeless_ops_coproduct$ZipWithKeys$$anon$22().init___Lshapeless_ops_coproduct$ZipWithKeys(zipWithKeys$8);
-    var ev = $m_s_Predef$().singleton$und$less$colon$less$2;
-    var gen$1 = new $c_Lshapeless_LabelledGeneric$$anon$2().init___Lshapeless_Generic__Lshapeless_ops_coproduct$ZipWithKeys__s_Predef$$less$colon$less(gen, zip, ev);
-    var t = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function($this) {
-      return (function() {
-        return $this.inst$macro$31__Lio_circe_generic_encoding_ReprObjectEncoder()
-      })
-    })(this));
-    var encode = new $c_Lshapeless_Lazy$$anon$1().init___F0(t);
-    this.inst$macro$28$1 = new $c_Lio_circe_generic_encoding_DerivedObjectEncoder$$anon$1().init___Lshapeless_LabelledGeneric__Lshapeless_Lazy(gen$1, encode);
-    this.bitmap$0$1 = (32768 | this.bitmap$0$1)
-  };
-  return this.inst$macro$28$1
-});
-$c_LMessage$anon$lazy$macro$198$1.prototype.inst$macro$31__Lio_circe_generic_encoding_ReprObjectEncoder = (function() {
-  return (((16384 & this.bitmap$0$1) === 0) ? this.inst$macro$31$lzycompute__p1__Lio_circe_generic_encoding_ReprObjectEncoder() : this.inst$macro$31$1)
-});
-$c_LMessage$anon$lazy$macro$198$1.prototype.inst$macro$171__Lio_circe_generic_encoding_DerivedObjectEncoder = (function() {
-  return (((8192 & this.bitmap$0$1) === 0) ? this.inst$macro$171$lzycompute__p1__Lio_circe_generic_encoding_DerivedObjectEncoder() : this.inst$macro$171$1)
-});
-$c_LMessage$anon$lazy$macro$198$1.prototype.inst$macro$152$lzycompute__p1__Lio_circe_generic_encoding_DerivedObjectEncoder = (function() {
-  if (((2048 & this.bitmap$0$1) === 0)) {
-    new $c_LMessage$anon$lazy$macro$198$1$$anon$22().init___LMessage$anon$lazy$macro$198$1(this);
-    var gen = new $c_LMessage$anon$lazy$macro$198$1$anon$macro$154$1().init___LMessage$anon$lazy$macro$198$1(this);
-    $m_Lshapeless_ops_hlist$ZipWithKeys$();
-    var zipWithKeys = $m_Lshapeless_ops_hlist$ZipWithKeys$().hnilZipWithKeys$1;
-    $m_Lshapeless_Witness$();
-    var this$1 = $m_s_Symbol$();
-    var value0 = $as_s_Symbol($c_s_JSUniquenessCache.prototype.apply__T__O.call(this$1, "clientId"));
-    new $c_Lshapeless_Witness$$anon$1().init___O(value0);
-    var zip = new $c_Lshapeless_ops_hlist$ZipWithKeys$$anon$109().init___Lshapeless_ops_hlist$ZipWithKeys(zipWithKeys);
-    var ev = $m_s_Predef$().singleton$und$less$colon$less$2;
-    var gen$1 = new $c_Lshapeless_LabelledGeneric$$anon$1().init___Lshapeless_Generic__Lshapeless_ops_hlist$ZipWithKeys__s_Predef$$less$colon$less(gen, zip, ev);
-    var t = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function($this) {
-      return (function() {
-        return $this.inst$macro$157__Lio_circe_generic_encoding_ReprObjectEncoder()
-      })
-    })(this));
-    var encode = new $c_Lshapeless_Lazy$$anon$1().init___F0(t);
-    this.inst$macro$152$1 = new $c_Lio_circe_generic_encoding_DerivedObjectEncoder$$anon$1().init___Lshapeless_LabelledGeneric__Lshapeless_Lazy(gen$1, encode);
-    this.bitmap$0$1 = (2048 | this.bitmap$0$1)
-  };
-  return this.inst$macro$152$1
-});
-var $d_LMessage$anon$lazy$macro$198$1 = new $TypeData().initClass({
-  LMessage$anon$lazy$macro$198$1: 0
-}, false, "Message$anon$lazy$macro$198$1", {
-  LMessage$anon$lazy$macro$198$1: 1,
-  O: 1,
-  s_Serializable: 1,
-  Ljava_io_Serializable: 1
-});
-$c_LMessage$anon$lazy$macro$198$1.prototype.$classData = $d_LMessage$anon$lazy$macro$198$1;
-/** @constructor */
-function $c_LMessage$anon$lazy$macro$283$1() {
-  $c_O.call(this);
-  this.inst$macro$210$1 = null;
-  this.inst$macro$205$1 = null;
-  this.inst$macro$220$1 = null;
-  this.inst$macro$213$1 = null;
-  this.inst$macro$226$1 = null;
-  this.inst$macro$223$1 = null;
-  this.inst$macro$228$1 = null;
-  this.inst$macro$239$1 = null;
-  this.inst$macro$232$1 = null;
-  this.inst$macro$248$1 = null;
-  this.inst$macro$243$1 = null;
-  this.inst$macro$258$1 = null;
-  this.inst$macro$251$1 = null;
-  this.inst$macro$267$1 = null;
-  this.inst$macro$262$1 = null;
-  this.inst$macro$279$1 = null;
-  this.inst$macro$270$1 = null;
-  this.inst$macro$203$1 = null;
-  this.inst$macro$200$1 = null;
-  this.bitmap$0$1 = 0
-}
-$c_LMessage$anon$lazy$macro$283$1.prototype = new $h_O();
-$c_LMessage$anon$lazy$macro$283$1.prototype.constructor = $c_LMessage$anon$lazy$macro$283$1;
-/** @constructor */
-function $h_LMessage$anon$lazy$macro$283$1() {
-  /*<skip>*/
-}
-$h_LMessage$anon$lazy$macro$283$1.prototype = $c_LMessage$anon$lazy$macro$283$1.prototype;
-$c_LMessage$anon$lazy$macro$283$1.prototype.inst$macro$205__Lio_circe_generic_decoding_DerivedDecoder = (function() {
-  return (((2 & this.bitmap$0$1) === 0) ? this.inst$macro$205$lzycompute__p1__Lio_circe_generic_decoding_DerivedDecoder() : this.inst$macro$205$1)
-});
-$c_LMessage$anon$lazy$macro$283$1.prototype.init___ = (function() {
-  return this
-});
-$c_LMessage$anon$lazy$macro$283$1.prototype.inst$macro$243__Lio_circe_generic_decoding_DerivedDecoder = (function() {
-  return (((1024 & this.bitmap$0$1) === 0) ? this.inst$macro$243$lzycompute__p1__Lio_circe_generic_decoding_DerivedDecoder() : this.inst$macro$243$1)
-});
-$c_LMessage$anon$lazy$macro$283$1.prototype.inst$macro$270__Lio_circe_generic_decoding_DerivedDecoder = (function() {
-  return (((65536 & this.bitmap$0$1) === 0) ? this.inst$macro$270$lzycompute__p1__Lio_circe_generic_decoding_DerivedDecoder() : this.inst$macro$270$1)
-});
-$c_LMessage$anon$lazy$macro$283$1.prototype.inst$macro$220__Lio_circe_generic_decoding_ReprDecoder = (function() {
-  return (((4 & this.bitmap$0$1) === 0) ? this.inst$macro$220$lzycompute__p1__Lio_circe_generic_decoding_ReprDecoder() : this.inst$macro$220$1)
-});
-$c_LMessage$anon$lazy$macro$283$1.prototype.inst$macro$228__Lio_circe_generic_decoding_DerivedDecoder = (function() {
-  return (((64 & this.bitmap$0$1) === 0) ? this.inst$macro$228$lzycompute__p1__Lio_circe_generic_decoding_DerivedDecoder() : this.inst$macro$228$1)
-});
-$c_LMessage$anon$lazy$macro$283$1.prototype.inst$macro$251$lzycompute__p1__Lio_circe_generic_decoding_DerivedDecoder = (function() {
-  if (((4096 & this.bitmap$0$1) === 0)) {
-    new $c_LMessage$anon$lazy$macro$283$1$$anon$36().init___LMessage$anon$lazy$macro$283$1(this);
-    var gen = new $c_LMessage$anon$lazy$macro$283$1$anon$macro$254$1().init___LMessage$anon$lazy$macro$283$1(this);
+$c_LMessage$anon$lazy$macro$210$1.prototype.inst$macro$144$lzycompute__p1__Lio_circe_generic_encoding_DerivedObjectEncoder = (function() {
+  if (((1024 & this.bitmap$0$1) === 0)) {
+    new $c_LMessage$anon$lazy$macro$210$1$$anon$22().init___LMessage$anon$lazy$macro$210$1(this);
+    var gen = new $c_LMessage$anon$lazy$macro$210$1$anon$macro$147$1().init___LMessage$anon$lazy$macro$210$1(this);
     $m_Lshapeless_ops_hlist$ZipWithKeys$();
     $m_Lshapeless_ops_hlist$ZipWithKeys$();
     var zipWithKeys = $m_Lshapeless_ops_hlist$ZipWithKeys$().hnilZipWithKeys$1;
@@ -13940,32 +13596,103 @@ $c_LMessage$anon$lazy$macro$283$1.prototype.inst$macro$251$lzycompute__p1__Lio_c
     var gen$1 = new $c_Lshapeless_LabelledGeneric$$anon$1().init___Lshapeless_Generic__Lshapeless_ops_hlist$ZipWithKeys__s_Predef$$less$colon$less(gen, zip, ev);
     var t = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function($this) {
       return (function() {
-        return $this.inst$macro$258__Lio_circe_generic_decoding_ReprDecoder()
+        return $this.inst$macro$151__Lio_circe_generic_encoding_ReprObjectEncoder()
       })
     })(this));
-    var decode = new $c_Lshapeless_Lazy$$anon$1().init___F0(t);
-    this.inst$macro$251$1 = new $c_Lio_circe_generic_decoding_DerivedDecoder$$anon$1().init___Lshapeless_LabelledGeneric__Lshapeless_Lazy(gen$1, decode);
-    this.bitmap$0$1 = (4096 | this.bitmap$0$1)
+    var encode = new $c_Lshapeless_Lazy$$anon$1().init___F0(t);
+    this.inst$macro$144$1 = new $c_Lio_circe_generic_encoding_DerivedObjectEncoder$$anon$1().init___Lshapeless_LabelledGeneric__Lshapeless_Lazy(gen$1, encode);
+    this.bitmap$0$1 = (1024 | this.bitmap$0$1)
   };
-  return this.inst$macro$251$1
+  return this.inst$macro$144$1
 });
-$c_LMessage$anon$lazy$macro$283$1.prototype.inst$macro$248__Lio_circe_generic_decoding_ReprDecoder = (function() {
-  return (((512 & this.bitmap$0$1) === 0) ? this.inst$macro$248$lzycompute__p1__Lio_circe_generic_decoding_ReprDecoder() : this.inst$macro$248$1)
+$c_LMessage$anon$lazy$macro$210$1.prototype.inst$macro$37__Lio_circe_generic_encoding_DerivedObjectEncoder = (function() {
+  return (((2 & this.bitmap$0$1) === 0) ? this.inst$macro$37$lzycompute__p1__Lio_circe_generic_encoding_DerivedObjectEncoder() : this.inst$macro$37$1)
 });
-$c_LMessage$anon$lazy$macro$283$1.prototype.inst$macro$213__Lio_circe_generic_decoding_DerivedDecoder = (function() {
-  return (((8 & this.bitmap$0$1) === 0) ? this.inst$macro$213$lzycompute__p1__Lio_circe_generic_decoding_DerivedDecoder() : this.inst$macro$213$1)
+$c_LMessage$anon$lazy$macro$210$1.prototype.inst$macro$132$lzycompute__p1__Lio_circe_generic_encoding_ReprObjectEncoder = (function() {
+  if (((128 & this.bitmap$0$1) === 0)) {
+    this.inst$macro$132$1 = new $c_LMessage$anon$lazy$macro$210$1$$anon$5().init___LMessage$anon$lazy$macro$210$1(this);
+    this.bitmap$0$1 = (128 | this.bitmap$0$1)
+  };
+  return this.inst$macro$132$1
 });
-$c_LMessage$anon$lazy$macro$283$1.prototype.inst$macro$210$lzycompute__p1__Lio_circe_generic_decoding_ReprDecoder = (function() {
+$c_LMessage$anon$lazy$macro$210$1.prototype.inst$macro$144__Lio_circe_generic_encoding_DerivedObjectEncoder = (function() {
+  return (((1024 & this.bitmap$0$1) === 0) ? this.inst$macro$144$lzycompute__p1__Lio_circe_generic_encoding_DerivedObjectEncoder() : this.inst$macro$144$1)
+});
+$c_LMessage$anon$lazy$macro$210$1.prototype.inst$macro$169__Lio_circe_generic_encoding_ReprObjectEncoder = (function() {
+  return (((2048 & this.bitmap$0$1) === 0) ? this.inst$macro$169$lzycompute__p1__Lio_circe_generic_encoding_ReprObjectEncoder() : this.inst$macro$169$1)
+});
+$c_LMessage$anon$lazy$macro$210$1.prototype.inst$macro$164__Lio_circe_generic_encoding_DerivedObjectEncoder = (function() {
+  return (((4096 & this.bitmap$0$1) === 0) ? this.inst$macro$164$lzycompute__p1__Lio_circe_generic_encoding_DerivedObjectEncoder() : this.inst$macro$164$1)
+});
+$c_LMessage$anon$lazy$macro$210$1.prototype.inst$macro$108__Lio_circe_generic_encoding_ReprObjectEncoder = (function() {
+  return (((32 & this.bitmap$0$1) === 0) ? this.inst$macro$108$lzycompute__p1__Lio_circe_generic_encoding_ReprObjectEncoder() : this.inst$macro$108$1)
+});
+$c_LMessage$anon$lazy$macro$210$1.prototype.inst$macro$42$lzycompute__p1__Lio_circe_generic_encoding_ReprObjectEncoder = (function() {
   if (((1 & this.bitmap$0$1) === 0)) {
-    this.inst$macro$210$1 = new $c_LMessage$anon$lazy$macro$283$1$$anon$25().init___LMessage$anon$lazy$macro$283$1(this);
+    this.inst$macro$42$1 = new $c_LMessage$anon$lazy$macro$210$1$$anon$2().init___LMessage$anon$lazy$macro$210$1(this);
     this.bitmap$0$1 = (1 | this.bitmap$0$1)
   };
-  return this.inst$macro$210$1
+  return this.inst$macro$42$1
 });
-$c_LMessage$anon$lazy$macro$283$1.prototype.inst$macro$200$lzycompute__p1__Lio_circe_generic_decoding_DerivedDecoder = (function() {
-  if (((262144 & this.bitmap$0$1) === 0)) {
-    new $c_LMessage$anon$lazy$macro$283$1$$anon$42().init___LMessage$anon$lazy$macro$283$1(this);
-    var gen = new $c_LMessage$anon$lazy$macro$283$1$anon$macro$201$1().init___LMessage$anon$lazy$macro$283$1(this);
+$c_LMessage$anon$lazy$macro$210$1.prototype.inst$macro$151$lzycompute__p1__Lio_circe_generic_encoding_ReprObjectEncoder = (function() {
+  if (((512 & this.bitmap$0$1) === 0)) {
+    this.inst$macro$151$1 = new $c_LMessage$anon$lazy$macro$210$1$$anon$6().init___LMessage$anon$lazy$macro$210$1(this);
+    this.bitmap$0$1 = (512 | this.bitmap$0$1)
+  };
+  return this.inst$macro$151$1
+});
+$c_LMessage$anon$lazy$macro$210$1.prototype.inst$macro$127$lzycompute__p1__Lio_circe_generic_encoding_DerivedObjectEncoder = (function() {
+  if (((256 & this.bitmap$0$1) === 0)) {
+    new $c_LMessage$anon$lazy$macro$210$1$$anon$21().init___LMessage$anon$lazy$macro$210$1(this);
+    var gen = new $c_LMessage$anon$lazy$macro$210$1$anon$macro$129$1().init___LMessage$anon$lazy$macro$210$1(this);
+    $m_Lshapeless_ops_hlist$ZipWithKeys$();
+    var zipWithKeys = $m_Lshapeless_ops_hlist$ZipWithKeys$().hnilZipWithKeys$1;
+    $m_Lshapeless_Witness$();
+    var this$1 = $m_s_Symbol$();
+    var value0 = $as_s_Symbol($c_s_JSUniquenessCache.prototype.apply__T__O.call(this$1, "destroy"));
+    new $c_Lshapeless_Witness$$anon$1().init___O(value0);
+    var zip = new $c_Lshapeless_ops_hlist$ZipWithKeys$$anon$109().init___Lshapeless_ops_hlist$ZipWithKeys(zipWithKeys);
+    var ev = $m_s_Predef$().singleton$und$less$colon$less$2;
+    var gen$1 = new $c_Lshapeless_LabelledGeneric$$anon$1().init___Lshapeless_Generic__Lshapeless_ops_hlist$ZipWithKeys__s_Predef$$less$colon$less(gen, zip, ev);
+    var t = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function($this) {
+      return (function() {
+        return $this.inst$macro$132__Lio_circe_generic_encoding_ReprObjectEncoder()
+      })
+    })(this));
+    var encode = new $c_Lshapeless_Lazy$$anon$1().init___F0(t);
+    this.inst$macro$127$1 = new $c_Lio_circe_generic_encoding_DerivedObjectEncoder$$anon$1().init___Lshapeless_LabelledGeneric__Lshapeless_Lazy(gen$1, encode);
+    this.bitmap$0$1 = (256 | this.bitmap$0$1)
+  };
+  return this.inst$macro$127$1
+});
+$c_LMessage$anon$lazy$macro$210$1.prototype.inst$macro$59__Lio_circe_generic_encoding_DerivedObjectEncoder = (function() {
+  return (((4 & this.bitmap$0$1) === 0) ? this.inst$macro$59$lzycompute__p1__Lio_circe_generic_encoding_DerivedObjectEncoder() : this.inst$macro$59$1)
+});
+$c_LMessage$anon$lazy$macro$210$1.prototype.inst$macro$31$lzycompute__p1__Lio_circe_generic_encoding_ReprObjectEncoder = (function() {
+  if (((32768 & this.bitmap$0$1) === 0)) {
+    this.inst$macro$31$1 = new $c_LMessage$anon$lazy$macro$210$1$$anon$9().init___LMessage$anon$lazy$macro$210$1(this);
+    this.bitmap$0$1 = (32768 | this.bitmap$0$1)
+  };
+  return this.inst$macro$31$1
+});
+$c_LMessage$anon$lazy$macro$210$1.prototype.inst$macro$169$lzycompute__p1__Lio_circe_generic_encoding_ReprObjectEncoder = (function() {
+  if (((2048 & this.bitmap$0$1) === 0)) {
+    this.inst$macro$169$1 = new $c_LMessage$anon$lazy$macro$210$1$$anon$7().init___LMessage$anon$lazy$macro$210$1(this);
+    this.bitmap$0$1 = (2048 | this.bitmap$0$1)
+  };
+  return this.inst$macro$169$1
+});
+$c_LMessage$anon$lazy$macro$210$1.prototype.inst$macro$183__Lio_circe_generic_encoding_DerivedObjectEncoder = (function() {
+  return (((16384 & this.bitmap$0$1) === 0) ? this.inst$macro$183$lzycompute__p1__Lio_circe_generic_encoding_DerivedObjectEncoder() : this.inst$macro$183$1)
+});
+$c_LMessage$anon$lazy$macro$210$1.prototype.inst$macro$132__Lio_circe_generic_encoding_ReprObjectEncoder = (function() {
+  return (((128 & this.bitmap$0$1) === 0) ? this.inst$macro$132$lzycompute__p1__Lio_circe_generic_encoding_ReprObjectEncoder() : this.inst$macro$132$1)
+});
+$c_LMessage$anon$lazy$macro$210$1.prototype.inst$macro$28$lzycompute__p1__Lio_circe_generic_encoding_DerivedObjectEncoder = (function() {
+  if (((65536 & this.bitmap$0$1) === 0)) {
+    new $c_LMessage$anon$lazy$macro$210$1$$anon$25().init___LMessage$anon$lazy$macro$210$1(this);
+    var gen = new $c_LMessage$anon$lazy$macro$210$1$anon$macro$29$1().init___LMessage$anon$lazy$macro$210$1(this);
+    $m_Lshapeless_ops_coproduct$ZipWithKeys$();
     $m_Lshapeless_ops_coproduct$ZipWithKeys$();
     $m_Lshapeless_ops_coproduct$ZipWithKeys$();
     $m_Lshapeless_ops_coproduct$ZipWithKeys$();
@@ -13978,69 +13705,171 @@ $c_LMessage$anon$lazy$macro$283$1.prototype.inst$macro$200$lzycompute__p1__Lio_c
     var zipWithKeys = $m_Lshapeless_ops_coproduct$ZipWithKeys$().cnilZipWithKeys$1;
     $m_Lshapeless_Witness$();
     var this$1 = $m_s_Symbol$();
-    var value0 = $as_s_Symbol($c_s_JSUniquenessCache.prototype.apply__T__O.call(this$1, "Spaceship"));
+    var value0 = $as_s_Symbol($c_s_JSUniquenessCache.prototype.apply__T__O.call(this$1, "Zorg"));
     new $c_Lshapeless_Witness$$anon$1().init___O(value0);
     var zipWithKeys$1 = new $c_Lshapeless_ops_coproduct$ZipWithKeys$$anon$22().init___Lshapeless_ops_coproduct$ZipWithKeys(zipWithKeys);
     $m_Lshapeless_Witness$();
     var this$4 = $m_s_Symbol$();
-    var value0$1 = $as_s_Symbol($c_s_JSUniquenessCache.prototype.apply__T__O.call(this$4, "SetLifes"));
+    var value0$1 = $as_s_Symbol($c_s_JSUniquenessCache.prototype.apply__T__O.call(this$4, "Spaceship"));
     new $c_Lshapeless_Witness$$anon$1().init___O(value0$1);
     var zipWithKeys$2 = new $c_Lshapeless_ops_coproduct$ZipWithKeys$$anon$22().init___Lshapeless_ops_coproduct$ZipWithKeys(zipWithKeys$1);
     $m_Lshapeless_Witness$();
     var this$7 = $m_s_Symbol$();
-    var value0$2 = $as_s_Symbol($c_s_JSUniquenessCache.prototype.apply__T__O.call(this$7, "Pong"));
+    var value0$2 = $as_s_Symbol($c_s_JSUniquenessCache.prototype.apply__T__O.call(this$7, "SetLifes"));
     new $c_Lshapeless_Witness$$anon$1().init___O(value0$2);
     var zipWithKeys$3 = new $c_Lshapeless_ops_coproduct$ZipWithKeys$$anon$22().init___Lshapeless_ops_coproduct$ZipWithKeys(zipWithKeys$2);
     $m_Lshapeless_Witness$();
     var this$10 = $m_s_Symbol$();
-    var value0$3 = $as_s_Symbol($c_s_JSUniquenessCache.prototype.apply__T__O.call(this$10, "Ping"));
+    var value0$3 = $as_s_Symbol($c_s_JSUniquenessCache.prototype.apply__T__O.call(this$10, "Pong"));
     new $c_Lshapeless_Witness$$anon$1().init___O(value0$3);
     var zipWithKeys$4 = new $c_Lshapeless_ops_coproduct$ZipWithKeys$$anon$22().init___Lshapeless_ops_coproduct$ZipWithKeys(zipWithKeys$3);
     $m_Lshapeless_Witness$();
     var this$13 = $m_s_Symbol$();
-    var value0$4 = $as_s_Symbol($c_s_JSUniquenessCache.prototype.apply__T__O.call(this$13, "Laser"));
+    var value0$4 = $as_s_Symbol($c_s_JSUniquenessCache.prototype.apply__T__O.call(this$13, "Ping"));
     new $c_Lshapeless_Witness$$anon$1().init___O(value0$4);
     var zipWithKeys$5 = new $c_Lshapeless_ops_coproduct$ZipWithKeys$$anon$22().init___Lshapeless_ops_coproduct$ZipWithKeys(zipWithKeys$4);
     $m_Lshapeless_Witness$();
     var this$16 = $m_s_Symbol$();
-    var value0$5 = $as_s_Symbol($c_s_JSUniquenessCache.prototype.apply__T__O.call(this$16, "Destroy"));
+    var value0$5 = $as_s_Symbol($c_s_JSUniquenessCache.prototype.apply__T__O.call(this$16, "Laser"));
     new $c_Lshapeless_Witness$$anon$1().init___O(value0$5);
     var zipWithKeys$6 = new $c_Lshapeless_ops_coproduct$ZipWithKeys$$anon$22().init___Lshapeless_ops_coproduct$ZipWithKeys(zipWithKeys$5);
     $m_Lshapeless_Witness$();
     var this$19 = $m_s_Symbol$();
-    var value0$6 = $as_s_Symbol($c_s_JSUniquenessCache.prototype.apply__T__O.call(this$19, "Cmd"));
+    var value0$6 = $as_s_Symbol($c_s_JSUniquenessCache.prototype.apply__T__O.call(this$19, "Destroy"));
     new $c_Lshapeless_Witness$$anon$1().init___O(value0$6);
     var zipWithKeys$7 = new $c_Lshapeless_ops_coproduct$ZipWithKeys$$anon$22().init___Lshapeless_ops_coproduct$ZipWithKeys(zipWithKeys$6);
     $m_Lshapeless_Witness$();
     var this$22 = $m_s_Symbol$();
-    var value0$7 = $as_s_Symbol($c_s_JSUniquenessCache.prototype.apply__T__O.call(this$22, "ClientId"));
+    var value0$7 = $as_s_Symbol($c_s_JSUniquenessCache.prototype.apply__T__O.call(this$22, "Cmd"));
     new $c_Lshapeless_Witness$$anon$1().init___O(value0$7);
     var zipWithKeys$8 = new $c_Lshapeless_ops_coproduct$ZipWithKeys$$anon$22().init___Lshapeless_ops_coproduct$ZipWithKeys(zipWithKeys$7);
     $m_Lshapeless_Witness$();
     var this$25 = $m_s_Symbol$();
-    var value0$8 = $as_s_Symbol($c_s_JSUniquenessCache.prototype.apply__T__O.call(this$25, "Asteroid"));
+    var value0$8 = $as_s_Symbol($c_s_JSUniquenessCache.prototype.apply__T__O.call(this$25, "ClientId"));
     new $c_Lshapeless_Witness$$anon$1().init___O(value0$8);
-    var zip = new $c_Lshapeless_ops_coproduct$ZipWithKeys$$anon$22().init___Lshapeless_ops_coproduct$ZipWithKeys(zipWithKeys$8);
+    var zipWithKeys$9 = new $c_Lshapeless_ops_coproduct$ZipWithKeys$$anon$22().init___Lshapeless_ops_coproduct$ZipWithKeys(zipWithKeys$8);
+    $m_Lshapeless_Witness$();
+    var this$28 = $m_s_Symbol$();
+    var value0$9 = $as_s_Symbol($c_s_JSUniquenessCache.prototype.apply__T__O.call(this$28, "Asteroid"));
+    new $c_Lshapeless_Witness$$anon$1().init___O(value0$9);
+    var zip = new $c_Lshapeless_ops_coproduct$ZipWithKeys$$anon$22().init___Lshapeless_ops_coproduct$ZipWithKeys(zipWithKeys$9);
     var ev = $m_s_Predef$().singleton$und$less$colon$less$2;
     var gen$1 = new $c_Lshapeless_LabelledGeneric$$anon$2().init___Lshapeless_Generic__Lshapeless_ops_coproduct$ZipWithKeys__s_Predef$$less$colon$less(gen, zip, ev);
     var t = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function($this) {
       return (function() {
-        return $this.inst$macro$203__Lio_circe_generic_decoding_ReprDecoder()
+        return $this.inst$macro$31__Lio_circe_generic_encoding_ReprObjectEncoder()
+      })
+    })(this));
+    var encode = new $c_Lshapeless_Lazy$$anon$1().init___F0(t);
+    this.inst$macro$28$1 = new $c_Lio_circe_generic_encoding_DerivedObjectEncoder$$anon$1().init___Lshapeless_LabelledGeneric__Lshapeless_Lazy(gen$1, encode);
+    this.bitmap$0$1 = (65536 | this.bitmap$0$1)
+  };
+  return this.inst$macro$28$1
+});
+$c_LMessage$anon$lazy$macro$210$1.prototype.inst$macro$31__Lio_circe_generic_encoding_ReprObjectEncoder = (function() {
+  return (((32768 & this.bitmap$0$1) === 0) ? this.inst$macro$31$lzycompute__p1__Lio_circe_generic_encoding_ReprObjectEncoder() : this.inst$macro$31$1)
+});
+$c_LMessage$anon$lazy$macro$210$1.prototype.inst$macro$127__Lio_circe_generic_encoding_DerivedObjectEncoder = (function() {
+  return (((256 & this.bitmap$0$1) === 0) ? this.inst$macro$127$lzycompute__p1__Lio_circe_generic_encoding_DerivedObjectEncoder() : this.inst$macro$127$1)
+});
+var $d_LMessage$anon$lazy$macro$210$1 = new $TypeData().initClass({
+  LMessage$anon$lazy$macro$210$1: 0
+}, false, "Message$anon$lazy$macro$210$1", {
+  LMessage$anon$lazy$macro$210$1: 1,
+  O: 1,
+  s_Serializable: 1,
+  Ljava_io_Serializable: 1
+});
+$c_LMessage$anon$lazy$macro$210$1.prototype.$classData = $d_LMessage$anon$lazy$macro$210$1;
+/** @constructor */
+function $c_LMessage$anon$lazy$macro$301$1() {
+  $c_O.call(this);
+  this.inst$macro$222$1 = null;
+  this.inst$macro$217$1 = null;
+  this.inst$macro$225$1 = null;
+  this.inst$macro$238$1 = null;
+  this.inst$macro$231$1 = null;
+  this.inst$macro$244$1 = null;
+  this.inst$macro$241$1 = null;
+  this.inst$macro$246$1 = null;
+  this.inst$macro$257$1 = null;
+  this.inst$macro$250$1 = null;
+  this.inst$macro$266$1 = null;
+  this.inst$macro$261$1 = null;
+  this.inst$macro$276$1 = null;
+  this.inst$macro$269$1 = null;
+  this.inst$macro$285$1 = null;
+  this.inst$macro$280$1 = null;
+  this.inst$macro$297$1 = null;
+  this.inst$macro$288$1 = null;
+  this.inst$macro$215$1 = null;
+  this.inst$macro$212$1 = null;
+  this.bitmap$0$1 = 0
+}
+$c_LMessage$anon$lazy$macro$301$1.prototype = new $h_O();
+$c_LMessage$anon$lazy$macro$301$1.prototype.constructor = $c_LMessage$anon$lazy$macro$301$1;
+/** @constructor */
+function $h_LMessage$anon$lazy$macro$301$1() {
+  /*<skip>*/
+}
+$h_LMessage$anon$lazy$macro$301$1.prototype = $c_LMessage$anon$lazy$macro$301$1.prototype;
+$c_LMessage$anon$lazy$macro$301$1.prototype.inst$macro$261__Lio_circe_generic_decoding_DerivedDecoder = (function() {
+  return (((2048 & this.bitmap$0$1) === 0) ? this.inst$macro$261$lzycompute__p1__Lio_circe_generic_decoding_DerivedDecoder() : this.inst$macro$261$1)
+});
+$c_LMessage$anon$lazy$macro$301$1.prototype.init___ = (function() {
+  return this
+});
+$c_LMessage$anon$lazy$macro$301$1.prototype.inst$macro$257$lzycompute__p1__Lio_circe_generic_decoding_ReprDecoder = (function() {
+  if (((256 & this.bitmap$0$1) === 0)) {
+    this.inst$macro$257$1 = new $c_LMessage$anon$lazy$macro$301$1$$anon$33().init___LMessage$anon$lazy$macro$301$1(this);
+    this.bitmap$0$1 = (256 | this.bitmap$0$1)
+  };
+  return this.inst$macro$257$1
+});
+$c_LMessage$anon$lazy$macro$301$1.prototype.inst$macro$266$lzycompute__p1__Lio_circe_generic_decoding_ReprDecoder = (function() {
+  if (((1024 & this.bitmap$0$1) === 0)) {
+    this.inst$macro$266$1 = new $c_LMessage$anon$lazy$macro$301$1$$anon$35().init___LMessage$anon$lazy$macro$301$1(this);
+    this.bitmap$0$1 = (1024 | this.bitmap$0$1)
+  };
+  return this.inst$macro$266$1
+});
+$c_LMessage$anon$lazy$macro$301$1.prototype.inst$macro$217$lzycompute__p1__Lio_circe_generic_decoding_DerivedDecoder = (function() {
+  if (((2 & this.bitmap$0$1) === 0)) {
+    new $c_LMessage$anon$lazy$macro$301$1$$anon$27().init___LMessage$anon$lazy$macro$301$1(this);
+    var gen = new $c_LMessage$anon$lazy$macro$301$1$anon$macro$221$1().init___LMessage$anon$lazy$macro$301$1(this);
+    $m_Lshapeless_ops_hlist$ZipWithKeys$();
+    var zipWithKeys = $m_Lshapeless_ops_hlist$ZipWithKeys$().hnilZipWithKeys$1;
+    $m_Lshapeless_Witness$();
+    var this$1 = $m_s_Symbol$();
+    var value0 = $as_s_Symbol($c_s_JSUniquenessCache.prototype.apply__T__O.call(this$1, "common"));
+    new $c_Lshapeless_Witness$$anon$1().init___O(value0);
+    var zip = new $c_Lshapeless_ops_hlist$ZipWithKeys$$anon$109().init___Lshapeless_ops_hlist$ZipWithKeys(zipWithKeys);
+    var ev = $m_s_Predef$().singleton$und$less$colon$less$2;
+    var gen$1 = new $c_Lshapeless_LabelledGeneric$$anon$1().init___Lshapeless_Generic__Lshapeless_ops_hlist$ZipWithKeys__s_Predef$$less$colon$less(gen, zip, ev);
+    var t = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function($this) {
+      return (function() {
+        return $this.inst$macro$222__Lio_circe_generic_decoding_ReprDecoder()
       })
     })(this));
     var decode = new $c_Lshapeless_Lazy$$anon$1().init___F0(t);
-    this.inst$macro$200$1 = new $c_Lio_circe_generic_decoding_DerivedDecoder$$anon$1().init___Lshapeless_LabelledGeneric__Lshapeless_Lazy(gen$1, decode);
-    this.bitmap$0$1 = (262144 | this.bitmap$0$1)
+    this.inst$macro$217$1 = new $c_Lio_circe_generic_decoding_DerivedDecoder$$anon$1().init___Lshapeless_LabelledGeneric__Lshapeless_Lazy(gen$1, decode);
+    this.bitmap$0$1 = (2 | this.bitmap$0$1)
   };
-  return this.inst$macro$200$1
+  return this.inst$macro$217$1
 });
-$c_LMessage$anon$lazy$macro$283$1.prototype.inst$macro$279__Lio_circe_generic_decoding_ReprDecoder = (function() {
-  return (((32768 & this.bitmap$0$1) === 0) ? this.inst$macro$279$lzycompute__p1__Lio_circe_generic_decoding_ReprDecoder() : this.inst$macro$279$1)
+$c_LMessage$anon$lazy$macro$301$1.prototype.inst$macro$246__Lio_circe_generic_decoding_DerivedDecoder = (function() {
+  return (((128 & this.bitmap$0$1) === 0) ? this.inst$macro$246$lzycompute__p1__Lio_circe_generic_decoding_DerivedDecoder() : this.inst$macro$246$1)
 });
-$c_LMessage$anon$lazy$macro$283$1.prototype.inst$macro$213$lzycompute__p1__Lio_circe_generic_decoding_DerivedDecoder = (function() {
-  if (((8 & this.bitmap$0$1) === 0)) {
-    new $c_LMessage$anon$lazy$macro$283$1$$anon$28().init___LMessage$anon$lazy$macro$283$1(this);
-    var gen = new $c_LMessage$anon$lazy$macro$283$1$anon$macro$219$1().init___LMessage$anon$lazy$macro$283$1(this);
+$c_LMessage$anon$lazy$macro$301$1.prototype.inst$macro$231__Lio_circe_generic_decoding_DerivedDecoder = (function() {
+  return (((16 & this.bitmap$0$1) === 0) ? this.inst$macro$231$lzycompute__p1__Lio_circe_generic_decoding_DerivedDecoder() : this.inst$macro$231$1)
+});
+$c_LMessage$anon$lazy$macro$301$1.prototype.inst$macro$225__Lio_circe_generic_decoding_DerivedDecoder = (function() {
+  return (((4 & this.bitmap$0$1) === 0) ? this.inst$macro$225$lzycompute__p1__Lio_circe_generic_decoding_DerivedDecoder() : this.inst$macro$225$1)
+});
+$c_LMessage$anon$lazy$macro$301$1.prototype.inst$macro$231$lzycompute__p1__Lio_circe_generic_decoding_DerivedDecoder = (function() {
+  if (((16 & this.bitmap$0$1) === 0)) {
+    new $c_LMessage$anon$lazy$macro$301$1$$anon$30().init___LMessage$anon$lazy$macro$301$1(this);
+    var gen = new $c_LMessage$anon$lazy$macro$301$1$anon$macro$234$1().init___LMessage$anon$lazy$macro$301$1(this);
     $m_Lshapeless_ops_hlist$ZipWithKeys$();
     $m_Lshapeless_ops_hlist$ZipWithKeys$();
     var zipWithKeys = $m_Lshapeless_ops_hlist$ZipWithKeys$().hnilZipWithKeys$1;
@@ -14058,188 +13887,43 @@ $c_LMessage$anon$lazy$macro$283$1.prototype.inst$macro$213$lzycompute__p1__Lio_c
     var gen$1 = new $c_Lshapeless_LabelledGeneric$$anon$1().init___Lshapeless_Generic__Lshapeless_ops_hlist$ZipWithKeys__s_Predef$$less$colon$less(gen, zip, ev);
     var t = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function($this) {
       return (function() {
-        return $this.inst$macro$220__Lio_circe_generic_decoding_ReprDecoder()
+        return $this.inst$macro$238__Lio_circe_generic_decoding_ReprDecoder()
       })
     })(this));
     var decode = new $c_Lshapeless_Lazy$$anon$1().init___F0(t);
-    this.inst$macro$213$1 = new $c_Lio_circe_generic_decoding_DerivedDecoder$$anon$1().init___Lshapeless_LabelledGeneric__Lshapeless_Lazy(gen$1, decode);
-    this.bitmap$0$1 = (8 | this.bitmap$0$1)
+    this.inst$macro$231$1 = new $c_Lio_circe_generic_decoding_DerivedDecoder$$anon$1().init___Lshapeless_LabelledGeneric__Lshapeless_Lazy(gen$1, decode);
+    this.bitmap$0$1 = (16 | this.bitmap$0$1)
   };
-  return this.inst$macro$213$1
+  return this.inst$macro$231$1
 });
-$c_LMessage$anon$lazy$macro$283$1.prototype.inst$macro$223$lzycompute__p1__Lio_circe_generic_decoding_DerivedDecoder = (function() {
-  if (((32 & this.bitmap$0$1) === 0)) {
-    new $c_LMessage$anon$lazy$macro$283$1$$anon$29().init___LMessage$anon$lazy$macro$283$1(this);
-    var gen = new $c_LMessage$anon$lazy$macro$283$1$anon$macro$224$1().init___LMessage$anon$lazy$macro$283$1(this);
+$c_LMessage$anon$lazy$macro$301$1.prototype.inst$macro$241$lzycompute__p1__Lio_circe_generic_decoding_DerivedDecoder = (function() {
+  if (((64 & this.bitmap$0$1) === 0)) {
+    new $c_LMessage$anon$lazy$macro$301$1$$anon$31().init___LMessage$anon$lazy$macro$301$1(this);
+    var gen = new $c_LMessage$anon$lazy$macro$301$1$anon$macro$242$1().init___LMessage$anon$lazy$macro$301$1(this);
     var zip = $m_Lshapeless_ops_hlist$ZipWithKeys$().hnilZipWithKeys$1;
     var ev = $m_s_Predef$().singleton$und$less$colon$less$2;
     var gen$1 = new $c_Lshapeless_LabelledGeneric$$anon$1().init___Lshapeless_Generic__Lshapeless_ops_hlist$ZipWithKeys__s_Predef$$less$colon$less(gen, zip, ev);
     var t = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function($this) {
       return (function() {
-        return $this.inst$macro$226__Lio_circe_generic_decoding_ReprDecoder()
+        return $this.inst$macro$244__Lio_circe_generic_decoding_ReprDecoder()
       })
     })(this));
     var decode = new $c_Lshapeless_Lazy$$anon$1().init___F0(t);
-    this.inst$macro$223$1 = new $c_Lio_circe_generic_decoding_DerivedDecoder$$anon$1().init___Lshapeless_LabelledGeneric__Lshapeless_Lazy(gen$1, decode);
-    this.bitmap$0$1 = (32 | this.bitmap$0$1)
+    this.inst$macro$241$1 = new $c_Lio_circe_generic_decoding_DerivedDecoder$$anon$1().init___Lshapeless_LabelledGeneric__Lshapeless_Lazy(gen$1, decode);
+    this.bitmap$0$1 = (64 | this.bitmap$0$1)
   };
-  return this.inst$macro$223$1
+  return this.inst$macro$241$1
 });
-$c_LMessage$anon$lazy$macro$283$1.prototype.inst$macro$267$lzycompute__p1__Lio_circe_generic_decoding_ReprDecoder = (function() {
-  if (((8192 & this.bitmap$0$1) === 0)) {
-    this.inst$macro$267$1 = new $c_LMessage$anon$lazy$macro$283$1$$anon$37().init___LMessage$anon$lazy$macro$283$1(this);
-    this.bitmap$0$1 = (8192 | this.bitmap$0$1)
-  };
-  return this.inst$macro$267$1
+$c_LMessage$anon$lazy$macro$301$1.prototype.inst$macro$266__Lio_circe_generic_decoding_ReprDecoder = (function() {
+  return (((1024 & this.bitmap$0$1) === 0) ? this.inst$macro$266$lzycompute__p1__Lio_circe_generic_decoding_ReprDecoder() : this.inst$macro$266$1)
 });
-$c_LMessage$anon$lazy$macro$283$1.prototype.inst$macro$267__Lio_circe_generic_decoding_ReprDecoder = (function() {
-  return (((8192 & this.bitmap$0$1) === 0) ? this.inst$macro$267$lzycompute__p1__Lio_circe_generic_decoding_ReprDecoder() : this.inst$macro$267$1)
+$c_LMessage$anon$lazy$macro$301$1.prototype.inst$macro$222__Lio_circe_generic_decoding_ReprDecoder = (function() {
+  return (((1 & this.bitmap$0$1) === 0) ? this.inst$macro$222$lzycompute__p1__Lio_circe_generic_decoding_ReprDecoder() : this.inst$macro$222$1)
 });
-$c_LMessage$anon$lazy$macro$283$1.prototype.inst$macro$258$lzycompute__p1__Lio_circe_generic_decoding_ReprDecoder = (function() {
-  if (((2048 & this.bitmap$0$1) === 0)) {
-    this.inst$macro$258$1 = new $c_LMessage$anon$lazy$macro$283$1$$anon$35().init___LMessage$anon$lazy$macro$283$1(this);
-    this.bitmap$0$1 = (2048 | this.bitmap$0$1)
-  };
-  return this.inst$macro$258$1
-});
-$c_LMessage$anon$lazy$macro$283$1.prototype.inst$macro$210__Lio_circe_generic_decoding_ReprDecoder = (function() {
-  return (((1 & this.bitmap$0$1) === 0) ? this.inst$macro$210$lzycompute__p1__Lio_circe_generic_decoding_ReprDecoder() : this.inst$macro$210$1)
-});
-$c_LMessage$anon$lazy$macro$283$1.prototype.inst$macro$279$lzycompute__p1__Lio_circe_generic_decoding_ReprDecoder = (function() {
-  if (((32768 & this.bitmap$0$1) === 0)) {
-    this.inst$macro$279$1 = new $c_LMessage$anon$lazy$macro$283$1$$anon$39().init___LMessage$anon$lazy$macro$283$1(this);
-    this.bitmap$0$1 = (32768 | this.bitmap$0$1)
-  };
-  return this.inst$macro$279$1
-});
-$c_LMessage$anon$lazy$macro$283$1.prototype.inst$macro$251__Lio_circe_generic_decoding_DerivedDecoder = (function() {
-  return (((4096 & this.bitmap$0$1) === 0) ? this.inst$macro$251$lzycompute__p1__Lio_circe_generic_decoding_DerivedDecoder() : this.inst$macro$251$1)
-});
-$c_LMessage$anon$lazy$macro$283$1.prototype.inst$macro$226__Lio_circe_generic_decoding_ReprDecoder = (function() {
-  return (((16 & this.bitmap$0$1) === 0) ? this.inst$macro$226$lzycompute__p1__Lio_circe_generic_decoding_ReprDecoder() : this.inst$macro$226$1)
-});
-$c_LMessage$anon$lazy$macro$283$1.prototype.inst$macro$243$lzycompute__p1__Lio_circe_generic_decoding_DerivedDecoder = (function() {
-  if (((1024 & this.bitmap$0$1) === 0)) {
-    new $c_LMessage$anon$lazy$macro$283$1$$anon$34().init___LMessage$anon$lazy$macro$283$1(this);
-    var gen = new $c_LMessage$anon$lazy$macro$283$1$anon$macro$245$1().init___LMessage$anon$lazy$macro$283$1(this);
-    $m_Lshapeless_ops_hlist$ZipWithKeys$();
-    var zipWithKeys = $m_Lshapeless_ops_hlist$ZipWithKeys$().hnilZipWithKeys$1;
-    $m_Lshapeless_Witness$();
-    var this$1 = $m_s_Symbol$();
-    var value0 = $as_s_Symbol($c_s_JSUniquenessCache.prototype.apply__T__O.call(this$1, "destroy"));
-    new $c_Lshapeless_Witness$$anon$1().init___O(value0);
-    var zip = new $c_Lshapeless_ops_hlist$ZipWithKeys$$anon$109().init___Lshapeless_ops_hlist$ZipWithKeys(zipWithKeys);
-    var ev = $m_s_Predef$().singleton$und$less$colon$less$2;
-    var gen$1 = new $c_Lshapeless_LabelledGeneric$$anon$1().init___Lshapeless_Generic__Lshapeless_ops_hlist$ZipWithKeys__s_Predef$$less$colon$less(gen, zip, ev);
-    var t = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function($this) {
-      return (function() {
-        return $this.inst$macro$248__Lio_circe_generic_decoding_ReprDecoder()
-      })
-    })(this));
-    var decode = new $c_Lshapeless_Lazy$$anon$1().init___F0(t);
-    this.inst$macro$243$1 = new $c_Lio_circe_generic_decoding_DerivedDecoder$$anon$1().init___Lshapeless_LabelledGeneric__Lshapeless_Lazy(gen$1, decode);
-    this.bitmap$0$1 = (1024 | this.bitmap$0$1)
-  };
-  return this.inst$macro$243$1
-});
-$c_LMessage$anon$lazy$macro$283$1.prototype.inst$macro$226$lzycompute__p1__Lio_circe_generic_decoding_ReprDecoder = (function() {
-  if (((16 & this.bitmap$0$1) === 0)) {
-    this.inst$macro$226$1 = $m_Lio_circe_generic_decoding_ReprDecoder$().hnilReprDecoder$1;
-    this.bitmap$0$1 = (16 | this.bitmap$0$1)
-  };
-  return this.inst$macro$226$1
-});
-$c_LMessage$anon$lazy$macro$283$1.prototype.inst$macro$239__Lio_circe_generic_decoding_ReprDecoder = (function() {
-  return (((128 & this.bitmap$0$1) === 0) ? this.inst$macro$239$lzycompute__p1__Lio_circe_generic_decoding_ReprDecoder() : this.inst$macro$239$1)
-});
-$c_LMessage$anon$lazy$macro$283$1.prototype.inst$macro$200__Lio_circe_generic_decoding_DerivedDecoder = (function() {
-  return (((262144 & this.bitmap$0$1) === 0) ? this.inst$macro$200$lzycompute__p1__Lio_circe_generic_decoding_DerivedDecoder() : this.inst$macro$200$1)
-});
-$c_LMessage$anon$lazy$macro$283$1.prototype.inst$macro$220$lzycompute__p1__Lio_circe_generic_decoding_ReprDecoder = (function() {
-  if (((4 & this.bitmap$0$1) === 0)) {
-    this.inst$macro$220$1 = new $c_LMessage$anon$lazy$macro$283$1$$anon$27().init___LMessage$anon$lazy$macro$283$1(this);
-    this.bitmap$0$1 = (4 | this.bitmap$0$1)
-  };
-  return this.inst$macro$220$1
-});
-$c_LMessage$anon$lazy$macro$283$1.prototype.inst$macro$205$lzycompute__p1__Lio_circe_generic_decoding_DerivedDecoder = (function() {
-  if (((2 & this.bitmap$0$1) === 0)) {
-    new $c_LMessage$anon$lazy$macro$283$1$$anon$26().init___LMessage$anon$lazy$macro$283$1(this);
-    var gen = new $c_LMessage$anon$lazy$macro$283$1$anon$macro$209$1().init___LMessage$anon$lazy$macro$283$1(this);
-    $m_Lshapeless_ops_hlist$ZipWithKeys$();
-    var zipWithKeys = $m_Lshapeless_ops_hlist$ZipWithKeys$().hnilZipWithKeys$1;
-    $m_Lshapeless_Witness$();
-    var this$1 = $m_s_Symbol$();
-    var value0 = $as_s_Symbol($c_s_JSUniquenessCache.prototype.apply__T__O.call(this$1, "common"));
-    new $c_Lshapeless_Witness$$anon$1().init___O(value0);
-    var zip = new $c_Lshapeless_ops_hlist$ZipWithKeys$$anon$109().init___Lshapeless_ops_hlist$ZipWithKeys(zipWithKeys);
-    var ev = $m_s_Predef$().singleton$und$less$colon$less$2;
-    var gen$1 = new $c_Lshapeless_LabelledGeneric$$anon$1().init___Lshapeless_Generic__Lshapeless_ops_hlist$ZipWithKeys__s_Predef$$less$colon$less(gen, zip, ev);
-    var t = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function($this) {
-      return (function() {
-        return $this.inst$macro$210__Lio_circe_generic_decoding_ReprDecoder()
-      })
-    })(this));
-    var decode = new $c_Lshapeless_Lazy$$anon$1().init___F0(t);
-    this.inst$macro$205$1 = new $c_Lio_circe_generic_decoding_DerivedDecoder$$anon$1().init___Lshapeless_LabelledGeneric__Lshapeless_Lazy(gen$1, decode);
-    this.bitmap$0$1 = (2 | this.bitmap$0$1)
-  };
-  return this.inst$macro$205$1
-});
-$c_LMessage$anon$lazy$macro$283$1.prototype.inst$macro$239$lzycompute__p1__Lio_circe_generic_decoding_ReprDecoder = (function() {
-  if (((128 & this.bitmap$0$1) === 0)) {
-    this.inst$macro$239$1 = new $c_LMessage$anon$lazy$macro$283$1$$anon$31().init___LMessage$anon$lazy$macro$283$1(this);
-    this.bitmap$0$1 = (128 | this.bitmap$0$1)
-  };
-  return this.inst$macro$239$1
-});
-$c_LMessage$anon$lazy$macro$283$1.prototype.inst$macro$262__Lio_circe_generic_decoding_DerivedDecoder = (function() {
-  return (((16384 & this.bitmap$0$1) === 0) ? this.inst$macro$262$lzycompute__p1__Lio_circe_generic_decoding_DerivedDecoder() : this.inst$macro$262$1)
-});
-$c_LMessage$anon$lazy$macro$283$1.prototype.inst$macro$203$lzycompute__p1__Lio_circe_generic_decoding_ReprDecoder = (function() {
+$c_LMessage$anon$lazy$macro$301$1.prototype.inst$macro$288$lzycompute__p1__Lio_circe_generic_decoding_DerivedDecoder = (function() {
   if (((131072 & this.bitmap$0$1) === 0)) {
-    this.inst$macro$203$1 = new $c_LMessage$anon$lazy$macro$283$1$$anon$41().init___LMessage$anon$lazy$macro$283$1(this);
-    this.bitmap$0$1 = (131072 | this.bitmap$0$1)
-  };
-  return this.inst$macro$203$1
-});
-$c_LMessage$anon$lazy$macro$283$1.prototype.inst$macro$232$lzycompute__p1__Lio_circe_generic_decoding_DerivedDecoder = (function() {
-  if (((256 & this.bitmap$0$1) === 0)) {
-    new $c_LMessage$anon$lazy$macro$283$1$$anon$32().init___LMessage$anon$lazy$macro$283$1(this);
-    var gen = new $c_LMessage$anon$lazy$macro$283$1$anon$macro$235$1().init___LMessage$anon$lazy$macro$283$1(this);
-    $m_Lshapeless_ops_hlist$ZipWithKeys$();
-    $m_Lshapeless_ops_hlist$ZipWithKeys$();
-    var zipWithKeys = $m_Lshapeless_ops_hlist$ZipWithKeys$().hnilZipWithKeys$1;
-    $m_Lshapeless_Witness$();
-    var this$1 = $m_s_Symbol$();
-    var value0 = $as_s_Symbol($c_s_JSUniquenessCache.prototype.apply__T__O.call(this$1, "shooter"));
-    new $c_Lshapeless_Witness$$anon$1().init___O(value0);
-    var zipWithKeys$1 = new $c_Lshapeless_ops_hlist$ZipWithKeys$$anon$109().init___Lshapeless_ops_hlist$ZipWithKeys(zipWithKeys);
-    $m_Lshapeless_Witness$();
-    var this$4 = $m_s_Symbol$();
-    var value0$1 = $as_s_Symbol($c_s_JSUniquenessCache.prototype.apply__T__O.call(this$4, "common"));
-    new $c_Lshapeless_Witness$$anon$1().init___O(value0$1);
-    var zip = new $c_Lshapeless_ops_hlist$ZipWithKeys$$anon$109().init___Lshapeless_ops_hlist$ZipWithKeys(zipWithKeys$1);
-    var ev = $m_s_Predef$().singleton$und$less$colon$less$2;
-    var gen$1 = new $c_Lshapeless_LabelledGeneric$$anon$1().init___Lshapeless_Generic__Lshapeless_ops_hlist$ZipWithKeys__s_Predef$$less$colon$less(gen, zip, ev);
-    var t = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function($this) {
-      return (function() {
-        return $this.inst$macro$239__Lio_circe_generic_decoding_ReprDecoder()
-      })
-    })(this));
-    var decode = new $c_Lshapeless_Lazy$$anon$1().init___F0(t);
-    this.inst$macro$232$1 = new $c_Lio_circe_generic_decoding_DerivedDecoder$$anon$1().init___Lshapeless_LabelledGeneric__Lshapeless_Lazy(gen$1, decode);
-    this.bitmap$0$1 = (256 | this.bitmap$0$1)
-  };
-  return this.inst$macro$232$1
-});
-$c_LMessage$anon$lazy$macro$283$1.prototype.inst$macro$232__Lio_circe_generic_decoding_DerivedDecoder = (function() {
-  return (((256 & this.bitmap$0$1) === 0) ? this.inst$macro$232$lzycompute__p1__Lio_circe_generic_decoding_DerivedDecoder() : this.inst$macro$232$1)
-});
-$c_LMessage$anon$lazy$macro$283$1.prototype.inst$macro$270$lzycompute__p1__Lio_circe_generic_decoding_DerivedDecoder = (function() {
-  if (((65536 & this.bitmap$0$1) === 0)) {
-    new $c_LMessage$anon$lazy$macro$283$1$$anon$40().init___LMessage$anon$lazy$macro$283$1(this);
-    var gen = new $c_LMessage$anon$lazy$macro$283$1$anon$macro$274$1().init___LMessage$anon$lazy$macro$283$1(this);
+    new $c_LMessage$anon$lazy$macro$301$1$$anon$42().init___LMessage$anon$lazy$macro$301$1(this);
+    var gen = new $c_LMessage$anon$lazy$macro$301$1$anon$macro$292$1().init___LMessage$anon$lazy$macro$301$1(this);
     $m_Lshapeless_ops_hlist$ZipWithKeys$();
     $m_Lshapeless_ops_hlist$ZipWithKeys$();
     $m_Lshapeless_ops_hlist$ZipWithKeys$();
@@ -14263,53 +13947,274 @@ $c_LMessage$anon$lazy$macro$283$1.prototype.inst$macro$270$lzycompute__p1__Lio_c
     var gen$1 = new $c_Lshapeless_LabelledGeneric$$anon$1().init___Lshapeless_Generic__Lshapeless_ops_hlist$ZipWithKeys__s_Predef$$less$colon$less(gen, zip, ev);
     var t = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function($this) {
       return (function() {
-        return $this.inst$macro$279__Lio_circe_generic_decoding_ReprDecoder()
+        return $this.inst$macro$297__Lio_circe_generic_decoding_ReprDecoder()
       })
     })(this));
     var decode = new $c_Lshapeless_Lazy$$anon$1().init___F0(t);
-    this.inst$macro$270$1 = new $c_Lio_circe_generic_decoding_DerivedDecoder$$anon$1().init___Lshapeless_LabelledGeneric__Lshapeless_Lazy(gen$1, decode);
-    this.bitmap$0$1 = (65536 | this.bitmap$0$1)
+    this.inst$macro$288$1 = new $c_Lio_circe_generic_decoding_DerivedDecoder$$anon$1().init___Lshapeless_LabelledGeneric__Lshapeless_Lazy(gen$1, decode);
+    this.bitmap$0$1 = (131072 | this.bitmap$0$1)
   };
-  return this.inst$macro$270$1
+  return this.inst$macro$288$1
 });
-$c_LMessage$anon$lazy$macro$283$1.prototype.inst$macro$248$lzycompute__p1__Lio_circe_generic_decoding_ReprDecoder = (function() {
-  if (((512 & this.bitmap$0$1) === 0)) {
-    this.inst$macro$248$1 = new $c_LMessage$anon$lazy$macro$283$1$$anon$33().init___LMessage$anon$lazy$macro$283$1(this);
-    this.bitmap$0$1 = (512 | this.bitmap$0$1)
+$c_LMessage$anon$lazy$macro$301$1.prototype.inst$macro$222$lzycompute__p1__Lio_circe_generic_decoding_ReprDecoder = (function() {
+  if (((1 & this.bitmap$0$1) === 0)) {
+    this.inst$macro$222$1 = new $c_LMessage$anon$lazy$macro$301$1$$anon$26().init___LMessage$anon$lazy$macro$301$1(this);
+    this.bitmap$0$1 = (1 | this.bitmap$0$1)
   };
-  return this.inst$macro$248$1
+  return this.inst$macro$222$1
 });
-$c_LMessage$anon$lazy$macro$283$1.prototype.inst$macro$228$lzycompute__p1__Lio_circe_generic_decoding_DerivedDecoder = (function() {
-  if (((64 & this.bitmap$0$1) === 0)) {
-    new $c_LMessage$anon$lazy$macro$283$1$$anon$30().init___LMessage$anon$lazy$macro$283$1(this);
-    var gen = new $c_LMessage$anon$lazy$macro$283$1$anon$macro$229$1().init___LMessage$anon$lazy$macro$283$1(this);
+$c_LMessage$anon$lazy$macro$301$1.prototype.inst$macro$269__Lio_circe_generic_decoding_DerivedDecoder = (function() {
+  return (((8192 & this.bitmap$0$1) === 0) ? this.inst$macro$269$lzycompute__p1__Lio_circe_generic_decoding_DerivedDecoder() : this.inst$macro$269$1)
+});
+$c_LMessage$anon$lazy$macro$301$1.prototype.inst$macro$261$lzycompute__p1__Lio_circe_generic_decoding_DerivedDecoder = (function() {
+  if (((2048 & this.bitmap$0$1) === 0)) {
+    new $c_LMessage$anon$lazy$macro$301$1$$anon$36().init___LMessage$anon$lazy$macro$301$1(this);
+    var gen = new $c_LMessage$anon$lazy$macro$301$1$anon$macro$263$1().init___LMessage$anon$lazy$macro$301$1(this);
+    $m_Lshapeless_ops_hlist$ZipWithKeys$();
+    var zipWithKeys = $m_Lshapeless_ops_hlist$ZipWithKeys$().hnilZipWithKeys$1;
+    $m_Lshapeless_Witness$();
+    var this$1 = $m_s_Symbol$();
+    var value0 = $as_s_Symbol($c_s_JSUniquenessCache.prototype.apply__T__O.call(this$1, "destroy"));
+    new $c_Lshapeless_Witness$$anon$1().init___O(value0);
+    var zip = new $c_Lshapeless_ops_hlist$ZipWithKeys$$anon$109().init___Lshapeless_ops_hlist$ZipWithKeys(zipWithKeys);
+    var ev = $m_s_Predef$().singleton$und$less$colon$less$2;
+    var gen$1 = new $c_Lshapeless_LabelledGeneric$$anon$1().init___Lshapeless_Generic__Lshapeless_ops_hlist$ZipWithKeys__s_Predef$$less$colon$less(gen, zip, ev);
+    var t = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function($this) {
+      return (function() {
+        return $this.inst$macro$266__Lio_circe_generic_decoding_ReprDecoder()
+      })
+    })(this));
+    var decode = new $c_Lshapeless_Lazy$$anon$1().init___F0(t);
+    this.inst$macro$261$1 = new $c_Lio_circe_generic_decoding_DerivedDecoder$$anon$1().init___Lshapeless_LabelledGeneric__Lshapeless_Lazy(gen$1, decode);
+    this.bitmap$0$1 = (2048 | this.bitmap$0$1)
+  };
+  return this.inst$macro$261$1
+});
+$c_LMessage$anon$lazy$macro$301$1.prototype.inst$macro$297__Lio_circe_generic_decoding_ReprDecoder = (function() {
+  return (((65536 & this.bitmap$0$1) === 0) ? this.inst$macro$297$lzycompute__p1__Lio_circe_generic_decoding_ReprDecoder() : this.inst$macro$297$1)
+});
+$c_LMessage$anon$lazy$macro$301$1.prototype.inst$macro$238$lzycompute__p1__Lio_circe_generic_decoding_ReprDecoder = (function() {
+  if (((8 & this.bitmap$0$1) === 0)) {
+    this.inst$macro$238$1 = new $c_LMessage$anon$lazy$macro$301$1$$anon$29().init___LMessage$anon$lazy$macro$301$1(this);
+    this.bitmap$0$1 = (8 | this.bitmap$0$1)
+  };
+  return this.inst$macro$238$1
+});
+$c_LMessage$anon$lazy$macro$301$1.prototype.inst$macro$238__Lio_circe_generic_decoding_ReprDecoder = (function() {
+  return (((8 & this.bitmap$0$1) === 0) ? this.inst$macro$238$lzycompute__p1__Lio_circe_generic_decoding_ReprDecoder() : this.inst$macro$238$1)
+});
+$c_LMessage$anon$lazy$macro$301$1.prototype.inst$macro$212__Lio_circe_generic_decoding_DerivedDecoder = (function() {
+  return (((524288 & this.bitmap$0$1) === 0) ? this.inst$macro$212$lzycompute__p1__Lio_circe_generic_decoding_DerivedDecoder() : this.inst$macro$212$1)
+});
+$c_LMessage$anon$lazy$macro$301$1.prototype.inst$macro$276$lzycompute__p1__Lio_circe_generic_decoding_ReprDecoder = (function() {
+  if (((4096 & this.bitmap$0$1) === 0)) {
+    this.inst$macro$276$1 = new $c_LMessage$anon$lazy$macro$301$1$$anon$37().init___LMessage$anon$lazy$macro$301$1(this);
+    this.bitmap$0$1 = (4096 | this.bitmap$0$1)
+  };
+  return this.inst$macro$276$1
+});
+$c_LMessage$anon$lazy$macro$301$1.prototype.inst$macro$212$lzycompute__p1__Lio_circe_generic_decoding_DerivedDecoder = (function() {
+  if (((524288 & this.bitmap$0$1) === 0)) {
+    new $c_LMessage$anon$lazy$macro$301$1$$anon$44().init___LMessage$anon$lazy$macro$301$1(this);
+    var gen = new $c_LMessage$anon$lazy$macro$301$1$anon$macro$213$1().init___LMessage$anon$lazy$macro$301$1(this);
+    $m_Lshapeless_ops_coproduct$ZipWithKeys$();
+    $m_Lshapeless_ops_coproduct$ZipWithKeys$();
+    $m_Lshapeless_ops_coproduct$ZipWithKeys$();
+    $m_Lshapeless_ops_coproduct$ZipWithKeys$();
+    $m_Lshapeless_ops_coproduct$ZipWithKeys$();
+    $m_Lshapeless_ops_coproduct$ZipWithKeys$();
+    $m_Lshapeless_ops_coproduct$ZipWithKeys$();
+    $m_Lshapeless_ops_coproduct$ZipWithKeys$();
+    $m_Lshapeless_ops_coproduct$ZipWithKeys$();
+    $m_Lshapeless_ops_coproduct$ZipWithKeys$();
+    var zipWithKeys = $m_Lshapeless_ops_coproduct$ZipWithKeys$().cnilZipWithKeys$1;
+    $m_Lshapeless_Witness$();
+    var this$1 = $m_s_Symbol$();
+    var value0 = $as_s_Symbol($c_s_JSUniquenessCache.prototype.apply__T__O.call(this$1, "Zorg"));
+    new $c_Lshapeless_Witness$$anon$1().init___O(value0);
+    var zipWithKeys$1 = new $c_Lshapeless_ops_coproduct$ZipWithKeys$$anon$22().init___Lshapeless_ops_coproduct$ZipWithKeys(zipWithKeys);
+    $m_Lshapeless_Witness$();
+    var this$4 = $m_s_Symbol$();
+    var value0$1 = $as_s_Symbol($c_s_JSUniquenessCache.prototype.apply__T__O.call(this$4, "Spaceship"));
+    new $c_Lshapeless_Witness$$anon$1().init___O(value0$1);
+    var zipWithKeys$2 = new $c_Lshapeless_ops_coproduct$ZipWithKeys$$anon$22().init___Lshapeless_ops_coproduct$ZipWithKeys(zipWithKeys$1);
+    $m_Lshapeless_Witness$();
+    var this$7 = $m_s_Symbol$();
+    var value0$2 = $as_s_Symbol($c_s_JSUniquenessCache.prototype.apply__T__O.call(this$7, "SetLifes"));
+    new $c_Lshapeless_Witness$$anon$1().init___O(value0$2);
+    var zipWithKeys$3 = new $c_Lshapeless_ops_coproduct$ZipWithKeys$$anon$22().init___Lshapeless_ops_coproduct$ZipWithKeys(zipWithKeys$2);
+    $m_Lshapeless_Witness$();
+    var this$10 = $m_s_Symbol$();
+    var value0$3 = $as_s_Symbol($c_s_JSUniquenessCache.prototype.apply__T__O.call(this$10, "Pong"));
+    new $c_Lshapeless_Witness$$anon$1().init___O(value0$3);
+    var zipWithKeys$4 = new $c_Lshapeless_ops_coproduct$ZipWithKeys$$anon$22().init___Lshapeless_ops_coproduct$ZipWithKeys(zipWithKeys$3);
+    $m_Lshapeless_Witness$();
+    var this$13 = $m_s_Symbol$();
+    var value0$4 = $as_s_Symbol($c_s_JSUniquenessCache.prototype.apply__T__O.call(this$13, "Ping"));
+    new $c_Lshapeless_Witness$$anon$1().init___O(value0$4);
+    var zipWithKeys$5 = new $c_Lshapeless_ops_coproduct$ZipWithKeys$$anon$22().init___Lshapeless_ops_coproduct$ZipWithKeys(zipWithKeys$4);
+    $m_Lshapeless_Witness$();
+    var this$16 = $m_s_Symbol$();
+    var value0$5 = $as_s_Symbol($c_s_JSUniquenessCache.prototype.apply__T__O.call(this$16, "Laser"));
+    new $c_Lshapeless_Witness$$anon$1().init___O(value0$5);
+    var zipWithKeys$6 = new $c_Lshapeless_ops_coproduct$ZipWithKeys$$anon$22().init___Lshapeless_ops_coproduct$ZipWithKeys(zipWithKeys$5);
+    $m_Lshapeless_Witness$();
+    var this$19 = $m_s_Symbol$();
+    var value0$6 = $as_s_Symbol($c_s_JSUniquenessCache.prototype.apply__T__O.call(this$19, "Destroy"));
+    new $c_Lshapeless_Witness$$anon$1().init___O(value0$6);
+    var zipWithKeys$7 = new $c_Lshapeless_ops_coproduct$ZipWithKeys$$anon$22().init___Lshapeless_ops_coproduct$ZipWithKeys(zipWithKeys$6);
+    $m_Lshapeless_Witness$();
+    var this$22 = $m_s_Symbol$();
+    var value0$7 = $as_s_Symbol($c_s_JSUniquenessCache.prototype.apply__T__O.call(this$22, "Cmd"));
+    new $c_Lshapeless_Witness$$anon$1().init___O(value0$7);
+    var zipWithKeys$8 = new $c_Lshapeless_ops_coproduct$ZipWithKeys$$anon$22().init___Lshapeless_ops_coproduct$ZipWithKeys(zipWithKeys$7);
+    $m_Lshapeless_Witness$();
+    var this$25 = $m_s_Symbol$();
+    var value0$8 = $as_s_Symbol($c_s_JSUniquenessCache.prototype.apply__T__O.call(this$25, "ClientId"));
+    new $c_Lshapeless_Witness$$anon$1().init___O(value0$8);
+    var zipWithKeys$9 = new $c_Lshapeless_ops_coproduct$ZipWithKeys$$anon$22().init___Lshapeless_ops_coproduct$ZipWithKeys(zipWithKeys$8);
+    $m_Lshapeless_Witness$();
+    var this$28 = $m_s_Symbol$();
+    var value0$9 = $as_s_Symbol($c_s_JSUniquenessCache.prototype.apply__T__O.call(this$28, "Asteroid"));
+    new $c_Lshapeless_Witness$$anon$1().init___O(value0$9);
+    var zip = new $c_Lshapeless_ops_coproduct$ZipWithKeys$$anon$22().init___Lshapeless_ops_coproduct$ZipWithKeys(zipWithKeys$9);
+    var ev = $m_s_Predef$().singleton$und$less$colon$less$2;
+    var gen$1 = new $c_Lshapeless_LabelledGeneric$$anon$2().init___Lshapeless_Generic__Lshapeless_ops_coproduct$ZipWithKeys__s_Predef$$less$colon$less(gen, zip, ev);
+    var t = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function($this) {
+      return (function() {
+        return $this.inst$macro$215__Lio_circe_generic_decoding_ReprDecoder()
+      })
+    })(this));
+    var decode = new $c_Lshapeless_Lazy$$anon$1().init___F0(t);
+    this.inst$macro$212$1 = new $c_Lio_circe_generic_decoding_DerivedDecoder$$anon$1().init___Lshapeless_LabelledGeneric__Lshapeless_Lazy(gen$1, decode);
+    this.bitmap$0$1 = (524288 | this.bitmap$0$1)
+  };
+  return this.inst$macro$212$1
+});
+$c_LMessage$anon$lazy$macro$301$1.prototype.inst$macro$246$lzycompute__p1__Lio_circe_generic_decoding_DerivedDecoder = (function() {
+  if (((128 & this.bitmap$0$1) === 0)) {
+    new $c_LMessage$anon$lazy$macro$301$1$$anon$32().init___LMessage$anon$lazy$macro$301$1(this);
+    var gen = new $c_LMessage$anon$lazy$macro$301$1$anon$macro$247$1().init___LMessage$anon$lazy$macro$301$1(this);
     var zip = $m_Lshapeless_ops_hlist$ZipWithKeys$().hnilZipWithKeys$1;
     var ev = $m_s_Predef$().singleton$und$less$colon$less$2;
     var gen$1 = new $c_Lshapeless_LabelledGeneric$$anon$1().init___Lshapeless_Generic__Lshapeless_ops_hlist$ZipWithKeys__s_Predef$$less$colon$less(gen, zip, ev);
     var t = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function($this) {
       return (function() {
-        return $this.inst$macro$226__Lio_circe_generic_decoding_ReprDecoder()
+        return $this.inst$macro$244__Lio_circe_generic_decoding_ReprDecoder()
       })
     })(this));
     var decode = new $c_Lshapeless_Lazy$$anon$1().init___F0(t);
-    this.inst$macro$228$1 = new $c_Lio_circe_generic_decoding_DerivedDecoder$$anon$1().init___Lshapeless_LabelledGeneric__Lshapeless_Lazy(gen$1, decode);
-    this.bitmap$0$1 = (64 | this.bitmap$0$1)
+    this.inst$macro$246$1 = new $c_Lio_circe_generic_decoding_DerivedDecoder$$anon$1().init___Lshapeless_LabelledGeneric__Lshapeless_Lazy(gen$1, decode);
+    this.bitmap$0$1 = (128 | this.bitmap$0$1)
   };
-  return this.inst$macro$228$1
+  return this.inst$macro$246$1
 });
-$c_LMessage$anon$lazy$macro$283$1.prototype.inst$macro$258__Lio_circe_generic_decoding_ReprDecoder = (function() {
-  return (((2048 & this.bitmap$0$1) === 0) ? this.inst$macro$258$lzycompute__p1__Lio_circe_generic_decoding_ReprDecoder() : this.inst$macro$258$1)
+$c_LMessage$anon$lazy$macro$301$1.prototype.inst$macro$285__Lio_circe_generic_decoding_ReprDecoder = (function() {
+  return (((16384 & this.bitmap$0$1) === 0) ? this.inst$macro$285$lzycompute__p1__Lio_circe_generic_decoding_ReprDecoder() : this.inst$macro$285$1)
 });
-$c_LMessage$anon$lazy$macro$283$1.prototype.inst$macro$203__Lio_circe_generic_decoding_ReprDecoder = (function() {
-  return (((131072 & this.bitmap$0$1) === 0) ? this.inst$macro$203$lzycompute__p1__Lio_circe_generic_decoding_ReprDecoder() : this.inst$macro$203$1)
+$c_LMessage$anon$lazy$macro$301$1.prototype.inst$macro$250$lzycompute__p1__Lio_circe_generic_decoding_DerivedDecoder = (function() {
+  if (((512 & this.bitmap$0$1) === 0)) {
+    new $c_LMessage$anon$lazy$macro$301$1$$anon$34().init___LMessage$anon$lazy$macro$301$1(this);
+    var gen = new $c_LMessage$anon$lazy$macro$301$1$anon$macro$253$1().init___LMessage$anon$lazy$macro$301$1(this);
+    $m_Lshapeless_ops_hlist$ZipWithKeys$();
+    $m_Lshapeless_ops_hlist$ZipWithKeys$();
+    var zipWithKeys = $m_Lshapeless_ops_hlist$ZipWithKeys$().hnilZipWithKeys$1;
+    $m_Lshapeless_Witness$();
+    var this$1 = $m_s_Symbol$();
+    var value0 = $as_s_Symbol($c_s_JSUniquenessCache.prototype.apply__T__O.call(this$1, "shooter"));
+    new $c_Lshapeless_Witness$$anon$1().init___O(value0);
+    var zipWithKeys$1 = new $c_Lshapeless_ops_hlist$ZipWithKeys$$anon$109().init___Lshapeless_ops_hlist$ZipWithKeys(zipWithKeys);
+    $m_Lshapeless_Witness$();
+    var this$4 = $m_s_Symbol$();
+    var value0$1 = $as_s_Symbol($c_s_JSUniquenessCache.prototype.apply__T__O.call(this$4, "common"));
+    new $c_Lshapeless_Witness$$anon$1().init___O(value0$1);
+    var zip = new $c_Lshapeless_ops_hlist$ZipWithKeys$$anon$109().init___Lshapeless_ops_hlist$ZipWithKeys(zipWithKeys$1);
+    var ev = $m_s_Predef$().singleton$und$less$colon$less$2;
+    var gen$1 = new $c_Lshapeless_LabelledGeneric$$anon$1().init___Lshapeless_Generic__Lshapeless_ops_hlist$ZipWithKeys__s_Predef$$less$colon$less(gen, zip, ev);
+    var t = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function($this) {
+      return (function() {
+        return $this.inst$macro$257__Lio_circe_generic_decoding_ReprDecoder()
+      })
+    })(this));
+    var decode = new $c_Lshapeless_Lazy$$anon$1().init___F0(t);
+    this.inst$macro$250$1 = new $c_Lio_circe_generic_decoding_DerivedDecoder$$anon$1().init___Lshapeless_LabelledGeneric__Lshapeless_Lazy(gen$1, decode);
+    this.bitmap$0$1 = (512 | this.bitmap$0$1)
+  };
+  return this.inst$macro$250$1
 });
-$c_LMessage$anon$lazy$macro$283$1.prototype.inst$macro$223__Lio_circe_generic_decoding_DerivedDecoder = (function() {
-  return (((32 & this.bitmap$0$1) === 0) ? this.inst$macro$223$lzycompute__p1__Lio_circe_generic_decoding_DerivedDecoder() : this.inst$macro$223$1)
+$c_LMessage$anon$lazy$macro$301$1.prototype.inst$macro$257__Lio_circe_generic_decoding_ReprDecoder = (function() {
+  return (((256 & this.bitmap$0$1) === 0) ? this.inst$macro$257$lzycompute__p1__Lio_circe_generic_decoding_ReprDecoder() : this.inst$macro$257$1)
 });
-$c_LMessage$anon$lazy$macro$283$1.prototype.inst$macro$262$lzycompute__p1__Lio_circe_generic_decoding_DerivedDecoder = (function() {
+$c_LMessage$anon$lazy$macro$301$1.prototype.inst$macro$280__Lio_circe_generic_decoding_DerivedDecoder = (function() {
+  return (((32768 & this.bitmap$0$1) === 0) ? this.inst$macro$280$lzycompute__p1__Lio_circe_generic_decoding_DerivedDecoder() : this.inst$macro$280$1)
+});
+$c_LMessage$anon$lazy$macro$301$1.prototype.inst$macro$297$lzycompute__p1__Lio_circe_generic_decoding_ReprDecoder = (function() {
+  if (((65536 & this.bitmap$0$1) === 0)) {
+    this.inst$macro$297$1 = new $c_LMessage$anon$lazy$macro$301$1$$anon$41().init___LMessage$anon$lazy$macro$301$1(this);
+    this.bitmap$0$1 = (65536 | this.bitmap$0$1)
+  };
+  return this.inst$macro$297$1
+});
+$c_LMessage$anon$lazy$macro$301$1.prototype.inst$macro$241__Lio_circe_generic_decoding_DerivedDecoder = (function() {
+  return (((64 & this.bitmap$0$1) === 0) ? this.inst$macro$241$lzycompute__p1__Lio_circe_generic_decoding_DerivedDecoder() : this.inst$macro$241$1)
+});
+$c_LMessage$anon$lazy$macro$301$1.prototype.inst$macro$285$lzycompute__p1__Lio_circe_generic_decoding_ReprDecoder = (function() {
   if (((16384 & this.bitmap$0$1) === 0)) {
-    new $c_LMessage$anon$lazy$macro$283$1$$anon$38().init___LMessage$anon$lazy$macro$283$1(this);
-    var gen = new $c_LMessage$anon$lazy$macro$283$1$anon$macro$264$1().init___LMessage$anon$lazy$macro$283$1(this);
+    this.inst$macro$285$1 = new $c_LMessage$anon$lazy$macro$301$1$$anon$39().init___LMessage$anon$lazy$macro$301$1(this);
+    this.bitmap$0$1 = (16384 | this.bitmap$0$1)
+  };
+  return this.inst$macro$285$1
+});
+$c_LMessage$anon$lazy$macro$301$1.prototype.inst$macro$244$lzycompute__p1__Lio_circe_generic_decoding_ReprDecoder = (function() {
+  if (((32 & this.bitmap$0$1) === 0)) {
+    this.inst$macro$244$1 = $m_Lio_circe_generic_decoding_ReprDecoder$().hnilReprDecoder$1;
+    this.bitmap$0$1 = (32 | this.bitmap$0$1)
+  };
+  return this.inst$macro$244$1
+});
+$c_LMessage$anon$lazy$macro$301$1.prototype.inst$macro$215__Lio_circe_generic_decoding_ReprDecoder = (function() {
+  return (((262144 & this.bitmap$0$1) === 0) ? this.inst$macro$215$lzycompute__p1__Lio_circe_generic_decoding_ReprDecoder() : this.inst$macro$215$1)
+});
+$c_LMessage$anon$lazy$macro$301$1.prototype.inst$macro$250__Lio_circe_generic_decoding_DerivedDecoder = (function() {
+  return (((512 & this.bitmap$0$1) === 0) ? this.inst$macro$250$lzycompute__p1__Lio_circe_generic_decoding_DerivedDecoder() : this.inst$macro$250$1)
+});
+$c_LMessage$anon$lazy$macro$301$1.prototype.inst$macro$244__Lio_circe_generic_decoding_ReprDecoder = (function() {
+  return (((32 & this.bitmap$0$1) === 0) ? this.inst$macro$244$lzycompute__p1__Lio_circe_generic_decoding_ReprDecoder() : this.inst$macro$244$1)
+});
+$c_LMessage$anon$lazy$macro$301$1.prototype.inst$macro$269$lzycompute__p1__Lio_circe_generic_decoding_DerivedDecoder = (function() {
+  if (((8192 & this.bitmap$0$1) === 0)) {
+    new $c_LMessage$anon$lazy$macro$301$1$$anon$38().init___LMessage$anon$lazy$macro$301$1(this);
+    var gen = new $c_LMessage$anon$lazy$macro$301$1$anon$macro$272$1().init___LMessage$anon$lazy$macro$301$1(this);
+    $m_Lshapeless_ops_hlist$ZipWithKeys$();
+    $m_Lshapeless_ops_hlist$ZipWithKeys$();
+    var zipWithKeys = $m_Lshapeless_ops_hlist$ZipWithKeys$().hnilZipWithKeys$1;
+    $m_Lshapeless_Witness$();
+    var this$1 = $m_s_Symbol$();
+    var value0 = $as_s_Symbol($c_s_JSUniquenessCache.prototype.apply__T__O.call(this$1, "cmd"));
+    new $c_Lshapeless_Witness$$anon$1().init___O(value0);
+    var zipWithKeys$1 = new $c_Lshapeless_ops_hlist$ZipWithKeys$$anon$109().init___Lshapeless_ops_hlist$ZipWithKeys(zipWithKeys);
+    $m_Lshapeless_Witness$();
+    var this$4 = $m_s_Symbol$();
+    var value0$1 = $as_s_Symbol($c_s_JSUniquenessCache.prototype.apply__T__O.call(this$4, "sId"));
+    new $c_Lshapeless_Witness$$anon$1().init___O(value0$1);
+    var zip = new $c_Lshapeless_ops_hlist$ZipWithKeys$$anon$109().init___Lshapeless_ops_hlist$ZipWithKeys(zipWithKeys$1);
+    var ev = $m_s_Predef$().singleton$und$less$colon$less$2;
+    var gen$1 = new $c_Lshapeless_LabelledGeneric$$anon$1().init___Lshapeless_Generic__Lshapeless_ops_hlist$ZipWithKeys__s_Predef$$less$colon$less(gen, zip, ev);
+    var t = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function($this) {
+      return (function() {
+        return $this.inst$macro$276__Lio_circe_generic_decoding_ReprDecoder()
+      })
+    })(this));
+    var decode = new $c_Lshapeless_Lazy$$anon$1().init___F0(t);
+    this.inst$macro$269$1 = new $c_Lio_circe_generic_decoding_DerivedDecoder$$anon$1().init___Lshapeless_LabelledGeneric__Lshapeless_Lazy(gen$1, decode);
+    this.bitmap$0$1 = (8192 | this.bitmap$0$1)
+  };
+  return this.inst$macro$269$1
+});
+$c_LMessage$anon$lazy$macro$301$1.prototype.inst$macro$280$lzycompute__p1__Lio_circe_generic_decoding_DerivedDecoder = (function() {
+  if (((32768 & this.bitmap$0$1) === 0)) {
+    new $c_LMessage$anon$lazy$macro$301$1$$anon$40().init___LMessage$anon$lazy$macro$301$1(this);
+    var gen = new $c_LMessage$anon$lazy$macro$301$1$anon$macro$282$1().init___LMessage$anon$lazy$macro$301$1(this);
     $m_Lshapeless_ops_hlist$ZipWithKeys$();
     var zipWithKeys = $m_Lshapeless_ops_hlist$ZipWithKeys$().hnilZipWithKeys$1;
     $m_Lshapeless_Witness$();
@@ -14321,24 +14226,64 @@ $c_LMessage$anon$lazy$macro$283$1.prototype.inst$macro$262$lzycompute__p1__Lio_c
     var gen$1 = new $c_Lshapeless_LabelledGeneric$$anon$1().init___Lshapeless_Generic__Lshapeless_ops_hlist$ZipWithKeys__s_Predef$$less$colon$less(gen, zip, ev);
     var t = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function($this) {
       return (function() {
-        return $this.inst$macro$267__Lio_circe_generic_decoding_ReprDecoder()
+        return $this.inst$macro$285__Lio_circe_generic_decoding_ReprDecoder()
       })
     })(this));
     var decode = new $c_Lshapeless_Lazy$$anon$1().init___F0(t);
-    this.inst$macro$262$1 = new $c_Lio_circe_generic_decoding_DerivedDecoder$$anon$1().init___Lshapeless_LabelledGeneric__Lshapeless_Lazy(gen$1, decode);
-    this.bitmap$0$1 = (16384 | this.bitmap$0$1)
+    this.inst$macro$280$1 = new $c_Lio_circe_generic_decoding_DerivedDecoder$$anon$1().init___Lshapeless_LabelledGeneric__Lshapeless_Lazy(gen$1, decode);
+    this.bitmap$0$1 = (32768 | this.bitmap$0$1)
   };
-  return this.inst$macro$262$1
+  return this.inst$macro$280$1
 });
-var $d_LMessage$anon$lazy$macro$283$1 = new $TypeData().initClass({
-  LMessage$anon$lazy$macro$283$1: 0
-}, false, "Message$anon$lazy$macro$283$1", {
-  LMessage$anon$lazy$macro$283$1: 1,
+$c_LMessage$anon$lazy$macro$301$1.prototype.inst$macro$225$lzycompute__p1__Lio_circe_generic_decoding_DerivedDecoder = (function() {
+  if (((4 & this.bitmap$0$1) === 0)) {
+    new $c_LMessage$anon$lazy$macro$301$1$$anon$28().init___LMessage$anon$lazy$macro$301$1(this);
+    var gen = new $c_LMessage$anon$lazy$macro$301$1$anon$macro$229$1().init___LMessage$anon$lazy$macro$301$1(this);
+    $m_Lshapeless_ops_hlist$ZipWithKeys$();
+    var zipWithKeys = $m_Lshapeless_ops_hlist$ZipWithKeys$().hnilZipWithKeys$1;
+    $m_Lshapeless_Witness$();
+    var this$1 = $m_s_Symbol$();
+    var value0 = $as_s_Symbol($c_s_JSUniquenessCache.prototype.apply__T__O.call(this$1, "common"));
+    new $c_Lshapeless_Witness$$anon$1().init___O(value0);
+    var zip = new $c_Lshapeless_ops_hlist$ZipWithKeys$$anon$109().init___Lshapeless_ops_hlist$ZipWithKeys(zipWithKeys);
+    var ev = $m_s_Predef$().singleton$und$less$colon$less$2;
+    var gen$1 = new $c_Lshapeless_LabelledGeneric$$anon$1().init___Lshapeless_Generic__Lshapeless_ops_hlist$ZipWithKeys__s_Predef$$less$colon$less(gen, zip, ev);
+    var t = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function($this) {
+      return (function() {
+        return $this.inst$macro$222__Lio_circe_generic_decoding_ReprDecoder()
+      })
+    })(this));
+    var decode = new $c_Lshapeless_Lazy$$anon$1().init___F0(t);
+    this.inst$macro$225$1 = new $c_Lio_circe_generic_decoding_DerivedDecoder$$anon$1().init___Lshapeless_LabelledGeneric__Lshapeless_Lazy(gen$1, decode);
+    this.bitmap$0$1 = (4 | this.bitmap$0$1)
+  };
+  return this.inst$macro$225$1
+});
+$c_LMessage$anon$lazy$macro$301$1.prototype.inst$macro$215$lzycompute__p1__Lio_circe_generic_decoding_ReprDecoder = (function() {
+  if (((262144 & this.bitmap$0$1) === 0)) {
+    this.inst$macro$215$1 = new $c_LMessage$anon$lazy$macro$301$1$$anon$43().init___LMessage$anon$lazy$macro$301$1(this);
+    this.bitmap$0$1 = (262144 | this.bitmap$0$1)
+  };
+  return this.inst$macro$215$1
+});
+$c_LMessage$anon$lazy$macro$301$1.prototype.inst$macro$276__Lio_circe_generic_decoding_ReprDecoder = (function() {
+  return (((4096 & this.bitmap$0$1) === 0) ? this.inst$macro$276$lzycompute__p1__Lio_circe_generic_decoding_ReprDecoder() : this.inst$macro$276$1)
+});
+$c_LMessage$anon$lazy$macro$301$1.prototype.inst$macro$288__Lio_circe_generic_decoding_DerivedDecoder = (function() {
+  return (((131072 & this.bitmap$0$1) === 0) ? this.inst$macro$288$lzycompute__p1__Lio_circe_generic_decoding_DerivedDecoder() : this.inst$macro$288$1)
+});
+$c_LMessage$anon$lazy$macro$301$1.prototype.inst$macro$217__Lio_circe_generic_decoding_DerivedDecoder = (function() {
+  return (((2 & this.bitmap$0$1) === 0) ? this.inst$macro$217$lzycompute__p1__Lio_circe_generic_decoding_DerivedDecoder() : this.inst$macro$217$1)
+});
+var $d_LMessage$anon$lazy$macro$301$1 = new $TypeData().initClass({
+  LMessage$anon$lazy$macro$301$1: 0
+}, false, "Message$anon$lazy$macro$301$1", {
+  LMessage$anon$lazy$macro$301$1: 1,
   O: 1,
   s_Serializable: 1,
   Ljava_io_Serializable: 1
 });
-$c_LMessage$anon$lazy$macro$283$1.prototype.$classData = $d_LMessage$anon$lazy$macro$283$1;
+$c_LMessage$anon$lazy$macro$301$1.prototype.$classData = $d_LMessage$anon$lazy$macro$301$1;
 /** @constructor */
 function $c_LSpaceObjectFactory$$anon$1() {
   $c_LSimpleSpaceObject.call(this)
@@ -20127,33 +20072,30 @@ var $d_sr_Nothing$ = new $TypeData().initClass({
   Ljava_io_Serializable: 1
 });
 /** @constructor */
-function $c_LAColor$anon$lazy$macro$348$1$$anon$11$anon$macro$341$1() {
+function $c_LAColor$anon$lazy$macro$366$1$$anon$11$anon$macro$359$1() {
   $c_O.call(this)
 }
-$c_LAColor$anon$lazy$macro$348$1$$anon$11$anon$macro$341$1.prototype = new $h_O();
-$c_LAColor$anon$lazy$macro$348$1$$anon$11$anon$macro$341$1.prototype.constructor = $c_LAColor$anon$lazy$macro$348$1$$anon$11$anon$macro$341$1;
+$c_LAColor$anon$lazy$macro$366$1$$anon$11$anon$macro$359$1.prototype = new $h_O();
+$c_LAColor$anon$lazy$macro$366$1$$anon$11$anon$macro$359$1.prototype.constructor = $c_LAColor$anon$lazy$macro$366$1$$anon$11$anon$macro$359$1;
 /** @constructor */
-function $h_LAColor$anon$lazy$macro$348$1$$anon$11$anon$macro$341$1() {
+function $h_LAColor$anon$lazy$macro$366$1$$anon$11$anon$macro$359$1() {
   /*<skip>*/
 }
-$h_LAColor$anon$lazy$macro$348$1$$anon$11$anon$macro$341$1.prototype = $c_LAColor$anon$lazy$macro$348$1$$anon$11$anon$macro$341$1.prototype;
-$c_LAColor$anon$lazy$macro$348$1$$anon$11$anon$macro$341$1.prototype.init___LAColor$anon$lazy$macro$348$1$$anon$11 = (function($$outer) {
-  return this
-});
-$c_LAColor$anon$lazy$macro$348$1$$anon$11$anon$macro$341$1.prototype.to__LGray$__Lshapeless_HNil = (function(p) {
+$h_LAColor$anon$lazy$macro$366$1$$anon$11$anon$macro$359$1.prototype = $c_LAColor$anon$lazy$macro$366$1$$anon$11$anon$macro$359$1.prototype;
+$c_LAColor$anon$lazy$macro$366$1$$anon$11$anon$macro$359$1.prototype.to__LGray$__Lshapeless_HNil = (function(p) {
   if ((p !== null)) {
     return $m_Lshapeless_HNil$()
   } else {
     throw new $c_s_MatchError().init___O(p)
   }
 });
-$c_LAColor$anon$lazy$macro$348$1$$anon$11$anon$macro$341$1.prototype.from__O__O = (function(r) {
+$c_LAColor$anon$lazy$macro$366$1$$anon$11$anon$macro$359$1.prototype.from__O__O = (function(r) {
   return this.from__Lshapeless_HNil__LGray$($as_Lshapeless_HNil(r))
 });
-$c_LAColor$anon$lazy$macro$348$1$$anon$11$anon$macro$341$1.prototype.to__O__O = (function(t) {
+$c_LAColor$anon$lazy$macro$366$1$$anon$11$anon$macro$359$1.prototype.to__O__O = (function(t) {
   return this.to__LGray$__Lshapeless_HNil($as_LGray$(t))
 });
-$c_LAColor$anon$lazy$macro$348$1$$anon$11$anon$macro$341$1.prototype.from__Lshapeless_HNil__LGray$ = (function(p) {
+$c_LAColor$anon$lazy$macro$366$1$$anon$11$anon$macro$359$1.prototype.from__Lshapeless_HNil__LGray$ = (function(p) {
   var x = $m_Lshapeless_HNil$();
   if ((x === p)) {
     return $m_LGray$()
@@ -20161,31 +20103,31 @@ $c_LAColor$anon$lazy$macro$348$1$$anon$11$anon$macro$341$1.prototype.from__Lshap
     throw new $c_s_MatchError().init___O(p)
   }
 });
-var $d_LAColor$anon$lazy$macro$348$1$$anon$11$anon$macro$341$1 = new $TypeData().initClass({
-  LAColor$anon$lazy$macro$348$1$$anon$11$anon$macro$341$1: 0
-}, false, "AColor$anon$lazy$macro$348$1$$anon$11$anon$macro$341$1", {
-  LAColor$anon$lazy$macro$348$1$$anon$11$anon$macro$341$1: 1,
+$c_LAColor$anon$lazy$macro$366$1$$anon$11$anon$macro$359$1.prototype.init___LAColor$anon$lazy$macro$366$1$$anon$11 = (function($$outer) {
+  return this
+});
+var $d_LAColor$anon$lazy$macro$366$1$$anon$11$anon$macro$359$1 = new $TypeData().initClass({
+  LAColor$anon$lazy$macro$366$1$$anon$11$anon$macro$359$1: 0
+}, false, "AColor$anon$lazy$macro$366$1$$anon$11$anon$macro$359$1", {
+  LAColor$anon$lazy$macro$366$1$$anon$11$anon$macro$359$1: 1,
   O: 1,
   Lshapeless_Generic: 1,
   s_Serializable: 1,
   Ljava_io_Serializable: 1
 });
-$c_LAColor$anon$lazy$macro$348$1$$anon$11$anon$macro$341$1.prototype.$classData = $d_LAColor$anon$lazy$macro$348$1$$anon$11$anon$macro$341$1;
+$c_LAColor$anon$lazy$macro$366$1$$anon$11$anon$macro$359$1.prototype.$classData = $d_LAColor$anon$lazy$macro$366$1$$anon$11$anon$macro$359$1;
 /** @constructor */
-function $c_LAColor$anon$lazy$macro$348$1$$anon$11$anon$macro$345$1() {
+function $c_LAColor$anon$lazy$macro$366$1$$anon$11$anon$macro$363$1() {
   $c_O.call(this)
 }
-$c_LAColor$anon$lazy$macro$348$1$$anon$11$anon$macro$345$1.prototype = new $h_O();
-$c_LAColor$anon$lazy$macro$348$1$$anon$11$anon$macro$345$1.prototype.constructor = $c_LAColor$anon$lazy$macro$348$1$$anon$11$anon$macro$345$1;
+$c_LAColor$anon$lazy$macro$366$1$$anon$11$anon$macro$363$1.prototype = new $h_O();
+$c_LAColor$anon$lazy$macro$366$1$$anon$11$anon$macro$363$1.prototype.constructor = $c_LAColor$anon$lazy$macro$366$1$$anon$11$anon$macro$363$1;
 /** @constructor */
-function $h_LAColor$anon$lazy$macro$348$1$$anon$11$anon$macro$345$1() {
+function $h_LAColor$anon$lazy$macro$366$1$$anon$11$anon$macro$363$1() {
   /*<skip>*/
 }
-$h_LAColor$anon$lazy$macro$348$1$$anon$11$anon$macro$345$1.prototype = $c_LAColor$anon$lazy$macro$348$1$$anon$11$anon$macro$345$1.prototype;
-$c_LAColor$anon$lazy$macro$348$1$$anon$11$anon$macro$345$1.prototype.init___LAColor$anon$lazy$macro$348$1$$anon$11 = (function($$outer) {
-  return this
-});
-$c_LAColor$anon$lazy$macro$348$1$$anon$11$anon$macro$345$1.prototype.from__Lshapeless_HNil__LBrown$ = (function(p) {
+$h_LAColor$anon$lazy$macro$366$1$$anon$11$anon$macro$363$1.prototype = $c_LAColor$anon$lazy$macro$366$1$$anon$11$anon$macro$363$1.prototype;
+$c_LAColor$anon$lazy$macro$366$1$$anon$11$anon$macro$363$1.prototype.from__Lshapeless_HNil__LBrown$ = (function(p) {
   var x = $m_Lshapeless_HNil$();
   if ((x === p)) {
     return $m_LBrown$()
@@ -20193,51 +20135,54 @@ $c_LAColor$anon$lazy$macro$348$1$$anon$11$anon$macro$345$1.prototype.from__Lshap
     throw new $c_s_MatchError().init___O(p)
   }
 });
-$c_LAColor$anon$lazy$macro$348$1$$anon$11$anon$macro$345$1.prototype.from__O__O = (function(r) {
+$c_LAColor$anon$lazy$macro$366$1$$anon$11$anon$macro$363$1.prototype.from__O__O = (function(r) {
   return this.from__Lshapeless_HNil__LBrown$($as_Lshapeless_HNil(r))
 });
-$c_LAColor$anon$lazy$macro$348$1$$anon$11$anon$macro$345$1.prototype.to__O__O = (function(t) {
+$c_LAColor$anon$lazy$macro$366$1$$anon$11$anon$macro$363$1.prototype.to__O__O = (function(t) {
   return this.to__LBrown$__Lshapeless_HNil($as_LBrown$(t))
 });
-$c_LAColor$anon$lazy$macro$348$1$$anon$11$anon$macro$345$1.prototype.to__LBrown$__Lshapeless_HNil = (function(p) {
+$c_LAColor$anon$lazy$macro$366$1$$anon$11$anon$macro$363$1.prototype.init___LAColor$anon$lazy$macro$366$1$$anon$11 = (function($$outer) {
+  return this
+});
+$c_LAColor$anon$lazy$macro$366$1$$anon$11$anon$macro$363$1.prototype.to__LBrown$__Lshapeless_HNil = (function(p) {
   if ((p !== null)) {
     return $m_Lshapeless_HNil$()
   } else {
     throw new $c_s_MatchError().init___O(p)
   }
 });
-var $d_LAColor$anon$lazy$macro$348$1$$anon$11$anon$macro$345$1 = new $TypeData().initClass({
-  LAColor$anon$lazy$macro$348$1$$anon$11$anon$macro$345$1: 0
-}, false, "AColor$anon$lazy$macro$348$1$$anon$11$anon$macro$345$1", {
-  LAColor$anon$lazy$macro$348$1$$anon$11$anon$macro$345$1: 1,
+var $d_LAColor$anon$lazy$macro$366$1$$anon$11$anon$macro$363$1 = new $TypeData().initClass({
+  LAColor$anon$lazy$macro$366$1$$anon$11$anon$macro$363$1: 0
+}, false, "AColor$anon$lazy$macro$366$1$$anon$11$anon$macro$363$1", {
+  LAColor$anon$lazy$macro$366$1$$anon$11$anon$macro$363$1: 1,
   O: 1,
   Lshapeless_Generic: 1,
   s_Serializable: 1,
   Ljava_io_Serializable: 1
 });
-$c_LAColor$anon$lazy$macro$348$1$$anon$11$anon$macro$345$1.prototype.$classData = $d_LAColor$anon$lazy$macro$348$1$$anon$11$anon$macro$345$1;
+$c_LAColor$anon$lazy$macro$366$1$$anon$11$anon$macro$363$1.prototype.$classData = $d_LAColor$anon$lazy$macro$366$1$$anon$11$anon$macro$363$1;
 /** @constructor */
-function $c_LAColor$anon$lazy$macro$348$1$anon$macro$337$1() {
+function $c_LAColor$anon$lazy$macro$366$1$anon$macro$355$1() {
   $c_O.call(this)
 }
-$c_LAColor$anon$lazy$macro$348$1$anon$macro$337$1.prototype = new $h_O();
-$c_LAColor$anon$lazy$macro$348$1$anon$macro$337$1.prototype.constructor = $c_LAColor$anon$lazy$macro$348$1$anon$macro$337$1;
+$c_LAColor$anon$lazy$macro$366$1$anon$macro$355$1.prototype = new $h_O();
+$c_LAColor$anon$lazy$macro$366$1$anon$macro$355$1.prototype.constructor = $c_LAColor$anon$lazy$macro$366$1$anon$macro$355$1;
 /** @constructor */
-function $h_LAColor$anon$lazy$macro$348$1$anon$macro$337$1() {
+function $h_LAColor$anon$lazy$macro$366$1$anon$macro$355$1() {
   /*<skip>*/
 }
-$h_LAColor$anon$lazy$macro$348$1$anon$macro$337$1.prototype = $c_LAColor$anon$lazy$macro$348$1$anon$macro$337$1.prototype;
-$c_LAColor$anon$lazy$macro$348$1$anon$macro$337$1.prototype.from__O__O = (function(r) {
+$h_LAColor$anon$lazy$macro$366$1$anon$macro$355$1.prototype = $c_LAColor$anon$lazy$macro$366$1$anon$macro$355$1.prototype;
+$c_LAColor$anon$lazy$macro$366$1$anon$macro$355$1.prototype.from__O__O = (function(r) {
   var p = $as_Lshapeless_$colon$plus$colon(r);
   return $as_LAColor($m_Lshapeless_Coproduct$().unsafeGet__Lshapeless_Coproduct__O(p))
 });
-$c_LAColor$anon$lazy$macro$348$1$anon$macro$337$1.prototype.to__O__O = (function(t) {
-  return this.to__LAColor__Lshapeless_$colon$plus$colon($as_LAColor(t))
-});
-$c_LAColor$anon$lazy$macro$348$1$anon$macro$337$1.prototype.init___LAColor$anon$lazy$macro$348$1 = (function($$outer) {
+$c_LAColor$anon$lazy$macro$366$1$anon$macro$355$1.prototype.init___LAColor$anon$lazy$macro$366$1 = (function($$outer) {
   return this
 });
-$c_LAColor$anon$lazy$macro$348$1$anon$macro$337$1.prototype.to__LAColor__Lshapeless_$colon$plus$colon = (function(p) {
+$c_LAColor$anon$lazy$macro$366$1$anon$macro$355$1.prototype.to__O__O = (function(t) {
+  return this.to__LAColor__Lshapeless_$colon$plus$colon($as_LAColor(t))
+});
+$c_LAColor$anon$lazy$macro$366$1$anon$macro$355$1.prototype.to__LAColor__Lshapeless_$colon$plus$colon = (function(p) {
   var jsx$2 = $m_Lshapeless_Coproduct$();
   if ((p === $m_LBrown$())) {
     var jsx$1 = 0
@@ -20249,38 +20194,35 @@ $c_LAColor$anon$lazy$macro$348$1$anon$macro$337$1.prototype.to__LAColor__Lshapel
   };
   return $as_Lshapeless_$colon$plus$colon(jsx$2.unsafeMkCoproduct__I__O__Lshapeless_Coproduct(jsx$1, p))
 });
-var $d_LAColor$anon$lazy$macro$348$1$anon$macro$337$1 = new $TypeData().initClass({
-  LAColor$anon$lazy$macro$348$1$anon$macro$337$1: 0
-}, false, "AColor$anon$lazy$macro$348$1$anon$macro$337$1", {
-  LAColor$anon$lazy$macro$348$1$anon$macro$337$1: 1,
+var $d_LAColor$anon$lazy$macro$366$1$anon$macro$355$1 = new $TypeData().initClass({
+  LAColor$anon$lazy$macro$366$1$anon$macro$355$1: 0
+}, false, "AColor$anon$lazy$macro$366$1$anon$macro$355$1", {
+  LAColor$anon$lazy$macro$366$1$anon$macro$355$1: 1,
   O: 1,
   Lshapeless_Generic: 1,
   s_Serializable: 1,
   Ljava_io_Serializable: 1
 });
-$c_LAColor$anon$lazy$macro$348$1$anon$macro$337$1.prototype.$classData = $d_LAColor$anon$lazy$macro$348$1$anon$macro$337$1;
+$c_LAColor$anon$lazy$macro$366$1$anon$macro$355$1.prototype.$classData = $d_LAColor$anon$lazy$macro$366$1$anon$macro$355$1;
 /** @constructor */
-function $c_LAColor$anon$lazy$macro$363$1$anon$macro$351$1() {
+function $c_LAColor$anon$lazy$macro$381$1$anon$macro$369$1() {
   $c_O.call(this)
 }
-$c_LAColor$anon$lazy$macro$363$1$anon$macro$351$1.prototype = new $h_O();
-$c_LAColor$anon$lazy$macro$363$1$anon$macro$351$1.prototype.constructor = $c_LAColor$anon$lazy$macro$363$1$anon$macro$351$1;
+$c_LAColor$anon$lazy$macro$381$1$anon$macro$369$1.prototype = new $h_O();
+$c_LAColor$anon$lazy$macro$381$1$anon$macro$369$1.prototype.constructor = $c_LAColor$anon$lazy$macro$381$1$anon$macro$369$1;
 /** @constructor */
-function $h_LAColor$anon$lazy$macro$363$1$anon$macro$351$1() {
+function $h_LAColor$anon$lazy$macro$381$1$anon$macro$369$1() {
   /*<skip>*/
 }
-$h_LAColor$anon$lazy$macro$363$1$anon$macro$351$1.prototype = $c_LAColor$anon$lazy$macro$363$1$anon$macro$351$1.prototype;
-$c_LAColor$anon$lazy$macro$363$1$anon$macro$351$1.prototype.init___LAColor$anon$lazy$macro$363$1 = (function($$outer) {
-  return this
-});
-$c_LAColor$anon$lazy$macro$363$1$anon$macro$351$1.prototype.from__O__O = (function(r) {
+$h_LAColor$anon$lazy$macro$381$1$anon$macro$369$1.prototype = $c_LAColor$anon$lazy$macro$381$1$anon$macro$369$1.prototype;
+$c_LAColor$anon$lazy$macro$381$1$anon$macro$369$1.prototype.from__O__O = (function(r) {
   var p = $as_Lshapeless_$colon$plus$colon(r);
   return $as_LAColor($m_Lshapeless_Coproduct$().unsafeGet__Lshapeless_Coproduct__O(p))
 });
-$c_LAColor$anon$lazy$macro$363$1$anon$macro$351$1.prototype.to__O__O = (function(t) {
+$c_LAColor$anon$lazy$macro$381$1$anon$macro$369$1.prototype.to__O__O = (function(t) {
   return this.to__LAColor__Lshapeless_$colon$plus$colon($as_LAColor(t))
 });
-$c_LAColor$anon$lazy$macro$363$1$anon$macro$351$1.prototype.to__LAColor__Lshapeless_$colon$plus$colon = (function(p) {
+$c_LAColor$anon$lazy$macro$381$1$anon$macro$369$1.prototype.to__LAColor__Lshapeless_$colon$plus$colon = (function(p) {
   var jsx$2 = $m_Lshapeless_Coproduct$();
   if ((p === $m_LBrown$())) {
     var jsx$1 = 0
@@ -20292,44 +20234,44 @@ $c_LAColor$anon$lazy$macro$363$1$anon$macro$351$1.prototype.to__LAColor__Lshapel
   };
   return $as_Lshapeless_$colon$plus$colon(jsx$2.unsafeMkCoproduct__I__O__Lshapeless_Coproduct(jsx$1, p))
 });
-var $d_LAColor$anon$lazy$macro$363$1$anon$macro$351$1 = new $TypeData().initClass({
-  LAColor$anon$lazy$macro$363$1$anon$macro$351$1: 0
-}, false, "AColor$anon$lazy$macro$363$1$anon$macro$351$1", {
-  LAColor$anon$lazy$macro$363$1$anon$macro$351$1: 1,
+$c_LAColor$anon$lazy$macro$381$1$anon$macro$369$1.prototype.init___LAColor$anon$lazy$macro$381$1 = (function($$outer) {
+  return this
+});
+var $d_LAColor$anon$lazy$macro$381$1$anon$macro$369$1 = new $TypeData().initClass({
+  LAColor$anon$lazy$macro$381$1$anon$macro$369$1: 0
+}, false, "AColor$anon$lazy$macro$381$1$anon$macro$369$1", {
+  LAColor$anon$lazy$macro$381$1$anon$macro$369$1: 1,
   O: 1,
   Lshapeless_Generic: 1,
   s_Serializable: 1,
   Ljava_io_Serializable: 1
 });
-$c_LAColor$anon$lazy$macro$363$1$anon$macro$351$1.prototype.$classData = $d_LAColor$anon$lazy$macro$363$1$anon$macro$351$1;
+$c_LAColor$anon$lazy$macro$381$1$anon$macro$369$1.prototype.$classData = $d_LAColor$anon$lazy$macro$381$1$anon$macro$369$1;
 /** @constructor */
-function $c_LAColor$anon$lazy$macro$363$1$anon$macro$357$1() {
+function $c_LAColor$anon$lazy$macro$381$1$anon$macro$375$1() {
   $c_O.call(this)
 }
-$c_LAColor$anon$lazy$macro$363$1$anon$macro$357$1.prototype = new $h_O();
-$c_LAColor$anon$lazy$macro$363$1$anon$macro$357$1.prototype.constructor = $c_LAColor$anon$lazy$macro$363$1$anon$macro$357$1;
+$c_LAColor$anon$lazy$macro$381$1$anon$macro$375$1.prototype = new $h_O();
+$c_LAColor$anon$lazy$macro$381$1$anon$macro$375$1.prototype.constructor = $c_LAColor$anon$lazy$macro$381$1$anon$macro$375$1;
 /** @constructor */
-function $h_LAColor$anon$lazy$macro$363$1$anon$macro$357$1() {
+function $h_LAColor$anon$lazy$macro$381$1$anon$macro$375$1() {
   /*<skip>*/
 }
-$h_LAColor$anon$lazy$macro$363$1$anon$macro$357$1.prototype = $c_LAColor$anon$lazy$macro$363$1$anon$macro$357$1.prototype;
-$c_LAColor$anon$lazy$macro$363$1$anon$macro$357$1.prototype.to__LGray$__Lshapeless_HNil = (function(p) {
+$h_LAColor$anon$lazy$macro$381$1$anon$macro$375$1.prototype = $c_LAColor$anon$lazy$macro$381$1$anon$macro$375$1.prototype;
+$c_LAColor$anon$lazy$macro$381$1$anon$macro$375$1.prototype.to__LGray$__Lshapeless_HNil = (function(p) {
   if ((p !== null)) {
     return $m_Lshapeless_HNil$()
   } else {
     throw new $c_s_MatchError().init___O(p)
   }
 });
-$c_LAColor$anon$lazy$macro$363$1$anon$macro$357$1.prototype.init___LAColor$anon$lazy$macro$363$1 = (function($$outer) {
-  return this
-});
-$c_LAColor$anon$lazy$macro$363$1$anon$macro$357$1.prototype.from__O__O = (function(r) {
+$c_LAColor$anon$lazy$macro$381$1$anon$macro$375$1.prototype.from__O__O = (function(r) {
   return this.from__Lshapeless_HNil__LGray$($as_Lshapeless_HNil(r))
 });
-$c_LAColor$anon$lazy$macro$363$1$anon$macro$357$1.prototype.to__O__O = (function(t) {
+$c_LAColor$anon$lazy$macro$381$1$anon$macro$375$1.prototype.to__O__O = (function(t) {
   return this.to__LGray$__Lshapeless_HNil($as_LGray$(t))
 });
-$c_LAColor$anon$lazy$macro$363$1$anon$macro$357$1.prototype.from__Lshapeless_HNil__LGray$ = (function(p) {
+$c_LAColor$anon$lazy$macro$381$1$anon$macro$375$1.prototype.from__Lshapeless_HNil__LGray$ = (function(p) {
   var x = $m_Lshapeless_HNil$();
   if ((x === p)) {
     return $m_LGray$()
@@ -20337,28 +20279,31 @@ $c_LAColor$anon$lazy$macro$363$1$anon$macro$357$1.prototype.from__Lshapeless_HNi
     throw new $c_s_MatchError().init___O(p)
   }
 });
-var $d_LAColor$anon$lazy$macro$363$1$anon$macro$357$1 = new $TypeData().initClass({
-  LAColor$anon$lazy$macro$363$1$anon$macro$357$1: 0
-}, false, "AColor$anon$lazy$macro$363$1$anon$macro$357$1", {
-  LAColor$anon$lazy$macro$363$1$anon$macro$357$1: 1,
+$c_LAColor$anon$lazy$macro$381$1$anon$macro$375$1.prototype.init___LAColor$anon$lazy$macro$381$1 = (function($$outer) {
+  return this
+});
+var $d_LAColor$anon$lazy$macro$381$1$anon$macro$375$1 = new $TypeData().initClass({
+  LAColor$anon$lazy$macro$381$1$anon$macro$375$1: 0
+}, false, "AColor$anon$lazy$macro$381$1$anon$macro$375$1", {
+  LAColor$anon$lazy$macro$381$1$anon$macro$375$1: 1,
   O: 1,
   Lshapeless_Generic: 1,
   s_Serializable: 1,
   Ljava_io_Serializable: 1
 });
-$c_LAColor$anon$lazy$macro$363$1$anon$macro$357$1.prototype.$classData = $d_LAColor$anon$lazy$macro$363$1$anon$macro$357$1;
+$c_LAColor$anon$lazy$macro$381$1$anon$macro$375$1.prototype.$classData = $d_LAColor$anon$lazy$macro$381$1$anon$macro$375$1;
 /** @constructor */
-function $c_LAColor$anon$lazy$macro$363$1$anon$macro$362$1() {
+function $c_LAColor$anon$lazy$macro$381$1$anon$macro$380$1() {
   $c_O.call(this)
 }
-$c_LAColor$anon$lazy$macro$363$1$anon$macro$362$1.prototype = new $h_O();
-$c_LAColor$anon$lazy$macro$363$1$anon$macro$362$1.prototype.constructor = $c_LAColor$anon$lazy$macro$363$1$anon$macro$362$1;
+$c_LAColor$anon$lazy$macro$381$1$anon$macro$380$1.prototype = new $h_O();
+$c_LAColor$anon$lazy$macro$381$1$anon$macro$380$1.prototype.constructor = $c_LAColor$anon$lazy$macro$381$1$anon$macro$380$1;
 /** @constructor */
-function $h_LAColor$anon$lazy$macro$363$1$anon$macro$362$1() {
+function $h_LAColor$anon$lazy$macro$381$1$anon$macro$380$1() {
   /*<skip>*/
 }
-$h_LAColor$anon$lazy$macro$363$1$anon$macro$362$1.prototype = $c_LAColor$anon$lazy$macro$363$1$anon$macro$362$1.prototype;
-$c_LAColor$anon$lazy$macro$363$1$anon$macro$362$1.prototype.from__Lshapeless_HNil__LBrown$ = (function(p) {
+$h_LAColor$anon$lazy$macro$381$1$anon$macro$380$1.prototype = $c_LAColor$anon$lazy$macro$381$1$anon$macro$380$1.prototype;
+$c_LAColor$anon$lazy$macro$381$1$anon$macro$380$1.prototype.from__Lshapeless_HNil__LBrown$ = (function(p) {
   var x = $m_Lshapeless_HNil$();
   if ((x === p)) {
     return $m_LBrown$()
@@ -20366,44 +20311,44 @@ $c_LAColor$anon$lazy$macro$363$1$anon$macro$362$1.prototype.from__Lshapeless_HNi
     throw new $c_s_MatchError().init___O(p)
   }
 });
-$c_LAColor$anon$lazy$macro$363$1$anon$macro$362$1.prototype.init___LAColor$anon$lazy$macro$363$1 = (function($$outer) {
-  return this
-});
-$c_LAColor$anon$lazy$macro$363$1$anon$macro$362$1.prototype.from__O__O = (function(r) {
+$c_LAColor$anon$lazy$macro$381$1$anon$macro$380$1.prototype.from__O__O = (function(r) {
   return this.from__Lshapeless_HNil__LBrown$($as_Lshapeless_HNil(r))
 });
-$c_LAColor$anon$lazy$macro$363$1$anon$macro$362$1.prototype.to__O__O = (function(t) {
+$c_LAColor$anon$lazy$macro$381$1$anon$macro$380$1.prototype.to__O__O = (function(t) {
   return this.to__LBrown$__Lshapeless_HNil($as_LBrown$(t))
 });
-$c_LAColor$anon$lazy$macro$363$1$anon$macro$362$1.prototype.to__LBrown$__Lshapeless_HNil = (function(p) {
+$c_LAColor$anon$lazy$macro$381$1$anon$macro$380$1.prototype.to__LBrown$__Lshapeless_HNil = (function(p) {
   if ((p !== null)) {
     return $m_Lshapeless_HNil$()
   } else {
     throw new $c_s_MatchError().init___O(p)
   }
 });
-var $d_LAColor$anon$lazy$macro$363$1$anon$macro$362$1 = new $TypeData().initClass({
-  LAColor$anon$lazy$macro$363$1$anon$macro$362$1: 0
-}, false, "AColor$anon$lazy$macro$363$1$anon$macro$362$1", {
-  LAColor$anon$lazy$macro$363$1$anon$macro$362$1: 1,
+$c_LAColor$anon$lazy$macro$381$1$anon$macro$380$1.prototype.init___LAColor$anon$lazy$macro$381$1 = (function($$outer) {
+  return this
+});
+var $d_LAColor$anon$lazy$macro$381$1$anon$macro$380$1 = new $TypeData().initClass({
+  LAColor$anon$lazy$macro$381$1$anon$macro$380$1: 0
+}, false, "AColor$anon$lazy$macro$381$1$anon$macro$380$1", {
+  LAColor$anon$lazy$macro$381$1$anon$macro$380$1: 1,
   O: 1,
   Lshapeless_Generic: 1,
   s_Serializable: 1,
   Ljava_io_Serializable: 1
 });
-$c_LAColor$anon$lazy$macro$363$1$anon$macro$362$1.prototype.$classData = $d_LAColor$anon$lazy$macro$363$1$anon$macro$362$1;
+$c_LAColor$anon$lazy$macro$381$1$anon$macro$380$1.prototype.$classData = $d_LAColor$anon$lazy$macro$381$1$anon$macro$380$1;
 /** @constructor */
-function $c_LASize$anon$lazy$macro$385$1$$anon$12$anon$macro$370$1() {
+function $c_LASize$anon$lazy$macro$403$1$$anon$12$anon$macro$388$1() {
   $c_O.call(this)
 }
-$c_LASize$anon$lazy$macro$385$1$$anon$12$anon$macro$370$1.prototype = new $h_O();
-$c_LASize$anon$lazy$macro$385$1$$anon$12$anon$macro$370$1.prototype.constructor = $c_LASize$anon$lazy$macro$385$1$$anon$12$anon$macro$370$1;
+$c_LASize$anon$lazy$macro$403$1$$anon$12$anon$macro$388$1.prototype = new $h_O();
+$c_LASize$anon$lazy$macro$403$1$$anon$12$anon$macro$388$1.prototype.constructor = $c_LASize$anon$lazy$macro$403$1$$anon$12$anon$macro$388$1;
 /** @constructor */
-function $h_LASize$anon$lazy$macro$385$1$$anon$12$anon$macro$370$1() {
+function $h_LASize$anon$lazy$macro$403$1$$anon$12$anon$macro$388$1() {
   /*<skip>*/
 }
-$h_LASize$anon$lazy$macro$385$1$$anon$12$anon$macro$370$1.prototype = $c_LASize$anon$lazy$macro$385$1$$anon$12$anon$macro$370$1.prototype;
-$c_LASize$anon$lazy$macro$385$1$$anon$12$anon$macro$370$1.prototype.from__Lshapeless_HNil__LTiny$ = (function(p) {
+$h_LASize$anon$lazy$macro$403$1$$anon$12$anon$macro$388$1.prototype = $c_LASize$anon$lazy$macro$403$1$$anon$12$anon$macro$388$1.prototype;
+$c_LASize$anon$lazy$macro$403$1$$anon$12$anon$macro$388$1.prototype.from__Lshapeless_HNil__LTiny$ = (function(p) {
   var x = $m_Lshapeless_HNil$();
   if ((x === p)) {
     return $m_LTiny$()
@@ -20411,50 +20356,53 @@ $c_LASize$anon$lazy$macro$385$1$$anon$12$anon$macro$370$1.prototype.from__Lshape
     throw new $c_s_MatchError().init___O(p)
   }
 });
-$c_LASize$anon$lazy$macro$385$1$$anon$12$anon$macro$370$1.prototype.from__O__O = (function(r) {
+$c_LASize$anon$lazy$macro$403$1$$anon$12$anon$macro$388$1.prototype.from__O__O = (function(r) {
   return this.from__Lshapeless_HNil__LTiny$($as_Lshapeless_HNil(r))
 });
-$c_LASize$anon$lazy$macro$385$1$$anon$12$anon$macro$370$1.prototype.to__LTiny$__Lshapeless_HNil = (function(p) {
+$c_LASize$anon$lazy$macro$403$1$$anon$12$anon$macro$388$1.prototype.to__LTiny$__Lshapeless_HNil = (function(p) {
   if ((p !== null)) {
     return $m_Lshapeless_HNil$()
   } else {
     throw new $c_s_MatchError().init___O(p)
   }
 });
-$c_LASize$anon$lazy$macro$385$1$$anon$12$anon$macro$370$1.prototype.to__O__O = (function(t) {
+$c_LASize$anon$lazy$macro$403$1$$anon$12$anon$macro$388$1.prototype.to__O__O = (function(t) {
   return this.to__LTiny$__Lshapeless_HNil($as_LTiny$(t))
 });
-$c_LASize$anon$lazy$macro$385$1$$anon$12$anon$macro$370$1.prototype.init___LASize$anon$lazy$macro$385$1$$anon$12 = (function($$outer) {
+$c_LASize$anon$lazy$macro$403$1$$anon$12$anon$macro$388$1.prototype.init___LASize$anon$lazy$macro$403$1$$anon$12 = (function($$outer) {
   return this
 });
-var $d_LASize$anon$lazy$macro$385$1$$anon$12$anon$macro$370$1 = new $TypeData().initClass({
-  LASize$anon$lazy$macro$385$1$$anon$12$anon$macro$370$1: 0
-}, false, "ASize$anon$lazy$macro$385$1$$anon$12$anon$macro$370$1", {
-  LASize$anon$lazy$macro$385$1$$anon$12$anon$macro$370$1: 1,
+var $d_LASize$anon$lazy$macro$403$1$$anon$12$anon$macro$388$1 = new $TypeData().initClass({
+  LASize$anon$lazy$macro$403$1$$anon$12$anon$macro$388$1: 0
+}, false, "ASize$anon$lazy$macro$403$1$$anon$12$anon$macro$388$1", {
+  LASize$anon$lazy$macro$403$1$$anon$12$anon$macro$388$1: 1,
   O: 1,
   Lshapeless_Generic: 1,
   s_Serializable: 1,
   Ljava_io_Serializable: 1
 });
-$c_LASize$anon$lazy$macro$385$1$$anon$12$anon$macro$370$1.prototype.$classData = $d_LASize$anon$lazy$macro$385$1$$anon$12$anon$macro$370$1;
+$c_LASize$anon$lazy$macro$403$1$$anon$12$anon$macro$388$1.prototype.$classData = $d_LASize$anon$lazy$macro$403$1$$anon$12$anon$macro$388$1;
 /** @constructor */
-function $c_LASize$anon$lazy$macro$385$1$$anon$12$anon$macro$374$1() {
+function $c_LASize$anon$lazy$macro$403$1$$anon$12$anon$macro$392$1() {
   $c_O.call(this)
 }
-$c_LASize$anon$lazy$macro$385$1$$anon$12$anon$macro$374$1.prototype = new $h_O();
-$c_LASize$anon$lazy$macro$385$1$$anon$12$anon$macro$374$1.prototype.constructor = $c_LASize$anon$lazy$macro$385$1$$anon$12$anon$macro$374$1;
+$c_LASize$anon$lazy$macro$403$1$$anon$12$anon$macro$392$1.prototype = new $h_O();
+$c_LASize$anon$lazy$macro$403$1$$anon$12$anon$macro$392$1.prototype.constructor = $c_LASize$anon$lazy$macro$403$1$$anon$12$anon$macro$392$1;
 /** @constructor */
-function $h_LASize$anon$lazy$macro$385$1$$anon$12$anon$macro$374$1() {
+function $h_LASize$anon$lazy$macro$403$1$$anon$12$anon$macro$392$1() {
   /*<skip>*/
 }
-$h_LASize$anon$lazy$macro$385$1$$anon$12$anon$macro$374$1.prototype = $c_LASize$anon$lazy$macro$385$1$$anon$12$anon$macro$374$1.prototype;
-$c_LASize$anon$lazy$macro$385$1$$anon$12$anon$macro$374$1.prototype.from__O__O = (function(r) {
+$h_LASize$anon$lazy$macro$403$1$$anon$12$anon$macro$392$1.prototype = $c_LASize$anon$lazy$macro$403$1$$anon$12$anon$macro$392$1.prototype;
+$c_LASize$anon$lazy$macro$403$1$$anon$12$anon$macro$392$1.prototype.from__O__O = (function(r) {
   return this.from__Lshapeless_HNil__LSmall$($as_Lshapeless_HNil(r))
 });
-$c_LASize$anon$lazy$macro$385$1$$anon$12$anon$macro$374$1.prototype.to__O__O = (function(t) {
+$c_LASize$anon$lazy$macro$403$1$$anon$12$anon$macro$392$1.prototype.to__O__O = (function(t) {
   return this.to__LSmall$__Lshapeless_HNil($as_LSmall$(t))
 });
-$c_LASize$anon$lazy$macro$385$1$$anon$12$anon$macro$374$1.prototype.from__Lshapeless_HNil__LSmall$ = (function(p) {
+$c_LASize$anon$lazy$macro$403$1$$anon$12$anon$macro$392$1.prototype.init___LASize$anon$lazy$macro$403$1$$anon$12 = (function($$outer) {
+  return this
+});
+$c_LASize$anon$lazy$macro$403$1$$anon$12$anon$macro$392$1.prototype.from__Lshapeless_HNil__LSmall$ = (function(p) {
   var x = $m_Lshapeless_HNil$();
   if ((x === p)) {
     return $m_LSmall$()
@@ -20462,54 +20410,51 @@ $c_LASize$anon$lazy$macro$385$1$$anon$12$anon$macro$374$1.prototype.from__Lshape
     throw new $c_s_MatchError().init___O(p)
   }
 });
-$c_LASize$anon$lazy$macro$385$1$$anon$12$anon$macro$374$1.prototype.init___LASize$anon$lazy$macro$385$1$$anon$12 = (function($$outer) {
-  return this
-});
-$c_LASize$anon$lazy$macro$385$1$$anon$12$anon$macro$374$1.prototype.to__LSmall$__Lshapeless_HNil = (function(p) {
+$c_LASize$anon$lazy$macro$403$1$$anon$12$anon$macro$392$1.prototype.to__LSmall$__Lshapeless_HNil = (function(p) {
   if ((p !== null)) {
     return $m_Lshapeless_HNil$()
   } else {
     throw new $c_s_MatchError().init___O(p)
   }
 });
-var $d_LASize$anon$lazy$macro$385$1$$anon$12$anon$macro$374$1 = new $TypeData().initClass({
-  LASize$anon$lazy$macro$385$1$$anon$12$anon$macro$374$1: 0
-}, false, "ASize$anon$lazy$macro$385$1$$anon$12$anon$macro$374$1", {
-  LASize$anon$lazy$macro$385$1$$anon$12$anon$macro$374$1: 1,
+var $d_LASize$anon$lazy$macro$403$1$$anon$12$anon$macro$392$1 = new $TypeData().initClass({
+  LASize$anon$lazy$macro$403$1$$anon$12$anon$macro$392$1: 0
+}, false, "ASize$anon$lazy$macro$403$1$$anon$12$anon$macro$392$1", {
+  LASize$anon$lazy$macro$403$1$$anon$12$anon$macro$392$1: 1,
   O: 1,
   Lshapeless_Generic: 1,
   s_Serializable: 1,
   Ljava_io_Serializable: 1
 });
-$c_LASize$anon$lazy$macro$385$1$$anon$12$anon$macro$374$1.prototype.$classData = $d_LASize$anon$lazy$macro$385$1$$anon$12$anon$macro$374$1;
+$c_LASize$anon$lazy$macro$403$1$$anon$12$anon$macro$392$1.prototype.$classData = $d_LASize$anon$lazy$macro$403$1$$anon$12$anon$macro$392$1;
 /** @constructor */
-function $c_LASize$anon$lazy$macro$385$1$$anon$12$anon$macro$378$1() {
+function $c_LASize$anon$lazy$macro$403$1$$anon$12$anon$macro$396$1() {
   $c_O.call(this)
 }
-$c_LASize$anon$lazy$macro$385$1$$anon$12$anon$macro$378$1.prototype = new $h_O();
-$c_LASize$anon$lazy$macro$385$1$$anon$12$anon$macro$378$1.prototype.constructor = $c_LASize$anon$lazy$macro$385$1$$anon$12$anon$macro$378$1;
+$c_LASize$anon$lazy$macro$403$1$$anon$12$anon$macro$396$1.prototype = new $h_O();
+$c_LASize$anon$lazy$macro$403$1$$anon$12$anon$macro$396$1.prototype.constructor = $c_LASize$anon$lazy$macro$403$1$$anon$12$anon$macro$396$1;
 /** @constructor */
-function $h_LASize$anon$lazy$macro$385$1$$anon$12$anon$macro$378$1() {
+function $h_LASize$anon$lazy$macro$403$1$$anon$12$anon$macro$396$1() {
   /*<skip>*/
 }
-$h_LASize$anon$lazy$macro$385$1$$anon$12$anon$macro$378$1.prototype = $c_LASize$anon$lazy$macro$385$1$$anon$12$anon$macro$378$1.prototype;
-$c_LASize$anon$lazy$macro$385$1$$anon$12$anon$macro$378$1.prototype.from__O__O = (function(r) {
+$h_LASize$anon$lazy$macro$403$1$$anon$12$anon$macro$396$1.prototype = $c_LASize$anon$lazy$macro$403$1$$anon$12$anon$macro$396$1.prototype;
+$c_LASize$anon$lazy$macro$403$1$$anon$12$anon$macro$396$1.prototype.from__O__O = (function(r) {
   return this.from__Lshapeless_HNil__LMedium$($as_Lshapeless_HNil(r))
 });
-$c_LASize$anon$lazy$macro$385$1$$anon$12$anon$macro$378$1.prototype.to__O__O = (function(t) {
+$c_LASize$anon$lazy$macro$403$1$$anon$12$anon$macro$396$1.prototype.to__O__O = (function(t) {
   return this.to__LMedium$__Lshapeless_HNil($as_LMedium$(t))
 });
-$c_LASize$anon$lazy$macro$385$1$$anon$12$anon$macro$378$1.prototype.to__LMedium$__Lshapeless_HNil = (function(p) {
+$c_LASize$anon$lazy$macro$403$1$$anon$12$anon$macro$396$1.prototype.to__LMedium$__Lshapeless_HNil = (function(p) {
   if ((p !== null)) {
     return $m_Lshapeless_HNil$()
   } else {
     throw new $c_s_MatchError().init___O(p)
   }
 });
-$c_LASize$anon$lazy$macro$385$1$$anon$12$anon$macro$378$1.prototype.init___LASize$anon$lazy$macro$385$1$$anon$12 = (function($$outer) {
+$c_LASize$anon$lazy$macro$403$1$$anon$12$anon$macro$396$1.prototype.init___LASize$anon$lazy$macro$403$1$$anon$12 = (function($$outer) {
   return this
 });
-$c_LASize$anon$lazy$macro$385$1$$anon$12$anon$macro$378$1.prototype.from__Lshapeless_HNil__LMedium$ = (function(p) {
+$c_LASize$anon$lazy$macro$403$1$$anon$12$anon$macro$396$1.prototype.from__Lshapeless_HNil__LMedium$ = (function(p) {
   var x = $m_Lshapeless_HNil$();
   if ((x === p)) {
     return $m_LMedium$()
@@ -20517,44 +20462,44 @@ $c_LASize$anon$lazy$macro$385$1$$anon$12$anon$macro$378$1.prototype.from__Lshape
     throw new $c_s_MatchError().init___O(p)
   }
 });
-var $d_LASize$anon$lazy$macro$385$1$$anon$12$anon$macro$378$1 = new $TypeData().initClass({
-  LASize$anon$lazy$macro$385$1$$anon$12$anon$macro$378$1: 0
-}, false, "ASize$anon$lazy$macro$385$1$$anon$12$anon$macro$378$1", {
-  LASize$anon$lazy$macro$385$1$$anon$12$anon$macro$378$1: 1,
+var $d_LASize$anon$lazy$macro$403$1$$anon$12$anon$macro$396$1 = new $TypeData().initClass({
+  LASize$anon$lazy$macro$403$1$$anon$12$anon$macro$396$1: 0
+}, false, "ASize$anon$lazy$macro$403$1$$anon$12$anon$macro$396$1", {
+  LASize$anon$lazy$macro$403$1$$anon$12$anon$macro$396$1: 1,
   O: 1,
   Lshapeless_Generic: 1,
   s_Serializable: 1,
   Ljava_io_Serializable: 1
 });
-$c_LASize$anon$lazy$macro$385$1$$anon$12$anon$macro$378$1.prototype.$classData = $d_LASize$anon$lazy$macro$385$1$$anon$12$anon$macro$378$1;
+$c_LASize$anon$lazy$macro$403$1$$anon$12$anon$macro$396$1.prototype.$classData = $d_LASize$anon$lazy$macro$403$1$$anon$12$anon$macro$396$1;
 /** @constructor */
-function $c_LASize$anon$lazy$macro$385$1$$anon$12$anon$macro$382$1() {
+function $c_LASize$anon$lazy$macro$403$1$$anon$12$anon$macro$400$1() {
   $c_O.call(this)
 }
-$c_LASize$anon$lazy$macro$385$1$$anon$12$anon$macro$382$1.prototype = new $h_O();
-$c_LASize$anon$lazy$macro$385$1$$anon$12$anon$macro$382$1.prototype.constructor = $c_LASize$anon$lazy$macro$385$1$$anon$12$anon$macro$382$1;
+$c_LASize$anon$lazy$macro$403$1$$anon$12$anon$macro$400$1.prototype = new $h_O();
+$c_LASize$anon$lazy$macro$403$1$$anon$12$anon$macro$400$1.prototype.constructor = $c_LASize$anon$lazy$macro$403$1$$anon$12$anon$macro$400$1;
 /** @constructor */
-function $h_LASize$anon$lazy$macro$385$1$$anon$12$anon$macro$382$1() {
+function $h_LASize$anon$lazy$macro$403$1$$anon$12$anon$macro$400$1() {
   /*<skip>*/
 }
-$h_LASize$anon$lazy$macro$385$1$$anon$12$anon$macro$382$1.prototype = $c_LASize$anon$lazy$macro$385$1$$anon$12$anon$macro$382$1.prototype;
-$c_LASize$anon$lazy$macro$385$1$$anon$12$anon$macro$382$1.prototype.from__O__O = (function(r) {
+$h_LASize$anon$lazy$macro$403$1$$anon$12$anon$macro$400$1.prototype = $c_LASize$anon$lazy$macro$403$1$$anon$12$anon$macro$400$1.prototype;
+$c_LASize$anon$lazy$macro$403$1$$anon$12$anon$macro$400$1.prototype.from__O__O = (function(r) {
   return this.from__Lshapeless_HNil__LBig$($as_Lshapeless_HNil(r))
 });
-$c_LASize$anon$lazy$macro$385$1$$anon$12$anon$macro$382$1.prototype.to__O__O = (function(t) {
+$c_LASize$anon$lazy$macro$403$1$$anon$12$anon$macro$400$1.prototype.to__O__O = (function(t) {
   return this.to__LBig$__Lshapeless_HNil($as_LBig$(t))
 });
-$c_LASize$anon$lazy$macro$385$1$$anon$12$anon$macro$382$1.prototype.to__LBig$__Lshapeless_HNil = (function(p) {
+$c_LASize$anon$lazy$macro$403$1$$anon$12$anon$macro$400$1.prototype.init___LASize$anon$lazy$macro$403$1$$anon$12 = (function($$outer) {
+  return this
+});
+$c_LASize$anon$lazy$macro$403$1$$anon$12$anon$macro$400$1.prototype.to__LBig$__Lshapeless_HNil = (function(p) {
   if ((p !== null)) {
     return $m_Lshapeless_HNil$()
   } else {
     throw new $c_s_MatchError().init___O(p)
   }
 });
-$c_LASize$anon$lazy$macro$385$1$$anon$12$anon$macro$382$1.prototype.init___LASize$anon$lazy$macro$385$1$$anon$12 = (function($$outer) {
-  return this
-});
-$c_LASize$anon$lazy$macro$385$1$$anon$12$anon$macro$382$1.prototype.from__Lshapeless_HNil__LBig$ = (function(p) {
+$c_LASize$anon$lazy$macro$403$1$$anon$12$anon$macro$400$1.prototype.from__Lshapeless_HNil__LBig$ = (function(p) {
   var x = $m_Lshapeless_HNil$();
   if ((x === p)) {
     return $m_LBig$()
@@ -20562,28 +20507,28 @@ $c_LASize$anon$lazy$macro$385$1$$anon$12$anon$macro$382$1.prototype.from__Lshape
     throw new $c_s_MatchError().init___O(p)
   }
 });
-var $d_LASize$anon$lazy$macro$385$1$$anon$12$anon$macro$382$1 = new $TypeData().initClass({
-  LASize$anon$lazy$macro$385$1$$anon$12$anon$macro$382$1: 0
-}, false, "ASize$anon$lazy$macro$385$1$$anon$12$anon$macro$382$1", {
-  LASize$anon$lazy$macro$385$1$$anon$12$anon$macro$382$1: 1,
+var $d_LASize$anon$lazy$macro$403$1$$anon$12$anon$macro$400$1 = new $TypeData().initClass({
+  LASize$anon$lazy$macro$403$1$$anon$12$anon$macro$400$1: 0
+}, false, "ASize$anon$lazy$macro$403$1$$anon$12$anon$macro$400$1", {
+  LASize$anon$lazy$macro$403$1$$anon$12$anon$macro$400$1: 1,
   O: 1,
   Lshapeless_Generic: 1,
   s_Serializable: 1,
   Ljava_io_Serializable: 1
 });
-$c_LASize$anon$lazy$macro$385$1$$anon$12$anon$macro$382$1.prototype.$classData = $d_LASize$anon$lazy$macro$385$1$$anon$12$anon$macro$382$1;
+$c_LASize$anon$lazy$macro$403$1$$anon$12$anon$macro$400$1.prototype.$classData = $d_LASize$anon$lazy$macro$403$1$$anon$12$anon$macro$400$1;
 /** @constructor */
-function $c_LASize$anon$lazy$macro$385$1$anon$macro$366$1() {
+function $c_LASize$anon$lazy$macro$403$1$anon$macro$384$1() {
   $c_O.call(this)
 }
-$c_LASize$anon$lazy$macro$385$1$anon$macro$366$1.prototype = new $h_O();
-$c_LASize$anon$lazy$macro$385$1$anon$macro$366$1.prototype.constructor = $c_LASize$anon$lazy$macro$385$1$anon$macro$366$1;
+$c_LASize$anon$lazy$macro$403$1$anon$macro$384$1.prototype = new $h_O();
+$c_LASize$anon$lazy$macro$403$1$anon$macro$384$1.prototype.constructor = $c_LASize$anon$lazy$macro$403$1$anon$macro$384$1;
 /** @constructor */
-function $h_LASize$anon$lazy$macro$385$1$anon$macro$366$1() {
+function $h_LASize$anon$lazy$macro$403$1$anon$macro$384$1() {
   /*<skip>*/
 }
-$h_LASize$anon$lazy$macro$385$1$anon$macro$366$1.prototype = $c_LASize$anon$lazy$macro$385$1$anon$macro$366$1.prototype;
-$c_LASize$anon$lazy$macro$385$1$anon$macro$366$1.prototype.to__LASize__Lshapeless_$colon$plus$colon = (function(p) {
+$h_LASize$anon$lazy$macro$403$1$anon$macro$384$1.prototype = $c_LASize$anon$lazy$macro$403$1$anon$macro$384$1.prototype;
+$c_LASize$anon$lazy$macro$403$1$anon$macro$384$1.prototype.to__LASize__Lshapeless_$colon$plus$colon = (function(p) {
   var jsx$2 = $m_Lshapeless_Coproduct$();
   if ((p === $m_LBig$())) {
     var jsx$1 = 0
@@ -20599,38 +20544,38 @@ $c_LASize$anon$lazy$macro$385$1$anon$macro$366$1.prototype.to__LASize__Lshapeles
   };
   return $as_Lshapeless_$colon$plus$colon(jsx$2.unsafeMkCoproduct__I__O__Lshapeless_Coproduct(jsx$1, p))
 });
-$c_LASize$anon$lazy$macro$385$1$anon$macro$366$1.prototype.from__O__O = (function(r) {
+$c_LASize$anon$lazy$macro$403$1$anon$macro$384$1.prototype.from__O__O = (function(r) {
   var p = $as_Lshapeless_$colon$plus$colon(r);
   return $as_LASize($m_Lshapeless_Coproduct$().unsafeGet__Lshapeless_Coproduct__O(p))
 });
-$c_LASize$anon$lazy$macro$385$1$anon$macro$366$1.prototype.to__O__O = (function(t) {
+$c_LASize$anon$lazy$macro$403$1$anon$macro$384$1.prototype.to__O__O = (function(t) {
   return this.to__LASize__Lshapeless_$colon$plus$colon($as_LASize(t))
 });
-$c_LASize$anon$lazy$macro$385$1$anon$macro$366$1.prototype.init___LASize$anon$lazy$macro$385$1 = (function($$outer) {
+$c_LASize$anon$lazy$macro$403$1$anon$macro$384$1.prototype.init___LASize$anon$lazy$macro$403$1 = (function($$outer) {
   return this
 });
-var $d_LASize$anon$lazy$macro$385$1$anon$macro$366$1 = new $TypeData().initClass({
-  LASize$anon$lazy$macro$385$1$anon$macro$366$1: 0
-}, false, "ASize$anon$lazy$macro$385$1$anon$macro$366$1", {
-  LASize$anon$lazy$macro$385$1$anon$macro$366$1: 1,
+var $d_LASize$anon$lazy$macro$403$1$anon$macro$384$1 = new $TypeData().initClass({
+  LASize$anon$lazy$macro$403$1$anon$macro$384$1: 0
+}, false, "ASize$anon$lazy$macro$403$1$anon$macro$384$1", {
+  LASize$anon$lazy$macro$403$1$anon$macro$384$1: 1,
   O: 1,
   Lshapeless_Generic: 1,
   s_Serializable: 1,
   Ljava_io_Serializable: 1
 });
-$c_LASize$anon$lazy$macro$385$1$anon$macro$366$1.prototype.$classData = $d_LASize$anon$lazy$macro$385$1$anon$macro$366$1;
+$c_LASize$anon$lazy$macro$403$1$anon$macro$384$1.prototype.$classData = $d_LASize$anon$lazy$macro$403$1$anon$macro$384$1;
 /** @constructor */
-function $c_LASize$anon$lazy$macro$408$1$anon$macro$388$1() {
+function $c_LASize$anon$lazy$macro$426$1$anon$macro$406$1() {
   $c_O.call(this)
 }
-$c_LASize$anon$lazy$macro$408$1$anon$macro$388$1.prototype = new $h_O();
-$c_LASize$anon$lazy$macro$408$1$anon$macro$388$1.prototype.constructor = $c_LASize$anon$lazy$macro$408$1$anon$macro$388$1;
+$c_LASize$anon$lazy$macro$426$1$anon$macro$406$1.prototype = new $h_O();
+$c_LASize$anon$lazy$macro$426$1$anon$macro$406$1.prototype.constructor = $c_LASize$anon$lazy$macro$426$1$anon$macro$406$1;
 /** @constructor */
-function $h_LASize$anon$lazy$macro$408$1$anon$macro$388$1() {
+function $h_LASize$anon$lazy$macro$426$1$anon$macro$406$1() {
   /*<skip>*/
 }
-$h_LASize$anon$lazy$macro$408$1$anon$macro$388$1.prototype = $c_LASize$anon$lazy$macro$408$1$anon$macro$388$1.prototype;
-$c_LASize$anon$lazy$macro$408$1$anon$macro$388$1.prototype.to__LASize__Lshapeless_$colon$plus$colon = (function(p) {
+$h_LASize$anon$lazy$macro$426$1$anon$macro$406$1.prototype = $c_LASize$anon$lazy$macro$426$1$anon$macro$406$1.prototype;
+$c_LASize$anon$lazy$macro$426$1$anon$macro$406$1.prototype.to__LASize__Lshapeless_$colon$plus$colon = (function(p) {
   var jsx$2 = $m_Lshapeless_Coproduct$();
   if ((p === $m_LBig$())) {
     var jsx$1 = 0
@@ -20646,38 +20591,38 @@ $c_LASize$anon$lazy$macro$408$1$anon$macro$388$1.prototype.to__LASize__Lshapeles
   };
   return $as_Lshapeless_$colon$plus$colon(jsx$2.unsafeMkCoproduct__I__O__Lshapeless_Coproduct(jsx$1, p))
 });
-$c_LASize$anon$lazy$macro$408$1$anon$macro$388$1.prototype.from__O__O = (function(r) {
+$c_LASize$anon$lazy$macro$426$1$anon$macro$406$1.prototype.from__O__O = (function(r) {
   var p = $as_Lshapeless_$colon$plus$colon(r);
   return $as_LASize($m_Lshapeless_Coproduct$().unsafeGet__Lshapeless_Coproduct__O(p))
 });
-$c_LASize$anon$lazy$macro$408$1$anon$macro$388$1.prototype.to__O__O = (function(t) {
+$c_LASize$anon$lazy$macro$426$1$anon$macro$406$1.prototype.to__O__O = (function(t) {
   return this.to__LASize__Lshapeless_$colon$plus$colon($as_LASize(t))
 });
-$c_LASize$anon$lazy$macro$408$1$anon$macro$388$1.prototype.init___LASize$anon$lazy$macro$408$1 = (function($$outer) {
+$c_LASize$anon$lazy$macro$426$1$anon$macro$406$1.prototype.init___LASize$anon$lazy$macro$426$1 = (function($$outer) {
   return this
 });
-var $d_LASize$anon$lazy$macro$408$1$anon$macro$388$1 = new $TypeData().initClass({
-  LASize$anon$lazy$macro$408$1$anon$macro$388$1: 0
-}, false, "ASize$anon$lazy$macro$408$1$anon$macro$388$1", {
-  LASize$anon$lazy$macro$408$1$anon$macro$388$1: 1,
+var $d_LASize$anon$lazy$macro$426$1$anon$macro$406$1 = new $TypeData().initClass({
+  LASize$anon$lazy$macro$426$1$anon$macro$406$1: 0
+}, false, "ASize$anon$lazy$macro$426$1$anon$macro$406$1", {
+  LASize$anon$lazy$macro$426$1$anon$macro$406$1: 1,
   O: 1,
   Lshapeless_Generic: 1,
   s_Serializable: 1,
   Ljava_io_Serializable: 1
 });
-$c_LASize$anon$lazy$macro$408$1$anon$macro$388$1.prototype.$classData = $d_LASize$anon$lazy$macro$408$1$anon$macro$388$1;
+$c_LASize$anon$lazy$macro$426$1$anon$macro$406$1.prototype.$classData = $d_LASize$anon$lazy$macro$426$1$anon$macro$406$1;
 /** @constructor */
-function $c_LASize$anon$lazy$macro$408$1$anon$macro$394$1() {
+function $c_LASize$anon$lazy$macro$426$1$anon$macro$412$1() {
   $c_O.call(this)
 }
-$c_LASize$anon$lazy$macro$408$1$anon$macro$394$1.prototype = new $h_O();
-$c_LASize$anon$lazy$macro$408$1$anon$macro$394$1.prototype.constructor = $c_LASize$anon$lazy$macro$408$1$anon$macro$394$1;
+$c_LASize$anon$lazy$macro$426$1$anon$macro$412$1.prototype = new $h_O();
+$c_LASize$anon$lazy$macro$426$1$anon$macro$412$1.prototype.constructor = $c_LASize$anon$lazy$macro$426$1$anon$macro$412$1;
 /** @constructor */
-function $h_LASize$anon$lazy$macro$408$1$anon$macro$394$1() {
+function $h_LASize$anon$lazy$macro$426$1$anon$macro$412$1() {
   /*<skip>*/
 }
-$h_LASize$anon$lazy$macro$408$1$anon$macro$394$1.prototype = $c_LASize$anon$lazy$macro$408$1$anon$macro$394$1.prototype;
-$c_LASize$anon$lazy$macro$408$1$anon$macro$394$1.prototype.from__Lshapeless_HNil__LTiny$ = (function(p) {
+$h_LASize$anon$lazy$macro$426$1$anon$macro$412$1.prototype = $c_LASize$anon$lazy$macro$426$1$anon$macro$412$1.prototype;
+$c_LASize$anon$lazy$macro$426$1$anon$macro$412$1.prototype.from__Lshapeless_HNil__LTiny$ = (function(p) {
   var x = $m_Lshapeless_HNil$();
   if ((x === p)) {
     return $m_LTiny$()
@@ -20685,50 +20630,53 @@ $c_LASize$anon$lazy$macro$408$1$anon$macro$394$1.prototype.from__Lshapeless_HNil
     throw new $c_s_MatchError().init___O(p)
   }
 });
-$c_LASize$anon$lazy$macro$408$1$anon$macro$394$1.prototype.from__O__O = (function(r) {
+$c_LASize$anon$lazy$macro$426$1$anon$macro$412$1.prototype.from__O__O = (function(r) {
   return this.from__Lshapeless_HNil__LTiny$($as_Lshapeless_HNil(r))
 });
-$c_LASize$anon$lazy$macro$408$1$anon$macro$394$1.prototype.to__LTiny$__Lshapeless_HNil = (function(p) {
+$c_LASize$anon$lazy$macro$426$1$anon$macro$412$1.prototype.to__LTiny$__Lshapeless_HNil = (function(p) {
   if ((p !== null)) {
     return $m_Lshapeless_HNil$()
   } else {
     throw new $c_s_MatchError().init___O(p)
   }
 });
-$c_LASize$anon$lazy$macro$408$1$anon$macro$394$1.prototype.to__O__O = (function(t) {
+$c_LASize$anon$lazy$macro$426$1$anon$macro$412$1.prototype.to__O__O = (function(t) {
   return this.to__LTiny$__Lshapeless_HNil($as_LTiny$(t))
 });
-$c_LASize$anon$lazy$macro$408$1$anon$macro$394$1.prototype.init___LASize$anon$lazy$macro$408$1 = (function($$outer) {
+$c_LASize$anon$lazy$macro$426$1$anon$macro$412$1.prototype.init___LASize$anon$lazy$macro$426$1 = (function($$outer) {
   return this
 });
-var $d_LASize$anon$lazy$macro$408$1$anon$macro$394$1 = new $TypeData().initClass({
-  LASize$anon$lazy$macro$408$1$anon$macro$394$1: 0
-}, false, "ASize$anon$lazy$macro$408$1$anon$macro$394$1", {
-  LASize$anon$lazy$macro$408$1$anon$macro$394$1: 1,
+var $d_LASize$anon$lazy$macro$426$1$anon$macro$412$1 = new $TypeData().initClass({
+  LASize$anon$lazy$macro$426$1$anon$macro$412$1: 0
+}, false, "ASize$anon$lazy$macro$426$1$anon$macro$412$1", {
+  LASize$anon$lazy$macro$426$1$anon$macro$412$1: 1,
   O: 1,
   Lshapeless_Generic: 1,
   s_Serializable: 1,
   Ljava_io_Serializable: 1
 });
-$c_LASize$anon$lazy$macro$408$1$anon$macro$394$1.prototype.$classData = $d_LASize$anon$lazy$macro$408$1$anon$macro$394$1;
+$c_LASize$anon$lazy$macro$426$1$anon$macro$412$1.prototype.$classData = $d_LASize$anon$lazy$macro$426$1$anon$macro$412$1;
 /** @constructor */
-function $c_LASize$anon$lazy$macro$408$1$anon$macro$399$1() {
+function $c_LASize$anon$lazy$macro$426$1$anon$macro$417$1() {
   $c_O.call(this)
 }
-$c_LASize$anon$lazy$macro$408$1$anon$macro$399$1.prototype = new $h_O();
-$c_LASize$anon$lazy$macro$408$1$anon$macro$399$1.prototype.constructor = $c_LASize$anon$lazy$macro$408$1$anon$macro$399$1;
+$c_LASize$anon$lazy$macro$426$1$anon$macro$417$1.prototype = new $h_O();
+$c_LASize$anon$lazy$macro$426$1$anon$macro$417$1.prototype.constructor = $c_LASize$anon$lazy$macro$426$1$anon$macro$417$1;
 /** @constructor */
-function $h_LASize$anon$lazy$macro$408$1$anon$macro$399$1() {
+function $h_LASize$anon$lazy$macro$426$1$anon$macro$417$1() {
   /*<skip>*/
 }
-$h_LASize$anon$lazy$macro$408$1$anon$macro$399$1.prototype = $c_LASize$anon$lazy$macro$408$1$anon$macro$399$1.prototype;
-$c_LASize$anon$lazy$macro$408$1$anon$macro$399$1.prototype.from__O__O = (function(r) {
+$h_LASize$anon$lazy$macro$426$1$anon$macro$417$1.prototype = $c_LASize$anon$lazy$macro$426$1$anon$macro$417$1.prototype;
+$c_LASize$anon$lazy$macro$426$1$anon$macro$417$1.prototype.from__O__O = (function(r) {
   return this.from__Lshapeless_HNil__LSmall$($as_Lshapeless_HNil(r))
 });
-$c_LASize$anon$lazy$macro$408$1$anon$macro$399$1.prototype.to__O__O = (function(t) {
+$c_LASize$anon$lazy$macro$426$1$anon$macro$417$1.prototype.to__O__O = (function(t) {
   return this.to__LSmall$__Lshapeless_HNil($as_LSmall$(t))
 });
-$c_LASize$anon$lazy$macro$408$1$anon$macro$399$1.prototype.from__Lshapeless_HNil__LSmall$ = (function(p) {
+$c_LASize$anon$lazy$macro$426$1$anon$macro$417$1.prototype.init___LASize$anon$lazy$macro$426$1 = (function($$outer) {
+  return this
+});
+$c_LASize$anon$lazy$macro$426$1$anon$macro$417$1.prototype.from__Lshapeless_HNil__LSmall$ = (function(p) {
   var x = $m_Lshapeless_HNil$();
   if ((x === p)) {
     return $m_LSmall$()
@@ -20736,54 +20684,51 @@ $c_LASize$anon$lazy$macro$408$1$anon$macro$399$1.prototype.from__Lshapeless_HNil
     throw new $c_s_MatchError().init___O(p)
   }
 });
-$c_LASize$anon$lazy$macro$408$1$anon$macro$399$1.prototype.init___LASize$anon$lazy$macro$408$1 = (function($$outer) {
-  return this
-});
-$c_LASize$anon$lazy$macro$408$1$anon$macro$399$1.prototype.to__LSmall$__Lshapeless_HNil = (function(p) {
+$c_LASize$anon$lazy$macro$426$1$anon$macro$417$1.prototype.to__LSmall$__Lshapeless_HNil = (function(p) {
   if ((p !== null)) {
     return $m_Lshapeless_HNil$()
   } else {
     throw new $c_s_MatchError().init___O(p)
   }
 });
-var $d_LASize$anon$lazy$macro$408$1$anon$macro$399$1 = new $TypeData().initClass({
-  LASize$anon$lazy$macro$408$1$anon$macro$399$1: 0
-}, false, "ASize$anon$lazy$macro$408$1$anon$macro$399$1", {
-  LASize$anon$lazy$macro$408$1$anon$macro$399$1: 1,
+var $d_LASize$anon$lazy$macro$426$1$anon$macro$417$1 = new $TypeData().initClass({
+  LASize$anon$lazy$macro$426$1$anon$macro$417$1: 0
+}, false, "ASize$anon$lazy$macro$426$1$anon$macro$417$1", {
+  LASize$anon$lazy$macro$426$1$anon$macro$417$1: 1,
   O: 1,
   Lshapeless_Generic: 1,
   s_Serializable: 1,
   Ljava_io_Serializable: 1
 });
-$c_LASize$anon$lazy$macro$408$1$anon$macro$399$1.prototype.$classData = $d_LASize$anon$lazy$macro$408$1$anon$macro$399$1;
+$c_LASize$anon$lazy$macro$426$1$anon$macro$417$1.prototype.$classData = $d_LASize$anon$lazy$macro$426$1$anon$macro$417$1;
 /** @constructor */
-function $c_LASize$anon$lazy$macro$408$1$anon$macro$402$1() {
+function $c_LASize$anon$lazy$macro$426$1$anon$macro$420$1() {
   $c_O.call(this)
 }
-$c_LASize$anon$lazy$macro$408$1$anon$macro$402$1.prototype = new $h_O();
-$c_LASize$anon$lazy$macro$408$1$anon$macro$402$1.prototype.constructor = $c_LASize$anon$lazy$macro$408$1$anon$macro$402$1;
+$c_LASize$anon$lazy$macro$426$1$anon$macro$420$1.prototype = new $h_O();
+$c_LASize$anon$lazy$macro$426$1$anon$macro$420$1.prototype.constructor = $c_LASize$anon$lazy$macro$426$1$anon$macro$420$1;
 /** @constructor */
-function $h_LASize$anon$lazy$macro$408$1$anon$macro$402$1() {
+function $h_LASize$anon$lazy$macro$426$1$anon$macro$420$1() {
   /*<skip>*/
 }
-$h_LASize$anon$lazy$macro$408$1$anon$macro$402$1.prototype = $c_LASize$anon$lazy$macro$408$1$anon$macro$402$1.prototype;
-$c_LASize$anon$lazy$macro$408$1$anon$macro$402$1.prototype.from__O__O = (function(r) {
+$h_LASize$anon$lazy$macro$426$1$anon$macro$420$1.prototype = $c_LASize$anon$lazy$macro$426$1$anon$macro$420$1.prototype;
+$c_LASize$anon$lazy$macro$426$1$anon$macro$420$1.prototype.from__O__O = (function(r) {
   return this.from__Lshapeless_HNil__LMedium$($as_Lshapeless_HNil(r))
 });
-$c_LASize$anon$lazy$macro$408$1$anon$macro$402$1.prototype.to__O__O = (function(t) {
+$c_LASize$anon$lazy$macro$426$1$anon$macro$420$1.prototype.to__O__O = (function(t) {
   return this.to__LMedium$__Lshapeless_HNil($as_LMedium$(t))
 });
-$c_LASize$anon$lazy$macro$408$1$anon$macro$402$1.prototype.to__LMedium$__Lshapeless_HNil = (function(p) {
+$c_LASize$anon$lazy$macro$426$1$anon$macro$420$1.prototype.to__LMedium$__Lshapeless_HNil = (function(p) {
   if ((p !== null)) {
     return $m_Lshapeless_HNil$()
   } else {
     throw new $c_s_MatchError().init___O(p)
   }
 });
-$c_LASize$anon$lazy$macro$408$1$anon$macro$402$1.prototype.init___LASize$anon$lazy$macro$408$1 = (function($$outer) {
+$c_LASize$anon$lazy$macro$426$1$anon$macro$420$1.prototype.init___LASize$anon$lazy$macro$426$1 = (function($$outer) {
   return this
 });
-$c_LASize$anon$lazy$macro$408$1$anon$macro$402$1.prototype.from__Lshapeless_HNil__LMedium$ = (function(p) {
+$c_LASize$anon$lazy$macro$426$1$anon$macro$420$1.prototype.from__Lshapeless_HNil__LMedium$ = (function(p) {
   var x = $m_Lshapeless_HNil$();
   if ((x === p)) {
     return $m_LMedium$()
@@ -20791,41 +20736,44 @@ $c_LASize$anon$lazy$macro$408$1$anon$macro$402$1.prototype.from__Lshapeless_HNil
     throw new $c_s_MatchError().init___O(p)
   }
 });
-var $d_LASize$anon$lazy$macro$408$1$anon$macro$402$1 = new $TypeData().initClass({
-  LASize$anon$lazy$macro$408$1$anon$macro$402$1: 0
-}, false, "ASize$anon$lazy$macro$408$1$anon$macro$402$1", {
-  LASize$anon$lazy$macro$408$1$anon$macro$402$1: 1,
+var $d_LASize$anon$lazy$macro$426$1$anon$macro$420$1 = new $TypeData().initClass({
+  LASize$anon$lazy$macro$426$1$anon$macro$420$1: 0
+}, false, "ASize$anon$lazy$macro$426$1$anon$macro$420$1", {
+  LASize$anon$lazy$macro$426$1$anon$macro$420$1: 1,
   O: 1,
   Lshapeless_Generic: 1,
   s_Serializable: 1,
   Ljava_io_Serializable: 1
 });
-$c_LASize$anon$lazy$macro$408$1$anon$macro$402$1.prototype.$classData = $d_LASize$anon$lazy$macro$408$1$anon$macro$402$1;
+$c_LASize$anon$lazy$macro$426$1$anon$macro$420$1.prototype.$classData = $d_LASize$anon$lazy$macro$426$1$anon$macro$420$1;
 /** @constructor */
-function $c_LASize$anon$lazy$macro$408$1$anon$macro$406$1() {
+function $c_LASize$anon$lazy$macro$426$1$anon$macro$424$1() {
   $c_O.call(this)
 }
-$c_LASize$anon$lazy$macro$408$1$anon$macro$406$1.prototype = new $h_O();
-$c_LASize$anon$lazy$macro$408$1$anon$macro$406$1.prototype.constructor = $c_LASize$anon$lazy$macro$408$1$anon$macro$406$1;
+$c_LASize$anon$lazy$macro$426$1$anon$macro$424$1.prototype = new $h_O();
+$c_LASize$anon$lazy$macro$426$1$anon$macro$424$1.prototype.constructor = $c_LASize$anon$lazy$macro$426$1$anon$macro$424$1;
 /** @constructor */
-function $h_LASize$anon$lazy$macro$408$1$anon$macro$406$1() {
+function $h_LASize$anon$lazy$macro$426$1$anon$macro$424$1() {
   /*<skip>*/
 }
-$h_LASize$anon$lazy$macro$408$1$anon$macro$406$1.prototype = $c_LASize$anon$lazy$macro$408$1$anon$macro$406$1.prototype;
-$c_LASize$anon$lazy$macro$408$1$anon$macro$406$1.prototype.from__O__O = (function(r) {
+$h_LASize$anon$lazy$macro$426$1$anon$macro$424$1.prototype = $c_LASize$anon$lazy$macro$426$1$anon$macro$424$1.prototype;
+$c_LASize$anon$lazy$macro$426$1$anon$macro$424$1.prototype.from__O__O = (function(r) {
   return this.from__Lshapeless_HNil__LBig$($as_Lshapeless_HNil(r))
 });
-$c_LASize$anon$lazy$macro$408$1$anon$macro$406$1.prototype.to__O__O = (function(t) {
+$c_LASize$anon$lazy$macro$426$1$anon$macro$424$1.prototype.to__O__O = (function(t) {
   return this.to__LBig$__Lshapeless_HNil($as_LBig$(t))
 });
-$c_LASize$anon$lazy$macro$408$1$anon$macro$406$1.prototype.to__LBig$__Lshapeless_HNil = (function(p) {
+$c_LASize$anon$lazy$macro$426$1$anon$macro$424$1.prototype.init___LASize$anon$lazy$macro$426$1 = (function($$outer) {
+  return this
+});
+$c_LASize$anon$lazy$macro$426$1$anon$macro$424$1.prototype.to__LBig$__Lshapeless_HNil = (function(p) {
   if ((p !== null)) {
     return $m_Lshapeless_HNil$()
   } else {
     throw new $c_s_MatchError().init___O(p)
   }
 });
-$c_LASize$anon$lazy$macro$408$1$anon$macro$406$1.prototype.from__Lshapeless_HNil__LBig$ = (function(p) {
+$c_LASize$anon$lazy$macro$426$1$anon$macro$424$1.prototype.from__Lshapeless_HNil__LBig$ = (function(p) {
   var x = $m_Lshapeless_HNil$();
   if ((x === p)) {
     return $m_LBig$()
@@ -20833,37 +20781,31 @@ $c_LASize$anon$lazy$macro$408$1$anon$macro$406$1.prototype.from__Lshapeless_HNil
     throw new $c_s_MatchError().init___O(p)
   }
 });
-$c_LASize$anon$lazy$macro$408$1$anon$macro$406$1.prototype.init___LASize$anon$lazy$macro$408$1 = (function($$outer) {
-  return this
-});
-var $d_LASize$anon$lazy$macro$408$1$anon$macro$406$1 = new $TypeData().initClass({
-  LASize$anon$lazy$macro$408$1$anon$macro$406$1: 0
-}, false, "ASize$anon$lazy$macro$408$1$anon$macro$406$1", {
-  LASize$anon$lazy$macro$408$1$anon$macro$406$1: 1,
+var $d_LASize$anon$lazy$macro$426$1$anon$macro$424$1 = new $TypeData().initClass({
+  LASize$anon$lazy$macro$426$1$anon$macro$424$1: 0
+}, false, "ASize$anon$lazy$macro$426$1$anon$macro$424$1", {
+  LASize$anon$lazy$macro$426$1$anon$macro$424$1: 1,
   O: 1,
   Lshapeless_Generic: 1,
   s_Serializable: 1,
   Ljava_io_Serializable: 1
 });
-$c_LASize$anon$lazy$macro$408$1$anon$macro$406$1.prototype.$classData = $d_LASize$anon$lazy$macro$408$1$anon$macro$406$1;
+$c_LASize$anon$lazy$macro$426$1$anon$macro$424$1.prototype.$classData = $d_LASize$anon$lazy$macro$426$1$anon$macro$424$1;
 /** @constructor */
-function $c_LCommand$anon$lazy$macro$434$1$$anon$13$anon$macro$415$1() {
+function $c_LCommand$anon$lazy$macro$452$1$$anon$13$anon$macro$433$1() {
   $c_O.call(this)
 }
-$c_LCommand$anon$lazy$macro$434$1$$anon$13$anon$macro$415$1.prototype = new $h_O();
-$c_LCommand$anon$lazy$macro$434$1$$anon$13$anon$macro$415$1.prototype.constructor = $c_LCommand$anon$lazy$macro$434$1$$anon$13$anon$macro$415$1;
+$c_LCommand$anon$lazy$macro$452$1$$anon$13$anon$macro$433$1.prototype = new $h_O();
+$c_LCommand$anon$lazy$macro$452$1$$anon$13$anon$macro$433$1.prototype.constructor = $c_LCommand$anon$lazy$macro$452$1$$anon$13$anon$macro$433$1;
 /** @constructor */
-function $h_LCommand$anon$lazy$macro$434$1$$anon$13$anon$macro$415$1() {
+function $h_LCommand$anon$lazy$macro$452$1$$anon$13$anon$macro$433$1() {
   /*<skip>*/
 }
-$h_LCommand$anon$lazy$macro$434$1$$anon$13$anon$macro$415$1.prototype = $c_LCommand$anon$lazy$macro$434$1$$anon$13$anon$macro$415$1.prototype;
-$c_LCommand$anon$lazy$macro$434$1$$anon$13$anon$macro$415$1.prototype.init___LCommand$anon$lazy$macro$434$1$$anon$13 = (function($$outer) {
-  return this
-});
-$c_LCommand$anon$lazy$macro$434$1$$anon$13$anon$macro$415$1.prototype.from__O__O = (function(r) {
+$h_LCommand$anon$lazy$macro$452$1$$anon$13$anon$macro$433$1.prototype = $c_LCommand$anon$lazy$macro$452$1$$anon$13$anon$macro$433$1.prototype;
+$c_LCommand$anon$lazy$macro$452$1$$anon$13$anon$macro$433$1.prototype.from__O__O = (function(r) {
   return this.from__Lshapeless_HNil__LS$($as_Lshapeless_HNil(r))
 });
-$c_LCommand$anon$lazy$macro$434$1$$anon$13$anon$macro$415$1.prototype.from__Lshapeless_HNil__LS$ = (function(p) {
+$c_LCommand$anon$lazy$macro$452$1$$anon$13$anon$macro$433$1.prototype.from__Lshapeless_HNil__LS$ = (function(p) {
   var x = $m_Lshapeless_HNil$();
   if ((x === p)) {
     return $m_LS$()
@@ -20871,47 +20813,47 @@ $c_LCommand$anon$lazy$macro$434$1$$anon$13$anon$macro$415$1.prototype.from__Lsha
     throw new $c_s_MatchError().init___O(p)
   }
 });
-$c_LCommand$anon$lazy$macro$434$1$$anon$13$anon$macro$415$1.prototype.to__O__O = (function(t) {
+$c_LCommand$anon$lazy$macro$452$1$$anon$13$anon$macro$433$1.prototype.to__O__O = (function(t) {
   return this.to__LS$__Lshapeless_HNil($as_LS$(t))
 });
-$c_LCommand$anon$lazy$macro$434$1$$anon$13$anon$macro$415$1.prototype.to__LS$__Lshapeless_HNil = (function(p) {
+$c_LCommand$anon$lazy$macro$452$1$$anon$13$anon$macro$433$1.prototype.init___LCommand$anon$lazy$macro$452$1$$anon$13 = (function($$outer) {
+  return this
+});
+$c_LCommand$anon$lazy$macro$452$1$$anon$13$anon$macro$433$1.prototype.to__LS$__Lshapeless_HNil = (function(p) {
   if ((p !== null)) {
     return $m_Lshapeless_HNil$()
   } else {
     throw new $c_s_MatchError().init___O(p)
   }
 });
-var $d_LCommand$anon$lazy$macro$434$1$$anon$13$anon$macro$415$1 = new $TypeData().initClass({
-  LCommand$anon$lazy$macro$434$1$$anon$13$anon$macro$415$1: 0
-}, false, "Command$anon$lazy$macro$434$1$$anon$13$anon$macro$415$1", {
-  LCommand$anon$lazy$macro$434$1$$anon$13$anon$macro$415$1: 1,
+var $d_LCommand$anon$lazy$macro$452$1$$anon$13$anon$macro$433$1 = new $TypeData().initClass({
+  LCommand$anon$lazy$macro$452$1$$anon$13$anon$macro$433$1: 0
+}, false, "Command$anon$lazy$macro$452$1$$anon$13$anon$macro$433$1", {
+  LCommand$anon$lazy$macro$452$1$$anon$13$anon$macro$433$1: 1,
   O: 1,
   Lshapeless_Generic: 1,
   s_Serializable: 1,
   Ljava_io_Serializable: 1
 });
-$c_LCommand$anon$lazy$macro$434$1$$anon$13$anon$macro$415$1.prototype.$classData = $d_LCommand$anon$lazy$macro$434$1$$anon$13$anon$macro$415$1;
+$c_LCommand$anon$lazy$macro$452$1$$anon$13$anon$macro$433$1.prototype.$classData = $d_LCommand$anon$lazy$macro$452$1$$anon$13$anon$macro$433$1;
 /** @constructor */
-function $c_LCommand$anon$lazy$macro$434$1$$anon$13$anon$macro$419$1() {
+function $c_LCommand$anon$lazy$macro$452$1$$anon$13$anon$macro$437$1() {
   $c_O.call(this)
 }
-$c_LCommand$anon$lazy$macro$434$1$$anon$13$anon$macro$419$1.prototype = new $h_O();
-$c_LCommand$anon$lazy$macro$434$1$$anon$13$anon$macro$419$1.prototype.constructor = $c_LCommand$anon$lazy$macro$434$1$$anon$13$anon$macro$419$1;
+$c_LCommand$anon$lazy$macro$452$1$$anon$13$anon$macro$437$1.prototype = new $h_O();
+$c_LCommand$anon$lazy$macro$452$1$$anon$13$anon$macro$437$1.prototype.constructor = $c_LCommand$anon$lazy$macro$452$1$$anon$13$anon$macro$437$1;
 /** @constructor */
-function $h_LCommand$anon$lazy$macro$434$1$$anon$13$anon$macro$419$1() {
+function $h_LCommand$anon$lazy$macro$452$1$$anon$13$anon$macro$437$1() {
   /*<skip>*/
 }
-$h_LCommand$anon$lazy$macro$434$1$$anon$13$anon$macro$419$1.prototype = $c_LCommand$anon$lazy$macro$434$1$$anon$13$anon$macro$419$1.prototype;
-$c_LCommand$anon$lazy$macro$434$1$$anon$13$anon$macro$419$1.prototype.init___LCommand$anon$lazy$macro$434$1$$anon$13 = (function($$outer) {
-  return this
-});
-$c_LCommand$anon$lazy$macro$434$1$$anon$13$anon$macro$419$1.prototype.from__O__O = (function(r) {
+$h_LCommand$anon$lazy$macro$452$1$$anon$13$anon$macro$437$1.prototype = $c_LCommand$anon$lazy$macro$452$1$$anon$13$anon$macro$437$1.prototype;
+$c_LCommand$anon$lazy$macro$452$1$$anon$13$anon$macro$437$1.prototype.from__O__O = (function(r) {
   return this.from__Lshapeless_HNil__LR$($as_Lshapeless_HNil(r))
 });
-$c_LCommand$anon$lazy$macro$434$1$$anon$13$anon$macro$419$1.prototype.to__O__O = (function(t) {
+$c_LCommand$anon$lazy$macro$452$1$$anon$13$anon$macro$437$1.prototype.to__O__O = (function(t) {
   return this.to__LR$__Lshapeless_HNil($as_LR$(t))
 });
-$c_LCommand$anon$lazy$macro$434$1$$anon$13$anon$macro$419$1.prototype.from__Lshapeless_HNil__LR$ = (function(p) {
+$c_LCommand$anon$lazy$macro$452$1$$anon$13$anon$macro$437$1.prototype.from__Lshapeless_HNil__LR$ = (function(p) {
   var x = $m_Lshapeless_HNil$();
   if ((x === p)) {
     return $m_LR$()
@@ -20919,51 +20861,54 @@ $c_LCommand$anon$lazy$macro$434$1$$anon$13$anon$macro$419$1.prototype.from__Lsha
     throw new $c_s_MatchError().init___O(p)
   }
 });
-$c_LCommand$anon$lazy$macro$434$1$$anon$13$anon$macro$419$1.prototype.to__LR$__Lshapeless_HNil = (function(p) {
+$c_LCommand$anon$lazy$macro$452$1$$anon$13$anon$macro$437$1.prototype.init___LCommand$anon$lazy$macro$452$1$$anon$13 = (function($$outer) {
+  return this
+});
+$c_LCommand$anon$lazy$macro$452$1$$anon$13$anon$macro$437$1.prototype.to__LR$__Lshapeless_HNil = (function(p) {
   if ((p !== null)) {
     return $m_Lshapeless_HNil$()
   } else {
     throw new $c_s_MatchError().init___O(p)
   }
 });
-var $d_LCommand$anon$lazy$macro$434$1$$anon$13$anon$macro$419$1 = new $TypeData().initClass({
-  LCommand$anon$lazy$macro$434$1$$anon$13$anon$macro$419$1: 0
-}, false, "Command$anon$lazy$macro$434$1$$anon$13$anon$macro$419$1", {
-  LCommand$anon$lazy$macro$434$1$$anon$13$anon$macro$419$1: 1,
+var $d_LCommand$anon$lazy$macro$452$1$$anon$13$anon$macro$437$1 = new $TypeData().initClass({
+  LCommand$anon$lazy$macro$452$1$$anon$13$anon$macro$437$1: 0
+}, false, "Command$anon$lazy$macro$452$1$$anon$13$anon$macro$437$1", {
+  LCommand$anon$lazy$macro$452$1$$anon$13$anon$macro$437$1: 1,
   O: 1,
   Lshapeless_Generic: 1,
   s_Serializable: 1,
   Ljava_io_Serializable: 1
 });
-$c_LCommand$anon$lazy$macro$434$1$$anon$13$anon$macro$419$1.prototype.$classData = $d_LCommand$anon$lazy$macro$434$1$$anon$13$anon$macro$419$1;
+$c_LCommand$anon$lazy$macro$452$1$$anon$13$anon$macro$437$1.prototype.$classData = $d_LCommand$anon$lazy$macro$452$1$$anon$13$anon$macro$437$1;
 /** @constructor */
-function $c_LCommand$anon$lazy$macro$434$1$$anon$13$anon$macro$423$1() {
+function $c_LCommand$anon$lazy$macro$452$1$$anon$13$anon$macro$441$1() {
   $c_O.call(this)
 }
-$c_LCommand$anon$lazy$macro$434$1$$anon$13$anon$macro$423$1.prototype = new $h_O();
-$c_LCommand$anon$lazy$macro$434$1$$anon$13$anon$macro$423$1.prototype.constructor = $c_LCommand$anon$lazy$macro$434$1$$anon$13$anon$macro$423$1;
+$c_LCommand$anon$lazy$macro$452$1$$anon$13$anon$macro$441$1.prototype = new $h_O();
+$c_LCommand$anon$lazy$macro$452$1$$anon$13$anon$macro$441$1.prototype.constructor = $c_LCommand$anon$lazy$macro$452$1$$anon$13$anon$macro$441$1;
 /** @constructor */
-function $h_LCommand$anon$lazy$macro$434$1$$anon$13$anon$macro$423$1() {
+function $h_LCommand$anon$lazy$macro$452$1$$anon$13$anon$macro$441$1() {
   /*<skip>*/
 }
-$h_LCommand$anon$lazy$macro$434$1$$anon$13$anon$macro$423$1.prototype = $c_LCommand$anon$lazy$macro$434$1$$anon$13$anon$macro$423$1.prototype;
-$c_LCommand$anon$lazy$macro$434$1$$anon$13$anon$macro$423$1.prototype.init___LCommand$anon$lazy$macro$434$1$$anon$13 = (function($$outer) {
-  return this
-});
-$c_LCommand$anon$lazy$macro$434$1$$anon$13$anon$macro$423$1.prototype.from__O__O = (function(r) {
+$h_LCommand$anon$lazy$macro$452$1$$anon$13$anon$macro$441$1.prototype = $c_LCommand$anon$lazy$macro$452$1$$anon$13$anon$macro$441$1.prototype;
+$c_LCommand$anon$lazy$macro$452$1$$anon$13$anon$macro$441$1.prototype.from__O__O = (function(r) {
   return this.from__Lshapeless_HNil__LL$($as_Lshapeless_HNil(r))
 });
-$c_LCommand$anon$lazy$macro$434$1$$anon$13$anon$macro$423$1.prototype.to__O__O = (function(t) {
+$c_LCommand$anon$lazy$macro$452$1$$anon$13$anon$macro$441$1.prototype.to__O__O = (function(t) {
   return this.to__LL$__Lshapeless_HNil($as_LL$(t))
 });
-$c_LCommand$anon$lazy$macro$434$1$$anon$13$anon$macro$423$1.prototype.to__LL$__Lshapeless_HNil = (function(p) {
+$c_LCommand$anon$lazy$macro$452$1$$anon$13$anon$macro$441$1.prototype.init___LCommand$anon$lazy$macro$452$1$$anon$13 = (function($$outer) {
+  return this
+});
+$c_LCommand$anon$lazy$macro$452$1$$anon$13$anon$macro$441$1.prototype.to__LL$__Lshapeless_HNil = (function(p) {
   if ((p !== null)) {
     return $m_Lshapeless_HNil$()
   } else {
     throw new $c_s_MatchError().init___O(p)
   }
 });
-$c_LCommand$anon$lazy$macro$434$1$$anon$13$anon$macro$423$1.prototype.from__Lshapeless_HNil__LL$ = (function(p) {
+$c_LCommand$anon$lazy$macro$452$1$$anon$13$anon$macro$441$1.prototype.from__Lshapeless_HNil__LL$ = (function(p) {
   var x = $m_Lshapeless_HNil$();
   if ((x === p)) {
     return $m_LL$()
@@ -20971,31 +20916,28 @@ $c_LCommand$anon$lazy$macro$434$1$$anon$13$anon$macro$423$1.prototype.from__Lsha
     throw new $c_s_MatchError().init___O(p)
   }
 });
-var $d_LCommand$anon$lazy$macro$434$1$$anon$13$anon$macro$423$1 = new $TypeData().initClass({
-  LCommand$anon$lazy$macro$434$1$$anon$13$anon$macro$423$1: 0
-}, false, "Command$anon$lazy$macro$434$1$$anon$13$anon$macro$423$1", {
-  LCommand$anon$lazy$macro$434$1$$anon$13$anon$macro$423$1: 1,
+var $d_LCommand$anon$lazy$macro$452$1$$anon$13$anon$macro$441$1 = new $TypeData().initClass({
+  LCommand$anon$lazy$macro$452$1$$anon$13$anon$macro$441$1: 0
+}, false, "Command$anon$lazy$macro$452$1$$anon$13$anon$macro$441$1", {
+  LCommand$anon$lazy$macro$452$1$$anon$13$anon$macro$441$1: 1,
   O: 1,
   Lshapeless_Generic: 1,
   s_Serializable: 1,
   Ljava_io_Serializable: 1
 });
-$c_LCommand$anon$lazy$macro$434$1$$anon$13$anon$macro$423$1.prototype.$classData = $d_LCommand$anon$lazy$macro$434$1$$anon$13$anon$macro$423$1;
+$c_LCommand$anon$lazy$macro$452$1$$anon$13$anon$macro$441$1.prototype.$classData = $d_LCommand$anon$lazy$macro$452$1$$anon$13$anon$macro$441$1;
 /** @constructor */
-function $c_LCommand$anon$lazy$macro$434$1$$anon$13$anon$macro$427$1() {
+function $c_LCommand$anon$lazy$macro$452$1$$anon$13$anon$macro$445$1() {
   $c_O.call(this)
 }
-$c_LCommand$anon$lazy$macro$434$1$$anon$13$anon$macro$427$1.prototype = new $h_O();
-$c_LCommand$anon$lazy$macro$434$1$$anon$13$anon$macro$427$1.prototype.constructor = $c_LCommand$anon$lazy$macro$434$1$$anon$13$anon$macro$427$1;
+$c_LCommand$anon$lazy$macro$452$1$$anon$13$anon$macro$445$1.prototype = new $h_O();
+$c_LCommand$anon$lazy$macro$452$1$$anon$13$anon$macro$445$1.prototype.constructor = $c_LCommand$anon$lazy$macro$452$1$$anon$13$anon$macro$445$1;
 /** @constructor */
-function $h_LCommand$anon$lazy$macro$434$1$$anon$13$anon$macro$427$1() {
+function $h_LCommand$anon$lazy$macro$452$1$$anon$13$anon$macro$445$1() {
   /*<skip>*/
 }
-$h_LCommand$anon$lazy$macro$434$1$$anon$13$anon$macro$427$1.prototype = $c_LCommand$anon$lazy$macro$434$1$$anon$13$anon$macro$427$1.prototype;
-$c_LCommand$anon$lazy$macro$434$1$$anon$13$anon$macro$427$1.prototype.init___LCommand$anon$lazy$macro$434$1$$anon$13 = (function($$outer) {
-  return this
-});
-$c_LCommand$anon$lazy$macro$434$1$$anon$13$anon$macro$427$1.prototype.from__Lshapeless_HNil__LF$ = (function(p) {
+$h_LCommand$anon$lazy$macro$452$1$$anon$13$anon$macro$445$1.prototype = $c_LCommand$anon$lazy$macro$452$1$$anon$13$anon$macro$445$1.prototype;
+$c_LCommand$anon$lazy$macro$452$1$$anon$13$anon$macro$445$1.prototype.from__Lshapeless_HNil__LF$ = (function(p) {
   var x = $m_Lshapeless_HNil$();
   if ((x === p)) {
     return $m_LF$()
@@ -21003,57 +20945,57 @@ $c_LCommand$anon$lazy$macro$434$1$$anon$13$anon$macro$427$1.prototype.from__Lsha
     throw new $c_s_MatchError().init___O(p)
   }
 });
-$c_LCommand$anon$lazy$macro$434$1$$anon$13$anon$macro$427$1.prototype.to__LF$__Lshapeless_HNil = (function(p) {
+$c_LCommand$anon$lazy$macro$452$1$$anon$13$anon$macro$445$1.prototype.to__LF$__Lshapeless_HNil = (function(p) {
   if ((p !== null)) {
     return $m_Lshapeless_HNil$()
   } else {
     throw new $c_s_MatchError().init___O(p)
   }
 });
-$c_LCommand$anon$lazy$macro$434$1$$anon$13$anon$macro$427$1.prototype.from__O__O = (function(r) {
+$c_LCommand$anon$lazy$macro$452$1$$anon$13$anon$macro$445$1.prototype.from__O__O = (function(r) {
   return this.from__Lshapeless_HNil__LF$($as_Lshapeless_HNil(r))
 });
-$c_LCommand$anon$lazy$macro$434$1$$anon$13$anon$macro$427$1.prototype.to__O__O = (function(t) {
+$c_LCommand$anon$lazy$macro$452$1$$anon$13$anon$macro$445$1.prototype.to__O__O = (function(t) {
   return this.to__LF$__Lshapeless_HNil($as_LF$(t))
 });
-var $d_LCommand$anon$lazy$macro$434$1$$anon$13$anon$macro$427$1 = new $TypeData().initClass({
-  LCommand$anon$lazy$macro$434$1$$anon$13$anon$macro$427$1: 0
-}, false, "Command$anon$lazy$macro$434$1$$anon$13$anon$macro$427$1", {
-  LCommand$anon$lazy$macro$434$1$$anon$13$anon$macro$427$1: 1,
+$c_LCommand$anon$lazy$macro$452$1$$anon$13$anon$macro$445$1.prototype.init___LCommand$anon$lazy$macro$452$1$$anon$13 = (function($$outer) {
+  return this
+});
+var $d_LCommand$anon$lazy$macro$452$1$$anon$13$anon$macro$445$1 = new $TypeData().initClass({
+  LCommand$anon$lazy$macro$452$1$$anon$13$anon$macro$445$1: 0
+}, false, "Command$anon$lazy$macro$452$1$$anon$13$anon$macro$445$1", {
+  LCommand$anon$lazy$macro$452$1$$anon$13$anon$macro$445$1: 1,
   O: 1,
   Lshapeless_Generic: 1,
   s_Serializable: 1,
   Ljava_io_Serializable: 1
 });
-$c_LCommand$anon$lazy$macro$434$1$$anon$13$anon$macro$427$1.prototype.$classData = $d_LCommand$anon$lazy$macro$434$1$$anon$13$anon$macro$427$1;
+$c_LCommand$anon$lazy$macro$452$1$$anon$13$anon$macro$445$1.prototype.$classData = $d_LCommand$anon$lazy$macro$452$1$$anon$13$anon$macro$445$1;
 /** @constructor */
-function $c_LCommand$anon$lazy$macro$434$1$$anon$13$anon$macro$431$1() {
+function $c_LCommand$anon$lazy$macro$452$1$$anon$13$anon$macro$449$1() {
   $c_O.call(this)
 }
-$c_LCommand$anon$lazy$macro$434$1$$anon$13$anon$macro$431$1.prototype = new $h_O();
-$c_LCommand$anon$lazy$macro$434$1$$anon$13$anon$macro$431$1.prototype.constructor = $c_LCommand$anon$lazy$macro$434$1$$anon$13$anon$macro$431$1;
+$c_LCommand$anon$lazy$macro$452$1$$anon$13$anon$macro$449$1.prototype = new $h_O();
+$c_LCommand$anon$lazy$macro$452$1$$anon$13$anon$macro$449$1.prototype.constructor = $c_LCommand$anon$lazy$macro$452$1$$anon$13$anon$macro$449$1;
 /** @constructor */
-function $h_LCommand$anon$lazy$macro$434$1$$anon$13$anon$macro$431$1() {
+function $h_LCommand$anon$lazy$macro$452$1$$anon$13$anon$macro$449$1() {
   /*<skip>*/
 }
-$h_LCommand$anon$lazy$macro$434$1$$anon$13$anon$macro$431$1.prototype = $c_LCommand$anon$lazy$macro$434$1$$anon$13$anon$macro$431$1.prototype;
-$c_LCommand$anon$lazy$macro$434$1$$anon$13$anon$macro$431$1.prototype.init___LCommand$anon$lazy$macro$434$1$$anon$13 = (function($$outer) {
-  return this
-});
-$c_LCommand$anon$lazy$macro$434$1$$anon$13$anon$macro$431$1.prototype.from__O__O = (function(r) {
+$h_LCommand$anon$lazy$macro$452$1$$anon$13$anon$macro$449$1.prototype = $c_LCommand$anon$lazy$macro$452$1$$anon$13$anon$macro$449$1.prototype;
+$c_LCommand$anon$lazy$macro$452$1$$anon$13$anon$macro$449$1.prototype.from__O__O = (function(r) {
   return this.from__Lshapeless_HNil__LB$($as_Lshapeless_HNil(r))
 });
-$c_LCommand$anon$lazy$macro$434$1$$anon$13$anon$macro$431$1.prototype.to__LB$__Lshapeless_HNil = (function(p) {
+$c_LCommand$anon$lazy$macro$452$1$$anon$13$anon$macro$449$1.prototype.to__LB$__Lshapeless_HNil = (function(p) {
   if ((p !== null)) {
     return $m_Lshapeless_HNil$()
   } else {
     throw new $c_s_MatchError().init___O(p)
   }
 });
-$c_LCommand$anon$lazy$macro$434$1$$anon$13$anon$macro$431$1.prototype.to__O__O = (function(t) {
+$c_LCommand$anon$lazy$macro$452$1$$anon$13$anon$macro$449$1.prototype.to__O__O = (function(t) {
   return this.to__LB$__Lshapeless_HNil($as_LB$(t))
 });
-$c_LCommand$anon$lazy$macro$434$1$$anon$13$anon$macro$431$1.prototype.from__Lshapeless_HNil__LB$ = (function(p) {
+$c_LCommand$anon$lazy$macro$452$1$$anon$13$anon$macro$449$1.prototype.from__Lshapeless_HNil__LB$ = (function(p) {
   var x = $m_Lshapeless_HNil$();
   if ((x === p)) {
     return $m_LB$()
@@ -21061,38 +21003,41 @@ $c_LCommand$anon$lazy$macro$434$1$$anon$13$anon$macro$431$1.prototype.from__Lsha
     throw new $c_s_MatchError().init___O(p)
   }
 });
-var $d_LCommand$anon$lazy$macro$434$1$$anon$13$anon$macro$431$1 = new $TypeData().initClass({
-  LCommand$anon$lazy$macro$434$1$$anon$13$anon$macro$431$1: 0
-}, false, "Command$anon$lazy$macro$434$1$$anon$13$anon$macro$431$1", {
-  LCommand$anon$lazy$macro$434$1$$anon$13$anon$macro$431$1: 1,
+$c_LCommand$anon$lazy$macro$452$1$$anon$13$anon$macro$449$1.prototype.init___LCommand$anon$lazy$macro$452$1$$anon$13 = (function($$outer) {
+  return this
+});
+var $d_LCommand$anon$lazy$macro$452$1$$anon$13$anon$macro$449$1 = new $TypeData().initClass({
+  LCommand$anon$lazy$macro$452$1$$anon$13$anon$macro$449$1: 0
+}, false, "Command$anon$lazy$macro$452$1$$anon$13$anon$macro$449$1", {
+  LCommand$anon$lazy$macro$452$1$$anon$13$anon$macro$449$1: 1,
   O: 1,
   Lshapeless_Generic: 1,
   s_Serializable: 1,
   Ljava_io_Serializable: 1
 });
-$c_LCommand$anon$lazy$macro$434$1$$anon$13$anon$macro$431$1.prototype.$classData = $d_LCommand$anon$lazy$macro$434$1$$anon$13$anon$macro$431$1;
+$c_LCommand$anon$lazy$macro$452$1$$anon$13$anon$macro$449$1.prototype.$classData = $d_LCommand$anon$lazy$macro$452$1$$anon$13$anon$macro$449$1;
 /** @constructor */
-function $c_LCommand$anon$lazy$macro$434$1$anon$macro$411$1() {
+function $c_LCommand$anon$lazy$macro$452$1$anon$macro$429$1() {
   $c_O.call(this)
 }
-$c_LCommand$anon$lazy$macro$434$1$anon$macro$411$1.prototype = new $h_O();
-$c_LCommand$anon$lazy$macro$434$1$anon$macro$411$1.prototype.constructor = $c_LCommand$anon$lazy$macro$434$1$anon$macro$411$1;
+$c_LCommand$anon$lazy$macro$452$1$anon$macro$429$1.prototype = new $h_O();
+$c_LCommand$anon$lazy$macro$452$1$anon$macro$429$1.prototype.constructor = $c_LCommand$anon$lazy$macro$452$1$anon$macro$429$1;
 /** @constructor */
-function $h_LCommand$anon$lazy$macro$434$1$anon$macro$411$1() {
+function $h_LCommand$anon$lazy$macro$452$1$anon$macro$429$1() {
   /*<skip>*/
 }
-$h_LCommand$anon$lazy$macro$434$1$anon$macro$411$1.prototype = $c_LCommand$anon$lazy$macro$434$1$anon$macro$411$1.prototype;
-$c_LCommand$anon$lazy$macro$434$1$anon$macro$411$1.prototype.from__O__O = (function(r) {
+$h_LCommand$anon$lazy$macro$452$1$anon$macro$429$1.prototype = $c_LCommand$anon$lazy$macro$452$1$anon$macro$429$1.prototype;
+$c_LCommand$anon$lazy$macro$452$1$anon$macro$429$1.prototype.init___LCommand$anon$lazy$macro$452$1 = (function($$outer) {
+  return this
+});
+$c_LCommand$anon$lazy$macro$452$1$anon$macro$429$1.prototype.from__O__O = (function(r) {
   var p = $as_Lshapeless_$colon$plus$colon(r);
   return $as_LCommand($m_Lshapeless_Coproduct$().unsafeGet__Lshapeless_Coproduct__O(p))
 });
-$c_LCommand$anon$lazy$macro$434$1$anon$macro$411$1.prototype.to__O__O = (function(t) {
+$c_LCommand$anon$lazy$macro$452$1$anon$macro$429$1.prototype.to__O__O = (function(t) {
   return this.to__LCommand__Lshapeless_$colon$plus$colon($as_LCommand(t))
 });
-$c_LCommand$anon$lazy$macro$434$1$anon$macro$411$1.prototype.init___LCommand$anon$lazy$macro$434$1 = (function($$outer) {
-  return this
-});
-$c_LCommand$anon$lazy$macro$434$1$anon$macro$411$1.prototype.to__LCommand__Lshapeless_$colon$plus$colon = (function(p) {
+$c_LCommand$anon$lazy$macro$452$1$anon$macro$429$1.prototype.to__LCommand__Lshapeless_$colon$plus$colon = (function(p) {
   var jsx$2 = $m_Lshapeless_Coproduct$();
   if ((p === $m_LB$())) {
     var jsx$1 = 0
@@ -21110,38 +21055,35 @@ $c_LCommand$anon$lazy$macro$434$1$anon$macro$411$1.prototype.to__LCommand__Lshap
   };
   return $as_Lshapeless_$colon$plus$colon(jsx$2.unsafeMkCoproduct__I__O__Lshapeless_Coproduct(jsx$1, p))
 });
-var $d_LCommand$anon$lazy$macro$434$1$anon$macro$411$1 = new $TypeData().initClass({
-  LCommand$anon$lazy$macro$434$1$anon$macro$411$1: 0
-}, false, "Command$anon$lazy$macro$434$1$anon$macro$411$1", {
-  LCommand$anon$lazy$macro$434$1$anon$macro$411$1: 1,
+var $d_LCommand$anon$lazy$macro$452$1$anon$macro$429$1 = new $TypeData().initClass({
+  LCommand$anon$lazy$macro$452$1$anon$macro$429$1: 0
+}, false, "Command$anon$lazy$macro$452$1$anon$macro$429$1", {
+  LCommand$anon$lazy$macro$452$1$anon$macro$429$1: 1,
   O: 1,
   Lshapeless_Generic: 1,
   s_Serializable: 1,
   Ljava_io_Serializable: 1
 });
-$c_LCommand$anon$lazy$macro$434$1$anon$macro$411$1.prototype.$classData = $d_LCommand$anon$lazy$macro$434$1$anon$macro$411$1;
+$c_LCommand$anon$lazy$macro$452$1$anon$macro$429$1.prototype.$classData = $d_LCommand$anon$lazy$macro$452$1$anon$macro$429$1;
 /** @constructor */
-function $c_LCommand$anon$lazy$macro$461$1$anon$macro$437$1() {
+function $c_LCommand$anon$lazy$macro$479$1$anon$macro$455$1() {
   $c_O.call(this)
 }
-$c_LCommand$anon$lazy$macro$461$1$anon$macro$437$1.prototype = new $h_O();
-$c_LCommand$anon$lazy$macro$461$1$anon$macro$437$1.prototype.constructor = $c_LCommand$anon$lazy$macro$461$1$anon$macro$437$1;
+$c_LCommand$anon$lazy$macro$479$1$anon$macro$455$1.prototype = new $h_O();
+$c_LCommand$anon$lazy$macro$479$1$anon$macro$455$1.prototype.constructor = $c_LCommand$anon$lazy$macro$479$1$anon$macro$455$1;
 /** @constructor */
-function $h_LCommand$anon$lazy$macro$461$1$anon$macro$437$1() {
+function $h_LCommand$anon$lazy$macro$479$1$anon$macro$455$1() {
   /*<skip>*/
 }
-$h_LCommand$anon$lazy$macro$461$1$anon$macro$437$1.prototype = $c_LCommand$anon$lazy$macro$461$1$anon$macro$437$1.prototype;
-$c_LCommand$anon$lazy$macro$461$1$anon$macro$437$1.prototype.init___LCommand$anon$lazy$macro$461$1 = (function($$outer) {
-  return this
-});
-$c_LCommand$anon$lazy$macro$461$1$anon$macro$437$1.prototype.from__O__O = (function(r) {
+$h_LCommand$anon$lazy$macro$479$1$anon$macro$455$1.prototype = $c_LCommand$anon$lazy$macro$479$1$anon$macro$455$1.prototype;
+$c_LCommand$anon$lazy$macro$479$1$anon$macro$455$1.prototype.from__O__O = (function(r) {
   var p = $as_Lshapeless_$colon$plus$colon(r);
   return $as_LCommand($m_Lshapeless_Coproduct$().unsafeGet__Lshapeless_Coproduct__O(p))
 });
-$c_LCommand$anon$lazy$macro$461$1$anon$macro$437$1.prototype.to__O__O = (function(t) {
+$c_LCommand$anon$lazy$macro$479$1$anon$macro$455$1.prototype.to__O__O = (function(t) {
   return this.to__LCommand__Lshapeless_$colon$plus$colon($as_LCommand(t))
 });
-$c_LCommand$anon$lazy$macro$461$1$anon$macro$437$1.prototype.to__LCommand__Lshapeless_$colon$plus$colon = (function(p) {
+$c_LCommand$anon$lazy$macro$479$1$anon$macro$455$1.prototype.to__LCommand__Lshapeless_$colon$plus$colon = (function(p) {
   var jsx$2 = $m_Lshapeless_Coproduct$();
   if ((p === $m_LB$())) {
     var jsx$1 = 0
@@ -21159,34 +21101,34 @@ $c_LCommand$anon$lazy$macro$461$1$anon$macro$437$1.prototype.to__LCommand__Lshap
   };
   return $as_Lshapeless_$colon$plus$colon(jsx$2.unsafeMkCoproduct__I__O__Lshapeless_Coproduct(jsx$1, p))
 });
-var $d_LCommand$anon$lazy$macro$461$1$anon$macro$437$1 = new $TypeData().initClass({
-  LCommand$anon$lazy$macro$461$1$anon$macro$437$1: 0
-}, false, "Command$anon$lazy$macro$461$1$anon$macro$437$1", {
-  LCommand$anon$lazy$macro$461$1$anon$macro$437$1: 1,
+$c_LCommand$anon$lazy$macro$479$1$anon$macro$455$1.prototype.init___LCommand$anon$lazy$macro$479$1 = (function($$outer) {
+  return this
+});
+var $d_LCommand$anon$lazy$macro$479$1$anon$macro$455$1 = new $TypeData().initClass({
+  LCommand$anon$lazy$macro$479$1$anon$macro$455$1: 0
+}, false, "Command$anon$lazy$macro$479$1$anon$macro$455$1", {
+  LCommand$anon$lazy$macro$479$1$anon$macro$455$1: 1,
   O: 1,
   Lshapeless_Generic: 1,
   s_Serializable: 1,
   Ljava_io_Serializable: 1
 });
-$c_LCommand$anon$lazy$macro$461$1$anon$macro$437$1.prototype.$classData = $d_LCommand$anon$lazy$macro$461$1$anon$macro$437$1;
+$c_LCommand$anon$lazy$macro$479$1$anon$macro$455$1.prototype.$classData = $d_LCommand$anon$lazy$macro$479$1$anon$macro$455$1;
 /** @constructor */
-function $c_LCommand$anon$lazy$macro$461$1$anon$macro$443$1() {
+function $c_LCommand$anon$lazy$macro$479$1$anon$macro$461$1() {
   $c_O.call(this)
 }
-$c_LCommand$anon$lazy$macro$461$1$anon$macro$443$1.prototype = new $h_O();
-$c_LCommand$anon$lazy$macro$461$1$anon$macro$443$1.prototype.constructor = $c_LCommand$anon$lazy$macro$461$1$anon$macro$443$1;
+$c_LCommand$anon$lazy$macro$479$1$anon$macro$461$1.prototype = new $h_O();
+$c_LCommand$anon$lazy$macro$479$1$anon$macro$461$1.prototype.constructor = $c_LCommand$anon$lazy$macro$479$1$anon$macro$461$1;
 /** @constructor */
-function $h_LCommand$anon$lazy$macro$461$1$anon$macro$443$1() {
+function $h_LCommand$anon$lazy$macro$479$1$anon$macro$461$1() {
   /*<skip>*/
 }
-$h_LCommand$anon$lazy$macro$461$1$anon$macro$443$1.prototype = $c_LCommand$anon$lazy$macro$461$1$anon$macro$443$1.prototype;
-$c_LCommand$anon$lazy$macro$461$1$anon$macro$443$1.prototype.init___LCommand$anon$lazy$macro$461$1 = (function($$outer) {
-  return this
-});
-$c_LCommand$anon$lazy$macro$461$1$anon$macro$443$1.prototype.from__O__O = (function(r) {
+$h_LCommand$anon$lazy$macro$479$1$anon$macro$461$1.prototype = $c_LCommand$anon$lazy$macro$479$1$anon$macro$461$1.prototype;
+$c_LCommand$anon$lazy$macro$479$1$anon$macro$461$1.prototype.from__O__O = (function(r) {
   return this.from__Lshapeless_HNil__LS$($as_Lshapeless_HNil(r))
 });
-$c_LCommand$anon$lazy$macro$461$1$anon$macro$443$1.prototype.from__Lshapeless_HNil__LS$ = (function(p) {
+$c_LCommand$anon$lazy$macro$479$1$anon$macro$461$1.prototype.from__Lshapeless_HNil__LS$ = (function(p) {
   var x = $m_Lshapeless_HNil$();
   if ((x === p)) {
     return $m_LS$()
@@ -21194,47 +21136,47 @@ $c_LCommand$anon$lazy$macro$461$1$anon$macro$443$1.prototype.from__Lshapeless_HN
     throw new $c_s_MatchError().init___O(p)
   }
 });
-$c_LCommand$anon$lazy$macro$461$1$anon$macro$443$1.prototype.to__O__O = (function(t) {
+$c_LCommand$anon$lazy$macro$479$1$anon$macro$461$1.prototype.to__O__O = (function(t) {
   return this.to__LS$__Lshapeless_HNil($as_LS$(t))
 });
-$c_LCommand$anon$lazy$macro$461$1$anon$macro$443$1.prototype.to__LS$__Lshapeless_HNil = (function(p) {
+$c_LCommand$anon$lazy$macro$479$1$anon$macro$461$1.prototype.to__LS$__Lshapeless_HNil = (function(p) {
   if ((p !== null)) {
     return $m_Lshapeless_HNil$()
   } else {
     throw new $c_s_MatchError().init___O(p)
   }
 });
-var $d_LCommand$anon$lazy$macro$461$1$anon$macro$443$1 = new $TypeData().initClass({
-  LCommand$anon$lazy$macro$461$1$anon$macro$443$1: 0
-}, false, "Command$anon$lazy$macro$461$1$anon$macro$443$1", {
-  LCommand$anon$lazy$macro$461$1$anon$macro$443$1: 1,
+$c_LCommand$anon$lazy$macro$479$1$anon$macro$461$1.prototype.init___LCommand$anon$lazy$macro$479$1 = (function($$outer) {
+  return this
+});
+var $d_LCommand$anon$lazy$macro$479$1$anon$macro$461$1 = new $TypeData().initClass({
+  LCommand$anon$lazy$macro$479$1$anon$macro$461$1: 0
+}, false, "Command$anon$lazy$macro$479$1$anon$macro$461$1", {
+  LCommand$anon$lazy$macro$479$1$anon$macro$461$1: 1,
   O: 1,
   Lshapeless_Generic: 1,
   s_Serializable: 1,
   Ljava_io_Serializable: 1
 });
-$c_LCommand$anon$lazy$macro$461$1$anon$macro$443$1.prototype.$classData = $d_LCommand$anon$lazy$macro$461$1$anon$macro$443$1;
+$c_LCommand$anon$lazy$macro$479$1$anon$macro$461$1.prototype.$classData = $d_LCommand$anon$lazy$macro$479$1$anon$macro$461$1;
 /** @constructor */
-function $c_LCommand$anon$lazy$macro$461$1$anon$macro$448$1() {
+function $c_LCommand$anon$lazy$macro$479$1$anon$macro$466$1() {
   $c_O.call(this)
 }
-$c_LCommand$anon$lazy$macro$461$1$anon$macro$448$1.prototype = new $h_O();
-$c_LCommand$anon$lazy$macro$461$1$anon$macro$448$1.prototype.constructor = $c_LCommand$anon$lazy$macro$461$1$anon$macro$448$1;
+$c_LCommand$anon$lazy$macro$479$1$anon$macro$466$1.prototype = new $h_O();
+$c_LCommand$anon$lazy$macro$479$1$anon$macro$466$1.prototype.constructor = $c_LCommand$anon$lazy$macro$479$1$anon$macro$466$1;
 /** @constructor */
-function $h_LCommand$anon$lazy$macro$461$1$anon$macro$448$1() {
+function $h_LCommand$anon$lazy$macro$479$1$anon$macro$466$1() {
   /*<skip>*/
 }
-$h_LCommand$anon$lazy$macro$461$1$anon$macro$448$1.prototype = $c_LCommand$anon$lazy$macro$461$1$anon$macro$448$1.prototype;
-$c_LCommand$anon$lazy$macro$461$1$anon$macro$448$1.prototype.init___LCommand$anon$lazy$macro$461$1 = (function($$outer) {
-  return this
-});
-$c_LCommand$anon$lazy$macro$461$1$anon$macro$448$1.prototype.from__O__O = (function(r) {
+$h_LCommand$anon$lazy$macro$479$1$anon$macro$466$1.prototype = $c_LCommand$anon$lazy$macro$479$1$anon$macro$466$1.prototype;
+$c_LCommand$anon$lazy$macro$479$1$anon$macro$466$1.prototype.from__O__O = (function(r) {
   return this.from__Lshapeless_HNil__LR$($as_Lshapeless_HNil(r))
 });
-$c_LCommand$anon$lazy$macro$461$1$anon$macro$448$1.prototype.to__O__O = (function(t) {
+$c_LCommand$anon$lazy$macro$479$1$anon$macro$466$1.prototype.to__O__O = (function(t) {
   return this.to__LR$__Lshapeless_HNil($as_LR$(t))
 });
-$c_LCommand$anon$lazy$macro$461$1$anon$macro$448$1.prototype.from__Lshapeless_HNil__LR$ = (function(p) {
+$c_LCommand$anon$lazy$macro$479$1$anon$macro$466$1.prototype.from__Lshapeless_HNil__LR$ = (function(p) {
   var x = $m_Lshapeless_HNil$();
   if ((x === p)) {
     return $m_LR$()
@@ -21242,51 +21184,51 @@ $c_LCommand$anon$lazy$macro$461$1$anon$macro$448$1.prototype.from__Lshapeless_HN
     throw new $c_s_MatchError().init___O(p)
   }
 });
-$c_LCommand$anon$lazy$macro$461$1$anon$macro$448$1.prototype.to__LR$__Lshapeless_HNil = (function(p) {
+$c_LCommand$anon$lazy$macro$479$1$anon$macro$466$1.prototype.init___LCommand$anon$lazy$macro$479$1 = (function($$outer) {
+  return this
+});
+$c_LCommand$anon$lazy$macro$479$1$anon$macro$466$1.prototype.to__LR$__Lshapeless_HNil = (function(p) {
   if ((p !== null)) {
     return $m_Lshapeless_HNil$()
   } else {
     throw new $c_s_MatchError().init___O(p)
   }
 });
-var $d_LCommand$anon$lazy$macro$461$1$anon$macro$448$1 = new $TypeData().initClass({
-  LCommand$anon$lazy$macro$461$1$anon$macro$448$1: 0
-}, false, "Command$anon$lazy$macro$461$1$anon$macro$448$1", {
-  LCommand$anon$lazy$macro$461$1$anon$macro$448$1: 1,
+var $d_LCommand$anon$lazy$macro$479$1$anon$macro$466$1 = new $TypeData().initClass({
+  LCommand$anon$lazy$macro$479$1$anon$macro$466$1: 0
+}, false, "Command$anon$lazy$macro$479$1$anon$macro$466$1", {
+  LCommand$anon$lazy$macro$479$1$anon$macro$466$1: 1,
   O: 1,
   Lshapeless_Generic: 1,
   s_Serializable: 1,
   Ljava_io_Serializable: 1
 });
-$c_LCommand$anon$lazy$macro$461$1$anon$macro$448$1.prototype.$classData = $d_LCommand$anon$lazy$macro$461$1$anon$macro$448$1;
+$c_LCommand$anon$lazy$macro$479$1$anon$macro$466$1.prototype.$classData = $d_LCommand$anon$lazy$macro$479$1$anon$macro$466$1;
 /** @constructor */
-function $c_LCommand$anon$lazy$macro$461$1$anon$macro$451$1() {
+function $c_LCommand$anon$lazy$macro$479$1$anon$macro$469$1() {
   $c_O.call(this)
 }
-$c_LCommand$anon$lazy$macro$461$1$anon$macro$451$1.prototype = new $h_O();
-$c_LCommand$anon$lazy$macro$461$1$anon$macro$451$1.prototype.constructor = $c_LCommand$anon$lazy$macro$461$1$anon$macro$451$1;
+$c_LCommand$anon$lazy$macro$479$1$anon$macro$469$1.prototype = new $h_O();
+$c_LCommand$anon$lazy$macro$479$1$anon$macro$469$1.prototype.constructor = $c_LCommand$anon$lazy$macro$479$1$anon$macro$469$1;
 /** @constructor */
-function $h_LCommand$anon$lazy$macro$461$1$anon$macro$451$1() {
+function $h_LCommand$anon$lazy$macro$479$1$anon$macro$469$1() {
   /*<skip>*/
 }
-$h_LCommand$anon$lazy$macro$461$1$anon$macro$451$1.prototype = $c_LCommand$anon$lazy$macro$461$1$anon$macro$451$1.prototype;
-$c_LCommand$anon$lazy$macro$461$1$anon$macro$451$1.prototype.init___LCommand$anon$lazy$macro$461$1 = (function($$outer) {
-  return this
-});
-$c_LCommand$anon$lazy$macro$461$1$anon$macro$451$1.prototype.from__O__O = (function(r) {
+$h_LCommand$anon$lazy$macro$479$1$anon$macro$469$1.prototype = $c_LCommand$anon$lazy$macro$479$1$anon$macro$469$1.prototype;
+$c_LCommand$anon$lazy$macro$479$1$anon$macro$469$1.prototype.from__O__O = (function(r) {
   return this.from__Lshapeless_HNil__LL$($as_Lshapeless_HNil(r))
 });
-$c_LCommand$anon$lazy$macro$461$1$anon$macro$451$1.prototype.to__O__O = (function(t) {
+$c_LCommand$anon$lazy$macro$479$1$anon$macro$469$1.prototype.to__O__O = (function(t) {
   return this.to__LL$__Lshapeless_HNil($as_LL$(t))
 });
-$c_LCommand$anon$lazy$macro$461$1$anon$macro$451$1.prototype.to__LL$__Lshapeless_HNil = (function(p) {
+$c_LCommand$anon$lazy$macro$479$1$anon$macro$469$1.prototype.to__LL$__Lshapeless_HNil = (function(p) {
   if ((p !== null)) {
     return $m_Lshapeless_HNil$()
   } else {
     throw new $c_s_MatchError().init___O(p)
   }
 });
-$c_LCommand$anon$lazy$macro$461$1$anon$macro$451$1.prototype.from__Lshapeless_HNil__LL$ = (function(p) {
+$c_LCommand$anon$lazy$macro$479$1$anon$macro$469$1.prototype.from__Lshapeless_HNil__LL$ = (function(p) {
   var x = $m_Lshapeless_HNil$();
   if ((x === p)) {
     return $m_LL$()
@@ -21294,31 +21236,31 @@ $c_LCommand$anon$lazy$macro$461$1$anon$macro$451$1.prototype.from__Lshapeless_HN
     throw new $c_s_MatchError().init___O(p)
   }
 });
-var $d_LCommand$anon$lazy$macro$461$1$anon$macro$451$1 = new $TypeData().initClass({
-  LCommand$anon$lazy$macro$461$1$anon$macro$451$1: 0
-}, false, "Command$anon$lazy$macro$461$1$anon$macro$451$1", {
-  LCommand$anon$lazy$macro$461$1$anon$macro$451$1: 1,
+$c_LCommand$anon$lazy$macro$479$1$anon$macro$469$1.prototype.init___LCommand$anon$lazy$macro$479$1 = (function($$outer) {
+  return this
+});
+var $d_LCommand$anon$lazy$macro$479$1$anon$macro$469$1 = new $TypeData().initClass({
+  LCommand$anon$lazy$macro$479$1$anon$macro$469$1: 0
+}, false, "Command$anon$lazy$macro$479$1$anon$macro$469$1", {
+  LCommand$anon$lazy$macro$479$1$anon$macro$469$1: 1,
   O: 1,
   Lshapeless_Generic: 1,
   s_Serializable: 1,
   Ljava_io_Serializable: 1
 });
-$c_LCommand$anon$lazy$macro$461$1$anon$macro$451$1.prototype.$classData = $d_LCommand$anon$lazy$macro$461$1$anon$macro$451$1;
+$c_LCommand$anon$lazy$macro$479$1$anon$macro$469$1.prototype.$classData = $d_LCommand$anon$lazy$macro$479$1$anon$macro$469$1;
 /** @constructor */
-function $c_LCommand$anon$lazy$macro$461$1$anon$macro$455$1() {
+function $c_LCommand$anon$lazy$macro$479$1$anon$macro$473$1() {
   $c_O.call(this)
 }
-$c_LCommand$anon$lazy$macro$461$1$anon$macro$455$1.prototype = new $h_O();
-$c_LCommand$anon$lazy$macro$461$1$anon$macro$455$1.prototype.constructor = $c_LCommand$anon$lazy$macro$461$1$anon$macro$455$1;
+$c_LCommand$anon$lazy$macro$479$1$anon$macro$473$1.prototype = new $h_O();
+$c_LCommand$anon$lazy$macro$479$1$anon$macro$473$1.prototype.constructor = $c_LCommand$anon$lazy$macro$479$1$anon$macro$473$1;
 /** @constructor */
-function $h_LCommand$anon$lazy$macro$461$1$anon$macro$455$1() {
+function $h_LCommand$anon$lazy$macro$479$1$anon$macro$473$1() {
   /*<skip>*/
 }
-$h_LCommand$anon$lazy$macro$461$1$anon$macro$455$1.prototype = $c_LCommand$anon$lazy$macro$461$1$anon$macro$455$1.prototype;
-$c_LCommand$anon$lazy$macro$461$1$anon$macro$455$1.prototype.init___LCommand$anon$lazy$macro$461$1 = (function($$outer) {
-  return this
-});
-$c_LCommand$anon$lazy$macro$461$1$anon$macro$455$1.prototype.from__Lshapeless_HNil__LF$ = (function(p) {
+$h_LCommand$anon$lazy$macro$479$1$anon$macro$473$1.prototype = $c_LCommand$anon$lazy$macro$479$1$anon$macro$473$1.prototype;
+$c_LCommand$anon$lazy$macro$479$1$anon$macro$473$1.prototype.from__Lshapeless_HNil__LF$ = (function(p) {
   var x = $m_Lshapeless_HNil$();
   if ((x === p)) {
     return $m_LF$()
@@ -21326,57 +21268,57 @@ $c_LCommand$anon$lazy$macro$461$1$anon$macro$455$1.prototype.from__Lshapeless_HN
     throw new $c_s_MatchError().init___O(p)
   }
 });
-$c_LCommand$anon$lazy$macro$461$1$anon$macro$455$1.prototype.to__LF$__Lshapeless_HNil = (function(p) {
+$c_LCommand$anon$lazy$macro$479$1$anon$macro$473$1.prototype.to__LF$__Lshapeless_HNil = (function(p) {
   if ((p !== null)) {
     return $m_Lshapeless_HNil$()
   } else {
     throw new $c_s_MatchError().init___O(p)
   }
 });
-$c_LCommand$anon$lazy$macro$461$1$anon$macro$455$1.prototype.from__O__O = (function(r) {
+$c_LCommand$anon$lazy$macro$479$1$anon$macro$473$1.prototype.from__O__O = (function(r) {
   return this.from__Lshapeless_HNil__LF$($as_Lshapeless_HNil(r))
 });
-$c_LCommand$anon$lazy$macro$461$1$anon$macro$455$1.prototype.to__O__O = (function(t) {
+$c_LCommand$anon$lazy$macro$479$1$anon$macro$473$1.prototype.to__O__O = (function(t) {
   return this.to__LF$__Lshapeless_HNil($as_LF$(t))
 });
-var $d_LCommand$anon$lazy$macro$461$1$anon$macro$455$1 = new $TypeData().initClass({
-  LCommand$anon$lazy$macro$461$1$anon$macro$455$1: 0
-}, false, "Command$anon$lazy$macro$461$1$anon$macro$455$1", {
-  LCommand$anon$lazy$macro$461$1$anon$macro$455$1: 1,
+$c_LCommand$anon$lazy$macro$479$1$anon$macro$473$1.prototype.init___LCommand$anon$lazy$macro$479$1 = (function($$outer) {
+  return this
+});
+var $d_LCommand$anon$lazy$macro$479$1$anon$macro$473$1 = new $TypeData().initClass({
+  LCommand$anon$lazy$macro$479$1$anon$macro$473$1: 0
+}, false, "Command$anon$lazy$macro$479$1$anon$macro$473$1", {
+  LCommand$anon$lazy$macro$479$1$anon$macro$473$1: 1,
   O: 1,
   Lshapeless_Generic: 1,
   s_Serializable: 1,
   Ljava_io_Serializable: 1
 });
-$c_LCommand$anon$lazy$macro$461$1$anon$macro$455$1.prototype.$classData = $d_LCommand$anon$lazy$macro$461$1$anon$macro$455$1;
+$c_LCommand$anon$lazy$macro$479$1$anon$macro$473$1.prototype.$classData = $d_LCommand$anon$lazy$macro$479$1$anon$macro$473$1;
 /** @constructor */
-function $c_LCommand$anon$lazy$macro$461$1$anon$macro$459$1() {
+function $c_LCommand$anon$lazy$macro$479$1$anon$macro$477$1() {
   $c_O.call(this)
 }
-$c_LCommand$anon$lazy$macro$461$1$anon$macro$459$1.prototype = new $h_O();
-$c_LCommand$anon$lazy$macro$461$1$anon$macro$459$1.prototype.constructor = $c_LCommand$anon$lazy$macro$461$1$anon$macro$459$1;
+$c_LCommand$anon$lazy$macro$479$1$anon$macro$477$1.prototype = new $h_O();
+$c_LCommand$anon$lazy$macro$479$1$anon$macro$477$1.prototype.constructor = $c_LCommand$anon$lazy$macro$479$1$anon$macro$477$1;
 /** @constructor */
-function $h_LCommand$anon$lazy$macro$461$1$anon$macro$459$1() {
+function $h_LCommand$anon$lazy$macro$479$1$anon$macro$477$1() {
   /*<skip>*/
 }
-$h_LCommand$anon$lazy$macro$461$1$anon$macro$459$1.prototype = $c_LCommand$anon$lazy$macro$461$1$anon$macro$459$1.prototype;
-$c_LCommand$anon$lazy$macro$461$1$anon$macro$459$1.prototype.init___LCommand$anon$lazy$macro$461$1 = (function($$outer) {
-  return this
-});
-$c_LCommand$anon$lazy$macro$461$1$anon$macro$459$1.prototype.from__O__O = (function(r) {
+$h_LCommand$anon$lazy$macro$479$1$anon$macro$477$1.prototype = $c_LCommand$anon$lazy$macro$479$1$anon$macro$477$1.prototype;
+$c_LCommand$anon$lazy$macro$479$1$anon$macro$477$1.prototype.from__O__O = (function(r) {
   return this.from__Lshapeless_HNil__LB$($as_Lshapeless_HNil(r))
 });
-$c_LCommand$anon$lazy$macro$461$1$anon$macro$459$1.prototype.to__LB$__Lshapeless_HNil = (function(p) {
+$c_LCommand$anon$lazy$macro$479$1$anon$macro$477$1.prototype.to__LB$__Lshapeless_HNil = (function(p) {
   if ((p !== null)) {
     return $m_Lshapeless_HNil$()
   } else {
     throw new $c_s_MatchError().init___O(p)
   }
 });
-$c_LCommand$anon$lazy$macro$461$1$anon$macro$459$1.prototype.to__O__O = (function(t) {
+$c_LCommand$anon$lazy$macro$479$1$anon$macro$477$1.prototype.to__O__O = (function(t) {
   return this.to__LB$__Lshapeless_HNil($as_LB$(t))
 });
-$c_LCommand$anon$lazy$macro$461$1$anon$macro$459$1.prototype.from__Lshapeless_HNil__LB$ = (function(p) {
+$c_LCommand$anon$lazy$macro$479$1$anon$macro$477$1.prototype.from__Lshapeless_HNil__LB$ = (function(p) {
   var x = $m_Lshapeless_HNil$();
   if ((x === p)) {
     return $m_LB$()
@@ -21384,16 +21326,19 @@ $c_LCommand$anon$lazy$macro$461$1$anon$macro$459$1.prototype.from__Lshapeless_HN
     throw new $c_s_MatchError().init___O(p)
   }
 });
-var $d_LCommand$anon$lazy$macro$461$1$anon$macro$459$1 = new $TypeData().initClass({
-  LCommand$anon$lazy$macro$461$1$anon$macro$459$1: 0
-}, false, "Command$anon$lazy$macro$461$1$anon$macro$459$1", {
-  LCommand$anon$lazy$macro$461$1$anon$macro$459$1: 1,
+$c_LCommand$anon$lazy$macro$479$1$anon$macro$477$1.prototype.init___LCommand$anon$lazy$macro$479$1 = (function($$outer) {
+  return this
+});
+var $d_LCommand$anon$lazy$macro$479$1$anon$macro$477$1 = new $TypeData().initClass({
+  LCommand$anon$lazy$macro$479$1$anon$macro$477$1: 0
+}, false, "Command$anon$lazy$macro$479$1$anon$macro$477$1", {
+  LCommand$anon$lazy$macro$479$1$anon$macro$477$1: 1,
   O: 1,
   Lshapeless_Generic: 1,
   s_Serializable: 1,
   Ljava_io_Serializable: 1
 });
-$c_LCommand$anon$lazy$macro$461$1$anon$macro$459$1.prototype.$classData = $d_LCommand$anon$lazy$macro$461$1$anon$macro$459$1;
+$c_LCommand$anon$lazy$macro$479$1$anon$macro$477$1.prototype.$classData = $d_LCommand$anon$lazy$macro$479$1$anon$macro$477$1;
 /** @constructor */
 function $c_LCommonState$() {
   $c_O.call(this);
@@ -21409,20 +21354,20 @@ function $h_LCommonState$() {
 $h_LCommonState$.prototype = $c_LCommonState$.prototype;
 $c_LCommonState$.prototype.init___ = (function() {
   $n_LCommonState$ = this;
-  var inst$macro$314 = new $c_LCommonState$anon$lazy$macro$313$1().init___().inst$macro$285__Lio_circe_generic_encoding_DerivedObjectEncoder();
-  var t = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function($this, inst$macro$314$1) {
+  var inst$macro$332 = new $c_LCommonState$anon$lazy$macro$331$1().init___().inst$macro$303__Lio_circe_generic_encoding_DerivedObjectEncoder();
+  var t = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function($this, inst$macro$332$1) {
     return (function() {
-      return inst$macro$314$1
+      return inst$macro$332$1
     })
-  })(this, inst$macro$314));
+  })(this, inst$macro$332));
   var encode = new $c_Lshapeless_Lazy$$anon$1().init___F0(t);
   this.encodeMessage$1 = $as_Lio_circe_ObjectEncoder(encode.value__O());
-  var inst$macro$335 = new $c_LCommonState$anon$lazy$macro$334$1().init___().inst$macro$315__Lio_circe_generic_decoding_DerivedDecoder();
-  var t$1 = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function(this$2$1, inst$macro$335$1) {
+  var inst$macro$353 = new $c_LCommonState$anon$lazy$macro$352$1().init___().inst$macro$333__Lio_circe_generic_decoding_DerivedDecoder();
+  var t$1 = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function(this$2$1, inst$macro$353$1) {
     return (function() {
-      return inst$macro$335$1
+      return inst$macro$353$1
     })
-  })(this, inst$macro$335));
+  })(this, inst$macro$353));
   var decode = new $c_Lshapeless_Lazy$$anon$1().init___F0(t$1);
   this.decodeMessage$1 = $as_Lio_circe_Decoder(decode.value__O());
   return this
@@ -21445,41 +21390,38 @@ function $m_LCommonState$() {
   return $n_LCommonState$
 }
 /** @constructor */
-function $c_LCommonState$anon$lazy$macro$313$1$anon$macro$299$1() {
+function $c_LCommonState$anon$lazy$macro$331$1$anon$macro$317$1() {
   $c_O.call(this)
 }
-$c_LCommonState$anon$lazy$macro$313$1$anon$macro$299$1.prototype = new $h_O();
-$c_LCommonState$anon$lazy$macro$313$1$anon$macro$299$1.prototype.constructor = $c_LCommonState$anon$lazy$macro$313$1$anon$macro$299$1;
+$c_LCommonState$anon$lazy$macro$331$1$anon$macro$317$1.prototype = new $h_O();
+$c_LCommonState$anon$lazy$macro$331$1$anon$macro$317$1.prototype.constructor = $c_LCommonState$anon$lazy$macro$331$1$anon$macro$317$1;
 /** @constructor */
-function $h_LCommonState$anon$lazy$macro$313$1$anon$macro$299$1() {
+function $h_LCommonState$anon$lazy$macro$331$1$anon$macro$317$1() {
   /*<skip>*/
 }
-$h_LCommonState$anon$lazy$macro$313$1$anon$macro$299$1.prototype = $c_LCommonState$anon$lazy$macro$313$1$anon$macro$299$1.prototype;
-$c_LCommonState$anon$lazy$macro$313$1$anon$macro$299$1.prototype.init___LCommonState$anon$lazy$macro$313$1 = (function($$outer) {
-  return this
-});
-$c_LCommonState$anon$lazy$macro$313$1$anon$macro$299$1.prototype.from__Lshapeless_$colon$colon__LCommonState = (function(p) {
+$h_LCommonState$anon$lazy$macro$331$1$anon$macro$317$1.prototype = $c_LCommonState$anon$lazy$macro$331$1$anon$macro$317$1.prototype;
+$c_LCommonState$anon$lazy$macro$331$1$anon$macro$317$1.prototype.from__Lshapeless_$colon$colon__LCommonState = (function(p) {
   if ((p !== null)) {
-    var pat$macro$293 = $uI(p.head$1);
+    var pat$macro$311 = $uI(p.head$1);
     var p2 = $as_Lshapeless_$colon$colon(p.tail$1);
     if ((p2 !== null)) {
-      var pat$macro$294 = $as_T2(p2.head$1);
+      var pat$macro$312 = $as_T2(p2.head$1);
       var p3 = $as_Lshapeless_$colon$colon(p2.tail$1);
       if ((p3 !== null)) {
-        var pat$macro$295 = $as_T2(p3.head$1);
+        var pat$macro$313 = $as_T2(p3.head$1);
         var p4 = $as_Lshapeless_$colon$colon(p3.tail$1);
         if ((p4 !== null)) {
-          var pat$macro$296 = $uD(p4.head$1);
+          var pat$macro$314 = $uD(p4.head$1);
           var p5 = $as_Lshapeless_$colon$colon(p4.tail$1);
           if ((p5 !== null)) {
-            var pat$macro$297 = $uD(p5.head$1);
+            var pat$macro$315 = $uD(p5.head$1);
             var p6 = $as_Lshapeless_$colon$colon(p5.tail$1);
             if ((p6 !== null)) {
-              var pat$macro$298 = $uD(p6.head$1);
+              var pat$macro$316 = $uD(p6.head$1);
               var p7 = $as_Lshapeless_HNil(p6.tail$1);
               var x = $m_Lshapeless_HNil$();
               if ((x === p7)) {
-                return new $c_LCommonState().init___I__T2__T2__D__D__D(pat$macro$293, pat$macro$294, pat$macro$295, pat$macro$296, pat$macro$297, pat$macro$298)
+                return new $c_LCommonState().init___I__T2__T2__D__D__D(pat$macro$311, pat$macro$312, pat$macro$313, pat$macro$314, pat$macro$315, pat$macro$316)
               }
             }
           }
@@ -21489,68 +21431,71 @@ $c_LCommonState$anon$lazy$macro$313$1$anon$macro$299$1.prototype.from__Lshapeles
   };
   throw new $c_s_MatchError().init___O(p)
 });
-$c_LCommonState$anon$lazy$macro$313$1$anon$macro$299$1.prototype.from__O__O = (function(r) {
+$c_LCommonState$anon$lazy$macro$331$1$anon$macro$317$1.prototype.from__O__O = (function(r) {
   return this.from__Lshapeless_$colon$colon__LCommonState($as_Lshapeless_$colon$colon(r))
 });
-$c_LCommonState$anon$lazy$macro$313$1$anon$macro$299$1.prototype.to__O__O = (function(t) {
+$c_LCommonState$anon$lazy$macro$331$1$anon$macro$317$1.prototype.to__O__O = (function(t) {
   return this.to__LCommonState__Lshapeless_$colon$colon($as_LCommonState(t))
 });
-$c_LCommonState$anon$lazy$macro$313$1$anon$macro$299$1.prototype.to__LCommonState__Lshapeless_$colon$colon = (function(p) {
+$c_LCommonState$anon$lazy$macro$331$1$anon$macro$317$1.prototype.init___LCommonState$anon$lazy$macro$331$1 = (function($$outer) {
+  return this
+});
+$c_LCommonState$anon$lazy$macro$331$1$anon$macro$317$1.prototype.to__LCommonState__Lshapeless_$colon$colon = (function(p) {
   if ((p !== null)) {
-    var pat$macro$293 = p.ident$1;
-    var pat$macro$294 = p.pos$1;
-    var pat$macro$295 = p.velo$1;
-    var pat$macro$296 = p.acc$1;
-    var pat$macro$297 = p.omega$1;
-    var pat$macro$298 = p.phi$1;
-    return new $c_Lshapeless_$colon$colon().init___O__Lshapeless_HList(pat$macro$293, new $c_Lshapeless_$colon$colon().init___O__Lshapeless_HList(pat$macro$294, new $c_Lshapeless_$colon$colon().init___O__Lshapeless_HList(pat$macro$295, new $c_Lshapeless_$colon$colon().init___O__Lshapeless_HList(pat$macro$296, new $c_Lshapeless_$colon$colon().init___O__Lshapeless_HList(pat$macro$297, new $c_Lshapeless_$colon$colon().init___O__Lshapeless_HList(pat$macro$298, $m_Lshapeless_HNil$()))))))
+    var pat$macro$311 = p.ident$1;
+    var pat$macro$312 = p.pos$1;
+    var pat$macro$313 = p.velo$1;
+    var pat$macro$314 = p.acc$1;
+    var pat$macro$315 = p.omega$1;
+    var pat$macro$316 = p.phi$1;
+    return new $c_Lshapeless_$colon$colon().init___O__Lshapeless_HList(pat$macro$311, new $c_Lshapeless_$colon$colon().init___O__Lshapeless_HList(pat$macro$312, new $c_Lshapeless_$colon$colon().init___O__Lshapeless_HList(pat$macro$313, new $c_Lshapeless_$colon$colon().init___O__Lshapeless_HList(pat$macro$314, new $c_Lshapeless_$colon$colon().init___O__Lshapeless_HList(pat$macro$315, new $c_Lshapeless_$colon$colon().init___O__Lshapeless_HList(pat$macro$316, $m_Lshapeless_HNil$()))))))
   } else {
     throw new $c_s_MatchError().init___O(p)
   }
 });
-var $d_LCommonState$anon$lazy$macro$313$1$anon$macro$299$1 = new $TypeData().initClass({
-  LCommonState$anon$lazy$macro$313$1$anon$macro$299$1: 0
-}, false, "CommonState$anon$lazy$macro$313$1$anon$macro$299$1", {
-  LCommonState$anon$lazy$macro$313$1$anon$macro$299$1: 1,
+var $d_LCommonState$anon$lazy$macro$331$1$anon$macro$317$1 = new $TypeData().initClass({
+  LCommonState$anon$lazy$macro$331$1$anon$macro$317$1: 0
+}, false, "CommonState$anon$lazy$macro$331$1$anon$macro$317$1", {
+  LCommonState$anon$lazy$macro$331$1$anon$macro$317$1: 1,
   O: 1,
   Lshapeless_Generic: 1,
   s_Serializable: 1,
   Ljava_io_Serializable: 1
 });
-$c_LCommonState$anon$lazy$macro$313$1$anon$macro$299$1.prototype.$classData = $d_LCommonState$anon$lazy$macro$313$1$anon$macro$299$1;
+$c_LCommonState$anon$lazy$macro$331$1$anon$macro$317$1.prototype.$classData = $d_LCommonState$anon$lazy$macro$331$1$anon$macro$317$1;
 /** @constructor */
-function $c_LCommonState$anon$lazy$macro$334$1$anon$macro$329$1() {
+function $c_LCommonState$anon$lazy$macro$352$1$anon$macro$347$1() {
   $c_O.call(this)
 }
-$c_LCommonState$anon$lazy$macro$334$1$anon$macro$329$1.prototype = new $h_O();
-$c_LCommonState$anon$lazy$macro$334$1$anon$macro$329$1.prototype.constructor = $c_LCommonState$anon$lazy$macro$334$1$anon$macro$329$1;
+$c_LCommonState$anon$lazy$macro$352$1$anon$macro$347$1.prototype = new $h_O();
+$c_LCommonState$anon$lazy$macro$352$1$anon$macro$347$1.prototype.constructor = $c_LCommonState$anon$lazy$macro$352$1$anon$macro$347$1;
 /** @constructor */
-function $h_LCommonState$anon$lazy$macro$334$1$anon$macro$329$1() {
+function $h_LCommonState$anon$lazy$macro$352$1$anon$macro$347$1() {
   /*<skip>*/
 }
-$h_LCommonState$anon$lazy$macro$334$1$anon$macro$329$1.prototype = $c_LCommonState$anon$lazy$macro$334$1$anon$macro$329$1.prototype;
-$c_LCommonState$anon$lazy$macro$334$1$anon$macro$329$1.prototype.from__Lshapeless_$colon$colon__LCommonState = (function(p) {
+$h_LCommonState$anon$lazy$macro$352$1$anon$macro$347$1.prototype = $c_LCommonState$anon$lazy$macro$352$1$anon$macro$347$1.prototype;
+$c_LCommonState$anon$lazy$macro$352$1$anon$macro$347$1.prototype.from__Lshapeless_$colon$colon__LCommonState = (function(p) {
   if ((p !== null)) {
-    var pat$macro$323 = $uI(p.head$1);
+    var pat$macro$341 = $uI(p.head$1);
     var p2 = $as_Lshapeless_$colon$colon(p.tail$1);
     if ((p2 !== null)) {
-      var pat$macro$324 = $as_T2(p2.head$1);
+      var pat$macro$342 = $as_T2(p2.head$1);
       var p3 = $as_Lshapeless_$colon$colon(p2.tail$1);
       if ((p3 !== null)) {
-        var pat$macro$325 = $as_T2(p3.head$1);
+        var pat$macro$343 = $as_T2(p3.head$1);
         var p4 = $as_Lshapeless_$colon$colon(p3.tail$1);
         if ((p4 !== null)) {
-          var pat$macro$326 = $uD(p4.head$1);
+          var pat$macro$344 = $uD(p4.head$1);
           var p5 = $as_Lshapeless_$colon$colon(p4.tail$1);
           if ((p5 !== null)) {
-            var pat$macro$327 = $uD(p5.head$1);
+            var pat$macro$345 = $uD(p5.head$1);
             var p6 = $as_Lshapeless_$colon$colon(p5.tail$1);
             if ((p6 !== null)) {
-              var pat$macro$328 = $uD(p6.head$1);
+              var pat$macro$346 = $uD(p6.head$1);
               var p7 = $as_Lshapeless_HNil(p6.tail$1);
               var x = $m_Lshapeless_HNil$();
               if ((x === p7)) {
-                return new $c_LCommonState().init___I__T2__T2__D__D__D(pat$macro$323, pat$macro$324, pat$macro$325, pat$macro$326, pat$macro$327, pat$macro$328)
+                return new $c_LCommonState().init___I__T2__T2__D__D__D(pat$macro$341, pat$macro$342, pat$macro$343, pat$macro$344, pat$macro$345, pat$macro$346)
               }
             }
           }
@@ -21560,56 +21505,59 @@ $c_LCommonState$anon$lazy$macro$334$1$anon$macro$329$1.prototype.from__Lshapeles
   };
   throw new $c_s_MatchError().init___O(p)
 });
-$c_LCommonState$anon$lazy$macro$334$1$anon$macro$329$1.prototype.from__O__O = (function(r) {
+$c_LCommonState$anon$lazy$macro$352$1$anon$macro$347$1.prototype.init___LCommonState$anon$lazy$macro$352$1 = (function($$outer) {
+  return this
+});
+$c_LCommonState$anon$lazy$macro$352$1$anon$macro$347$1.prototype.from__O__O = (function(r) {
   return this.from__Lshapeless_$colon$colon__LCommonState($as_Lshapeless_$colon$colon(r))
 });
-$c_LCommonState$anon$lazy$macro$334$1$anon$macro$329$1.prototype.to__O__O = (function(t) {
+$c_LCommonState$anon$lazy$macro$352$1$anon$macro$347$1.prototype.to__O__O = (function(t) {
   return this.to__LCommonState__Lshapeless_$colon$colon($as_LCommonState(t))
 });
-$c_LCommonState$anon$lazy$macro$334$1$anon$macro$329$1.prototype.to__LCommonState__Lshapeless_$colon$colon = (function(p) {
+$c_LCommonState$anon$lazy$macro$352$1$anon$macro$347$1.prototype.to__LCommonState__Lshapeless_$colon$colon = (function(p) {
   if ((p !== null)) {
-    var pat$macro$323 = p.ident$1;
-    var pat$macro$324 = p.pos$1;
-    var pat$macro$325 = p.velo$1;
-    var pat$macro$326 = p.acc$1;
-    var pat$macro$327 = p.omega$1;
-    var pat$macro$328 = p.phi$1;
-    return new $c_Lshapeless_$colon$colon().init___O__Lshapeless_HList(pat$macro$323, new $c_Lshapeless_$colon$colon().init___O__Lshapeless_HList(pat$macro$324, new $c_Lshapeless_$colon$colon().init___O__Lshapeless_HList(pat$macro$325, new $c_Lshapeless_$colon$colon().init___O__Lshapeless_HList(pat$macro$326, new $c_Lshapeless_$colon$colon().init___O__Lshapeless_HList(pat$macro$327, new $c_Lshapeless_$colon$colon().init___O__Lshapeless_HList(pat$macro$328, $m_Lshapeless_HNil$()))))))
+    var pat$macro$341 = p.ident$1;
+    var pat$macro$342 = p.pos$1;
+    var pat$macro$343 = p.velo$1;
+    var pat$macro$344 = p.acc$1;
+    var pat$macro$345 = p.omega$1;
+    var pat$macro$346 = p.phi$1;
+    return new $c_Lshapeless_$colon$colon().init___O__Lshapeless_HList(pat$macro$341, new $c_Lshapeless_$colon$colon().init___O__Lshapeless_HList(pat$macro$342, new $c_Lshapeless_$colon$colon().init___O__Lshapeless_HList(pat$macro$343, new $c_Lshapeless_$colon$colon().init___O__Lshapeless_HList(pat$macro$344, new $c_Lshapeless_$colon$colon().init___O__Lshapeless_HList(pat$macro$345, new $c_Lshapeless_$colon$colon().init___O__Lshapeless_HList(pat$macro$346, $m_Lshapeless_HNil$()))))))
   } else {
     throw new $c_s_MatchError().init___O(p)
   }
 });
-$c_LCommonState$anon$lazy$macro$334$1$anon$macro$329$1.prototype.init___LCommonState$anon$lazy$macro$334$1 = (function($$outer) {
-  return this
-});
-var $d_LCommonState$anon$lazy$macro$334$1$anon$macro$329$1 = new $TypeData().initClass({
-  LCommonState$anon$lazy$macro$334$1$anon$macro$329$1: 0
-}, false, "CommonState$anon$lazy$macro$334$1$anon$macro$329$1", {
-  LCommonState$anon$lazy$macro$334$1$anon$macro$329$1: 1,
+var $d_LCommonState$anon$lazy$macro$352$1$anon$macro$347$1 = new $TypeData().initClass({
+  LCommonState$anon$lazy$macro$352$1$anon$macro$347$1: 0
+}, false, "CommonState$anon$lazy$macro$352$1$anon$macro$347$1", {
+  LCommonState$anon$lazy$macro$352$1$anon$macro$347$1: 1,
   O: 1,
   Lshapeless_Generic: 1,
   s_Serializable: 1,
   Ljava_io_Serializable: 1
 });
-$c_LCommonState$anon$lazy$macro$334$1$anon$macro$329$1.prototype.$classData = $d_LCommonState$anon$lazy$macro$334$1$anon$macro$329$1;
+$c_LCommonState$anon$lazy$macro$352$1$anon$macro$347$1.prototype.$classData = $d_LCommonState$anon$lazy$macro$352$1$anon$macro$347$1;
 /** @constructor */
-function $c_LMessage$anon$lazy$macro$198$1$$anon$9$anon$macro$75$1() {
+function $c_LMessage$anon$lazy$macro$210$1$$anon$9$anon$macro$87$1() {
   $c_O.call(this)
 }
-$c_LMessage$anon$lazy$macro$198$1$$anon$9$anon$macro$75$1.prototype = new $h_O();
-$c_LMessage$anon$lazy$macro$198$1$$anon$9$anon$macro$75$1.prototype.constructor = $c_LMessage$anon$lazy$macro$198$1$$anon$9$anon$macro$75$1;
+$c_LMessage$anon$lazy$macro$210$1$$anon$9$anon$macro$87$1.prototype = new $h_O();
+$c_LMessage$anon$lazy$macro$210$1$$anon$9$anon$macro$87$1.prototype.constructor = $c_LMessage$anon$lazy$macro$210$1$$anon$9$anon$macro$87$1;
 /** @constructor */
-function $h_LMessage$anon$lazy$macro$198$1$$anon$9$anon$macro$75$1() {
+function $h_LMessage$anon$lazy$macro$210$1$$anon$9$anon$macro$87$1() {
   /*<skip>*/
 }
-$h_LMessage$anon$lazy$macro$198$1$$anon$9$anon$macro$75$1.prototype = $c_LMessage$anon$lazy$macro$198$1$$anon$9$anon$macro$75$1.prototype;
-$c_LMessage$anon$lazy$macro$198$1$$anon$9$anon$macro$75$1.prototype.from__O__O = (function(r) {
+$h_LMessage$anon$lazy$macro$210$1$$anon$9$anon$macro$87$1.prototype = $c_LMessage$anon$lazy$macro$210$1$$anon$9$anon$macro$87$1.prototype;
+$c_LMessage$anon$lazy$macro$210$1$$anon$9$anon$macro$87$1.prototype.from__O__O = (function(r) {
   return this.from__Lshapeless_HNil__LPong$($as_Lshapeless_HNil(r))
 });
-$c_LMessage$anon$lazy$macro$198$1$$anon$9$anon$macro$75$1.prototype.to__O__O = (function(t) {
+$c_LMessage$anon$lazy$macro$210$1$$anon$9$anon$macro$87$1.prototype.to__O__O = (function(t) {
   return this.to__LPong$__Lshapeless_HNil($as_LPong$(t))
 });
-$c_LMessage$anon$lazy$macro$198$1$$anon$9$anon$macro$75$1.prototype.from__Lshapeless_HNil__LPong$ = (function(p) {
+$c_LMessage$anon$lazy$macro$210$1$$anon$9$anon$macro$87$1.prototype.init___LMessage$anon$lazy$macro$210$1$$anon$9 = (function($$outer) {
+  return this
+});
+$c_LMessage$anon$lazy$macro$210$1$$anon$9$anon$macro$87$1.prototype.from__Lshapeless_HNil__LPong$ = (function(p) {
   var x = $m_Lshapeless_HNil$();
   if ((x === p)) {
     return $m_LPong$()
@@ -21617,44 +21565,44 @@ $c_LMessage$anon$lazy$macro$198$1$$anon$9$anon$macro$75$1.prototype.from__Lshape
     throw new $c_s_MatchError().init___O(p)
   }
 });
-$c_LMessage$anon$lazy$macro$198$1$$anon$9$anon$macro$75$1.prototype.to__LPong$__Lshapeless_HNil = (function(p) {
+$c_LMessage$anon$lazy$macro$210$1$$anon$9$anon$macro$87$1.prototype.to__LPong$__Lshapeless_HNil = (function(p) {
   if ((p !== null)) {
     return $m_Lshapeless_HNil$()
   } else {
     throw new $c_s_MatchError().init___O(p)
   }
 });
-$c_LMessage$anon$lazy$macro$198$1$$anon$9$anon$macro$75$1.prototype.init___LMessage$anon$lazy$macro$198$1$$anon$9 = (function($$outer) {
-  return this
-});
-var $d_LMessage$anon$lazy$macro$198$1$$anon$9$anon$macro$75$1 = new $TypeData().initClass({
-  LMessage$anon$lazy$macro$198$1$$anon$9$anon$macro$75$1: 0
-}, false, "Message$anon$lazy$macro$198$1$$anon$9$anon$macro$75$1", {
-  LMessage$anon$lazy$macro$198$1$$anon$9$anon$macro$75$1: 1,
+var $d_LMessage$anon$lazy$macro$210$1$$anon$9$anon$macro$87$1 = new $TypeData().initClass({
+  LMessage$anon$lazy$macro$210$1$$anon$9$anon$macro$87$1: 0
+}, false, "Message$anon$lazy$macro$210$1$$anon$9$anon$macro$87$1", {
+  LMessage$anon$lazy$macro$210$1$$anon$9$anon$macro$87$1: 1,
   O: 1,
   Lshapeless_Generic: 1,
   s_Serializable: 1,
   Ljava_io_Serializable: 1
 });
-$c_LMessage$anon$lazy$macro$198$1$$anon$9$anon$macro$75$1.prototype.$classData = $d_LMessage$anon$lazy$macro$198$1$$anon$9$anon$macro$75$1;
+$c_LMessage$anon$lazy$macro$210$1$$anon$9$anon$macro$87$1.prototype.$classData = $d_LMessage$anon$lazy$macro$210$1$$anon$9$anon$macro$87$1;
 /** @constructor */
-function $c_LMessage$anon$lazy$macro$198$1$$anon$9$anon$macro$79$1() {
+function $c_LMessage$anon$lazy$macro$210$1$$anon$9$anon$macro$91$1() {
   $c_O.call(this)
 }
-$c_LMessage$anon$lazy$macro$198$1$$anon$9$anon$macro$79$1.prototype = new $h_O();
-$c_LMessage$anon$lazy$macro$198$1$$anon$9$anon$macro$79$1.prototype.constructor = $c_LMessage$anon$lazy$macro$198$1$$anon$9$anon$macro$79$1;
+$c_LMessage$anon$lazy$macro$210$1$$anon$9$anon$macro$91$1.prototype = new $h_O();
+$c_LMessage$anon$lazy$macro$210$1$$anon$9$anon$macro$91$1.prototype.constructor = $c_LMessage$anon$lazy$macro$210$1$$anon$9$anon$macro$91$1;
 /** @constructor */
-function $h_LMessage$anon$lazy$macro$198$1$$anon$9$anon$macro$79$1() {
+function $h_LMessage$anon$lazy$macro$210$1$$anon$9$anon$macro$91$1() {
   /*<skip>*/
 }
-$h_LMessage$anon$lazy$macro$198$1$$anon$9$anon$macro$79$1.prototype = $c_LMessage$anon$lazy$macro$198$1$$anon$9$anon$macro$79$1.prototype;
-$c_LMessage$anon$lazy$macro$198$1$$anon$9$anon$macro$79$1.prototype.from__O__O = (function(r) {
+$h_LMessage$anon$lazy$macro$210$1$$anon$9$anon$macro$91$1.prototype = $c_LMessage$anon$lazy$macro$210$1$$anon$9$anon$macro$91$1.prototype;
+$c_LMessage$anon$lazy$macro$210$1$$anon$9$anon$macro$91$1.prototype.from__O__O = (function(r) {
   return this.from__Lshapeless_HNil__LPing$($as_Lshapeless_HNil(r))
 });
-$c_LMessage$anon$lazy$macro$198$1$$anon$9$anon$macro$79$1.prototype.to__O__O = (function(t) {
+$c_LMessage$anon$lazy$macro$210$1$$anon$9$anon$macro$91$1.prototype.to__O__O = (function(t) {
   return this.to__LPing$__Lshapeless_HNil($as_LPing$(t))
 });
-$c_LMessage$anon$lazy$macro$198$1$$anon$9$anon$macro$79$1.prototype.from__Lshapeless_HNil__LPing$ = (function(p) {
+$c_LMessage$anon$lazy$macro$210$1$$anon$9$anon$macro$91$1.prototype.init___LMessage$anon$lazy$macro$210$1$$anon$9 = (function($$outer) {
+  return this
+});
+$c_LMessage$anon$lazy$macro$210$1$$anon$9$anon$macro$91$1.prototype.from__Lshapeless_HNil__LPing$ = (function(p) {
   var x = $m_Lshapeless_HNil$();
   if ((x === p)) {
     return $m_LPing$()
@@ -21662,256 +21610,310 @@ $c_LMessage$anon$lazy$macro$198$1$$anon$9$anon$macro$79$1.prototype.from__Lshape
     throw new $c_s_MatchError().init___O(p)
   }
 });
-$c_LMessage$anon$lazy$macro$198$1$$anon$9$anon$macro$79$1.prototype.init___LMessage$anon$lazy$macro$198$1$$anon$9 = (function($$outer) {
-  return this
-});
-$c_LMessage$anon$lazy$macro$198$1$$anon$9$anon$macro$79$1.prototype.to__LPing$__Lshapeless_HNil = (function(p) {
+$c_LMessage$anon$lazy$macro$210$1$$anon$9$anon$macro$91$1.prototype.to__LPing$__Lshapeless_HNil = (function(p) {
   if ((p !== null)) {
     return $m_Lshapeless_HNil$()
   } else {
     throw new $c_s_MatchError().init___O(p)
   }
 });
-var $d_LMessage$anon$lazy$macro$198$1$$anon$9$anon$macro$79$1 = new $TypeData().initClass({
-  LMessage$anon$lazy$macro$198$1$$anon$9$anon$macro$79$1: 0
-}, false, "Message$anon$lazy$macro$198$1$$anon$9$anon$macro$79$1", {
-  LMessage$anon$lazy$macro$198$1$$anon$9$anon$macro$79$1: 1,
+var $d_LMessage$anon$lazy$macro$210$1$$anon$9$anon$macro$91$1 = new $TypeData().initClass({
+  LMessage$anon$lazy$macro$210$1$$anon$9$anon$macro$91$1: 0
+}, false, "Message$anon$lazy$macro$210$1$$anon$9$anon$macro$91$1", {
+  LMessage$anon$lazy$macro$210$1$$anon$9$anon$macro$91$1: 1,
   O: 1,
   Lshapeless_Generic: 1,
   s_Serializable: 1,
   Ljava_io_Serializable: 1
 });
-$c_LMessage$anon$lazy$macro$198$1$$anon$9$anon$macro$79$1.prototype.$classData = $d_LMessage$anon$lazy$macro$198$1$$anon$9$anon$macro$79$1;
+$c_LMessage$anon$lazy$macro$210$1$$anon$9$anon$macro$91$1.prototype.$classData = $d_LMessage$anon$lazy$macro$210$1$$anon$9$anon$macro$91$1;
 /** @constructor */
-function $c_LMessage$anon$lazy$macro$198$1$anon$macro$117$1() {
+function $c_LMessage$anon$lazy$macro$210$1$anon$macro$104$1() {
   $c_O.call(this)
 }
-$c_LMessage$anon$lazy$macro$198$1$anon$macro$117$1.prototype = new $h_O();
-$c_LMessage$anon$lazy$macro$198$1$anon$macro$117$1.prototype.constructor = $c_LMessage$anon$lazy$macro$198$1$anon$macro$117$1;
+$c_LMessage$anon$lazy$macro$210$1$anon$macro$104$1.prototype = new $h_O();
+$c_LMessage$anon$lazy$macro$210$1$anon$macro$104$1.prototype.constructor = $c_LMessage$anon$lazy$macro$210$1$anon$macro$104$1;
 /** @constructor */
-function $h_LMessage$anon$lazy$macro$198$1$anon$macro$117$1() {
+function $h_LMessage$anon$lazy$macro$210$1$anon$macro$104$1() {
   /*<skip>*/
 }
-$h_LMessage$anon$lazy$macro$198$1$anon$macro$117$1.prototype = $c_LMessage$anon$lazy$macro$198$1$anon$macro$117$1.prototype;
-$c_LMessage$anon$lazy$macro$198$1$anon$macro$117$1.prototype.from__Lshapeless_$colon$colon__LDestroy = (function(p) {
+$h_LMessage$anon$lazy$macro$210$1$anon$macro$104$1.prototype = $c_LMessage$anon$lazy$macro$210$1$anon$macro$104$1.prototype;
+$c_LMessage$anon$lazy$macro$210$1$anon$macro$104$1.prototype.init___LMessage$anon$lazy$macro$210$1 = (function($$outer) {
+  return this
+});
+$c_LMessage$anon$lazy$macro$210$1$anon$macro$104$1.prototype.from__O__O = (function(r) {
+  return this.from__Lshapeless_$colon$colon__LLaser($as_Lshapeless_$colon$colon(r))
+});
+$c_LMessage$anon$lazy$macro$210$1$anon$macro$104$1.prototype.to__O__O = (function(t) {
+  return this.to__LLaser__Lshapeless_$colon$colon($as_LLaser(t))
+});
+$c_LMessage$anon$lazy$macro$210$1$anon$macro$104$1.prototype.to__LLaser__Lshapeless_$colon$colon = (function(p) {
   if ((p !== null)) {
-    var pat$macro$116 = $uI(p.head$1);
-    var p2 = $as_Lshapeless_HNil(p.tail$1);
-    var x = $m_Lshapeless_HNil$();
-    if ((x === p2)) {
-      return new $c_LDestroy().init___I(pat$macro$116)
-    }
-  };
-  throw new $c_s_MatchError().init___O(p)
-});
-$c_LMessage$anon$lazy$macro$198$1$anon$macro$117$1.prototype.from__O__O = (function(r) {
-  return this.from__Lshapeless_$colon$colon__LDestroy($as_Lshapeless_$colon$colon(r))
-});
-$c_LMessage$anon$lazy$macro$198$1$anon$macro$117$1.prototype.to__O__O = (function(t) {
-  return this.to__LDestroy__Lshapeless_$colon$colon($as_LDestroy(t))
-});
-$c_LMessage$anon$lazy$macro$198$1$anon$macro$117$1.prototype.to__LDestroy__Lshapeless_$colon$colon = (function(p) {
-  if ((p !== null)) {
-    var pat$macro$116 = p.destroy$1;
-    return new $c_Lshapeless_$colon$colon().init___O__Lshapeless_HList(pat$macro$116, $m_Lshapeless_HNil$())
+    var pat$macro$102 = p.common$1;
+    var pat$macro$103 = p.shooter$1;
+    return new $c_Lshapeless_$colon$colon().init___O__Lshapeless_HList(pat$macro$102, new $c_Lshapeless_$colon$colon().init___O__Lshapeless_HList(pat$macro$103, $m_Lshapeless_HNil$()))
   } else {
     throw new $c_s_MatchError().init___O(p)
   }
 });
-$c_LMessage$anon$lazy$macro$198$1$anon$macro$117$1.prototype.init___LMessage$anon$lazy$macro$198$1 = (function($$outer) {
-  return this
-});
-var $d_LMessage$anon$lazy$macro$198$1$anon$macro$117$1 = new $TypeData().initClass({
-  LMessage$anon$lazy$macro$198$1$anon$macro$117$1: 0
-}, false, "Message$anon$lazy$macro$198$1$anon$macro$117$1", {
-  LMessage$anon$lazy$macro$198$1$anon$macro$117$1: 1,
-  O: 1,
-  Lshapeless_Generic: 1,
-  s_Serializable: 1,
-  Ljava_io_Serializable: 1
-});
-$c_LMessage$anon$lazy$macro$198$1$anon$macro$117$1.prototype.$classData = $d_LMessage$anon$lazy$macro$198$1$anon$macro$117$1;
-/** @constructor */
-function $c_LMessage$anon$lazy$macro$198$1$anon$macro$135$1() {
-  $c_O.call(this)
-}
-$c_LMessage$anon$lazy$macro$198$1$anon$macro$135$1.prototype = new $h_O();
-$c_LMessage$anon$lazy$macro$198$1$anon$macro$135$1.prototype.constructor = $c_LMessage$anon$lazy$macro$198$1$anon$macro$135$1;
-/** @constructor */
-function $h_LMessage$anon$lazy$macro$198$1$anon$macro$135$1() {
-  /*<skip>*/
-}
-$h_LMessage$anon$lazy$macro$198$1$anon$macro$135$1.prototype = $c_LMessage$anon$lazy$macro$198$1$anon$macro$135$1.prototype;
-$c_LMessage$anon$lazy$macro$198$1$anon$macro$135$1.prototype.from__Lshapeless_$colon$colon__LCmd = (function(p) {
+$c_LMessage$anon$lazy$macro$210$1$anon$macro$104$1.prototype.from__Lshapeless_$colon$colon__LLaser = (function(p) {
   if ((p !== null)) {
-    var pat$macro$133 = $uI(p.head$1);
+    var pat$macro$102 = $as_LCommonState(p.head$1);
     var p2 = $as_Lshapeless_$colon$colon(p.tail$1);
     if ((p2 !== null)) {
-      var pat$macro$134 = $as_LCommand(p2.head$1);
+      var pat$macro$103 = $uI(p2.head$1);
       var p3 = $as_Lshapeless_HNil(p2.tail$1);
       var x = $m_Lshapeless_HNil$();
       if ((x === p3)) {
-        return new $c_LCmd().init___I__LCommand(pat$macro$133, pat$macro$134)
+        return new $c_LLaser().init___LCommonState__I(pat$macro$102, pat$macro$103)
       }
     }
   };
   throw new $c_s_MatchError().init___O(p)
 });
-$c_LMessage$anon$lazy$macro$198$1$anon$macro$135$1.prototype.from__O__O = (function(r) {
-  return this.from__Lshapeless_$colon$colon__LCmd($as_Lshapeless_$colon$colon(r))
-});
-$c_LMessage$anon$lazy$macro$198$1$anon$macro$135$1.prototype.to__O__O = (function(t) {
-  return this.to__LCmd__Lshapeless_$colon$colon($as_LCmd(t))
-});
-$c_LMessage$anon$lazy$macro$198$1$anon$macro$135$1.prototype.to__LCmd__Lshapeless_$colon$colon = (function(p) {
-  if ((p !== null)) {
-    var pat$macro$133 = p.sId$1;
-    var pat$macro$134 = p.cmd$1;
-    return new $c_Lshapeless_$colon$colon().init___O__Lshapeless_HList(pat$macro$133, new $c_Lshapeless_$colon$colon().init___O__Lshapeless_HList(pat$macro$134, $m_Lshapeless_HNil$()))
-  } else {
-    throw new $c_s_MatchError().init___O(p)
-  }
-});
-$c_LMessage$anon$lazy$macro$198$1$anon$macro$135$1.prototype.init___LMessage$anon$lazy$macro$198$1 = (function($$outer) {
-  return this
-});
-var $d_LMessage$anon$lazy$macro$198$1$anon$macro$135$1 = new $TypeData().initClass({
-  LMessage$anon$lazy$macro$198$1$anon$macro$135$1: 0
-}, false, "Message$anon$lazy$macro$198$1$anon$macro$135$1", {
-  LMessage$anon$lazy$macro$198$1$anon$macro$135$1: 1,
+var $d_LMessage$anon$lazy$macro$210$1$anon$macro$104$1 = new $TypeData().initClass({
+  LMessage$anon$lazy$macro$210$1$anon$macro$104$1: 0
+}, false, "Message$anon$lazy$macro$210$1$anon$macro$104$1", {
+  LMessage$anon$lazy$macro$210$1$anon$macro$104$1: 1,
   O: 1,
   Lshapeless_Generic: 1,
   s_Serializable: 1,
   Ljava_io_Serializable: 1
 });
-$c_LMessage$anon$lazy$macro$198$1$anon$macro$135$1.prototype.$classData = $d_LMessage$anon$lazy$macro$198$1$anon$macro$135$1;
+$c_LMessage$anon$lazy$macro$210$1$anon$macro$104$1.prototype.$classData = $d_LMessage$anon$lazy$macro$210$1$anon$macro$104$1;
 /** @constructor */
-function $c_LMessage$anon$lazy$macro$198$1$anon$macro$154$1() {
+function $c_LMessage$anon$lazy$macro$210$1$anon$macro$129$1() {
   $c_O.call(this)
 }
-$c_LMessage$anon$lazy$macro$198$1$anon$macro$154$1.prototype = new $h_O();
-$c_LMessage$anon$lazy$macro$198$1$anon$macro$154$1.prototype.constructor = $c_LMessage$anon$lazy$macro$198$1$anon$macro$154$1;
+$c_LMessage$anon$lazy$macro$210$1$anon$macro$129$1.prototype = new $h_O();
+$c_LMessage$anon$lazy$macro$210$1$anon$macro$129$1.prototype.constructor = $c_LMessage$anon$lazy$macro$210$1$anon$macro$129$1;
 /** @constructor */
-function $h_LMessage$anon$lazy$macro$198$1$anon$macro$154$1() {
+function $h_LMessage$anon$lazy$macro$210$1$anon$macro$129$1() {
   /*<skip>*/
 }
-$h_LMessage$anon$lazy$macro$198$1$anon$macro$154$1.prototype = $c_LMessage$anon$lazy$macro$198$1$anon$macro$154$1.prototype;
-$c_LMessage$anon$lazy$macro$198$1$anon$macro$154$1.prototype.from__Lshapeless_$colon$colon__LClientId = (function(p) {
+$h_LMessage$anon$lazy$macro$210$1$anon$macro$129$1.prototype = $c_LMessage$anon$lazy$macro$210$1$anon$macro$129$1.prototype;
+$c_LMessage$anon$lazy$macro$210$1$anon$macro$129$1.prototype.init___LMessage$anon$lazy$macro$210$1 = (function($$outer) {
+  return this
+});
+$c_LMessage$anon$lazy$macro$210$1$anon$macro$129$1.prototype.from__Lshapeless_$colon$colon__LDestroy = (function(p) {
   if ((p !== null)) {
-    var pat$macro$153 = $uI(p.head$1);
+    var pat$macro$128 = $uI(p.head$1);
     var p2 = $as_Lshapeless_HNil(p.tail$1);
     var x = $m_Lshapeless_HNil$();
     if ((x === p2)) {
-      return new $c_LClientId().init___I(pat$macro$153)
+      return new $c_LDestroy().init___I(pat$macro$128)
     }
   };
   throw new $c_s_MatchError().init___O(p)
 });
-$c_LMessage$anon$lazy$macro$198$1$anon$macro$154$1.prototype.from__O__O = (function(r) {
-  return this.from__Lshapeless_$colon$colon__LClientId($as_Lshapeless_$colon$colon(r))
+$c_LMessage$anon$lazy$macro$210$1$anon$macro$129$1.prototype.from__O__O = (function(r) {
+  return this.from__Lshapeless_$colon$colon__LDestroy($as_Lshapeless_$colon$colon(r))
 });
-$c_LMessage$anon$lazy$macro$198$1$anon$macro$154$1.prototype.to__O__O = (function(t) {
-  return this.to__LClientId__Lshapeless_$colon$colon($as_LClientId(t))
+$c_LMessage$anon$lazy$macro$210$1$anon$macro$129$1.prototype.to__O__O = (function(t) {
+  return this.to__LDestroy__Lshapeless_$colon$colon($as_LDestroy(t))
 });
-$c_LMessage$anon$lazy$macro$198$1$anon$macro$154$1.prototype.to__LClientId__Lshapeless_$colon$colon = (function(p) {
+$c_LMessage$anon$lazy$macro$210$1$anon$macro$129$1.prototype.to__LDestroy__Lshapeless_$colon$colon = (function(p) {
   if ((p !== null)) {
-    var pat$macro$153 = p.clientId$1;
-    return new $c_Lshapeless_$colon$colon().init___O__Lshapeless_HList(pat$macro$153, $m_Lshapeless_HNil$())
+    var pat$macro$128 = p.destroy$1;
+    return new $c_Lshapeless_$colon$colon().init___O__Lshapeless_HList(pat$macro$128, $m_Lshapeless_HNil$())
   } else {
     throw new $c_s_MatchError().init___O(p)
   }
 });
-$c_LMessage$anon$lazy$macro$198$1$anon$macro$154$1.prototype.init___LMessage$anon$lazy$macro$198$1 = (function($$outer) {
-  return this
-});
-var $d_LMessage$anon$lazy$macro$198$1$anon$macro$154$1 = new $TypeData().initClass({
-  LMessage$anon$lazy$macro$198$1$anon$macro$154$1: 0
-}, false, "Message$anon$lazy$macro$198$1$anon$macro$154$1", {
-  LMessage$anon$lazy$macro$198$1$anon$macro$154$1: 1,
+var $d_LMessage$anon$lazy$macro$210$1$anon$macro$129$1 = new $TypeData().initClass({
+  LMessage$anon$lazy$macro$210$1$anon$macro$129$1: 0
+}, false, "Message$anon$lazy$macro$210$1$anon$macro$129$1", {
+  LMessage$anon$lazy$macro$210$1$anon$macro$129$1: 1,
   O: 1,
   Lshapeless_Generic: 1,
   s_Serializable: 1,
   Ljava_io_Serializable: 1
 });
-$c_LMessage$anon$lazy$macro$198$1$anon$macro$154$1.prototype.$classData = $d_LMessage$anon$lazy$macro$198$1$anon$macro$154$1;
+$c_LMessage$anon$lazy$macro$210$1$anon$macro$129$1.prototype.$classData = $d_LMessage$anon$lazy$macro$210$1$anon$macro$129$1;
 /** @constructor */
-function $c_LMessage$anon$lazy$macro$198$1$anon$macro$175$1() {
+function $c_LMessage$anon$lazy$macro$210$1$anon$macro$147$1() {
   $c_O.call(this)
 }
-$c_LMessage$anon$lazy$macro$198$1$anon$macro$175$1.prototype = new $h_O();
-$c_LMessage$anon$lazy$macro$198$1$anon$macro$175$1.prototype.constructor = $c_LMessage$anon$lazy$macro$198$1$anon$macro$175$1;
+$c_LMessage$anon$lazy$macro$210$1$anon$macro$147$1.prototype = new $h_O();
+$c_LMessage$anon$lazy$macro$210$1$anon$macro$147$1.prototype.constructor = $c_LMessage$anon$lazy$macro$210$1$anon$macro$147$1;
 /** @constructor */
-function $h_LMessage$anon$lazy$macro$198$1$anon$macro$175$1() {
+function $h_LMessage$anon$lazy$macro$210$1$anon$macro$147$1() {
   /*<skip>*/
 }
-$h_LMessage$anon$lazy$macro$198$1$anon$macro$175$1.prototype = $c_LMessage$anon$lazy$macro$198$1$anon$macro$175$1.prototype;
-$c_LMessage$anon$lazy$macro$198$1$anon$macro$175$1.prototype.from__O__O = (function(r) {
-  return this.from__Lshapeless_$colon$colon__LAsteroid($as_Lshapeless_$colon$colon(r))
+$h_LMessage$anon$lazy$macro$210$1$anon$macro$147$1.prototype = $c_LMessage$anon$lazy$macro$210$1$anon$macro$147$1.prototype;
+$c_LMessage$anon$lazy$macro$210$1$anon$macro$147$1.prototype.init___LMessage$anon$lazy$macro$210$1 = (function($$outer) {
+  return this
 });
-$c_LMessage$anon$lazy$macro$198$1$anon$macro$175$1.prototype.to__O__O = (function(t) {
-  return this.to__LAsteroid__Lshapeless_$colon$colon($as_LAsteroid(t))
-});
-$c_LMessage$anon$lazy$macro$198$1$anon$macro$175$1.prototype.to__LAsteroid__Lshapeless_$colon$colon = (function(p) {
+$c_LMessage$anon$lazy$macro$210$1$anon$macro$147$1.prototype.from__Lshapeless_$colon$colon__LCmd = (function(p) {
   if ((p !== null)) {
-    var pat$macro$172 = p.common$1;
-    var pat$macro$173 = p.size$1;
-    var pat$macro$174 = p.color$1;
-    return new $c_Lshapeless_$colon$colon().init___O__Lshapeless_HList(pat$macro$172, new $c_Lshapeless_$colon$colon().init___O__Lshapeless_HList(pat$macro$173, new $c_Lshapeless_$colon$colon().init___O__Lshapeless_HList(pat$macro$174, $m_Lshapeless_HNil$())))
+    var pat$macro$145 = $uI(p.head$1);
+    var p2 = $as_Lshapeless_$colon$colon(p.tail$1);
+    if ((p2 !== null)) {
+      var pat$macro$146 = $as_LCommand(p2.head$1);
+      var p3 = $as_Lshapeless_HNil(p2.tail$1);
+      var x = $m_Lshapeless_HNil$();
+      if ((x === p3)) {
+        return new $c_LCmd().init___I__LCommand(pat$macro$145, pat$macro$146)
+      }
+    }
+  };
+  throw new $c_s_MatchError().init___O(p)
+});
+$c_LMessage$anon$lazy$macro$210$1$anon$macro$147$1.prototype.from__O__O = (function(r) {
+  return this.from__Lshapeless_$colon$colon__LCmd($as_Lshapeless_$colon$colon(r))
+});
+$c_LMessage$anon$lazy$macro$210$1$anon$macro$147$1.prototype.to__O__O = (function(t) {
+  return this.to__LCmd__Lshapeless_$colon$colon($as_LCmd(t))
+});
+$c_LMessage$anon$lazy$macro$210$1$anon$macro$147$1.prototype.to__LCmd__Lshapeless_$colon$colon = (function(p) {
+  if ((p !== null)) {
+    var pat$macro$145 = p.sId$1;
+    var pat$macro$146 = p.cmd$1;
+    return new $c_Lshapeless_$colon$colon().init___O__Lshapeless_HList(pat$macro$145, new $c_Lshapeless_$colon$colon().init___O__Lshapeless_HList(pat$macro$146, $m_Lshapeless_HNil$()))
   } else {
     throw new $c_s_MatchError().init___O(p)
   }
 });
-$c_LMessage$anon$lazy$macro$198$1$anon$macro$175$1.prototype.from__Lshapeless_$colon$colon__LAsteroid = (function(p) {
+var $d_LMessage$anon$lazy$macro$210$1$anon$macro$147$1 = new $TypeData().initClass({
+  LMessage$anon$lazy$macro$210$1$anon$macro$147$1: 0
+}, false, "Message$anon$lazy$macro$210$1$anon$macro$147$1", {
+  LMessage$anon$lazy$macro$210$1$anon$macro$147$1: 1,
+  O: 1,
+  Lshapeless_Generic: 1,
+  s_Serializable: 1,
+  Ljava_io_Serializable: 1
+});
+$c_LMessage$anon$lazy$macro$210$1$anon$macro$147$1.prototype.$classData = $d_LMessage$anon$lazy$macro$210$1$anon$macro$147$1;
+/** @constructor */
+function $c_LMessage$anon$lazy$macro$210$1$anon$macro$166$1() {
+  $c_O.call(this)
+}
+$c_LMessage$anon$lazy$macro$210$1$anon$macro$166$1.prototype = new $h_O();
+$c_LMessage$anon$lazy$macro$210$1$anon$macro$166$1.prototype.constructor = $c_LMessage$anon$lazy$macro$210$1$anon$macro$166$1;
+/** @constructor */
+function $h_LMessage$anon$lazy$macro$210$1$anon$macro$166$1() {
+  /*<skip>*/
+}
+$h_LMessage$anon$lazy$macro$210$1$anon$macro$166$1.prototype = $c_LMessage$anon$lazy$macro$210$1$anon$macro$166$1.prototype;
+$c_LMessage$anon$lazy$macro$210$1$anon$macro$166$1.prototype.init___LMessage$anon$lazy$macro$210$1 = (function($$outer) {
+  return this
+});
+$c_LMessage$anon$lazy$macro$210$1$anon$macro$166$1.prototype.from__Lshapeless_$colon$colon__LClientId = (function(p) {
   if ((p !== null)) {
-    var pat$macro$172 = $as_LCommonState(p.head$1);
+    var pat$macro$165 = $uI(p.head$1);
+    var p2 = $as_Lshapeless_HNil(p.tail$1);
+    var x = $m_Lshapeless_HNil$();
+    if ((x === p2)) {
+      return new $c_LClientId().init___I(pat$macro$165)
+    }
+  };
+  throw new $c_s_MatchError().init___O(p)
+});
+$c_LMessage$anon$lazy$macro$210$1$anon$macro$166$1.prototype.from__O__O = (function(r) {
+  return this.from__Lshapeless_$colon$colon__LClientId($as_Lshapeless_$colon$colon(r))
+});
+$c_LMessage$anon$lazy$macro$210$1$anon$macro$166$1.prototype.to__O__O = (function(t) {
+  return this.to__LClientId__Lshapeless_$colon$colon($as_LClientId(t))
+});
+$c_LMessage$anon$lazy$macro$210$1$anon$macro$166$1.prototype.to__LClientId__Lshapeless_$colon$colon = (function(p) {
+  if ((p !== null)) {
+    var pat$macro$165 = p.clientId$1;
+    return new $c_Lshapeless_$colon$colon().init___O__Lshapeless_HList(pat$macro$165, $m_Lshapeless_HNil$())
+  } else {
+    throw new $c_s_MatchError().init___O(p)
+  }
+});
+var $d_LMessage$anon$lazy$macro$210$1$anon$macro$166$1 = new $TypeData().initClass({
+  LMessage$anon$lazy$macro$210$1$anon$macro$166$1: 0
+}, false, "Message$anon$lazy$macro$210$1$anon$macro$166$1", {
+  LMessage$anon$lazy$macro$210$1$anon$macro$166$1: 1,
+  O: 1,
+  Lshapeless_Generic: 1,
+  s_Serializable: 1,
+  Ljava_io_Serializable: 1
+});
+$c_LMessage$anon$lazy$macro$210$1$anon$macro$166$1.prototype.$classData = $d_LMessage$anon$lazy$macro$210$1$anon$macro$166$1;
+/** @constructor */
+function $c_LMessage$anon$lazy$macro$210$1$anon$macro$187$1() {
+  $c_O.call(this)
+}
+$c_LMessage$anon$lazy$macro$210$1$anon$macro$187$1.prototype = new $h_O();
+$c_LMessage$anon$lazy$macro$210$1$anon$macro$187$1.prototype.constructor = $c_LMessage$anon$lazy$macro$210$1$anon$macro$187$1;
+/** @constructor */
+function $h_LMessage$anon$lazy$macro$210$1$anon$macro$187$1() {
+  /*<skip>*/
+}
+$h_LMessage$anon$lazy$macro$210$1$anon$macro$187$1.prototype = $c_LMessage$anon$lazy$macro$210$1$anon$macro$187$1.prototype;
+$c_LMessage$anon$lazy$macro$210$1$anon$macro$187$1.prototype.init___LMessage$anon$lazy$macro$210$1 = (function($$outer) {
+  return this
+});
+$c_LMessage$anon$lazy$macro$210$1$anon$macro$187$1.prototype.from__O__O = (function(r) {
+  return this.from__Lshapeless_$colon$colon__LAsteroid($as_Lshapeless_$colon$colon(r))
+});
+$c_LMessage$anon$lazy$macro$210$1$anon$macro$187$1.prototype.to__O__O = (function(t) {
+  return this.to__LAsteroid__Lshapeless_$colon$colon($as_LAsteroid(t))
+});
+$c_LMessage$anon$lazy$macro$210$1$anon$macro$187$1.prototype.to__LAsteroid__Lshapeless_$colon$colon = (function(p) {
+  if ((p !== null)) {
+    var pat$macro$184 = p.common$1;
+    var pat$macro$185 = p.size$1;
+    var pat$macro$186 = p.color$1;
+    return new $c_Lshapeless_$colon$colon().init___O__Lshapeless_HList(pat$macro$184, new $c_Lshapeless_$colon$colon().init___O__Lshapeless_HList(pat$macro$185, new $c_Lshapeless_$colon$colon().init___O__Lshapeless_HList(pat$macro$186, $m_Lshapeless_HNil$())))
+  } else {
+    throw new $c_s_MatchError().init___O(p)
+  }
+});
+$c_LMessage$anon$lazy$macro$210$1$anon$macro$187$1.prototype.from__Lshapeless_$colon$colon__LAsteroid = (function(p) {
+  if ((p !== null)) {
+    var pat$macro$184 = $as_LCommonState(p.head$1);
     var p2 = $as_Lshapeless_$colon$colon(p.tail$1);
     if ((p2 !== null)) {
-      var pat$macro$173 = $as_LASize(p2.head$1);
+      var pat$macro$185 = $as_LASize(p2.head$1);
       var p3 = $as_Lshapeless_$colon$colon(p2.tail$1);
       if ((p3 !== null)) {
-        var pat$macro$174 = $as_LAColor(p3.head$1);
+        var pat$macro$186 = $as_LAColor(p3.head$1);
         var p4 = $as_Lshapeless_HNil(p3.tail$1);
         var x = $m_Lshapeless_HNil$();
         if ((x === p4)) {
-          return new $c_LAsteroid().init___LCommonState__LASize__LAColor(pat$macro$172, pat$macro$173, pat$macro$174)
+          return new $c_LAsteroid().init___LCommonState__LASize__LAColor(pat$macro$184, pat$macro$185, pat$macro$186)
         }
       }
     }
   };
   throw new $c_s_MatchError().init___O(p)
 });
-$c_LMessage$anon$lazy$macro$198$1$anon$macro$175$1.prototype.init___LMessage$anon$lazy$macro$198$1 = (function($$outer) {
-  return this
-});
-var $d_LMessage$anon$lazy$macro$198$1$anon$macro$175$1 = new $TypeData().initClass({
-  LMessage$anon$lazy$macro$198$1$anon$macro$175$1: 0
-}, false, "Message$anon$lazy$macro$198$1$anon$macro$175$1", {
-  LMessage$anon$lazy$macro$198$1$anon$macro$175$1: 1,
+var $d_LMessage$anon$lazy$macro$210$1$anon$macro$187$1 = new $TypeData().initClass({
+  LMessage$anon$lazy$macro$210$1$anon$macro$187$1: 0
+}, false, "Message$anon$lazy$macro$210$1$anon$macro$187$1", {
+  LMessage$anon$lazy$macro$210$1$anon$macro$187$1: 1,
   O: 1,
   Lshapeless_Generic: 1,
   s_Serializable: 1,
   Ljava_io_Serializable: 1
 });
-$c_LMessage$anon$lazy$macro$198$1$anon$macro$175$1.prototype.$classData = $d_LMessage$anon$lazy$macro$198$1$anon$macro$175$1;
+$c_LMessage$anon$lazy$macro$210$1$anon$macro$187$1.prototype.$classData = $d_LMessage$anon$lazy$macro$210$1$anon$macro$187$1;
 /** @constructor */
-function $c_LMessage$anon$lazy$macro$198$1$anon$macro$29$1() {
+function $c_LMessage$anon$lazy$macro$210$1$anon$macro$29$1() {
   $c_O.call(this)
 }
-$c_LMessage$anon$lazy$macro$198$1$anon$macro$29$1.prototype = new $h_O();
-$c_LMessage$anon$lazy$macro$198$1$anon$macro$29$1.prototype.constructor = $c_LMessage$anon$lazy$macro$198$1$anon$macro$29$1;
+$c_LMessage$anon$lazy$macro$210$1$anon$macro$29$1.prototype = new $h_O();
+$c_LMessage$anon$lazy$macro$210$1$anon$macro$29$1.prototype.constructor = $c_LMessage$anon$lazy$macro$210$1$anon$macro$29$1;
 /** @constructor */
-function $h_LMessage$anon$lazy$macro$198$1$anon$macro$29$1() {
+function $h_LMessage$anon$lazy$macro$210$1$anon$macro$29$1() {
   /*<skip>*/
 }
-$h_LMessage$anon$lazy$macro$198$1$anon$macro$29$1.prototype = $c_LMessage$anon$lazy$macro$198$1$anon$macro$29$1.prototype;
-$c_LMessage$anon$lazy$macro$198$1$anon$macro$29$1.prototype.from__O__O = (function(r) {
+$h_LMessage$anon$lazy$macro$210$1$anon$macro$29$1.prototype = $c_LMessage$anon$lazy$macro$210$1$anon$macro$29$1.prototype;
+$c_LMessage$anon$lazy$macro$210$1$anon$macro$29$1.prototype.init___LMessage$anon$lazy$macro$210$1 = (function($$outer) {
+  return this
+});
+$c_LMessage$anon$lazy$macro$210$1$anon$macro$29$1.prototype.from__O__O = (function(r) {
   var p = $as_Lshapeless_$colon$plus$colon(r);
   return $as_LMessage($m_Lshapeless_Coproduct$().unsafeGet__Lshapeless_Coproduct__O(p))
 });
-$c_LMessage$anon$lazy$macro$198$1$anon$macro$29$1.prototype.to__O__O = (function(t) {
+$c_LMessage$anon$lazy$macro$210$1$anon$macro$29$1.prototype.to__O__O = (function(t) {
   return this.to__LMessage__Lshapeless_$colon$plus$colon($as_LMessage(t))
 });
-$c_LMessage$anon$lazy$macro$198$1$anon$macro$29$1.prototype.to__LMessage__Lshapeless_$colon$plus$colon = (function(p) {
+$c_LMessage$anon$lazy$macro$210$1$anon$macro$29$1.prototype.to__LMessage__Lshapeless_$colon$plus$colon = (function(p) {
   var jsx$2 = $m_Lshapeless_Coproduct$();
   if ($is_LAsteroid(p)) {
     var jsx$1 = 0
@@ -21929,45 +21931,41 @@ $c_LMessage$anon$lazy$macro$198$1$anon$macro$29$1.prototype.to__LMessage__Lshape
     var jsx$1 = 6
   } else if ($is_LSetLifes(p)) {
     var jsx$1 = 7
+  } else if ($is_LSpaceship(p)) {
+    var jsx$1 = 8
   } else {
-    if ((!$is_LSpaceship(p))) {
+    if ((!$is_LZorg(p))) {
       throw new $c_s_MatchError().init___O(p)
     };
-    var jsx$1 = 8
+    var jsx$1 = 9
   };
   return $as_Lshapeless_$colon$plus$colon(jsx$2.unsafeMkCoproduct__I__O__Lshapeless_Coproduct(jsx$1, p))
 });
-$c_LMessage$anon$lazy$macro$198$1$anon$macro$29$1.prototype.init___LMessage$anon$lazy$macro$198$1 = (function($$outer) {
-  return this
-});
-var $d_LMessage$anon$lazy$macro$198$1$anon$macro$29$1 = new $TypeData().initClass({
-  LMessage$anon$lazy$macro$198$1$anon$macro$29$1: 0
-}, false, "Message$anon$lazy$macro$198$1$anon$macro$29$1", {
-  LMessage$anon$lazy$macro$198$1$anon$macro$29$1: 1,
+var $d_LMessage$anon$lazy$macro$210$1$anon$macro$29$1 = new $TypeData().initClass({
+  LMessage$anon$lazy$macro$210$1$anon$macro$29$1: 0
+}, false, "Message$anon$lazy$macro$210$1$anon$macro$29$1", {
+  LMessage$anon$lazy$macro$210$1$anon$macro$29$1: 1,
   O: 1,
   Lshapeless_Generic: 1,
   s_Serializable: 1,
   Ljava_io_Serializable: 1
 });
-$c_LMessage$anon$lazy$macro$198$1$anon$macro$29$1.prototype.$classData = $d_LMessage$anon$lazy$macro$198$1$anon$macro$29$1;
+$c_LMessage$anon$lazy$macro$210$1$anon$macro$29$1.prototype.$classData = $d_LMessage$anon$lazy$macro$210$1$anon$macro$29$1;
 /** @constructor */
-function $c_LMessage$anon$lazy$macro$198$1$anon$macro$41$1() {
+function $c_LMessage$anon$lazy$macro$210$1$anon$macro$41$1() {
   $c_O.call(this)
 }
-$c_LMessage$anon$lazy$macro$198$1$anon$macro$41$1.prototype = new $h_O();
-$c_LMessage$anon$lazy$macro$198$1$anon$macro$41$1.prototype.constructor = $c_LMessage$anon$lazy$macro$198$1$anon$macro$41$1;
+$c_LMessage$anon$lazy$macro$210$1$anon$macro$41$1.prototype = new $h_O();
+$c_LMessage$anon$lazy$macro$210$1$anon$macro$41$1.prototype.constructor = $c_LMessage$anon$lazy$macro$210$1$anon$macro$41$1;
 /** @constructor */
-function $h_LMessage$anon$lazy$macro$198$1$anon$macro$41$1() {
+function $h_LMessage$anon$lazy$macro$210$1$anon$macro$41$1() {
   /*<skip>*/
 }
-$h_LMessage$anon$lazy$macro$198$1$anon$macro$41$1.prototype = $c_LMessage$anon$lazy$macro$198$1$anon$macro$41$1.prototype;
-$c_LMessage$anon$lazy$macro$198$1$anon$macro$41$1.prototype.from__O__O = (function(r) {
-  return this.from__Lshapeless_$colon$colon__LSpaceship($as_Lshapeless_$colon$colon(r))
+$h_LMessage$anon$lazy$macro$210$1$anon$macro$41$1.prototype = $c_LMessage$anon$lazy$macro$210$1$anon$macro$41$1.prototype;
+$c_LMessage$anon$lazy$macro$210$1$anon$macro$41$1.prototype.init___LMessage$anon$lazy$macro$210$1 = (function($$outer) {
+  return this
 });
-$c_LMessage$anon$lazy$macro$198$1$anon$macro$41$1.prototype.to__O__O = (function(t) {
-  return this.to__LSpaceship__Lshapeless_$colon$colon($as_LSpaceship(t))
-});
-$c_LMessage$anon$lazy$macro$198$1$anon$macro$41$1.prototype.to__LSpaceship__Lshapeless_$colon$colon = (function(p) {
+$c_LMessage$anon$lazy$macro$210$1$anon$macro$41$1.prototype.to__LZorg__Lshapeless_$colon$colon = (function(p) {
   if ((p !== null)) {
     var pat$macro$40 = p.common$1;
     return new $c_Lshapeless_$colon$colon().init___O__Lshapeless_HList(pat$macro$40, $m_Lshapeless_HNil$())
@@ -21975,160 +21973,158 @@ $c_LMessage$anon$lazy$macro$198$1$anon$macro$41$1.prototype.to__LSpaceship__Lsha
     throw new $c_s_MatchError().init___O(p)
   }
 });
-$c_LMessage$anon$lazy$macro$198$1$anon$macro$41$1.prototype.init___LMessage$anon$lazy$macro$198$1 = (function($$outer) {
-  return this
+$c_LMessage$anon$lazy$macro$210$1$anon$macro$41$1.prototype.from__O__O = (function(r) {
+  return this.from__Lshapeless_$colon$colon__LZorg($as_Lshapeless_$colon$colon(r))
 });
-$c_LMessage$anon$lazy$macro$198$1$anon$macro$41$1.prototype.from__Lshapeless_$colon$colon__LSpaceship = (function(p) {
+$c_LMessage$anon$lazy$macro$210$1$anon$macro$41$1.prototype.from__Lshapeless_$colon$colon__LZorg = (function(p) {
   if ((p !== null)) {
     var pat$macro$40 = $as_LCommonState(p.head$1);
     var p2 = $as_Lshapeless_HNil(p.tail$1);
     var x = $m_Lshapeless_HNil$();
     if ((x === p2)) {
-      return new $c_LSpaceship().init___LCommonState(pat$macro$40)
+      return new $c_LZorg().init___LCommonState(pat$macro$40)
     }
   };
   throw new $c_s_MatchError().init___O(p)
 });
-var $d_LMessage$anon$lazy$macro$198$1$anon$macro$41$1 = new $TypeData().initClass({
-  LMessage$anon$lazy$macro$198$1$anon$macro$41$1: 0
-}, false, "Message$anon$lazy$macro$198$1$anon$macro$41$1", {
-  LMessage$anon$lazy$macro$198$1$anon$macro$41$1: 1,
+$c_LMessage$anon$lazy$macro$210$1$anon$macro$41$1.prototype.to__O__O = (function(t) {
+  return this.to__LZorg__Lshapeless_$colon$colon($as_LZorg(t))
+});
+var $d_LMessage$anon$lazy$macro$210$1$anon$macro$41$1 = new $TypeData().initClass({
+  LMessage$anon$lazy$macro$210$1$anon$macro$41$1: 0
+}, false, "Message$anon$lazy$macro$210$1$anon$macro$41$1", {
+  LMessage$anon$lazy$macro$210$1$anon$macro$41$1: 1,
   O: 1,
   Lshapeless_Generic: 1,
   s_Serializable: 1,
   Ljava_io_Serializable: 1
 });
-$c_LMessage$anon$lazy$macro$198$1$anon$macro$41$1.prototype.$classData = $d_LMessage$anon$lazy$macro$198$1$anon$macro$41$1;
+$c_LMessage$anon$lazy$macro$210$1$anon$macro$41$1.prototype.$classData = $d_LMessage$anon$lazy$macro$210$1$anon$macro$41$1;
 /** @constructor */
-function $c_LMessage$anon$lazy$macro$198$1$anon$macro$67$1() {
+function $c_LMessage$anon$lazy$macro$210$1$anon$macro$63$1() {
   $c_O.call(this)
 }
-$c_LMessage$anon$lazy$macro$198$1$anon$macro$67$1.prototype = new $h_O();
-$c_LMessage$anon$lazy$macro$198$1$anon$macro$67$1.prototype.constructor = $c_LMessage$anon$lazy$macro$198$1$anon$macro$67$1;
+$c_LMessage$anon$lazy$macro$210$1$anon$macro$63$1.prototype = new $h_O();
+$c_LMessage$anon$lazy$macro$210$1$anon$macro$63$1.prototype.constructor = $c_LMessage$anon$lazy$macro$210$1$anon$macro$63$1;
 /** @constructor */
-function $h_LMessage$anon$lazy$macro$198$1$anon$macro$67$1() {
+function $h_LMessage$anon$lazy$macro$210$1$anon$macro$63$1() {
   /*<skip>*/
 }
-$h_LMessage$anon$lazy$macro$198$1$anon$macro$67$1.prototype = $c_LMessage$anon$lazy$macro$198$1$anon$macro$67$1.prototype;
-$c_LMessage$anon$lazy$macro$198$1$anon$macro$67$1.prototype.from__O__O = (function(r) {
+$h_LMessage$anon$lazy$macro$210$1$anon$macro$63$1.prototype = $c_LMessage$anon$lazy$macro$210$1$anon$macro$63$1.prototype;
+$c_LMessage$anon$lazy$macro$210$1$anon$macro$63$1.prototype.init___LMessage$anon$lazy$macro$210$1 = (function($$outer) {
+  return this
+});
+$c_LMessage$anon$lazy$macro$210$1$anon$macro$63$1.prototype.from__O__O = (function(r) {
+  return this.from__Lshapeless_$colon$colon__LSpaceship($as_Lshapeless_$colon$colon(r))
+});
+$c_LMessage$anon$lazy$macro$210$1$anon$macro$63$1.prototype.to__O__O = (function(t) {
+  return this.to__LSpaceship__Lshapeless_$colon$colon($as_LSpaceship(t))
+});
+$c_LMessage$anon$lazy$macro$210$1$anon$macro$63$1.prototype.to__LSpaceship__Lshapeless_$colon$colon = (function(p) {
+  if ((p !== null)) {
+    var pat$macro$62 = p.common$1;
+    return new $c_Lshapeless_$colon$colon().init___O__Lshapeless_HList(pat$macro$62, $m_Lshapeless_HNil$())
+  } else {
+    throw new $c_s_MatchError().init___O(p)
+  }
+});
+$c_LMessage$anon$lazy$macro$210$1$anon$macro$63$1.prototype.from__Lshapeless_$colon$colon__LSpaceship = (function(p) {
+  if ((p !== null)) {
+    var pat$macro$62 = $as_LCommonState(p.head$1);
+    var p2 = $as_Lshapeless_HNil(p.tail$1);
+    var x = $m_Lshapeless_HNil$();
+    if ((x === p2)) {
+      return new $c_LSpaceship().init___LCommonState(pat$macro$62)
+    }
+  };
+  throw new $c_s_MatchError().init___O(p)
+});
+var $d_LMessage$anon$lazy$macro$210$1$anon$macro$63$1 = new $TypeData().initClass({
+  LMessage$anon$lazy$macro$210$1$anon$macro$63$1: 0
+}, false, "Message$anon$lazy$macro$210$1$anon$macro$63$1", {
+  LMessage$anon$lazy$macro$210$1$anon$macro$63$1: 1,
+  O: 1,
+  Lshapeless_Generic: 1,
+  s_Serializable: 1,
+  Ljava_io_Serializable: 1
+});
+$c_LMessage$anon$lazy$macro$210$1$anon$macro$63$1.prototype.$classData = $d_LMessage$anon$lazy$macro$210$1$anon$macro$63$1;
+/** @constructor */
+function $c_LMessage$anon$lazy$macro$210$1$anon$macro$76$1() {
+  $c_O.call(this)
+}
+$c_LMessage$anon$lazy$macro$210$1$anon$macro$76$1.prototype = new $h_O();
+$c_LMessage$anon$lazy$macro$210$1$anon$macro$76$1.prototype.constructor = $c_LMessage$anon$lazy$macro$210$1$anon$macro$76$1;
+/** @constructor */
+function $h_LMessage$anon$lazy$macro$210$1$anon$macro$76$1() {
+  /*<skip>*/
+}
+$h_LMessage$anon$lazy$macro$210$1$anon$macro$76$1.prototype = $c_LMessage$anon$lazy$macro$210$1$anon$macro$76$1.prototype;
+$c_LMessage$anon$lazy$macro$210$1$anon$macro$76$1.prototype.init___LMessage$anon$lazy$macro$210$1 = (function($$outer) {
+  return this
+});
+$c_LMessage$anon$lazy$macro$210$1$anon$macro$76$1.prototype.from__O__O = (function(r) {
   return this.from__Lshapeless_$colon$colon__LSetLifes($as_Lshapeless_$colon$colon(r))
 });
-$c_LMessage$anon$lazy$macro$198$1$anon$macro$67$1.prototype.to__O__O = (function(t) {
+$c_LMessage$anon$lazy$macro$210$1$anon$macro$76$1.prototype.to__O__O = (function(t) {
   return this.to__LSetLifes__Lshapeless_$colon$colon($as_LSetLifes(t))
 });
-$c_LMessage$anon$lazy$macro$198$1$anon$macro$67$1.prototype.to__LSetLifes__Lshapeless_$colon$colon = (function(p) {
+$c_LMessage$anon$lazy$macro$210$1$anon$macro$76$1.prototype.to__LSetLifes__Lshapeless_$colon$colon = (function(p) {
   if ((p !== null)) {
-    var pat$macro$65 = p.sId$1;
-    var pat$macro$66 = p.lifes$1;
-    return new $c_Lshapeless_$colon$colon().init___O__Lshapeless_HList(pat$macro$65, new $c_Lshapeless_$colon$colon().init___O__Lshapeless_HList(pat$macro$66, $m_Lshapeless_HNil$()))
+    var pat$macro$74 = p.sId$1;
+    var pat$macro$75 = p.lifes$1;
+    return new $c_Lshapeless_$colon$colon().init___O__Lshapeless_HList(pat$macro$74, new $c_Lshapeless_$colon$colon().init___O__Lshapeless_HList(pat$macro$75, $m_Lshapeless_HNil$()))
   } else {
     throw new $c_s_MatchError().init___O(p)
   }
 });
-$c_LMessage$anon$lazy$macro$198$1$anon$macro$67$1.prototype.init___LMessage$anon$lazy$macro$198$1 = (function($$outer) {
-  return this
-});
-$c_LMessage$anon$lazy$macro$198$1$anon$macro$67$1.prototype.from__Lshapeless_$colon$colon__LSetLifes = (function(p) {
+$c_LMessage$anon$lazy$macro$210$1$anon$macro$76$1.prototype.from__Lshapeless_$colon$colon__LSetLifes = (function(p) {
   if ((p !== null)) {
-    var pat$macro$65 = $uI(p.head$1);
+    var pat$macro$74 = $uI(p.head$1);
     var p2 = $as_Lshapeless_$colon$colon(p.tail$1);
     if ((p2 !== null)) {
-      var pat$macro$66 = $uI(p2.head$1);
+      var pat$macro$75 = $uI(p2.head$1);
       var p3 = $as_Lshapeless_HNil(p2.tail$1);
       var x = $m_Lshapeless_HNil$();
       if ((x === p3)) {
-        return new $c_LSetLifes().init___I__I(pat$macro$65, pat$macro$66)
+        return new $c_LSetLifes().init___I__I(pat$macro$74, pat$macro$75)
       }
     }
   };
   throw new $c_s_MatchError().init___O(p)
 });
-var $d_LMessage$anon$lazy$macro$198$1$anon$macro$67$1 = new $TypeData().initClass({
-  LMessage$anon$lazy$macro$198$1$anon$macro$67$1: 0
-}, false, "Message$anon$lazy$macro$198$1$anon$macro$67$1", {
-  LMessage$anon$lazy$macro$198$1$anon$macro$67$1: 1,
+var $d_LMessage$anon$lazy$macro$210$1$anon$macro$76$1 = new $TypeData().initClass({
+  LMessage$anon$lazy$macro$210$1$anon$macro$76$1: 0
+}, false, "Message$anon$lazy$macro$210$1$anon$macro$76$1", {
+  LMessage$anon$lazy$macro$210$1$anon$macro$76$1: 1,
   O: 1,
   Lshapeless_Generic: 1,
   s_Serializable: 1,
   Ljava_io_Serializable: 1
 });
-$c_LMessage$anon$lazy$macro$198$1$anon$macro$67$1.prototype.$classData = $d_LMessage$anon$lazy$macro$198$1$anon$macro$67$1;
+$c_LMessage$anon$lazy$macro$210$1$anon$macro$76$1.prototype.$classData = $d_LMessage$anon$lazy$macro$210$1$anon$macro$76$1;
 /** @constructor */
-function $c_LMessage$anon$lazy$macro$198$1$anon$macro$92$1() {
+function $c_LMessage$anon$lazy$macro$301$1$anon$macro$213$1() {
   $c_O.call(this)
 }
-$c_LMessage$anon$lazy$macro$198$1$anon$macro$92$1.prototype = new $h_O();
-$c_LMessage$anon$lazy$macro$198$1$anon$macro$92$1.prototype.constructor = $c_LMessage$anon$lazy$macro$198$1$anon$macro$92$1;
+$c_LMessage$anon$lazy$macro$301$1$anon$macro$213$1.prototype = new $h_O();
+$c_LMessage$anon$lazy$macro$301$1$anon$macro$213$1.prototype.constructor = $c_LMessage$anon$lazy$macro$301$1$anon$macro$213$1;
 /** @constructor */
-function $h_LMessage$anon$lazy$macro$198$1$anon$macro$92$1() {
+function $h_LMessage$anon$lazy$macro$301$1$anon$macro$213$1() {
   /*<skip>*/
 }
-$h_LMessage$anon$lazy$macro$198$1$anon$macro$92$1.prototype = $c_LMessage$anon$lazy$macro$198$1$anon$macro$92$1.prototype;
-$c_LMessage$anon$lazy$macro$198$1$anon$macro$92$1.prototype.from__O__O = (function(r) {
-  return this.from__Lshapeless_$colon$colon__LLaser($as_Lshapeless_$colon$colon(r))
-});
-$c_LMessage$anon$lazy$macro$198$1$anon$macro$92$1.prototype.to__O__O = (function(t) {
-  return this.to__LLaser__Lshapeless_$colon$colon($as_LLaser(t))
-});
-$c_LMessage$anon$lazy$macro$198$1$anon$macro$92$1.prototype.to__LLaser__Lshapeless_$colon$colon = (function(p) {
-  if ((p !== null)) {
-    var pat$macro$90 = p.common$1;
-    var pat$macro$91 = p.shooter$1;
-    return new $c_Lshapeless_$colon$colon().init___O__Lshapeless_HList(pat$macro$90, new $c_Lshapeless_$colon$colon().init___O__Lshapeless_HList(pat$macro$91, $m_Lshapeless_HNil$()))
-  } else {
-    throw new $c_s_MatchError().init___O(p)
-  }
-});
-$c_LMessage$anon$lazy$macro$198$1$anon$macro$92$1.prototype.init___LMessage$anon$lazy$macro$198$1 = (function($$outer) {
-  return this
-});
-$c_LMessage$anon$lazy$macro$198$1$anon$macro$92$1.prototype.from__Lshapeless_$colon$colon__LLaser = (function(p) {
-  if ((p !== null)) {
-    var pat$macro$90 = $as_LCommonState(p.head$1);
-    var p2 = $as_Lshapeless_$colon$colon(p.tail$1);
-    if ((p2 !== null)) {
-      var pat$macro$91 = $uI(p2.head$1);
-      var p3 = $as_Lshapeless_HNil(p2.tail$1);
-      var x = $m_Lshapeless_HNil$();
-      if ((x === p3)) {
-        return new $c_LLaser().init___LCommonState__I(pat$macro$90, pat$macro$91)
-      }
-    }
-  };
-  throw new $c_s_MatchError().init___O(p)
-});
-var $d_LMessage$anon$lazy$macro$198$1$anon$macro$92$1 = new $TypeData().initClass({
-  LMessage$anon$lazy$macro$198$1$anon$macro$92$1: 0
-}, false, "Message$anon$lazy$macro$198$1$anon$macro$92$1", {
-  LMessage$anon$lazy$macro$198$1$anon$macro$92$1: 1,
-  O: 1,
-  Lshapeless_Generic: 1,
-  s_Serializable: 1,
-  Ljava_io_Serializable: 1
-});
-$c_LMessage$anon$lazy$macro$198$1$anon$macro$92$1.prototype.$classData = $d_LMessage$anon$lazy$macro$198$1$anon$macro$92$1;
-/** @constructor */
-function $c_LMessage$anon$lazy$macro$283$1$anon$macro$201$1() {
-  $c_O.call(this)
-}
-$c_LMessage$anon$lazy$macro$283$1$anon$macro$201$1.prototype = new $h_O();
-$c_LMessage$anon$lazy$macro$283$1$anon$macro$201$1.prototype.constructor = $c_LMessage$anon$lazy$macro$283$1$anon$macro$201$1;
-/** @constructor */
-function $h_LMessage$anon$lazy$macro$283$1$anon$macro$201$1() {
-  /*<skip>*/
-}
-$h_LMessage$anon$lazy$macro$283$1$anon$macro$201$1.prototype = $c_LMessage$anon$lazy$macro$283$1$anon$macro$201$1.prototype;
-$c_LMessage$anon$lazy$macro$283$1$anon$macro$201$1.prototype.from__O__O = (function(r) {
+$h_LMessage$anon$lazy$macro$301$1$anon$macro$213$1.prototype = $c_LMessage$anon$lazy$macro$301$1$anon$macro$213$1.prototype;
+$c_LMessage$anon$lazy$macro$301$1$anon$macro$213$1.prototype.from__O__O = (function(r) {
   var p = $as_Lshapeless_$colon$plus$colon(r);
   return $as_LMessage($m_Lshapeless_Coproduct$().unsafeGet__Lshapeless_Coproduct__O(p))
 });
-$c_LMessage$anon$lazy$macro$283$1$anon$macro$201$1.prototype.to__O__O = (function(t) {
+$c_LMessage$anon$lazy$macro$301$1$anon$macro$213$1.prototype.to__O__O = (function(t) {
   return this.to__LMessage__Lshapeless_$colon$plus$colon($as_LMessage(t))
 });
-$c_LMessage$anon$lazy$macro$283$1$anon$macro$201$1.prototype.init___LMessage$anon$lazy$macro$283$1 = (function($$outer) {
+$c_LMessage$anon$lazy$macro$301$1$anon$macro$213$1.prototype.init___LMessage$anon$lazy$macro$301$1 = (function($$outer) {
   return this
 });
-$c_LMessage$anon$lazy$macro$283$1$anon$macro$201$1.prototype.to__LMessage__Lshapeless_$colon$plus$colon = (function(p) {
+$c_LMessage$anon$lazy$macro$301$1$anon$macro$213$1.prototype.to__LMessage__Lshapeless_$colon$plus$colon = (function(p) {
   var jsx$2 = $m_Lshapeless_Coproduct$();
   if ($is_LAsteroid(p)) {
     var jsx$1 = 0
@@ -22146,148 +22142,199 @@ $c_LMessage$anon$lazy$macro$283$1$anon$macro$201$1.prototype.to__LMessage__Lshap
     var jsx$1 = 6
   } else if ($is_LSetLifes(p)) {
     var jsx$1 = 7
+  } else if ($is_LSpaceship(p)) {
+    var jsx$1 = 8
   } else {
-    if ((!$is_LSpaceship(p))) {
+    if ((!$is_LZorg(p))) {
       throw new $c_s_MatchError().init___O(p)
     };
-    var jsx$1 = 8
+    var jsx$1 = 9
   };
   return $as_Lshapeless_$colon$plus$colon(jsx$2.unsafeMkCoproduct__I__O__Lshapeless_Coproduct(jsx$1, p))
 });
-var $d_LMessage$anon$lazy$macro$283$1$anon$macro$201$1 = new $TypeData().initClass({
-  LMessage$anon$lazy$macro$283$1$anon$macro$201$1: 0
-}, false, "Message$anon$lazy$macro$283$1$anon$macro$201$1", {
-  LMessage$anon$lazy$macro$283$1$anon$macro$201$1: 1,
+var $d_LMessage$anon$lazy$macro$301$1$anon$macro$213$1 = new $TypeData().initClass({
+  LMessage$anon$lazy$macro$301$1$anon$macro$213$1: 0
+}, false, "Message$anon$lazy$macro$301$1$anon$macro$213$1", {
+  LMessage$anon$lazy$macro$301$1$anon$macro$213$1: 1,
   O: 1,
   Lshapeless_Generic: 1,
   s_Serializable: 1,
   Ljava_io_Serializable: 1
 });
-$c_LMessage$anon$lazy$macro$283$1$anon$macro$201$1.prototype.$classData = $d_LMessage$anon$lazy$macro$283$1$anon$macro$201$1;
+$c_LMessage$anon$lazy$macro$301$1$anon$macro$213$1.prototype.$classData = $d_LMessage$anon$lazy$macro$301$1$anon$macro$213$1;
 /** @constructor */
-function $c_LMessage$anon$lazy$macro$283$1$anon$macro$209$1() {
+function $c_LMessage$anon$lazy$macro$301$1$anon$macro$221$1() {
   $c_O.call(this)
 }
-$c_LMessage$anon$lazy$macro$283$1$anon$macro$209$1.prototype = new $h_O();
-$c_LMessage$anon$lazy$macro$283$1$anon$macro$209$1.prototype.constructor = $c_LMessage$anon$lazy$macro$283$1$anon$macro$209$1;
+$c_LMessage$anon$lazy$macro$301$1$anon$macro$221$1.prototype = new $h_O();
+$c_LMessage$anon$lazy$macro$301$1$anon$macro$221$1.prototype.constructor = $c_LMessage$anon$lazy$macro$301$1$anon$macro$221$1;
 /** @constructor */
-function $h_LMessage$anon$lazy$macro$283$1$anon$macro$209$1() {
+function $h_LMessage$anon$lazy$macro$301$1$anon$macro$221$1() {
   /*<skip>*/
 }
-$h_LMessage$anon$lazy$macro$283$1$anon$macro$209$1.prototype = $c_LMessage$anon$lazy$macro$283$1$anon$macro$209$1.prototype;
-$c_LMessage$anon$lazy$macro$283$1$anon$macro$209$1.prototype.from__O__O = (function(r) {
-  return this.from__Lshapeless_$colon$colon__LSpaceship($as_Lshapeless_$colon$colon(r))
-});
-$c_LMessage$anon$lazy$macro$283$1$anon$macro$209$1.prototype.to__O__O = (function(t) {
-  return this.to__LSpaceship__Lshapeless_$colon$colon($as_LSpaceship(t))
-});
-$c_LMessage$anon$lazy$macro$283$1$anon$macro$209$1.prototype.init___LMessage$anon$lazy$macro$283$1 = (function($$outer) {
-  return this
-});
-$c_LMessage$anon$lazy$macro$283$1$anon$macro$209$1.prototype.to__LSpaceship__Lshapeless_$colon$colon = (function(p) {
+$h_LMessage$anon$lazy$macro$301$1$anon$macro$221$1.prototype = $c_LMessage$anon$lazy$macro$301$1$anon$macro$221$1.prototype;
+$c_LMessage$anon$lazy$macro$301$1$anon$macro$221$1.prototype.to__LZorg__Lshapeless_$colon$colon = (function(p) {
   if ((p !== null)) {
-    var pat$macro$208 = p.common$1;
-    return new $c_Lshapeless_$colon$colon().init___O__Lshapeless_HList(pat$macro$208, $m_Lshapeless_HNil$())
+    var pat$macro$220 = p.common$1;
+    return new $c_Lshapeless_$colon$colon().init___O__Lshapeless_HList(pat$macro$220, $m_Lshapeless_HNil$())
   } else {
     throw new $c_s_MatchError().init___O(p)
   }
 });
-$c_LMessage$anon$lazy$macro$283$1$anon$macro$209$1.prototype.from__Lshapeless_$colon$colon__LSpaceship = (function(p) {
+$c_LMessage$anon$lazy$macro$301$1$anon$macro$221$1.prototype.from__O__O = (function(r) {
+  return this.from__Lshapeless_$colon$colon__LZorg($as_Lshapeless_$colon$colon(r))
+});
+$c_LMessage$anon$lazy$macro$301$1$anon$macro$221$1.prototype.from__Lshapeless_$colon$colon__LZorg = (function(p) {
   if ((p !== null)) {
-    var pat$macro$208 = $as_LCommonState(p.head$1);
+    var pat$macro$220 = $as_LCommonState(p.head$1);
     var p2 = $as_Lshapeless_HNil(p.tail$1);
     var x = $m_Lshapeless_HNil$();
     if ((x === p2)) {
-      return new $c_LSpaceship().init___LCommonState(pat$macro$208)
+      return new $c_LZorg().init___LCommonState(pat$macro$220)
     }
   };
   throw new $c_s_MatchError().init___O(p)
 });
-var $d_LMessage$anon$lazy$macro$283$1$anon$macro$209$1 = new $TypeData().initClass({
-  LMessage$anon$lazy$macro$283$1$anon$macro$209$1: 0
-}, false, "Message$anon$lazy$macro$283$1$anon$macro$209$1", {
-  LMessage$anon$lazy$macro$283$1$anon$macro$209$1: 1,
+$c_LMessage$anon$lazy$macro$301$1$anon$macro$221$1.prototype.to__O__O = (function(t) {
+  return this.to__LZorg__Lshapeless_$colon$colon($as_LZorg(t))
+});
+$c_LMessage$anon$lazy$macro$301$1$anon$macro$221$1.prototype.init___LMessage$anon$lazy$macro$301$1 = (function($$outer) {
+  return this
+});
+var $d_LMessage$anon$lazy$macro$301$1$anon$macro$221$1 = new $TypeData().initClass({
+  LMessage$anon$lazy$macro$301$1$anon$macro$221$1: 0
+}, false, "Message$anon$lazy$macro$301$1$anon$macro$221$1", {
+  LMessage$anon$lazy$macro$301$1$anon$macro$221$1: 1,
   O: 1,
   Lshapeless_Generic: 1,
   s_Serializable: 1,
   Ljava_io_Serializable: 1
 });
-$c_LMessage$anon$lazy$macro$283$1$anon$macro$209$1.prototype.$classData = $d_LMessage$anon$lazy$macro$283$1$anon$macro$209$1;
+$c_LMessage$anon$lazy$macro$301$1$anon$macro$221$1.prototype.$classData = $d_LMessage$anon$lazy$macro$301$1$anon$macro$221$1;
 /** @constructor */
-function $c_LMessage$anon$lazy$macro$283$1$anon$macro$219$1() {
+function $c_LMessage$anon$lazy$macro$301$1$anon$macro$229$1() {
   $c_O.call(this)
 }
-$c_LMessage$anon$lazy$macro$283$1$anon$macro$219$1.prototype = new $h_O();
-$c_LMessage$anon$lazy$macro$283$1$anon$macro$219$1.prototype.constructor = $c_LMessage$anon$lazy$macro$283$1$anon$macro$219$1;
+$c_LMessage$anon$lazy$macro$301$1$anon$macro$229$1.prototype = new $h_O();
+$c_LMessage$anon$lazy$macro$301$1$anon$macro$229$1.prototype.constructor = $c_LMessage$anon$lazy$macro$301$1$anon$macro$229$1;
 /** @constructor */
-function $h_LMessage$anon$lazy$macro$283$1$anon$macro$219$1() {
+function $h_LMessage$anon$lazy$macro$301$1$anon$macro$229$1() {
   /*<skip>*/
 }
-$h_LMessage$anon$lazy$macro$283$1$anon$macro$219$1.prototype = $c_LMessage$anon$lazy$macro$283$1$anon$macro$219$1.prototype;
-$c_LMessage$anon$lazy$macro$283$1$anon$macro$219$1.prototype.from__O__O = (function(r) {
-  return this.from__Lshapeless_$colon$colon__LSetLifes($as_Lshapeless_$colon$colon(r))
+$h_LMessage$anon$lazy$macro$301$1$anon$macro$229$1.prototype = $c_LMessage$anon$lazy$macro$301$1$anon$macro$229$1.prototype;
+$c_LMessage$anon$lazy$macro$301$1$anon$macro$229$1.prototype.from__O__O = (function(r) {
+  return this.from__Lshapeless_$colon$colon__LSpaceship($as_Lshapeless_$colon$colon(r))
 });
-$c_LMessage$anon$lazy$macro$283$1$anon$macro$219$1.prototype.to__O__O = (function(t) {
-  return this.to__LSetLifes__Lshapeless_$colon$colon($as_LSetLifes(t))
+$c_LMessage$anon$lazy$macro$301$1$anon$macro$229$1.prototype.to__O__O = (function(t) {
+  return this.to__LSpaceship__Lshapeless_$colon$colon($as_LSpaceship(t))
 });
-$c_LMessage$anon$lazy$macro$283$1$anon$macro$219$1.prototype.init___LMessage$anon$lazy$macro$283$1 = (function($$outer) {
+$c_LMessage$anon$lazy$macro$301$1$anon$macro$229$1.prototype.init___LMessage$anon$lazy$macro$301$1 = (function($$outer) {
   return this
 });
-$c_LMessage$anon$lazy$macro$283$1$anon$macro$219$1.prototype.to__LSetLifes__Lshapeless_$colon$colon = (function(p) {
+$c_LMessage$anon$lazy$macro$301$1$anon$macro$229$1.prototype.to__LSpaceship__Lshapeless_$colon$colon = (function(p) {
   if ((p !== null)) {
-    var pat$macro$217 = p.sId$1;
-    var pat$macro$218 = p.lifes$1;
-    return new $c_Lshapeless_$colon$colon().init___O__Lshapeless_HList(pat$macro$217, new $c_Lshapeless_$colon$colon().init___O__Lshapeless_HList(pat$macro$218, $m_Lshapeless_HNil$()))
+    var pat$macro$228 = p.common$1;
+    return new $c_Lshapeless_$colon$colon().init___O__Lshapeless_HList(pat$macro$228, $m_Lshapeless_HNil$())
   } else {
     throw new $c_s_MatchError().init___O(p)
   }
 });
-$c_LMessage$anon$lazy$macro$283$1$anon$macro$219$1.prototype.from__Lshapeless_$colon$colon__LSetLifes = (function(p) {
+$c_LMessage$anon$lazy$macro$301$1$anon$macro$229$1.prototype.from__Lshapeless_$colon$colon__LSpaceship = (function(p) {
   if ((p !== null)) {
-    var pat$macro$217 = $uI(p.head$1);
+    var pat$macro$228 = $as_LCommonState(p.head$1);
+    var p2 = $as_Lshapeless_HNil(p.tail$1);
+    var x = $m_Lshapeless_HNil$();
+    if ((x === p2)) {
+      return new $c_LSpaceship().init___LCommonState(pat$macro$228)
+    }
+  };
+  throw new $c_s_MatchError().init___O(p)
+});
+var $d_LMessage$anon$lazy$macro$301$1$anon$macro$229$1 = new $TypeData().initClass({
+  LMessage$anon$lazy$macro$301$1$anon$macro$229$1: 0
+}, false, "Message$anon$lazy$macro$301$1$anon$macro$229$1", {
+  LMessage$anon$lazy$macro$301$1$anon$macro$229$1: 1,
+  O: 1,
+  Lshapeless_Generic: 1,
+  s_Serializable: 1,
+  Ljava_io_Serializable: 1
+});
+$c_LMessage$anon$lazy$macro$301$1$anon$macro$229$1.prototype.$classData = $d_LMessage$anon$lazy$macro$301$1$anon$macro$229$1;
+/** @constructor */
+function $c_LMessage$anon$lazy$macro$301$1$anon$macro$234$1() {
+  $c_O.call(this)
+}
+$c_LMessage$anon$lazy$macro$301$1$anon$macro$234$1.prototype = new $h_O();
+$c_LMessage$anon$lazy$macro$301$1$anon$macro$234$1.prototype.constructor = $c_LMessage$anon$lazy$macro$301$1$anon$macro$234$1;
+/** @constructor */
+function $h_LMessage$anon$lazy$macro$301$1$anon$macro$234$1() {
+  /*<skip>*/
+}
+$h_LMessage$anon$lazy$macro$301$1$anon$macro$234$1.prototype = $c_LMessage$anon$lazy$macro$301$1$anon$macro$234$1.prototype;
+$c_LMessage$anon$lazy$macro$301$1$anon$macro$234$1.prototype.from__O__O = (function(r) {
+  return this.from__Lshapeless_$colon$colon__LSetLifes($as_Lshapeless_$colon$colon(r))
+});
+$c_LMessage$anon$lazy$macro$301$1$anon$macro$234$1.prototype.to__O__O = (function(t) {
+  return this.to__LSetLifes__Lshapeless_$colon$colon($as_LSetLifes(t))
+});
+$c_LMessage$anon$lazy$macro$301$1$anon$macro$234$1.prototype.init___LMessage$anon$lazy$macro$301$1 = (function($$outer) {
+  return this
+});
+$c_LMessage$anon$lazy$macro$301$1$anon$macro$234$1.prototype.to__LSetLifes__Lshapeless_$colon$colon = (function(p) {
+  if ((p !== null)) {
+    var pat$macro$232 = p.sId$1;
+    var pat$macro$233 = p.lifes$1;
+    return new $c_Lshapeless_$colon$colon().init___O__Lshapeless_HList(pat$macro$232, new $c_Lshapeless_$colon$colon().init___O__Lshapeless_HList(pat$macro$233, $m_Lshapeless_HNil$()))
+  } else {
+    throw new $c_s_MatchError().init___O(p)
+  }
+});
+$c_LMessage$anon$lazy$macro$301$1$anon$macro$234$1.prototype.from__Lshapeless_$colon$colon__LSetLifes = (function(p) {
+  if ((p !== null)) {
+    var pat$macro$232 = $uI(p.head$1);
     var p2 = $as_Lshapeless_$colon$colon(p.tail$1);
     if ((p2 !== null)) {
-      var pat$macro$218 = $uI(p2.head$1);
+      var pat$macro$233 = $uI(p2.head$1);
       var p3 = $as_Lshapeless_HNil(p2.tail$1);
       var x = $m_Lshapeless_HNil$();
       if ((x === p3)) {
-        return new $c_LSetLifes().init___I__I(pat$macro$217, pat$macro$218)
+        return new $c_LSetLifes().init___I__I(pat$macro$232, pat$macro$233)
       }
     }
   };
   throw new $c_s_MatchError().init___O(p)
 });
-var $d_LMessage$anon$lazy$macro$283$1$anon$macro$219$1 = new $TypeData().initClass({
-  LMessage$anon$lazy$macro$283$1$anon$macro$219$1: 0
-}, false, "Message$anon$lazy$macro$283$1$anon$macro$219$1", {
-  LMessage$anon$lazy$macro$283$1$anon$macro$219$1: 1,
+var $d_LMessage$anon$lazy$macro$301$1$anon$macro$234$1 = new $TypeData().initClass({
+  LMessage$anon$lazy$macro$301$1$anon$macro$234$1: 0
+}, false, "Message$anon$lazy$macro$301$1$anon$macro$234$1", {
+  LMessage$anon$lazy$macro$301$1$anon$macro$234$1: 1,
   O: 1,
   Lshapeless_Generic: 1,
   s_Serializable: 1,
   Ljava_io_Serializable: 1
 });
-$c_LMessage$anon$lazy$macro$283$1$anon$macro$219$1.prototype.$classData = $d_LMessage$anon$lazy$macro$283$1$anon$macro$219$1;
+$c_LMessage$anon$lazy$macro$301$1$anon$macro$234$1.prototype.$classData = $d_LMessage$anon$lazy$macro$301$1$anon$macro$234$1;
 /** @constructor */
-function $c_LMessage$anon$lazy$macro$283$1$anon$macro$224$1() {
+function $c_LMessage$anon$lazy$macro$301$1$anon$macro$242$1() {
   $c_O.call(this)
 }
-$c_LMessage$anon$lazy$macro$283$1$anon$macro$224$1.prototype = new $h_O();
-$c_LMessage$anon$lazy$macro$283$1$anon$macro$224$1.prototype.constructor = $c_LMessage$anon$lazy$macro$283$1$anon$macro$224$1;
+$c_LMessage$anon$lazy$macro$301$1$anon$macro$242$1.prototype = new $h_O();
+$c_LMessage$anon$lazy$macro$301$1$anon$macro$242$1.prototype.constructor = $c_LMessage$anon$lazy$macro$301$1$anon$macro$242$1;
 /** @constructor */
-function $h_LMessage$anon$lazy$macro$283$1$anon$macro$224$1() {
+function $h_LMessage$anon$lazy$macro$301$1$anon$macro$242$1() {
   /*<skip>*/
 }
-$h_LMessage$anon$lazy$macro$283$1$anon$macro$224$1.prototype = $c_LMessage$anon$lazy$macro$283$1$anon$macro$224$1.prototype;
-$c_LMessage$anon$lazy$macro$283$1$anon$macro$224$1.prototype.from__O__O = (function(r) {
+$h_LMessage$anon$lazy$macro$301$1$anon$macro$242$1.prototype = $c_LMessage$anon$lazy$macro$301$1$anon$macro$242$1.prototype;
+$c_LMessage$anon$lazy$macro$301$1$anon$macro$242$1.prototype.from__O__O = (function(r) {
   return this.from__Lshapeless_HNil__LPong$($as_Lshapeless_HNil(r))
 });
-$c_LMessage$anon$lazy$macro$283$1$anon$macro$224$1.prototype.to__O__O = (function(t) {
+$c_LMessage$anon$lazy$macro$301$1$anon$macro$242$1.prototype.to__O__O = (function(t) {
   return this.to__LPong$__Lshapeless_HNil($as_LPong$(t))
 });
-$c_LMessage$anon$lazy$macro$283$1$anon$macro$224$1.prototype.init___LMessage$anon$lazy$macro$283$1 = (function($$outer) {
+$c_LMessage$anon$lazy$macro$301$1$anon$macro$242$1.prototype.init___LMessage$anon$lazy$macro$301$1 = (function($$outer) {
   return this
 });
-$c_LMessage$anon$lazy$macro$283$1$anon$macro$224$1.prototype.from__Lshapeless_HNil__LPong$ = (function(p) {
+$c_LMessage$anon$lazy$macro$301$1$anon$macro$242$1.prototype.from__Lshapeless_HNil__LPong$ = (function(p) {
   var x = $m_Lshapeless_HNil$();
   if ((x === p)) {
     return $m_LPong$()
@@ -22295,44 +22342,44 @@ $c_LMessage$anon$lazy$macro$283$1$anon$macro$224$1.prototype.from__Lshapeless_HN
     throw new $c_s_MatchError().init___O(p)
   }
 });
-$c_LMessage$anon$lazy$macro$283$1$anon$macro$224$1.prototype.to__LPong$__Lshapeless_HNil = (function(p) {
+$c_LMessage$anon$lazy$macro$301$1$anon$macro$242$1.prototype.to__LPong$__Lshapeless_HNil = (function(p) {
   if ((p !== null)) {
     return $m_Lshapeless_HNil$()
   } else {
     throw new $c_s_MatchError().init___O(p)
   }
 });
-var $d_LMessage$anon$lazy$macro$283$1$anon$macro$224$1 = new $TypeData().initClass({
-  LMessage$anon$lazy$macro$283$1$anon$macro$224$1: 0
-}, false, "Message$anon$lazy$macro$283$1$anon$macro$224$1", {
-  LMessage$anon$lazy$macro$283$1$anon$macro$224$1: 1,
+var $d_LMessage$anon$lazy$macro$301$1$anon$macro$242$1 = new $TypeData().initClass({
+  LMessage$anon$lazy$macro$301$1$anon$macro$242$1: 0
+}, false, "Message$anon$lazy$macro$301$1$anon$macro$242$1", {
+  LMessage$anon$lazy$macro$301$1$anon$macro$242$1: 1,
   O: 1,
   Lshapeless_Generic: 1,
   s_Serializable: 1,
   Ljava_io_Serializable: 1
 });
-$c_LMessage$anon$lazy$macro$283$1$anon$macro$224$1.prototype.$classData = $d_LMessage$anon$lazy$macro$283$1$anon$macro$224$1;
+$c_LMessage$anon$lazy$macro$301$1$anon$macro$242$1.prototype.$classData = $d_LMessage$anon$lazy$macro$301$1$anon$macro$242$1;
 /** @constructor */
-function $c_LMessage$anon$lazy$macro$283$1$anon$macro$229$1() {
+function $c_LMessage$anon$lazy$macro$301$1$anon$macro$247$1() {
   $c_O.call(this)
 }
-$c_LMessage$anon$lazy$macro$283$1$anon$macro$229$1.prototype = new $h_O();
-$c_LMessage$anon$lazy$macro$283$1$anon$macro$229$1.prototype.constructor = $c_LMessage$anon$lazy$macro$283$1$anon$macro$229$1;
+$c_LMessage$anon$lazy$macro$301$1$anon$macro$247$1.prototype = new $h_O();
+$c_LMessage$anon$lazy$macro$301$1$anon$macro$247$1.prototype.constructor = $c_LMessage$anon$lazy$macro$301$1$anon$macro$247$1;
 /** @constructor */
-function $h_LMessage$anon$lazy$macro$283$1$anon$macro$229$1() {
+function $h_LMessage$anon$lazy$macro$301$1$anon$macro$247$1() {
   /*<skip>*/
 }
-$h_LMessage$anon$lazy$macro$283$1$anon$macro$229$1.prototype = $c_LMessage$anon$lazy$macro$283$1$anon$macro$229$1.prototype;
-$c_LMessage$anon$lazy$macro$283$1$anon$macro$229$1.prototype.from__O__O = (function(r) {
+$h_LMessage$anon$lazy$macro$301$1$anon$macro$247$1.prototype = $c_LMessage$anon$lazy$macro$301$1$anon$macro$247$1.prototype;
+$c_LMessage$anon$lazy$macro$301$1$anon$macro$247$1.prototype.from__O__O = (function(r) {
   return this.from__Lshapeless_HNil__LPing$($as_Lshapeless_HNil(r))
 });
-$c_LMessage$anon$lazy$macro$283$1$anon$macro$229$1.prototype.to__O__O = (function(t) {
+$c_LMessage$anon$lazy$macro$301$1$anon$macro$247$1.prototype.to__O__O = (function(t) {
   return this.to__LPing$__Lshapeless_HNil($as_LPing$(t))
 });
-$c_LMessage$anon$lazy$macro$283$1$anon$macro$229$1.prototype.init___LMessage$anon$lazy$macro$283$1 = (function($$outer) {
+$c_LMessage$anon$lazy$macro$301$1$anon$macro$247$1.prototype.init___LMessage$anon$lazy$macro$301$1 = (function($$outer) {
   return this
 });
-$c_LMessage$anon$lazy$macro$283$1$anon$macro$229$1.prototype.from__Lshapeless_HNil__LPing$ = (function(p) {
+$c_LMessage$anon$lazy$macro$301$1$anon$macro$247$1.prototype.from__Lshapeless_HNil__LPing$ = (function(p) {
   var x = $m_Lshapeless_HNil$();
   if ((x === p)) {
     return $m_LPing$()
@@ -22340,288 +22387,288 @@ $c_LMessage$anon$lazy$macro$283$1$anon$macro$229$1.prototype.from__Lshapeless_HN
     throw new $c_s_MatchError().init___O(p)
   }
 });
-$c_LMessage$anon$lazy$macro$283$1$anon$macro$229$1.prototype.to__LPing$__Lshapeless_HNil = (function(p) {
+$c_LMessage$anon$lazy$macro$301$1$anon$macro$247$1.prototype.to__LPing$__Lshapeless_HNil = (function(p) {
   if ((p !== null)) {
     return $m_Lshapeless_HNil$()
   } else {
     throw new $c_s_MatchError().init___O(p)
   }
 });
-var $d_LMessage$anon$lazy$macro$283$1$anon$macro$229$1 = new $TypeData().initClass({
-  LMessage$anon$lazy$macro$283$1$anon$macro$229$1: 0
-}, false, "Message$anon$lazy$macro$283$1$anon$macro$229$1", {
-  LMessage$anon$lazy$macro$283$1$anon$macro$229$1: 1,
+var $d_LMessage$anon$lazy$macro$301$1$anon$macro$247$1 = new $TypeData().initClass({
+  LMessage$anon$lazy$macro$301$1$anon$macro$247$1: 0
+}, false, "Message$anon$lazy$macro$301$1$anon$macro$247$1", {
+  LMessage$anon$lazy$macro$301$1$anon$macro$247$1: 1,
   O: 1,
   Lshapeless_Generic: 1,
   s_Serializable: 1,
   Ljava_io_Serializable: 1
 });
-$c_LMessage$anon$lazy$macro$283$1$anon$macro$229$1.prototype.$classData = $d_LMessage$anon$lazy$macro$283$1$anon$macro$229$1;
+$c_LMessage$anon$lazy$macro$301$1$anon$macro$247$1.prototype.$classData = $d_LMessage$anon$lazy$macro$301$1$anon$macro$247$1;
 /** @constructor */
-function $c_LMessage$anon$lazy$macro$283$1$anon$macro$235$1() {
+function $c_LMessage$anon$lazy$macro$301$1$anon$macro$253$1() {
   $c_O.call(this)
 }
-$c_LMessage$anon$lazy$macro$283$1$anon$macro$235$1.prototype = new $h_O();
-$c_LMessage$anon$lazy$macro$283$1$anon$macro$235$1.prototype.constructor = $c_LMessage$anon$lazy$macro$283$1$anon$macro$235$1;
+$c_LMessage$anon$lazy$macro$301$1$anon$macro$253$1.prototype = new $h_O();
+$c_LMessage$anon$lazy$macro$301$1$anon$macro$253$1.prototype.constructor = $c_LMessage$anon$lazy$macro$301$1$anon$macro$253$1;
 /** @constructor */
-function $h_LMessage$anon$lazy$macro$283$1$anon$macro$235$1() {
+function $h_LMessage$anon$lazy$macro$301$1$anon$macro$253$1() {
   /*<skip>*/
 }
-$h_LMessage$anon$lazy$macro$283$1$anon$macro$235$1.prototype = $c_LMessage$anon$lazy$macro$283$1$anon$macro$235$1.prototype;
-$c_LMessage$anon$lazy$macro$283$1$anon$macro$235$1.prototype.from__O__O = (function(r) {
+$h_LMessage$anon$lazy$macro$301$1$anon$macro$253$1.prototype = $c_LMessage$anon$lazy$macro$301$1$anon$macro$253$1.prototype;
+$c_LMessage$anon$lazy$macro$301$1$anon$macro$253$1.prototype.from__O__O = (function(r) {
   return this.from__Lshapeless_$colon$colon__LLaser($as_Lshapeless_$colon$colon(r))
 });
-$c_LMessage$anon$lazy$macro$283$1$anon$macro$235$1.prototype.to__O__O = (function(t) {
+$c_LMessage$anon$lazy$macro$301$1$anon$macro$253$1.prototype.to__O__O = (function(t) {
   return this.to__LLaser__Lshapeless_$colon$colon($as_LLaser(t))
 });
-$c_LMessage$anon$lazy$macro$283$1$anon$macro$235$1.prototype.init___LMessage$anon$lazy$macro$283$1 = (function($$outer) {
+$c_LMessage$anon$lazy$macro$301$1$anon$macro$253$1.prototype.init___LMessage$anon$lazy$macro$301$1 = (function($$outer) {
   return this
 });
-$c_LMessage$anon$lazy$macro$283$1$anon$macro$235$1.prototype.to__LLaser__Lshapeless_$colon$colon = (function(p) {
+$c_LMessage$anon$lazy$macro$301$1$anon$macro$253$1.prototype.to__LLaser__Lshapeless_$colon$colon = (function(p) {
   if ((p !== null)) {
-    var pat$macro$233 = p.common$1;
-    var pat$macro$234 = p.shooter$1;
-    return new $c_Lshapeless_$colon$colon().init___O__Lshapeless_HList(pat$macro$233, new $c_Lshapeless_$colon$colon().init___O__Lshapeless_HList(pat$macro$234, $m_Lshapeless_HNil$()))
+    var pat$macro$251 = p.common$1;
+    var pat$macro$252 = p.shooter$1;
+    return new $c_Lshapeless_$colon$colon().init___O__Lshapeless_HList(pat$macro$251, new $c_Lshapeless_$colon$colon().init___O__Lshapeless_HList(pat$macro$252, $m_Lshapeless_HNil$()))
   } else {
     throw new $c_s_MatchError().init___O(p)
   }
 });
-$c_LMessage$anon$lazy$macro$283$1$anon$macro$235$1.prototype.from__Lshapeless_$colon$colon__LLaser = (function(p) {
+$c_LMessage$anon$lazy$macro$301$1$anon$macro$253$1.prototype.from__Lshapeless_$colon$colon__LLaser = (function(p) {
   if ((p !== null)) {
-    var pat$macro$233 = $as_LCommonState(p.head$1);
+    var pat$macro$251 = $as_LCommonState(p.head$1);
     var p2 = $as_Lshapeless_$colon$colon(p.tail$1);
     if ((p2 !== null)) {
-      var pat$macro$234 = $uI(p2.head$1);
+      var pat$macro$252 = $uI(p2.head$1);
       var p3 = $as_Lshapeless_HNil(p2.tail$1);
       var x = $m_Lshapeless_HNil$();
       if ((x === p3)) {
-        return new $c_LLaser().init___LCommonState__I(pat$macro$233, pat$macro$234)
+        return new $c_LLaser().init___LCommonState__I(pat$macro$251, pat$macro$252)
       }
     }
   };
   throw new $c_s_MatchError().init___O(p)
 });
-var $d_LMessage$anon$lazy$macro$283$1$anon$macro$235$1 = new $TypeData().initClass({
-  LMessage$anon$lazy$macro$283$1$anon$macro$235$1: 0
-}, false, "Message$anon$lazy$macro$283$1$anon$macro$235$1", {
-  LMessage$anon$lazy$macro$283$1$anon$macro$235$1: 1,
+var $d_LMessage$anon$lazy$macro$301$1$anon$macro$253$1 = new $TypeData().initClass({
+  LMessage$anon$lazy$macro$301$1$anon$macro$253$1: 0
+}, false, "Message$anon$lazy$macro$301$1$anon$macro$253$1", {
+  LMessage$anon$lazy$macro$301$1$anon$macro$253$1: 1,
   O: 1,
   Lshapeless_Generic: 1,
   s_Serializable: 1,
   Ljava_io_Serializable: 1
 });
-$c_LMessage$anon$lazy$macro$283$1$anon$macro$235$1.prototype.$classData = $d_LMessage$anon$lazy$macro$283$1$anon$macro$235$1;
+$c_LMessage$anon$lazy$macro$301$1$anon$macro$253$1.prototype.$classData = $d_LMessage$anon$lazy$macro$301$1$anon$macro$253$1;
 /** @constructor */
-function $c_LMessage$anon$lazy$macro$283$1$anon$macro$245$1() {
+function $c_LMessage$anon$lazy$macro$301$1$anon$macro$263$1() {
   $c_O.call(this)
 }
-$c_LMessage$anon$lazy$macro$283$1$anon$macro$245$1.prototype = new $h_O();
-$c_LMessage$anon$lazy$macro$283$1$anon$macro$245$1.prototype.constructor = $c_LMessage$anon$lazy$macro$283$1$anon$macro$245$1;
+$c_LMessage$anon$lazy$macro$301$1$anon$macro$263$1.prototype = new $h_O();
+$c_LMessage$anon$lazy$macro$301$1$anon$macro$263$1.prototype.constructor = $c_LMessage$anon$lazy$macro$301$1$anon$macro$263$1;
 /** @constructor */
-function $h_LMessage$anon$lazy$macro$283$1$anon$macro$245$1() {
+function $h_LMessage$anon$lazy$macro$301$1$anon$macro$263$1() {
   /*<skip>*/
 }
-$h_LMessage$anon$lazy$macro$283$1$anon$macro$245$1.prototype = $c_LMessage$anon$lazy$macro$283$1$anon$macro$245$1.prototype;
-$c_LMessage$anon$lazy$macro$283$1$anon$macro$245$1.prototype.from__Lshapeless_$colon$colon__LDestroy = (function(p) {
+$h_LMessage$anon$lazy$macro$301$1$anon$macro$263$1.prototype = $c_LMessage$anon$lazy$macro$301$1$anon$macro$263$1.prototype;
+$c_LMessage$anon$lazy$macro$301$1$anon$macro$263$1.prototype.from__Lshapeless_$colon$colon__LDestroy = (function(p) {
   if ((p !== null)) {
-    var pat$macro$244 = $uI(p.head$1);
+    var pat$macro$262 = $uI(p.head$1);
     var p2 = $as_Lshapeless_HNil(p.tail$1);
     var x = $m_Lshapeless_HNil$();
     if ((x === p2)) {
-      return new $c_LDestroy().init___I(pat$macro$244)
+      return new $c_LDestroy().init___I(pat$macro$262)
     }
   };
   throw new $c_s_MatchError().init___O(p)
 });
-$c_LMessage$anon$lazy$macro$283$1$anon$macro$245$1.prototype.from__O__O = (function(r) {
+$c_LMessage$anon$lazy$macro$301$1$anon$macro$263$1.prototype.from__O__O = (function(r) {
   return this.from__Lshapeless_$colon$colon__LDestroy($as_Lshapeless_$colon$colon(r))
 });
-$c_LMessage$anon$lazy$macro$283$1$anon$macro$245$1.prototype.to__O__O = (function(t) {
+$c_LMessage$anon$lazy$macro$301$1$anon$macro$263$1.prototype.to__O__O = (function(t) {
   return this.to__LDestroy__Lshapeless_$colon$colon($as_LDestroy(t))
 });
-$c_LMessage$anon$lazy$macro$283$1$anon$macro$245$1.prototype.init___LMessage$anon$lazy$macro$283$1 = (function($$outer) {
+$c_LMessage$anon$lazy$macro$301$1$anon$macro$263$1.prototype.init___LMessage$anon$lazy$macro$301$1 = (function($$outer) {
   return this
 });
-$c_LMessage$anon$lazy$macro$283$1$anon$macro$245$1.prototype.to__LDestroy__Lshapeless_$colon$colon = (function(p) {
+$c_LMessage$anon$lazy$macro$301$1$anon$macro$263$1.prototype.to__LDestroy__Lshapeless_$colon$colon = (function(p) {
   if ((p !== null)) {
-    var pat$macro$244 = p.destroy$1;
-    return new $c_Lshapeless_$colon$colon().init___O__Lshapeless_HList(pat$macro$244, $m_Lshapeless_HNil$())
+    var pat$macro$262 = p.destroy$1;
+    return new $c_Lshapeless_$colon$colon().init___O__Lshapeless_HList(pat$macro$262, $m_Lshapeless_HNil$())
   } else {
     throw new $c_s_MatchError().init___O(p)
   }
 });
-var $d_LMessage$anon$lazy$macro$283$1$anon$macro$245$1 = new $TypeData().initClass({
-  LMessage$anon$lazy$macro$283$1$anon$macro$245$1: 0
-}, false, "Message$anon$lazy$macro$283$1$anon$macro$245$1", {
-  LMessage$anon$lazy$macro$283$1$anon$macro$245$1: 1,
+var $d_LMessage$anon$lazy$macro$301$1$anon$macro$263$1 = new $TypeData().initClass({
+  LMessage$anon$lazy$macro$301$1$anon$macro$263$1: 0
+}, false, "Message$anon$lazy$macro$301$1$anon$macro$263$1", {
+  LMessage$anon$lazy$macro$301$1$anon$macro$263$1: 1,
   O: 1,
   Lshapeless_Generic: 1,
   s_Serializable: 1,
   Ljava_io_Serializable: 1
 });
-$c_LMessage$anon$lazy$macro$283$1$anon$macro$245$1.prototype.$classData = $d_LMessage$anon$lazy$macro$283$1$anon$macro$245$1;
+$c_LMessage$anon$lazy$macro$301$1$anon$macro$263$1.prototype.$classData = $d_LMessage$anon$lazy$macro$301$1$anon$macro$263$1;
 /** @constructor */
-function $c_LMessage$anon$lazy$macro$283$1$anon$macro$254$1() {
+function $c_LMessage$anon$lazy$macro$301$1$anon$macro$272$1() {
   $c_O.call(this)
 }
-$c_LMessage$anon$lazy$macro$283$1$anon$macro$254$1.prototype = new $h_O();
-$c_LMessage$anon$lazy$macro$283$1$anon$macro$254$1.prototype.constructor = $c_LMessage$anon$lazy$macro$283$1$anon$macro$254$1;
+$c_LMessage$anon$lazy$macro$301$1$anon$macro$272$1.prototype = new $h_O();
+$c_LMessage$anon$lazy$macro$301$1$anon$macro$272$1.prototype.constructor = $c_LMessage$anon$lazy$macro$301$1$anon$macro$272$1;
 /** @constructor */
-function $h_LMessage$anon$lazy$macro$283$1$anon$macro$254$1() {
+function $h_LMessage$anon$lazy$macro$301$1$anon$macro$272$1() {
   /*<skip>*/
 }
-$h_LMessage$anon$lazy$macro$283$1$anon$macro$254$1.prototype = $c_LMessage$anon$lazy$macro$283$1$anon$macro$254$1.prototype;
-$c_LMessage$anon$lazy$macro$283$1$anon$macro$254$1.prototype.from__Lshapeless_$colon$colon__LCmd = (function(p) {
+$h_LMessage$anon$lazy$macro$301$1$anon$macro$272$1.prototype = $c_LMessage$anon$lazy$macro$301$1$anon$macro$272$1.prototype;
+$c_LMessage$anon$lazy$macro$301$1$anon$macro$272$1.prototype.from__Lshapeless_$colon$colon__LCmd = (function(p) {
   if ((p !== null)) {
-    var pat$macro$252 = $uI(p.head$1);
+    var pat$macro$270 = $uI(p.head$1);
     var p2 = $as_Lshapeless_$colon$colon(p.tail$1);
     if ((p2 !== null)) {
-      var pat$macro$253 = $as_LCommand(p2.head$1);
+      var pat$macro$271 = $as_LCommand(p2.head$1);
       var p3 = $as_Lshapeless_HNil(p2.tail$1);
       var x = $m_Lshapeless_HNil$();
       if ((x === p3)) {
-        return new $c_LCmd().init___I__LCommand(pat$macro$252, pat$macro$253)
+        return new $c_LCmd().init___I__LCommand(pat$macro$270, pat$macro$271)
       }
     }
   };
   throw new $c_s_MatchError().init___O(p)
 });
-$c_LMessage$anon$lazy$macro$283$1$anon$macro$254$1.prototype.from__O__O = (function(r) {
+$c_LMessage$anon$lazy$macro$301$1$anon$macro$272$1.prototype.from__O__O = (function(r) {
   return this.from__Lshapeless_$colon$colon__LCmd($as_Lshapeless_$colon$colon(r))
 });
-$c_LMessage$anon$lazy$macro$283$1$anon$macro$254$1.prototype.to__O__O = (function(t) {
+$c_LMessage$anon$lazy$macro$301$1$anon$macro$272$1.prototype.to__O__O = (function(t) {
   return this.to__LCmd__Lshapeless_$colon$colon($as_LCmd(t))
 });
-$c_LMessage$anon$lazy$macro$283$1$anon$macro$254$1.prototype.init___LMessage$anon$lazy$macro$283$1 = (function($$outer) {
+$c_LMessage$anon$lazy$macro$301$1$anon$macro$272$1.prototype.init___LMessage$anon$lazy$macro$301$1 = (function($$outer) {
   return this
 });
-$c_LMessage$anon$lazy$macro$283$1$anon$macro$254$1.prototype.to__LCmd__Lshapeless_$colon$colon = (function(p) {
+$c_LMessage$anon$lazy$macro$301$1$anon$macro$272$1.prototype.to__LCmd__Lshapeless_$colon$colon = (function(p) {
   if ((p !== null)) {
-    var pat$macro$252 = p.sId$1;
-    var pat$macro$253 = p.cmd$1;
-    return new $c_Lshapeless_$colon$colon().init___O__Lshapeless_HList(pat$macro$252, new $c_Lshapeless_$colon$colon().init___O__Lshapeless_HList(pat$macro$253, $m_Lshapeless_HNil$()))
+    var pat$macro$270 = p.sId$1;
+    var pat$macro$271 = p.cmd$1;
+    return new $c_Lshapeless_$colon$colon().init___O__Lshapeless_HList(pat$macro$270, new $c_Lshapeless_$colon$colon().init___O__Lshapeless_HList(pat$macro$271, $m_Lshapeless_HNil$()))
   } else {
     throw new $c_s_MatchError().init___O(p)
   }
 });
-var $d_LMessage$anon$lazy$macro$283$1$anon$macro$254$1 = new $TypeData().initClass({
-  LMessage$anon$lazy$macro$283$1$anon$macro$254$1: 0
-}, false, "Message$anon$lazy$macro$283$1$anon$macro$254$1", {
-  LMessage$anon$lazy$macro$283$1$anon$macro$254$1: 1,
+var $d_LMessage$anon$lazy$macro$301$1$anon$macro$272$1 = new $TypeData().initClass({
+  LMessage$anon$lazy$macro$301$1$anon$macro$272$1: 0
+}, false, "Message$anon$lazy$macro$301$1$anon$macro$272$1", {
+  LMessage$anon$lazy$macro$301$1$anon$macro$272$1: 1,
   O: 1,
   Lshapeless_Generic: 1,
   s_Serializable: 1,
   Ljava_io_Serializable: 1
 });
-$c_LMessage$anon$lazy$macro$283$1$anon$macro$254$1.prototype.$classData = $d_LMessage$anon$lazy$macro$283$1$anon$macro$254$1;
+$c_LMessage$anon$lazy$macro$301$1$anon$macro$272$1.prototype.$classData = $d_LMessage$anon$lazy$macro$301$1$anon$macro$272$1;
 /** @constructor */
-function $c_LMessage$anon$lazy$macro$283$1$anon$macro$264$1() {
+function $c_LMessage$anon$lazy$macro$301$1$anon$macro$282$1() {
   $c_O.call(this)
 }
-$c_LMessage$anon$lazy$macro$283$1$anon$macro$264$1.prototype = new $h_O();
-$c_LMessage$anon$lazy$macro$283$1$anon$macro$264$1.prototype.constructor = $c_LMessage$anon$lazy$macro$283$1$anon$macro$264$1;
+$c_LMessage$anon$lazy$macro$301$1$anon$macro$282$1.prototype = new $h_O();
+$c_LMessage$anon$lazy$macro$301$1$anon$macro$282$1.prototype.constructor = $c_LMessage$anon$lazy$macro$301$1$anon$macro$282$1;
 /** @constructor */
-function $h_LMessage$anon$lazy$macro$283$1$anon$macro$264$1() {
+function $h_LMessage$anon$lazy$macro$301$1$anon$macro$282$1() {
   /*<skip>*/
 }
-$h_LMessage$anon$lazy$macro$283$1$anon$macro$264$1.prototype = $c_LMessage$anon$lazy$macro$283$1$anon$macro$264$1.prototype;
-$c_LMessage$anon$lazy$macro$283$1$anon$macro$264$1.prototype.from__Lshapeless_$colon$colon__LClientId = (function(p) {
+$h_LMessage$anon$lazy$macro$301$1$anon$macro$282$1.prototype = $c_LMessage$anon$lazy$macro$301$1$anon$macro$282$1.prototype;
+$c_LMessage$anon$lazy$macro$301$1$anon$macro$282$1.prototype.from__Lshapeless_$colon$colon__LClientId = (function(p) {
   if ((p !== null)) {
-    var pat$macro$263 = $uI(p.head$1);
+    var pat$macro$281 = $uI(p.head$1);
     var p2 = $as_Lshapeless_HNil(p.tail$1);
     var x = $m_Lshapeless_HNil$();
     if ((x === p2)) {
-      return new $c_LClientId().init___I(pat$macro$263)
+      return new $c_LClientId().init___I(pat$macro$281)
     }
   };
   throw new $c_s_MatchError().init___O(p)
 });
-$c_LMessage$anon$lazy$macro$283$1$anon$macro$264$1.prototype.from__O__O = (function(r) {
+$c_LMessage$anon$lazy$macro$301$1$anon$macro$282$1.prototype.from__O__O = (function(r) {
   return this.from__Lshapeless_$colon$colon__LClientId($as_Lshapeless_$colon$colon(r))
 });
-$c_LMessage$anon$lazy$macro$283$1$anon$macro$264$1.prototype.to__O__O = (function(t) {
+$c_LMessage$anon$lazy$macro$301$1$anon$macro$282$1.prototype.to__O__O = (function(t) {
   return this.to__LClientId__Lshapeless_$colon$colon($as_LClientId(t))
 });
-$c_LMessage$anon$lazy$macro$283$1$anon$macro$264$1.prototype.init___LMessage$anon$lazy$macro$283$1 = (function($$outer) {
+$c_LMessage$anon$lazy$macro$301$1$anon$macro$282$1.prototype.init___LMessage$anon$lazy$macro$301$1 = (function($$outer) {
   return this
 });
-$c_LMessage$anon$lazy$macro$283$1$anon$macro$264$1.prototype.to__LClientId__Lshapeless_$colon$colon = (function(p) {
+$c_LMessage$anon$lazy$macro$301$1$anon$macro$282$1.prototype.to__LClientId__Lshapeless_$colon$colon = (function(p) {
   if ((p !== null)) {
-    var pat$macro$263 = p.clientId$1;
-    return new $c_Lshapeless_$colon$colon().init___O__Lshapeless_HList(pat$macro$263, $m_Lshapeless_HNil$())
+    var pat$macro$281 = p.clientId$1;
+    return new $c_Lshapeless_$colon$colon().init___O__Lshapeless_HList(pat$macro$281, $m_Lshapeless_HNil$())
   } else {
     throw new $c_s_MatchError().init___O(p)
   }
 });
-var $d_LMessage$anon$lazy$macro$283$1$anon$macro$264$1 = new $TypeData().initClass({
-  LMessage$anon$lazy$macro$283$1$anon$macro$264$1: 0
-}, false, "Message$anon$lazy$macro$283$1$anon$macro$264$1", {
-  LMessage$anon$lazy$macro$283$1$anon$macro$264$1: 1,
+var $d_LMessage$anon$lazy$macro$301$1$anon$macro$282$1 = new $TypeData().initClass({
+  LMessage$anon$lazy$macro$301$1$anon$macro$282$1: 0
+}, false, "Message$anon$lazy$macro$301$1$anon$macro$282$1", {
+  LMessage$anon$lazy$macro$301$1$anon$macro$282$1: 1,
   O: 1,
   Lshapeless_Generic: 1,
   s_Serializable: 1,
   Ljava_io_Serializable: 1
 });
-$c_LMessage$anon$lazy$macro$283$1$anon$macro$264$1.prototype.$classData = $d_LMessage$anon$lazy$macro$283$1$anon$macro$264$1;
+$c_LMessage$anon$lazy$macro$301$1$anon$macro$282$1.prototype.$classData = $d_LMessage$anon$lazy$macro$301$1$anon$macro$282$1;
 /** @constructor */
-function $c_LMessage$anon$lazy$macro$283$1$anon$macro$274$1() {
+function $c_LMessage$anon$lazy$macro$301$1$anon$macro$292$1() {
   $c_O.call(this)
 }
-$c_LMessage$anon$lazy$macro$283$1$anon$macro$274$1.prototype = new $h_O();
-$c_LMessage$anon$lazy$macro$283$1$anon$macro$274$1.prototype.constructor = $c_LMessage$anon$lazy$macro$283$1$anon$macro$274$1;
+$c_LMessage$anon$lazy$macro$301$1$anon$macro$292$1.prototype = new $h_O();
+$c_LMessage$anon$lazy$macro$301$1$anon$macro$292$1.prototype.constructor = $c_LMessage$anon$lazy$macro$301$1$anon$macro$292$1;
 /** @constructor */
-function $h_LMessage$anon$lazy$macro$283$1$anon$macro$274$1() {
+function $h_LMessage$anon$lazy$macro$301$1$anon$macro$292$1() {
   /*<skip>*/
 }
-$h_LMessage$anon$lazy$macro$283$1$anon$macro$274$1.prototype = $c_LMessage$anon$lazy$macro$283$1$anon$macro$274$1.prototype;
-$c_LMessage$anon$lazy$macro$283$1$anon$macro$274$1.prototype.from__O__O = (function(r) {
+$h_LMessage$anon$lazy$macro$301$1$anon$macro$292$1.prototype = $c_LMessage$anon$lazy$macro$301$1$anon$macro$292$1.prototype;
+$c_LMessage$anon$lazy$macro$301$1$anon$macro$292$1.prototype.from__O__O = (function(r) {
   return this.from__Lshapeless_$colon$colon__LAsteroid($as_Lshapeless_$colon$colon(r))
 });
-$c_LMessage$anon$lazy$macro$283$1$anon$macro$274$1.prototype.to__O__O = (function(t) {
+$c_LMessage$anon$lazy$macro$301$1$anon$macro$292$1.prototype.to__O__O = (function(t) {
   return this.to__LAsteroid__Lshapeless_$colon$colon($as_LAsteroid(t))
 });
-$c_LMessage$anon$lazy$macro$283$1$anon$macro$274$1.prototype.init___LMessage$anon$lazy$macro$283$1 = (function($$outer) {
-  return this
-});
-$c_LMessage$anon$lazy$macro$283$1$anon$macro$274$1.prototype.to__LAsteroid__Lshapeless_$colon$colon = (function(p) {
+$c_LMessage$anon$lazy$macro$301$1$anon$macro$292$1.prototype.to__LAsteroid__Lshapeless_$colon$colon = (function(p) {
   if ((p !== null)) {
-    var pat$macro$271 = p.common$1;
-    var pat$macro$272 = p.size$1;
-    var pat$macro$273 = p.color$1;
-    return new $c_Lshapeless_$colon$colon().init___O__Lshapeless_HList(pat$macro$271, new $c_Lshapeless_$colon$colon().init___O__Lshapeless_HList(pat$macro$272, new $c_Lshapeless_$colon$colon().init___O__Lshapeless_HList(pat$macro$273, $m_Lshapeless_HNil$())))
+    var pat$macro$289 = p.common$1;
+    var pat$macro$290 = p.size$1;
+    var pat$macro$291 = p.color$1;
+    return new $c_Lshapeless_$colon$colon().init___O__Lshapeless_HList(pat$macro$289, new $c_Lshapeless_$colon$colon().init___O__Lshapeless_HList(pat$macro$290, new $c_Lshapeless_$colon$colon().init___O__Lshapeless_HList(pat$macro$291, $m_Lshapeless_HNil$())))
   } else {
     throw new $c_s_MatchError().init___O(p)
   }
 });
-$c_LMessage$anon$lazy$macro$283$1$anon$macro$274$1.prototype.from__Lshapeless_$colon$colon__LAsteroid = (function(p) {
+$c_LMessage$anon$lazy$macro$301$1$anon$macro$292$1.prototype.init___LMessage$anon$lazy$macro$301$1 = (function($$outer) {
+  return this
+});
+$c_LMessage$anon$lazy$macro$301$1$anon$macro$292$1.prototype.from__Lshapeless_$colon$colon__LAsteroid = (function(p) {
   if ((p !== null)) {
-    var pat$macro$271 = $as_LCommonState(p.head$1);
+    var pat$macro$289 = $as_LCommonState(p.head$1);
     var p2 = $as_Lshapeless_$colon$colon(p.tail$1);
     if ((p2 !== null)) {
-      var pat$macro$272 = $as_LASize(p2.head$1);
+      var pat$macro$290 = $as_LASize(p2.head$1);
       var p3 = $as_Lshapeless_$colon$colon(p2.tail$1);
       if ((p3 !== null)) {
-        var pat$macro$273 = $as_LAColor(p3.head$1);
+        var pat$macro$291 = $as_LAColor(p3.head$1);
         var p4 = $as_Lshapeless_HNil(p3.tail$1);
         var x = $m_Lshapeless_HNil$();
         if ((x === p4)) {
-          return new $c_LAsteroid().init___LCommonState__LASize__LAColor(pat$macro$271, pat$macro$272, pat$macro$273)
+          return new $c_LAsteroid().init___LCommonState__LASize__LAColor(pat$macro$289, pat$macro$290, pat$macro$291)
         }
       }
     }
   };
   throw new $c_s_MatchError().init___O(p)
 });
-var $d_LMessage$anon$lazy$macro$283$1$anon$macro$274$1 = new $TypeData().initClass({
-  LMessage$anon$lazy$macro$283$1$anon$macro$274$1: 0
-}, false, "Message$anon$lazy$macro$283$1$anon$macro$274$1", {
-  LMessage$anon$lazy$macro$283$1$anon$macro$274$1: 1,
+var $d_LMessage$anon$lazy$macro$301$1$anon$macro$292$1 = new $TypeData().initClass({
+  LMessage$anon$lazy$macro$301$1$anon$macro$292$1: 0
+}, false, "Message$anon$lazy$macro$301$1$anon$macro$292$1", {
+  LMessage$anon$lazy$macro$301$1$anon$macro$292$1: 1,
   O: 1,
   Lshapeless_Generic: 1,
   s_Serializable: 1,
   Ljava_io_Serializable: 1
 });
-$c_LMessage$anon$lazy$macro$283$1$anon$macro$274$1.prototype.$classData = $d_LMessage$anon$lazy$macro$283$1$anon$macro$274$1;
+$c_LMessage$anon$lazy$macro$301$1$anon$macro$292$1.prototype.$classData = $d_LMessage$anon$lazy$macro$301$1$anon$macro$292$1;
 /** @constructor */
 function $c_LTimestampedMessage$() {
   $c_O.call(this);
@@ -28367,118 +28414,98 @@ var $d_sjsr_RuntimeLong = new $TypeData().initClass({
 });
 $c_sjsr_RuntimeLong.prototype.$classData = $d_sjsr_RuntimeLong;
 /** @constructor */
-function $c_LAColor$anon$lazy$macro$348$1$$anon$46() {
+function $c_LAColor$anon$lazy$macro$366$1$$anon$48() {
   $c_O.call(this)
 }
-$c_LAColor$anon$lazy$macro$348$1$$anon$46.prototype = new $h_O();
-$c_LAColor$anon$lazy$macro$348$1$$anon$46.prototype.constructor = $c_LAColor$anon$lazy$macro$348$1$$anon$46;
+$c_LAColor$anon$lazy$macro$366$1$$anon$48.prototype = new $h_O();
+$c_LAColor$anon$lazy$macro$366$1$$anon$48.prototype.constructor = $c_LAColor$anon$lazy$macro$366$1$$anon$48;
 /** @constructor */
-function $h_LAColor$anon$lazy$macro$348$1$$anon$46() {
+function $h_LAColor$anon$lazy$macro$366$1$$anon$48() {
   /*<skip>*/
 }
-$h_LAColor$anon$lazy$macro$348$1$$anon$46.prototype = $c_LAColor$anon$lazy$macro$348$1$$anon$46.prototype;
-$c_LAColor$anon$lazy$macro$348$1$$anon$46.prototype.init___LAColor$anon$lazy$macro$348$1 = (function($$outer) {
+$h_LAColor$anon$lazy$macro$366$1$$anon$48.prototype = $c_LAColor$anon$lazy$macro$366$1$$anon$48.prototype;
+$c_LAColor$anon$lazy$macro$366$1$$anon$48.prototype.init___LAColor$anon$lazy$macro$366$1 = (function($$outer) {
   return this
 });
-var $d_LAColor$anon$lazy$macro$348$1$$anon$46 = new $TypeData().initClass({
-  LAColor$anon$lazy$macro$348$1$$anon$46: 0
-}, false, "AColor$anon$lazy$macro$348$1$$anon$46", {
-  LAColor$anon$lazy$macro$348$1$$anon$46: 1,
+var $d_LAColor$anon$lazy$macro$366$1$$anon$48 = new $TypeData().initClass({
+  LAColor$anon$lazy$macro$366$1$$anon$48: 0
+}, false, "AColor$anon$lazy$macro$366$1$$anon$48", {
+  LAColor$anon$lazy$macro$366$1$$anon$48: 1,
   O: 1,
   Lshapeless_DefaultSymbolicLabelling: 1,
   Lshapeless_package$DepFn0: 1,
   s_Serializable: 1,
   Ljava_io_Serializable: 1
 });
-$c_LAColor$anon$lazy$macro$348$1$$anon$46.prototype.$classData = $d_LAColor$anon$lazy$macro$348$1$$anon$46;
+$c_LAColor$anon$lazy$macro$366$1$$anon$48.prototype.$classData = $d_LAColor$anon$lazy$macro$366$1$$anon$48;
 /** @constructor */
-function $c_LAColor$anon$lazy$macro$363$1$$anon$47() {
+function $c_LAColor$anon$lazy$macro$381$1$$anon$49() {
   $c_O.call(this)
 }
-$c_LAColor$anon$lazy$macro$363$1$$anon$47.prototype = new $h_O();
-$c_LAColor$anon$lazy$macro$363$1$$anon$47.prototype.constructor = $c_LAColor$anon$lazy$macro$363$1$$anon$47;
+$c_LAColor$anon$lazy$macro$381$1$$anon$49.prototype = new $h_O();
+$c_LAColor$anon$lazy$macro$381$1$$anon$49.prototype.constructor = $c_LAColor$anon$lazy$macro$381$1$$anon$49;
 /** @constructor */
-function $h_LAColor$anon$lazy$macro$363$1$$anon$47() {
+function $h_LAColor$anon$lazy$macro$381$1$$anon$49() {
   /*<skip>*/
 }
-$h_LAColor$anon$lazy$macro$363$1$$anon$47.prototype = $c_LAColor$anon$lazy$macro$363$1$$anon$47.prototype;
-$c_LAColor$anon$lazy$macro$363$1$$anon$47.prototype.init___LAColor$anon$lazy$macro$363$1 = (function($$outer) {
+$h_LAColor$anon$lazy$macro$381$1$$anon$49.prototype = $c_LAColor$anon$lazy$macro$381$1$$anon$49.prototype;
+$c_LAColor$anon$lazy$macro$381$1$$anon$49.prototype.init___LAColor$anon$lazy$macro$381$1 = (function($$outer) {
   return this
 });
-var $d_LAColor$anon$lazy$macro$363$1$$anon$47 = new $TypeData().initClass({
-  LAColor$anon$lazy$macro$363$1$$anon$47: 0
-}, false, "AColor$anon$lazy$macro$363$1$$anon$47", {
-  LAColor$anon$lazy$macro$363$1$$anon$47: 1,
+var $d_LAColor$anon$lazy$macro$381$1$$anon$49 = new $TypeData().initClass({
+  LAColor$anon$lazy$macro$381$1$$anon$49: 0
+}, false, "AColor$anon$lazy$macro$381$1$$anon$49", {
+  LAColor$anon$lazy$macro$381$1$$anon$49: 1,
   O: 1,
   Lshapeless_DefaultSymbolicLabelling: 1,
   Lshapeless_package$DepFn0: 1,
   s_Serializable: 1,
   Ljava_io_Serializable: 1
 });
-$c_LAColor$anon$lazy$macro$363$1$$anon$47.prototype.$classData = $d_LAColor$anon$lazy$macro$363$1$$anon$47;
+$c_LAColor$anon$lazy$macro$381$1$$anon$49.prototype.$classData = $d_LAColor$anon$lazy$macro$381$1$$anon$49;
 /** @constructor */
-function $c_LAColor$anon$lazy$macro$363$1$$anon$48() {
+function $c_LAColor$anon$lazy$macro$381$1$$anon$50() {
   $c_O.call(this)
 }
-$c_LAColor$anon$lazy$macro$363$1$$anon$48.prototype = new $h_O();
-$c_LAColor$anon$lazy$macro$363$1$$anon$48.prototype.constructor = $c_LAColor$anon$lazy$macro$363$1$$anon$48;
+$c_LAColor$anon$lazy$macro$381$1$$anon$50.prototype = new $h_O();
+$c_LAColor$anon$lazy$macro$381$1$$anon$50.prototype.constructor = $c_LAColor$anon$lazy$macro$381$1$$anon$50;
 /** @constructor */
-function $h_LAColor$anon$lazy$macro$363$1$$anon$48() {
+function $h_LAColor$anon$lazy$macro$381$1$$anon$50() {
   /*<skip>*/
 }
-$h_LAColor$anon$lazy$macro$363$1$$anon$48.prototype = $c_LAColor$anon$lazy$macro$363$1$$anon$48.prototype;
-$c_LAColor$anon$lazy$macro$363$1$$anon$48.prototype.init___LAColor$anon$lazy$macro$363$1 = (function($$outer) {
+$h_LAColor$anon$lazy$macro$381$1$$anon$50.prototype = $c_LAColor$anon$lazy$macro$381$1$$anon$50.prototype;
+$c_LAColor$anon$lazy$macro$381$1$$anon$50.prototype.init___LAColor$anon$lazy$macro$381$1 = (function($$outer) {
   return this
 });
-var $d_LAColor$anon$lazy$macro$363$1$$anon$48 = new $TypeData().initClass({
-  LAColor$anon$lazy$macro$363$1$$anon$48: 0
-}, false, "AColor$anon$lazy$macro$363$1$$anon$48", {
-  LAColor$anon$lazy$macro$363$1$$anon$48: 1,
+var $d_LAColor$anon$lazy$macro$381$1$$anon$50 = new $TypeData().initClass({
+  LAColor$anon$lazy$macro$381$1$$anon$50: 0
+}, false, "AColor$anon$lazy$macro$381$1$$anon$50", {
+  LAColor$anon$lazy$macro$381$1$$anon$50: 1,
   O: 1,
   Lshapeless_DefaultSymbolicLabelling: 1,
   Lshapeless_package$DepFn0: 1,
   s_Serializable: 1,
   Ljava_io_Serializable: 1
 });
-$c_LAColor$anon$lazy$macro$363$1$$anon$48.prototype.$classData = $d_LAColor$anon$lazy$macro$363$1$$anon$48;
+$c_LAColor$anon$lazy$macro$381$1$$anon$50.prototype.$classData = $d_LAColor$anon$lazy$macro$381$1$$anon$50;
 /** @constructor */
-function $c_LAColor$anon$lazy$macro$363$1$$anon$49() {
+function $c_LAColor$anon$lazy$macro$381$1$$anon$51() {
   $c_Lio_circe_generic_decoding_ReprDecoder.call(this);
-  this.fresh$macro$354$2 = null;
-  this.fresh$macro$359$2 = null;
+  this.fresh$macro$372$2 = null;
+  this.fresh$macro$377$2 = null;
   this.$$outer$2 = null
 }
-$c_LAColor$anon$lazy$macro$363$1$$anon$49.prototype = new $h_Lio_circe_generic_decoding_ReprDecoder();
-$c_LAColor$anon$lazy$macro$363$1$$anon$49.prototype.constructor = $c_LAColor$anon$lazy$macro$363$1$$anon$49;
+$c_LAColor$anon$lazy$macro$381$1$$anon$51.prototype = new $h_Lio_circe_generic_decoding_ReprDecoder();
+$c_LAColor$anon$lazy$macro$381$1$$anon$51.prototype.constructor = $c_LAColor$anon$lazy$macro$381$1$$anon$51;
 /** @constructor */
-function $h_LAColor$anon$lazy$macro$363$1$$anon$49() {
+function $h_LAColor$anon$lazy$macro$381$1$$anon$51() {
   /*<skip>*/
 }
-$h_LAColor$anon$lazy$macro$363$1$$anon$49.prototype = $c_LAColor$anon$lazy$macro$363$1$$anon$49.prototype;
-$c_LAColor$anon$lazy$macro$363$1$$anon$49.prototype.init___LAColor$anon$lazy$macro$363$1 = (function($$outer) {
-  if (($$outer === null)) {
-    throw $m_sjsr_package$().unwrapJavaScriptException__jl_Throwable__O(null)
-  } else {
-    this.$$outer$2 = $$outer
-  };
-  var t = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function($this) {
-    return (function() {
-      return $this.$$outer$2.inst$macro$355__Lio_circe_generic_decoding_DerivedDecoder()
-    })
-  })(this));
-  this.fresh$macro$354$2 = $as_Lio_circe_generic_decoding_DerivedDecoder(new $c_Lshapeless_Lazy$$anon$1().init___F0(t).value__O());
-  var t$1 = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function(this$2) {
-    return (function() {
-      return this$2.$$outer$2.inst$macro$360__Lio_circe_generic_decoding_DerivedDecoder()
-    })
-  })(this));
-  this.fresh$macro$359$2 = $as_Lio_circe_generic_decoding_DerivedDecoder(new $c_Lshapeless_Lazy$$anon$1().init___F0(t$1).value__O());
-  return this
-});
-$c_LAColor$anon$lazy$macro$363$1$$anon$49.prototype.apply__Lio_circe_HCursor__s_util_Either = (function(c) {
+$h_LAColor$anon$lazy$macro$381$1$$anon$51.prototype = $c_LAColor$anon$lazy$macro$381$1$$anon$51.prototype;
+$c_LAColor$anon$lazy$macro$381$1$$anon$51.prototype.apply__Lio_circe_HCursor__s_util_Either = (function(c) {
   var result = c.downField__T__Lio_circe_ACursor("Brown");
   if (result.succeeded__Z()) {
-    var this$1 = this.fresh$macro$359$2;
+    var this$1 = this.fresh$macro$377$2;
     var x1 = new $c_s_Some().init___O($f_Lio_circe_Decoder__tryDecode__Lio_circe_ACursor__s_util_Either(this$1, result))
   } else {
     var x1 = $m_s_None$()
@@ -28503,7 +28530,7 @@ $c_LAColor$anon$lazy$macro$363$1$$anon$49.prototype.apply__Lio_circe_HCursor__s_
     if ((x === x1)) {
       var result$3 = c.downField__T__Lio_circe_ACursor("Gray");
       if (result$3.succeeded__Z()) {
-        var this$3 = this.fresh$macro$354$2;
+        var this$3 = this.fresh$macro$372$2;
         var x1$2 = new $c_s_Some().init___O($f_Lio_circe_Decoder__tryDecode__Lio_circe_ACursor__s_util_Either(this$3, result$3))
       } else {
         var x1$2 = $m_s_None$()
@@ -28541,8 +28568,8 @@ $c_LAColor$anon$lazy$macro$363$1$$anon$49.prototype.apply__Lio_circe_HCursor__s_
         if ($is_s_util_Right(x1$4)) {
           var x2$4 = $as_s_util_Right(x1$4);
           var b$2 = x2$4.value$2;
-          var x$20 = $as_Lshapeless_CNil(b$2);
-          var this$8 = new $c_s_util_Right().init___O(new $c_Lshapeless_Inr().init___Lshapeless_Coproduct(x$20))
+          var x$22 = $as_Lshapeless_CNil(b$2);
+          var this$8 = new $c_s_util_Right().init___O(new $c_Lshapeless_Inr().init___Lshapeless_Coproduct(x$22))
         } else {
           if ((!$is_s_util_Left(x1$4))) {
             throw new $c_s_MatchError().init___O(x1$4)
@@ -28555,8 +28582,8 @@ $c_LAColor$anon$lazy$macro$363$1$$anon$49.prototype.apply__Lio_circe_HCursor__s_
       if ($is_s_util_Right(x1$5)) {
         var x2$5 = $as_s_util_Right(x1$5);
         var b$3 = x2$5.value$2;
-        var x$22 = $as_Lshapeless_$colon$plus$colon(b$3);
-        return new $c_s_util_Right().init___O(new $c_Lshapeless_Inr().init___Lshapeless_Coproduct(x$22))
+        var x$24 = $as_Lshapeless_$colon$plus$colon(b$3);
+        return new $c_s_util_Right().init___O(new $c_Lshapeless_Inr().init___Lshapeless_Coproduct(x$24))
       } else if ($is_s_util_Left(x1$5)) {
         return this$9.e$1
       } else {
@@ -28567,187 +28594,239 @@ $c_LAColor$anon$lazy$macro$363$1$$anon$49.prototype.apply__Lio_circe_HCursor__s_
     }
   }
 });
-var $d_LAColor$anon$lazy$macro$363$1$$anon$49 = new $TypeData().initClass({
-  LAColor$anon$lazy$macro$363$1$$anon$49: 0
-}, false, "AColor$anon$lazy$macro$363$1$$anon$49", {
-  LAColor$anon$lazy$macro$363$1$$anon$49: 1,
+$c_LAColor$anon$lazy$macro$381$1$$anon$51.prototype.init___LAColor$anon$lazy$macro$381$1 = (function($$outer) {
+  if (($$outer === null)) {
+    throw $m_sjsr_package$().unwrapJavaScriptException__jl_Throwable__O(null)
+  } else {
+    this.$$outer$2 = $$outer
+  };
+  var t = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function($this) {
+    return (function() {
+      return $this.$$outer$2.inst$macro$373__Lio_circe_generic_decoding_DerivedDecoder()
+    })
+  })(this));
+  this.fresh$macro$372$2 = $as_Lio_circe_generic_decoding_DerivedDecoder(new $c_Lshapeless_Lazy$$anon$1().init___F0(t).value__O());
+  var t$1 = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function(this$2) {
+    return (function() {
+      return this$2.$$outer$2.inst$macro$378__Lio_circe_generic_decoding_DerivedDecoder()
+    })
+  })(this));
+  this.fresh$macro$377$2 = $as_Lio_circe_generic_decoding_DerivedDecoder(new $c_Lshapeless_Lazy$$anon$1().init___F0(t$1).value__O());
+  return this
+});
+var $d_LAColor$anon$lazy$macro$381$1$$anon$51 = new $TypeData().initClass({
+  LAColor$anon$lazy$macro$381$1$$anon$51: 0
+}, false, "AColor$anon$lazy$macro$381$1$$anon$51", {
+  LAColor$anon$lazy$macro$381$1$$anon$51: 1,
   Lio_circe_generic_decoding_ReprDecoder: 1,
   O: 1,
   Lio_circe_Decoder: 1,
   s_Serializable: 1,
   Ljava_io_Serializable: 1
 });
-$c_LAColor$anon$lazy$macro$363$1$$anon$49.prototype.$classData = $d_LAColor$anon$lazy$macro$363$1$$anon$49;
+$c_LAColor$anon$lazy$macro$381$1$$anon$51.prototype.$classData = $d_LAColor$anon$lazy$macro$381$1$$anon$51;
 /** @constructor */
-function $c_LAColor$anon$lazy$macro$363$1$$anon$50() {
+function $c_LAColor$anon$lazy$macro$381$1$$anon$52() {
   $c_O.call(this)
 }
-$c_LAColor$anon$lazy$macro$363$1$$anon$50.prototype = new $h_O();
-$c_LAColor$anon$lazy$macro$363$1$$anon$50.prototype.constructor = $c_LAColor$anon$lazy$macro$363$1$$anon$50;
+$c_LAColor$anon$lazy$macro$381$1$$anon$52.prototype = new $h_O();
+$c_LAColor$anon$lazy$macro$381$1$$anon$52.prototype.constructor = $c_LAColor$anon$lazy$macro$381$1$$anon$52;
 /** @constructor */
-function $h_LAColor$anon$lazy$macro$363$1$$anon$50() {
+function $h_LAColor$anon$lazy$macro$381$1$$anon$52() {
   /*<skip>*/
 }
-$h_LAColor$anon$lazy$macro$363$1$$anon$50.prototype = $c_LAColor$anon$lazy$macro$363$1$$anon$50.prototype;
-$c_LAColor$anon$lazy$macro$363$1$$anon$50.prototype.init___LAColor$anon$lazy$macro$363$1 = (function($$outer) {
+$h_LAColor$anon$lazy$macro$381$1$$anon$52.prototype = $c_LAColor$anon$lazy$macro$381$1$$anon$52.prototype;
+$c_LAColor$anon$lazy$macro$381$1$$anon$52.prototype.init___LAColor$anon$lazy$macro$381$1 = (function($$outer) {
   return this
 });
-var $d_LAColor$anon$lazy$macro$363$1$$anon$50 = new $TypeData().initClass({
-  LAColor$anon$lazy$macro$363$1$$anon$50: 0
-}, false, "AColor$anon$lazy$macro$363$1$$anon$50", {
-  LAColor$anon$lazy$macro$363$1$$anon$50: 1,
+var $d_LAColor$anon$lazy$macro$381$1$$anon$52 = new $TypeData().initClass({
+  LAColor$anon$lazy$macro$381$1$$anon$52: 0
+}, false, "AColor$anon$lazy$macro$381$1$$anon$52", {
+  LAColor$anon$lazy$macro$381$1$$anon$52: 1,
   O: 1,
   Lshapeless_DefaultSymbolicLabelling: 1,
   Lshapeless_package$DepFn0: 1,
   s_Serializable: 1,
   Ljava_io_Serializable: 1
 });
-$c_LAColor$anon$lazy$macro$363$1$$anon$50.prototype.$classData = $d_LAColor$anon$lazy$macro$363$1$$anon$50;
+$c_LAColor$anon$lazy$macro$381$1$$anon$52.prototype.$classData = $d_LAColor$anon$lazy$macro$381$1$$anon$52;
 /** @constructor */
-function $c_LASize$anon$lazy$macro$385$1$$anon$51() {
+function $c_LASize$anon$lazy$macro$403$1$$anon$53() {
   $c_O.call(this)
 }
-$c_LASize$anon$lazy$macro$385$1$$anon$51.prototype = new $h_O();
-$c_LASize$anon$lazy$macro$385$1$$anon$51.prototype.constructor = $c_LASize$anon$lazy$macro$385$1$$anon$51;
+$c_LASize$anon$lazy$macro$403$1$$anon$53.prototype = new $h_O();
+$c_LASize$anon$lazy$macro$403$1$$anon$53.prototype.constructor = $c_LASize$anon$lazy$macro$403$1$$anon$53;
 /** @constructor */
-function $h_LASize$anon$lazy$macro$385$1$$anon$51() {
+function $h_LASize$anon$lazy$macro$403$1$$anon$53() {
   /*<skip>*/
 }
-$h_LASize$anon$lazy$macro$385$1$$anon$51.prototype = $c_LASize$anon$lazy$macro$385$1$$anon$51.prototype;
-$c_LASize$anon$lazy$macro$385$1$$anon$51.prototype.init___LASize$anon$lazy$macro$385$1 = (function($$outer) {
+$h_LASize$anon$lazy$macro$403$1$$anon$53.prototype = $c_LASize$anon$lazy$macro$403$1$$anon$53.prototype;
+$c_LASize$anon$lazy$macro$403$1$$anon$53.prototype.init___LASize$anon$lazy$macro$403$1 = (function($$outer) {
   return this
 });
-var $d_LASize$anon$lazy$macro$385$1$$anon$51 = new $TypeData().initClass({
-  LASize$anon$lazy$macro$385$1$$anon$51: 0
-}, false, "ASize$anon$lazy$macro$385$1$$anon$51", {
-  LASize$anon$lazy$macro$385$1$$anon$51: 1,
+var $d_LASize$anon$lazy$macro$403$1$$anon$53 = new $TypeData().initClass({
+  LASize$anon$lazy$macro$403$1$$anon$53: 0
+}, false, "ASize$anon$lazy$macro$403$1$$anon$53", {
+  LASize$anon$lazy$macro$403$1$$anon$53: 1,
   O: 1,
   Lshapeless_DefaultSymbolicLabelling: 1,
   Lshapeless_package$DepFn0: 1,
   s_Serializable: 1,
   Ljava_io_Serializable: 1
 });
-$c_LASize$anon$lazy$macro$385$1$$anon$51.prototype.$classData = $d_LASize$anon$lazy$macro$385$1$$anon$51;
+$c_LASize$anon$lazy$macro$403$1$$anon$53.prototype.$classData = $d_LASize$anon$lazy$macro$403$1$$anon$53;
 /** @constructor */
-function $c_LASize$anon$lazy$macro$408$1$$anon$52() {
+function $c_LASize$anon$lazy$macro$426$1$$anon$54() {
   $c_O.call(this)
 }
-$c_LASize$anon$lazy$macro$408$1$$anon$52.prototype = new $h_O();
-$c_LASize$anon$lazy$macro$408$1$$anon$52.prototype.constructor = $c_LASize$anon$lazy$macro$408$1$$anon$52;
+$c_LASize$anon$lazy$macro$426$1$$anon$54.prototype = new $h_O();
+$c_LASize$anon$lazy$macro$426$1$$anon$54.prototype.constructor = $c_LASize$anon$lazy$macro$426$1$$anon$54;
 /** @constructor */
-function $h_LASize$anon$lazy$macro$408$1$$anon$52() {
+function $h_LASize$anon$lazy$macro$426$1$$anon$54() {
   /*<skip>*/
 }
-$h_LASize$anon$lazy$macro$408$1$$anon$52.prototype = $c_LASize$anon$lazy$macro$408$1$$anon$52.prototype;
-$c_LASize$anon$lazy$macro$408$1$$anon$52.prototype.init___LASize$anon$lazy$macro$408$1 = (function($$outer) {
+$h_LASize$anon$lazy$macro$426$1$$anon$54.prototype = $c_LASize$anon$lazy$macro$426$1$$anon$54.prototype;
+$c_LASize$anon$lazy$macro$426$1$$anon$54.prototype.init___LASize$anon$lazy$macro$426$1 = (function($$outer) {
   return this
 });
-var $d_LASize$anon$lazy$macro$408$1$$anon$52 = new $TypeData().initClass({
-  LASize$anon$lazy$macro$408$1$$anon$52: 0
-}, false, "ASize$anon$lazy$macro$408$1$$anon$52", {
-  LASize$anon$lazy$macro$408$1$$anon$52: 1,
+var $d_LASize$anon$lazy$macro$426$1$$anon$54 = new $TypeData().initClass({
+  LASize$anon$lazy$macro$426$1$$anon$54: 0
+}, false, "ASize$anon$lazy$macro$426$1$$anon$54", {
+  LASize$anon$lazy$macro$426$1$$anon$54: 1,
   O: 1,
   Lshapeless_DefaultSymbolicLabelling: 1,
   Lshapeless_package$DepFn0: 1,
   s_Serializable: 1,
   Ljava_io_Serializable: 1
 });
-$c_LASize$anon$lazy$macro$408$1$$anon$52.prototype.$classData = $d_LASize$anon$lazy$macro$408$1$$anon$52;
+$c_LASize$anon$lazy$macro$426$1$$anon$54.prototype.$classData = $d_LASize$anon$lazy$macro$426$1$$anon$54;
 /** @constructor */
-function $c_LASize$anon$lazy$macro$408$1$$anon$53() {
+function $c_LASize$anon$lazy$macro$426$1$$anon$55() {
   $c_O.call(this)
 }
-$c_LASize$anon$lazy$macro$408$1$$anon$53.prototype = new $h_O();
-$c_LASize$anon$lazy$macro$408$1$$anon$53.prototype.constructor = $c_LASize$anon$lazy$macro$408$1$$anon$53;
+$c_LASize$anon$lazy$macro$426$1$$anon$55.prototype = new $h_O();
+$c_LASize$anon$lazy$macro$426$1$$anon$55.prototype.constructor = $c_LASize$anon$lazy$macro$426$1$$anon$55;
 /** @constructor */
-function $h_LASize$anon$lazy$macro$408$1$$anon$53() {
+function $h_LASize$anon$lazy$macro$426$1$$anon$55() {
   /*<skip>*/
 }
-$h_LASize$anon$lazy$macro$408$1$$anon$53.prototype = $c_LASize$anon$lazy$macro$408$1$$anon$53.prototype;
-$c_LASize$anon$lazy$macro$408$1$$anon$53.prototype.init___LASize$anon$lazy$macro$408$1 = (function($$outer) {
+$h_LASize$anon$lazy$macro$426$1$$anon$55.prototype = $c_LASize$anon$lazy$macro$426$1$$anon$55.prototype;
+$c_LASize$anon$lazy$macro$426$1$$anon$55.prototype.init___LASize$anon$lazy$macro$426$1 = (function($$outer) {
   return this
 });
-var $d_LASize$anon$lazy$macro$408$1$$anon$53 = new $TypeData().initClass({
-  LASize$anon$lazy$macro$408$1$$anon$53: 0
-}, false, "ASize$anon$lazy$macro$408$1$$anon$53", {
-  LASize$anon$lazy$macro$408$1$$anon$53: 1,
+var $d_LASize$anon$lazy$macro$426$1$$anon$55 = new $TypeData().initClass({
+  LASize$anon$lazy$macro$426$1$$anon$55: 0
+}, false, "ASize$anon$lazy$macro$426$1$$anon$55", {
+  LASize$anon$lazy$macro$426$1$$anon$55: 1,
   O: 1,
   Lshapeless_DefaultSymbolicLabelling: 1,
   Lshapeless_package$DepFn0: 1,
   s_Serializable: 1,
   Ljava_io_Serializable: 1
 });
-$c_LASize$anon$lazy$macro$408$1$$anon$53.prototype.$classData = $d_LASize$anon$lazy$macro$408$1$$anon$53;
+$c_LASize$anon$lazy$macro$426$1$$anon$55.prototype.$classData = $d_LASize$anon$lazy$macro$426$1$$anon$55;
 /** @constructor */
-function $c_LASize$anon$lazy$macro$408$1$$anon$54() {
+function $c_LASize$anon$lazy$macro$426$1$$anon$56() {
   $c_O.call(this)
 }
-$c_LASize$anon$lazy$macro$408$1$$anon$54.prototype = new $h_O();
-$c_LASize$anon$lazy$macro$408$1$$anon$54.prototype.constructor = $c_LASize$anon$lazy$macro$408$1$$anon$54;
+$c_LASize$anon$lazy$macro$426$1$$anon$56.prototype = new $h_O();
+$c_LASize$anon$lazy$macro$426$1$$anon$56.prototype.constructor = $c_LASize$anon$lazy$macro$426$1$$anon$56;
 /** @constructor */
-function $h_LASize$anon$lazy$macro$408$1$$anon$54() {
+function $h_LASize$anon$lazy$macro$426$1$$anon$56() {
   /*<skip>*/
 }
-$h_LASize$anon$lazy$macro$408$1$$anon$54.prototype = $c_LASize$anon$lazy$macro$408$1$$anon$54.prototype;
-$c_LASize$anon$lazy$macro$408$1$$anon$54.prototype.init___LASize$anon$lazy$macro$408$1 = (function($$outer) {
+$h_LASize$anon$lazy$macro$426$1$$anon$56.prototype = $c_LASize$anon$lazy$macro$426$1$$anon$56.prototype;
+$c_LASize$anon$lazy$macro$426$1$$anon$56.prototype.init___LASize$anon$lazy$macro$426$1 = (function($$outer) {
   return this
 });
-var $d_LASize$anon$lazy$macro$408$1$$anon$54 = new $TypeData().initClass({
-  LASize$anon$lazy$macro$408$1$$anon$54: 0
-}, false, "ASize$anon$lazy$macro$408$1$$anon$54", {
-  LASize$anon$lazy$macro$408$1$$anon$54: 1,
+var $d_LASize$anon$lazy$macro$426$1$$anon$56 = new $TypeData().initClass({
+  LASize$anon$lazy$macro$426$1$$anon$56: 0
+}, false, "ASize$anon$lazy$macro$426$1$$anon$56", {
+  LASize$anon$lazy$macro$426$1$$anon$56: 1,
   O: 1,
   Lshapeless_DefaultSymbolicLabelling: 1,
   Lshapeless_package$DepFn0: 1,
   s_Serializable: 1,
   Ljava_io_Serializable: 1
 });
-$c_LASize$anon$lazy$macro$408$1$$anon$54.prototype.$classData = $d_LASize$anon$lazy$macro$408$1$$anon$54;
+$c_LASize$anon$lazy$macro$426$1$$anon$56.prototype.$classData = $d_LASize$anon$lazy$macro$426$1$$anon$56;
 /** @constructor */
-function $c_LASize$anon$lazy$macro$408$1$$anon$55() {
+function $c_LASize$anon$lazy$macro$426$1$$anon$57() {
   $c_O.call(this)
 }
-$c_LASize$anon$lazy$macro$408$1$$anon$55.prototype = new $h_O();
-$c_LASize$anon$lazy$macro$408$1$$anon$55.prototype.constructor = $c_LASize$anon$lazy$macro$408$1$$anon$55;
+$c_LASize$anon$lazy$macro$426$1$$anon$57.prototype = new $h_O();
+$c_LASize$anon$lazy$macro$426$1$$anon$57.prototype.constructor = $c_LASize$anon$lazy$macro$426$1$$anon$57;
 /** @constructor */
-function $h_LASize$anon$lazy$macro$408$1$$anon$55() {
+function $h_LASize$anon$lazy$macro$426$1$$anon$57() {
   /*<skip>*/
 }
-$h_LASize$anon$lazy$macro$408$1$$anon$55.prototype = $c_LASize$anon$lazy$macro$408$1$$anon$55.prototype;
-$c_LASize$anon$lazy$macro$408$1$$anon$55.prototype.init___LASize$anon$lazy$macro$408$1 = (function($$outer) {
+$h_LASize$anon$lazy$macro$426$1$$anon$57.prototype = $c_LASize$anon$lazy$macro$426$1$$anon$57.prototype;
+$c_LASize$anon$lazy$macro$426$1$$anon$57.prototype.init___LASize$anon$lazy$macro$426$1 = (function($$outer) {
   return this
 });
-var $d_LASize$anon$lazy$macro$408$1$$anon$55 = new $TypeData().initClass({
-  LASize$anon$lazy$macro$408$1$$anon$55: 0
-}, false, "ASize$anon$lazy$macro$408$1$$anon$55", {
-  LASize$anon$lazy$macro$408$1$$anon$55: 1,
+var $d_LASize$anon$lazy$macro$426$1$$anon$57 = new $TypeData().initClass({
+  LASize$anon$lazy$macro$426$1$$anon$57: 0
+}, false, "ASize$anon$lazy$macro$426$1$$anon$57", {
+  LASize$anon$lazy$macro$426$1$$anon$57: 1,
   O: 1,
   Lshapeless_DefaultSymbolicLabelling: 1,
   Lshapeless_package$DepFn0: 1,
   s_Serializable: 1,
   Ljava_io_Serializable: 1
 });
-$c_LASize$anon$lazy$macro$408$1$$anon$55.prototype.$classData = $d_LASize$anon$lazy$macro$408$1$$anon$55;
+$c_LASize$anon$lazy$macro$426$1$$anon$57.prototype.$classData = $d_LASize$anon$lazy$macro$426$1$$anon$57;
 /** @constructor */
-function $c_LASize$anon$lazy$macro$408$1$$anon$56() {
+function $c_LASize$anon$lazy$macro$426$1$$anon$58() {
   $c_Lio_circe_generic_decoding_ReprDecoder.call(this);
-  this.fresh$macro$391$2 = null;
-  this.fresh$macro$396$2 = null;
-  this.fresh$macro$400$2 = null;
-  this.fresh$macro$404$2 = null;
+  this.fresh$macro$409$2 = null;
+  this.fresh$macro$414$2 = null;
+  this.fresh$macro$418$2 = null;
+  this.fresh$macro$422$2 = null;
   this.$$outer$2 = null
 }
-$c_LASize$anon$lazy$macro$408$1$$anon$56.prototype = new $h_Lio_circe_generic_decoding_ReprDecoder();
-$c_LASize$anon$lazy$macro$408$1$$anon$56.prototype.constructor = $c_LASize$anon$lazy$macro$408$1$$anon$56;
+$c_LASize$anon$lazy$macro$426$1$$anon$58.prototype = new $h_Lio_circe_generic_decoding_ReprDecoder();
+$c_LASize$anon$lazy$macro$426$1$$anon$58.prototype.constructor = $c_LASize$anon$lazy$macro$426$1$$anon$58;
 /** @constructor */
-function $h_LASize$anon$lazy$macro$408$1$$anon$56() {
+function $h_LASize$anon$lazy$macro$426$1$$anon$58() {
   /*<skip>*/
 }
-$h_LASize$anon$lazy$macro$408$1$$anon$56.prototype = $c_LASize$anon$lazy$macro$408$1$$anon$56.prototype;
-$c_LASize$anon$lazy$macro$408$1$$anon$56.prototype.apply__Lio_circe_HCursor__s_util_Either = (function(c) {
+$h_LASize$anon$lazy$macro$426$1$$anon$58.prototype = $c_LASize$anon$lazy$macro$426$1$$anon$58.prototype;
+$c_LASize$anon$lazy$macro$426$1$$anon$58.prototype.init___LASize$anon$lazy$macro$426$1 = (function($$outer) {
+  if (($$outer === null)) {
+    throw $m_sjsr_package$().unwrapJavaScriptException__jl_Throwable__O(null)
+  } else {
+    this.$$outer$2 = $$outer
+  };
+  var t = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function($this) {
+    return (function() {
+      return $this.$$outer$2.inst$macro$410__Lio_circe_generic_decoding_DerivedDecoder()
+    })
+  })(this));
+  this.fresh$macro$409$2 = $as_Lio_circe_generic_decoding_DerivedDecoder(new $c_Lshapeless_Lazy$$anon$1().init___F0(t).value__O());
+  var t$1 = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function(this$2) {
+    return (function() {
+      return this$2.$$outer$2.inst$macro$415__Lio_circe_generic_decoding_DerivedDecoder()
+    })
+  })(this));
+  this.fresh$macro$414$2 = $as_Lio_circe_generic_decoding_DerivedDecoder(new $c_Lshapeless_Lazy$$anon$1().init___F0(t$1).value__O());
+  var t$2 = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function(this$3$1) {
+    return (function() {
+      return this$3$1.$$outer$2.inst$macro$419__Lio_circe_generic_decoding_DerivedDecoder()
+    })
+  })(this));
+  this.fresh$macro$418$2 = $as_Lio_circe_generic_decoding_DerivedDecoder(new $c_Lshapeless_Lazy$$anon$1().init___F0(t$2).value__O());
+  var t$3 = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function(this$4$1) {
+    return (function() {
+      return this$4$1.$$outer$2.inst$macro$423__Lio_circe_generic_decoding_DerivedDecoder()
+    })
+  })(this));
+  this.fresh$macro$422$2 = $as_Lio_circe_generic_decoding_DerivedDecoder(new $c_Lshapeless_Lazy$$anon$1().init___F0(t$3).value__O());
+  return this
+});
+$c_LASize$anon$lazy$macro$426$1$$anon$58.prototype.apply__Lio_circe_HCursor__s_util_Either = (function(c) {
   var result = c.downField__T__Lio_circe_ACursor("Big");
   if (result.succeeded__Z()) {
-    var this$1 = this.fresh$macro$404$2;
+    var this$1 = this.fresh$macro$422$2;
     var x1 = new $c_s_Some().init___O($f_Lio_circe_Decoder__tryDecode__Lio_circe_ACursor__s_util_Either(this$1, result))
   } else {
     var x1 = $m_s_None$()
@@ -28772,7 +28851,7 @@ $c_LASize$anon$lazy$macro$408$1$$anon$56.prototype.apply__Lio_circe_HCursor__s_u
     if ((x === x1)) {
       var result$3 = c.downField__T__Lio_circe_ACursor("Medium");
       if (result$3.succeeded__Z()) {
-        var this$3 = this.fresh$macro$400$2;
+        var this$3 = this.fresh$macro$418$2;
         var x1$2 = new $c_s_Some().init___O($f_Lio_circe_Decoder__tryDecode__Lio_circe_ACursor__s_util_Either(this$3, result$3))
       } else {
         var x1$2 = $m_s_None$()
@@ -28800,7 +28879,7 @@ $c_LASize$anon$lazy$macro$408$1$$anon$56.prototype.apply__Lio_circe_HCursor__s_u
         };
         var result$5 = c.downField__T__Lio_circe_ACursor("Small");
         if (result$5.succeeded__Z()) {
-          var this$5 = this.fresh$macro$396$2;
+          var this$5 = this.fresh$macro$414$2;
           var x1$3$1 = new $c_s_Some().init___O($f_Lio_circe_Decoder__tryDecode__Lio_circe_ACursor__s_util_Either(this$5, result$5))
         } else {
           var x1$3$1 = $m_s_None$()
@@ -28828,7 +28907,7 @@ $c_LASize$anon$lazy$macro$408$1$$anon$56.prototype.apply__Lio_circe_HCursor__s_u
           };
           var result$7 = c.downField__T__Lio_circe_ACursor("Tiny");
           if (result$7.succeeded__Z()) {
-            var this$7 = this.fresh$macro$391$2;
+            var this$7 = this.fresh$macro$409$2;
             var x1$4$1 = new $c_s_Some().init___O($f_Lio_circe_Decoder__tryDecode__Lio_circe_ACursor__s_util_Either(this$7, result$7))
           } else {
             var x1$4$1 = $m_s_None$()
@@ -28866,8 +28945,8 @@ $c_LASize$anon$lazy$macro$408$1$$anon$56.prototype.apply__Lio_circe_HCursor__s_u
             if ($is_s_util_Right(x1$6)) {
               var x2$6 = $as_s_util_Right(x1$6);
               var b$4 = x2$6.value$2;
-              var x$24 = $as_Lshapeless_CNil(b$4);
-              var this$12 = new $c_s_util_Right().init___O(new $c_Lshapeless_Inr().init___Lshapeless_Coproduct(x$24))
+              var x$26 = $as_Lshapeless_CNil(b$4);
+              var this$12 = new $c_s_util_Right().init___O(new $c_Lshapeless_Inr().init___Lshapeless_Coproduct(x$26))
             } else {
               if ((!$is_s_util_Left(x1$6))) {
                 throw new $c_s_MatchError().init___O(x1$6)
@@ -28880,8 +28959,8 @@ $c_LASize$anon$lazy$macro$408$1$$anon$56.prototype.apply__Lio_circe_HCursor__s_u
           if ($is_s_util_Right(x1$7)) {
             var x2$7 = $as_s_util_Right(x1$7);
             var b$5 = x2$7.value$2;
-            var x$26 = $as_Lshapeless_$colon$plus$colon(b$5);
-            var this$14 = new $c_s_util_Right().init___O(new $c_Lshapeless_Inr().init___Lshapeless_Coproduct(x$26))
+            var x$28 = $as_Lshapeless_$colon$plus$colon(b$5);
+            var this$14 = new $c_s_util_Right().init___O(new $c_Lshapeless_Inr().init___Lshapeless_Coproduct(x$28))
           } else {
             if ((!$is_s_util_Left(x1$7))) {
               throw new $c_s_MatchError().init___O(x1$7)
@@ -28894,8 +28973,8 @@ $c_LASize$anon$lazy$macro$408$1$$anon$56.prototype.apply__Lio_circe_HCursor__s_u
         if ($is_s_util_Right(x1$8)) {
           var x2$8 = $as_s_util_Right(x1$8);
           var b$6 = x2$8.value$2;
-          var x$28 = $as_Lshapeless_$colon$plus$colon(b$6);
-          var this$16 = new $c_s_util_Right().init___O(new $c_Lshapeless_Inr().init___Lshapeless_Coproduct(x$28))
+          var x$30 = $as_Lshapeless_$colon$plus$colon(b$6);
+          var this$16 = new $c_s_util_Right().init___O(new $c_Lshapeless_Inr().init___Lshapeless_Coproduct(x$30))
         } else {
           if ((!$is_s_util_Left(x1$8))) {
             throw new $c_s_MatchError().init___O(x1$8)
@@ -28908,8 +28987,8 @@ $c_LASize$anon$lazy$macro$408$1$$anon$56.prototype.apply__Lio_circe_HCursor__s_u
       if ($is_s_util_Right(x1$9)) {
         var x2$9 = $as_s_util_Right(x1$9);
         var b$7 = x2$9.value$2;
-        var x$30 = $as_Lshapeless_$colon$plus$colon(b$7);
-        return new $c_s_util_Right().init___O(new $c_Lshapeless_Inr().init___Lshapeless_Coproduct(x$30))
+        var x$32 = $as_Lshapeless_$colon$plus$colon(b$7);
+        return new $c_s_util_Right().init___O(new $c_Lshapeless_Inr().init___Lshapeless_Coproduct(x$32))
       } else if ($is_s_util_Left(x1$9)) {
         return this$17.e$1
       } else {
@@ -28920,283 +28999,213 @@ $c_LASize$anon$lazy$macro$408$1$$anon$56.prototype.apply__Lio_circe_HCursor__s_u
     }
   }
 });
-$c_LASize$anon$lazy$macro$408$1$$anon$56.prototype.init___LASize$anon$lazy$macro$408$1 = (function($$outer) {
-  if (($$outer === null)) {
-    throw $m_sjsr_package$().unwrapJavaScriptException__jl_Throwable__O(null)
-  } else {
-    this.$$outer$2 = $$outer
-  };
-  var t = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function($this) {
-    return (function() {
-      return $this.$$outer$2.inst$macro$392__Lio_circe_generic_decoding_DerivedDecoder()
-    })
-  })(this));
-  this.fresh$macro$391$2 = $as_Lio_circe_generic_decoding_DerivedDecoder(new $c_Lshapeless_Lazy$$anon$1().init___F0(t).value__O());
-  var t$1 = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function(this$2) {
-    return (function() {
-      return this$2.$$outer$2.inst$macro$397__Lio_circe_generic_decoding_DerivedDecoder()
-    })
-  })(this));
-  this.fresh$macro$396$2 = $as_Lio_circe_generic_decoding_DerivedDecoder(new $c_Lshapeless_Lazy$$anon$1().init___F0(t$1).value__O());
-  var t$2 = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function(this$3$1) {
-    return (function() {
-      return this$3$1.$$outer$2.inst$macro$401__Lio_circe_generic_decoding_DerivedDecoder()
-    })
-  })(this));
-  this.fresh$macro$400$2 = $as_Lio_circe_generic_decoding_DerivedDecoder(new $c_Lshapeless_Lazy$$anon$1().init___F0(t$2).value__O());
-  var t$3 = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function(this$4$1) {
-    return (function() {
-      return this$4$1.$$outer$2.inst$macro$405__Lio_circe_generic_decoding_DerivedDecoder()
-    })
-  })(this));
-  this.fresh$macro$404$2 = $as_Lio_circe_generic_decoding_DerivedDecoder(new $c_Lshapeless_Lazy$$anon$1().init___F0(t$3).value__O());
-  return this
-});
-var $d_LASize$anon$lazy$macro$408$1$$anon$56 = new $TypeData().initClass({
-  LASize$anon$lazy$macro$408$1$$anon$56: 0
-}, false, "ASize$anon$lazy$macro$408$1$$anon$56", {
-  LASize$anon$lazy$macro$408$1$$anon$56: 1,
+var $d_LASize$anon$lazy$macro$426$1$$anon$58 = new $TypeData().initClass({
+  LASize$anon$lazy$macro$426$1$$anon$58: 0
+}, false, "ASize$anon$lazy$macro$426$1$$anon$58", {
+  LASize$anon$lazy$macro$426$1$$anon$58: 1,
   Lio_circe_generic_decoding_ReprDecoder: 1,
   O: 1,
   Lio_circe_Decoder: 1,
   s_Serializable: 1,
   Ljava_io_Serializable: 1
 });
-$c_LASize$anon$lazy$macro$408$1$$anon$56.prototype.$classData = $d_LASize$anon$lazy$macro$408$1$$anon$56;
+$c_LASize$anon$lazy$macro$426$1$$anon$58.prototype.$classData = $d_LASize$anon$lazy$macro$426$1$$anon$58;
 /** @constructor */
-function $c_LASize$anon$lazy$macro$408$1$$anon$57() {
+function $c_LASize$anon$lazy$macro$426$1$$anon$59() {
   $c_O.call(this)
 }
-$c_LASize$anon$lazy$macro$408$1$$anon$57.prototype = new $h_O();
-$c_LASize$anon$lazy$macro$408$1$$anon$57.prototype.constructor = $c_LASize$anon$lazy$macro$408$1$$anon$57;
+$c_LASize$anon$lazy$macro$426$1$$anon$59.prototype = new $h_O();
+$c_LASize$anon$lazy$macro$426$1$$anon$59.prototype.constructor = $c_LASize$anon$lazy$macro$426$1$$anon$59;
 /** @constructor */
-function $h_LASize$anon$lazy$macro$408$1$$anon$57() {
+function $h_LASize$anon$lazy$macro$426$1$$anon$59() {
   /*<skip>*/
 }
-$h_LASize$anon$lazy$macro$408$1$$anon$57.prototype = $c_LASize$anon$lazy$macro$408$1$$anon$57.prototype;
-$c_LASize$anon$lazy$macro$408$1$$anon$57.prototype.init___LASize$anon$lazy$macro$408$1 = (function($$outer) {
+$h_LASize$anon$lazy$macro$426$1$$anon$59.prototype = $c_LASize$anon$lazy$macro$426$1$$anon$59.prototype;
+$c_LASize$anon$lazy$macro$426$1$$anon$59.prototype.init___LASize$anon$lazy$macro$426$1 = (function($$outer) {
   return this
 });
-var $d_LASize$anon$lazy$macro$408$1$$anon$57 = new $TypeData().initClass({
-  LASize$anon$lazy$macro$408$1$$anon$57: 0
-}, false, "ASize$anon$lazy$macro$408$1$$anon$57", {
-  LASize$anon$lazy$macro$408$1$$anon$57: 1,
+var $d_LASize$anon$lazy$macro$426$1$$anon$59 = new $TypeData().initClass({
+  LASize$anon$lazy$macro$426$1$$anon$59: 0
+}, false, "ASize$anon$lazy$macro$426$1$$anon$59", {
+  LASize$anon$lazy$macro$426$1$$anon$59: 1,
   O: 1,
   Lshapeless_DefaultSymbolicLabelling: 1,
   Lshapeless_package$DepFn0: 1,
   s_Serializable: 1,
   Ljava_io_Serializable: 1
 });
-$c_LASize$anon$lazy$macro$408$1$$anon$57.prototype.$classData = $d_LASize$anon$lazy$macro$408$1$$anon$57;
+$c_LASize$anon$lazy$macro$426$1$$anon$59.prototype.$classData = $d_LASize$anon$lazy$macro$426$1$$anon$59;
 /** @constructor */
-function $c_LCommand$anon$lazy$macro$434$1$$anon$58() {
+function $c_LCommand$anon$lazy$macro$452$1$$anon$60() {
   $c_O.call(this)
 }
-$c_LCommand$anon$lazy$macro$434$1$$anon$58.prototype = new $h_O();
-$c_LCommand$anon$lazy$macro$434$1$$anon$58.prototype.constructor = $c_LCommand$anon$lazy$macro$434$1$$anon$58;
+$c_LCommand$anon$lazy$macro$452$1$$anon$60.prototype = new $h_O();
+$c_LCommand$anon$lazy$macro$452$1$$anon$60.prototype.constructor = $c_LCommand$anon$lazy$macro$452$1$$anon$60;
 /** @constructor */
-function $h_LCommand$anon$lazy$macro$434$1$$anon$58() {
+function $h_LCommand$anon$lazy$macro$452$1$$anon$60() {
   /*<skip>*/
 }
-$h_LCommand$anon$lazy$macro$434$1$$anon$58.prototype = $c_LCommand$anon$lazy$macro$434$1$$anon$58.prototype;
-$c_LCommand$anon$lazy$macro$434$1$$anon$58.prototype.init___LCommand$anon$lazy$macro$434$1 = (function($$outer) {
+$h_LCommand$anon$lazy$macro$452$1$$anon$60.prototype = $c_LCommand$anon$lazy$macro$452$1$$anon$60.prototype;
+$c_LCommand$anon$lazy$macro$452$1$$anon$60.prototype.init___LCommand$anon$lazy$macro$452$1 = (function($$outer) {
   return this
 });
-var $d_LCommand$anon$lazy$macro$434$1$$anon$58 = new $TypeData().initClass({
-  LCommand$anon$lazy$macro$434$1$$anon$58: 0
-}, false, "Command$anon$lazy$macro$434$1$$anon$58", {
-  LCommand$anon$lazy$macro$434$1$$anon$58: 1,
+var $d_LCommand$anon$lazy$macro$452$1$$anon$60 = new $TypeData().initClass({
+  LCommand$anon$lazy$macro$452$1$$anon$60: 0
+}, false, "Command$anon$lazy$macro$452$1$$anon$60", {
+  LCommand$anon$lazy$macro$452$1$$anon$60: 1,
   O: 1,
   Lshapeless_DefaultSymbolicLabelling: 1,
   Lshapeless_package$DepFn0: 1,
   s_Serializable: 1,
   Ljava_io_Serializable: 1
 });
-$c_LCommand$anon$lazy$macro$434$1$$anon$58.prototype.$classData = $d_LCommand$anon$lazy$macro$434$1$$anon$58;
+$c_LCommand$anon$lazy$macro$452$1$$anon$60.prototype.$classData = $d_LCommand$anon$lazy$macro$452$1$$anon$60;
 /** @constructor */
-function $c_LCommand$anon$lazy$macro$461$1$$anon$59() {
+function $c_LCommand$anon$lazy$macro$479$1$$anon$61() {
   $c_O.call(this)
 }
-$c_LCommand$anon$lazy$macro$461$1$$anon$59.prototype = new $h_O();
-$c_LCommand$anon$lazy$macro$461$1$$anon$59.prototype.constructor = $c_LCommand$anon$lazy$macro$461$1$$anon$59;
+$c_LCommand$anon$lazy$macro$479$1$$anon$61.prototype = new $h_O();
+$c_LCommand$anon$lazy$macro$479$1$$anon$61.prototype.constructor = $c_LCommand$anon$lazy$macro$479$1$$anon$61;
 /** @constructor */
-function $h_LCommand$anon$lazy$macro$461$1$$anon$59() {
+function $h_LCommand$anon$lazy$macro$479$1$$anon$61() {
   /*<skip>*/
 }
-$h_LCommand$anon$lazy$macro$461$1$$anon$59.prototype = $c_LCommand$anon$lazy$macro$461$1$$anon$59.prototype;
-$c_LCommand$anon$lazy$macro$461$1$$anon$59.prototype.init___LCommand$anon$lazy$macro$461$1 = (function($$outer) {
+$h_LCommand$anon$lazy$macro$479$1$$anon$61.prototype = $c_LCommand$anon$lazy$macro$479$1$$anon$61.prototype;
+$c_LCommand$anon$lazy$macro$479$1$$anon$61.prototype.init___LCommand$anon$lazy$macro$479$1 = (function($$outer) {
   return this
 });
-var $d_LCommand$anon$lazy$macro$461$1$$anon$59 = new $TypeData().initClass({
-  LCommand$anon$lazy$macro$461$1$$anon$59: 0
-}, false, "Command$anon$lazy$macro$461$1$$anon$59", {
-  LCommand$anon$lazy$macro$461$1$$anon$59: 1,
+var $d_LCommand$anon$lazy$macro$479$1$$anon$61 = new $TypeData().initClass({
+  LCommand$anon$lazy$macro$479$1$$anon$61: 0
+}, false, "Command$anon$lazy$macro$479$1$$anon$61", {
+  LCommand$anon$lazy$macro$479$1$$anon$61: 1,
   O: 1,
   Lshapeless_DefaultSymbolicLabelling: 1,
   Lshapeless_package$DepFn0: 1,
   s_Serializable: 1,
   Ljava_io_Serializable: 1
 });
-$c_LCommand$anon$lazy$macro$461$1$$anon$59.prototype.$classData = $d_LCommand$anon$lazy$macro$461$1$$anon$59;
+$c_LCommand$anon$lazy$macro$479$1$$anon$61.prototype.$classData = $d_LCommand$anon$lazy$macro$479$1$$anon$61;
 /** @constructor */
-function $c_LCommand$anon$lazy$macro$461$1$$anon$60() {
+function $c_LCommand$anon$lazy$macro$479$1$$anon$62() {
   $c_O.call(this)
 }
-$c_LCommand$anon$lazy$macro$461$1$$anon$60.prototype = new $h_O();
-$c_LCommand$anon$lazy$macro$461$1$$anon$60.prototype.constructor = $c_LCommand$anon$lazy$macro$461$1$$anon$60;
+$c_LCommand$anon$lazy$macro$479$1$$anon$62.prototype = new $h_O();
+$c_LCommand$anon$lazy$macro$479$1$$anon$62.prototype.constructor = $c_LCommand$anon$lazy$macro$479$1$$anon$62;
 /** @constructor */
-function $h_LCommand$anon$lazy$macro$461$1$$anon$60() {
+function $h_LCommand$anon$lazy$macro$479$1$$anon$62() {
   /*<skip>*/
 }
-$h_LCommand$anon$lazy$macro$461$1$$anon$60.prototype = $c_LCommand$anon$lazy$macro$461$1$$anon$60.prototype;
-$c_LCommand$anon$lazy$macro$461$1$$anon$60.prototype.init___LCommand$anon$lazy$macro$461$1 = (function($$outer) {
+$h_LCommand$anon$lazy$macro$479$1$$anon$62.prototype = $c_LCommand$anon$lazy$macro$479$1$$anon$62.prototype;
+$c_LCommand$anon$lazy$macro$479$1$$anon$62.prototype.init___LCommand$anon$lazy$macro$479$1 = (function($$outer) {
   return this
 });
-var $d_LCommand$anon$lazy$macro$461$1$$anon$60 = new $TypeData().initClass({
-  LCommand$anon$lazy$macro$461$1$$anon$60: 0
-}, false, "Command$anon$lazy$macro$461$1$$anon$60", {
-  LCommand$anon$lazy$macro$461$1$$anon$60: 1,
+var $d_LCommand$anon$lazy$macro$479$1$$anon$62 = new $TypeData().initClass({
+  LCommand$anon$lazy$macro$479$1$$anon$62: 0
+}, false, "Command$anon$lazy$macro$479$1$$anon$62", {
+  LCommand$anon$lazy$macro$479$1$$anon$62: 1,
   O: 1,
   Lshapeless_DefaultSymbolicLabelling: 1,
   Lshapeless_package$DepFn0: 1,
   s_Serializable: 1,
   Ljava_io_Serializable: 1
 });
-$c_LCommand$anon$lazy$macro$461$1$$anon$60.prototype.$classData = $d_LCommand$anon$lazy$macro$461$1$$anon$60;
+$c_LCommand$anon$lazy$macro$479$1$$anon$62.prototype.$classData = $d_LCommand$anon$lazy$macro$479$1$$anon$62;
 /** @constructor */
-function $c_LCommand$anon$lazy$macro$461$1$$anon$61() {
+function $c_LCommand$anon$lazy$macro$479$1$$anon$63() {
   $c_O.call(this)
 }
-$c_LCommand$anon$lazy$macro$461$1$$anon$61.prototype = new $h_O();
-$c_LCommand$anon$lazy$macro$461$1$$anon$61.prototype.constructor = $c_LCommand$anon$lazy$macro$461$1$$anon$61;
+$c_LCommand$anon$lazy$macro$479$1$$anon$63.prototype = new $h_O();
+$c_LCommand$anon$lazy$macro$479$1$$anon$63.prototype.constructor = $c_LCommand$anon$lazy$macro$479$1$$anon$63;
 /** @constructor */
-function $h_LCommand$anon$lazy$macro$461$1$$anon$61() {
+function $h_LCommand$anon$lazy$macro$479$1$$anon$63() {
   /*<skip>*/
 }
-$h_LCommand$anon$lazy$macro$461$1$$anon$61.prototype = $c_LCommand$anon$lazy$macro$461$1$$anon$61.prototype;
-$c_LCommand$anon$lazy$macro$461$1$$anon$61.prototype.init___LCommand$anon$lazy$macro$461$1 = (function($$outer) {
+$h_LCommand$anon$lazy$macro$479$1$$anon$63.prototype = $c_LCommand$anon$lazy$macro$479$1$$anon$63.prototype;
+$c_LCommand$anon$lazy$macro$479$1$$anon$63.prototype.init___LCommand$anon$lazy$macro$479$1 = (function($$outer) {
   return this
 });
-var $d_LCommand$anon$lazy$macro$461$1$$anon$61 = new $TypeData().initClass({
-  LCommand$anon$lazy$macro$461$1$$anon$61: 0
-}, false, "Command$anon$lazy$macro$461$1$$anon$61", {
-  LCommand$anon$lazy$macro$461$1$$anon$61: 1,
+var $d_LCommand$anon$lazy$macro$479$1$$anon$63 = new $TypeData().initClass({
+  LCommand$anon$lazy$macro$479$1$$anon$63: 0
+}, false, "Command$anon$lazy$macro$479$1$$anon$63", {
+  LCommand$anon$lazy$macro$479$1$$anon$63: 1,
   O: 1,
   Lshapeless_DefaultSymbolicLabelling: 1,
   Lshapeless_package$DepFn0: 1,
   s_Serializable: 1,
   Ljava_io_Serializable: 1
 });
-$c_LCommand$anon$lazy$macro$461$1$$anon$61.prototype.$classData = $d_LCommand$anon$lazy$macro$461$1$$anon$61;
+$c_LCommand$anon$lazy$macro$479$1$$anon$63.prototype.$classData = $d_LCommand$anon$lazy$macro$479$1$$anon$63;
 /** @constructor */
-function $c_LCommand$anon$lazy$macro$461$1$$anon$62() {
+function $c_LCommand$anon$lazy$macro$479$1$$anon$64() {
   $c_O.call(this)
 }
-$c_LCommand$anon$lazy$macro$461$1$$anon$62.prototype = new $h_O();
-$c_LCommand$anon$lazy$macro$461$1$$anon$62.prototype.constructor = $c_LCommand$anon$lazy$macro$461$1$$anon$62;
+$c_LCommand$anon$lazy$macro$479$1$$anon$64.prototype = new $h_O();
+$c_LCommand$anon$lazy$macro$479$1$$anon$64.prototype.constructor = $c_LCommand$anon$lazy$macro$479$1$$anon$64;
 /** @constructor */
-function $h_LCommand$anon$lazy$macro$461$1$$anon$62() {
+function $h_LCommand$anon$lazy$macro$479$1$$anon$64() {
   /*<skip>*/
 }
-$h_LCommand$anon$lazy$macro$461$1$$anon$62.prototype = $c_LCommand$anon$lazy$macro$461$1$$anon$62.prototype;
-$c_LCommand$anon$lazy$macro$461$1$$anon$62.prototype.init___LCommand$anon$lazy$macro$461$1 = (function($$outer) {
+$h_LCommand$anon$lazy$macro$479$1$$anon$64.prototype = $c_LCommand$anon$lazy$macro$479$1$$anon$64.prototype;
+$c_LCommand$anon$lazy$macro$479$1$$anon$64.prototype.init___LCommand$anon$lazy$macro$479$1 = (function($$outer) {
   return this
 });
-var $d_LCommand$anon$lazy$macro$461$1$$anon$62 = new $TypeData().initClass({
-  LCommand$anon$lazy$macro$461$1$$anon$62: 0
-}, false, "Command$anon$lazy$macro$461$1$$anon$62", {
-  LCommand$anon$lazy$macro$461$1$$anon$62: 1,
+var $d_LCommand$anon$lazy$macro$479$1$$anon$64 = new $TypeData().initClass({
+  LCommand$anon$lazy$macro$479$1$$anon$64: 0
+}, false, "Command$anon$lazy$macro$479$1$$anon$64", {
+  LCommand$anon$lazy$macro$479$1$$anon$64: 1,
   O: 1,
   Lshapeless_DefaultSymbolicLabelling: 1,
   Lshapeless_package$DepFn0: 1,
   s_Serializable: 1,
   Ljava_io_Serializable: 1
 });
-$c_LCommand$anon$lazy$macro$461$1$$anon$62.prototype.$classData = $d_LCommand$anon$lazy$macro$461$1$$anon$62;
+$c_LCommand$anon$lazy$macro$479$1$$anon$64.prototype.$classData = $d_LCommand$anon$lazy$macro$479$1$$anon$64;
 /** @constructor */
-function $c_LCommand$anon$lazy$macro$461$1$$anon$63() {
+function $c_LCommand$anon$lazy$macro$479$1$$anon$65() {
   $c_O.call(this)
 }
-$c_LCommand$anon$lazy$macro$461$1$$anon$63.prototype = new $h_O();
-$c_LCommand$anon$lazy$macro$461$1$$anon$63.prototype.constructor = $c_LCommand$anon$lazy$macro$461$1$$anon$63;
+$c_LCommand$anon$lazy$macro$479$1$$anon$65.prototype = new $h_O();
+$c_LCommand$anon$lazy$macro$479$1$$anon$65.prototype.constructor = $c_LCommand$anon$lazy$macro$479$1$$anon$65;
 /** @constructor */
-function $h_LCommand$anon$lazy$macro$461$1$$anon$63() {
+function $h_LCommand$anon$lazy$macro$479$1$$anon$65() {
   /*<skip>*/
 }
-$h_LCommand$anon$lazy$macro$461$1$$anon$63.prototype = $c_LCommand$anon$lazy$macro$461$1$$anon$63.prototype;
-$c_LCommand$anon$lazy$macro$461$1$$anon$63.prototype.init___LCommand$anon$lazy$macro$461$1 = (function($$outer) {
+$h_LCommand$anon$lazy$macro$479$1$$anon$65.prototype = $c_LCommand$anon$lazy$macro$479$1$$anon$65.prototype;
+$c_LCommand$anon$lazy$macro$479$1$$anon$65.prototype.init___LCommand$anon$lazy$macro$479$1 = (function($$outer) {
   return this
 });
-var $d_LCommand$anon$lazy$macro$461$1$$anon$63 = new $TypeData().initClass({
-  LCommand$anon$lazy$macro$461$1$$anon$63: 0
-}, false, "Command$anon$lazy$macro$461$1$$anon$63", {
-  LCommand$anon$lazy$macro$461$1$$anon$63: 1,
+var $d_LCommand$anon$lazy$macro$479$1$$anon$65 = new $TypeData().initClass({
+  LCommand$anon$lazy$macro$479$1$$anon$65: 0
+}, false, "Command$anon$lazy$macro$479$1$$anon$65", {
+  LCommand$anon$lazy$macro$479$1$$anon$65: 1,
   O: 1,
   Lshapeless_DefaultSymbolicLabelling: 1,
   Lshapeless_package$DepFn0: 1,
   s_Serializable: 1,
   Ljava_io_Serializable: 1
 });
-$c_LCommand$anon$lazy$macro$461$1$$anon$63.prototype.$classData = $d_LCommand$anon$lazy$macro$461$1$$anon$63;
+$c_LCommand$anon$lazy$macro$479$1$$anon$65.prototype.$classData = $d_LCommand$anon$lazy$macro$479$1$$anon$65;
 /** @constructor */
-function $c_LCommand$anon$lazy$macro$461$1$$anon$64() {
+function $c_LCommand$anon$lazy$macro$479$1$$anon$66() {
   $c_Lio_circe_generic_decoding_ReprDecoder.call(this);
-  this.fresh$macro$457$2 = null;
-  this.fresh$macro$449$2 = null;
-  this.fresh$macro$440$2 = null;
-  this.fresh$macro$445$2 = null;
-  this.fresh$macro$453$2 = null;
+  this.fresh$macro$471$2 = null;
+  this.fresh$macro$458$2 = null;
+  this.fresh$macro$467$2 = null;
+  this.fresh$macro$463$2 = null;
+  this.fresh$macro$475$2 = null;
   this.$$outer$2 = null
 }
-$c_LCommand$anon$lazy$macro$461$1$$anon$64.prototype = new $h_Lio_circe_generic_decoding_ReprDecoder();
-$c_LCommand$anon$lazy$macro$461$1$$anon$64.prototype.constructor = $c_LCommand$anon$lazy$macro$461$1$$anon$64;
+$c_LCommand$anon$lazy$macro$479$1$$anon$66.prototype = new $h_Lio_circe_generic_decoding_ReprDecoder();
+$c_LCommand$anon$lazy$macro$479$1$$anon$66.prototype.constructor = $c_LCommand$anon$lazy$macro$479$1$$anon$66;
 /** @constructor */
-function $h_LCommand$anon$lazy$macro$461$1$$anon$64() {
+function $h_LCommand$anon$lazy$macro$479$1$$anon$66() {
   /*<skip>*/
 }
-$h_LCommand$anon$lazy$macro$461$1$$anon$64.prototype = $c_LCommand$anon$lazy$macro$461$1$$anon$64.prototype;
-$c_LCommand$anon$lazy$macro$461$1$$anon$64.prototype.init___LCommand$anon$lazy$macro$461$1 = (function($$outer) {
-  if (($$outer === null)) {
-    throw $m_sjsr_package$().unwrapJavaScriptException__jl_Throwable__O(null)
-  } else {
-    this.$$outer$2 = $$outer
-  };
-  var t = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function($this) {
-    return (function() {
-      return $this.$$outer$2.inst$macro$458__Lio_circe_generic_decoding_DerivedDecoder()
-    })
-  })(this));
-  this.fresh$macro$457$2 = $as_Lio_circe_generic_decoding_DerivedDecoder(new $c_Lshapeless_Lazy$$anon$1().init___F0(t).value__O());
-  var t$1 = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function(this$2) {
-    return (function() {
-      return this$2.$$outer$2.inst$macro$450__Lio_circe_generic_decoding_DerivedDecoder()
-    })
-  })(this));
-  this.fresh$macro$449$2 = $as_Lio_circe_generic_decoding_DerivedDecoder(new $c_Lshapeless_Lazy$$anon$1().init___F0(t$1).value__O());
-  var t$2 = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function(this$3$1) {
-    return (function() {
-      return this$3$1.$$outer$2.inst$macro$441__Lio_circe_generic_decoding_DerivedDecoder()
-    })
-  })(this));
-  this.fresh$macro$440$2 = $as_Lio_circe_generic_decoding_DerivedDecoder(new $c_Lshapeless_Lazy$$anon$1().init___F0(t$2).value__O());
-  var t$3 = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function(this$4$1) {
-    return (function() {
-      return this$4$1.$$outer$2.inst$macro$446__Lio_circe_generic_decoding_DerivedDecoder()
-    })
-  })(this));
-  this.fresh$macro$445$2 = $as_Lio_circe_generic_decoding_DerivedDecoder(new $c_Lshapeless_Lazy$$anon$1().init___F0(t$3).value__O());
-  var t$4 = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function(this$5$1) {
-    return (function() {
-      return this$5$1.$$outer$2.inst$macro$454__Lio_circe_generic_decoding_DerivedDecoder()
-    })
-  })(this));
-  this.fresh$macro$453$2 = $as_Lio_circe_generic_decoding_DerivedDecoder(new $c_Lshapeless_Lazy$$anon$1().init___F0(t$4).value__O());
-  return this
-});
-$c_LCommand$anon$lazy$macro$461$1$$anon$64.prototype.apply__Lio_circe_HCursor__s_util_Either = (function(c) {
+$h_LCommand$anon$lazy$macro$479$1$$anon$66.prototype = $c_LCommand$anon$lazy$macro$479$1$$anon$66.prototype;
+$c_LCommand$anon$lazy$macro$479$1$$anon$66.prototype.apply__Lio_circe_HCursor__s_util_Either = (function(c) {
   var result = c.downField__T__Lio_circe_ACursor("B");
   if (result.succeeded__Z()) {
-    var this$1 = this.fresh$macro$457$2;
+    var this$1 = this.fresh$macro$475$2;
     var x1 = new $c_s_Some().init___O($f_Lio_circe_Decoder__tryDecode__Lio_circe_ACursor__s_util_Either(this$1, result))
   } else {
     var x1 = $m_s_None$()
@@ -29221,7 +29230,7 @@ $c_LCommand$anon$lazy$macro$461$1$$anon$64.prototype.apply__Lio_circe_HCursor__s
     if ((x === x1)) {
       var result$3 = c.downField__T__Lio_circe_ACursor("F");
       if (result$3.succeeded__Z()) {
-        var this$3 = this.fresh$macro$453$2;
+        var this$3 = this.fresh$macro$471$2;
         var x1$2 = new $c_s_Some().init___O($f_Lio_circe_Decoder__tryDecode__Lio_circe_ACursor__s_util_Either(this$3, result$3))
       } else {
         var x1$2 = $m_s_None$()
@@ -29249,7 +29258,7 @@ $c_LCommand$anon$lazy$macro$461$1$$anon$64.prototype.apply__Lio_circe_HCursor__s
         };
         var result$5 = c.downField__T__Lio_circe_ACursor("L");
         if (result$5.succeeded__Z()) {
-          var this$5 = this.fresh$macro$449$2;
+          var this$5 = this.fresh$macro$467$2;
           var x1$3$1 = new $c_s_Some().init___O($f_Lio_circe_Decoder__tryDecode__Lio_circe_ACursor__s_util_Either(this$5, result$5))
         } else {
           var x1$3$1 = $m_s_None$()
@@ -29277,7 +29286,7 @@ $c_LCommand$anon$lazy$macro$461$1$$anon$64.prototype.apply__Lio_circe_HCursor__s
           };
           var result$7 = c.downField__T__Lio_circe_ACursor("R");
           if (result$7.succeeded__Z()) {
-            var this$7 = this.fresh$macro$445$2;
+            var this$7 = this.fresh$macro$463$2;
             var x1$4$1 = new $c_s_Some().init___O($f_Lio_circe_Decoder__tryDecode__Lio_circe_ACursor__s_util_Either(this$7, result$7))
           } else {
             var x1$4$1 = $m_s_None$()
@@ -29305,7 +29314,7 @@ $c_LCommand$anon$lazy$macro$461$1$$anon$64.prototype.apply__Lio_circe_HCursor__s
             };
             var result$9 = c.downField__T__Lio_circe_ACursor("S");
             if (result$9.succeeded__Z()) {
-              var this$9 = this.fresh$macro$440$2;
+              var this$9 = this.fresh$macro$458$2;
               var x1$5$1 = new $c_s_Some().init___O($f_Lio_circe_Decoder__tryDecode__Lio_circe_ACursor__s_util_Either(this$9, result$9))
             } else {
               var x1$5$1 = $m_s_None$()
@@ -29343,8 +29352,8 @@ $c_LCommand$anon$lazy$macro$461$1$$anon$64.prototype.apply__Lio_circe_HCursor__s
               if ($is_s_util_Right(x1$7)) {
                 var x2$7 = $as_s_util_Right(x1$7);
                 var b$5 = x2$7.value$2;
-                var x$32 = $as_Lshapeless_CNil(b$5);
-                var this$14 = new $c_s_util_Right().init___O(new $c_Lshapeless_Inr().init___Lshapeless_Coproduct(x$32))
+                var x$34 = $as_Lshapeless_CNil(b$5);
+                var this$14 = new $c_s_util_Right().init___O(new $c_Lshapeless_Inr().init___Lshapeless_Coproduct(x$34))
               } else {
                 if ((!$is_s_util_Left(x1$7))) {
                   throw new $c_s_MatchError().init___O(x1$7)
@@ -29357,8 +29366,8 @@ $c_LCommand$anon$lazy$macro$461$1$$anon$64.prototype.apply__Lio_circe_HCursor__s
             if ($is_s_util_Right(x1$8)) {
               var x2$8 = $as_s_util_Right(x1$8);
               var b$6 = x2$8.value$2;
-              var x$34 = $as_Lshapeless_$colon$plus$colon(b$6);
-              var this$16 = new $c_s_util_Right().init___O(new $c_Lshapeless_Inr().init___Lshapeless_Coproduct(x$34))
+              var x$36 = $as_Lshapeless_$colon$plus$colon(b$6);
+              var this$16 = new $c_s_util_Right().init___O(new $c_Lshapeless_Inr().init___Lshapeless_Coproduct(x$36))
             } else {
               if ((!$is_s_util_Left(x1$8))) {
                 throw new $c_s_MatchError().init___O(x1$8)
@@ -29371,8 +29380,8 @@ $c_LCommand$anon$lazy$macro$461$1$$anon$64.prototype.apply__Lio_circe_HCursor__s
           if ($is_s_util_Right(x1$9)) {
             var x2$9 = $as_s_util_Right(x1$9);
             var b$7 = x2$9.value$2;
-            var x$36 = $as_Lshapeless_$colon$plus$colon(b$7);
-            var this$18 = new $c_s_util_Right().init___O(new $c_Lshapeless_Inr().init___Lshapeless_Coproduct(x$36))
+            var x$38 = $as_Lshapeless_$colon$plus$colon(b$7);
+            var this$18 = new $c_s_util_Right().init___O(new $c_Lshapeless_Inr().init___Lshapeless_Coproduct(x$38))
           } else {
             if ((!$is_s_util_Left(x1$9))) {
               throw new $c_s_MatchError().init___O(x1$9)
@@ -29385,8 +29394,8 @@ $c_LCommand$anon$lazy$macro$461$1$$anon$64.prototype.apply__Lio_circe_HCursor__s
         if ($is_s_util_Right(x1$10)) {
           var x2$10 = $as_s_util_Right(x1$10);
           var b$8 = x2$10.value$2;
-          var x$38 = $as_Lshapeless_$colon$plus$colon(b$8);
-          var this$20 = new $c_s_util_Right().init___O(new $c_Lshapeless_Inr().init___Lshapeless_Coproduct(x$38))
+          var x$40 = $as_Lshapeless_$colon$plus$colon(b$8);
+          var this$20 = new $c_s_util_Right().init___O(new $c_Lshapeless_Inr().init___Lshapeless_Coproduct(x$40))
         } else {
           if ((!$is_s_util_Left(x1$10))) {
             throw new $c_s_MatchError().init___O(x1$10)
@@ -29399,8 +29408,8 @@ $c_LCommand$anon$lazy$macro$461$1$$anon$64.prototype.apply__Lio_circe_HCursor__s
       if ($is_s_util_Right(x1$11)) {
         var x2$11 = $as_s_util_Right(x1$11);
         var b$9 = x2$11.value$2;
-        var x$40 = $as_Lshapeless_$colon$plus$colon(b$9);
-        return new $c_s_util_Right().init___O(new $c_Lshapeless_Inr().init___Lshapeless_Coproduct(x$40))
+        var x$42 = $as_Lshapeless_$colon$plus$colon(b$9);
+        return new $c_s_util_Right().init___O(new $c_Lshapeless_Inr().init___Lshapeless_Coproduct(x$42))
       } else if ($is_s_util_Left(x1$11)) {
         return this$21.e$1
       } else {
@@ -29411,42 +29420,80 @@ $c_LCommand$anon$lazy$macro$461$1$$anon$64.prototype.apply__Lio_circe_HCursor__s
     }
   }
 });
-var $d_LCommand$anon$lazy$macro$461$1$$anon$64 = new $TypeData().initClass({
-  LCommand$anon$lazy$macro$461$1$$anon$64: 0
-}, false, "Command$anon$lazy$macro$461$1$$anon$64", {
-  LCommand$anon$lazy$macro$461$1$$anon$64: 1,
+$c_LCommand$anon$lazy$macro$479$1$$anon$66.prototype.init___LCommand$anon$lazy$macro$479$1 = (function($$outer) {
+  if (($$outer === null)) {
+    throw $m_sjsr_package$().unwrapJavaScriptException__jl_Throwable__O(null)
+  } else {
+    this.$$outer$2 = $$outer
+  };
+  var t = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function($this) {
+    return (function() {
+      return $this.$$outer$2.inst$macro$472__Lio_circe_generic_decoding_DerivedDecoder()
+    })
+  })(this));
+  this.fresh$macro$471$2 = $as_Lio_circe_generic_decoding_DerivedDecoder(new $c_Lshapeless_Lazy$$anon$1().init___F0(t).value__O());
+  var t$1 = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function(this$2) {
+    return (function() {
+      return this$2.$$outer$2.inst$macro$459__Lio_circe_generic_decoding_DerivedDecoder()
+    })
+  })(this));
+  this.fresh$macro$458$2 = $as_Lio_circe_generic_decoding_DerivedDecoder(new $c_Lshapeless_Lazy$$anon$1().init___F0(t$1).value__O());
+  var t$2 = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function(this$3$1) {
+    return (function() {
+      return this$3$1.$$outer$2.inst$macro$468__Lio_circe_generic_decoding_DerivedDecoder()
+    })
+  })(this));
+  this.fresh$macro$467$2 = $as_Lio_circe_generic_decoding_DerivedDecoder(new $c_Lshapeless_Lazy$$anon$1().init___F0(t$2).value__O());
+  var t$3 = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function(this$4$1) {
+    return (function() {
+      return this$4$1.$$outer$2.inst$macro$464__Lio_circe_generic_decoding_DerivedDecoder()
+    })
+  })(this));
+  this.fresh$macro$463$2 = $as_Lio_circe_generic_decoding_DerivedDecoder(new $c_Lshapeless_Lazy$$anon$1().init___F0(t$3).value__O());
+  var t$4 = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function(this$5$1) {
+    return (function() {
+      return this$5$1.$$outer$2.inst$macro$476__Lio_circe_generic_decoding_DerivedDecoder()
+    })
+  })(this));
+  this.fresh$macro$475$2 = $as_Lio_circe_generic_decoding_DerivedDecoder(new $c_Lshapeless_Lazy$$anon$1().init___F0(t$4).value__O());
+  return this
+});
+var $d_LCommand$anon$lazy$macro$479$1$$anon$66 = new $TypeData().initClass({
+  LCommand$anon$lazy$macro$479$1$$anon$66: 0
+}, false, "Command$anon$lazy$macro$479$1$$anon$66", {
+  LCommand$anon$lazy$macro$479$1$$anon$66: 1,
   Lio_circe_generic_decoding_ReprDecoder: 1,
   O: 1,
   Lio_circe_Decoder: 1,
   s_Serializable: 1,
   Ljava_io_Serializable: 1
 });
-$c_LCommand$anon$lazy$macro$461$1$$anon$64.prototype.$classData = $d_LCommand$anon$lazy$macro$461$1$$anon$64;
+$c_LCommand$anon$lazy$macro$479$1$$anon$66.prototype.$classData = $d_LCommand$anon$lazy$macro$479$1$$anon$66;
 /** @constructor */
-function $c_LCommand$anon$lazy$macro$461$1$$anon$65() {
+function $c_LCommand$anon$lazy$macro$479$1$$anon$67() {
   $c_O.call(this)
 }
-$c_LCommand$anon$lazy$macro$461$1$$anon$65.prototype = new $h_O();
-$c_LCommand$anon$lazy$macro$461$1$$anon$65.prototype.constructor = $c_LCommand$anon$lazy$macro$461$1$$anon$65;
+$c_LCommand$anon$lazy$macro$479$1$$anon$67.prototype = new $h_O();
+$c_LCommand$anon$lazy$macro$479$1$$anon$67.prototype.constructor = $c_LCommand$anon$lazy$macro$479$1$$anon$67;
 /** @constructor */
-function $h_LCommand$anon$lazy$macro$461$1$$anon$65() {
+function $h_LCommand$anon$lazy$macro$479$1$$anon$67() {
   /*<skip>*/
 }
-$h_LCommand$anon$lazy$macro$461$1$$anon$65.prototype = $c_LCommand$anon$lazy$macro$461$1$$anon$65.prototype;
-$c_LCommand$anon$lazy$macro$461$1$$anon$65.prototype.init___LCommand$anon$lazy$macro$461$1 = (function($$outer) {
+$h_LCommand$anon$lazy$macro$479$1$$anon$67.prototype = $c_LCommand$anon$lazy$macro$479$1$$anon$67.prototype;
+$c_LCommand$anon$lazy$macro$479$1$$anon$67.prototype.init___LCommand$anon$lazy$macro$479$1 = (function($$outer) {
   return this
 });
-var $d_LCommand$anon$lazy$macro$461$1$$anon$65 = new $TypeData().initClass({
-  LCommand$anon$lazy$macro$461$1$$anon$65: 0
-}, false, "Command$anon$lazy$macro$461$1$$anon$65", {
-  LCommand$anon$lazy$macro$461$1$$anon$65: 1,
+var $d_LCommand$anon$lazy$macro$479$1$$anon$67 = new $TypeData().initClass({
+  LCommand$anon$lazy$macro$479$1$$anon$67: 0
+}, false, "Command$anon$lazy$macro$479$1$$anon$67", {
+  LCommand$anon$lazy$macro$479$1$$anon$67: 1,
   O: 1,
   Lshapeless_DefaultSymbolicLabelling: 1,
   Lshapeless_package$DepFn0: 1,
   s_Serializable: 1,
   Ljava_io_Serializable: 1
 });
-$c_LCommand$anon$lazy$macro$461$1$$anon$65.prototype.$classData = $d_LCommand$anon$lazy$macro$461$1$$anon$65;
+$c_LCommand$anon$lazy$macro$479$1$$anon$67.prototype.$classData = $d_LCommand$anon$lazy$macro$479$1$$anon$67;
 /** @constructor */
 function $c_LCommonState() {
   $c_O.call(this);
@@ -29578,757 +29625,808 @@ var $d_LCommonState = new $TypeData().initClass({
 });
 $c_LCommonState.prototype.$classData = $d_LCommonState;
 /** @constructor */
-function $c_LCommonState$anon$lazy$macro$313$1$$anon$43() {
+function $c_LCommonState$anon$lazy$macro$331$1$$anon$45() {
   $c_O.call(this)
 }
-$c_LCommonState$anon$lazy$macro$313$1$$anon$43.prototype = new $h_O();
-$c_LCommonState$anon$lazy$macro$313$1$$anon$43.prototype.constructor = $c_LCommonState$anon$lazy$macro$313$1$$anon$43;
+$c_LCommonState$anon$lazy$macro$331$1$$anon$45.prototype = new $h_O();
+$c_LCommonState$anon$lazy$macro$331$1$$anon$45.prototype.constructor = $c_LCommonState$anon$lazy$macro$331$1$$anon$45;
 /** @constructor */
-function $h_LCommonState$anon$lazy$macro$313$1$$anon$43() {
+function $h_LCommonState$anon$lazy$macro$331$1$$anon$45() {
   /*<skip>*/
 }
-$h_LCommonState$anon$lazy$macro$313$1$$anon$43.prototype = $c_LCommonState$anon$lazy$macro$313$1$$anon$43.prototype;
-$c_LCommonState$anon$lazy$macro$313$1$$anon$43.prototype.init___LCommonState$anon$lazy$macro$313$1 = (function($$outer) {
+$h_LCommonState$anon$lazy$macro$331$1$$anon$45.prototype = $c_LCommonState$anon$lazy$macro$331$1$$anon$45.prototype;
+$c_LCommonState$anon$lazy$macro$331$1$$anon$45.prototype.init___LCommonState$anon$lazy$macro$331$1 = (function($$outer) {
   return this
 });
-var $d_LCommonState$anon$lazy$macro$313$1$$anon$43 = new $TypeData().initClass({
-  LCommonState$anon$lazy$macro$313$1$$anon$43: 0
-}, false, "CommonState$anon$lazy$macro$313$1$$anon$43", {
-  LCommonState$anon$lazy$macro$313$1$$anon$43: 1,
+var $d_LCommonState$anon$lazy$macro$331$1$$anon$45 = new $TypeData().initClass({
+  LCommonState$anon$lazy$macro$331$1$$anon$45: 0
+}, false, "CommonState$anon$lazy$macro$331$1$$anon$45", {
+  LCommonState$anon$lazy$macro$331$1$$anon$45: 1,
   O: 1,
   Lshapeless_DefaultSymbolicLabelling: 1,
   Lshapeless_package$DepFn0: 1,
   s_Serializable: 1,
   Ljava_io_Serializable: 1
 });
-$c_LCommonState$anon$lazy$macro$313$1$$anon$43.prototype.$classData = $d_LCommonState$anon$lazy$macro$313$1$$anon$43;
+$c_LCommonState$anon$lazy$macro$331$1$$anon$45.prototype.$classData = $d_LCommonState$anon$lazy$macro$331$1$$anon$45;
 /** @constructor */
-function $c_LCommonState$anon$lazy$macro$334$1$$anon$44() {
+function $c_LCommonState$anon$lazy$macro$352$1$$anon$46() {
   $c_Lio_circe_generic_decoding_ReprDecoder.call(this);
-  this.fresh$macro$331$2 = null;
-  this.fresh$macro$332$2 = null;
-  this.fresh$macro$333$2 = null
+  this.fresh$macro$349$2 = null;
+  this.fresh$macro$350$2 = null;
+  this.fresh$macro$351$2 = null
 }
-$c_LCommonState$anon$lazy$macro$334$1$$anon$44.prototype = new $h_Lio_circe_generic_decoding_ReprDecoder();
-$c_LCommonState$anon$lazy$macro$334$1$$anon$44.prototype.constructor = $c_LCommonState$anon$lazy$macro$334$1$$anon$44;
+$c_LCommonState$anon$lazy$macro$352$1$$anon$46.prototype = new $h_Lio_circe_generic_decoding_ReprDecoder();
+$c_LCommonState$anon$lazy$macro$352$1$$anon$46.prototype.constructor = $c_LCommonState$anon$lazy$macro$352$1$$anon$46;
 /** @constructor */
-function $h_LCommonState$anon$lazy$macro$334$1$$anon$44() {
+function $h_LCommonState$anon$lazy$macro$352$1$$anon$46() {
   /*<skip>*/
 }
-$h_LCommonState$anon$lazy$macro$334$1$$anon$44.prototype = $c_LCommonState$anon$lazy$macro$334$1$$anon$44.prototype;
-$c_LCommonState$anon$lazy$macro$334$1$$anon$44.prototype.apply__Lio_circe_HCursor__s_util_Either = (function(c) {
-  return $as_s_util_Either($m_Lio_circe_generic_decoding_ReprDecoder$().consResults__O__O__Lcats_Apply__O(this.fresh$macro$333$2.tryDecode__Lio_circe_ACursor__s_util_Either(c.downField__T__Lio_circe_ACursor("ident")), $m_Lio_circe_generic_decoding_ReprDecoder$().consResults__O__O__Lcats_Apply__O(this.fresh$macro$332$2.tryDecode__Lio_circe_ACursor__s_util_Either(c.downField__T__Lio_circe_ACursor("pos")), $m_Lio_circe_generic_decoding_ReprDecoder$().consResults__O__O__Lcats_Apply__O(this.fresh$macro$332$2.tryDecode__Lio_circe_ACursor__s_util_Either(c.downField__T__Lio_circe_ACursor("velo")), $m_Lio_circe_generic_decoding_ReprDecoder$().consResults__O__O__Lcats_Apply__O(this.fresh$macro$331$2.tryDecode__Lio_circe_ACursor__s_util_Either(c.downField__T__Lio_circe_ACursor("acc")), $m_Lio_circe_generic_decoding_ReprDecoder$().consResults__O__O__Lcats_Apply__O(this.fresh$macro$331$2.tryDecode__Lio_circe_ACursor__s_util_Either(c.downField__T__Lio_circe_ACursor("omega")), $m_Lio_circe_generic_decoding_ReprDecoder$().consResults__O__O__Lcats_Apply__O(this.fresh$macro$331$2.tryDecode__Lio_circe_ACursor__s_util_Either(c.downField__T__Lio_circe_ACursor("phi")), $m_Lio_circe_generic_decoding_ReprDecoder$().hnilResult$1, $m_Lio_circe_Decoder$().resultInstance$1), $m_Lio_circe_Decoder$().resultInstance$1), $m_Lio_circe_Decoder$().resultInstance$1), $m_Lio_circe_Decoder$().resultInstance$1), $m_Lio_circe_Decoder$().resultInstance$1), $m_Lio_circe_Decoder$().resultInstance$1))
-});
-$c_LCommonState$anon$lazy$macro$334$1$$anon$44.prototype.init___LCommonState$anon$lazy$macro$334$1 = (function($$outer) {
-  this.fresh$macro$331$2 = $m_Lio_circe_Decoder$().decodeDouble$1;
+$h_LCommonState$anon$lazy$macro$352$1$$anon$46.prototype = $c_LCommonState$anon$lazy$macro$352$1$$anon$46.prototype;
+$c_LCommonState$anon$lazy$macro$352$1$$anon$46.prototype.init___LCommonState$anon$lazy$macro$352$1 = (function($$outer) {
+  this.fresh$macro$349$2 = $m_Lio_circe_Decoder$().decodeDouble$1;
   var this$1 = $m_Lio_circe_Decoder$();
   var decodeA0 = $m_Lio_circe_Decoder$().decodeDouble$1;
   var decodeA1 = $m_Lio_circe_Decoder$().decodeDouble$1;
-  this.fresh$macro$332$2 = new $c_Lio_circe_TupleDecoders$$anon$2().init___Lio_circe_TupleDecoders__Lio_circe_Decoder__Lio_circe_Decoder(this$1, decodeA0, decodeA1);
-  this.fresh$macro$333$2 = $m_Lio_circe_Decoder$().decodeInt$1;
+  this.fresh$macro$350$2 = new $c_Lio_circe_TupleDecoders$$anon$2().init___Lio_circe_TupleDecoders__Lio_circe_Decoder__Lio_circe_Decoder(this$1, decodeA0, decodeA1);
+  this.fresh$macro$351$2 = $m_Lio_circe_Decoder$().decodeInt$1;
   return this
 });
-var $d_LCommonState$anon$lazy$macro$334$1$$anon$44 = new $TypeData().initClass({
-  LCommonState$anon$lazy$macro$334$1$$anon$44: 0
-}, false, "CommonState$anon$lazy$macro$334$1$$anon$44", {
-  LCommonState$anon$lazy$macro$334$1$$anon$44: 1,
+$c_LCommonState$anon$lazy$macro$352$1$$anon$46.prototype.apply__Lio_circe_HCursor__s_util_Either = (function(c) {
+  return $as_s_util_Either($m_Lio_circe_generic_decoding_ReprDecoder$().consResults__O__O__Lcats_Apply__O(this.fresh$macro$351$2.tryDecode__Lio_circe_ACursor__s_util_Either(c.downField__T__Lio_circe_ACursor("ident")), $m_Lio_circe_generic_decoding_ReprDecoder$().consResults__O__O__Lcats_Apply__O(this.fresh$macro$350$2.tryDecode__Lio_circe_ACursor__s_util_Either(c.downField__T__Lio_circe_ACursor("pos")), $m_Lio_circe_generic_decoding_ReprDecoder$().consResults__O__O__Lcats_Apply__O(this.fresh$macro$350$2.tryDecode__Lio_circe_ACursor__s_util_Either(c.downField__T__Lio_circe_ACursor("velo")), $m_Lio_circe_generic_decoding_ReprDecoder$().consResults__O__O__Lcats_Apply__O(this.fresh$macro$349$2.tryDecode__Lio_circe_ACursor__s_util_Either(c.downField__T__Lio_circe_ACursor("acc")), $m_Lio_circe_generic_decoding_ReprDecoder$().consResults__O__O__Lcats_Apply__O(this.fresh$macro$349$2.tryDecode__Lio_circe_ACursor__s_util_Either(c.downField__T__Lio_circe_ACursor("omega")), $m_Lio_circe_generic_decoding_ReprDecoder$().consResults__O__O__Lcats_Apply__O(this.fresh$macro$349$2.tryDecode__Lio_circe_ACursor__s_util_Either(c.downField__T__Lio_circe_ACursor("phi")), $m_Lio_circe_generic_decoding_ReprDecoder$().hnilResult$1, $m_Lio_circe_Decoder$().resultInstance$1), $m_Lio_circe_Decoder$().resultInstance$1), $m_Lio_circe_Decoder$().resultInstance$1), $m_Lio_circe_Decoder$().resultInstance$1), $m_Lio_circe_Decoder$().resultInstance$1), $m_Lio_circe_Decoder$().resultInstance$1))
+});
+var $d_LCommonState$anon$lazy$macro$352$1$$anon$46 = new $TypeData().initClass({
+  LCommonState$anon$lazy$macro$352$1$$anon$46: 0
+}, false, "CommonState$anon$lazy$macro$352$1$$anon$46", {
+  LCommonState$anon$lazy$macro$352$1$$anon$46: 1,
   Lio_circe_generic_decoding_ReprDecoder: 1,
   O: 1,
   Lio_circe_Decoder: 1,
   s_Serializable: 1,
   Ljava_io_Serializable: 1
 });
-$c_LCommonState$anon$lazy$macro$334$1$$anon$44.prototype.$classData = $d_LCommonState$anon$lazy$macro$334$1$$anon$44;
+$c_LCommonState$anon$lazy$macro$352$1$$anon$46.prototype.$classData = $d_LCommonState$anon$lazy$macro$352$1$$anon$46;
 /** @constructor */
-function $c_LCommonState$anon$lazy$macro$334$1$$anon$45() {
+function $c_LCommonState$anon$lazy$macro$352$1$$anon$47() {
   $c_O.call(this)
 }
-$c_LCommonState$anon$lazy$macro$334$1$$anon$45.prototype = new $h_O();
-$c_LCommonState$anon$lazy$macro$334$1$$anon$45.prototype.constructor = $c_LCommonState$anon$lazy$macro$334$1$$anon$45;
+$c_LCommonState$anon$lazy$macro$352$1$$anon$47.prototype = new $h_O();
+$c_LCommonState$anon$lazy$macro$352$1$$anon$47.prototype.constructor = $c_LCommonState$anon$lazy$macro$352$1$$anon$47;
 /** @constructor */
-function $h_LCommonState$anon$lazy$macro$334$1$$anon$45() {
+function $h_LCommonState$anon$lazy$macro$352$1$$anon$47() {
   /*<skip>*/
 }
-$h_LCommonState$anon$lazy$macro$334$1$$anon$45.prototype = $c_LCommonState$anon$lazy$macro$334$1$$anon$45.prototype;
-$c_LCommonState$anon$lazy$macro$334$1$$anon$45.prototype.init___LCommonState$anon$lazy$macro$334$1 = (function($$outer) {
+$h_LCommonState$anon$lazy$macro$352$1$$anon$47.prototype = $c_LCommonState$anon$lazy$macro$352$1$$anon$47.prototype;
+$c_LCommonState$anon$lazy$macro$352$1$$anon$47.prototype.init___LCommonState$anon$lazy$macro$352$1 = (function($$outer) {
   return this
 });
-var $d_LCommonState$anon$lazy$macro$334$1$$anon$45 = new $TypeData().initClass({
-  LCommonState$anon$lazy$macro$334$1$$anon$45: 0
-}, false, "CommonState$anon$lazy$macro$334$1$$anon$45", {
-  LCommonState$anon$lazy$macro$334$1$$anon$45: 1,
+var $d_LCommonState$anon$lazy$macro$352$1$$anon$47 = new $TypeData().initClass({
+  LCommonState$anon$lazy$macro$352$1$$anon$47: 0
+}, false, "CommonState$anon$lazy$macro$352$1$$anon$47", {
+  LCommonState$anon$lazy$macro$352$1$$anon$47: 1,
   O: 1,
   Lshapeless_DefaultSymbolicLabelling: 1,
   Lshapeless_package$DepFn0: 1,
   s_Serializable: 1,
   Ljava_io_Serializable: 1
 });
-$c_LCommonState$anon$lazy$macro$334$1$$anon$45.prototype.$classData = $d_LCommonState$anon$lazy$macro$334$1$$anon$45;
+$c_LCommonState$anon$lazy$macro$352$1$$anon$47.prototype.$classData = $d_LCommonState$anon$lazy$macro$352$1$$anon$47;
 /** @constructor */
-function $c_LMessage$anon$lazy$macro$198$1$$anon$17() {
+function $c_LMessage$anon$lazy$macro$210$1$$anon$17() {
   $c_O.call(this)
 }
-$c_LMessage$anon$lazy$macro$198$1$$anon$17.prototype = new $h_O();
-$c_LMessage$anon$lazy$macro$198$1$$anon$17.prototype.constructor = $c_LMessage$anon$lazy$macro$198$1$$anon$17;
+$c_LMessage$anon$lazy$macro$210$1$$anon$17.prototype = new $h_O();
+$c_LMessage$anon$lazy$macro$210$1$$anon$17.prototype.constructor = $c_LMessage$anon$lazy$macro$210$1$$anon$17;
 /** @constructor */
-function $h_LMessage$anon$lazy$macro$198$1$$anon$17() {
+function $h_LMessage$anon$lazy$macro$210$1$$anon$17() {
   /*<skip>*/
 }
-$h_LMessage$anon$lazy$macro$198$1$$anon$17.prototype = $c_LMessage$anon$lazy$macro$198$1$$anon$17.prototype;
-$c_LMessage$anon$lazy$macro$198$1$$anon$17.prototype.init___LMessage$anon$lazy$macro$198$1 = (function($$outer) {
+$h_LMessage$anon$lazy$macro$210$1$$anon$17.prototype = $c_LMessage$anon$lazy$macro$210$1$$anon$17.prototype;
+$c_LMessage$anon$lazy$macro$210$1$$anon$17.prototype.init___LMessage$anon$lazy$macro$210$1 = (function($$outer) {
   return this
 });
-var $d_LMessage$anon$lazy$macro$198$1$$anon$17 = new $TypeData().initClass({
-  LMessage$anon$lazy$macro$198$1$$anon$17: 0
-}, false, "Message$anon$lazy$macro$198$1$$anon$17", {
-  LMessage$anon$lazy$macro$198$1$$anon$17: 1,
+var $d_LMessage$anon$lazy$macro$210$1$$anon$17 = new $TypeData().initClass({
+  LMessage$anon$lazy$macro$210$1$$anon$17: 0
+}, false, "Message$anon$lazy$macro$210$1$$anon$17", {
+  LMessage$anon$lazy$macro$210$1$$anon$17: 1,
   O: 1,
   Lshapeless_DefaultSymbolicLabelling: 1,
   Lshapeless_package$DepFn0: 1,
   s_Serializable: 1,
   Ljava_io_Serializable: 1
 });
-$c_LMessage$anon$lazy$macro$198$1$$anon$17.prototype.$classData = $d_LMessage$anon$lazy$macro$198$1$$anon$17;
+$c_LMessage$anon$lazy$macro$210$1$$anon$17.prototype.$classData = $d_LMessage$anon$lazy$macro$210$1$$anon$17;
 /** @constructor */
-function $c_LMessage$anon$lazy$macro$198$1$$anon$18() {
+function $c_LMessage$anon$lazy$macro$210$1$$anon$18() {
   $c_O.call(this)
 }
-$c_LMessage$anon$lazy$macro$198$1$$anon$18.prototype = new $h_O();
-$c_LMessage$anon$lazy$macro$198$1$$anon$18.prototype.constructor = $c_LMessage$anon$lazy$macro$198$1$$anon$18;
+$c_LMessage$anon$lazy$macro$210$1$$anon$18.prototype = new $h_O();
+$c_LMessage$anon$lazy$macro$210$1$$anon$18.prototype.constructor = $c_LMessage$anon$lazy$macro$210$1$$anon$18;
 /** @constructor */
-function $h_LMessage$anon$lazy$macro$198$1$$anon$18() {
+function $h_LMessage$anon$lazy$macro$210$1$$anon$18() {
   /*<skip>*/
 }
-$h_LMessage$anon$lazy$macro$198$1$$anon$18.prototype = $c_LMessage$anon$lazy$macro$198$1$$anon$18.prototype;
-$c_LMessage$anon$lazy$macro$198$1$$anon$18.prototype.init___LMessage$anon$lazy$macro$198$1 = (function($$outer) {
+$h_LMessage$anon$lazy$macro$210$1$$anon$18.prototype = $c_LMessage$anon$lazy$macro$210$1$$anon$18.prototype;
+$c_LMessage$anon$lazy$macro$210$1$$anon$18.prototype.init___LMessage$anon$lazy$macro$210$1 = (function($$outer) {
   return this
 });
-var $d_LMessage$anon$lazy$macro$198$1$$anon$18 = new $TypeData().initClass({
-  LMessage$anon$lazy$macro$198$1$$anon$18: 0
-}, false, "Message$anon$lazy$macro$198$1$$anon$18", {
-  LMessage$anon$lazy$macro$198$1$$anon$18: 1,
+var $d_LMessage$anon$lazy$macro$210$1$$anon$18 = new $TypeData().initClass({
+  LMessage$anon$lazy$macro$210$1$$anon$18: 0
+}, false, "Message$anon$lazy$macro$210$1$$anon$18", {
+  LMessage$anon$lazy$macro$210$1$$anon$18: 1,
   O: 1,
   Lshapeless_DefaultSymbolicLabelling: 1,
   Lshapeless_package$DepFn0: 1,
   s_Serializable: 1,
   Ljava_io_Serializable: 1
 });
-$c_LMessage$anon$lazy$macro$198$1$$anon$18.prototype.$classData = $d_LMessage$anon$lazy$macro$198$1$$anon$18;
+$c_LMessage$anon$lazy$macro$210$1$$anon$18.prototype.$classData = $d_LMessage$anon$lazy$macro$210$1$$anon$18;
 /** @constructor */
-function $c_LMessage$anon$lazy$macro$198$1$$anon$19() {
+function $c_LMessage$anon$lazy$macro$210$1$$anon$19() {
   $c_O.call(this)
 }
-$c_LMessage$anon$lazy$macro$198$1$$anon$19.prototype = new $h_O();
-$c_LMessage$anon$lazy$macro$198$1$$anon$19.prototype.constructor = $c_LMessage$anon$lazy$macro$198$1$$anon$19;
+$c_LMessage$anon$lazy$macro$210$1$$anon$19.prototype = new $h_O();
+$c_LMessage$anon$lazy$macro$210$1$$anon$19.prototype.constructor = $c_LMessage$anon$lazy$macro$210$1$$anon$19;
 /** @constructor */
-function $h_LMessage$anon$lazy$macro$198$1$$anon$19() {
+function $h_LMessage$anon$lazy$macro$210$1$$anon$19() {
   /*<skip>*/
 }
-$h_LMessage$anon$lazy$macro$198$1$$anon$19.prototype = $c_LMessage$anon$lazy$macro$198$1$$anon$19.prototype;
-$c_LMessage$anon$lazy$macro$198$1$$anon$19.prototype.init___LMessage$anon$lazy$macro$198$1 = (function($$outer) {
+$h_LMessage$anon$lazy$macro$210$1$$anon$19.prototype = $c_LMessage$anon$lazy$macro$210$1$$anon$19.prototype;
+$c_LMessage$anon$lazy$macro$210$1$$anon$19.prototype.init___LMessage$anon$lazy$macro$210$1 = (function($$outer) {
   return this
 });
-var $d_LMessage$anon$lazy$macro$198$1$$anon$19 = new $TypeData().initClass({
-  LMessage$anon$lazy$macro$198$1$$anon$19: 0
-}, false, "Message$anon$lazy$macro$198$1$$anon$19", {
-  LMessage$anon$lazy$macro$198$1$$anon$19: 1,
+var $d_LMessage$anon$lazy$macro$210$1$$anon$19 = new $TypeData().initClass({
+  LMessage$anon$lazy$macro$210$1$$anon$19: 0
+}, false, "Message$anon$lazy$macro$210$1$$anon$19", {
+  LMessage$anon$lazy$macro$210$1$$anon$19: 1,
   O: 1,
   Lshapeless_DefaultSymbolicLabelling: 1,
   Lshapeless_package$DepFn0: 1,
   s_Serializable: 1,
   Ljava_io_Serializable: 1
 });
-$c_LMessage$anon$lazy$macro$198$1$$anon$19.prototype.$classData = $d_LMessage$anon$lazy$macro$198$1$$anon$19;
+$c_LMessage$anon$lazy$macro$210$1$$anon$19.prototype.$classData = $d_LMessage$anon$lazy$macro$210$1$$anon$19;
 /** @constructor */
-function $c_LMessage$anon$lazy$macro$198$1$$anon$20() {
+function $c_LMessage$anon$lazy$macro$210$1$$anon$20() {
   $c_O.call(this)
 }
-$c_LMessage$anon$lazy$macro$198$1$$anon$20.prototype = new $h_O();
-$c_LMessage$anon$lazy$macro$198$1$$anon$20.prototype.constructor = $c_LMessage$anon$lazy$macro$198$1$$anon$20;
+$c_LMessage$anon$lazy$macro$210$1$$anon$20.prototype = new $h_O();
+$c_LMessage$anon$lazy$macro$210$1$$anon$20.prototype.constructor = $c_LMessage$anon$lazy$macro$210$1$$anon$20;
 /** @constructor */
-function $h_LMessage$anon$lazy$macro$198$1$$anon$20() {
+function $h_LMessage$anon$lazy$macro$210$1$$anon$20() {
   /*<skip>*/
 }
-$h_LMessage$anon$lazy$macro$198$1$$anon$20.prototype = $c_LMessage$anon$lazy$macro$198$1$$anon$20.prototype;
-$c_LMessage$anon$lazy$macro$198$1$$anon$20.prototype.init___LMessage$anon$lazy$macro$198$1 = (function($$outer) {
+$h_LMessage$anon$lazy$macro$210$1$$anon$20.prototype = $c_LMessage$anon$lazy$macro$210$1$$anon$20.prototype;
+$c_LMessage$anon$lazy$macro$210$1$$anon$20.prototype.init___LMessage$anon$lazy$macro$210$1 = (function($$outer) {
   return this
 });
-var $d_LMessage$anon$lazy$macro$198$1$$anon$20 = new $TypeData().initClass({
-  LMessage$anon$lazy$macro$198$1$$anon$20: 0
-}, false, "Message$anon$lazy$macro$198$1$$anon$20", {
-  LMessage$anon$lazy$macro$198$1$$anon$20: 1,
+var $d_LMessage$anon$lazy$macro$210$1$$anon$20 = new $TypeData().initClass({
+  LMessage$anon$lazy$macro$210$1$$anon$20: 0
+}, false, "Message$anon$lazy$macro$210$1$$anon$20", {
+  LMessage$anon$lazy$macro$210$1$$anon$20: 1,
   O: 1,
   Lshapeless_DefaultSymbolicLabelling: 1,
   Lshapeless_package$DepFn0: 1,
   s_Serializable: 1,
   Ljava_io_Serializable: 1
 });
-$c_LMessage$anon$lazy$macro$198$1$$anon$20.prototype.$classData = $d_LMessage$anon$lazy$macro$198$1$$anon$20;
+$c_LMessage$anon$lazy$macro$210$1$$anon$20.prototype.$classData = $d_LMessage$anon$lazy$macro$210$1$$anon$20;
 /** @constructor */
-function $c_LMessage$anon$lazy$macro$198$1$$anon$21() {
+function $c_LMessage$anon$lazy$macro$210$1$$anon$21() {
   $c_O.call(this)
 }
-$c_LMessage$anon$lazy$macro$198$1$$anon$21.prototype = new $h_O();
-$c_LMessage$anon$lazy$macro$198$1$$anon$21.prototype.constructor = $c_LMessage$anon$lazy$macro$198$1$$anon$21;
+$c_LMessage$anon$lazy$macro$210$1$$anon$21.prototype = new $h_O();
+$c_LMessage$anon$lazy$macro$210$1$$anon$21.prototype.constructor = $c_LMessage$anon$lazy$macro$210$1$$anon$21;
 /** @constructor */
-function $h_LMessage$anon$lazy$macro$198$1$$anon$21() {
+function $h_LMessage$anon$lazy$macro$210$1$$anon$21() {
   /*<skip>*/
 }
-$h_LMessage$anon$lazy$macro$198$1$$anon$21.prototype = $c_LMessage$anon$lazy$macro$198$1$$anon$21.prototype;
-$c_LMessage$anon$lazy$macro$198$1$$anon$21.prototype.init___LMessage$anon$lazy$macro$198$1 = (function($$outer) {
+$h_LMessage$anon$lazy$macro$210$1$$anon$21.prototype = $c_LMessage$anon$lazy$macro$210$1$$anon$21.prototype;
+$c_LMessage$anon$lazy$macro$210$1$$anon$21.prototype.init___LMessage$anon$lazy$macro$210$1 = (function($$outer) {
   return this
 });
-var $d_LMessage$anon$lazy$macro$198$1$$anon$21 = new $TypeData().initClass({
-  LMessage$anon$lazy$macro$198$1$$anon$21: 0
-}, false, "Message$anon$lazy$macro$198$1$$anon$21", {
-  LMessage$anon$lazy$macro$198$1$$anon$21: 1,
+var $d_LMessage$anon$lazy$macro$210$1$$anon$21 = new $TypeData().initClass({
+  LMessage$anon$lazy$macro$210$1$$anon$21: 0
+}, false, "Message$anon$lazy$macro$210$1$$anon$21", {
+  LMessage$anon$lazy$macro$210$1$$anon$21: 1,
   O: 1,
   Lshapeless_DefaultSymbolicLabelling: 1,
   Lshapeless_package$DepFn0: 1,
   s_Serializable: 1,
   Ljava_io_Serializable: 1
 });
-$c_LMessage$anon$lazy$macro$198$1$$anon$21.prototype.$classData = $d_LMessage$anon$lazy$macro$198$1$$anon$21;
+$c_LMessage$anon$lazy$macro$210$1$$anon$21.prototype.$classData = $d_LMessage$anon$lazy$macro$210$1$$anon$21;
 /** @constructor */
-function $c_LMessage$anon$lazy$macro$198$1$$anon$22() {
+function $c_LMessage$anon$lazy$macro$210$1$$anon$22() {
   $c_O.call(this)
 }
-$c_LMessage$anon$lazy$macro$198$1$$anon$22.prototype = new $h_O();
-$c_LMessage$anon$lazy$macro$198$1$$anon$22.prototype.constructor = $c_LMessage$anon$lazy$macro$198$1$$anon$22;
+$c_LMessage$anon$lazy$macro$210$1$$anon$22.prototype = new $h_O();
+$c_LMessage$anon$lazy$macro$210$1$$anon$22.prototype.constructor = $c_LMessage$anon$lazy$macro$210$1$$anon$22;
 /** @constructor */
-function $h_LMessage$anon$lazy$macro$198$1$$anon$22() {
+function $h_LMessage$anon$lazy$macro$210$1$$anon$22() {
   /*<skip>*/
 }
-$h_LMessage$anon$lazy$macro$198$1$$anon$22.prototype = $c_LMessage$anon$lazy$macro$198$1$$anon$22.prototype;
-$c_LMessage$anon$lazy$macro$198$1$$anon$22.prototype.init___LMessage$anon$lazy$macro$198$1 = (function($$outer) {
+$h_LMessage$anon$lazy$macro$210$1$$anon$22.prototype = $c_LMessage$anon$lazy$macro$210$1$$anon$22.prototype;
+$c_LMessage$anon$lazy$macro$210$1$$anon$22.prototype.init___LMessage$anon$lazy$macro$210$1 = (function($$outer) {
   return this
 });
-var $d_LMessage$anon$lazy$macro$198$1$$anon$22 = new $TypeData().initClass({
-  LMessage$anon$lazy$macro$198$1$$anon$22: 0
-}, false, "Message$anon$lazy$macro$198$1$$anon$22", {
-  LMessage$anon$lazy$macro$198$1$$anon$22: 1,
+var $d_LMessage$anon$lazy$macro$210$1$$anon$22 = new $TypeData().initClass({
+  LMessage$anon$lazy$macro$210$1$$anon$22: 0
+}, false, "Message$anon$lazy$macro$210$1$$anon$22", {
+  LMessage$anon$lazy$macro$210$1$$anon$22: 1,
   O: 1,
   Lshapeless_DefaultSymbolicLabelling: 1,
   Lshapeless_package$DepFn0: 1,
   s_Serializable: 1,
   Ljava_io_Serializable: 1
 });
-$c_LMessage$anon$lazy$macro$198$1$$anon$22.prototype.$classData = $d_LMessage$anon$lazy$macro$198$1$$anon$22;
+$c_LMessage$anon$lazy$macro$210$1$$anon$22.prototype.$classData = $d_LMessage$anon$lazy$macro$210$1$$anon$22;
 /** @constructor */
-function $c_LMessage$anon$lazy$macro$198$1$$anon$23() {
+function $c_LMessage$anon$lazy$macro$210$1$$anon$23() {
   $c_O.call(this)
 }
-$c_LMessage$anon$lazy$macro$198$1$$anon$23.prototype = new $h_O();
-$c_LMessage$anon$lazy$macro$198$1$$anon$23.prototype.constructor = $c_LMessage$anon$lazy$macro$198$1$$anon$23;
+$c_LMessage$anon$lazy$macro$210$1$$anon$23.prototype = new $h_O();
+$c_LMessage$anon$lazy$macro$210$1$$anon$23.prototype.constructor = $c_LMessage$anon$lazy$macro$210$1$$anon$23;
 /** @constructor */
-function $h_LMessage$anon$lazy$macro$198$1$$anon$23() {
+function $h_LMessage$anon$lazy$macro$210$1$$anon$23() {
   /*<skip>*/
 }
-$h_LMessage$anon$lazy$macro$198$1$$anon$23.prototype = $c_LMessage$anon$lazy$macro$198$1$$anon$23.prototype;
-$c_LMessage$anon$lazy$macro$198$1$$anon$23.prototype.init___LMessage$anon$lazy$macro$198$1 = (function($$outer) {
+$h_LMessage$anon$lazy$macro$210$1$$anon$23.prototype = $c_LMessage$anon$lazy$macro$210$1$$anon$23.prototype;
+$c_LMessage$anon$lazy$macro$210$1$$anon$23.prototype.init___LMessage$anon$lazy$macro$210$1 = (function($$outer) {
   return this
 });
-var $d_LMessage$anon$lazy$macro$198$1$$anon$23 = new $TypeData().initClass({
-  LMessage$anon$lazy$macro$198$1$$anon$23: 0
-}, false, "Message$anon$lazy$macro$198$1$$anon$23", {
-  LMessage$anon$lazy$macro$198$1$$anon$23: 1,
+var $d_LMessage$anon$lazy$macro$210$1$$anon$23 = new $TypeData().initClass({
+  LMessage$anon$lazy$macro$210$1$$anon$23: 0
+}, false, "Message$anon$lazy$macro$210$1$$anon$23", {
+  LMessage$anon$lazy$macro$210$1$$anon$23: 1,
   O: 1,
   Lshapeless_DefaultSymbolicLabelling: 1,
   Lshapeless_package$DepFn0: 1,
   s_Serializable: 1,
   Ljava_io_Serializable: 1
 });
-$c_LMessage$anon$lazy$macro$198$1$$anon$23.prototype.$classData = $d_LMessage$anon$lazy$macro$198$1$$anon$23;
+$c_LMessage$anon$lazy$macro$210$1$$anon$23.prototype.$classData = $d_LMessage$anon$lazy$macro$210$1$$anon$23;
 /** @constructor */
-function $c_LMessage$anon$lazy$macro$198$1$$anon$24() {
+function $c_LMessage$anon$lazy$macro$210$1$$anon$24() {
   $c_O.call(this)
 }
-$c_LMessage$anon$lazy$macro$198$1$$anon$24.prototype = new $h_O();
-$c_LMessage$anon$lazy$macro$198$1$$anon$24.prototype.constructor = $c_LMessage$anon$lazy$macro$198$1$$anon$24;
+$c_LMessage$anon$lazy$macro$210$1$$anon$24.prototype = new $h_O();
+$c_LMessage$anon$lazy$macro$210$1$$anon$24.prototype.constructor = $c_LMessage$anon$lazy$macro$210$1$$anon$24;
 /** @constructor */
-function $h_LMessage$anon$lazy$macro$198$1$$anon$24() {
+function $h_LMessage$anon$lazy$macro$210$1$$anon$24() {
   /*<skip>*/
 }
-$h_LMessage$anon$lazy$macro$198$1$$anon$24.prototype = $c_LMessage$anon$lazy$macro$198$1$$anon$24.prototype;
-$c_LMessage$anon$lazy$macro$198$1$$anon$24.prototype.init___LMessage$anon$lazy$macro$198$1 = (function($$outer) {
+$h_LMessage$anon$lazy$macro$210$1$$anon$24.prototype = $c_LMessage$anon$lazy$macro$210$1$$anon$24.prototype;
+$c_LMessage$anon$lazy$macro$210$1$$anon$24.prototype.init___LMessage$anon$lazy$macro$210$1 = (function($$outer) {
   return this
 });
-var $d_LMessage$anon$lazy$macro$198$1$$anon$24 = new $TypeData().initClass({
-  LMessage$anon$lazy$macro$198$1$$anon$24: 0
-}, false, "Message$anon$lazy$macro$198$1$$anon$24", {
-  LMessage$anon$lazy$macro$198$1$$anon$24: 1,
+var $d_LMessage$anon$lazy$macro$210$1$$anon$24 = new $TypeData().initClass({
+  LMessage$anon$lazy$macro$210$1$$anon$24: 0
+}, false, "Message$anon$lazy$macro$210$1$$anon$24", {
+  LMessage$anon$lazy$macro$210$1$$anon$24: 1,
   O: 1,
   Lshapeless_DefaultSymbolicLabelling: 1,
   Lshapeless_package$DepFn0: 1,
   s_Serializable: 1,
   Ljava_io_Serializable: 1
 });
-$c_LMessage$anon$lazy$macro$198$1$$anon$24.prototype.$classData = $d_LMessage$anon$lazy$macro$198$1$$anon$24;
+$c_LMessage$anon$lazy$macro$210$1$$anon$24.prototype.$classData = $d_LMessage$anon$lazy$macro$210$1$$anon$24;
 /** @constructor */
-function $c_LMessage$anon$lazy$macro$283$1$$anon$25() {
+function $c_LMessage$anon$lazy$macro$210$1$$anon$25() {
+  $c_O.call(this)
+}
+$c_LMessage$anon$lazy$macro$210$1$$anon$25.prototype = new $h_O();
+$c_LMessage$anon$lazy$macro$210$1$$anon$25.prototype.constructor = $c_LMessage$anon$lazy$macro$210$1$$anon$25;
+/** @constructor */
+function $h_LMessage$anon$lazy$macro$210$1$$anon$25() {
+  /*<skip>*/
+}
+$h_LMessage$anon$lazy$macro$210$1$$anon$25.prototype = $c_LMessage$anon$lazy$macro$210$1$$anon$25.prototype;
+$c_LMessage$anon$lazy$macro$210$1$$anon$25.prototype.init___LMessage$anon$lazy$macro$210$1 = (function($$outer) {
+  return this
+});
+var $d_LMessage$anon$lazy$macro$210$1$$anon$25 = new $TypeData().initClass({
+  LMessage$anon$lazy$macro$210$1$$anon$25: 0
+}, false, "Message$anon$lazy$macro$210$1$$anon$25", {
+  LMessage$anon$lazy$macro$210$1$$anon$25: 1,
+  O: 1,
+  Lshapeless_DefaultSymbolicLabelling: 1,
+  Lshapeless_package$DepFn0: 1,
+  s_Serializable: 1,
+  Ljava_io_Serializable: 1
+});
+$c_LMessage$anon$lazy$macro$210$1$$anon$25.prototype.$classData = $d_LMessage$anon$lazy$macro$210$1$$anon$25;
+/** @constructor */
+function $c_LMessage$anon$lazy$macro$301$1$$anon$26() {
   $c_Lio_circe_generic_decoding_ReprDecoder.call(this);
-  this.fresh$macro$211$2 = null
+  this.fresh$macro$223$2 = null
 }
-$c_LMessage$anon$lazy$macro$283$1$$anon$25.prototype = new $h_Lio_circe_generic_decoding_ReprDecoder();
-$c_LMessage$anon$lazy$macro$283$1$$anon$25.prototype.constructor = $c_LMessage$anon$lazy$macro$283$1$$anon$25;
+$c_LMessage$anon$lazy$macro$301$1$$anon$26.prototype = new $h_Lio_circe_generic_decoding_ReprDecoder();
+$c_LMessage$anon$lazy$macro$301$1$$anon$26.prototype.constructor = $c_LMessage$anon$lazy$macro$301$1$$anon$26;
 /** @constructor */
-function $h_LMessage$anon$lazy$macro$283$1$$anon$25() {
+function $h_LMessage$anon$lazy$macro$301$1$$anon$26() {
   /*<skip>*/
 }
-$h_LMessage$anon$lazy$macro$283$1$$anon$25.prototype = $c_LMessage$anon$lazy$macro$283$1$$anon$25.prototype;
-$c_LMessage$anon$lazy$macro$283$1$$anon$25.prototype.init___LMessage$anon$lazy$macro$283$1 = (function($$outer) {
-  this.fresh$macro$211$2 = $m_LCommonState$().decodeMessage$1;
+$h_LMessage$anon$lazy$macro$301$1$$anon$26.prototype = $c_LMessage$anon$lazy$macro$301$1$$anon$26.prototype;
+$c_LMessage$anon$lazy$macro$301$1$$anon$26.prototype.init___LMessage$anon$lazy$macro$301$1 = (function($$outer) {
+  this.fresh$macro$223$2 = $m_LCommonState$().decodeMessage$1;
   return this
 });
-$c_LMessage$anon$lazy$macro$283$1$$anon$25.prototype.apply__Lio_circe_HCursor__s_util_Either = (function(c) {
-  return $as_s_util_Either($m_Lio_circe_generic_decoding_ReprDecoder$().consResults__O__O__Lcats_Apply__O(this.fresh$macro$211$2.tryDecode__Lio_circe_ACursor__s_util_Either(c.downField__T__Lio_circe_ACursor("common")), $m_Lio_circe_generic_decoding_ReprDecoder$().hnilResult$1, $m_Lio_circe_Decoder$().resultInstance$1))
+$c_LMessage$anon$lazy$macro$301$1$$anon$26.prototype.apply__Lio_circe_HCursor__s_util_Either = (function(c) {
+  return $as_s_util_Either($m_Lio_circe_generic_decoding_ReprDecoder$().consResults__O__O__Lcats_Apply__O(this.fresh$macro$223$2.tryDecode__Lio_circe_ACursor__s_util_Either(c.downField__T__Lio_circe_ACursor("common")), $m_Lio_circe_generic_decoding_ReprDecoder$().hnilResult$1, $m_Lio_circe_Decoder$().resultInstance$1))
 });
-var $d_LMessage$anon$lazy$macro$283$1$$anon$25 = new $TypeData().initClass({
-  LMessage$anon$lazy$macro$283$1$$anon$25: 0
-}, false, "Message$anon$lazy$macro$283$1$$anon$25", {
-  LMessage$anon$lazy$macro$283$1$$anon$25: 1,
+var $d_LMessage$anon$lazy$macro$301$1$$anon$26 = new $TypeData().initClass({
+  LMessage$anon$lazy$macro$301$1$$anon$26: 0
+}, false, "Message$anon$lazy$macro$301$1$$anon$26", {
+  LMessage$anon$lazy$macro$301$1$$anon$26: 1,
   Lio_circe_generic_decoding_ReprDecoder: 1,
   O: 1,
   Lio_circe_Decoder: 1,
   s_Serializable: 1,
   Ljava_io_Serializable: 1
 });
-$c_LMessage$anon$lazy$macro$283$1$$anon$25.prototype.$classData = $d_LMessage$anon$lazy$macro$283$1$$anon$25;
+$c_LMessage$anon$lazy$macro$301$1$$anon$26.prototype.$classData = $d_LMessage$anon$lazy$macro$301$1$$anon$26;
 /** @constructor */
-function $c_LMessage$anon$lazy$macro$283$1$$anon$26() {
+function $c_LMessage$anon$lazy$macro$301$1$$anon$27() {
   $c_O.call(this)
 }
-$c_LMessage$anon$lazy$macro$283$1$$anon$26.prototype = new $h_O();
-$c_LMessage$anon$lazy$macro$283$1$$anon$26.prototype.constructor = $c_LMessage$anon$lazy$macro$283$1$$anon$26;
+$c_LMessage$anon$lazy$macro$301$1$$anon$27.prototype = new $h_O();
+$c_LMessage$anon$lazy$macro$301$1$$anon$27.prototype.constructor = $c_LMessage$anon$lazy$macro$301$1$$anon$27;
 /** @constructor */
-function $h_LMessage$anon$lazy$macro$283$1$$anon$26() {
+function $h_LMessage$anon$lazy$macro$301$1$$anon$27() {
   /*<skip>*/
 }
-$h_LMessage$anon$lazy$macro$283$1$$anon$26.prototype = $c_LMessage$anon$lazy$macro$283$1$$anon$26.prototype;
-$c_LMessage$anon$lazy$macro$283$1$$anon$26.prototype.init___LMessage$anon$lazy$macro$283$1 = (function($$outer) {
+$h_LMessage$anon$lazy$macro$301$1$$anon$27.prototype = $c_LMessage$anon$lazy$macro$301$1$$anon$27.prototype;
+$c_LMessage$anon$lazy$macro$301$1$$anon$27.prototype.init___LMessage$anon$lazy$macro$301$1 = (function($$outer) {
   return this
 });
-var $d_LMessage$anon$lazy$macro$283$1$$anon$26 = new $TypeData().initClass({
-  LMessage$anon$lazy$macro$283$1$$anon$26: 0
-}, false, "Message$anon$lazy$macro$283$1$$anon$26", {
-  LMessage$anon$lazy$macro$283$1$$anon$26: 1,
+var $d_LMessage$anon$lazy$macro$301$1$$anon$27 = new $TypeData().initClass({
+  LMessage$anon$lazy$macro$301$1$$anon$27: 0
+}, false, "Message$anon$lazy$macro$301$1$$anon$27", {
+  LMessage$anon$lazy$macro$301$1$$anon$27: 1,
   O: 1,
   Lshapeless_DefaultSymbolicLabelling: 1,
   Lshapeless_package$DepFn0: 1,
   s_Serializable: 1,
   Ljava_io_Serializable: 1
 });
-$c_LMessage$anon$lazy$macro$283$1$$anon$26.prototype.$classData = $d_LMessage$anon$lazy$macro$283$1$$anon$26;
+$c_LMessage$anon$lazy$macro$301$1$$anon$27.prototype.$classData = $d_LMessage$anon$lazy$macro$301$1$$anon$27;
 /** @constructor */
-function $c_LMessage$anon$lazy$macro$283$1$$anon$27() {
-  $c_Lio_circe_generic_decoding_ReprDecoder.call(this);
-  this.fresh$macro$221$2 = null
+function $c_LMessage$anon$lazy$macro$301$1$$anon$28() {
+  $c_O.call(this)
 }
-$c_LMessage$anon$lazy$macro$283$1$$anon$27.prototype = new $h_Lio_circe_generic_decoding_ReprDecoder();
-$c_LMessage$anon$lazy$macro$283$1$$anon$27.prototype.constructor = $c_LMessage$anon$lazy$macro$283$1$$anon$27;
+$c_LMessage$anon$lazy$macro$301$1$$anon$28.prototype = new $h_O();
+$c_LMessage$anon$lazy$macro$301$1$$anon$28.prototype.constructor = $c_LMessage$anon$lazy$macro$301$1$$anon$28;
 /** @constructor */
-function $h_LMessage$anon$lazy$macro$283$1$$anon$27() {
+function $h_LMessage$anon$lazy$macro$301$1$$anon$28() {
   /*<skip>*/
 }
-$h_LMessage$anon$lazy$macro$283$1$$anon$27.prototype = $c_LMessage$anon$lazy$macro$283$1$$anon$27.prototype;
-$c_LMessage$anon$lazy$macro$283$1$$anon$27.prototype.init___LMessage$anon$lazy$macro$283$1 = (function($$outer) {
-  this.fresh$macro$221$2 = $m_Lio_circe_Decoder$().decodeInt$1;
+$h_LMessage$anon$lazy$macro$301$1$$anon$28.prototype = $c_LMessage$anon$lazy$macro$301$1$$anon$28.prototype;
+$c_LMessage$anon$lazy$macro$301$1$$anon$28.prototype.init___LMessage$anon$lazy$macro$301$1 = (function($$outer) {
   return this
 });
-$c_LMessage$anon$lazy$macro$283$1$$anon$27.prototype.apply__Lio_circe_HCursor__s_util_Either = (function(c) {
-  return $as_s_util_Either($m_Lio_circe_generic_decoding_ReprDecoder$().consResults__O__O__Lcats_Apply__O(this.fresh$macro$221$2.tryDecode__Lio_circe_ACursor__s_util_Either(c.downField__T__Lio_circe_ACursor("sId")), $m_Lio_circe_generic_decoding_ReprDecoder$().consResults__O__O__Lcats_Apply__O(this.fresh$macro$221$2.tryDecode__Lio_circe_ACursor__s_util_Either(c.downField__T__Lio_circe_ACursor("lifes")), $m_Lio_circe_generic_decoding_ReprDecoder$().hnilResult$1, $m_Lio_circe_Decoder$().resultInstance$1), $m_Lio_circe_Decoder$().resultInstance$1))
+var $d_LMessage$anon$lazy$macro$301$1$$anon$28 = new $TypeData().initClass({
+  LMessage$anon$lazy$macro$301$1$$anon$28: 0
+}, false, "Message$anon$lazy$macro$301$1$$anon$28", {
+  LMessage$anon$lazy$macro$301$1$$anon$28: 1,
+  O: 1,
+  Lshapeless_DefaultSymbolicLabelling: 1,
+  Lshapeless_package$DepFn0: 1,
+  s_Serializable: 1,
+  Ljava_io_Serializable: 1
 });
-var $d_LMessage$anon$lazy$macro$283$1$$anon$27 = new $TypeData().initClass({
-  LMessage$anon$lazy$macro$283$1$$anon$27: 0
-}, false, "Message$anon$lazy$macro$283$1$$anon$27", {
-  LMessage$anon$lazy$macro$283$1$$anon$27: 1,
+$c_LMessage$anon$lazy$macro$301$1$$anon$28.prototype.$classData = $d_LMessage$anon$lazy$macro$301$1$$anon$28;
+/** @constructor */
+function $c_LMessage$anon$lazy$macro$301$1$$anon$29() {
+  $c_Lio_circe_generic_decoding_ReprDecoder.call(this);
+  this.fresh$macro$239$2 = null
+}
+$c_LMessage$anon$lazy$macro$301$1$$anon$29.prototype = new $h_Lio_circe_generic_decoding_ReprDecoder();
+$c_LMessage$anon$lazy$macro$301$1$$anon$29.prototype.constructor = $c_LMessage$anon$lazy$macro$301$1$$anon$29;
+/** @constructor */
+function $h_LMessage$anon$lazy$macro$301$1$$anon$29() {
+  /*<skip>*/
+}
+$h_LMessage$anon$lazy$macro$301$1$$anon$29.prototype = $c_LMessage$anon$lazy$macro$301$1$$anon$29.prototype;
+$c_LMessage$anon$lazy$macro$301$1$$anon$29.prototype.init___LMessage$anon$lazy$macro$301$1 = (function($$outer) {
+  this.fresh$macro$239$2 = $m_Lio_circe_Decoder$().decodeInt$1;
+  return this
+});
+$c_LMessage$anon$lazy$macro$301$1$$anon$29.prototype.apply__Lio_circe_HCursor__s_util_Either = (function(c) {
+  return $as_s_util_Either($m_Lio_circe_generic_decoding_ReprDecoder$().consResults__O__O__Lcats_Apply__O(this.fresh$macro$239$2.tryDecode__Lio_circe_ACursor__s_util_Either(c.downField__T__Lio_circe_ACursor("sId")), $m_Lio_circe_generic_decoding_ReprDecoder$().consResults__O__O__Lcats_Apply__O(this.fresh$macro$239$2.tryDecode__Lio_circe_ACursor__s_util_Either(c.downField__T__Lio_circe_ACursor("lifes")), $m_Lio_circe_generic_decoding_ReprDecoder$().hnilResult$1, $m_Lio_circe_Decoder$().resultInstance$1), $m_Lio_circe_Decoder$().resultInstance$1))
+});
+var $d_LMessage$anon$lazy$macro$301$1$$anon$29 = new $TypeData().initClass({
+  LMessage$anon$lazy$macro$301$1$$anon$29: 0
+}, false, "Message$anon$lazy$macro$301$1$$anon$29", {
+  LMessage$anon$lazy$macro$301$1$$anon$29: 1,
   Lio_circe_generic_decoding_ReprDecoder: 1,
   O: 1,
   Lio_circe_Decoder: 1,
   s_Serializable: 1,
   Ljava_io_Serializable: 1
 });
-$c_LMessage$anon$lazy$macro$283$1$$anon$27.prototype.$classData = $d_LMessage$anon$lazy$macro$283$1$$anon$27;
+$c_LMessage$anon$lazy$macro$301$1$$anon$29.prototype.$classData = $d_LMessage$anon$lazy$macro$301$1$$anon$29;
 /** @constructor */
-function $c_LMessage$anon$lazy$macro$283$1$$anon$28() {
+function $c_LMessage$anon$lazy$macro$301$1$$anon$30() {
   $c_O.call(this)
 }
-$c_LMessage$anon$lazy$macro$283$1$$anon$28.prototype = new $h_O();
-$c_LMessage$anon$lazy$macro$283$1$$anon$28.prototype.constructor = $c_LMessage$anon$lazy$macro$283$1$$anon$28;
+$c_LMessage$anon$lazy$macro$301$1$$anon$30.prototype = new $h_O();
+$c_LMessage$anon$lazy$macro$301$1$$anon$30.prototype.constructor = $c_LMessage$anon$lazy$macro$301$1$$anon$30;
 /** @constructor */
-function $h_LMessage$anon$lazy$macro$283$1$$anon$28() {
+function $h_LMessage$anon$lazy$macro$301$1$$anon$30() {
   /*<skip>*/
 }
-$h_LMessage$anon$lazy$macro$283$1$$anon$28.prototype = $c_LMessage$anon$lazy$macro$283$1$$anon$28.prototype;
-$c_LMessage$anon$lazy$macro$283$1$$anon$28.prototype.init___LMessage$anon$lazy$macro$283$1 = (function($$outer) {
+$h_LMessage$anon$lazy$macro$301$1$$anon$30.prototype = $c_LMessage$anon$lazy$macro$301$1$$anon$30.prototype;
+$c_LMessage$anon$lazy$macro$301$1$$anon$30.prototype.init___LMessage$anon$lazy$macro$301$1 = (function($$outer) {
   return this
 });
-var $d_LMessage$anon$lazy$macro$283$1$$anon$28 = new $TypeData().initClass({
-  LMessage$anon$lazy$macro$283$1$$anon$28: 0
-}, false, "Message$anon$lazy$macro$283$1$$anon$28", {
-  LMessage$anon$lazy$macro$283$1$$anon$28: 1,
+var $d_LMessage$anon$lazy$macro$301$1$$anon$30 = new $TypeData().initClass({
+  LMessage$anon$lazy$macro$301$1$$anon$30: 0
+}, false, "Message$anon$lazy$macro$301$1$$anon$30", {
+  LMessage$anon$lazy$macro$301$1$$anon$30: 1,
   O: 1,
   Lshapeless_DefaultSymbolicLabelling: 1,
   Lshapeless_package$DepFn0: 1,
   s_Serializable: 1,
   Ljava_io_Serializable: 1
 });
-$c_LMessage$anon$lazy$macro$283$1$$anon$28.prototype.$classData = $d_LMessage$anon$lazy$macro$283$1$$anon$28;
+$c_LMessage$anon$lazy$macro$301$1$$anon$30.prototype.$classData = $d_LMessage$anon$lazy$macro$301$1$$anon$30;
 /** @constructor */
-function $c_LMessage$anon$lazy$macro$283$1$$anon$29() {
+function $c_LMessage$anon$lazy$macro$301$1$$anon$31() {
   $c_O.call(this)
 }
-$c_LMessage$anon$lazy$macro$283$1$$anon$29.prototype = new $h_O();
-$c_LMessage$anon$lazy$macro$283$1$$anon$29.prototype.constructor = $c_LMessage$anon$lazy$macro$283$1$$anon$29;
+$c_LMessage$anon$lazy$macro$301$1$$anon$31.prototype = new $h_O();
+$c_LMessage$anon$lazy$macro$301$1$$anon$31.prototype.constructor = $c_LMessage$anon$lazy$macro$301$1$$anon$31;
 /** @constructor */
-function $h_LMessage$anon$lazy$macro$283$1$$anon$29() {
+function $h_LMessage$anon$lazy$macro$301$1$$anon$31() {
   /*<skip>*/
 }
-$h_LMessage$anon$lazy$macro$283$1$$anon$29.prototype = $c_LMessage$anon$lazy$macro$283$1$$anon$29.prototype;
-$c_LMessage$anon$lazy$macro$283$1$$anon$29.prototype.init___LMessage$anon$lazy$macro$283$1 = (function($$outer) {
+$h_LMessage$anon$lazy$macro$301$1$$anon$31.prototype = $c_LMessage$anon$lazy$macro$301$1$$anon$31.prototype;
+$c_LMessage$anon$lazy$macro$301$1$$anon$31.prototype.init___LMessage$anon$lazy$macro$301$1 = (function($$outer) {
   return this
 });
-var $d_LMessage$anon$lazy$macro$283$1$$anon$29 = new $TypeData().initClass({
-  LMessage$anon$lazy$macro$283$1$$anon$29: 0
-}, false, "Message$anon$lazy$macro$283$1$$anon$29", {
-  LMessage$anon$lazy$macro$283$1$$anon$29: 1,
+var $d_LMessage$anon$lazy$macro$301$1$$anon$31 = new $TypeData().initClass({
+  LMessage$anon$lazy$macro$301$1$$anon$31: 0
+}, false, "Message$anon$lazy$macro$301$1$$anon$31", {
+  LMessage$anon$lazy$macro$301$1$$anon$31: 1,
   O: 1,
   Lshapeless_DefaultSymbolicLabelling: 1,
   Lshapeless_package$DepFn0: 1,
   s_Serializable: 1,
   Ljava_io_Serializable: 1
 });
-$c_LMessage$anon$lazy$macro$283$1$$anon$29.prototype.$classData = $d_LMessage$anon$lazy$macro$283$1$$anon$29;
+$c_LMessage$anon$lazy$macro$301$1$$anon$31.prototype.$classData = $d_LMessage$anon$lazy$macro$301$1$$anon$31;
 /** @constructor */
-function $c_LMessage$anon$lazy$macro$283$1$$anon$30() {
+function $c_LMessage$anon$lazy$macro$301$1$$anon$32() {
   $c_O.call(this)
 }
-$c_LMessage$anon$lazy$macro$283$1$$anon$30.prototype = new $h_O();
-$c_LMessage$anon$lazy$macro$283$1$$anon$30.prototype.constructor = $c_LMessage$anon$lazy$macro$283$1$$anon$30;
+$c_LMessage$anon$lazy$macro$301$1$$anon$32.prototype = new $h_O();
+$c_LMessage$anon$lazy$macro$301$1$$anon$32.prototype.constructor = $c_LMessage$anon$lazy$macro$301$1$$anon$32;
 /** @constructor */
-function $h_LMessage$anon$lazy$macro$283$1$$anon$30() {
+function $h_LMessage$anon$lazy$macro$301$1$$anon$32() {
   /*<skip>*/
 }
-$h_LMessage$anon$lazy$macro$283$1$$anon$30.prototype = $c_LMessage$anon$lazy$macro$283$1$$anon$30.prototype;
-$c_LMessage$anon$lazy$macro$283$1$$anon$30.prototype.init___LMessage$anon$lazy$macro$283$1 = (function($$outer) {
+$h_LMessage$anon$lazy$macro$301$1$$anon$32.prototype = $c_LMessage$anon$lazy$macro$301$1$$anon$32.prototype;
+$c_LMessage$anon$lazy$macro$301$1$$anon$32.prototype.init___LMessage$anon$lazy$macro$301$1 = (function($$outer) {
   return this
 });
-var $d_LMessage$anon$lazy$macro$283$1$$anon$30 = new $TypeData().initClass({
-  LMessage$anon$lazy$macro$283$1$$anon$30: 0
-}, false, "Message$anon$lazy$macro$283$1$$anon$30", {
-  LMessage$anon$lazy$macro$283$1$$anon$30: 1,
+var $d_LMessage$anon$lazy$macro$301$1$$anon$32 = new $TypeData().initClass({
+  LMessage$anon$lazy$macro$301$1$$anon$32: 0
+}, false, "Message$anon$lazy$macro$301$1$$anon$32", {
+  LMessage$anon$lazy$macro$301$1$$anon$32: 1,
   O: 1,
   Lshapeless_DefaultSymbolicLabelling: 1,
   Lshapeless_package$DepFn0: 1,
   s_Serializable: 1,
   Ljava_io_Serializable: 1
 });
-$c_LMessage$anon$lazy$macro$283$1$$anon$30.prototype.$classData = $d_LMessage$anon$lazy$macro$283$1$$anon$30;
+$c_LMessage$anon$lazy$macro$301$1$$anon$32.prototype.$classData = $d_LMessage$anon$lazy$macro$301$1$$anon$32;
 /** @constructor */
-function $c_LMessage$anon$lazy$macro$283$1$$anon$31() {
+function $c_LMessage$anon$lazy$macro$301$1$$anon$33() {
   $c_Lio_circe_generic_decoding_ReprDecoder.call(this);
+  this.fresh$macro$258$2 = null;
+  this.fresh$macro$259$2 = null
+}
+$c_LMessage$anon$lazy$macro$301$1$$anon$33.prototype = new $h_Lio_circe_generic_decoding_ReprDecoder();
+$c_LMessage$anon$lazy$macro$301$1$$anon$33.prototype.constructor = $c_LMessage$anon$lazy$macro$301$1$$anon$33;
+/** @constructor */
+function $h_LMessage$anon$lazy$macro$301$1$$anon$33() {
+  /*<skip>*/
+}
+$h_LMessage$anon$lazy$macro$301$1$$anon$33.prototype = $c_LMessage$anon$lazy$macro$301$1$$anon$33.prototype;
+$c_LMessage$anon$lazy$macro$301$1$$anon$33.prototype.init___LMessage$anon$lazy$macro$301$1 = (function($$outer) {
+  this.fresh$macro$258$2 = $m_Lio_circe_Decoder$().decodeInt$1;
+  this.fresh$macro$259$2 = $m_LCommonState$().decodeMessage$1;
+  return this
+});
+$c_LMessage$anon$lazy$macro$301$1$$anon$33.prototype.apply__Lio_circe_HCursor__s_util_Either = (function(c) {
+  return $as_s_util_Either($m_Lio_circe_generic_decoding_ReprDecoder$().consResults__O__O__Lcats_Apply__O(this.fresh$macro$259$2.tryDecode__Lio_circe_ACursor__s_util_Either(c.downField__T__Lio_circe_ACursor("common")), $m_Lio_circe_generic_decoding_ReprDecoder$().consResults__O__O__Lcats_Apply__O(this.fresh$macro$258$2.tryDecode__Lio_circe_ACursor__s_util_Either(c.downField__T__Lio_circe_ACursor("shooter")), $m_Lio_circe_generic_decoding_ReprDecoder$().hnilResult$1, $m_Lio_circe_Decoder$().resultInstance$1), $m_Lio_circe_Decoder$().resultInstance$1))
+});
+var $d_LMessage$anon$lazy$macro$301$1$$anon$33 = new $TypeData().initClass({
+  LMessage$anon$lazy$macro$301$1$$anon$33: 0
+}, false, "Message$anon$lazy$macro$301$1$$anon$33", {
+  LMessage$anon$lazy$macro$301$1$$anon$33: 1,
+  Lio_circe_generic_decoding_ReprDecoder: 1,
+  O: 1,
+  Lio_circe_Decoder: 1,
+  s_Serializable: 1,
+  Ljava_io_Serializable: 1
+});
+$c_LMessage$anon$lazy$macro$301$1$$anon$33.prototype.$classData = $d_LMessage$anon$lazy$macro$301$1$$anon$33;
+/** @constructor */
+function $c_LMessage$anon$lazy$macro$301$1$$anon$34() {
+  $c_O.call(this)
+}
+$c_LMessage$anon$lazy$macro$301$1$$anon$34.prototype = new $h_O();
+$c_LMessage$anon$lazy$macro$301$1$$anon$34.prototype.constructor = $c_LMessage$anon$lazy$macro$301$1$$anon$34;
+/** @constructor */
+function $h_LMessage$anon$lazy$macro$301$1$$anon$34() {
+  /*<skip>*/
+}
+$h_LMessage$anon$lazy$macro$301$1$$anon$34.prototype = $c_LMessage$anon$lazy$macro$301$1$$anon$34.prototype;
+$c_LMessage$anon$lazy$macro$301$1$$anon$34.prototype.init___LMessage$anon$lazy$macro$301$1 = (function($$outer) {
+  return this
+});
+var $d_LMessage$anon$lazy$macro$301$1$$anon$34 = new $TypeData().initClass({
+  LMessage$anon$lazy$macro$301$1$$anon$34: 0
+}, false, "Message$anon$lazy$macro$301$1$$anon$34", {
+  LMessage$anon$lazy$macro$301$1$$anon$34: 1,
+  O: 1,
+  Lshapeless_DefaultSymbolicLabelling: 1,
+  Lshapeless_package$DepFn0: 1,
+  s_Serializable: 1,
+  Ljava_io_Serializable: 1
+});
+$c_LMessage$anon$lazy$macro$301$1$$anon$34.prototype.$classData = $d_LMessage$anon$lazy$macro$301$1$$anon$34;
+/** @constructor */
+function $c_LMessage$anon$lazy$macro$301$1$$anon$35() {
+  $c_Lio_circe_generic_decoding_ReprDecoder.call(this);
+  this.fresh$macro$267$2 = null
+}
+$c_LMessage$anon$lazy$macro$301$1$$anon$35.prototype = new $h_Lio_circe_generic_decoding_ReprDecoder();
+$c_LMessage$anon$lazy$macro$301$1$$anon$35.prototype.constructor = $c_LMessage$anon$lazy$macro$301$1$$anon$35;
+/** @constructor */
+function $h_LMessage$anon$lazy$macro$301$1$$anon$35() {
+  /*<skip>*/
+}
+$h_LMessage$anon$lazy$macro$301$1$$anon$35.prototype = $c_LMessage$anon$lazy$macro$301$1$$anon$35.prototype;
+$c_LMessage$anon$lazy$macro$301$1$$anon$35.prototype.init___LMessage$anon$lazy$macro$301$1 = (function($$outer) {
+  this.fresh$macro$267$2 = $m_Lio_circe_Decoder$().decodeInt$1;
+  return this
+});
+$c_LMessage$anon$lazy$macro$301$1$$anon$35.prototype.apply__Lio_circe_HCursor__s_util_Either = (function(c) {
+  return $as_s_util_Either($m_Lio_circe_generic_decoding_ReprDecoder$().consResults__O__O__Lcats_Apply__O(this.fresh$macro$267$2.tryDecode__Lio_circe_ACursor__s_util_Either(c.downField__T__Lio_circe_ACursor("destroy")), $m_Lio_circe_generic_decoding_ReprDecoder$().hnilResult$1, $m_Lio_circe_Decoder$().resultInstance$1))
+});
+var $d_LMessage$anon$lazy$macro$301$1$$anon$35 = new $TypeData().initClass({
+  LMessage$anon$lazy$macro$301$1$$anon$35: 0
+}, false, "Message$anon$lazy$macro$301$1$$anon$35", {
+  LMessage$anon$lazy$macro$301$1$$anon$35: 1,
+  Lio_circe_generic_decoding_ReprDecoder: 1,
+  O: 1,
+  Lio_circe_Decoder: 1,
+  s_Serializable: 1,
+  Ljava_io_Serializable: 1
+});
+$c_LMessage$anon$lazy$macro$301$1$$anon$35.prototype.$classData = $d_LMessage$anon$lazy$macro$301$1$$anon$35;
+/** @constructor */
+function $c_LMessage$anon$lazy$macro$301$1$$anon$36() {
+  $c_O.call(this)
+}
+$c_LMessage$anon$lazy$macro$301$1$$anon$36.prototype = new $h_O();
+$c_LMessage$anon$lazy$macro$301$1$$anon$36.prototype.constructor = $c_LMessage$anon$lazy$macro$301$1$$anon$36;
+/** @constructor */
+function $h_LMessage$anon$lazy$macro$301$1$$anon$36() {
+  /*<skip>*/
+}
+$h_LMessage$anon$lazy$macro$301$1$$anon$36.prototype = $c_LMessage$anon$lazy$macro$301$1$$anon$36.prototype;
+$c_LMessage$anon$lazy$macro$301$1$$anon$36.prototype.init___LMessage$anon$lazy$macro$301$1 = (function($$outer) {
+  return this
+});
+var $d_LMessage$anon$lazy$macro$301$1$$anon$36 = new $TypeData().initClass({
+  LMessage$anon$lazy$macro$301$1$$anon$36: 0
+}, false, "Message$anon$lazy$macro$301$1$$anon$36", {
+  LMessage$anon$lazy$macro$301$1$$anon$36: 1,
+  O: 1,
+  Lshapeless_DefaultSymbolicLabelling: 1,
+  Lshapeless_package$DepFn0: 1,
+  s_Serializable: 1,
+  Ljava_io_Serializable: 1
+});
+$c_LMessage$anon$lazy$macro$301$1$$anon$36.prototype.$classData = $d_LMessage$anon$lazy$macro$301$1$$anon$36;
+/** @constructor */
+function $c_LMessage$anon$lazy$macro$301$1$$anon$37() {
+  $c_Lio_circe_generic_decoding_ReprDecoder.call(this);
+  this.fresh$macro$277$2 = null;
+  this.fresh$macro$278$2 = null
+}
+$c_LMessage$anon$lazy$macro$301$1$$anon$37.prototype = new $h_Lio_circe_generic_decoding_ReprDecoder();
+$c_LMessage$anon$lazy$macro$301$1$$anon$37.prototype.constructor = $c_LMessage$anon$lazy$macro$301$1$$anon$37;
+/** @constructor */
+function $h_LMessage$anon$lazy$macro$301$1$$anon$37() {
+  /*<skip>*/
+}
+$h_LMessage$anon$lazy$macro$301$1$$anon$37.prototype = $c_LMessage$anon$lazy$macro$301$1$$anon$37.prototype;
+$c_LMessage$anon$lazy$macro$301$1$$anon$37.prototype.init___LMessage$anon$lazy$macro$301$1 = (function($$outer) {
+  this.fresh$macro$277$2 = $m_LCommand$().decodeMessage$1;
+  this.fresh$macro$278$2 = $m_Lio_circe_Decoder$().decodeInt$1;
+  return this
+});
+$c_LMessage$anon$lazy$macro$301$1$$anon$37.prototype.apply__Lio_circe_HCursor__s_util_Either = (function(c) {
+  return $as_s_util_Either($m_Lio_circe_generic_decoding_ReprDecoder$().consResults__O__O__Lcats_Apply__O(this.fresh$macro$278$2.tryDecode__Lio_circe_ACursor__s_util_Either(c.downField__T__Lio_circe_ACursor("sId")), $m_Lio_circe_generic_decoding_ReprDecoder$().consResults__O__O__Lcats_Apply__O(this.fresh$macro$277$2.tryDecode__Lio_circe_ACursor__s_util_Either(c.downField__T__Lio_circe_ACursor("cmd")), $m_Lio_circe_generic_decoding_ReprDecoder$().hnilResult$1, $m_Lio_circe_Decoder$().resultInstance$1), $m_Lio_circe_Decoder$().resultInstance$1))
+});
+var $d_LMessage$anon$lazy$macro$301$1$$anon$37 = new $TypeData().initClass({
+  LMessage$anon$lazy$macro$301$1$$anon$37: 0
+}, false, "Message$anon$lazy$macro$301$1$$anon$37", {
+  LMessage$anon$lazy$macro$301$1$$anon$37: 1,
+  Lio_circe_generic_decoding_ReprDecoder: 1,
+  O: 1,
+  Lio_circe_Decoder: 1,
+  s_Serializable: 1,
+  Ljava_io_Serializable: 1
+});
+$c_LMessage$anon$lazy$macro$301$1$$anon$37.prototype.$classData = $d_LMessage$anon$lazy$macro$301$1$$anon$37;
+/** @constructor */
+function $c_LMessage$anon$lazy$macro$301$1$$anon$38() {
+  $c_O.call(this)
+}
+$c_LMessage$anon$lazy$macro$301$1$$anon$38.prototype = new $h_O();
+$c_LMessage$anon$lazy$macro$301$1$$anon$38.prototype.constructor = $c_LMessage$anon$lazy$macro$301$1$$anon$38;
+/** @constructor */
+function $h_LMessage$anon$lazy$macro$301$1$$anon$38() {
+  /*<skip>*/
+}
+$h_LMessage$anon$lazy$macro$301$1$$anon$38.prototype = $c_LMessage$anon$lazy$macro$301$1$$anon$38.prototype;
+$c_LMessage$anon$lazy$macro$301$1$$anon$38.prototype.init___LMessage$anon$lazy$macro$301$1 = (function($$outer) {
+  return this
+});
+var $d_LMessage$anon$lazy$macro$301$1$$anon$38 = new $TypeData().initClass({
+  LMessage$anon$lazy$macro$301$1$$anon$38: 0
+}, false, "Message$anon$lazy$macro$301$1$$anon$38", {
+  LMessage$anon$lazy$macro$301$1$$anon$38: 1,
+  O: 1,
+  Lshapeless_DefaultSymbolicLabelling: 1,
+  Lshapeless_package$DepFn0: 1,
+  s_Serializable: 1,
+  Ljava_io_Serializable: 1
+});
+$c_LMessage$anon$lazy$macro$301$1$$anon$38.prototype.$classData = $d_LMessage$anon$lazy$macro$301$1$$anon$38;
+/** @constructor */
+function $c_LMessage$anon$lazy$macro$301$1$$anon$39() {
+  $c_Lio_circe_generic_decoding_ReprDecoder.call(this);
+  this.fresh$macro$286$2 = null
+}
+$c_LMessage$anon$lazy$macro$301$1$$anon$39.prototype = new $h_Lio_circe_generic_decoding_ReprDecoder();
+$c_LMessage$anon$lazy$macro$301$1$$anon$39.prototype.constructor = $c_LMessage$anon$lazy$macro$301$1$$anon$39;
+/** @constructor */
+function $h_LMessage$anon$lazy$macro$301$1$$anon$39() {
+  /*<skip>*/
+}
+$h_LMessage$anon$lazy$macro$301$1$$anon$39.prototype = $c_LMessage$anon$lazy$macro$301$1$$anon$39.prototype;
+$c_LMessage$anon$lazy$macro$301$1$$anon$39.prototype.init___LMessage$anon$lazy$macro$301$1 = (function($$outer) {
+  this.fresh$macro$286$2 = $m_Lio_circe_Decoder$().decodeInt$1;
+  return this
+});
+$c_LMessage$anon$lazy$macro$301$1$$anon$39.prototype.apply__Lio_circe_HCursor__s_util_Either = (function(c) {
+  return $as_s_util_Either($m_Lio_circe_generic_decoding_ReprDecoder$().consResults__O__O__Lcats_Apply__O(this.fresh$macro$286$2.tryDecode__Lio_circe_ACursor__s_util_Either(c.downField__T__Lio_circe_ACursor("clientId")), $m_Lio_circe_generic_decoding_ReprDecoder$().hnilResult$1, $m_Lio_circe_Decoder$().resultInstance$1))
+});
+var $d_LMessage$anon$lazy$macro$301$1$$anon$39 = new $TypeData().initClass({
+  LMessage$anon$lazy$macro$301$1$$anon$39: 0
+}, false, "Message$anon$lazy$macro$301$1$$anon$39", {
+  LMessage$anon$lazy$macro$301$1$$anon$39: 1,
+  Lio_circe_generic_decoding_ReprDecoder: 1,
+  O: 1,
+  Lio_circe_Decoder: 1,
+  s_Serializable: 1,
+  Ljava_io_Serializable: 1
+});
+$c_LMessage$anon$lazy$macro$301$1$$anon$39.prototype.$classData = $d_LMessage$anon$lazy$macro$301$1$$anon$39;
+/** @constructor */
+function $c_LMessage$anon$lazy$macro$301$1$$anon$40() {
+  $c_O.call(this)
+}
+$c_LMessage$anon$lazy$macro$301$1$$anon$40.prototype = new $h_O();
+$c_LMessage$anon$lazy$macro$301$1$$anon$40.prototype.constructor = $c_LMessage$anon$lazy$macro$301$1$$anon$40;
+/** @constructor */
+function $h_LMessage$anon$lazy$macro$301$1$$anon$40() {
+  /*<skip>*/
+}
+$h_LMessage$anon$lazy$macro$301$1$$anon$40.prototype = $c_LMessage$anon$lazy$macro$301$1$$anon$40.prototype;
+$c_LMessage$anon$lazy$macro$301$1$$anon$40.prototype.init___LMessage$anon$lazy$macro$301$1 = (function($$outer) {
+  return this
+});
+var $d_LMessage$anon$lazy$macro$301$1$$anon$40 = new $TypeData().initClass({
+  LMessage$anon$lazy$macro$301$1$$anon$40: 0
+}, false, "Message$anon$lazy$macro$301$1$$anon$40", {
+  LMessage$anon$lazy$macro$301$1$$anon$40: 1,
+  O: 1,
+  Lshapeless_DefaultSymbolicLabelling: 1,
+  Lshapeless_package$DepFn0: 1,
+  s_Serializable: 1,
+  Ljava_io_Serializable: 1
+});
+$c_LMessage$anon$lazy$macro$301$1$$anon$40.prototype.$classData = $d_LMessage$anon$lazy$macro$301$1$$anon$40;
+/** @constructor */
+function $c_LMessage$anon$lazy$macro$301$1$$anon$41() {
+  $c_Lio_circe_generic_decoding_ReprDecoder.call(this);
+  this.fresh$macro$298$2 = null;
+  this.fresh$macro$299$2 = null;
+  this.fresh$macro$300$2 = null
+}
+$c_LMessage$anon$lazy$macro$301$1$$anon$41.prototype = new $h_Lio_circe_generic_decoding_ReprDecoder();
+$c_LMessage$anon$lazy$macro$301$1$$anon$41.prototype.constructor = $c_LMessage$anon$lazy$macro$301$1$$anon$41;
+/** @constructor */
+function $h_LMessage$anon$lazy$macro$301$1$$anon$41() {
+  /*<skip>*/
+}
+$h_LMessage$anon$lazy$macro$301$1$$anon$41.prototype = $c_LMessage$anon$lazy$macro$301$1$$anon$41.prototype;
+$c_LMessage$anon$lazy$macro$301$1$$anon$41.prototype.init___LMessage$anon$lazy$macro$301$1 = (function($$outer) {
+  this.fresh$macro$298$2 = $m_LAColor$().decodeMessage$1;
+  this.fresh$macro$299$2 = $m_LASize$().decodeMessage$1;
+  this.fresh$macro$300$2 = $m_LCommonState$().decodeMessage$1;
+  return this
+});
+$c_LMessage$anon$lazy$macro$301$1$$anon$41.prototype.apply__Lio_circe_HCursor__s_util_Either = (function(c) {
+  return $as_s_util_Either($m_Lio_circe_generic_decoding_ReprDecoder$().consResults__O__O__Lcats_Apply__O(this.fresh$macro$300$2.tryDecode__Lio_circe_ACursor__s_util_Either(c.downField__T__Lio_circe_ACursor("common")), $m_Lio_circe_generic_decoding_ReprDecoder$().consResults__O__O__Lcats_Apply__O(this.fresh$macro$299$2.tryDecode__Lio_circe_ACursor__s_util_Either(c.downField__T__Lio_circe_ACursor("size")), $m_Lio_circe_generic_decoding_ReprDecoder$().consResults__O__O__Lcats_Apply__O(this.fresh$macro$298$2.tryDecode__Lio_circe_ACursor__s_util_Either(c.downField__T__Lio_circe_ACursor("color")), $m_Lio_circe_generic_decoding_ReprDecoder$().hnilResult$1, $m_Lio_circe_Decoder$().resultInstance$1), $m_Lio_circe_Decoder$().resultInstance$1), $m_Lio_circe_Decoder$().resultInstance$1))
+});
+var $d_LMessage$anon$lazy$macro$301$1$$anon$41 = new $TypeData().initClass({
+  LMessage$anon$lazy$macro$301$1$$anon$41: 0
+}, false, "Message$anon$lazy$macro$301$1$$anon$41", {
+  LMessage$anon$lazy$macro$301$1$$anon$41: 1,
+  Lio_circe_generic_decoding_ReprDecoder: 1,
+  O: 1,
+  Lio_circe_Decoder: 1,
+  s_Serializable: 1,
+  Ljava_io_Serializable: 1
+});
+$c_LMessage$anon$lazy$macro$301$1$$anon$41.prototype.$classData = $d_LMessage$anon$lazy$macro$301$1$$anon$41;
+/** @constructor */
+function $c_LMessage$anon$lazy$macro$301$1$$anon$42() {
+  $c_O.call(this)
+}
+$c_LMessage$anon$lazy$macro$301$1$$anon$42.prototype = new $h_O();
+$c_LMessage$anon$lazy$macro$301$1$$anon$42.prototype.constructor = $c_LMessage$anon$lazy$macro$301$1$$anon$42;
+/** @constructor */
+function $h_LMessage$anon$lazy$macro$301$1$$anon$42() {
+  /*<skip>*/
+}
+$h_LMessage$anon$lazy$macro$301$1$$anon$42.prototype = $c_LMessage$anon$lazy$macro$301$1$$anon$42.prototype;
+$c_LMessage$anon$lazy$macro$301$1$$anon$42.prototype.init___LMessage$anon$lazy$macro$301$1 = (function($$outer) {
+  return this
+});
+var $d_LMessage$anon$lazy$macro$301$1$$anon$42 = new $TypeData().initClass({
+  LMessage$anon$lazy$macro$301$1$$anon$42: 0
+}, false, "Message$anon$lazy$macro$301$1$$anon$42", {
+  LMessage$anon$lazy$macro$301$1$$anon$42: 1,
+  O: 1,
+  Lshapeless_DefaultSymbolicLabelling: 1,
+  Lshapeless_package$DepFn0: 1,
+  s_Serializable: 1,
+  Ljava_io_Serializable: 1
+});
+$c_LMessage$anon$lazy$macro$301$1$$anon$42.prototype.$classData = $d_LMessage$anon$lazy$macro$301$1$$anon$42;
+/** @constructor */
+function $c_LMessage$anon$lazy$macro$301$1$$anon$43() {
+  $c_Lio_circe_generic_decoding_ReprDecoder.call(this);
+  this.fresh$macro$249$2 = null;
+  this.fresh$macro$245$2 = null;
+  this.fresh$macro$279$2 = null;
+  this.fresh$macro$224$2 = null;
+  this.fresh$macro$230$2 = null;
+  this.fresh$macro$268$2 = null;
+  this.fresh$macro$216$2 = null;
+  this.fresh$macro$287$2 = null;
+  this.fresh$macro$260$2 = null;
   this.fresh$macro$240$2 = null;
-  this.fresh$macro$241$2 = null
-}
-$c_LMessage$anon$lazy$macro$283$1$$anon$31.prototype = new $h_Lio_circe_generic_decoding_ReprDecoder();
-$c_LMessage$anon$lazy$macro$283$1$$anon$31.prototype.constructor = $c_LMessage$anon$lazy$macro$283$1$$anon$31;
-/** @constructor */
-function $h_LMessage$anon$lazy$macro$283$1$$anon$31() {
-  /*<skip>*/
-}
-$h_LMessage$anon$lazy$macro$283$1$$anon$31.prototype = $c_LMessage$anon$lazy$macro$283$1$$anon$31.prototype;
-$c_LMessage$anon$lazy$macro$283$1$$anon$31.prototype.init___LMessage$anon$lazy$macro$283$1 = (function($$outer) {
-  this.fresh$macro$240$2 = $m_Lio_circe_Decoder$().decodeInt$1;
-  this.fresh$macro$241$2 = $m_LCommonState$().decodeMessage$1;
-  return this
-});
-$c_LMessage$anon$lazy$macro$283$1$$anon$31.prototype.apply__Lio_circe_HCursor__s_util_Either = (function(c) {
-  return $as_s_util_Either($m_Lio_circe_generic_decoding_ReprDecoder$().consResults__O__O__Lcats_Apply__O(this.fresh$macro$241$2.tryDecode__Lio_circe_ACursor__s_util_Either(c.downField__T__Lio_circe_ACursor("common")), $m_Lio_circe_generic_decoding_ReprDecoder$().consResults__O__O__Lcats_Apply__O(this.fresh$macro$240$2.tryDecode__Lio_circe_ACursor__s_util_Either(c.downField__T__Lio_circe_ACursor("shooter")), $m_Lio_circe_generic_decoding_ReprDecoder$().hnilResult$1, $m_Lio_circe_Decoder$().resultInstance$1), $m_Lio_circe_Decoder$().resultInstance$1))
-});
-var $d_LMessage$anon$lazy$macro$283$1$$anon$31 = new $TypeData().initClass({
-  LMessage$anon$lazy$macro$283$1$$anon$31: 0
-}, false, "Message$anon$lazy$macro$283$1$$anon$31", {
-  LMessage$anon$lazy$macro$283$1$$anon$31: 1,
-  Lio_circe_generic_decoding_ReprDecoder: 1,
-  O: 1,
-  Lio_circe_Decoder: 1,
-  s_Serializable: 1,
-  Ljava_io_Serializable: 1
-});
-$c_LMessage$anon$lazy$macro$283$1$$anon$31.prototype.$classData = $d_LMessage$anon$lazy$macro$283$1$$anon$31;
-/** @constructor */
-function $c_LMessage$anon$lazy$macro$283$1$$anon$32() {
-  $c_O.call(this)
-}
-$c_LMessage$anon$lazy$macro$283$1$$anon$32.prototype = new $h_O();
-$c_LMessage$anon$lazy$macro$283$1$$anon$32.prototype.constructor = $c_LMessage$anon$lazy$macro$283$1$$anon$32;
-/** @constructor */
-function $h_LMessage$anon$lazy$macro$283$1$$anon$32() {
-  /*<skip>*/
-}
-$h_LMessage$anon$lazy$macro$283$1$$anon$32.prototype = $c_LMessage$anon$lazy$macro$283$1$$anon$32.prototype;
-$c_LMessage$anon$lazy$macro$283$1$$anon$32.prototype.init___LMessage$anon$lazy$macro$283$1 = (function($$outer) {
-  return this
-});
-var $d_LMessage$anon$lazy$macro$283$1$$anon$32 = new $TypeData().initClass({
-  LMessage$anon$lazy$macro$283$1$$anon$32: 0
-}, false, "Message$anon$lazy$macro$283$1$$anon$32", {
-  LMessage$anon$lazy$macro$283$1$$anon$32: 1,
-  O: 1,
-  Lshapeless_DefaultSymbolicLabelling: 1,
-  Lshapeless_package$DepFn0: 1,
-  s_Serializable: 1,
-  Ljava_io_Serializable: 1
-});
-$c_LMessage$anon$lazy$macro$283$1$$anon$32.prototype.$classData = $d_LMessage$anon$lazy$macro$283$1$$anon$32;
-/** @constructor */
-function $c_LMessage$anon$lazy$macro$283$1$$anon$33() {
-  $c_Lio_circe_generic_decoding_ReprDecoder.call(this);
-  this.fresh$macro$249$2 = null
-}
-$c_LMessage$anon$lazy$macro$283$1$$anon$33.prototype = new $h_Lio_circe_generic_decoding_ReprDecoder();
-$c_LMessage$anon$lazy$macro$283$1$$anon$33.prototype.constructor = $c_LMessage$anon$lazy$macro$283$1$$anon$33;
-/** @constructor */
-function $h_LMessage$anon$lazy$macro$283$1$$anon$33() {
-  /*<skip>*/
-}
-$h_LMessage$anon$lazy$macro$283$1$$anon$33.prototype = $c_LMessage$anon$lazy$macro$283$1$$anon$33.prototype;
-$c_LMessage$anon$lazy$macro$283$1$$anon$33.prototype.init___LMessage$anon$lazy$macro$283$1 = (function($$outer) {
-  this.fresh$macro$249$2 = $m_Lio_circe_Decoder$().decodeInt$1;
-  return this
-});
-$c_LMessage$anon$lazy$macro$283$1$$anon$33.prototype.apply__Lio_circe_HCursor__s_util_Either = (function(c) {
-  return $as_s_util_Either($m_Lio_circe_generic_decoding_ReprDecoder$().consResults__O__O__Lcats_Apply__O(this.fresh$macro$249$2.tryDecode__Lio_circe_ACursor__s_util_Either(c.downField__T__Lio_circe_ACursor("destroy")), $m_Lio_circe_generic_decoding_ReprDecoder$().hnilResult$1, $m_Lio_circe_Decoder$().resultInstance$1))
-});
-var $d_LMessage$anon$lazy$macro$283$1$$anon$33 = new $TypeData().initClass({
-  LMessage$anon$lazy$macro$283$1$$anon$33: 0
-}, false, "Message$anon$lazy$macro$283$1$$anon$33", {
-  LMessage$anon$lazy$macro$283$1$$anon$33: 1,
-  Lio_circe_generic_decoding_ReprDecoder: 1,
-  O: 1,
-  Lio_circe_Decoder: 1,
-  s_Serializable: 1,
-  Ljava_io_Serializable: 1
-});
-$c_LMessage$anon$lazy$macro$283$1$$anon$33.prototype.$classData = $d_LMessage$anon$lazy$macro$283$1$$anon$33;
-/** @constructor */
-function $c_LMessage$anon$lazy$macro$283$1$$anon$34() {
-  $c_O.call(this)
-}
-$c_LMessage$anon$lazy$macro$283$1$$anon$34.prototype = new $h_O();
-$c_LMessage$anon$lazy$macro$283$1$$anon$34.prototype.constructor = $c_LMessage$anon$lazy$macro$283$1$$anon$34;
-/** @constructor */
-function $h_LMessage$anon$lazy$macro$283$1$$anon$34() {
-  /*<skip>*/
-}
-$h_LMessage$anon$lazy$macro$283$1$$anon$34.prototype = $c_LMessage$anon$lazy$macro$283$1$$anon$34.prototype;
-$c_LMessage$anon$lazy$macro$283$1$$anon$34.prototype.init___LMessage$anon$lazy$macro$283$1 = (function($$outer) {
-  return this
-});
-var $d_LMessage$anon$lazy$macro$283$1$$anon$34 = new $TypeData().initClass({
-  LMessage$anon$lazy$macro$283$1$$anon$34: 0
-}, false, "Message$anon$lazy$macro$283$1$$anon$34", {
-  LMessage$anon$lazy$macro$283$1$$anon$34: 1,
-  O: 1,
-  Lshapeless_DefaultSymbolicLabelling: 1,
-  Lshapeless_package$DepFn0: 1,
-  s_Serializable: 1,
-  Ljava_io_Serializable: 1
-});
-$c_LMessage$anon$lazy$macro$283$1$$anon$34.prototype.$classData = $d_LMessage$anon$lazy$macro$283$1$$anon$34;
-/** @constructor */
-function $c_LMessage$anon$lazy$macro$283$1$$anon$35() {
-  $c_Lio_circe_generic_decoding_ReprDecoder.call(this);
-  this.fresh$macro$259$2 = null;
-  this.fresh$macro$260$2 = null
-}
-$c_LMessage$anon$lazy$macro$283$1$$anon$35.prototype = new $h_Lio_circe_generic_decoding_ReprDecoder();
-$c_LMessage$anon$lazy$macro$283$1$$anon$35.prototype.constructor = $c_LMessage$anon$lazy$macro$283$1$$anon$35;
-/** @constructor */
-function $h_LMessage$anon$lazy$macro$283$1$$anon$35() {
-  /*<skip>*/
-}
-$h_LMessage$anon$lazy$macro$283$1$$anon$35.prototype = $c_LMessage$anon$lazy$macro$283$1$$anon$35.prototype;
-$c_LMessage$anon$lazy$macro$283$1$$anon$35.prototype.init___LMessage$anon$lazy$macro$283$1 = (function($$outer) {
-  this.fresh$macro$259$2 = $m_LCommand$().decodeMessage$1;
-  this.fresh$macro$260$2 = $m_Lio_circe_Decoder$().decodeInt$1;
-  return this
-});
-$c_LMessage$anon$lazy$macro$283$1$$anon$35.prototype.apply__Lio_circe_HCursor__s_util_Either = (function(c) {
-  return $as_s_util_Either($m_Lio_circe_generic_decoding_ReprDecoder$().consResults__O__O__Lcats_Apply__O(this.fresh$macro$260$2.tryDecode__Lio_circe_ACursor__s_util_Either(c.downField__T__Lio_circe_ACursor("sId")), $m_Lio_circe_generic_decoding_ReprDecoder$().consResults__O__O__Lcats_Apply__O(this.fresh$macro$259$2.tryDecode__Lio_circe_ACursor__s_util_Either(c.downField__T__Lio_circe_ACursor("cmd")), $m_Lio_circe_generic_decoding_ReprDecoder$().hnilResult$1, $m_Lio_circe_Decoder$().resultInstance$1), $m_Lio_circe_Decoder$().resultInstance$1))
-});
-var $d_LMessage$anon$lazy$macro$283$1$$anon$35 = new $TypeData().initClass({
-  LMessage$anon$lazy$macro$283$1$$anon$35: 0
-}, false, "Message$anon$lazy$macro$283$1$$anon$35", {
-  LMessage$anon$lazy$macro$283$1$$anon$35: 1,
-  Lio_circe_generic_decoding_ReprDecoder: 1,
-  O: 1,
-  Lio_circe_Decoder: 1,
-  s_Serializable: 1,
-  Ljava_io_Serializable: 1
-});
-$c_LMessage$anon$lazy$macro$283$1$$anon$35.prototype.$classData = $d_LMessage$anon$lazy$macro$283$1$$anon$35;
-/** @constructor */
-function $c_LMessage$anon$lazy$macro$283$1$$anon$36() {
-  $c_O.call(this)
-}
-$c_LMessage$anon$lazy$macro$283$1$$anon$36.prototype = new $h_O();
-$c_LMessage$anon$lazy$macro$283$1$$anon$36.prototype.constructor = $c_LMessage$anon$lazy$macro$283$1$$anon$36;
-/** @constructor */
-function $h_LMessage$anon$lazy$macro$283$1$$anon$36() {
-  /*<skip>*/
-}
-$h_LMessage$anon$lazy$macro$283$1$$anon$36.prototype = $c_LMessage$anon$lazy$macro$283$1$$anon$36.prototype;
-$c_LMessage$anon$lazy$macro$283$1$$anon$36.prototype.init___LMessage$anon$lazy$macro$283$1 = (function($$outer) {
-  return this
-});
-var $d_LMessage$anon$lazy$macro$283$1$$anon$36 = new $TypeData().initClass({
-  LMessage$anon$lazy$macro$283$1$$anon$36: 0
-}, false, "Message$anon$lazy$macro$283$1$$anon$36", {
-  LMessage$anon$lazy$macro$283$1$$anon$36: 1,
-  O: 1,
-  Lshapeless_DefaultSymbolicLabelling: 1,
-  Lshapeless_package$DepFn0: 1,
-  s_Serializable: 1,
-  Ljava_io_Serializable: 1
-});
-$c_LMessage$anon$lazy$macro$283$1$$anon$36.prototype.$classData = $d_LMessage$anon$lazy$macro$283$1$$anon$36;
-/** @constructor */
-function $c_LMessage$anon$lazy$macro$283$1$$anon$37() {
-  $c_Lio_circe_generic_decoding_ReprDecoder.call(this);
-  this.fresh$macro$268$2 = null
-}
-$c_LMessage$anon$lazy$macro$283$1$$anon$37.prototype = new $h_Lio_circe_generic_decoding_ReprDecoder();
-$c_LMessage$anon$lazy$macro$283$1$$anon$37.prototype.constructor = $c_LMessage$anon$lazy$macro$283$1$$anon$37;
-/** @constructor */
-function $h_LMessage$anon$lazy$macro$283$1$$anon$37() {
-  /*<skip>*/
-}
-$h_LMessage$anon$lazy$macro$283$1$$anon$37.prototype = $c_LMessage$anon$lazy$macro$283$1$$anon$37.prototype;
-$c_LMessage$anon$lazy$macro$283$1$$anon$37.prototype.init___LMessage$anon$lazy$macro$283$1 = (function($$outer) {
-  this.fresh$macro$268$2 = $m_Lio_circe_Decoder$().decodeInt$1;
-  return this
-});
-$c_LMessage$anon$lazy$macro$283$1$$anon$37.prototype.apply__Lio_circe_HCursor__s_util_Either = (function(c) {
-  return $as_s_util_Either($m_Lio_circe_generic_decoding_ReprDecoder$().consResults__O__O__Lcats_Apply__O(this.fresh$macro$268$2.tryDecode__Lio_circe_ACursor__s_util_Either(c.downField__T__Lio_circe_ACursor("clientId")), $m_Lio_circe_generic_decoding_ReprDecoder$().hnilResult$1, $m_Lio_circe_Decoder$().resultInstance$1))
-});
-var $d_LMessage$anon$lazy$macro$283$1$$anon$37 = new $TypeData().initClass({
-  LMessage$anon$lazy$macro$283$1$$anon$37: 0
-}, false, "Message$anon$lazy$macro$283$1$$anon$37", {
-  LMessage$anon$lazy$macro$283$1$$anon$37: 1,
-  Lio_circe_generic_decoding_ReprDecoder: 1,
-  O: 1,
-  Lio_circe_Decoder: 1,
-  s_Serializable: 1,
-  Ljava_io_Serializable: 1
-});
-$c_LMessage$anon$lazy$macro$283$1$$anon$37.prototype.$classData = $d_LMessage$anon$lazy$macro$283$1$$anon$37;
-/** @constructor */
-function $c_LMessage$anon$lazy$macro$283$1$$anon$38() {
-  $c_O.call(this)
-}
-$c_LMessage$anon$lazy$macro$283$1$$anon$38.prototype = new $h_O();
-$c_LMessage$anon$lazy$macro$283$1$$anon$38.prototype.constructor = $c_LMessage$anon$lazy$macro$283$1$$anon$38;
-/** @constructor */
-function $h_LMessage$anon$lazy$macro$283$1$$anon$38() {
-  /*<skip>*/
-}
-$h_LMessage$anon$lazy$macro$283$1$$anon$38.prototype = $c_LMessage$anon$lazy$macro$283$1$$anon$38.prototype;
-$c_LMessage$anon$lazy$macro$283$1$$anon$38.prototype.init___LMessage$anon$lazy$macro$283$1 = (function($$outer) {
-  return this
-});
-var $d_LMessage$anon$lazy$macro$283$1$$anon$38 = new $TypeData().initClass({
-  LMessage$anon$lazy$macro$283$1$$anon$38: 0
-}, false, "Message$anon$lazy$macro$283$1$$anon$38", {
-  LMessage$anon$lazy$macro$283$1$$anon$38: 1,
-  O: 1,
-  Lshapeless_DefaultSymbolicLabelling: 1,
-  Lshapeless_package$DepFn0: 1,
-  s_Serializable: 1,
-  Ljava_io_Serializable: 1
-});
-$c_LMessage$anon$lazy$macro$283$1$$anon$38.prototype.$classData = $d_LMessage$anon$lazy$macro$283$1$$anon$38;
-/** @constructor */
-function $c_LMessage$anon$lazy$macro$283$1$$anon$39() {
-  $c_Lio_circe_generic_decoding_ReprDecoder.call(this);
-  this.fresh$macro$280$2 = null;
-  this.fresh$macro$281$2 = null;
-  this.fresh$macro$282$2 = null
-}
-$c_LMessage$anon$lazy$macro$283$1$$anon$39.prototype = new $h_Lio_circe_generic_decoding_ReprDecoder();
-$c_LMessage$anon$lazy$macro$283$1$$anon$39.prototype.constructor = $c_LMessage$anon$lazy$macro$283$1$$anon$39;
-/** @constructor */
-function $h_LMessage$anon$lazy$macro$283$1$$anon$39() {
-  /*<skip>*/
-}
-$h_LMessage$anon$lazy$macro$283$1$$anon$39.prototype = $c_LMessage$anon$lazy$macro$283$1$$anon$39.prototype;
-$c_LMessage$anon$lazy$macro$283$1$$anon$39.prototype.init___LMessage$anon$lazy$macro$283$1 = (function($$outer) {
-  this.fresh$macro$280$2 = $m_LAColor$().decodeMessage$1;
-  this.fresh$macro$281$2 = $m_LASize$().decodeMessage$1;
-  this.fresh$macro$282$2 = $m_LCommonState$().decodeMessage$1;
-  return this
-});
-$c_LMessage$anon$lazy$macro$283$1$$anon$39.prototype.apply__Lio_circe_HCursor__s_util_Either = (function(c) {
-  return $as_s_util_Either($m_Lio_circe_generic_decoding_ReprDecoder$().consResults__O__O__Lcats_Apply__O(this.fresh$macro$282$2.tryDecode__Lio_circe_ACursor__s_util_Either(c.downField__T__Lio_circe_ACursor("common")), $m_Lio_circe_generic_decoding_ReprDecoder$().consResults__O__O__Lcats_Apply__O(this.fresh$macro$281$2.tryDecode__Lio_circe_ACursor__s_util_Either(c.downField__T__Lio_circe_ACursor("size")), $m_Lio_circe_generic_decoding_ReprDecoder$().consResults__O__O__Lcats_Apply__O(this.fresh$macro$280$2.tryDecode__Lio_circe_ACursor__s_util_Either(c.downField__T__Lio_circe_ACursor("color")), $m_Lio_circe_generic_decoding_ReprDecoder$().hnilResult$1, $m_Lio_circe_Decoder$().resultInstance$1), $m_Lio_circe_Decoder$().resultInstance$1), $m_Lio_circe_Decoder$().resultInstance$1))
-});
-var $d_LMessage$anon$lazy$macro$283$1$$anon$39 = new $TypeData().initClass({
-  LMessage$anon$lazy$macro$283$1$$anon$39: 0
-}, false, "Message$anon$lazy$macro$283$1$$anon$39", {
-  LMessage$anon$lazy$macro$283$1$$anon$39: 1,
-  Lio_circe_generic_decoding_ReprDecoder: 1,
-  O: 1,
-  Lio_circe_Decoder: 1,
-  s_Serializable: 1,
-  Ljava_io_Serializable: 1
-});
-$c_LMessage$anon$lazy$macro$283$1$$anon$39.prototype.$classData = $d_LMessage$anon$lazy$macro$283$1$$anon$39;
-/** @constructor */
-function $c_LMessage$anon$lazy$macro$283$1$$anon$40() {
-  $c_O.call(this)
-}
-$c_LMessage$anon$lazy$macro$283$1$$anon$40.prototype = new $h_O();
-$c_LMessage$anon$lazy$macro$283$1$$anon$40.prototype.constructor = $c_LMessage$anon$lazy$macro$283$1$$anon$40;
-/** @constructor */
-function $h_LMessage$anon$lazy$macro$283$1$$anon$40() {
-  /*<skip>*/
-}
-$h_LMessage$anon$lazy$macro$283$1$$anon$40.prototype = $c_LMessage$anon$lazy$macro$283$1$$anon$40.prototype;
-$c_LMessage$anon$lazy$macro$283$1$$anon$40.prototype.init___LMessage$anon$lazy$macro$283$1 = (function($$outer) {
-  return this
-});
-var $d_LMessage$anon$lazy$macro$283$1$$anon$40 = new $TypeData().initClass({
-  LMessage$anon$lazy$macro$283$1$$anon$40: 0
-}, false, "Message$anon$lazy$macro$283$1$$anon$40", {
-  LMessage$anon$lazy$macro$283$1$$anon$40: 1,
-  O: 1,
-  Lshapeless_DefaultSymbolicLabelling: 1,
-  Lshapeless_package$DepFn0: 1,
-  s_Serializable: 1,
-  Ljava_io_Serializable: 1
-});
-$c_LMessage$anon$lazy$macro$283$1$$anon$40.prototype.$classData = $d_LMessage$anon$lazy$macro$283$1$$anon$40;
-/** @constructor */
-function $c_LMessage$anon$lazy$macro$283$1$$anon$41() {
-  $c_Lio_circe_generic_decoding_ReprDecoder.call(this);
-  this.fresh$macro$250$2 = null;
-  this.fresh$macro$212$2 = null;
-  this.fresh$macro$269$2 = null;
-  this.fresh$macro$222$2 = null;
-  this.fresh$macro$261$2 = null;
-  this.fresh$macro$227$2 = null;
-  this.fresh$macro$204$2 = null;
-  this.fresh$macro$242$2 = null;
-  this.fresh$macro$231$2 = null;
   this.$$outer$2 = null
 }
-$c_LMessage$anon$lazy$macro$283$1$$anon$41.prototype = new $h_Lio_circe_generic_decoding_ReprDecoder();
-$c_LMessage$anon$lazy$macro$283$1$$anon$41.prototype.constructor = $c_LMessage$anon$lazy$macro$283$1$$anon$41;
+$c_LMessage$anon$lazy$macro$301$1$$anon$43.prototype = new $h_Lio_circe_generic_decoding_ReprDecoder();
+$c_LMessage$anon$lazy$macro$301$1$$anon$43.prototype.constructor = $c_LMessage$anon$lazy$macro$301$1$$anon$43;
 /** @constructor */
-function $h_LMessage$anon$lazy$macro$283$1$$anon$41() {
+function $h_LMessage$anon$lazy$macro$301$1$$anon$43() {
   /*<skip>*/
 }
-$h_LMessage$anon$lazy$macro$283$1$$anon$41.prototype = $c_LMessage$anon$lazy$macro$283$1$$anon$41.prototype;
-$c_LMessage$anon$lazy$macro$283$1$$anon$41.prototype.init___LMessage$anon$lazy$macro$283$1 = (function($$outer) {
+$h_LMessage$anon$lazy$macro$301$1$$anon$43.prototype = $c_LMessage$anon$lazy$macro$301$1$$anon$43.prototype;
+$c_LMessage$anon$lazy$macro$301$1$$anon$43.prototype.init___LMessage$anon$lazy$macro$301$1 = (function($$outer) {
   if (($$outer === null)) {
     throw $m_sjsr_package$().unwrapJavaScriptException__jl_Throwable__O(null)
   } else {
@@ -30336,64 +30434,70 @@ $c_LMessage$anon$lazy$macro$283$1$$anon$41.prototype.init___LMessage$anon$lazy$m
   };
   var t = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function($this) {
     return (function() {
-      return $this.$$outer$2.inst$macro$251__Lio_circe_generic_decoding_DerivedDecoder()
+      return $this.$$outer$2.inst$macro$250__Lio_circe_generic_decoding_DerivedDecoder()
     })
   })(this));
-  this.fresh$macro$250$2 = $as_Lio_circe_generic_decoding_DerivedDecoder(new $c_Lshapeless_Lazy$$anon$1().init___F0(t).value__O());
+  this.fresh$macro$249$2 = $as_Lio_circe_generic_decoding_DerivedDecoder(new $c_Lshapeless_Lazy$$anon$1().init___F0(t).value__O());
   var t$1 = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function(this$2) {
     return (function() {
-      return this$2.$$outer$2.inst$macro$213__Lio_circe_generic_decoding_DerivedDecoder()
+      return this$2.$$outer$2.inst$macro$246__Lio_circe_generic_decoding_DerivedDecoder()
     })
   })(this));
-  this.fresh$macro$212$2 = $as_Lio_circe_generic_decoding_DerivedDecoder(new $c_Lshapeless_Lazy$$anon$1().init___F0(t$1).value__O());
+  this.fresh$macro$245$2 = $as_Lio_circe_generic_decoding_DerivedDecoder(new $c_Lshapeless_Lazy$$anon$1().init___F0(t$1).value__O());
   var t$2 = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function(this$3$1) {
     return (function() {
-      return this$3$1.$$outer$2.inst$macro$270__Lio_circe_generic_decoding_DerivedDecoder()
+      return this$3$1.$$outer$2.inst$macro$280__Lio_circe_generic_decoding_DerivedDecoder()
     })
   })(this));
-  this.fresh$macro$269$2 = $as_Lio_circe_generic_decoding_DerivedDecoder(new $c_Lshapeless_Lazy$$anon$1().init___F0(t$2).value__O());
+  this.fresh$macro$279$2 = $as_Lio_circe_generic_decoding_DerivedDecoder(new $c_Lshapeless_Lazy$$anon$1().init___F0(t$2).value__O());
   var t$3 = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function(this$4$1) {
     return (function() {
-      return this$4$1.$$outer$2.inst$macro$223__Lio_circe_generic_decoding_DerivedDecoder()
+      return this$4$1.$$outer$2.inst$macro$225__Lio_circe_generic_decoding_DerivedDecoder()
     })
   })(this));
-  this.fresh$macro$222$2 = $as_Lio_circe_generic_decoding_DerivedDecoder(new $c_Lshapeless_Lazy$$anon$1().init___F0(t$3).value__O());
+  this.fresh$macro$224$2 = $as_Lio_circe_generic_decoding_DerivedDecoder(new $c_Lshapeless_Lazy$$anon$1().init___F0(t$3).value__O());
   var t$4 = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function(this$5$1) {
     return (function() {
-      return this$5$1.$$outer$2.inst$macro$262__Lio_circe_generic_decoding_DerivedDecoder()
+      return this$5$1.$$outer$2.inst$macro$231__Lio_circe_generic_decoding_DerivedDecoder()
     })
   })(this));
-  this.fresh$macro$261$2 = $as_Lio_circe_generic_decoding_DerivedDecoder(new $c_Lshapeless_Lazy$$anon$1().init___F0(t$4).value__O());
+  this.fresh$macro$230$2 = $as_Lio_circe_generic_decoding_DerivedDecoder(new $c_Lshapeless_Lazy$$anon$1().init___F0(t$4).value__O());
   var t$5 = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function(this$6$1) {
     return (function() {
-      return this$6$1.$$outer$2.inst$macro$228__Lio_circe_generic_decoding_DerivedDecoder()
+      return this$6$1.$$outer$2.inst$macro$269__Lio_circe_generic_decoding_DerivedDecoder()
     })
   })(this));
-  this.fresh$macro$227$2 = $as_Lio_circe_generic_decoding_DerivedDecoder(new $c_Lshapeless_Lazy$$anon$1().init___F0(t$5).value__O());
+  this.fresh$macro$268$2 = $as_Lio_circe_generic_decoding_DerivedDecoder(new $c_Lshapeless_Lazy$$anon$1().init___F0(t$5).value__O());
   var t$6 = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function(this$7$1) {
     return (function() {
-      return this$7$1.$$outer$2.inst$macro$205__Lio_circe_generic_decoding_DerivedDecoder()
+      return this$7$1.$$outer$2.inst$macro$217__Lio_circe_generic_decoding_DerivedDecoder()
     })
   })(this));
-  this.fresh$macro$204$2 = $as_Lio_circe_generic_decoding_DerivedDecoder(new $c_Lshapeless_Lazy$$anon$1().init___F0(t$6).value__O());
+  this.fresh$macro$216$2 = $as_Lio_circe_generic_decoding_DerivedDecoder(new $c_Lshapeless_Lazy$$anon$1().init___F0(t$6).value__O());
   var t$7 = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function(this$8$1) {
     return (function() {
-      return this$8$1.$$outer$2.inst$macro$243__Lio_circe_generic_decoding_DerivedDecoder()
+      return this$8$1.$$outer$2.inst$macro$288__Lio_circe_generic_decoding_DerivedDecoder()
     })
   })(this));
-  this.fresh$macro$242$2 = $as_Lio_circe_generic_decoding_DerivedDecoder(new $c_Lshapeless_Lazy$$anon$1().init___F0(t$7).value__O());
+  this.fresh$macro$287$2 = $as_Lio_circe_generic_decoding_DerivedDecoder(new $c_Lshapeless_Lazy$$anon$1().init___F0(t$7).value__O());
   var t$8 = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function(this$9$1) {
     return (function() {
-      return this$9$1.$$outer$2.inst$macro$232__Lio_circe_generic_decoding_DerivedDecoder()
+      return this$9$1.$$outer$2.inst$macro$261__Lio_circe_generic_decoding_DerivedDecoder()
     })
   })(this));
-  this.fresh$macro$231$2 = $as_Lio_circe_generic_decoding_DerivedDecoder(new $c_Lshapeless_Lazy$$anon$1().init___F0(t$8).value__O());
+  this.fresh$macro$260$2 = $as_Lio_circe_generic_decoding_DerivedDecoder(new $c_Lshapeless_Lazy$$anon$1().init___F0(t$8).value__O());
+  var t$9 = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function(this$10$1) {
+    return (function() {
+      return this$10$1.$$outer$2.inst$macro$241__Lio_circe_generic_decoding_DerivedDecoder()
+    })
+  })(this));
+  this.fresh$macro$240$2 = $as_Lio_circe_generic_decoding_DerivedDecoder(new $c_Lshapeless_Lazy$$anon$1().init___F0(t$9).value__O());
   return this
 });
-$c_LMessage$anon$lazy$macro$283$1$$anon$41.prototype.apply__Lio_circe_HCursor__s_util_Either = (function(c) {
+$c_LMessage$anon$lazy$macro$301$1$$anon$43.prototype.apply__Lio_circe_HCursor__s_util_Either = (function(c) {
   var result = c.downField__T__Lio_circe_ACursor("Asteroid");
   if (result.succeeded__Z()) {
-    var this$1 = this.fresh$macro$269$2;
+    var this$1 = this.fresh$macro$287$2;
     var x1 = new $c_s_Some().init___O($f_Lio_circe_Decoder__tryDecode__Lio_circe_ACursor__s_util_Either(this$1, result))
   } else {
     var x1 = $m_s_None$()
@@ -30418,7 +30522,7 @@ $c_LMessage$anon$lazy$macro$283$1$$anon$41.prototype.apply__Lio_circe_HCursor__s
     if ((x === x1)) {
       var result$3 = c.downField__T__Lio_circe_ACursor("ClientId");
       if (result$3.succeeded__Z()) {
-        var this$3 = this.fresh$macro$261$2;
+        var this$3 = this.fresh$macro$279$2;
         var x1$2 = new $c_s_Some().init___O($f_Lio_circe_Decoder__tryDecode__Lio_circe_ACursor__s_util_Either(this$3, result$3))
       } else {
         var x1$2 = $m_s_None$()
@@ -30432,12 +30536,12 @@ $c_LMessage$anon$lazy$macro$283$1$$anon$41.prototype.apply__Lio_circe_HCursor__s
           var x2$3 = $as_s_util_Right(x1$3);
           var b$1 = x2$3.value$2;
           var v$3 = $as_LClientId(b$1);
-          var this$36 = new $c_s_util_Right().init___O($m_Lio_circe_generic_decoding_ReprDecoder$().injectLeftValue__O__Lshapeless_$colon$plus$colon(v$3))
+          var this$40 = new $c_s_util_Right().init___O($m_Lio_circe_generic_decoding_ReprDecoder$().injectLeftValue__O__Lshapeless_$colon$plus$colon(v$3))
         } else {
           if ((!$is_s_util_Left(x1$3))) {
             throw new $c_s_MatchError().init___O(x1$3)
           };
-          var this$36 = this$4.e$1
+          var this$40 = this$4.e$1
         }
       } else {
         var x$3 = $m_s_None$();
@@ -30446,7 +30550,7 @@ $c_LMessage$anon$lazy$macro$283$1$$anon$41.prototype.apply__Lio_circe_HCursor__s
         };
         var result$5 = c.downField__T__Lio_circe_ACursor("Cmd");
         if (result$5.succeeded__Z()) {
-          var this$5 = this.fresh$macro$250$2;
+          var this$5 = this.fresh$macro$268$2;
           var x1$3$1 = new $c_s_Some().init___O($f_Lio_circe_Decoder__tryDecode__Lio_circe_ACursor__s_util_Either(this$5, result$5))
         } else {
           var x1$3$1 = $m_s_None$()
@@ -30460,12 +30564,12 @@ $c_LMessage$anon$lazy$macro$283$1$$anon$41.prototype.apply__Lio_circe_HCursor__s
             var x2$4 = $as_s_util_Right(x1$4);
             var b$2 = x2$4.value$2;
             var v$4 = $as_LCmd(b$2);
-            var this$34 = new $c_s_util_Right().init___O($m_Lio_circe_generic_decoding_ReprDecoder$().injectLeftValue__O__Lshapeless_$colon$plus$colon(v$4))
+            var this$38 = new $c_s_util_Right().init___O($m_Lio_circe_generic_decoding_ReprDecoder$().injectLeftValue__O__Lshapeless_$colon$plus$colon(v$4))
           } else {
             if ((!$is_s_util_Left(x1$4))) {
               throw new $c_s_MatchError().init___O(x1$4)
             };
-            var this$34 = this$6.e$1
+            var this$38 = this$6.e$1
           }
         } else {
           var x$5 = $m_s_None$();
@@ -30474,7 +30578,7 @@ $c_LMessage$anon$lazy$macro$283$1$$anon$41.prototype.apply__Lio_circe_HCursor__s
           };
           var result$7 = c.downField__T__Lio_circe_ACursor("Destroy");
           if (result$7.succeeded__Z()) {
-            var this$7 = this.fresh$macro$242$2;
+            var this$7 = this.fresh$macro$260$2;
             var x1$4$1 = new $c_s_Some().init___O($f_Lio_circe_Decoder__tryDecode__Lio_circe_ACursor__s_util_Either(this$7, result$7))
           } else {
             var x1$4$1 = $m_s_None$()
@@ -30488,12 +30592,12 @@ $c_LMessage$anon$lazy$macro$283$1$$anon$41.prototype.apply__Lio_circe_HCursor__s
               var x2$5 = $as_s_util_Right(x1$5);
               var b$3 = x2$5.value$2;
               var v$5 = $as_LDestroy(b$3);
-              var this$32 = new $c_s_util_Right().init___O($m_Lio_circe_generic_decoding_ReprDecoder$().injectLeftValue__O__Lshapeless_$colon$plus$colon(v$5))
+              var this$36 = new $c_s_util_Right().init___O($m_Lio_circe_generic_decoding_ReprDecoder$().injectLeftValue__O__Lshapeless_$colon$plus$colon(v$5))
             } else {
               if ((!$is_s_util_Left(x1$5))) {
                 throw new $c_s_MatchError().init___O(x1$5)
               };
-              var this$32 = this$8.e$1
+              var this$36 = this$8.e$1
             }
           } else {
             var x$7 = $m_s_None$();
@@ -30502,7 +30606,7 @@ $c_LMessage$anon$lazy$macro$283$1$$anon$41.prototype.apply__Lio_circe_HCursor__s
             };
             var result$9 = c.downField__T__Lio_circe_ACursor("Laser");
             if (result$9.succeeded__Z()) {
-              var this$9 = this.fresh$macro$231$2;
+              var this$9 = this.fresh$macro$249$2;
               var x1$5$1 = new $c_s_Some().init___O($f_Lio_circe_Decoder__tryDecode__Lio_circe_ACursor__s_util_Either(this$9, result$9))
             } else {
               var x1$5$1 = $m_s_None$()
@@ -30516,12 +30620,12 @@ $c_LMessage$anon$lazy$macro$283$1$$anon$41.prototype.apply__Lio_circe_HCursor__s
                 var x2$6 = $as_s_util_Right(x1$6);
                 var b$4 = x2$6.value$2;
                 var v$6 = $as_LLaser(b$4);
-                var this$30 = new $c_s_util_Right().init___O($m_Lio_circe_generic_decoding_ReprDecoder$().injectLeftValue__O__Lshapeless_$colon$plus$colon(v$6))
+                var this$34 = new $c_s_util_Right().init___O($m_Lio_circe_generic_decoding_ReprDecoder$().injectLeftValue__O__Lshapeless_$colon$plus$colon(v$6))
               } else {
                 if ((!$is_s_util_Left(x1$6))) {
                   throw new $c_s_MatchError().init___O(x1$6)
                 };
-                var this$30 = this$10.e$1
+                var this$34 = this$10.e$1
               }
             } else {
               var x$9 = $m_s_None$();
@@ -30530,7 +30634,7 @@ $c_LMessage$anon$lazy$macro$283$1$$anon$41.prototype.apply__Lio_circe_HCursor__s
               };
               var result$11 = c.downField__T__Lio_circe_ACursor("Ping");
               if (result$11.succeeded__Z()) {
-                var this$11 = this.fresh$macro$227$2;
+                var this$11 = this.fresh$macro$245$2;
                 var x1$6$1 = new $c_s_Some().init___O($f_Lio_circe_Decoder__tryDecode__Lio_circe_ACursor__s_util_Either(this$11, result$11))
               } else {
                 var x1$6$1 = $m_s_None$()
@@ -30544,12 +30648,12 @@ $c_LMessage$anon$lazy$macro$283$1$$anon$41.prototype.apply__Lio_circe_HCursor__s
                   var x2$7 = $as_s_util_Right(x1$7);
                   var b$5 = x2$7.value$2;
                   var v$7 = $as_LPing$(b$5);
-                  var this$28 = new $c_s_util_Right().init___O($m_Lio_circe_generic_decoding_ReprDecoder$().injectLeftValue__O__Lshapeless_$colon$plus$colon(v$7))
+                  var this$32 = new $c_s_util_Right().init___O($m_Lio_circe_generic_decoding_ReprDecoder$().injectLeftValue__O__Lshapeless_$colon$plus$colon(v$7))
                 } else {
                   if ((!$is_s_util_Left(x1$7))) {
                     throw new $c_s_MatchError().init___O(x1$7)
                   };
-                  var this$28 = this$12.e$1
+                  var this$32 = this$12.e$1
                 }
               } else {
                 var x$11 = $m_s_None$();
@@ -30558,7 +30662,7 @@ $c_LMessage$anon$lazy$macro$283$1$$anon$41.prototype.apply__Lio_circe_HCursor__s
                 };
                 var result$13 = c.downField__T__Lio_circe_ACursor("Pong");
                 if (result$13.succeeded__Z()) {
-                  var this$13 = this.fresh$macro$222$2;
+                  var this$13 = this.fresh$macro$240$2;
                   var x1$7$1 = new $c_s_Some().init___O($f_Lio_circe_Decoder__tryDecode__Lio_circe_ACursor__s_util_Either(this$13, result$13))
                 } else {
                   var x1$7$1 = $m_s_None$()
@@ -30572,12 +30676,12 @@ $c_LMessage$anon$lazy$macro$283$1$$anon$41.prototype.apply__Lio_circe_HCursor__s
                     var x2$8 = $as_s_util_Right(x1$8);
                     var b$6 = x2$8.value$2;
                     var v$8 = $as_LPong$(b$6);
-                    var this$26 = new $c_s_util_Right().init___O($m_Lio_circe_generic_decoding_ReprDecoder$().injectLeftValue__O__Lshapeless_$colon$plus$colon(v$8))
+                    var this$30 = new $c_s_util_Right().init___O($m_Lio_circe_generic_decoding_ReprDecoder$().injectLeftValue__O__Lshapeless_$colon$plus$colon(v$8))
                   } else {
                     if ((!$is_s_util_Left(x1$8))) {
                       throw new $c_s_MatchError().init___O(x1$8)
                     };
-                    var this$26 = this$14.e$1
+                    var this$30 = this$14.e$1
                   }
                 } else {
                   var x$13 = $m_s_None$();
@@ -30586,7 +30690,7 @@ $c_LMessage$anon$lazy$macro$283$1$$anon$41.prototype.apply__Lio_circe_HCursor__s
                   };
                   var result$15 = c.downField__T__Lio_circe_ACursor("SetLifes");
                   if (result$15.succeeded__Z()) {
-                    var this$15 = this.fresh$macro$212$2;
+                    var this$15 = this.fresh$macro$230$2;
                     var x1$8$1 = new $c_s_Some().init___O($f_Lio_circe_Decoder__tryDecode__Lio_circe_ACursor__s_util_Either(this$15, result$15))
                   } else {
                     var x1$8$1 = $m_s_None$()
@@ -30600,12 +30704,12 @@ $c_LMessage$anon$lazy$macro$283$1$$anon$41.prototype.apply__Lio_circe_HCursor__s
                       var x2$9 = $as_s_util_Right(x1$9);
                       var b$7 = x2$9.value$2;
                       var v$9 = $as_LSetLifes(b$7);
-                      var this$24 = new $c_s_util_Right().init___O($m_Lio_circe_generic_decoding_ReprDecoder$().injectLeftValue__O__Lshapeless_$colon$plus$colon(v$9))
+                      var this$28 = new $c_s_util_Right().init___O($m_Lio_circe_generic_decoding_ReprDecoder$().injectLeftValue__O__Lshapeless_$colon$plus$colon(v$9))
                     } else {
                       if ((!$is_s_util_Left(x1$9))) {
                         throw new $c_s_MatchError().init___O(x1$9)
                       };
-                      var this$24 = this$16.e$1
+                      var this$28 = this$16.e$1
                     }
                   } else {
                     var x$15 = $m_s_None$();
@@ -30614,7 +30718,7 @@ $c_LMessage$anon$lazy$macro$283$1$$anon$41.prototype.apply__Lio_circe_HCursor__s
                     };
                     var result$17 = c.downField__T__Lio_circe_ACursor("Spaceship");
                     if (result$17.succeeded__Z()) {
-                      var this$17 = this.fresh$macro$204$2;
+                      var this$17 = this.fresh$macro$224$2;
                       var x1$9$1 = new $c_s_Some().init___O($f_Lio_circe_Decoder__tryDecode__Lio_circe_ACursor__s_util_Either(this$17, result$17))
                     } else {
                       var x1$9$1 = $m_s_None$()
@@ -30628,190 +30732,232 @@ $c_LMessage$anon$lazy$macro$283$1$$anon$41.prototype.apply__Lio_circe_HCursor__s
                         var x2$10 = $as_s_util_Right(x1$10);
                         var b$8 = x2$10.value$2;
                         var v$10 = $as_LSpaceship(b$8);
-                        var this$22 = new $c_s_util_Right().init___O($m_Lio_circe_generic_decoding_ReprDecoder$().injectLeftValue__O__Lshapeless_$colon$plus$colon(v$10))
+                        var this$26 = new $c_s_util_Right().init___O($m_Lio_circe_generic_decoding_ReprDecoder$().injectLeftValue__O__Lshapeless_$colon$plus$colon(v$10))
                       } else {
                         if ((!$is_s_util_Left(x1$10))) {
                           throw new $c_s_MatchError().init___O(x1$10)
                         };
-                        var this$22 = this$18.e$1
+                        var this$26 = this$18.e$1
                       }
                     } else {
                       var x$17 = $m_s_None$();
                       if ((!(x$17 === x1$9$1))) {
                         throw new $c_s_MatchError().init___O(x1$9$1)
                       };
-                      $m_Lio_circe_DecodingFailure$();
-                      var ops = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function(this$10$1, c$1) {
-                        return (function() {
-                          return c$1.history__sci_List()
-                        })
-                      })(this, c));
-                      var this$20 = new $c_s_util_Left().init___O(new $c_Lio_circe_DecodingFailure$$anon$2().init___T__F0("CNil", ops));
-                      var this$21 = new $c_s_util_Either$RightProjection().init___s_util_Either(this$20);
-                      var x1$11 = this$21.e$1;
-                      if ($is_s_util_Right(x1$11)) {
-                        var x2$11 = $as_s_util_Right(x1$11);
-                        var b$9 = x2$11.value$2;
-                        var x$2$2 = $as_Lshapeless_CNil(b$9);
-                        var this$22 = new $c_s_util_Right().init___O(new $c_Lshapeless_Inr().init___Lshapeless_Coproduct(x$2$2))
+                      var result$19 = c.downField__T__Lio_circe_ACursor("Zorg");
+                      if (result$19.succeeded__Z()) {
+                        var this$19 = this.fresh$macro$216$2;
+                        var x1$10$1 = new $c_s_Some().init___O($f_Lio_circe_Decoder__tryDecode__Lio_circe_ACursor__s_util_Either(this$19, result$19))
                       } else {
-                        if ((!$is_s_util_Left(x1$11))) {
-                          throw new $c_s_MatchError().init___O(x1$11)
+                        var x1$10$1 = $m_s_None$()
+                      };
+                      if ($is_s_Some(x1$10$1)) {
+                        var x2$10$1 = $as_s_Some(x1$10$1);
+                        var result$20 = $as_s_util_Either(x2$10$1.value$2);
+                        var this$20 = new $c_s_util_Either$RightProjection().init___s_util_Either(result$20);
+                        var x1$11 = this$20.e$1;
+                        if ($is_s_util_Right(x1$11)) {
+                          var x2$11 = $as_s_util_Right(x1$11);
+                          var b$9 = x2$11.value$2;
+                          var v$11 = $as_LZorg(b$9);
+                          var this$24 = new $c_s_util_Right().init___O($m_Lio_circe_generic_decoding_ReprDecoder$().injectLeftValue__O__Lshapeless_$colon$plus$colon(v$11))
+                        } else {
+                          if ((!$is_s_util_Left(x1$11))) {
+                            throw new $c_s_MatchError().init___O(x1$11)
+                          };
+                          var this$24 = this$20.e$1
+                        }
+                      } else {
+                        var x$19 = $m_s_None$();
+                        if ((!(x$19 === x1$10$1))) {
+                          throw new $c_s_MatchError().init___O(x1$10$1)
                         };
-                        var this$22 = this$21.e$1
+                        $m_Lio_circe_DecodingFailure$();
+                        var ops = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function(this$11$1, c$1) {
+                          return (function() {
+                            return c$1.history__sci_List()
+                          })
+                        })(this, c));
+                        var this$22 = new $c_s_util_Left().init___O(new $c_Lio_circe_DecodingFailure$$anon$2().init___T__F0("CNil", ops));
+                        var this$23 = new $c_s_util_Either$RightProjection().init___s_util_Either(this$22);
+                        var x1$12 = this$23.e$1;
+                        if ($is_s_util_Right(x1$12)) {
+                          var x2$12 = $as_s_util_Right(x1$12);
+                          var b$10 = x2$12.value$2;
+                          var x$2$2 = $as_Lshapeless_CNil(b$10);
+                          var this$24 = new $c_s_util_Right().init___O(new $c_Lshapeless_Inr().init___Lshapeless_Coproduct(x$2$2))
+                        } else {
+                          if ((!$is_s_util_Left(x1$12))) {
+                            throw new $c_s_MatchError().init___O(x1$12)
+                          };
+                          var this$24 = this$23.e$1
+                        }
+                      };
+                      var this$25 = new $c_s_util_Either$RightProjection().init___s_util_Either(this$24);
+                      var x1$13 = this$25.e$1;
+                      if ($is_s_util_Right(x1$13)) {
+                        var x2$13 = $as_s_util_Right(x1$13);
+                        var b$11 = x2$13.value$2;
+                        var x$4$2 = $as_Lshapeless_$colon$plus$colon(b$11);
+                        var this$26 = new $c_s_util_Right().init___O(new $c_Lshapeless_Inr().init___Lshapeless_Coproduct(x$4$2))
+                      } else {
+                        if ((!$is_s_util_Left(x1$13))) {
+                          throw new $c_s_MatchError().init___O(x1$13)
+                        };
+                        var this$26 = this$25.e$1
                       }
                     };
-                    var this$23 = new $c_s_util_Either$RightProjection().init___s_util_Either(this$22);
-                    var x1$12 = this$23.e$1;
-                    if ($is_s_util_Right(x1$12)) {
-                      var x2$12 = $as_s_util_Right(x1$12);
-                      var b$10 = x2$12.value$2;
-                      var x$4$2 = $as_Lshapeless_$colon$plus$colon(b$10);
-                      var this$24 = new $c_s_util_Right().init___O(new $c_Lshapeless_Inr().init___Lshapeless_Coproduct(x$4$2))
+                    var this$27 = new $c_s_util_Either$RightProjection().init___s_util_Either(this$26);
+                    var x1$14 = this$27.e$1;
+                    if ($is_s_util_Right(x1$14)) {
+                      var x2$14 = $as_s_util_Right(x1$14);
+                      var b$12 = x2$14.value$2;
+                      var x$6$2 = $as_Lshapeless_$colon$plus$colon(b$12);
+                      var this$28 = new $c_s_util_Right().init___O(new $c_Lshapeless_Inr().init___Lshapeless_Coproduct(x$6$2))
                     } else {
-                      if ((!$is_s_util_Left(x1$12))) {
-                        throw new $c_s_MatchError().init___O(x1$12)
+                      if ((!$is_s_util_Left(x1$14))) {
+                        throw new $c_s_MatchError().init___O(x1$14)
                       };
-                      var this$24 = this$23.e$1
+                      var this$28 = this$27.e$1
                     }
                   };
-                  var this$25 = new $c_s_util_Either$RightProjection().init___s_util_Either(this$24);
-                  var x1$13 = this$25.e$1;
-                  if ($is_s_util_Right(x1$13)) {
-                    var x2$13 = $as_s_util_Right(x1$13);
-                    var b$11 = x2$13.value$2;
-                    var x$6$2 = $as_Lshapeless_$colon$plus$colon(b$11);
-                    var this$26 = new $c_s_util_Right().init___O(new $c_Lshapeless_Inr().init___Lshapeless_Coproduct(x$6$2))
+                  var this$29 = new $c_s_util_Either$RightProjection().init___s_util_Either(this$28);
+                  var x1$15 = this$29.e$1;
+                  if ($is_s_util_Right(x1$15)) {
+                    var x2$15 = $as_s_util_Right(x1$15);
+                    var b$13 = x2$15.value$2;
+                    var x$8$2 = $as_Lshapeless_$colon$plus$colon(b$13);
+                    var this$30 = new $c_s_util_Right().init___O(new $c_Lshapeless_Inr().init___Lshapeless_Coproduct(x$8$2))
                   } else {
-                    if ((!$is_s_util_Left(x1$13))) {
-                      throw new $c_s_MatchError().init___O(x1$13)
+                    if ((!$is_s_util_Left(x1$15))) {
+                      throw new $c_s_MatchError().init___O(x1$15)
                     };
-                    var this$26 = this$25.e$1
+                    var this$30 = this$29.e$1
                   }
                 };
-                var this$27 = new $c_s_util_Either$RightProjection().init___s_util_Either(this$26);
-                var x1$14 = this$27.e$1;
-                if ($is_s_util_Right(x1$14)) {
-                  var x2$14 = $as_s_util_Right(x1$14);
-                  var b$12 = x2$14.value$2;
-                  var x$8$2 = $as_Lshapeless_$colon$plus$colon(b$12);
-                  var this$28 = new $c_s_util_Right().init___O(new $c_Lshapeless_Inr().init___Lshapeless_Coproduct(x$8$2))
+                var this$31 = new $c_s_util_Either$RightProjection().init___s_util_Either(this$30);
+                var x1$16 = this$31.e$1;
+                if ($is_s_util_Right(x1$16)) {
+                  var x2$16 = $as_s_util_Right(x1$16);
+                  var b$14 = x2$16.value$2;
+                  var x$10$2 = $as_Lshapeless_$colon$plus$colon(b$14);
+                  var this$32 = new $c_s_util_Right().init___O(new $c_Lshapeless_Inr().init___Lshapeless_Coproduct(x$10$2))
                 } else {
-                  if ((!$is_s_util_Left(x1$14))) {
-                    throw new $c_s_MatchError().init___O(x1$14)
+                  if ((!$is_s_util_Left(x1$16))) {
+                    throw new $c_s_MatchError().init___O(x1$16)
                   };
-                  var this$28 = this$27.e$1
+                  var this$32 = this$31.e$1
                 }
               };
-              var this$29 = new $c_s_util_Either$RightProjection().init___s_util_Either(this$28);
-              var x1$15 = this$29.e$1;
-              if ($is_s_util_Right(x1$15)) {
-                var x2$15 = $as_s_util_Right(x1$15);
-                var b$13 = x2$15.value$2;
-                var x$10$2 = $as_Lshapeless_$colon$plus$colon(b$13);
-                var this$30 = new $c_s_util_Right().init___O(new $c_Lshapeless_Inr().init___Lshapeless_Coproduct(x$10$2))
+              var this$33 = new $c_s_util_Either$RightProjection().init___s_util_Either(this$32);
+              var x1$17 = this$33.e$1;
+              if ($is_s_util_Right(x1$17)) {
+                var x2$17 = $as_s_util_Right(x1$17);
+                var b$15 = x2$17.value$2;
+                var x$12$2 = $as_Lshapeless_$colon$plus$colon(b$15);
+                var this$34 = new $c_s_util_Right().init___O(new $c_Lshapeless_Inr().init___Lshapeless_Coproduct(x$12$2))
               } else {
-                if ((!$is_s_util_Left(x1$15))) {
-                  throw new $c_s_MatchError().init___O(x1$15)
+                if ((!$is_s_util_Left(x1$17))) {
+                  throw new $c_s_MatchError().init___O(x1$17)
                 };
-                var this$30 = this$29.e$1
+                var this$34 = this$33.e$1
               }
             };
-            var this$31 = new $c_s_util_Either$RightProjection().init___s_util_Either(this$30);
-            var x1$16 = this$31.e$1;
-            if ($is_s_util_Right(x1$16)) {
-              var x2$16 = $as_s_util_Right(x1$16);
-              var b$14 = x2$16.value$2;
-              var x$12$2 = $as_Lshapeless_$colon$plus$colon(b$14);
-              var this$32 = new $c_s_util_Right().init___O(new $c_Lshapeless_Inr().init___Lshapeless_Coproduct(x$12$2))
+            var this$35 = new $c_s_util_Either$RightProjection().init___s_util_Either(this$34);
+            var x1$18 = this$35.e$1;
+            if ($is_s_util_Right(x1$18)) {
+              var x2$18 = $as_s_util_Right(x1$18);
+              var b$16 = x2$18.value$2;
+              var x$14$2 = $as_Lshapeless_$colon$plus$colon(b$16);
+              var this$36 = new $c_s_util_Right().init___O(new $c_Lshapeless_Inr().init___Lshapeless_Coproduct(x$14$2))
             } else {
-              if ((!$is_s_util_Left(x1$16))) {
-                throw new $c_s_MatchError().init___O(x1$16)
+              if ((!$is_s_util_Left(x1$18))) {
+                throw new $c_s_MatchError().init___O(x1$18)
               };
-              var this$32 = this$31.e$1
+              var this$36 = this$35.e$1
             }
           };
-          var this$33 = new $c_s_util_Either$RightProjection().init___s_util_Either(this$32);
-          var x1$17 = this$33.e$1;
-          if ($is_s_util_Right(x1$17)) {
-            var x2$17 = $as_s_util_Right(x1$17);
-            var b$15 = x2$17.value$2;
-            var x$14$2 = $as_Lshapeless_$colon$plus$colon(b$15);
-            var this$34 = new $c_s_util_Right().init___O(new $c_Lshapeless_Inr().init___Lshapeless_Coproduct(x$14$2))
+          var this$37 = new $c_s_util_Either$RightProjection().init___s_util_Either(this$36);
+          var x1$19 = this$37.e$1;
+          if ($is_s_util_Right(x1$19)) {
+            var x2$19 = $as_s_util_Right(x1$19);
+            var b$17 = x2$19.value$2;
+            var x$16$2 = $as_Lshapeless_$colon$plus$colon(b$17);
+            var this$38 = new $c_s_util_Right().init___O(new $c_Lshapeless_Inr().init___Lshapeless_Coproduct(x$16$2))
           } else {
-            if ((!$is_s_util_Left(x1$17))) {
-              throw new $c_s_MatchError().init___O(x1$17)
+            if ((!$is_s_util_Left(x1$19))) {
+              throw new $c_s_MatchError().init___O(x1$19)
             };
-            var this$34 = this$33.e$1
+            var this$38 = this$37.e$1
           }
         };
-        var this$35 = new $c_s_util_Either$RightProjection().init___s_util_Either(this$34);
-        var x1$18 = this$35.e$1;
-        if ($is_s_util_Right(x1$18)) {
-          var x2$18 = $as_s_util_Right(x1$18);
-          var b$16 = x2$18.value$2;
-          var x$16$2 = $as_Lshapeless_$colon$plus$colon(b$16);
-          var this$36 = new $c_s_util_Right().init___O(new $c_Lshapeless_Inr().init___Lshapeless_Coproduct(x$16$2))
+        var this$39 = new $c_s_util_Either$RightProjection().init___s_util_Either(this$38);
+        var x1$20 = this$39.e$1;
+        if ($is_s_util_Right(x1$20)) {
+          var x2$20 = $as_s_util_Right(x1$20);
+          var b$18 = x2$20.value$2;
+          var x$18$2 = $as_Lshapeless_$colon$plus$colon(b$18);
+          var this$40 = new $c_s_util_Right().init___O(new $c_Lshapeless_Inr().init___Lshapeless_Coproduct(x$18$2))
         } else {
-          if ((!$is_s_util_Left(x1$18))) {
-            throw new $c_s_MatchError().init___O(x1$18)
+          if ((!$is_s_util_Left(x1$20))) {
+            throw new $c_s_MatchError().init___O(x1$20)
           };
-          var this$36 = this$35.e$1
+          var this$40 = this$39.e$1
         }
       };
-      var this$37 = new $c_s_util_Either$RightProjection().init___s_util_Either(this$36);
-      var x1$19 = this$37.e$1;
-      if ($is_s_util_Right(x1$19)) {
-        var x2$19 = $as_s_util_Right(x1$19);
-        var b$17 = x2$19.value$2;
-        var x$18$2 = $as_Lshapeless_$colon$plus$colon(b$17);
-        return new $c_s_util_Right().init___O(new $c_Lshapeless_Inr().init___Lshapeless_Coproduct(x$18$2))
-      } else if ($is_s_util_Left(x1$19)) {
-        return this$37.e$1
+      var this$41 = new $c_s_util_Either$RightProjection().init___s_util_Either(this$40);
+      var x1$21 = this$41.e$1;
+      if ($is_s_util_Right(x1$21)) {
+        var x2$21 = $as_s_util_Right(x1$21);
+        var b$19 = x2$21.value$2;
+        var x$20$2 = $as_Lshapeless_$colon$plus$colon(b$19);
+        return new $c_s_util_Right().init___O(new $c_Lshapeless_Inr().init___Lshapeless_Coproduct(x$20$2))
+      } else if ($is_s_util_Left(x1$21)) {
+        return this$41.e$1
       } else {
-        throw new $c_s_MatchError().init___O(x1$19)
+        throw new $c_s_MatchError().init___O(x1$21)
       }
     } else {
       throw new $c_s_MatchError().init___O(x1)
     }
   }
 });
-var $d_LMessage$anon$lazy$macro$283$1$$anon$41 = new $TypeData().initClass({
-  LMessage$anon$lazy$macro$283$1$$anon$41: 0
-}, false, "Message$anon$lazy$macro$283$1$$anon$41", {
-  LMessage$anon$lazy$macro$283$1$$anon$41: 1,
+var $d_LMessage$anon$lazy$macro$301$1$$anon$43 = new $TypeData().initClass({
+  LMessage$anon$lazy$macro$301$1$$anon$43: 0
+}, false, "Message$anon$lazy$macro$301$1$$anon$43", {
+  LMessage$anon$lazy$macro$301$1$$anon$43: 1,
   Lio_circe_generic_decoding_ReprDecoder: 1,
   O: 1,
   Lio_circe_Decoder: 1,
   s_Serializable: 1,
   Ljava_io_Serializable: 1
 });
-$c_LMessage$anon$lazy$macro$283$1$$anon$41.prototype.$classData = $d_LMessage$anon$lazy$macro$283$1$$anon$41;
+$c_LMessage$anon$lazy$macro$301$1$$anon$43.prototype.$classData = $d_LMessage$anon$lazy$macro$301$1$$anon$43;
 /** @constructor */
-function $c_LMessage$anon$lazy$macro$283$1$$anon$42() {
+function $c_LMessage$anon$lazy$macro$301$1$$anon$44() {
   $c_O.call(this)
 }
-$c_LMessage$anon$lazy$macro$283$1$$anon$42.prototype = new $h_O();
-$c_LMessage$anon$lazy$macro$283$1$$anon$42.prototype.constructor = $c_LMessage$anon$lazy$macro$283$1$$anon$42;
+$c_LMessage$anon$lazy$macro$301$1$$anon$44.prototype = new $h_O();
+$c_LMessage$anon$lazy$macro$301$1$$anon$44.prototype.constructor = $c_LMessage$anon$lazy$macro$301$1$$anon$44;
 /** @constructor */
-function $h_LMessage$anon$lazy$macro$283$1$$anon$42() {
+function $h_LMessage$anon$lazy$macro$301$1$$anon$44() {
   /*<skip>*/
 }
-$h_LMessage$anon$lazy$macro$283$1$$anon$42.prototype = $c_LMessage$anon$lazy$macro$283$1$$anon$42.prototype;
-$c_LMessage$anon$lazy$macro$283$1$$anon$42.prototype.init___LMessage$anon$lazy$macro$283$1 = (function($$outer) {
+$h_LMessage$anon$lazy$macro$301$1$$anon$44.prototype = $c_LMessage$anon$lazy$macro$301$1$$anon$44.prototype;
+$c_LMessage$anon$lazy$macro$301$1$$anon$44.prototype.init___LMessage$anon$lazy$macro$301$1 = (function($$outer) {
   return this
 });
-var $d_LMessage$anon$lazy$macro$283$1$$anon$42 = new $TypeData().initClass({
-  LMessage$anon$lazy$macro$283$1$$anon$42: 0
-}, false, "Message$anon$lazy$macro$283$1$$anon$42", {
-  LMessage$anon$lazy$macro$283$1$$anon$42: 1,
+var $d_LMessage$anon$lazy$macro$301$1$$anon$44 = new $TypeData().initClass({
+  LMessage$anon$lazy$macro$301$1$$anon$44: 0
+}, false, "Message$anon$lazy$macro$301$1$$anon$44", {
+  LMessage$anon$lazy$macro$301$1$$anon$44: 1,
   O: 1,
   Lshapeless_DefaultSymbolicLabelling: 1,
   Lshapeless_package$DepFn0: 1,
   s_Serializable: 1,
   Ljava_io_Serializable: 1
 });
-$c_LMessage$anon$lazy$macro$283$1$$anon$42.prototype.$classData = $d_LMessage$anon$lazy$macro$283$1$$anon$42;
+$c_LMessage$anon$lazy$macro$301$1$$anon$44.prototype.$classData = $d_LMessage$anon$lazy$macro$301$1$$anon$44;
 /** @constructor */
 function $c_LTimestampedMessage() {
   $c_O.call(this);
@@ -36017,6 +36163,319 @@ function $m_LPing$() {
   return $n_LPing$
 }
 /** @constructor */
+function $c_LPlayerShip() {
+  $c_O.call(this);
+  this.id$1 = 0;
+  this.isZorg$1 = false;
+  this.color$1 = null;
+  this.variant$1 = 0;
+  this.textures$1 = null;
+  this.sprite$1 = null;
+  this.thrustContainer$1 = null;
+  this.x$1$1 = null;
+  this.thrustBL$1 = null;
+  this.thrustBR$1 = null;
+  this.thrustFL$1 = null;
+  this.thrustFR$1 = null;
+  this.damages$1 = null;
+  this.damageLevel$und$1 = 0;
+  this.damaged$1 = 0.0;
+  this.damageFilter$1 = null;
+  this.zorg$1 = false;
+  this.ident$1 = 0;
+  this.angularVelocity$1 = 0.0;
+  this.velocity$1 = null;
+  this.acceleration$1 = 0.0;
+  this.exists$1 = false
+}
+$c_LPlayerShip.prototype = new $h_O();
+$c_LPlayerShip.prototype.constructor = $c_LPlayerShip;
+/** @constructor */
+function $h_LPlayerShip() {
+  /*<skip>*/
+}
+$h_LPlayerShip.prototype = $c_LPlayerShip.prototype;
+$c_LPlayerShip.prototype.velocity$und$eq__LVector2d__V = (function(x$1) {
+  this.velocity$1 = x$1
+});
+$c_LPlayerShip.prototype.angularVelocity$und$eq__D__V = (function(x$1) {
+  this.angularVelocity$1 = x$1
+});
+$c_LPlayerShip.prototype.productPrefix__T = (function() {
+  return "PlayerShip"
+});
+$c_LPlayerShip.prototype.updateThrust__D__V = (function(delta) {
+  this.thrustContainer$1.rotation = (-$uD(this.sprite$1.rotation));
+  this.thrustBL$1.emit = ((this.acceleration$1 > 0) || ((this.angularVelocity$1 > 0) && (this.acceleration$1 === 0)));
+  this.thrustBR$1.emit = ((this.acceleration$1 > 0) || ((this.angularVelocity$1 < 0) && (this.acceleration$1 === 0)));
+  this.thrustFL$1.emit = ((this.acceleration$1 < 0) || ((this.angularVelocity$1 < 0) && (this.acceleration$1 === 0)));
+  this.thrustFR$1.emit = ((this.acceleration$1 < 0) || ((this.angularVelocity$1 > 0) && (this.acceleration$1 === 0)));
+  var rot = ($uD(this.sprite$1.rotation) * $uD($g.PIXI.RAD_TO_DEG));
+  this.thrustBL$1.rotate(rot);
+  this.thrustBR$1.rotate(rot);
+  this.thrustFL$1.rotate(rot);
+  this.thrustFR$1.rotate(rot);
+  var spawnBL = new $c_LVector2d().init___D__D((-45.0), 25.0).rotate__D__LVector2d($uD(this.sprite$1.rotation));
+  var spawnBR = new $c_LVector2d().init___D__D(45.0, 25.0).rotate__D__LVector2d($uD(this.sprite$1.rotation));
+  var spawnFL = new $c_LVector2d().init___D__D((-47.0), (-8.0)).rotate__D__LVector2d($uD(this.sprite$1.rotation));
+  var spawnFR = new $c_LVector2d().init___D__D(47.0, (-8.0)).rotate__D__LVector2d($uD(this.sprite$1.rotation));
+  this.thrustBL$1.updateSpawnPos(spawnBL.x$1, spawnBL.y$1);
+  this.thrustBR$1.updateSpawnPos(spawnBR.x$1, spawnBR.y$1);
+  this.thrustFL$1.updateSpawnPos(spawnFL.x$1, spawnFL.y$1);
+  this.thrustFR$1.updateSpawnPos(spawnFR.x$1, spawnFR.y$1);
+  this.thrustBL$1.update(delta);
+  this.thrustBR$1.update(delta);
+  this.thrustFL$1.update(delta);
+  this.thrustFR$1.update(delta)
+});
+$c_LPlayerShip.prototype.exists__Z = (function() {
+  return this.exists$1
+});
+$c_LPlayerShip.prototype.productArity__I = (function() {
+  return 4
+});
+$c_LPlayerShip.prototype.velocity__LVector2d = (function() {
+  return this.velocity$1
+});
+$c_LPlayerShip.prototype.equals__O__Z = (function(x$1) {
+  if ((this === x$1)) {
+    return true
+  } else if ($is_LPlayerShip(x$1)) {
+    var PlayerShip$1 = $as_LPlayerShip(x$1);
+    if (((this.id$1 === PlayerShip$1.id$1) && (this.isZorg$1 === PlayerShip$1.isZorg$1))) {
+      var x = this.color$1;
+      var x$2 = PlayerShip$1.color$1;
+      var jsx$1 = (x === x$2)
+    } else {
+      var jsx$1 = false
+    };
+    if (jsx$1) {
+      return (this.variant$1 === PlayerShip$1.variant$1)
+    } else {
+      return false
+    }
+  } else {
+    return false
+  }
+});
+$c_LPlayerShip.prototype.productElement__I__O = (function(x$1) {
+  switch (x$1) {
+    case 0: {
+      return this.id$1;
+      break
+    }
+    case 1: {
+      return this.isZorg$1;
+      break
+    }
+    case 2: {
+      return this.color$1;
+      break
+    }
+    case 3: {
+      return this.variant$1;
+      break
+    }
+    default: {
+      throw new $c_jl_IndexOutOfBoundsException().init___T(("" + x$1))
+    }
+  }
+});
+$c_LPlayerShip.prototype.angularVelocity__D = (function() {
+  return this.angularVelocity$1
+});
+$c_LPlayerShip.prototype.toString__T = (function() {
+  return $m_sr_ScalaRunTime$().$$undtoString__s_Product__T(this)
+});
+$c_LPlayerShip.prototype.thrustEmitterSettings$1__p1__Z__Z__sjs_js_Object = (function(back, left) {
+  return {
+    "alpha": {
+      "start": 0.8,
+      "end": 0.0
+    },
+    "scale": {
+      "start": 0.1,
+      "end": 2
+    },
+    "color": {
+      "start": "ffffff",
+      "end": "331100"
+    },
+    "speed": {
+      "start": (back ? 300 : 250),
+      "end": (back ? 300 : 250)
+    },
+    "startRotation": (back ? {
+      "min": 89,
+      "max": 91
+    } : {
+      "min": 265,
+      "max": 275
+    }),
+    "lifetime": {
+      "min": 0.5,
+      "max": 1
+    },
+    "frequency": (back ? 0.003 : 0.003),
+    "maxParticles": 256,
+    "pos": {
+      "x": (-45),
+      "y": 25
+    },
+    "spawnType": "circle",
+    "spawnCircle": new $g.PIXI.Circle(0.0, 0.0, (back ? 10.0 : 5.0))
+  }
+});
+$c_LPlayerShip.prototype.sprite__Lpixijs_Sprite = (function() {
+  return this.sprite$1
+});
+$c_LPlayerShip.prototype.ident__I = (function() {
+  return this.ident$1
+});
+$c_LPlayerShip.prototype.exists$und$eq__Z__V = (function(x$1) {
+  this.exists$1 = x$1
+});
+$c_LPlayerShip.prototype.update__D__V = (function(delta) {
+  $f_LSpaceObject__update__D__V(this, delta);
+  if ((this.damaged$1 > 0)) {
+    var b = (this.damaged$1 - delta);
+    this.damaged$1 = $uD($g.Math.max(0.0, b));
+    this.sprite$1.tint = ((16777215 - $imul(257, $doubleToInt((255 * this.damaged$1)))) | 0);
+    this.damageFilter$1.angle = (360 * this.damaged$1)
+  } else if ((this.damaged$1 === 0)) {
+    this.damaged$1 = (-1.0);
+    this.sprite$1.tint = 1.6777215E7;
+    this.damageFilter$1.angle = 0.0
+  };
+  this.updateThrust__D__V(delta)
+});
+$c_LPlayerShip.prototype.acceleration__D = (function() {
+  return this.acceleration$1
+});
+$c_LPlayerShip.prototype.ident$und$eq__I__V = (function(x$1) {
+  this.ident$1 = x$1
+});
+$c_LPlayerShip.prototype.acceleration$und$eq__D__V = (function(x$1) {
+  this.acceleration$1 = x$1
+});
+$c_LPlayerShip.prototype.thrustEmitter$1__p1__Z__Z__Lpixijs_particles_Emitter = (function(back, left) {
+  return new $g.PIXI.particles.Emitter(this.thrustContainer$1, [this.textures$1.stars$1.get(2)], this.thrustEmitterSettings$1__p1__Z__Z__sjs_js_Object(back, left))
+});
+$c_LPlayerShip.prototype.hashCode__I = (function() {
+  var acc = (-889275714);
+  acc = $m_sr_Statics$().mix__I__I__I(acc, this.id$1);
+  acc = $m_sr_Statics$().mix__I__I__I(acc, (this.isZorg$1 ? 1231 : 1237));
+  acc = $m_sr_Statics$().mix__I__I__I(acc, $m_sr_Statics$().anyHash__O__I(this.color$1));
+  acc = $m_sr_Statics$().mix__I__I__I(acc, this.variant$1);
+  return $m_sr_Statics$().finalizeHash__I__I__I(acc, 4)
+});
+$c_LPlayerShip.prototype.damageLevel$und$eq__I__V = (function(level) {
+  var this$1 = $m_s_Predef$().wrapRefArray__AO__scm_WrappedArray(this.damages$1);
+  var this$2 = new $c_s_PartialFunction$Lifted().init___s_PartialFunction(this$1);
+  var v1 = (((-1) + this.damageLevel$und$1) | 0);
+  var this$3 = this$2.apply__O__s_Option(v1);
+  if ((!this$3.isEmpty__Z())) {
+    var arg1 = this$3.get__O();
+    this.sprite$1.removeChild(arg1)
+  };
+  var this$4 = $m_s_Predef$().wrapRefArray__AO__scm_WrappedArray(this.damages$1);
+  var this$5 = new $c_s_PartialFunction$Lifted().init___s_PartialFunction(this$4);
+  var v1$1 = (((-1) + level) | 0);
+  var this$6 = this$5.apply__O__s_Option(v1$1);
+  if ((!this$6.isEmpty__Z())) {
+    var arg1$1 = this$6.get__O();
+    this.sprite$1.addChild(arg1$1)
+  };
+  var xs = this.damages$1;
+  if ((level > xs.u.length)) {
+    this.damageLevel$und$1 = 0
+  } else {
+    this.damageLevel$und$1 = level
+  }
+});
+$c_LPlayerShip.prototype.productIterator__sc_Iterator = (function() {
+  return new $c_sr_ScalaRunTime$$anon$1().init___s_Product(this)
+});
+$c_LPlayerShip.prototype.init___I__Z__LColor$Player__I__LResources$SpaceTextures = (function(id, isZorg, color, variant, textures) {
+  this.id$1 = id;
+  this.isZorg$1 = isZorg;
+  this.color$1 = color;
+  this.variant$1 = variant;
+  this.textures$1 = textures;
+  $f_LSpaceObject__$$init$__V(this);
+  this.sprite$1 = new $g.PIXI.Sprite($asArrayOf_Lpixijs_Texture(textures.players__LResources$SpaceTextures$players$().ships$1.apply__O__O(color), 1).get(variant));
+  this.ident$1 = id;
+  this.zorg$1 = isZorg;
+  this.sprite$1.anchor.set(0.5, 0.5);
+  this.thrustContainer$1 = new $g.PIXI.Container();
+  this.sprite$1.addChild(this.thrustContainer$1);
+  var _1 = this.thrustEmitter$1__p1__Z__Z__Lpixijs_particles_Emitter(true, true);
+  var _2 = this.thrustEmitter$1__p1__Z__Z__Lpixijs_particles_Emitter(true, false);
+  var _3 = this.thrustEmitter$1__p1__Z__Z__Lpixijs_particles_Emitter(false, true);
+  var _4 = this.thrustEmitter$1__p1__Z__Z__Lpixijs_particles_Emitter(false, false);
+  this.x$1$1 = new $c_T4().init___O__O__O__O(_1, _2, _3, _4);
+  this.thrustBL$1 = this.x$1$1.$$und1$1;
+  this.thrustBR$1 = this.x$1$1.$$und2$1;
+  this.thrustFL$1 = this.x$1$1.$$und3$1;
+  this.thrustFR$1 = this.x$1$1.$$und4$1;
+  var xs = textures.players__LResources$SpaceTextures$players$().damage$1.get(variant);
+  var elems$2 = null;
+  elems$2 = [];
+  var x1 = xs.u.length;
+  switch (x1) {
+    case (-1): {
+      break
+    }
+  };
+  var i = 0;
+  var len = xs.u.length;
+  while ((i < len)) {
+    var index = i;
+    var arg1 = xs.get(index);
+    var ds = new $g.PIXI.Sprite(arg1);
+    ds.blendMode = $uD($g.PIXI.BLEND_MODES.MULTIPLY);
+    ds.anchor.set(0.5, 0.5);
+    var unboxedElem = ((ds === null) ? null : ds);
+    elems$2.push(unboxedElem);
+    i = ((1 + i) | 0)
+  };
+  this.damages$1 = $makeNativeArrayWrapper($d_Lpixijs_Sprite.getArrayOf(), elems$2);
+  this.damageLevel$und$1 = 0;
+  this.damaged$1 = 0.0;
+  this.damageFilter$1 = new $g.PIXI.filters.TwistFilter();
+  this.damageFilter$1.radius = ($uD(this.sprite$1.width) / 2);
+  this.damageFilter$1.offset = new $g.PIXI.Point(($uD(this.sprite$1.width) / 2), ($uD(this.sprite$1.height) / 2));
+  this.sprite$1.filters = [this.damageFilter$1];
+  return this
+});
+$c_LPlayerShip.prototype.zorg$und$eq__Z__V = (function(x$1) {
+  this.zorg$1 = x$1
+});
+function $is_LPlayerShip(obj) {
+  return (!(!((obj && obj.$classData) && obj.$classData.ancestors.LPlayerShip)))
+}
+function $as_LPlayerShip(obj) {
+  return (($is_LPlayerShip(obj) || (obj === null)) ? obj : $throwClassCastException(obj, "PlayerShip"))
+}
+function $isArrayOf_LPlayerShip(obj, depth) {
+  return (!(!(((obj && obj.$classData) && (obj.$classData.arrayDepth === depth)) && obj.$classData.arrayBase.ancestors.LPlayerShip)))
+}
+function $asArrayOf_LPlayerShip(obj, depth) {
+  return (($isArrayOf_LPlayerShip(obj, depth) || (obj === null)) ? obj : $throwArrayCastException(obj, "LPlayerShip;", depth))
+}
+var $d_LPlayerShip = new $TypeData().initClass({
+  LPlayerShip: 0
+}, false, "PlayerShip", {
+  LPlayerShip: 1,
+  O: 1,
+  LSpaceObject: 1,
+  s_Product: 1,
+  s_Equals: 1,
+  s_Serializable: 1,
+  Ljava_io_Serializable: 1
+});
+$c_LPlayerShip.prototype.$classData = $d_LPlayerShip;
+/** @constructor */
 function $c_LPong$() {
   $c_O.call(this)
 }
@@ -36699,6 +37158,85 @@ function $m_LTiny$() {
   };
   return $n_LTiny$
 }
+/** @constructor */
+function $c_LZorg() {
+  $c_O.call(this);
+  this.common$1 = null
+}
+$c_LZorg.prototype = new $h_O();
+$c_LZorg.prototype.constructor = $c_LZorg;
+/** @constructor */
+function $h_LZorg() {
+  /*<skip>*/
+}
+$h_LZorg.prototype = $c_LZorg.prototype;
+$c_LZorg.prototype.productPrefix__T = (function() {
+  return "Zorg"
+});
+$c_LZorg.prototype.productArity__I = (function() {
+  return 1
+});
+$c_LZorg.prototype.init___LCommonState = (function(common) {
+  this.common$1 = common;
+  return this
+});
+$c_LZorg.prototype.equals__O__Z = (function(x$1) {
+  if ((this === x$1)) {
+    return true
+  } else if ($is_LZorg(x$1)) {
+    var Zorg$1 = $as_LZorg(x$1);
+    var x = this.common$1;
+    var x$2 = Zorg$1.common$1;
+    return ((x === null) ? (x$2 === null) : x.equals__O__Z(x$2))
+  } else {
+    return false
+  }
+});
+$c_LZorg.prototype.productElement__I__O = (function(x$1) {
+  switch (x$1) {
+    case 0: {
+      return this.common$1;
+      break
+    }
+    default: {
+      throw new $c_jl_IndexOutOfBoundsException().init___T(("" + x$1))
+    }
+  }
+});
+$c_LZorg.prototype.toString__T = (function() {
+  return $m_sr_ScalaRunTime$().$$undtoString__s_Product__T(this)
+});
+$c_LZorg.prototype.hashCode__I = (function() {
+  var this$2 = $m_s_util_hashing_MurmurHash3$();
+  return this$2.productHash__s_Product__I__I(this, (-889275714))
+});
+$c_LZorg.prototype.productIterator__sc_Iterator = (function() {
+  return new $c_sr_ScalaRunTime$$anon$1().init___s_Product(this)
+});
+function $is_LZorg(obj) {
+  return (!(!((obj && obj.$classData) && obj.$classData.ancestors.LZorg)))
+}
+function $as_LZorg(obj) {
+  return (($is_LZorg(obj) || (obj === null)) ? obj : $throwClassCastException(obj, "Zorg"))
+}
+function $isArrayOf_LZorg(obj, depth) {
+  return (!(!(((obj && obj.$classData) && (obj.$classData.arrayDepth === depth)) && obj.$classData.arrayBase.ancestors.LZorg)))
+}
+function $asArrayOf_LZorg(obj, depth) {
+  return (($isArrayOf_LZorg(obj, depth) || (obj === null)) ? obj : $throwArrayCastException(obj, "LZorg;", depth))
+}
+var $d_LZorg = new $TypeData().initClass({
+  LZorg: 0
+}, false, "Zorg", {
+  LZorg: 1,
+  O: 1,
+  LMessage: 1,
+  s_Product: 1,
+  s_Equals: 1,
+  s_Serializable: 1,
+  Ljava_io_Serializable: 1
+});
+$c_LZorg.prototype.$classData = $d_LZorg;
 function $f_Lcats_Apply__map2__O__O__F2__O($thiz, fa, fb, f) {
   return $thiz.map__O__F1__O($thiz.product__O__O__O(fa, fb), new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function($this, f$1) {
     return (function(x0$2$2) {
@@ -40659,57 +41197,57 @@ var $d_sjsr_UndefinedBehaviorError = new $TypeData().initClass({
 });
 $c_sjsr_UndefinedBehaviorError.prototype.$classData = $d_sjsr_UndefinedBehaviorError;
 /** @constructor */
-function $c_LAColor$anon$lazy$macro$348$1$$anon$11() {
+function $c_LAColor$anon$lazy$macro$366$1$$anon$11() {
   $c_Lio_circe_generic_encoding_ReprObjectEncoder.call(this);
-  this.fresh$macro$340$2 = null;
-  this.fresh$macro$344$2 = null
+  this.fresh$macro$358$2 = null;
+  this.fresh$macro$362$2 = null
 }
-$c_LAColor$anon$lazy$macro$348$1$$anon$11.prototype = new $h_Lio_circe_generic_encoding_ReprObjectEncoder();
-$c_LAColor$anon$lazy$macro$348$1$$anon$11.prototype.constructor = $c_LAColor$anon$lazy$macro$348$1$$anon$11;
+$c_LAColor$anon$lazy$macro$366$1$$anon$11.prototype = new $h_Lio_circe_generic_encoding_ReprObjectEncoder();
+$c_LAColor$anon$lazy$macro$366$1$$anon$11.prototype.constructor = $c_LAColor$anon$lazy$macro$366$1$$anon$11;
 /** @constructor */
-function $h_LAColor$anon$lazy$macro$348$1$$anon$11() {
+function $h_LAColor$anon$lazy$macro$366$1$$anon$11() {
   /*<skip>*/
 }
-$h_LAColor$anon$lazy$macro$348$1$$anon$11.prototype = $c_LAColor$anon$lazy$macro$348$1$$anon$11.prototype;
-$c_LAColor$anon$lazy$macro$348$1$$anon$11.prototype.encodeObject__O__Lio_circe_JsonObject = (function(a) {
-  return this.encodeObject__Lshapeless_$colon$plus$colon__Lio_circe_JsonObject($as_Lshapeless_$colon$plus$colon(a))
-});
-$c_LAColor$anon$lazy$macro$348$1$$anon$11.prototype.init___LAColor$anon$lazy$macro$348$1 = (function($$outer) {
+$h_LAColor$anon$lazy$macro$366$1$$anon$11.prototype = $c_LAColor$anon$lazy$macro$366$1$$anon$11.prototype;
+$c_LAColor$anon$lazy$macro$366$1$$anon$11.prototype.init___LAColor$anon$lazy$macro$366$1 = (function($$outer) {
   var this$1 = $m_LAColor$();
-  var gen = new $c_LAColor$anon$lazy$macro$348$1$$anon$11$anon$macro$341$1().init___LAColor$anon$lazy$macro$348$1$$anon$11(this);
-  this.fresh$macro$340$2 = $f_LJSONConfig__encodeCaseObject__Lshapeless_Generic__Lio_circe_Encoder(this$1, gen);
+  var gen = new $c_LAColor$anon$lazy$macro$366$1$$anon$11$anon$macro$359$1().init___LAColor$anon$lazy$macro$366$1$$anon$11(this);
+  this.fresh$macro$358$2 = $f_LJSONConfig__encodeCaseObject__Lshapeless_Generic__Lio_circe_Encoder(this$1, gen);
   var this$2 = $m_LAColor$();
-  var gen$1 = new $c_LAColor$anon$lazy$macro$348$1$$anon$11$anon$macro$345$1().init___LAColor$anon$lazy$macro$348$1$$anon$11(this);
-  this.fresh$macro$344$2 = $f_LJSONConfig__encodeCaseObject__Lshapeless_Generic__Lio_circe_Encoder(this$2, gen$1);
+  var gen$1 = new $c_LAColor$anon$lazy$macro$366$1$$anon$11$anon$macro$363$1().init___LAColor$anon$lazy$macro$366$1$$anon$11(this);
+  this.fresh$macro$362$2 = $f_LJSONConfig__encodeCaseObject__Lshapeless_Generic__Lio_circe_Encoder(this$2, gen$1);
   return this
 });
-$c_LAColor$anon$lazy$macro$348$1$$anon$11.prototype.encodeObject__Lshapeless_$colon$plus$colon__Lio_circe_JsonObject = (function(a) {
+$c_LAColor$anon$lazy$macro$366$1$$anon$11.prototype.encodeObject__O__Lio_circe_JsonObject = (function(a) {
+  return this.encodeObject__Lshapeless_$colon$plus$colon__Lio_circe_JsonObject($as_Lshapeless_$colon$plus$colon(a))
+});
+$c_LAColor$anon$lazy$macro$366$1$$anon$11.prototype.encodeObject__Lshapeless_$colon$plus$colon__Lio_circe_JsonObject = (function(a) {
   var x1 = new $c_Lshapeless_Inr().init___Lshapeless_Coproduct(a);
-  var fresh$macro$346 = $as_Lshapeless_$colon$plus$colon(x1.tail$1);
-  if ($is_Lshapeless_Inl(fresh$macro$346)) {
-    var x2 = $as_Lshapeless_Inl(fresh$macro$346);
-    var fresh$macro$347 = $as_LBrown$(x2.head$1);
-    return $m_Lio_circe_JsonObject$().singleton__T__Lio_circe_Json__Lio_circe_JsonObject("Brown", this.fresh$macro$344$2.apply__O__Lio_circe_Json(fresh$macro$347))
-  } else if ($is_Lshapeless_Inr(fresh$macro$346)) {
-    var x3 = $as_Lshapeless_Inr(fresh$macro$346);
-    var fresh$macro$342 = $as_Lshapeless_$colon$plus$colon(x3.tail$1);
-    if ($is_Lshapeless_Inl(fresh$macro$342)) {
-      var x2$2 = $as_Lshapeless_Inl(fresh$macro$342);
-      var fresh$macro$343 = $as_LGray$(x2$2.head$1);
-      return $m_Lio_circe_JsonObject$().singleton__T__Lio_circe_Json__Lio_circe_JsonObject("Gray", this.fresh$macro$340$2.apply__O__Lio_circe_Json(fresh$macro$343))
-    } else if ($is_Lshapeless_Inr(fresh$macro$342)) {
+  var fresh$macro$364 = $as_Lshapeless_$colon$plus$colon(x1.tail$1);
+  if ($is_Lshapeless_Inl(fresh$macro$364)) {
+    var x2 = $as_Lshapeless_Inl(fresh$macro$364);
+    var fresh$macro$365 = $as_LBrown$(x2.head$1);
+    return $m_Lio_circe_JsonObject$().singleton__T__Lio_circe_Json__Lio_circe_JsonObject("Brown", this.fresh$macro$362$2.apply__O__Lio_circe_Json(fresh$macro$365))
+  } else if ($is_Lshapeless_Inr(fresh$macro$364)) {
+    var x3 = $as_Lshapeless_Inr(fresh$macro$364);
+    var fresh$macro$360 = $as_Lshapeless_$colon$plus$colon(x3.tail$1);
+    if ($is_Lshapeless_Inl(fresh$macro$360)) {
+      var x2$2 = $as_Lshapeless_Inl(fresh$macro$360);
+      var fresh$macro$361 = $as_LGray$(x2$2.head$1);
+      return $m_Lio_circe_JsonObject$().singleton__T__Lio_circe_Json__Lio_circe_JsonObject("Gray", this.fresh$macro$358$2.apply__O__Lio_circe_Json(fresh$macro$361))
+    } else if ($is_Lshapeless_Inr(fresh$macro$360)) {
       $m_s_sys_package$().error__T__sr_Nothing$("Cannot encode CNil")
     } else {
-      throw new $c_s_MatchError().init___O(fresh$macro$342)
+      throw new $c_s_MatchError().init___O(fresh$macro$360)
     }
   } else {
-    throw new $c_s_MatchError().init___O(fresh$macro$346)
+    throw new $c_s_MatchError().init___O(fresh$macro$364)
   }
 });
-var $d_LAColor$anon$lazy$macro$348$1$$anon$11 = new $TypeData().initClass({
-  LAColor$anon$lazy$macro$348$1$$anon$11: 0
-}, false, "AColor$anon$lazy$macro$348$1$$anon$11", {
-  LAColor$anon$lazy$macro$348$1$$anon$11: 1,
+var $d_LAColor$anon$lazy$macro$366$1$$anon$11 = new $TypeData().initClass({
+  LAColor$anon$lazy$macro$366$1$$anon$11: 0
+}, false, "AColor$anon$lazy$macro$366$1$$anon$11", {
+  LAColor$anon$lazy$macro$366$1$$anon$11: 1,
   Lio_circe_generic_encoding_ReprObjectEncoder: 1,
   O: 1,
   Lio_circe_ObjectEncoder: 1,
@@ -40718,87 +41256,87 @@ var $d_LAColor$anon$lazy$macro$348$1$$anon$11 = new $TypeData().initClass({
   s_Serializable: 1,
   Ljava_io_Serializable: 1
 });
-$c_LAColor$anon$lazy$macro$348$1$$anon$11.prototype.$classData = $d_LAColor$anon$lazy$macro$348$1$$anon$11;
+$c_LAColor$anon$lazy$macro$366$1$$anon$11.prototype.$classData = $d_LAColor$anon$lazy$macro$366$1$$anon$11;
 /** @constructor */
-function $c_LASize$anon$lazy$macro$385$1$$anon$12() {
+function $c_LASize$anon$lazy$macro$403$1$$anon$12() {
   $c_Lio_circe_generic_encoding_ReprObjectEncoder.call(this);
-  this.fresh$macro$369$2 = null;
-  this.fresh$macro$373$2 = null;
-  this.fresh$macro$377$2 = null;
-  this.fresh$macro$381$2 = null
+  this.fresh$macro$387$2 = null;
+  this.fresh$macro$391$2 = null;
+  this.fresh$macro$395$2 = null;
+  this.fresh$macro$399$2 = null
 }
-$c_LASize$anon$lazy$macro$385$1$$anon$12.prototype = new $h_Lio_circe_generic_encoding_ReprObjectEncoder();
-$c_LASize$anon$lazy$macro$385$1$$anon$12.prototype.constructor = $c_LASize$anon$lazy$macro$385$1$$anon$12;
+$c_LASize$anon$lazy$macro$403$1$$anon$12.prototype = new $h_Lio_circe_generic_encoding_ReprObjectEncoder();
+$c_LASize$anon$lazy$macro$403$1$$anon$12.prototype.constructor = $c_LASize$anon$lazy$macro$403$1$$anon$12;
 /** @constructor */
-function $h_LASize$anon$lazy$macro$385$1$$anon$12() {
+function $h_LASize$anon$lazy$macro$403$1$$anon$12() {
   /*<skip>*/
 }
-$h_LASize$anon$lazy$macro$385$1$$anon$12.prototype = $c_LASize$anon$lazy$macro$385$1$$anon$12.prototype;
-$c_LASize$anon$lazy$macro$385$1$$anon$12.prototype.init___LASize$anon$lazy$macro$385$1 = (function($$outer) {
-  var this$1 = $m_LASize$();
-  var gen = new $c_LASize$anon$lazy$macro$385$1$$anon$12$anon$macro$370$1().init___LASize$anon$lazy$macro$385$1$$anon$12(this);
-  this.fresh$macro$369$2 = $f_LJSONConfig__encodeCaseObject__Lshapeless_Generic__Lio_circe_Encoder(this$1, gen);
-  var this$2 = $m_LASize$();
-  var gen$1 = new $c_LASize$anon$lazy$macro$385$1$$anon$12$anon$macro$374$1().init___LASize$anon$lazy$macro$385$1$$anon$12(this);
-  this.fresh$macro$373$2 = $f_LJSONConfig__encodeCaseObject__Lshapeless_Generic__Lio_circe_Encoder(this$2, gen$1);
-  var this$3 = $m_LASize$();
-  var gen$2 = new $c_LASize$anon$lazy$macro$385$1$$anon$12$anon$macro$378$1().init___LASize$anon$lazy$macro$385$1$$anon$12(this);
-  this.fresh$macro$377$2 = $f_LJSONConfig__encodeCaseObject__Lshapeless_Generic__Lio_circe_Encoder(this$3, gen$2);
-  var this$4 = $m_LASize$();
-  var gen$3 = new $c_LASize$anon$lazy$macro$385$1$$anon$12$anon$macro$382$1().init___LASize$anon$lazy$macro$385$1$$anon$12(this);
-  this.fresh$macro$381$2 = $f_LJSONConfig__encodeCaseObject__Lshapeless_Generic__Lio_circe_Encoder(this$4, gen$3);
-  return this
-});
-$c_LASize$anon$lazy$macro$385$1$$anon$12.prototype.encodeObject__O__Lio_circe_JsonObject = (function(a) {
+$h_LASize$anon$lazy$macro$403$1$$anon$12.prototype = $c_LASize$anon$lazy$macro$403$1$$anon$12.prototype;
+$c_LASize$anon$lazy$macro$403$1$$anon$12.prototype.encodeObject__O__Lio_circe_JsonObject = (function(a) {
   return this.encodeObject__Lshapeless_$colon$plus$colon__Lio_circe_JsonObject($as_Lshapeless_$colon$plus$colon(a))
 });
-$c_LASize$anon$lazy$macro$385$1$$anon$12.prototype.encodeObject__Lshapeless_$colon$plus$colon__Lio_circe_JsonObject = (function(a) {
+$c_LASize$anon$lazy$macro$403$1$$anon$12.prototype.init___LASize$anon$lazy$macro$403$1 = (function($$outer) {
+  var this$1 = $m_LASize$();
+  var gen = new $c_LASize$anon$lazy$macro$403$1$$anon$12$anon$macro$388$1().init___LASize$anon$lazy$macro$403$1$$anon$12(this);
+  this.fresh$macro$387$2 = $f_LJSONConfig__encodeCaseObject__Lshapeless_Generic__Lio_circe_Encoder(this$1, gen);
+  var this$2 = $m_LASize$();
+  var gen$1 = new $c_LASize$anon$lazy$macro$403$1$$anon$12$anon$macro$392$1().init___LASize$anon$lazy$macro$403$1$$anon$12(this);
+  this.fresh$macro$391$2 = $f_LJSONConfig__encodeCaseObject__Lshapeless_Generic__Lio_circe_Encoder(this$2, gen$1);
+  var this$3 = $m_LASize$();
+  var gen$2 = new $c_LASize$anon$lazy$macro$403$1$$anon$12$anon$macro$396$1().init___LASize$anon$lazy$macro$403$1$$anon$12(this);
+  this.fresh$macro$395$2 = $f_LJSONConfig__encodeCaseObject__Lshapeless_Generic__Lio_circe_Encoder(this$3, gen$2);
+  var this$4 = $m_LASize$();
+  var gen$3 = new $c_LASize$anon$lazy$macro$403$1$$anon$12$anon$macro$400$1().init___LASize$anon$lazy$macro$403$1$$anon$12(this);
+  this.fresh$macro$399$2 = $f_LJSONConfig__encodeCaseObject__Lshapeless_Generic__Lio_circe_Encoder(this$4, gen$3);
+  return this
+});
+$c_LASize$anon$lazy$macro$403$1$$anon$12.prototype.encodeObject__Lshapeless_$colon$plus$colon__Lio_circe_JsonObject = (function(a) {
   var x1 = new $c_Lshapeless_Inr().init___Lshapeless_Coproduct(a);
-  var fresh$macro$383 = $as_Lshapeless_$colon$plus$colon(x1.tail$1);
-  if ($is_Lshapeless_Inl(fresh$macro$383)) {
-    var x2 = $as_Lshapeless_Inl(fresh$macro$383);
-    var fresh$macro$384 = $as_LBig$(x2.head$1);
-    return $m_Lio_circe_JsonObject$().singleton__T__Lio_circe_Json__Lio_circe_JsonObject("Big", this.fresh$macro$381$2.apply__O__Lio_circe_Json(fresh$macro$384))
-  } else if ($is_Lshapeless_Inr(fresh$macro$383)) {
-    var x3 = $as_Lshapeless_Inr(fresh$macro$383);
-    var fresh$macro$379 = $as_Lshapeless_$colon$plus$colon(x3.tail$1);
-    if ($is_Lshapeless_Inl(fresh$macro$379)) {
-      var x2$2 = $as_Lshapeless_Inl(fresh$macro$379);
-      var fresh$macro$380 = $as_LMedium$(x2$2.head$1);
-      return $m_Lio_circe_JsonObject$().singleton__T__Lio_circe_Json__Lio_circe_JsonObject("Medium", this.fresh$macro$377$2.apply__O__Lio_circe_Json(fresh$macro$380))
-    } else if ($is_Lshapeless_Inr(fresh$macro$379)) {
-      var x3$2 = $as_Lshapeless_Inr(fresh$macro$379);
-      var fresh$macro$375 = $as_Lshapeless_$colon$plus$colon(x3$2.tail$1);
-      if ($is_Lshapeless_Inl(fresh$macro$375)) {
-        var x2$3 = $as_Lshapeless_Inl(fresh$macro$375);
-        var fresh$macro$376 = $as_LSmall$(x2$3.head$1);
-        return $m_Lio_circe_JsonObject$().singleton__T__Lio_circe_Json__Lio_circe_JsonObject("Small", this.fresh$macro$373$2.apply__O__Lio_circe_Json(fresh$macro$376))
-      } else if ($is_Lshapeless_Inr(fresh$macro$375)) {
-        var x3$3 = $as_Lshapeless_Inr(fresh$macro$375);
-        var fresh$macro$371 = $as_Lshapeless_$colon$plus$colon(x3$3.tail$1);
-        if ($is_Lshapeless_Inl(fresh$macro$371)) {
-          var x2$4 = $as_Lshapeless_Inl(fresh$macro$371);
-          var fresh$macro$372 = $as_LTiny$(x2$4.head$1);
-          return $m_Lio_circe_JsonObject$().singleton__T__Lio_circe_Json__Lio_circe_JsonObject("Tiny", this.fresh$macro$369$2.apply__O__Lio_circe_Json(fresh$macro$372))
-        } else if ($is_Lshapeless_Inr(fresh$macro$371)) {
+  var fresh$macro$401 = $as_Lshapeless_$colon$plus$colon(x1.tail$1);
+  if ($is_Lshapeless_Inl(fresh$macro$401)) {
+    var x2 = $as_Lshapeless_Inl(fresh$macro$401);
+    var fresh$macro$402 = $as_LBig$(x2.head$1);
+    return $m_Lio_circe_JsonObject$().singleton__T__Lio_circe_Json__Lio_circe_JsonObject("Big", this.fresh$macro$399$2.apply__O__Lio_circe_Json(fresh$macro$402))
+  } else if ($is_Lshapeless_Inr(fresh$macro$401)) {
+    var x3 = $as_Lshapeless_Inr(fresh$macro$401);
+    var fresh$macro$397 = $as_Lshapeless_$colon$plus$colon(x3.tail$1);
+    if ($is_Lshapeless_Inl(fresh$macro$397)) {
+      var x2$2 = $as_Lshapeless_Inl(fresh$macro$397);
+      var fresh$macro$398 = $as_LMedium$(x2$2.head$1);
+      return $m_Lio_circe_JsonObject$().singleton__T__Lio_circe_Json__Lio_circe_JsonObject("Medium", this.fresh$macro$395$2.apply__O__Lio_circe_Json(fresh$macro$398))
+    } else if ($is_Lshapeless_Inr(fresh$macro$397)) {
+      var x3$2 = $as_Lshapeless_Inr(fresh$macro$397);
+      var fresh$macro$393 = $as_Lshapeless_$colon$plus$colon(x3$2.tail$1);
+      if ($is_Lshapeless_Inl(fresh$macro$393)) {
+        var x2$3 = $as_Lshapeless_Inl(fresh$macro$393);
+        var fresh$macro$394 = $as_LSmall$(x2$3.head$1);
+        return $m_Lio_circe_JsonObject$().singleton__T__Lio_circe_Json__Lio_circe_JsonObject("Small", this.fresh$macro$391$2.apply__O__Lio_circe_Json(fresh$macro$394))
+      } else if ($is_Lshapeless_Inr(fresh$macro$393)) {
+        var x3$3 = $as_Lshapeless_Inr(fresh$macro$393);
+        var fresh$macro$389 = $as_Lshapeless_$colon$plus$colon(x3$3.tail$1);
+        if ($is_Lshapeless_Inl(fresh$macro$389)) {
+          var x2$4 = $as_Lshapeless_Inl(fresh$macro$389);
+          var fresh$macro$390 = $as_LTiny$(x2$4.head$1);
+          return $m_Lio_circe_JsonObject$().singleton__T__Lio_circe_Json__Lio_circe_JsonObject("Tiny", this.fresh$macro$387$2.apply__O__Lio_circe_Json(fresh$macro$390))
+        } else if ($is_Lshapeless_Inr(fresh$macro$389)) {
           $m_s_sys_package$().error__T__sr_Nothing$("Cannot encode CNil")
         } else {
-          throw new $c_s_MatchError().init___O(fresh$macro$371)
+          throw new $c_s_MatchError().init___O(fresh$macro$389)
         }
       } else {
-        throw new $c_s_MatchError().init___O(fresh$macro$375)
+        throw new $c_s_MatchError().init___O(fresh$macro$393)
       }
     } else {
-      throw new $c_s_MatchError().init___O(fresh$macro$379)
+      throw new $c_s_MatchError().init___O(fresh$macro$397)
     }
   } else {
-    throw new $c_s_MatchError().init___O(fresh$macro$383)
+    throw new $c_s_MatchError().init___O(fresh$macro$401)
   }
 });
-var $d_LASize$anon$lazy$macro$385$1$$anon$12 = new $TypeData().initClass({
-  LASize$anon$lazy$macro$385$1$$anon$12: 0
-}, false, "ASize$anon$lazy$macro$385$1$$anon$12", {
-  LASize$anon$lazy$macro$385$1$$anon$12: 1,
+var $d_LASize$anon$lazy$macro$403$1$$anon$12 = new $TypeData().initClass({
+  LASize$anon$lazy$macro$403$1$$anon$12: 0
+}, false, "ASize$anon$lazy$macro$403$1$$anon$12", {
+  LASize$anon$lazy$macro$403$1$$anon$12: 1,
   Lio_circe_generic_encoding_ReprObjectEncoder: 1,
   O: 1,
   Lio_circe_ObjectEncoder: 1,
@@ -40807,7 +41345,7 @@ var $d_LASize$anon$lazy$macro$385$1$$anon$12 = new $TypeData().initClass({
   s_Serializable: 1,
   Ljava_io_Serializable: 1
 });
-$c_LASize$anon$lazy$macro$385$1$$anon$12.prototype.$classData = $d_LASize$anon$lazy$macro$385$1$$anon$12;
+$c_LASize$anon$lazy$macro$403$1$$anon$12.prototype.$classData = $d_LASize$anon$lazy$macro$403$1$$anon$12;
 /** @constructor */
 function $c_LColor$Black$() {
   $c_O.call(this)
@@ -41225,99 +41763,99 @@ function $m_LColor$Yellow$() {
   return $n_LColor$Yellow$
 }
 /** @constructor */
-function $c_LCommand$anon$lazy$macro$434$1$$anon$13() {
+function $c_LCommand$anon$lazy$macro$452$1$$anon$13() {
   $c_Lio_circe_generic_encoding_ReprObjectEncoder.call(this);
-  this.fresh$macro$430$2 = null;
-  this.fresh$macro$422$2 = null;
-  this.fresh$macro$414$2 = null;
-  this.fresh$macro$418$2 = null;
-  this.fresh$macro$426$2 = null
+  this.fresh$macro$444$2 = null;
+  this.fresh$macro$432$2 = null;
+  this.fresh$macro$440$2 = null;
+  this.fresh$macro$436$2 = null;
+  this.fresh$macro$448$2 = null
 }
-$c_LCommand$anon$lazy$macro$434$1$$anon$13.prototype = new $h_Lio_circe_generic_encoding_ReprObjectEncoder();
-$c_LCommand$anon$lazy$macro$434$1$$anon$13.prototype.constructor = $c_LCommand$anon$lazy$macro$434$1$$anon$13;
+$c_LCommand$anon$lazy$macro$452$1$$anon$13.prototype = new $h_Lio_circe_generic_encoding_ReprObjectEncoder();
+$c_LCommand$anon$lazy$macro$452$1$$anon$13.prototype.constructor = $c_LCommand$anon$lazy$macro$452$1$$anon$13;
 /** @constructor */
-function $h_LCommand$anon$lazy$macro$434$1$$anon$13() {
+function $h_LCommand$anon$lazy$macro$452$1$$anon$13() {
   /*<skip>*/
 }
-$h_LCommand$anon$lazy$macro$434$1$$anon$13.prototype = $c_LCommand$anon$lazy$macro$434$1$$anon$13.prototype;
-$c_LCommand$anon$lazy$macro$434$1$$anon$13.prototype.encodeObject__O__Lio_circe_JsonObject = (function(a) {
-  return this.encodeObject__Lshapeless_$colon$plus$colon__Lio_circe_JsonObject($as_Lshapeless_$colon$plus$colon(a))
-});
-$c_LCommand$anon$lazy$macro$434$1$$anon$13.prototype.init___LCommand$anon$lazy$macro$434$1 = (function($$outer) {
+$h_LCommand$anon$lazy$macro$452$1$$anon$13.prototype = $c_LCommand$anon$lazy$macro$452$1$$anon$13.prototype;
+$c_LCommand$anon$lazy$macro$452$1$$anon$13.prototype.init___LCommand$anon$lazy$macro$452$1 = (function($$outer) {
   var this$1 = $m_LCommand$();
-  var gen = new $c_LCommand$anon$lazy$macro$434$1$$anon$13$anon$macro$431$1().init___LCommand$anon$lazy$macro$434$1$$anon$13(this);
-  this.fresh$macro$430$2 = $f_LJSONConfig__encodeCaseObject__Lshapeless_Generic__Lio_circe_Encoder(this$1, gen);
+  var gen = new $c_LCommand$anon$lazy$macro$452$1$$anon$13$anon$macro$445$1().init___LCommand$anon$lazy$macro$452$1$$anon$13(this);
+  this.fresh$macro$444$2 = $f_LJSONConfig__encodeCaseObject__Lshapeless_Generic__Lio_circe_Encoder(this$1, gen);
   var this$2 = $m_LCommand$();
-  var gen$1 = new $c_LCommand$anon$lazy$macro$434$1$$anon$13$anon$macro$423$1().init___LCommand$anon$lazy$macro$434$1$$anon$13(this);
-  this.fresh$macro$422$2 = $f_LJSONConfig__encodeCaseObject__Lshapeless_Generic__Lio_circe_Encoder(this$2, gen$1);
+  var gen$1 = new $c_LCommand$anon$lazy$macro$452$1$$anon$13$anon$macro$433$1().init___LCommand$anon$lazy$macro$452$1$$anon$13(this);
+  this.fresh$macro$432$2 = $f_LJSONConfig__encodeCaseObject__Lshapeless_Generic__Lio_circe_Encoder(this$2, gen$1);
   var this$3 = $m_LCommand$();
-  var gen$2 = new $c_LCommand$anon$lazy$macro$434$1$$anon$13$anon$macro$415$1().init___LCommand$anon$lazy$macro$434$1$$anon$13(this);
-  this.fresh$macro$414$2 = $f_LJSONConfig__encodeCaseObject__Lshapeless_Generic__Lio_circe_Encoder(this$3, gen$2);
+  var gen$2 = new $c_LCommand$anon$lazy$macro$452$1$$anon$13$anon$macro$441$1().init___LCommand$anon$lazy$macro$452$1$$anon$13(this);
+  this.fresh$macro$440$2 = $f_LJSONConfig__encodeCaseObject__Lshapeless_Generic__Lio_circe_Encoder(this$3, gen$2);
   var this$4 = $m_LCommand$();
-  var gen$3 = new $c_LCommand$anon$lazy$macro$434$1$$anon$13$anon$macro$419$1().init___LCommand$anon$lazy$macro$434$1$$anon$13(this);
-  this.fresh$macro$418$2 = $f_LJSONConfig__encodeCaseObject__Lshapeless_Generic__Lio_circe_Encoder(this$4, gen$3);
+  var gen$3 = new $c_LCommand$anon$lazy$macro$452$1$$anon$13$anon$macro$437$1().init___LCommand$anon$lazy$macro$452$1$$anon$13(this);
+  this.fresh$macro$436$2 = $f_LJSONConfig__encodeCaseObject__Lshapeless_Generic__Lio_circe_Encoder(this$4, gen$3);
   var this$5 = $m_LCommand$();
-  var gen$4 = new $c_LCommand$anon$lazy$macro$434$1$$anon$13$anon$macro$427$1().init___LCommand$anon$lazy$macro$434$1$$anon$13(this);
-  this.fresh$macro$426$2 = $f_LJSONConfig__encodeCaseObject__Lshapeless_Generic__Lio_circe_Encoder(this$5, gen$4);
+  var gen$4 = new $c_LCommand$anon$lazy$macro$452$1$$anon$13$anon$macro$449$1().init___LCommand$anon$lazy$macro$452$1$$anon$13(this);
+  this.fresh$macro$448$2 = $f_LJSONConfig__encodeCaseObject__Lshapeless_Generic__Lio_circe_Encoder(this$5, gen$4);
   return this
 });
-$c_LCommand$anon$lazy$macro$434$1$$anon$13.prototype.encodeObject__Lshapeless_$colon$plus$colon__Lio_circe_JsonObject = (function(a) {
+$c_LCommand$anon$lazy$macro$452$1$$anon$13.prototype.encodeObject__O__Lio_circe_JsonObject = (function(a) {
+  return this.encodeObject__Lshapeless_$colon$plus$colon__Lio_circe_JsonObject($as_Lshapeless_$colon$plus$colon(a))
+});
+$c_LCommand$anon$lazy$macro$452$1$$anon$13.prototype.encodeObject__Lshapeless_$colon$plus$colon__Lio_circe_JsonObject = (function(a) {
   var x1 = new $c_Lshapeless_Inr().init___Lshapeless_Coproduct(a);
-  var fresh$macro$432 = $as_Lshapeless_$colon$plus$colon(x1.tail$1);
-  if ($is_Lshapeless_Inl(fresh$macro$432)) {
-    var x2 = $as_Lshapeless_Inl(fresh$macro$432);
-    var fresh$macro$433 = $as_LB$(x2.head$1);
-    return $m_Lio_circe_JsonObject$().singleton__T__Lio_circe_Json__Lio_circe_JsonObject("B", this.fresh$macro$430$2.apply__O__Lio_circe_Json(fresh$macro$433))
-  } else if ($is_Lshapeless_Inr(fresh$macro$432)) {
-    var x3 = $as_Lshapeless_Inr(fresh$macro$432);
-    var fresh$macro$428 = $as_Lshapeless_$colon$plus$colon(x3.tail$1);
-    if ($is_Lshapeless_Inl(fresh$macro$428)) {
-      var x2$2 = $as_Lshapeless_Inl(fresh$macro$428);
-      var fresh$macro$429 = $as_LF$(x2$2.head$1);
-      return $m_Lio_circe_JsonObject$().singleton__T__Lio_circe_Json__Lio_circe_JsonObject("F", this.fresh$macro$426$2.apply__O__Lio_circe_Json(fresh$macro$429))
-    } else if ($is_Lshapeless_Inr(fresh$macro$428)) {
-      var x3$2 = $as_Lshapeless_Inr(fresh$macro$428);
-      var fresh$macro$424 = $as_Lshapeless_$colon$plus$colon(x3$2.tail$1);
-      if ($is_Lshapeless_Inl(fresh$macro$424)) {
-        var x2$3 = $as_Lshapeless_Inl(fresh$macro$424);
-        var fresh$macro$425 = $as_LL$(x2$3.head$1);
-        return $m_Lio_circe_JsonObject$().singleton__T__Lio_circe_Json__Lio_circe_JsonObject("L", this.fresh$macro$422$2.apply__O__Lio_circe_Json(fresh$macro$425))
-      } else if ($is_Lshapeless_Inr(fresh$macro$424)) {
-        var x3$3 = $as_Lshapeless_Inr(fresh$macro$424);
-        var fresh$macro$420 = $as_Lshapeless_$colon$plus$colon(x3$3.tail$1);
-        if ($is_Lshapeless_Inl(fresh$macro$420)) {
-          var x2$4 = $as_Lshapeless_Inl(fresh$macro$420);
-          var fresh$macro$421 = $as_LR$(x2$4.head$1);
-          return $m_Lio_circe_JsonObject$().singleton__T__Lio_circe_Json__Lio_circe_JsonObject("R", this.fresh$macro$418$2.apply__O__Lio_circe_Json(fresh$macro$421))
-        } else if ($is_Lshapeless_Inr(fresh$macro$420)) {
-          var x3$4 = $as_Lshapeless_Inr(fresh$macro$420);
-          var fresh$macro$416 = $as_Lshapeless_$colon$plus$colon(x3$4.tail$1);
-          if ($is_Lshapeless_Inl(fresh$macro$416)) {
-            var x2$5 = $as_Lshapeless_Inl(fresh$macro$416);
-            var fresh$macro$417 = $as_LS$(x2$5.head$1);
-            return $m_Lio_circe_JsonObject$().singleton__T__Lio_circe_Json__Lio_circe_JsonObject("S", this.fresh$macro$414$2.apply__O__Lio_circe_Json(fresh$macro$417))
-          } else if ($is_Lshapeless_Inr(fresh$macro$416)) {
+  var fresh$macro$450 = $as_Lshapeless_$colon$plus$colon(x1.tail$1);
+  if ($is_Lshapeless_Inl(fresh$macro$450)) {
+    var x2 = $as_Lshapeless_Inl(fresh$macro$450);
+    var fresh$macro$451 = $as_LB$(x2.head$1);
+    return $m_Lio_circe_JsonObject$().singleton__T__Lio_circe_Json__Lio_circe_JsonObject("B", this.fresh$macro$448$2.apply__O__Lio_circe_Json(fresh$macro$451))
+  } else if ($is_Lshapeless_Inr(fresh$macro$450)) {
+    var x3 = $as_Lshapeless_Inr(fresh$macro$450);
+    var fresh$macro$446 = $as_Lshapeless_$colon$plus$colon(x3.tail$1);
+    if ($is_Lshapeless_Inl(fresh$macro$446)) {
+      var x2$2 = $as_Lshapeless_Inl(fresh$macro$446);
+      var fresh$macro$447 = $as_LF$(x2$2.head$1);
+      return $m_Lio_circe_JsonObject$().singleton__T__Lio_circe_Json__Lio_circe_JsonObject("F", this.fresh$macro$444$2.apply__O__Lio_circe_Json(fresh$macro$447))
+    } else if ($is_Lshapeless_Inr(fresh$macro$446)) {
+      var x3$2 = $as_Lshapeless_Inr(fresh$macro$446);
+      var fresh$macro$442 = $as_Lshapeless_$colon$plus$colon(x3$2.tail$1);
+      if ($is_Lshapeless_Inl(fresh$macro$442)) {
+        var x2$3 = $as_Lshapeless_Inl(fresh$macro$442);
+        var fresh$macro$443 = $as_LL$(x2$3.head$1);
+        return $m_Lio_circe_JsonObject$().singleton__T__Lio_circe_Json__Lio_circe_JsonObject("L", this.fresh$macro$440$2.apply__O__Lio_circe_Json(fresh$macro$443))
+      } else if ($is_Lshapeless_Inr(fresh$macro$442)) {
+        var x3$3 = $as_Lshapeless_Inr(fresh$macro$442);
+        var fresh$macro$438 = $as_Lshapeless_$colon$plus$colon(x3$3.tail$1);
+        if ($is_Lshapeless_Inl(fresh$macro$438)) {
+          var x2$4 = $as_Lshapeless_Inl(fresh$macro$438);
+          var fresh$macro$439 = $as_LR$(x2$4.head$1);
+          return $m_Lio_circe_JsonObject$().singleton__T__Lio_circe_Json__Lio_circe_JsonObject("R", this.fresh$macro$436$2.apply__O__Lio_circe_Json(fresh$macro$439))
+        } else if ($is_Lshapeless_Inr(fresh$macro$438)) {
+          var x3$4 = $as_Lshapeless_Inr(fresh$macro$438);
+          var fresh$macro$434 = $as_Lshapeless_$colon$plus$colon(x3$4.tail$1);
+          if ($is_Lshapeless_Inl(fresh$macro$434)) {
+            var x2$5 = $as_Lshapeless_Inl(fresh$macro$434);
+            var fresh$macro$435 = $as_LS$(x2$5.head$1);
+            return $m_Lio_circe_JsonObject$().singleton__T__Lio_circe_Json__Lio_circe_JsonObject("S", this.fresh$macro$432$2.apply__O__Lio_circe_Json(fresh$macro$435))
+          } else if ($is_Lshapeless_Inr(fresh$macro$434)) {
             $m_s_sys_package$().error__T__sr_Nothing$("Cannot encode CNil")
           } else {
-            throw new $c_s_MatchError().init___O(fresh$macro$416)
+            throw new $c_s_MatchError().init___O(fresh$macro$434)
           }
         } else {
-          throw new $c_s_MatchError().init___O(fresh$macro$420)
+          throw new $c_s_MatchError().init___O(fresh$macro$438)
         }
       } else {
-        throw new $c_s_MatchError().init___O(fresh$macro$424)
+        throw new $c_s_MatchError().init___O(fresh$macro$442)
       }
     } else {
-      throw new $c_s_MatchError().init___O(fresh$macro$428)
+      throw new $c_s_MatchError().init___O(fresh$macro$446)
     }
   } else {
-    throw new $c_s_MatchError().init___O(fresh$macro$432)
+    throw new $c_s_MatchError().init___O(fresh$macro$450)
   }
 });
-var $d_LCommand$anon$lazy$macro$434$1$$anon$13 = new $TypeData().initClass({
-  LCommand$anon$lazy$macro$434$1$$anon$13: 0
-}, false, "Command$anon$lazy$macro$434$1$$anon$13", {
-  LCommand$anon$lazy$macro$434$1$$anon$13: 1,
+var $d_LCommand$anon$lazy$macro$452$1$$anon$13 = new $TypeData().initClass({
+  LCommand$anon$lazy$macro$452$1$$anon$13: 0
+}, false, "Command$anon$lazy$macro$452$1$$anon$13", {
+  LCommand$anon$lazy$macro$452$1$$anon$13: 1,
   Lio_circe_generic_encoding_ReprObjectEncoder: 1,
   O: 1,
   Lio_circe_ObjectEncoder: 1,
@@ -41326,58 +41864,49 @@ var $d_LCommand$anon$lazy$macro$434$1$$anon$13 = new $TypeData().initClass({
   s_Serializable: 1,
   Ljava_io_Serializable: 1
 });
-$c_LCommand$anon$lazy$macro$434$1$$anon$13.prototype.$classData = $d_LCommand$anon$lazy$macro$434$1$$anon$13;
+$c_LCommand$anon$lazy$macro$452$1$$anon$13.prototype.$classData = $d_LCommand$anon$lazy$macro$452$1$$anon$13;
 /** @constructor */
-function $c_LCommonState$anon$lazy$macro$313$1$$anon$10() {
+function $c_LCommonState$anon$lazy$macro$331$1$$anon$10() {
   $c_Lio_circe_generic_encoding_ReprObjectEncoder.call(this);
-  this.fresh$macro$301$2 = null;
-  this.fresh$macro$305$2 = null;
-  this.fresh$macro$311$2 = null
+  this.fresh$macro$319$2 = null;
+  this.fresh$macro$323$2 = null;
+  this.fresh$macro$329$2 = null
 }
-$c_LCommonState$anon$lazy$macro$313$1$$anon$10.prototype = new $h_Lio_circe_generic_encoding_ReprObjectEncoder();
-$c_LCommonState$anon$lazy$macro$313$1$$anon$10.prototype.constructor = $c_LCommonState$anon$lazy$macro$313$1$$anon$10;
+$c_LCommonState$anon$lazy$macro$331$1$$anon$10.prototype = new $h_Lio_circe_generic_encoding_ReprObjectEncoder();
+$c_LCommonState$anon$lazy$macro$331$1$$anon$10.prototype.constructor = $c_LCommonState$anon$lazy$macro$331$1$$anon$10;
 /** @constructor */
-function $h_LCommonState$anon$lazy$macro$313$1$$anon$10() {
+function $h_LCommonState$anon$lazy$macro$331$1$$anon$10() {
   /*<skip>*/
 }
-$h_LCommonState$anon$lazy$macro$313$1$$anon$10.prototype = $c_LCommonState$anon$lazy$macro$313$1$$anon$10.prototype;
-$c_LCommonState$anon$lazy$macro$313$1$$anon$10.prototype.init___LCommonState$anon$lazy$macro$313$1 = (function($$outer) {
-  this.fresh$macro$301$2 = $m_Lio_circe_Encoder$().encodeDouble$1;
-  var this$1 = $m_Lio_circe_Encoder$();
-  var encodeA0 = $m_Lio_circe_Encoder$().encodeDouble$1;
-  var encodeA1 = $m_Lio_circe_Encoder$().encodeDouble$1;
-  this.fresh$macro$305$2 = new $c_Lio_circe_TupleEncoders$$anon$2().init___Lio_circe_TupleEncoders__Lio_circe_Encoder__Lio_circe_Encoder(this$1, encodeA0, encodeA1);
-  this.fresh$macro$311$2 = $m_Lio_circe_Encoder$().encodeInt$1;
-  return this
-});
-$c_LCommonState$anon$lazy$macro$313$1$$anon$10.prototype.encodeObject__Lshapeless_$colon$colon__Lio_circe_JsonObject = (function(a) {
+$h_LCommonState$anon$lazy$macro$331$1$$anon$10.prototype = $c_LCommonState$anon$lazy$macro$331$1$$anon$10.prototype;
+$c_LCommonState$anon$lazy$macro$331$1$$anon$10.prototype.encodeObject__Lshapeless_$colon$colon__Lio_circe_JsonObject = (function(a) {
   if ((a !== null)) {
-    var fresh$macro$312 = $uI(a.head$1);
+    var fresh$macro$330 = $uI(a.head$1);
     var p2 = $as_Lshapeless_$colon$colon(a.tail$1);
     if ((p2 !== null)) {
-      var fresh$macro$310 = $as_T2(p2.head$1);
+      var fresh$macro$328 = $as_T2(p2.head$1);
       var p3 = $as_Lshapeless_$colon$colon(p2.tail$1);
       if ((p3 !== null)) {
-        var fresh$macro$309 = $as_T2(p3.head$1);
+        var fresh$macro$327 = $as_T2(p3.head$1);
         var p4 = $as_Lshapeless_$colon$colon(p3.tail$1);
         if ((p4 !== null)) {
-          var fresh$macro$304 = $uD(p4.head$1);
+          var fresh$macro$322 = $uD(p4.head$1);
           var p5 = $as_Lshapeless_$colon$colon(p4.tail$1);
           if ((p5 !== null)) {
-            var fresh$macro$303 = $uD(p5.head$1);
+            var fresh$macro$321 = $uD(p5.head$1);
             var p6 = $as_Lshapeless_$colon$colon(p5.tail$1);
             if ((p6 !== null)) {
-              var fresh$macro$302 = $uD(p6.head$1);
+              var fresh$macro$320 = $uD(p6.head$1);
               var p7 = $as_Lshapeless_HNil(p6.tail$1);
               var x = $m_Lshapeless_HNil$();
               if ((x === p7)) {
                 var jsx$4 = $m_Lio_circe_JsonObject$();
                 var this$3 = $m_sci_Vector$();
-                var jsx$2 = new $c_T2().init___O__O("ident", this.fresh$macro$311$2.apply__O__Lio_circe_Json(fresh$macro$312));
-                var this$1 = this.fresh$macro$305$2;
-                var jsx$1 = new $c_T2().init___O__O("pos", $f_Lio_circe_ArrayEncoder__apply__O__Lio_circe_Json(this$1, fresh$macro$310));
-                var this$2 = this.fresh$macro$305$2;
-                var array = [jsx$2, jsx$1, new $c_T2().init___O__O("velo", $f_Lio_circe_ArrayEncoder__apply__O__Lio_circe_Json(this$2, fresh$macro$309)), new $c_T2().init___O__O("acc", this.fresh$macro$301$2.apply__O__Lio_circe_Json(fresh$macro$304)), new $c_T2().init___O__O("omega", this.fresh$macro$301$2.apply__O__Lio_circe_Json(fresh$macro$303)), new $c_T2().init___O__O("phi", this.fresh$macro$301$2.apply__O__Lio_circe_Json(fresh$macro$302))];
+                var jsx$2 = new $c_T2().init___O__O("ident", this.fresh$macro$329$2.apply__O__Lio_circe_Json(fresh$macro$330));
+                var this$1 = this.fresh$macro$323$2;
+                var jsx$1 = new $c_T2().init___O__O("pos", $f_Lio_circe_ArrayEncoder__apply__O__Lio_circe_Json(this$1, fresh$macro$328));
+                var this$2 = this.fresh$macro$323$2;
+                var array = [jsx$2, jsx$1, new $c_T2().init___O__O("velo", $f_Lio_circe_ArrayEncoder__apply__O__Lio_circe_Json(this$2, fresh$macro$327)), new $c_T2().init___O__O("acc", this.fresh$macro$319$2.apply__O__Lio_circe_Json(fresh$macro$322)), new $c_T2().init___O__O("omega", this.fresh$macro$319$2.apply__O__Lio_circe_Json(fresh$macro$321)), new $c_T2().init___O__O("phi", this.fresh$macro$319$2.apply__O__Lio_circe_Json(fresh$macro$320))];
                 if (($uI(array.length) === 0)) {
                   var jsx$3 = this$3.NIL$6
                 } else {
@@ -41402,13 +41931,22 @@ $c_LCommonState$anon$lazy$macro$313$1$$anon$10.prototype.encodeObject__Lshapeles
   };
   throw new $c_s_MatchError().init___O(a)
 });
-$c_LCommonState$anon$lazy$macro$313$1$$anon$10.prototype.encodeObject__O__Lio_circe_JsonObject = (function(a) {
+$c_LCommonState$anon$lazy$macro$331$1$$anon$10.prototype.encodeObject__O__Lio_circe_JsonObject = (function(a) {
   return this.encodeObject__Lshapeless_$colon$colon__Lio_circe_JsonObject($as_Lshapeless_$colon$colon(a))
 });
-var $d_LCommonState$anon$lazy$macro$313$1$$anon$10 = new $TypeData().initClass({
-  LCommonState$anon$lazy$macro$313$1$$anon$10: 0
-}, false, "CommonState$anon$lazy$macro$313$1$$anon$10", {
-  LCommonState$anon$lazy$macro$313$1$$anon$10: 1,
+$c_LCommonState$anon$lazy$macro$331$1$$anon$10.prototype.init___LCommonState$anon$lazy$macro$331$1 = (function($$outer) {
+  this.fresh$macro$319$2 = $m_Lio_circe_Encoder$().encodeDouble$1;
+  var this$1 = $m_Lio_circe_Encoder$();
+  var encodeA0 = $m_Lio_circe_Encoder$().encodeDouble$1;
+  var encodeA1 = $m_Lio_circe_Encoder$().encodeDouble$1;
+  this.fresh$macro$323$2 = new $c_Lio_circe_TupleEncoders$$anon$2().init___Lio_circe_TupleEncoders__Lio_circe_Encoder__Lio_circe_Encoder(this$1, encodeA0, encodeA1);
+  this.fresh$macro$329$2 = $m_Lio_circe_Encoder$().encodeInt$1;
+  return this
+});
+var $d_LCommonState$anon$lazy$macro$331$1$$anon$10 = new $TypeData().initClass({
+  LCommonState$anon$lazy$macro$331$1$$anon$10: 0
+}, false, "CommonState$anon$lazy$macro$331$1$$anon$10", {
+  LCommonState$anon$lazy$macro$331$1$$anon$10: 1,
   Lio_circe_generic_encoding_ReprObjectEncoder: 1,
   O: 1,
   Lio_circe_ObjectEncoder: 1,
@@ -41417,20 +41955,24 @@ var $d_LCommonState$anon$lazy$macro$313$1$$anon$10 = new $TypeData().initClass({
   s_Serializable: 1,
   Ljava_io_Serializable: 1
 });
-$c_LCommonState$anon$lazy$macro$313$1$$anon$10.prototype.$classData = $d_LCommonState$anon$lazy$macro$313$1$$anon$10;
+$c_LCommonState$anon$lazy$macro$331$1$$anon$10.prototype.$classData = $d_LCommonState$anon$lazy$macro$331$1$$anon$10;
 /** @constructor */
-function $c_LMessage$anon$lazy$macro$198$1$$anon$2() {
+function $c_LMessage$anon$lazy$macro$210$1$$anon$2() {
   $c_Lio_circe_generic_encoding_ReprObjectEncoder.call(this);
   this.fresh$macro$43$2 = null
 }
-$c_LMessage$anon$lazy$macro$198$1$$anon$2.prototype = new $h_Lio_circe_generic_encoding_ReprObjectEncoder();
-$c_LMessage$anon$lazy$macro$198$1$$anon$2.prototype.constructor = $c_LMessage$anon$lazy$macro$198$1$$anon$2;
+$c_LMessage$anon$lazy$macro$210$1$$anon$2.prototype = new $h_Lio_circe_generic_encoding_ReprObjectEncoder();
+$c_LMessage$anon$lazy$macro$210$1$$anon$2.prototype.constructor = $c_LMessage$anon$lazy$macro$210$1$$anon$2;
 /** @constructor */
-function $h_LMessage$anon$lazy$macro$198$1$$anon$2() {
+function $h_LMessage$anon$lazy$macro$210$1$$anon$2() {
   /*<skip>*/
 }
-$h_LMessage$anon$lazy$macro$198$1$$anon$2.prototype = $c_LMessage$anon$lazy$macro$198$1$$anon$2.prototype;
-$c_LMessage$anon$lazy$macro$198$1$$anon$2.prototype.encodeObject__Lshapeless_$colon$colon__Lio_circe_JsonObject = (function(a) {
+$h_LMessage$anon$lazy$macro$210$1$$anon$2.prototype = $c_LMessage$anon$lazy$macro$210$1$$anon$2.prototype;
+$c_LMessage$anon$lazy$macro$210$1$$anon$2.prototype.init___LMessage$anon$lazy$macro$210$1 = (function($$outer) {
+  this.fresh$macro$43$2 = $m_LCommonState$().encodeMessage$1;
+  return this
+});
+$c_LMessage$anon$lazy$macro$210$1$$anon$2.prototype.encodeObject__Lshapeless_$colon$colon__Lio_circe_JsonObject = (function(a) {
   if ((a !== null)) {
     var fresh$macro$51 = $as_LCommonState(a.head$1);
     var p2 = $as_Lshapeless_HNil(a.tail$1);
@@ -41458,17 +42000,13 @@ $c_LMessage$anon$lazy$macro$198$1$$anon$2.prototype.encodeObject__Lshapeless_$co
   };
   throw new $c_s_MatchError().init___O(a)
 });
-$c_LMessage$anon$lazy$macro$198$1$$anon$2.prototype.encodeObject__O__Lio_circe_JsonObject = (function(a) {
+$c_LMessage$anon$lazy$macro$210$1$$anon$2.prototype.encodeObject__O__Lio_circe_JsonObject = (function(a) {
   return this.encodeObject__Lshapeless_$colon$colon__Lio_circe_JsonObject($as_Lshapeless_$colon$colon(a))
 });
-$c_LMessage$anon$lazy$macro$198$1$$anon$2.prototype.init___LMessage$anon$lazy$macro$198$1 = (function($$outer) {
-  this.fresh$macro$43$2 = $m_LCommonState$().encodeMessage$1;
-  return this
-});
-var $d_LMessage$anon$lazy$macro$198$1$$anon$2 = new $TypeData().initClass({
-  LMessage$anon$lazy$macro$198$1$$anon$2: 0
-}, false, "Message$anon$lazy$macro$198$1$$anon$2", {
-  LMessage$anon$lazy$macro$198$1$$anon$2: 1,
+var $d_LMessage$anon$lazy$macro$210$1$$anon$2 = new $TypeData().initClass({
+  LMessage$anon$lazy$macro$210$1$$anon$2: 0
+}, false, "Message$anon$lazy$macro$210$1$$anon$2", {
+  LMessage$anon$lazy$macro$210$1$$anon$2: 1,
   Lio_circe_generic_encoding_ReprObjectEncoder: 1,
   O: 1,
   Lio_circe_ObjectEncoder: 1,
@@ -41477,31 +42015,35 @@ var $d_LMessage$anon$lazy$macro$198$1$$anon$2 = new $TypeData().initClass({
   s_Serializable: 1,
   Ljava_io_Serializable: 1
 });
-$c_LMessage$anon$lazy$macro$198$1$$anon$2.prototype.$classData = $d_LMessage$anon$lazy$macro$198$1$$anon$2;
+$c_LMessage$anon$lazy$macro$210$1$$anon$2.prototype.$classData = $d_LMessage$anon$lazy$macro$210$1$$anon$2;
 /** @constructor */
-function $c_LMessage$anon$lazy$macro$198$1$$anon$3() {
+function $c_LMessage$anon$lazy$macro$210$1$$anon$3() {
   $c_Lio_circe_generic_encoding_ReprObjectEncoder.call(this);
-  this.fresh$macro$69$2 = null
+  this.fresh$macro$81$2 = null
 }
-$c_LMessage$anon$lazy$macro$198$1$$anon$3.prototype = new $h_Lio_circe_generic_encoding_ReprObjectEncoder();
-$c_LMessage$anon$lazy$macro$198$1$$anon$3.prototype.constructor = $c_LMessage$anon$lazy$macro$198$1$$anon$3;
+$c_LMessage$anon$lazy$macro$210$1$$anon$3.prototype = new $h_Lio_circe_generic_encoding_ReprObjectEncoder();
+$c_LMessage$anon$lazy$macro$210$1$$anon$3.prototype.constructor = $c_LMessage$anon$lazy$macro$210$1$$anon$3;
 /** @constructor */
-function $h_LMessage$anon$lazy$macro$198$1$$anon$3() {
+function $h_LMessage$anon$lazy$macro$210$1$$anon$3() {
   /*<skip>*/
 }
-$h_LMessage$anon$lazy$macro$198$1$$anon$3.prototype = $c_LMessage$anon$lazy$macro$198$1$$anon$3.prototype;
-$c_LMessage$anon$lazy$macro$198$1$$anon$3.prototype.encodeObject__Lshapeless_$colon$colon__Lio_circe_JsonObject = (function(a) {
+$h_LMessage$anon$lazy$macro$210$1$$anon$3.prototype = $c_LMessage$anon$lazy$macro$210$1$$anon$3.prototype;
+$c_LMessage$anon$lazy$macro$210$1$$anon$3.prototype.init___LMessage$anon$lazy$macro$210$1 = (function($$outer) {
+  this.fresh$macro$81$2 = $m_Lio_circe_Encoder$().encodeInt$1;
+  return this
+});
+$c_LMessage$anon$lazy$macro$210$1$$anon$3.prototype.encodeObject__Lshapeless_$colon$colon__Lio_circe_JsonObject = (function(a) {
   if ((a !== null)) {
-    var fresh$macro$71 = $uI(a.head$1);
+    var fresh$macro$83 = $uI(a.head$1);
     var p2 = $as_Lshapeless_$colon$colon(a.tail$1);
     if ((p2 !== null)) {
-      var fresh$macro$70 = $uI(p2.head$1);
+      var fresh$macro$82 = $uI(p2.head$1);
       var p3 = $as_Lshapeless_HNil(p2.tail$1);
       var x = $m_Lshapeless_HNil$();
       if ((x === p3)) {
         var jsx$2 = $m_Lio_circe_JsonObject$();
         var this$1 = $m_sci_Vector$();
-        var array = [new $c_T2().init___O__O("sId", this.fresh$macro$69$2.apply__O__Lio_circe_Json(fresh$macro$71)), new $c_T2().init___O__O("lifes", this.fresh$macro$69$2.apply__O__Lio_circe_Json(fresh$macro$70))];
+        var array = [new $c_T2().init___O__O("sId", this.fresh$macro$81$2.apply__O__Lio_circe_Json(fresh$macro$83)), new $c_T2().init___O__O("lifes", this.fresh$macro$81$2.apply__O__Lio_circe_Json(fresh$macro$82))];
         if (($uI(array.length) === 0)) {
           var jsx$1 = this$1.NIL$6
         } else {
@@ -41522,17 +42064,13 @@ $c_LMessage$anon$lazy$macro$198$1$$anon$3.prototype.encodeObject__Lshapeless_$co
   };
   throw new $c_s_MatchError().init___O(a)
 });
-$c_LMessage$anon$lazy$macro$198$1$$anon$3.prototype.encodeObject__O__Lio_circe_JsonObject = (function(a) {
+$c_LMessage$anon$lazy$macro$210$1$$anon$3.prototype.encodeObject__O__Lio_circe_JsonObject = (function(a) {
   return this.encodeObject__Lshapeless_$colon$colon__Lio_circe_JsonObject($as_Lshapeless_$colon$colon(a))
 });
-$c_LMessage$anon$lazy$macro$198$1$$anon$3.prototype.init___LMessage$anon$lazy$macro$198$1 = (function($$outer) {
-  this.fresh$macro$69$2 = $m_Lio_circe_Encoder$().encodeInt$1;
-  return this
-});
-var $d_LMessage$anon$lazy$macro$198$1$$anon$3 = new $TypeData().initClass({
-  LMessage$anon$lazy$macro$198$1$$anon$3: 0
-}, false, "Message$anon$lazy$macro$198$1$$anon$3", {
-  LMessage$anon$lazy$macro$198$1$$anon$3: 1,
+var $d_LMessage$anon$lazy$macro$210$1$$anon$3 = new $TypeData().initClass({
+  LMessage$anon$lazy$macro$210$1$$anon$3: 0
+}, false, "Message$anon$lazy$macro$210$1$$anon$3", {
+  LMessage$anon$lazy$macro$210$1$$anon$3: 1,
   Lio_circe_generic_encoding_ReprObjectEncoder: 1,
   O: 1,
   Lio_circe_ObjectEncoder: 1,
@@ -41541,32 +42079,37 @@ var $d_LMessage$anon$lazy$macro$198$1$$anon$3 = new $TypeData().initClass({
   s_Serializable: 1,
   Ljava_io_Serializable: 1
 });
-$c_LMessage$anon$lazy$macro$198$1$$anon$3.prototype.$classData = $d_LMessage$anon$lazy$macro$198$1$$anon$3;
+$c_LMessage$anon$lazy$macro$210$1$$anon$3.prototype.$classData = $d_LMessage$anon$lazy$macro$210$1$$anon$3;
 /** @constructor */
-function $c_LMessage$anon$lazy$macro$198$1$$anon$4() {
+function $c_LMessage$anon$lazy$macro$210$1$$anon$4() {
   $c_Lio_circe_generic_encoding_ReprObjectEncoder.call(this);
-  this.fresh$macro$97$2 = null;
-  this.fresh$macro$99$2 = null
+  this.fresh$macro$109$2 = null;
+  this.fresh$macro$111$2 = null
 }
-$c_LMessage$anon$lazy$macro$198$1$$anon$4.prototype = new $h_Lio_circe_generic_encoding_ReprObjectEncoder();
-$c_LMessage$anon$lazy$macro$198$1$$anon$4.prototype.constructor = $c_LMessage$anon$lazy$macro$198$1$$anon$4;
+$c_LMessage$anon$lazy$macro$210$1$$anon$4.prototype = new $h_Lio_circe_generic_encoding_ReprObjectEncoder();
+$c_LMessage$anon$lazy$macro$210$1$$anon$4.prototype.constructor = $c_LMessage$anon$lazy$macro$210$1$$anon$4;
 /** @constructor */
-function $h_LMessage$anon$lazy$macro$198$1$$anon$4() {
+function $h_LMessage$anon$lazy$macro$210$1$$anon$4() {
   /*<skip>*/
 }
-$h_LMessage$anon$lazy$macro$198$1$$anon$4.prototype = $c_LMessage$anon$lazy$macro$198$1$$anon$4.prototype;
-$c_LMessage$anon$lazy$macro$198$1$$anon$4.prototype.encodeObject__Lshapeless_$colon$colon__Lio_circe_JsonObject = (function(a) {
+$h_LMessage$anon$lazy$macro$210$1$$anon$4.prototype = $c_LMessage$anon$lazy$macro$210$1$$anon$4.prototype;
+$c_LMessage$anon$lazy$macro$210$1$$anon$4.prototype.init___LMessage$anon$lazy$macro$210$1 = (function($$outer) {
+  this.fresh$macro$109$2 = $m_Lio_circe_Encoder$().encodeInt$1;
+  this.fresh$macro$111$2 = $m_LCommonState$().encodeMessage$1;
+  return this
+});
+$c_LMessage$anon$lazy$macro$210$1$$anon$4.prototype.encodeObject__Lshapeless_$colon$colon__Lio_circe_JsonObject = (function(a) {
   if ((a !== null)) {
-    var fresh$macro$107 = $as_LCommonState(a.head$1);
+    var fresh$macro$119 = $as_LCommonState(a.head$1);
     var p2 = $as_Lshapeless_$colon$colon(a.tail$1);
     if ((p2 !== null)) {
-      var fresh$macro$98 = $uI(p2.head$1);
+      var fresh$macro$110 = $uI(p2.head$1);
       var p3 = $as_Lshapeless_HNil(p2.tail$1);
       var x = $m_Lshapeless_HNil$();
       if ((x === p3)) {
         var jsx$2 = $m_Lio_circe_JsonObject$();
         var this$1 = $m_sci_Vector$();
-        var array = [new $c_T2().init___O__O("common", this.fresh$macro$99$2.apply__O__Lio_circe_Json(fresh$macro$107)), new $c_T2().init___O__O("shooter", this.fresh$macro$97$2.apply__O__Lio_circe_Json(fresh$macro$98))];
+        var array = [new $c_T2().init___O__O("common", this.fresh$macro$111$2.apply__O__Lio_circe_Json(fresh$macro$119)), new $c_T2().init___O__O("shooter", this.fresh$macro$109$2.apply__O__Lio_circe_Json(fresh$macro$110))];
         if (($uI(array.length) === 0)) {
           var jsx$1 = this$1.NIL$6
         } else {
@@ -41587,18 +42130,13 @@ $c_LMessage$anon$lazy$macro$198$1$$anon$4.prototype.encodeObject__Lshapeless_$co
   };
   throw new $c_s_MatchError().init___O(a)
 });
-$c_LMessage$anon$lazy$macro$198$1$$anon$4.prototype.encodeObject__O__Lio_circe_JsonObject = (function(a) {
+$c_LMessage$anon$lazy$macro$210$1$$anon$4.prototype.encodeObject__O__Lio_circe_JsonObject = (function(a) {
   return this.encodeObject__Lshapeless_$colon$colon__Lio_circe_JsonObject($as_Lshapeless_$colon$colon(a))
 });
-$c_LMessage$anon$lazy$macro$198$1$$anon$4.prototype.init___LMessage$anon$lazy$macro$198$1 = (function($$outer) {
-  this.fresh$macro$97$2 = $m_Lio_circe_Encoder$().encodeInt$1;
-  this.fresh$macro$99$2 = $m_LCommonState$().encodeMessage$1;
-  return this
-});
-var $d_LMessage$anon$lazy$macro$198$1$$anon$4 = new $TypeData().initClass({
-  LMessage$anon$lazy$macro$198$1$$anon$4: 0
-}, false, "Message$anon$lazy$macro$198$1$$anon$4", {
-  LMessage$anon$lazy$macro$198$1$$anon$4: 1,
+var $d_LMessage$anon$lazy$macro$210$1$$anon$4 = new $TypeData().initClass({
+  LMessage$anon$lazy$macro$210$1$$anon$4: 0
+}, false, "Message$anon$lazy$macro$210$1$$anon$4", {
+  LMessage$anon$lazy$macro$210$1$$anon$4: 1,
   Lio_circe_generic_encoding_ReprObjectEncoder: 1,
   O: 1,
   Lio_circe_ObjectEncoder: 1,
@@ -41607,28 +42145,32 @@ var $d_LMessage$anon$lazy$macro$198$1$$anon$4 = new $TypeData().initClass({
   s_Serializable: 1,
   Ljava_io_Serializable: 1
 });
-$c_LMessage$anon$lazy$macro$198$1$$anon$4.prototype.$classData = $d_LMessage$anon$lazy$macro$198$1$$anon$4;
+$c_LMessage$anon$lazy$macro$210$1$$anon$4.prototype.$classData = $d_LMessage$anon$lazy$macro$210$1$$anon$4;
 /** @constructor */
-function $c_LMessage$anon$lazy$macro$198$1$$anon$5() {
+function $c_LMessage$anon$lazy$macro$210$1$$anon$5() {
   $c_Lio_circe_generic_encoding_ReprObjectEncoder.call(this);
-  this.fresh$macro$121$2 = null
+  this.fresh$macro$133$2 = null
 }
-$c_LMessage$anon$lazy$macro$198$1$$anon$5.prototype = new $h_Lio_circe_generic_encoding_ReprObjectEncoder();
-$c_LMessage$anon$lazy$macro$198$1$$anon$5.prototype.constructor = $c_LMessage$anon$lazy$macro$198$1$$anon$5;
+$c_LMessage$anon$lazy$macro$210$1$$anon$5.prototype = new $h_Lio_circe_generic_encoding_ReprObjectEncoder();
+$c_LMessage$anon$lazy$macro$210$1$$anon$5.prototype.constructor = $c_LMessage$anon$lazy$macro$210$1$$anon$5;
 /** @constructor */
-function $h_LMessage$anon$lazy$macro$198$1$$anon$5() {
+function $h_LMessage$anon$lazy$macro$210$1$$anon$5() {
   /*<skip>*/
 }
-$h_LMessage$anon$lazy$macro$198$1$$anon$5.prototype = $c_LMessage$anon$lazy$macro$198$1$$anon$5.prototype;
-$c_LMessage$anon$lazy$macro$198$1$$anon$5.prototype.encodeObject__Lshapeless_$colon$colon__Lio_circe_JsonObject = (function(a) {
+$h_LMessage$anon$lazy$macro$210$1$$anon$5.prototype = $c_LMessage$anon$lazy$macro$210$1$$anon$5.prototype;
+$c_LMessage$anon$lazy$macro$210$1$$anon$5.prototype.init___LMessage$anon$lazy$macro$210$1 = (function($$outer) {
+  this.fresh$macro$133$2 = $m_Lio_circe_Encoder$().encodeInt$1;
+  return this
+});
+$c_LMessage$anon$lazy$macro$210$1$$anon$5.prototype.encodeObject__Lshapeless_$colon$colon__Lio_circe_JsonObject = (function(a) {
   if ((a !== null)) {
-    var fresh$macro$122 = $uI(a.head$1);
+    var fresh$macro$134 = $uI(a.head$1);
     var p2 = $as_Lshapeless_HNil(a.tail$1);
     var x = $m_Lshapeless_HNil$();
     if ((x === p2)) {
       var jsx$2 = $m_Lio_circe_JsonObject$();
       var this$1 = $m_sci_Vector$();
-      var array = [new $c_T2().init___O__O("destroy", this.fresh$macro$121$2.apply__O__Lio_circe_Json(fresh$macro$122))];
+      var array = [new $c_T2().init___O__O("destroy", this.fresh$macro$133$2.apply__O__Lio_circe_Json(fresh$macro$134))];
       if (($uI(array.length) === 0)) {
         var jsx$1 = this$1.NIL$6
       } else {
@@ -41648,17 +42190,13 @@ $c_LMessage$anon$lazy$macro$198$1$$anon$5.prototype.encodeObject__Lshapeless_$co
   };
   throw new $c_s_MatchError().init___O(a)
 });
-$c_LMessage$anon$lazy$macro$198$1$$anon$5.prototype.encodeObject__O__Lio_circe_JsonObject = (function(a) {
+$c_LMessage$anon$lazy$macro$210$1$$anon$5.prototype.encodeObject__O__Lio_circe_JsonObject = (function(a) {
   return this.encodeObject__Lshapeless_$colon$colon__Lio_circe_JsonObject($as_Lshapeless_$colon$colon(a))
 });
-$c_LMessage$anon$lazy$macro$198$1$$anon$5.prototype.init___LMessage$anon$lazy$macro$198$1 = (function($$outer) {
-  this.fresh$macro$121$2 = $m_Lio_circe_Encoder$().encodeInt$1;
-  return this
-});
-var $d_LMessage$anon$lazy$macro$198$1$$anon$5 = new $TypeData().initClass({
-  LMessage$anon$lazy$macro$198$1$$anon$5: 0
-}, false, "Message$anon$lazy$macro$198$1$$anon$5", {
-  LMessage$anon$lazy$macro$198$1$$anon$5: 1,
+var $d_LMessage$anon$lazy$macro$210$1$$anon$5 = new $TypeData().initClass({
+  LMessage$anon$lazy$macro$210$1$$anon$5: 0
+}, false, "Message$anon$lazy$macro$210$1$$anon$5", {
+  LMessage$anon$lazy$macro$210$1$$anon$5: 1,
   Lio_circe_generic_encoding_ReprObjectEncoder: 1,
   O: 1,
   Lio_circe_ObjectEncoder: 1,
@@ -41667,32 +42205,37 @@ var $d_LMessage$anon$lazy$macro$198$1$$anon$5 = new $TypeData().initClass({
   s_Serializable: 1,
   Ljava_io_Serializable: 1
 });
-$c_LMessage$anon$lazy$macro$198$1$$anon$5.prototype.$classData = $d_LMessage$anon$lazy$macro$198$1$$anon$5;
+$c_LMessage$anon$lazy$macro$210$1$$anon$5.prototype.$classData = $d_LMessage$anon$lazy$macro$210$1$$anon$5;
 /** @constructor */
-function $c_LMessage$anon$lazy$macro$198$1$$anon$6() {
+function $c_LMessage$anon$lazy$macro$210$1$$anon$6() {
   $c_Lio_circe_generic_encoding_ReprObjectEncoder.call(this);
-  this.fresh$macro$140$2 = null;
-  this.fresh$macro$143$2 = null
+  this.fresh$macro$152$2 = null;
+  this.fresh$macro$155$2 = null
 }
-$c_LMessage$anon$lazy$macro$198$1$$anon$6.prototype = new $h_Lio_circe_generic_encoding_ReprObjectEncoder();
-$c_LMessage$anon$lazy$macro$198$1$$anon$6.prototype.constructor = $c_LMessage$anon$lazy$macro$198$1$$anon$6;
+$c_LMessage$anon$lazy$macro$210$1$$anon$6.prototype = new $h_Lio_circe_generic_encoding_ReprObjectEncoder();
+$c_LMessage$anon$lazy$macro$210$1$$anon$6.prototype.constructor = $c_LMessage$anon$lazy$macro$210$1$$anon$6;
 /** @constructor */
-function $h_LMessage$anon$lazy$macro$198$1$$anon$6() {
+function $h_LMessage$anon$lazy$macro$210$1$$anon$6() {
   /*<skip>*/
 }
-$h_LMessage$anon$lazy$macro$198$1$$anon$6.prototype = $c_LMessage$anon$lazy$macro$198$1$$anon$6.prototype;
-$c_LMessage$anon$lazy$macro$198$1$$anon$6.prototype.encodeObject__Lshapeless_$colon$colon__Lio_circe_JsonObject = (function(a) {
+$h_LMessage$anon$lazy$macro$210$1$$anon$6.prototype = $c_LMessage$anon$lazy$macro$210$1$$anon$6.prototype;
+$c_LMessage$anon$lazy$macro$210$1$$anon$6.prototype.init___LMessage$anon$lazy$macro$210$1 = (function($$outer) {
+  this.fresh$macro$152$2 = $m_LCommand$().encodeMessage$1;
+  this.fresh$macro$155$2 = $m_Lio_circe_Encoder$().encodeInt$1;
+  return this
+});
+$c_LMessage$anon$lazy$macro$210$1$$anon$6.prototype.encodeObject__Lshapeless_$colon$colon__Lio_circe_JsonObject = (function(a) {
   if ((a !== null)) {
-    var fresh$macro$144 = $uI(a.head$1);
+    var fresh$macro$156 = $uI(a.head$1);
     var p2 = $as_Lshapeless_$colon$colon(a.tail$1);
     if ((p2 !== null)) {
-      var fresh$macro$142 = $as_LCommand(p2.head$1);
+      var fresh$macro$154 = $as_LCommand(p2.head$1);
       var p3 = $as_Lshapeless_HNil(p2.tail$1);
       var x = $m_Lshapeless_HNil$();
       if ((x === p3)) {
         var jsx$2 = $m_Lio_circe_JsonObject$();
         var this$1 = $m_sci_Vector$();
-        var array = [new $c_T2().init___O__O("sId", this.fresh$macro$143$2.apply__O__Lio_circe_Json(fresh$macro$144)), new $c_T2().init___O__O("cmd", this.fresh$macro$140$2.apply__O__Lio_circe_Json(fresh$macro$142))];
+        var array = [new $c_T2().init___O__O("sId", this.fresh$macro$155$2.apply__O__Lio_circe_Json(fresh$macro$156)), new $c_T2().init___O__O("cmd", this.fresh$macro$152$2.apply__O__Lio_circe_Json(fresh$macro$154))];
         if (($uI(array.length) === 0)) {
           var jsx$1 = this$1.NIL$6
         } else {
@@ -41713,18 +42256,13 @@ $c_LMessage$anon$lazy$macro$198$1$$anon$6.prototype.encodeObject__Lshapeless_$co
   };
   throw new $c_s_MatchError().init___O(a)
 });
-$c_LMessage$anon$lazy$macro$198$1$$anon$6.prototype.encodeObject__O__Lio_circe_JsonObject = (function(a) {
+$c_LMessage$anon$lazy$macro$210$1$$anon$6.prototype.encodeObject__O__Lio_circe_JsonObject = (function(a) {
   return this.encodeObject__Lshapeless_$colon$colon__Lio_circe_JsonObject($as_Lshapeless_$colon$colon(a))
 });
-$c_LMessage$anon$lazy$macro$198$1$$anon$6.prototype.init___LMessage$anon$lazy$macro$198$1 = (function($$outer) {
-  this.fresh$macro$140$2 = $m_LCommand$().encodeMessage$1;
-  this.fresh$macro$143$2 = $m_Lio_circe_Encoder$().encodeInt$1;
-  return this
-});
-var $d_LMessage$anon$lazy$macro$198$1$$anon$6 = new $TypeData().initClass({
-  LMessage$anon$lazy$macro$198$1$$anon$6: 0
-}, false, "Message$anon$lazy$macro$198$1$$anon$6", {
-  LMessage$anon$lazy$macro$198$1$$anon$6: 1,
+var $d_LMessage$anon$lazy$macro$210$1$$anon$6 = new $TypeData().initClass({
+  LMessage$anon$lazy$macro$210$1$$anon$6: 0
+}, false, "Message$anon$lazy$macro$210$1$$anon$6", {
+  LMessage$anon$lazy$macro$210$1$$anon$6: 1,
   Lio_circe_generic_encoding_ReprObjectEncoder: 1,
   O: 1,
   Lio_circe_ObjectEncoder: 1,
@@ -41733,28 +42271,32 @@ var $d_LMessage$anon$lazy$macro$198$1$$anon$6 = new $TypeData().initClass({
   s_Serializable: 1,
   Ljava_io_Serializable: 1
 });
-$c_LMessage$anon$lazy$macro$198$1$$anon$6.prototype.$classData = $d_LMessage$anon$lazy$macro$198$1$$anon$6;
+$c_LMessage$anon$lazy$macro$210$1$$anon$6.prototype.$classData = $d_LMessage$anon$lazy$macro$210$1$$anon$6;
 /** @constructor */
-function $c_LMessage$anon$lazy$macro$198$1$$anon$7() {
+function $c_LMessage$anon$lazy$macro$210$1$$anon$7() {
   $c_Lio_circe_generic_encoding_ReprObjectEncoder.call(this);
-  this.fresh$macro$158$2 = null
+  this.fresh$macro$170$2 = null
 }
-$c_LMessage$anon$lazy$macro$198$1$$anon$7.prototype = new $h_Lio_circe_generic_encoding_ReprObjectEncoder();
-$c_LMessage$anon$lazy$macro$198$1$$anon$7.prototype.constructor = $c_LMessage$anon$lazy$macro$198$1$$anon$7;
+$c_LMessage$anon$lazy$macro$210$1$$anon$7.prototype = new $h_Lio_circe_generic_encoding_ReprObjectEncoder();
+$c_LMessage$anon$lazy$macro$210$1$$anon$7.prototype.constructor = $c_LMessage$anon$lazy$macro$210$1$$anon$7;
 /** @constructor */
-function $h_LMessage$anon$lazy$macro$198$1$$anon$7() {
+function $h_LMessage$anon$lazy$macro$210$1$$anon$7() {
   /*<skip>*/
 }
-$h_LMessage$anon$lazy$macro$198$1$$anon$7.prototype = $c_LMessage$anon$lazy$macro$198$1$$anon$7.prototype;
-$c_LMessage$anon$lazy$macro$198$1$$anon$7.prototype.encodeObject__Lshapeless_$colon$colon__Lio_circe_JsonObject = (function(a) {
+$h_LMessage$anon$lazy$macro$210$1$$anon$7.prototype = $c_LMessage$anon$lazy$macro$210$1$$anon$7.prototype;
+$c_LMessage$anon$lazy$macro$210$1$$anon$7.prototype.init___LMessage$anon$lazy$macro$210$1 = (function($$outer) {
+  this.fresh$macro$170$2 = $m_Lio_circe_Encoder$().encodeInt$1;
+  return this
+});
+$c_LMessage$anon$lazy$macro$210$1$$anon$7.prototype.encodeObject__Lshapeless_$colon$colon__Lio_circe_JsonObject = (function(a) {
   if ((a !== null)) {
-    var fresh$macro$159 = $uI(a.head$1);
+    var fresh$macro$171 = $uI(a.head$1);
     var p2 = $as_Lshapeless_HNil(a.tail$1);
     var x = $m_Lshapeless_HNil$();
     if ((x === p2)) {
       var jsx$2 = $m_Lio_circe_JsonObject$();
       var this$1 = $m_sci_Vector$();
-      var array = [new $c_T2().init___O__O("clientId", this.fresh$macro$158$2.apply__O__Lio_circe_Json(fresh$macro$159))];
+      var array = [new $c_T2().init___O__O("clientId", this.fresh$macro$170$2.apply__O__Lio_circe_Json(fresh$macro$171))];
       if (($uI(array.length) === 0)) {
         var jsx$1 = this$1.NIL$6
       } else {
@@ -41774,17 +42316,13 @@ $c_LMessage$anon$lazy$macro$198$1$$anon$7.prototype.encodeObject__Lshapeless_$co
   };
   throw new $c_s_MatchError().init___O(a)
 });
-$c_LMessage$anon$lazy$macro$198$1$$anon$7.prototype.encodeObject__O__Lio_circe_JsonObject = (function(a) {
+$c_LMessage$anon$lazy$macro$210$1$$anon$7.prototype.encodeObject__O__Lio_circe_JsonObject = (function(a) {
   return this.encodeObject__Lshapeless_$colon$colon__Lio_circe_JsonObject($as_Lshapeless_$colon$colon(a))
 });
-$c_LMessage$anon$lazy$macro$198$1$$anon$7.prototype.init___LMessage$anon$lazy$macro$198$1 = (function($$outer) {
-  this.fresh$macro$158$2 = $m_Lio_circe_Encoder$().encodeInt$1;
-  return this
-});
-var $d_LMessage$anon$lazy$macro$198$1$$anon$7 = new $TypeData().initClass({
-  LMessage$anon$lazy$macro$198$1$$anon$7: 0
-}, false, "Message$anon$lazy$macro$198$1$$anon$7", {
-  LMessage$anon$lazy$macro$198$1$$anon$7: 1,
+var $d_LMessage$anon$lazy$macro$210$1$$anon$7 = new $TypeData().initClass({
+  LMessage$anon$lazy$macro$210$1$$anon$7: 0
+}, false, "Message$anon$lazy$macro$210$1$$anon$7", {
+  LMessage$anon$lazy$macro$210$1$$anon$7: 1,
   Lio_circe_generic_encoding_ReprObjectEncoder: 1,
   O: 1,
   Lio_circe_ObjectEncoder: 1,
@@ -41793,36 +42331,42 @@ var $d_LMessage$anon$lazy$macro$198$1$$anon$7 = new $TypeData().initClass({
   s_Serializable: 1,
   Ljava_io_Serializable: 1
 });
-$c_LMessage$anon$lazy$macro$198$1$$anon$7.prototype.$classData = $d_LMessage$anon$lazy$macro$198$1$$anon$7;
+$c_LMessage$anon$lazy$macro$210$1$$anon$7.prototype.$classData = $d_LMessage$anon$lazy$macro$210$1$$anon$7;
 /** @constructor */
-function $c_LMessage$anon$lazy$macro$198$1$$anon$8() {
+function $c_LMessage$anon$lazy$macro$210$1$$anon$8() {
   $c_Lio_circe_generic_encoding_ReprObjectEncoder.call(this);
-  this.fresh$macro$181$2 = null;
-  this.fresh$macro$184$2 = null;
-  this.fresh$macro$187$2 = null
+  this.fresh$macro$193$2 = null;
+  this.fresh$macro$196$2 = null;
+  this.fresh$macro$199$2 = null
 }
-$c_LMessage$anon$lazy$macro$198$1$$anon$8.prototype = new $h_Lio_circe_generic_encoding_ReprObjectEncoder();
-$c_LMessage$anon$lazy$macro$198$1$$anon$8.prototype.constructor = $c_LMessage$anon$lazy$macro$198$1$$anon$8;
+$c_LMessage$anon$lazy$macro$210$1$$anon$8.prototype = new $h_Lio_circe_generic_encoding_ReprObjectEncoder();
+$c_LMessage$anon$lazy$macro$210$1$$anon$8.prototype.constructor = $c_LMessage$anon$lazy$macro$210$1$$anon$8;
 /** @constructor */
-function $h_LMessage$anon$lazy$macro$198$1$$anon$8() {
+function $h_LMessage$anon$lazy$macro$210$1$$anon$8() {
   /*<skip>*/
 }
-$h_LMessage$anon$lazy$macro$198$1$$anon$8.prototype = $c_LMessage$anon$lazy$macro$198$1$$anon$8.prototype;
-$c_LMessage$anon$lazy$macro$198$1$$anon$8.prototype.encodeObject__Lshapeless_$colon$colon__Lio_circe_JsonObject = (function(a) {
+$h_LMessage$anon$lazy$macro$210$1$$anon$8.prototype = $c_LMessage$anon$lazy$macro$210$1$$anon$8.prototype;
+$c_LMessage$anon$lazy$macro$210$1$$anon$8.prototype.init___LMessage$anon$lazy$macro$210$1 = (function($$outer) {
+  this.fresh$macro$193$2 = $m_LAColor$().encodeMessage$1;
+  this.fresh$macro$196$2 = $m_LASize$().encodeMessage$1;
+  this.fresh$macro$199$2 = $m_LCommonState$().encodeMessage$1;
+  return this
+});
+$c_LMessage$anon$lazy$macro$210$1$$anon$8.prototype.encodeObject__Lshapeless_$colon$colon__Lio_circe_JsonObject = (function(a) {
   if ((a !== null)) {
-    var fresh$macro$195 = $as_LCommonState(a.head$1);
+    var fresh$macro$207 = $as_LCommonState(a.head$1);
     var p2 = $as_Lshapeless_$colon$colon(a.tail$1);
     if ((p2 !== null)) {
-      var fresh$macro$186 = $as_LASize(p2.head$1);
+      var fresh$macro$198 = $as_LASize(p2.head$1);
       var p3 = $as_Lshapeless_$colon$colon(p2.tail$1);
       if ((p3 !== null)) {
-        var fresh$macro$183 = $as_LAColor(p3.head$1);
+        var fresh$macro$195 = $as_LAColor(p3.head$1);
         var p4 = $as_Lshapeless_HNil(p3.tail$1);
         var x = $m_Lshapeless_HNil$();
         if ((x === p4)) {
           var jsx$2 = $m_Lio_circe_JsonObject$();
           var this$1 = $m_sci_Vector$();
-          var array = [new $c_T2().init___O__O("common", this.fresh$macro$187$2.apply__O__Lio_circe_Json(fresh$macro$195)), new $c_T2().init___O__O("size", this.fresh$macro$184$2.apply__O__Lio_circe_Json(fresh$macro$186)), new $c_T2().init___O__O("color", this.fresh$macro$181$2.apply__O__Lio_circe_Json(fresh$macro$183))];
+          var array = [new $c_T2().init___O__O("common", this.fresh$macro$199$2.apply__O__Lio_circe_Json(fresh$macro$207)), new $c_T2().init___O__O("size", this.fresh$macro$196$2.apply__O__Lio_circe_Json(fresh$macro$198)), new $c_T2().init___O__O("color", this.fresh$macro$193$2.apply__O__Lio_circe_Json(fresh$macro$195))];
           if (($uI(array.length) === 0)) {
             var jsx$1 = this$1.NIL$6
           } else {
@@ -41844,19 +42388,13 @@ $c_LMessage$anon$lazy$macro$198$1$$anon$8.prototype.encodeObject__Lshapeless_$co
   };
   throw new $c_s_MatchError().init___O(a)
 });
-$c_LMessage$anon$lazy$macro$198$1$$anon$8.prototype.encodeObject__O__Lio_circe_JsonObject = (function(a) {
+$c_LMessage$anon$lazy$macro$210$1$$anon$8.prototype.encodeObject__O__Lio_circe_JsonObject = (function(a) {
   return this.encodeObject__Lshapeless_$colon$colon__Lio_circe_JsonObject($as_Lshapeless_$colon$colon(a))
 });
-$c_LMessage$anon$lazy$macro$198$1$$anon$8.prototype.init___LMessage$anon$lazy$macro$198$1 = (function($$outer) {
-  this.fresh$macro$181$2 = $m_LAColor$().encodeMessage$1;
-  this.fresh$macro$184$2 = $m_LASize$().encodeMessage$1;
-  this.fresh$macro$187$2 = $m_LCommonState$().encodeMessage$1;
-  return this
-});
-var $d_LMessage$anon$lazy$macro$198$1$$anon$8 = new $TypeData().initClass({
-  LMessage$anon$lazy$macro$198$1$$anon$8: 0
-}, false, "Message$anon$lazy$macro$198$1$$anon$8", {
-  LMessage$anon$lazy$macro$198$1$$anon$8: 1,
+var $d_LMessage$anon$lazy$macro$210$1$$anon$8 = new $TypeData().initClass({
+  LMessage$anon$lazy$macro$210$1$$anon$8: 0
+}, false, "Message$anon$lazy$macro$210$1$$anon$8", {
+  LMessage$anon$lazy$macro$210$1$$anon$8: 1,
   Lio_circe_generic_encoding_ReprObjectEncoder: 1,
   O: 1,
   Lio_circe_ObjectEncoder: 1,
@@ -41865,32 +42403,30 @@ var $d_LMessage$anon$lazy$macro$198$1$$anon$8 = new $TypeData().initClass({
   s_Serializable: 1,
   Ljava_io_Serializable: 1
 });
-$c_LMessage$anon$lazy$macro$198$1$$anon$8.prototype.$classData = $d_LMessage$anon$lazy$macro$198$1$$anon$8;
+$c_LMessage$anon$lazy$macro$210$1$$anon$8.prototype.$classData = $d_LMessage$anon$lazy$macro$210$1$$anon$8;
 /** @constructor */
-function $c_LMessage$anon$lazy$macro$198$1$$anon$9() {
+function $c_LMessage$anon$lazy$macro$210$1$$anon$9() {
   $c_Lio_circe_generic_encoding_ReprObjectEncoder.call(this);
-  this.fresh$macro$125$2 = null;
+  this.fresh$macro$94$2 = null;
+  this.fresh$macro$90$2 = null;
+  this.fresh$macro$159$2 = null;
   this.fresh$macro$54$2 = null;
-  this.fresh$macro$162$2 = null;
-  this.fresh$macro$74$2 = null;
-  this.fresh$macro$147$2 = null;
-  this.fresh$macro$78$2 = null;
+  this.fresh$macro$66$2 = null;
+  this.fresh$macro$137$2 = null;
   this.fresh$macro$32$2 = null;
-  this.fresh$macro$110$2 = null;
-  this.fresh$macro$82$2 = null;
+  this.fresh$macro$174$2 = null;
+  this.fresh$macro$122$2 = null;
+  this.fresh$macro$86$2 = null;
   this.$$outer$2 = null
 }
-$c_LMessage$anon$lazy$macro$198$1$$anon$9.prototype = new $h_Lio_circe_generic_encoding_ReprObjectEncoder();
-$c_LMessage$anon$lazy$macro$198$1$$anon$9.prototype.constructor = $c_LMessage$anon$lazy$macro$198$1$$anon$9;
+$c_LMessage$anon$lazy$macro$210$1$$anon$9.prototype = new $h_Lio_circe_generic_encoding_ReprObjectEncoder();
+$c_LMessage$anon$lazy$macro$210$1$$anon$9.prototype.constructor = $c_LMessage$anon$lazy$macro$210$1$$anon$9;
 /** @constructor */
-function $h_LMessage$anon$lazy$macro$198$1$$anon$9() {
+function $h_LMessage$anon$lazy$macro$210$1$$anon$9() {
   /*<skip>*/
 }
-$h_LMessage$anon$lazy$macro$198$1$$anon$9.prototype = $c_LMessage$anon$lazy$macro$198$1$$anon$9.prototype;
-$c_LMessage$anon$lazy$macro$198$1$$anon$9.prototype.encodeObject__O__Lio_circe_JsonObject = (function(a) {
-  return this.encodeObject__Lshapeless_$colon$plus$colon__Lio_circe_JsonObject($as_Lshapeless_$colon$plus$colon(a))
-});
-$c_LMessage$anon$lazy$macro$198$1$$anon$9.prototype.init___LMessage$anon$lazy$macro$198$1 = (function($$outer) {
+$h_LMessage$anon$lazy$macro$210$1$$anon$9.prototype = $c_LMessage$anon$lazy$macro$210$1$$anon$9.prototype;
+$c_LMessage$anon$lazy$macro$210$1$$anon$9.prototype.init___LMessage$anon$lazy$macro$210$1 = (function($$outer) {
   if (($$outer === null)) {
     throw $m_sjsr_package$().unwrapJavaScriptException__jl_Throwable__O(null)
   } else {
@@ -41898,165 +42434,186 @@ $c_LMessage$anon$lazy$macro$198$1$$anon$9.prototype.init___LMessage$anon$lazy$ma
   };
   var t = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function($this) {
     return (function() {
-      return $this.$$outer$2.inst$macro$132__Lio_circe_generic_encoding_DerivedObjectEncoder()
+      return $this.$$outer$2.inst$macro$101__Lio_circe_generic_encoding_DerivedObjectEncoder()
     })
   })(this));
-  this.fresh$macro$125$2 = $as_Lio_circe_generic_encoding_DerivedObjectEncoder(new $c_Lshapeless_Lazy$$anon$1().init___F0(t).value__O());
-  var t$1 = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function(this$2) {
+  this.fresh$macro$94$2 = $as_Lio_circe_generic_encoding_DerivedObjectEncoder(new $c_Lshapeless_Lazy$$anon$1().init___F0(t).value__O());
+  var this$2 = $m_LMessage$();
+  var gen = new $c_LMessage$anon$lazy$macro$210$1$$anon$9$anon$macro$91$1().init___LMessage$anon$lazy$macro$210$1$$anon$9(this);
+  this.fresh$macro$90$2 = $f_LJSONConfig__encodeCaseObject__Lshapeless_Generic__Lio_circe_Encoder(this$2, gen);
+  var t$1 = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function(this$2$1) {
     return (function() {
-      return this$2.$$outer$2.inst$macro$61__Lio_circe_generic_encoding_DerivedObjectEncoder()
+      return this$2$1.$$outer$2.inst$macro$164__Lio_circe_generic_encoding_DerivedObjectEncoder()
     })
   })(this));
-  this.fresh$macro$54$2 = $as_Lio_circe_generic_encoding_DerivedObjectEncoder(new $c_Lshapeless_Lazy$$anon$1().init___F0(t$1).value__O());
+  this.fresh$macro$159$2 = $as_Lio_circe_generic_encoding_DerivedObjectEncoder(new $c_Lshapeless_Lazy$$anon$1().init___F0(t$1).value__O());
   var t$2 = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function(this$3$1) {
     return (function() {
-      return this$3$1.$$outer$2.inst$macro$171__Lio_circe_generic_encoding_DerivedObjectEncoder()
+      return this$3$1.$$outer$2.inst$macro$59__Lio_circe_generic_encoding_DerivedObjectEncoder()
     })
   })(this));
-  this.fresh$macro$162$2 = $as_Lio_circe_generic_encoding_DerivedObjectEncoder(new $c_Lshapeless_Lazy$$anon$1().init___F0(t$2).value__O());
-  var this$5 = $m_LMessage$();
-  var gen = new $c_LMessage$anon$lazy$macro$198$1$$anon$9$anon$macro$75$1().init___LMessage$anon$lazy$macro$198$1$$anon$9(this);
-  this.fresh$macro$74$2 = $f_LJSONConfig__encodeCaseObject__Lshapeless_Generic__Lio_circe_Encoder(this$5, gen);
+  this.fresh$macro$54$2 = $as_Lio_circe_generic_encoding_DerivedObjectEncoder(new $c_Lshapeless_Lazy$$anon$1().init___F0(t$2).value__O());
   var t$3 = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function(this$4$1) {
     return (function() {
-      return this$4$1.$$outer$2.inst$macro$152__Lio_circe_generic_encoding_DerivedObjectEncoder()
+      return this$4$1.$$outer$2.inst$macro$73__Lio_circe_generic_encoding_DerivedObjectEncoder()
     })
   })(this));
-  this.fresh$macro$147$2 = $as_Lio_circe_generic_encoding_DerivedObjectEncoder(new $c_Lshapeless_Lazy$$anon$1().init___F0(t$3).value__O());
-  var this$7 = $m_LMessage$();
-  var gen$1 = new $c_LMessage$anon$lazy$macro$198$1$$anon$9$anon$macro$79$1().init___LMessage$anon$lazy$macro$198$1$$anon$9(this);
-  this.fresh$macro$78$2 = $f_LJSONConfig__encodeCaseObject__Lshapeless_Generic__Lio_circe_Encoder(this$7, gen$1);
+  this.fresh$macro$66$2 = $as_Lio_circe_generic_encoding_DerivedObjectEncoder(new $c_Lshapeless_Lazy$$anon$1().init___F0(t$3).value__O());
   var t$4 = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function(this$5$1) {
     return (function() {
-      return this$5$1.$$outer$2.inst$macro$37__Lio_circe_generic_encoding_DerivedObjectEncoder()
+      return this$5$1.$$outer$2.inst$macro$144__Lio_circe_generic_encoding_DerivedObjectEncoder()
     })
   })(this));
-  this.fresh$macro$32$2 = $as_Lio_circe_generic_encoding_DerivedObjectEncoder(new $c_Lshapeless_Lazy$$anon$1().init___F0(t$4).value__O());
+  this.fresh$macro$137$2 = $as_Lio_circe_generic_encoding_DerivedObjectEncoder(new $c_Lshapeless_Lazy$$anon$1().init___F0(t$4).value__O());
   var t$5 = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function(this$6$1) {
     return (function() {
-      return this$6$1.$$outer$2.inst$macro$115__Lio_circe_generic_encoding_DerivedObjectEncoder()
+      return this$6$1.$$outer$2.inst$macro$37__Lio_circe_generic_encoding_DerivedObjectEncoder()
     })
   })(this));
-  this.fresh$macro$110$2 = $as_Lio_circe_generic_encoding_DerivedObjectEncoder(new $c_Lshapeless_Lazy$$anon$1().init___F0(t$5).value__O());
+  this.fresh$macro$32$2 = $as_Lio_circe_generic_encoding_DerivedObjectEncoder(new $c_Lshapeless_Lazy$$anon$1().init___F0(t$5).value__O());
   var t$6 = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function(this$7$1) {
     return (function() {
-      return this$7$1.$$outer$2.inst$macro$89__Lio_circe_generic_encoding_DerivedObjectEncoder()
+      return this$7$1.$$outer$2.inst$macro$183__Lio_circe_generic_encoding_DerivedObjectEncoder()
     })
   })(this));
-  this.fresh$macro$82$2 = $as_Lio_circe_generic_encoding_DerivedObjectEncoder(new $c_Lshapeless_Lazy$$anon$1().init___F0(t$6).value__O());
+  this.fresh$macro$174$2 = $as_Lio_circe_generic_encoding_DerivedObjectEncoder(new $c_Lshapeless_Lazy$$anon$1().init___F0(t$6).value__O());
+  var t$7 = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function(this$8$1) {
+    return (function() {
+      return this$8$1.$$outer$2.inst$macro$127__Lio_circe_generic_encoding_DerivedObjectEncoder()
+    })
+  })(this));
+  this.fresh$macro$122$2 = $as_Lio_circe_generic_encoding_DerivedObjectEncoder(new $c_Lshapeless_Lazy$$anon$1().init___F0(t$7).value__O());
+  var this$10 = $m_LMessage$();
+  var gen$1 = new $c_LMessage$anon$lazy$macro$210$1$$anon$9$anon$macro$87$1().init___LMessage$anon$lazy$macro$210$1$$anon$9(this);
+  this.fresh$macro$86$2 = $f_LJSONConfig__encodeCaseObject__Lshapeless_Generic__Lio_circe_Encoder(this$10, gen$1);
   return this
 });
-$c_LMessage$anon$lazy$macro$198$1$$anon$9.prototype.encodeObject__Lshapeless_$colon$plus$colon__Lio_circe_JsonObject = (function(a) {
+$c_LMessage$anon$lazy$macro$210$1$$anon$9.prototype.encodeObject__O__Lio_circe_JsonObject = (function(a) {
+  return this.encodeObject__Lshapeless_$colon$plus$colon__Lio_circe_JsonObject($as_Lshapeless_$colon$plus$colon(a))
+});
+$c_LMessage$anon$lazy$macro$210$1$$anon$9.prototype.encodeObject__Lshapeless_$colon$plus$colon__Lio_circe_JsonObject = (function(a) {
   var x1 = new $c_Lshapeless_Inr().init___Lshapeless_Coproduct(a);
-  var fresh$macro$196 = $as_Lshapeless_$colon$plus$colon(x1.tail$1);
-  if ($is_Lshapeless_Inl(fresh$macro$196)) {
-    var x2 = $as_Lshapeless_Inl(fresh$macro$196);
-    var fresh$macro$197 = $as_LAsteroid(x2.head$1);
+  var fresh$macro$208 = $as_Lshapeless_$colon$plus$colon(x1.tail$1);
+  if ($is_Lshapeless_Inl(fresh$macro$208)) {
+    var x2 = $as_Lshapeless_Inl(fresh$macro$208);
+    var fresh$macro$209 = $as_LAsteroid(x2.head$1);
     var jsx$1 = $m_Lio_circe_JsonObject$();
-    var this$1 = this.fresh$macro$162$2;
-    return jsx$1.singleton__T__Lio_circe_Json__Lio_circe_JsonObject("Asteroid", $f_Lio_circe_ObjectEncoder__apply__O__Lio_circe_Json(this$1, fresh$macro$197))
-  } else if ($is_Lshapeless_Inr(fresh$macro$196)) {
-    var x3 = $as_Lshapeless_Inr(fresh$macro$196);
-    var fresh$macro$160 = $as_Lshapeless_$colon$plus$colon(x3.tail$1);
-    if ($is_Lshapeless_Inl(fresh$macro$160)) {
-      var x2$2 = $as_Lshapeless_Inl(fresh$macro$160);
-      var fresh$macro$161 = $as_LClientId(x2$2.head$1);
+    var this$1 = this.fresh$macro$174$2;
+    return jsx$1.singleton__T__Lio_circe_Json__Lio_circe_JsonObject("Asteroid", $f_Lio_circe_ObjectEncoder__apply__O__Lio_circe_Json(this$1, fresh$macro$209))
+  } else if ($is_Lshapeless_Inr(fresh$macro$208)) {
+    var x3 = $as_Lshapeless_Inr(fresh$macro$208);
+    var fresh$macro$172 = $as_Lshapeless_$colon$plus$colon(x3.tail$1);
+    if ($is_Lshapeless_Inl(fresh$macro$172)) {
+      var x2$2 = $as_Lshapeless_Inl(fresh$macro$172);
+      var fresh$macro$173 = $as_LClientId(x2$2.head$1);
       var jsx$2 = $m_Lio_circe_JsonObject$();
-      var this$2 = this.fresh$macro$147$2;
-      return jsx$2.singleton__T__Lio_circe_Json__Lio_circe_JsonObject("ClientId", $f_Lio_circe_ObjectEncoder__apply__O__Lio_circe_Json(this$2, fresh$macro$161))
-    } else if ($is_Lshapeless_Inr(fresh$macro$160)) {
-      var x3$2 = $as_Lshapeless_Inr(fresh$macro$160);
-      var fresh$macro$145 = $as_Lshapeless_$colon$plus$colon(x3$2.tail$1);
-      if ($is_Lshapeless_Inl(fresh$macro$145)) {
-        var x2$3 = $as_Lshapeless_Inl(fresh$macro$145);
-        var fresh$macro$146 = $as_LCmd(x2$3.head$1);
+      var this$2 = this.fresh$macro$159$2;
+      return jsx$2.singleton__T__Lio_circe_Json__Lio_circe_JsonObject("ClientId", $f_Lio_circe_ObjectEncoder__apply__O__Lio_circe_Json(this$2, fresh$macro$173))
+    } else if ($is_Lshapeless_Inr(fresh$macro$172)) {
+      var x3$2 = $as_Lshapeless_Inr(fresh$macro$172);
+      var fresh$macro$157 = $as_Lshapeless_$colon$plus$colon(x3$2.tail$1);
+      if ($is_Lshapeless_Inl(fresh$macro$157)) {
+        var x2$3 = $as_Lshapeless_Inl(fresh$macro$157);
+        var fresh$macro$158 = $as_LCmd(x2$3.head$1);
         var jsx$3 = $m_Lio_circe_JsonObject$();
-        var this$3 = this.fresh$macro$125$2;
-        return jsx$3.singleton__T__Lio_circe_Json__Lio_circe_JsonObject("Cmd", $f_Lio_circe_ObjectEncoder__apply__O__Lio_circe_Json(this$3, fresh$macro$146))
-      } else if ($is_Lshapeless_Inr(fresh$macro$145)) {
-        var x3$3 = $as_Lshapeless_Inr(fresh$macro$145);
-        var fresh$macro$123 = $as_Lshapeless_$colon$plus$colon(x3$3.tail$1);
-        if ($is_Lshapeless_Inl(fresh$macro$123)) {
-          var x2$4 = $as_Lshapeless_Inl(fresh$macro$123);
-          var fresh$macro$124 = $as_LDestroy(x2$4.head$1);
+        var this$3 = this.fresh$macro$137$2;
+        return jsx$3.singleton__T__Lio_circe_Json__Lio_circe_JsonObject("Cmd", $f_Lio_circe_ObjectEncoder__apply__O__Lio_circe_Json(this$3, fresh$macro$158))
+      } else if ($is_Lshapeless_Inr(fresh$macro$157)) {
+        var x3$3 = $as_Lshapeless_Inr(fresh$macro$157);
+        var fresh$macro$135 = $as_Lshapeless_$colon$plus$colon(x3$3.tail$1);
+        if ($is_Lshapeless_Inl(fresh$macro$135)) {
+          var x2$4 = $as_Lshapeless_Inl(fresh$macro$135);
+          var fresh$macro$136 = $as_LDestroy(x2$4.head$1);
           var jsx$4 = $m_Lio_circe_JsonObject$();
-          var this$4 = this.fresh$macro$110$2;
-          return jsx$4.singleton__T__Lio_circe_Json__Lio_circe_JsonObject("Destroy", $f_Lio_circe_ObjectEncoder__apply__O__Lio_circe_Json(this$4, fresh$macro$124))
-        } else if ($is_Lshapeless_Inr(fresh$macro$123)) {
-          var x3$4 = $as_Lshapeless_Inr(fresh$macro$123);
-          var fresh$macro$108 = $as_Lshapeless_$colon$plus$colon(x3$4.tail$1);
-          if ($is_Lshapeless_Inl(fresh$macro$108)) {
-            var x2$5 = $as_Lshapeless_Inl(fresh$macro$108);
-            var fresh$macro$109 = $as_LLaser(x2$5.head$1);
+          var this$4 = this.fresh$macro$122$2;
+          return jsx$4.singleton__T__Lio_circe_Json__Lio_circe_JsonObject("Destroy", $f_Lio_circe_ObjectEncoder__apply__O__Lio_circe_Json(this$4, fresh$macro$136))
+        } else if ($is_Lshapeless_Inr(fresh$macro$135)) {
+          var x3$4 = $as_Lshapeless_Inr(fresh$macro$135);
+          var fresh$macro$120 = $as_Lshapeless_$colon$plus$colon(x3$4.tail$1);
+          if ($is_Lshapeless_Inl(fresh$macro$120)) {
+            var x2$5 = $as_Lshapeless_Inl(fresh$macro$120);
+            var fresh$macro$121 = $as_LLaser(x2$5.head$1);
             var jsx$5 = $m_Lio_circe_JsonObject$();
-            var this$5 = this.fresh$macro$82$2;
-            return jsx$5.singleton__T__Lio_circe_Json__Lio_circe_JsonObject("Laser", $f_Lio_circe_ObjectEncoder__apply__O__Lio_circe_Json(this$5, fresh$macro$109))
-          } else if ($is_Lshapeless_Inr(fresh$macro$108)) {
-            var x3$5 = $as_Lshapeless_Inr(fresh$macro$108);
-            var fresh$macro$80 = $as_Lshapeless_$colon$plus$colon(x3$5.tail$1);
-            if ($is_Lshapeless_Inl(fresh$macro$80)) {
-              var x2$6 = $as_Lshapeless_Inl(fresh$macro$80);
-              var fresh$macro$81 = $as_LPing$(x2$6.head$1);
-              return $m_Lio_circe_JsonObject$().singleton__T__Lio_circe_Json__Lio_circe_JsonObject("Ping", this.fresh$macro$78$2.apply__O__Lio_circe_Json(fresh$macro$81))
-            } else if ($is_Lshapeless_Inr(fresh$macro$80)) {
-              var x3$6 = $as_Lshapeless_Inr(fresh$macro$80);
-              var fresh$macro$76 = $as_Lshapeless_$colon$plus$colon(x3$6.tail$1);
-              if ($is_Lshapeless_Inl(fresh$macro$76)) {
-                var x2$7 = $as_Lshapeless_Inl(fresh$macro$76);
-                var fresh$macro$77 = $as_LPong$(x2$7.head$1);
-                return $m_Lio_circe_JsonObject$().singleton__T__Lio_circe_Json__Lio_circe_JsonObject("Pong", this.fresh$macro$74$2.apply__O__Lio_circe_Json(fresh$macro$77))
-              } else if ($is_Lshapeless_Inr(fresh$macro$76)) {
-                var x3$7 = $as_Lshapeless_Inr(fresh$macro$76);
-                var fresh$macro$72 = $as_Lshapeless_$colon$plus$colon(x3$7.tail$1);
-                if ($is_Lshapeless_Inl(fresh$macro$72)) {
-                  var x2$8 = $as_Lshapeless_Inl(fresh$macro$72);
-                  var fresh$macro$73 = $as_LSetLifes(x2$8.head$1);
+            var this$5 = this.fresh$macro$94$2;
+            return jsx$5.singleton__T__Lio_circe_Json__Lio_circe_JsonObject("Laser", $f_Lio_circe_ObjectEncoder__apply__O__Lio_circe_Json(this$5, fresh$macro$121))
+          } else if ($is_Lshapeless_Inr(fresh$macro$120)) {
+            var x3$5 = $as_Lshapeless_Inr(fresh$macro$120);
+            var fresh$macro$92 = $as_Lshapeless_$colon$plus$colon(x3$5.tail$1);
+            if ($is_Lshapeless_Inl(fresh$macro$92)) {
+              var x2$6 = $as_Lshapeless_Inl(fresh$macro$92);
+              var fresh$macro$93 = $as_LPing$(x2$6.head$1);
+              return $m_Lio_circe_JsonObject$().singleton__T__Lio_circe_Json__Lio_circe_JsonObject("Ping", this.fresh$macro$90$2.apply__O__Lio_circe_Json(fresh$macro$93))
+            } else if ($is_Lshapeless_Inr(fresh$macro$92)) {
+              var x3$6 = $as_Lshapeless_Inr(fresh$macro$92);
+              var fresh$macro$88 = $as_Lshapeless_$colon$plus$colon(x3$6.tail$1);
+              if ($is_Lshapeless_Inl(fresh$macro$88)) {
+                var x2$7 = $as_Lshapeless_Inl(fresh$macro$88);
+                var fresh$macro$89 = $as_LPong$(x2$7.head$1);
+                return $m_Lio_circe_JsonObject$().singleton__T__Lio_circe_Json__Lio_circe_JsonObject("Pong", this.fresh$macro$86$2.apply__O__Lio_circe_Json(fresh$macro$89))
+              } else if ($is_Lshapeless_Inr(fresh$macro$88)) {
+                var x3$7 = $as_Lshapeless_Inr(fresh$macro$88);
+                var fresh$macro$84 = $as_Lshapeless_$colon$plus$colon(x3$7.tail$1);
+                if ($is_Lshapeless_Inl(fresh$macro$84)) {
+                  var x2$8 = $as_Lshapeless_Inl(fresh$macro$84);
+                  var fresh$macro$85 = $as_LSetLifes(x2$8.head$1);
                   var jsx$6 = $m_Lio_circe_JsonObject$();
-                  var this$6 = this.fresh$macro$54$2;
-                  return jsx$6.singleton__T__Lio_circe_Json__Lio_circe_JsonObject("SetLifes", $f_Lio_circe_ObjectEncoder__apply__O__Lio_circe_Json(this$6, fresh$macro$73))
-                } else if ($is_Lshapeless_Inr(fresh$macro$72)) {
-                  var x3$8 = $as_Lshapeless_Inr(fresh$macro$72);
-                  var fresh$macro$52 = $as_Lshapeless_$colon$plus$colon(x3$8.tail$1);
-                  if ($is_Lshapeless_Inl(fresh$macro$52)) {
-                    var x2$9 = $as_Lshapeless_Inl(fresh$macro$52);
-                    var fresh$macro$53 = $as_LSpaceship(x2$9.head$1);
+                  var this$6 = this.fresh$macro$66$2;
+                  return jsx$6.singleton__T__Lio_circe_Json__Lio_circe_JsonObject("SetLifes", $f_Lio_circe_ObjectEncoder__apply__O__Lio_circe_Json(this$6, fresh$macro$85))
+                } else if ($is_Lshapeless_Inr(fresh$macro$84)) {
+                  var x3$8 = $as_Lshapeless_Inr(fresh$macro$84);
+                  var fresh$macro$64 = $as_Lshapeless_$colon$plus$colon(x3$8.tail$1);
+                  if ($is_Lshapeless_Inl(fresh$macro$64)) {
+                    var x2$9 = $as_Lshapeless_Inl(fresh$macro$64);
+                    var fresh$macro$65 = $as_LSpaceship(x2$9.head$1);
                     var jsx$7 = $m_Lio_circe_JsonObject$();
-                    var this$7 = this.fresh$macro$32$2;
-                    return jsx$7.singleton__T__Lio_circe_Json__Lio_circe_JsonObject("Spaceship", $f_Lio_circe_ObjectEncoder__apply__O__Lio_circe_Json(this$7, fresh$macro$53))
-                  } else if ($is_Lshapeless_Inr(fresh$macro$52)) {
-                    $m_s_sys_package$().error__T__sr_Nothing$("Cannot encode CNil")
+                    var this$7 = this.fresh$macro$54$2;
+                    return jsx$7.singleton__T__Lio_circe_Json__Lio_circe_JsonObject("Spaceship", $f_Lio_circe_ObjectEncoder__apply__O__Lio_circe_Json(this$7, fresh$macro$65))
+                  } else if ($is_Lshapeless_Inr(fresh$macro$64)) {
+                    var x3$9 = $as_Lshapeless_Inr(fresh$macro$64);
+                    var fresh$macro$52 = $as_Lshapeless_$colon$plus$colon(x3$9.tail$1);
+                    if ($is_Lshapeless_Inl(fresh$macro$52)) {
+                      var x2$10 = $as_Lshapeless_Inl(fresh$macro$52);
+                      var fresh$macro$53 = $as_LZorg(x2$10.head$1);
+                      var jsx$8 = $m_Lio_circe_JsonObject$();
+                      var this$8 = this.fresh$macro$32$2;
+                      return jsx$8.singleton__T__Lio_circe_Json__Lio_circe_JsonObject("Zorg", $f_Lio_circe_ObjectEncoder__apply__O__Lio_circe_Json(this$8, fresh$macro$53))
+                    } else if ($is_Lshapeless_Inr(fresh$macro$52)) {
+                      $m_s_sys_package$().error__T__sr_Nothing$("Cannot encode CNil")
+                    } else {
+                      throw new $c_s_MatchError().init___O(fresh$macro$52)
+                    }
                   } else {
-                    throw new $c_s_MatchError().init___O(fresh$macro$52)
+                    throw new $c_s_MatchError().init___O(fresh$macro$64)
                   }
                 } else {
-                  throw new $c_s_MatchError().init___O(fresh$macro$72)
+                  throw new $c_s_MatchError().init___O(fresh$macro$84)
                 }
               } else {
-                throw new $c_s_MatchError().init___O(fresh$macro$76)
+                throw new $c_s_MatchError().init___O(fresh$macro$88)
               }
             } else {
-              throw new $c_s_MatchError().init___O(fresh$macro$80)
+              throw new $c_s_MatchError().init___O(fresh$macro$92)
             }
           } else {
-            throw new $c_s_MatchError().init___O(fresh$macro$108)
+            throw new $c_s_MatchError().init___O(fresh$macro$120)
           }
         } else {
-          throw new $c_s_MatchError().init___O(fresh$macro$123)
+          throw new $c_s_MatchError().init___O(fresh$macro$135)
         }
       } else {
-        throw new $c_s_MatchError().init___O(fresh$macro$145)
+        throw new $c_s_MatchError().init___O(fresh$macro$157)
       }
     } else {
-      throw new $c_s_MatchError().init___O(fresh$macro$160)
+      throw new $c_s_MatchError().init___O(fresh$macro$172)
     }
   } else {
-    throw new $c_s_MatchError().init___O(fresh$macro$196)
+    throw new $c_s_MatchError().init___O(fresh$macro$208)
   }
 });
-var $d_LMessage$anon$lazy$macro$198$1$$anon$9 = new $TypeData().initClass({
-  LMessage$anon$lazy$macro$198$1$$anon$9: 0
-}, false, "Message$anon$lazy$macro$198$1$$anon$9", {
-  LMessage$anon$lazy$macro$198$1$$anon$9: 1,
+var $d_LMessage$anon$lazy$macro$210$1$$anon$9 = new $TypeData().initClass({
+  LMessage$anon$lazy$macro$210$1$$anon$9: 0
+}, false, "Message$anon$lazy$macro$210$1$$anon$9", {
+  LMessage$anon$lazy$macro$210$1$$anon$9: 1,
   Lio_circe_generic_encoding_ReprObjectEncoder: 1,
   O: 1,
   Lio_circe_ObjectEncoder: 1,
@@ -42065,7 +42622,7 @@ var $d_LMessage$anon$lazy$macro$198$1$$anon$9 = new $TypeData().initClass({
   s_Serializable: 1,
   Ljava_io_Serializable: 1
 });
-$c_LMessage$anon$lazy$macro$198$1$$anon$9.prototype.$classData = $d_LMessage$anon$lazy$macro$198$1$$anon$9;
+$c_LMessage$anon$lazy$macro$210$1$$anon$9.prototype.$classData = $d_LMessage$anon$lazy$macro$210$1$$anon$9;
 /** @constructor */
 function $c_LSize$Medium$() {
   $c_O.call(this)
