@@ -1,0 +1,50 @@
+\documentclass{rp}
+
+\begin{document}
+
+%% Daten der Übungsgruppe (am besten in separater Datei defs.tex ablegen,
+%% und mit \input{defs} immer wieder einbinden):
+
+% Name des Tutors:
+\tutor{Martin Ring}
+% Nummer der Übungsgruppe:
+\uebungsgruppe{1} 
+% Teilnehmer (bis zu drei, mit '\\' getrennt):
+\teilnehmer{Tobias Brandt \\ Stefan Heitmann \\ }
+
+\maketitle{4}          % Übungsblatt-Nr.
+{19.06.2017} % Abgabe-Datum
+
+\exercise{Curried in Space}%
+\\
+\textbf{Server}\\
+Zunächst wurden alle Nachrichtentypen erstellt und ihre entsprechende Kodierung als JSON-Objekt implementiert.
+\IncludeFun{22}{120}{../haskell-server/Messages.hs}
+
+Danach wurde auf dem Server ein Connection-Aktor erstellt. Dieser repräsentiert jeweils eine Verbindung mit einem Client. 
+\IncludeFun{11}{33}{../haskell-server/Connection.hs}
+
+Anschließend wurde ein Universums-Aktor erstellt. Dieser verwaltet alle anderen Objekte in der Simulation. 
+\IncludeFun{15}{115}{../haskell-server/Universe.hs}
+
+Alle weiteren Objekte werden ebenfalls durch Aktoren dargestellt, die jeweils bei einer Update-Nachricht ihre neue Position im Raum berechnen und an das Universum senden. 
+\IncludeFun{118}{293}{../haskell-server/Universe.hs}
+\\
+\textbf{Client}\\
+Im Client wurden zuerst Objekte um einen Identifikation erweitert, sodass die Objekte einfacher in einer Map gespeichert werden können. 
+\IncludeFun{7}{184}{../scala-client/src/main/scala/SpaceObjects.scala}
+
+Zum Wiederauffinden wurde eine Look-up-Methode implementiert.
+\IncludeFun{66}{68}{../scala-client/src/main/scala/SpaceView.scala}
+
+Ebenso wurde auch im Client die Nachrichten implementiert, die bereits auf dem Server implementiert wurden. 
+\IncludeFun{9}{101}{../scala-shared/shared/src/main/scala/Messages.scala}
+
+Die eintreffenden Objekte erneuern die Werte für ihre entsprechende Repräsentation auf dem Client. Sollte keine entsprechende Repräsentation vorhanden sein, wird ein neue Repräsentation erzeugt. 
+\IncludeFun{41}{165}{../scala-client/src/main/scala/Main.scala}
+
+
+\textbf{Tests}\\
+Getestet wurden beide Aufgaben, indem die Simulation funktional ausprobiert wurde. Die Tests verliefen erfolgreich.
+\end{document}
+
