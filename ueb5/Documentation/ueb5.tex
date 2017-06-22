@@ -1,0 +1,31 @@
+\documentclass{rp}
+
+\begin{document}
+
+%% Daten der Übungsgruppe (am besten in separater Datei defs.tex ablegen,
+%% und mit \input{defs} immer wieder einbinden):
+
+% Name des Tutors:
+\tutor{Martin Ring}
+% Nummer der Übungsgruppe:
+\uebungsgruppe{1} 
+% Teilnehmer (bis zu drei, mit '\\' getrennt):
+\teilnehmer{Tobias Brandt \\ Stefan Heitmann \\ }
+
+\maketitle{5}          % Übungsblatt-Nr.
+{22.06.2017} % Abgabe-Datum
+
+\exercise{Fah'n, fah'n, fah'n auf der Autobahn}%
+\\
+\IncludeFun{100}{101}{../Car.hs} % main
+
+\IncludeFun{78}{79}{../Car.hs} % Carbody
+
+\IncludeFun{81}{98}{../Car.hs} % wheels
+
+\IncludeFun{13}{76}{../Car.hs} % rest / positions-berechnung
+\\
+\textbf{Tests}\\
+Getestet wurden beide Aufgaben, indem die Simulation funktional ausprobiert wurde. Die Tests verliefen erfolgreich.
+\end{document}
+
