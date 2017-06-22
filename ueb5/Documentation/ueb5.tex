@@ -16,15 +16,15 @@
 {22.06.2017} % Abgabe-Datum
 
 \exercise{Fah'n, fah'n, fah'n auf der Autobahn}%
-\\
+In der Main-Funktion verwenden wir die Funktionen \textit{wheels} und \textit{carBody}, um jeweils die Räder und die Karosserie des Autos zu malen. Durch \textit{over} wird klar gestellt, dass die Räder über der Karosserie gezeichnet werden. 
 \IncludeFun{100}{101}{../Car.hs} % main
-
+Um die Karosserie sinnvoll auf den Bildschirm zu bekommen, machen wir nun Folgendes: Zuerst erzeugen wir ein Rechteck, repräsentiert durch eine Liste an Punkten (durch die Funktion \textit{rect}), welche wir danach um sich selbst in die Richtung drehen, in welche das Auto momentan gerichtet ist (durch \textit{orientation}). Daraufhin erzeugen wir das Polygon und bewegen dies an die momentane Position des Autos (\textit{position}).
 \IncludeFun{78}{79}{../Car.hs} % Carbody
-
+Die Räder werden zusammen in der Funktion \textit{wheels} gezeichnet, welche jeweils noch einmal eine Hilfsfunktion für die Hinter- und die Vorderräder benutzt. Für beide Arten von Rädern ist jedoch die Vorgehensweise die Gleiche, mit dem Unterschied, dass die Hinterräder dem dem Lenkwinkel nicht folgen: Zuerst erzeugen wir ein Rechteck, welches das jeweilge Rad repräsentiert. Daraufhin drehen wir es (oder bei Hinterrädern nicht) um den Lenkwinkel. Danach verschieben wir es auf die jeweilige Position innerhalb des Autos. Dann drehen wir es aufgrund der Orientierung des Autos und schlussendlich verschieben wir dann das Rad an die korrekte Position, an welcher sich das Auto momentan befindet.
 \IncludeFun{81}{98}{../Car.hs} % wheels
-
+Sämtliche unten angeführte Funktionen wurden nach Aufgabenzettel entworfen und hierfür benutzt. Anzumerken ist, dass Eingaben des Benutzers direkt \textit{steerAngle} durch die Mouse und \textit{acceleration} durch Drücken von a,s,d zugreifen. Der Rest passt sich darauf gemäß FRP an. Zusätzlich wurde innerhalb \textit{workAngleR} und \textit{workAngleR} jeweils \textit{negate} benutzt, damit sich das Rad verschieden verhält bei negativer und positiver Eingabe des Lenkwinkels (der Aufgabe entsprechend).
 \IncludeFun{13}{76}{../Car.hs} % rest / positions-berechnung
-\\
+
 \textbf{Tests}\\
 Getestet wurden beide Aufgaben, indem die Simulation funktional ausprobiert wurde. Die Tests verliefen erfolgreich.
 \end{document}
