@@ -1,0 +1,83 @@
+body {
+  font-family: -apple-system,BlinkMacSystemFont,Segoe WPC,Segoe UI,HelveticaNeue-Light,Ubuntu,Droid Sans,sans-serif;
+  background-color: #eee;
+  color: #333;
+  margin: 0;
+}
+table {
+  border-collapse: collapse;
+}
+#doc {
+  margin: 0;
+  padding: 24px;
+  position: fixed;
+  top: 96px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: auto;
+  background-color: white;
+}
+
+#measure {
+  position: absolute;
+  visibility: hidden;
+  height: auto;
+  width: auto;
+}
+
+@keyframes flash {
+  from {border-color: blue;}
+  to {border-color: transparent;}
+}
+
+@keyframes redFlash {
+  from {border-color: red;}
+  to {border-color: transparent;}
+}
+
+.caret {
+  position: absolute;
+  margin-left: 23px;
+  margin-top: calc(24px - 1rem);
+  min-height: 1rem;
+  border-left: 2px solid blue;
+  animation-name: flash;
+  animation-duration: 0.5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+.ownCaret {
+  position: absolute;
+  margin-left: 23px;
+  margin-top: calc(24px - 1rem);
+  min-height: 1rem;
+  border-left: 2px solid red;
+  animation-name: redFlash;
+  animation-duration: 0.5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+.text {
+  white-space: pre;
+}
+
+span.text {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  -moz-user-select: none;
+  user-select: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 96px;
+  line-height: 96px;
+  margin: 0;
+  padding: 0 24px;
+}

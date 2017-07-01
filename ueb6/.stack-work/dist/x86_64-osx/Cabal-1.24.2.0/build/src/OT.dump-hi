@@ -1,0 +1,1013 @@
+
+==================== FINAL INTERFACE ====================
+2017-06-29 10:46:51.800742 UTC
+
+interface OT-0.1.0-1gqFYEXZiYEIActA72Dzk7:OT 8002
+  interface hash: 39571be16b1498bde48a91b6fe36ea72
+  ABI hash: 1ae7a8b84ee1a358a47eeacff780ebee
+  export-list hash: 1c40fc0afb0a668c165842535f973cd1
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: 9b2f8184bece62302190b9ae1ef29c16
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  OT.ack
+  OT.appendOperation
+  OT.isSynchronized
+  OT.localEdit
+  OT.newClient
+  OT.remoteEdit
+  OT.serverRevision
+  OT.serverState
+  OT.serverStateOp
+  OT.transformCursor
+  OT.Client{OT.Client buffer clientRevision pending}
+  OT.Cursor
+  OT.Document{OT.applyOp OT.noop}
+  OT.Operation{OT.compose OT.transform}
+  OT.Server{OT.Server history initialState}
+  OT.TextAction{OT.Delete OT.Insert OT.Retain}
+  OT.TextOperation{OT.TextOperation}
+module dependencies:
+package dependencies: base-4.9.1.0* ghc-prim-0.5.0.0
+                      integer-gmp-1.0.0.1
+orphans: base-4.9.1.0:GHC.Base base-4.9.1.0:GHC.Float
+family instance modules: base-4.9.1.0:Control.Applicative
+                         base-4.9.1.0:Data.Either base-4.9.1.0:Data.Functor.Const
+                         base-4.9.1.0:Data.Monoid base-4.9.1.0:Data.Type.Equality
+                         base-4.9.1.0:GHC.Generics base-4.9.1.0:GHC.IO.Exception
+                         base-4.9.1.0:GHC.TypeLits
+import  -/  base-4.9.1.0:Control.Applicative 32430a90492e727f4bd80db71c28600c
+import  -/  base-4.9.1.0:Data.Foldable 3e0b6967a1da89945d0e2d47266337a2
+import  -/  base-4.9.1.0:Data.Tuple 7dc4bbb45d2e69c991ffac438beeca11
+import  -/  base-4.9.1.0:GHC.Base c4231c43c07e46080a26bf94094c7aa1
+import  -/  base-4.9.1.0:GHC.List ab8c4e523e6c479c549d3bcd5fc4a439
+import  -/  base-4.9.1.0:GHC.Num 00bfaa7b2f9d6084913c0697a8a49ec8
+import  -/  base-4.9.1.0:GHC.Show a027f5ac24879eaba752f44aa90fe511
+import  -/  base-4.9.1.0:Prelude 22dd289b8469a8fa8dc81cab7b237771
+import  -/  ghc-prim-0.5.0.0:GHC.Classes 0bdf3d057a415ec1b84a7b1994efbe47
+import  -/  integer-gmp-1.0.0.1:GHC.Integer.Type 318df275d77dcdb18e0006d8d7870c2a
+9d59a4278afe0bf23ff5e0ecbcc248fb
+  $fDocument[]TextOperation ::
+    OT.Document GHC.Base.String OT.TextOperation
+  DFunId
+  {- Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ GHC.Base.String
+                  @ OT.TextOperation
+                  OT.$fOperationTextOperation
+                  OT.$fDocument[]TextOperation_$cnoop
+                  OT.$fDocument[]TextOperation_$capplyOp -}
+f169ad4bc85ff3569115586141102488
+  $fDocument[]TextOperation1 :: [GHC.Types.Char] -> [OT.TextAction]
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (x :: [GHC.Types.Char]) ->
+                 GHC.Base.build
+                   @ OT.TextAction
+                   (\ @ b1
+                      (c :: OT.TextAction -> b1 -> b1)[OneShot]
+                      (n :: b1)[OneShot] ->
+                    GHC.Base.foldr
+                      @ GHC.Types.Char
+                      @ b1
+                      (GHC.Base.mapFB
+                         @ OT.TextAction
+                         @ b1
+                         @ GHC.Types.Char
+                         c
+                         OT.$fDocument[]TextOperation2)
+                      n
+                      x)) -}
+b9bb16a1bfc8fc359a2b747d6e7b6d14
+  $fDocument[]TextOperation2 :: GHC.Types.Char -> OT.TextAction
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,A>,
+     Unfolding: InlineRule (1, True, True)
+                (\ (ds :: GHC.Types.Char) -> OT.Retain) -}
+0fcd667db7676ea2a2d357178dc57b27
+  $fDocument[]TextOperation_$capplyOp ::
+    GHC.Base.String -> OT.TextOperation -> GHC.Base.String
+  {- Arity: 2, Strictness: <L,1*U><S,1*U>,
+     Unfolding: InlineRule (2, True, True)
+                (\ (d :: GHC.Base.String) (ds :: OT.TextOperation) ->
+                 OT.$fDocument[]TextOperation_apply'
+                   ds `cast` (OT.N:TextOperation[0])
+                   d) -}
+85259825435c4b5844d2874fccbf0c6a
+  $fDocument[]TextOperation_$cnoop ::
+    GHC.Base.String -> OT.TextOperation
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>,
+     Unfolding: InlineRule (0, True, True)
+                OT.$fDocument[]TextOperation1
+                  `cast`
+                (<[GHC.Types.Char]>_R ->_R Sym (OT.N:TextOperation[0])) -}
+101f59e10827a717ae5713dcbb8bf6bb
+  $fDocument[]TextOperation_apply' ::
+    [OT.TextAction] -> [GHC.Types.Char] -> [GHC.Types.Char]
+  {- Arity: 2, Strictness: <S,1*U><L,1*U> -}
+4573e9d514142bb2174310719489c5fd
+  $fOperationTextOperation :: OT.Operation OT.TextOperation
+  DFunId
+  {- Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ OT.TextOperation
+                  OT.$fOperationTextOperation_$ccompose
+                  OT.$fOperationTextOperation_$ctransform -}
+060d0fbd75d79b4787aee4992ad0cad2
+  $fOperationTextOperation1 ::
+    OT.TextOperation -> OT.TextOperation -> [OT.TextAction]
+  {- Arity: 2, Strictness: <S,U><L,U>,
+     Unfolding: InlineRule (2, True, True)
+                (\ (ds :: OT.TextOperation) (ds1 :: OT.TextOperation) ->
+                 OT.$fOperationTextOperation_compose'
+                   ds `cast` (OT.N:TextOperation[0])
+                   ds1 `cast` (OT.N:TextOperation[0])) -}
+c31f4f5d47e054ef57ade89b730f0bea
+  $fOperationTextOperation_$ccompose ::
+    OT.TextOperation -> OT.TextOperation -> OT.TextOperation
+  {- Arity: 2, Strictness: <S,U><L,U>,
+     Unfolding: InlineRule (0, True, True)
+                OT.$fOperationTextOperation1
+                  `cast`
+                (<OT.TextOperation>_R
+                 ->_R <OT.TextOperation>_R
+                 ->_R Sym (OT.N:TextOperation[0])) -}
+5ec331622a731616a39a033e161aa0d3
+  $fOperationTextOperation_$ctransform ::
+    OT.TextOperation
+    -> OT.TextOperation -> (OT.TextOperation, OT.TextOperation)
+  {- Arity: 2, Strictness: <S,U><S,U>m,
+     Unfolding: InlineRule (2, True, False)
+                (\ (ds :: OT.TextOperation) (ds1 :: OT.TextOperation) ->
+                 case OT.$fOperationTextOperation_transform'
+                        ds `cast` (OT.N:TextOperation[0])
+                        ds1 `cast` (OT.N:TextOperation[0]) of wild { (,) as' bs' ->
+                 (as' `cast` (Sym (OT.N:TextOperation[0])),
+                  bs' `cast` (Sym (OT.N:TextOperation[0]))) }) -}
+034d6f8ece38e6338af55493498c79e9
+  $fOperationTextOperation_compose' ::
+    [OT.TextAction] -> [OT.TextAction] -> [OT.TextAction]
+  {- Arity: 2, Strictness: <S,U><L,U> -}
+d441df205926b779aba48ecef43dd558
+  $fOperationTextOperation_transform' ::
+    [OT.TextAction]
+    -> [OT.TextAction] -> ([OT.TextAction], [OT.TextAction])
+  {- Arity: 2, Strictness: <S,U><S,U>m, Inline: INLINE[0],
+     Unfolding: InlineRule (2, True, False)
+                (\ (w :: [OT.TextAction]) (w1 :: [OT.TextAction]) ->
+                 case OT.$wtransform' w w1 of ww { (#,#) ww1 ww2 -> (ww1, ww2) }) -}
+99e3d370ea816f0367a2a4a1e20d85c4
+  $fShowTextAction :: GHC.Show.Show OT.TextAction
+  DFunId
+  {- Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ OT.TextAction
+                  OT.$fShowTextAction_$cshowsPrec
+                  OT.$fShowTextAction_$cshow
+                  OT.$fShowTextAction_$cshowList -}
+99e3d370ea816f0367a2a4a1e20d85c4
+  $fShowTextAction1 :: OT.TextAction -> GHC.Show.ShowS
+  {- Arity: 2,
+     Unfolding: (OT.$fShowTextAction_$cshowsPrec
+                   OT.$fShowTextAction2) -}
+1b48b32d25a7da678cfc93908e750b9d
+  $fShowTextAction2 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 0#) -}
+c1bf0563d1e8a208a3b54029288542eb
+  $fShowTextAction3 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "Delete"#) -}
+4d55bd1cbab0144c034b4415381ca794
+  $fShowTextAction4 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "Insert "#) -}
+ec1e355d676ddabc386a291aaaf20fc3
+  $fShowTextAction5 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "Retain"#) -}
+d05dd771d257500c4151933676d1e746
+  $fShowTextAction6 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.Base.++
+                   @ GHC.Types.Char
+                   GHC.Show.shows13
+                   (GHC.Types.[] @ GHC.Types.Char)) -}
+f50279f1f9af5dbc2bde6f16153f6af3
+  $fShowTextAction7 :: [GHC.Types.Char]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Types.Char
+                   GHC.Show.shows14
+                   (GHC.Types.[] @ GHC.Types.Char)) -}
+99e3d370ea816f0367a2a4a1e20d85c4
+  $fShowTextAction_$cshow :: OT.TextAction -> GHC.Base.String
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: (\ (x :: OT.TextAction) ->
+                 case x of wild {
+                   OT.Retain -> OT.$fShowTextAction5
+                   OT.Insert b1
+                   -> GHC.Base.++
+                        @ GHC.Types.Char
+                        OT.$fShowTextAction4
+                        (case b1 of ww { GHC.Types.C# ww1 ->
+                         case ww1 of ds {
+                           DEFAULT
+                           -> GHC.Types.:
+                                @ GHC.Types.Char
+                                GHC.Show.shows14
+                                (GHC.Show.$wshowLitChar ds OT.$fShowTextAction7)
+                           '\''# -> OT.$fShowTextAction6 } })
+                   OT.Delete -> OT.$fShowTextAction3 }) -}
+99e3d370ea816f0367a2a4a1e20d85c4
+  $fShowTextAction_$cshowList :: [OT.TextAction] -> GHC.Show.ShowS
+  {- Arity: 2,
+     Unfolding: (GHC.Show.showList__
+                   @ OT.TextAction
+                   OT.$fShowTextAction1) -}
+99e3d370ea816f0367a2a4a1e20d85c4
+  $fShowTextAction_$cshowsPrec ::
+    GHC.Types.Int -> OT.TextAction -> GHC.Show.ShowS
+  {- Arity: 3, Strictness: <L,1*U(U)><S,1*U><L,U>,
+     Unfolding: (\ (ds :: GHC.Types.Int)
+                   (ds1 :: OT.TextAction)
+                   (eta :: GHC.Base.String) ->
+                 case ds1 of wild {
+                   OT.Retain -> GHC.Base.++ @ GHC.Types.Char OT.$fShowTextAction5 eta
+                   OT.Insert b1
+                   -> case ds of wild1 { GHC.Types.I# x ->
+                      case GHC.Prim.tagToEnum#
+                             @ GHC.Types.Bool
+                             (GHC.Prim.>=# x 11#) of wild2 {
+                        GHC.Types.False
+                        -> GHC.Base.++
+                             @ GHC.Types.Char
+                             OT.$fShowTextAction4
+                             (case b1 of ww { GHC.Types.C# ww1 ->
+                              case ww1 of ds2 {
+                                DEFAULT
+                                -> GHC.Types.:
+                                     @ GHC.Types.Char
+                                     GHC.Show.shows14
+                                     (GHC.Show.$wshowLitChar
+                                        ds2
+                                        (GHC.Types.: @ GHC.Types.Char GHC.Show.shows14 eta))
+                                '\''# -> GHC.Base.++ @ GHC.Types.Char GHC.Show.shows13 eta } })
+                        GHC.Types.True
+                        -> GHC.Types.:
+                             @ GHC.Types.Char
+                             GHC.Show.shows7
+                             (GHC.Base.++
+                                @ GHC.Types.Char
+                                OT.$fShowTextAction4
+                                (case b1 of ww { GHC.Types.C# ww1 ->
+                                 case ww1 of ds2 {
+                                   DEFAULT
+                                   -> GHC.Types.:
+                                        @ GHC.Types.Char
+                                        GHC.Show.shows14
+                                        (GHC.Show.$wshowLitChar
+                                           ds2
+                                           (GHC.Types.:
+                                              @ GHC.Types.Char
+                                              GHC.Show.shows14
+                                              (GHC.Types.: @ GHC.Types.Char GHC.Show.shows4 eta)))
+                                   '\''#
+                                   -> GHC.Base.++
+                                        @ GHC.Types.Char
+                                        GHC.Show.shows13
+                                        (GHC.Types.: @ GHC.Types.Char GHC.Show.shows4 eta) } })) } }
+                   OT.Delete
+                   -> GHC.Base.++ @ GHC.Types.Char OT.$fShowTextAction3 eta }) -}
+41451b989fca416ac6bebeb2d307ab1d
+  $fShowTextOperation :: GHC.Show.Show OT.TextOperation
+  DFunId
+  {- Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ OT.TextOperation
+                  OT.$fShowTextOperation_$cshowsPrec
+                  OT.$fShowTextOperation_$cshow
+                  OT.$fShowTextOperation_$cshowList -}
+41451b989fca416ac6bebeb2d307ab1d
+  $fShowTextOperation1 :: OT.TextOperation -> GHC.Show.ShowS
+  {- Arity: 2,
+     Unfolding: (\ (w :: OT.TextOperation) (w1 :: GHC.Base.String) ->
+                 OT.$w$cshowsPrec 0# w w1) -}
+bff5a1a6741b1e774818d4aab68448cb
+  $fShowTextOperation2 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "TextOperation "#) -}
+41451b989fca416ac6bebeb2d307ab1d
+  $fShowTextOperation_$cshow :: OT.TextOperation -> GHC.Base.String
+  {- Arity: 1, Strictness: <L,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (x :: OT.TextOperation) ->
+                 GHC.Base.augment
+                   @ GHC.Types.Char
+                   (\ @ b
+                      (c :: GHC.Types.Char -> b -> b)[OneShot]
+                      (n :: b)[OneShot] ->
+                    GHC.Base.foldr @ GHC.Types.Char @ b c n OT.$fShowTextOperation2)
+                   (GHC.Show.showList__
+                      @ OT.TextAction
+                      OT.$fShowTextAction1
+                      x `cast` (OT.N:TextOperation[0])
+                      (GHC.Types.[] @ GHC.Types.Char))) -}
+41451b989fca416ac6bebeb2d307ab1d
+  $fShowTextOperation_$cshowList ::
+    [OT.TextOperation] -> GHC.Show.ShowS
+  {- Arity: 2,
+     Unfolding: (GHC.Show.showList__
+                   @ OT.TextOperation
+                   OT.$fShowTextOperation1) -}
+41451b989fca416ac6bebeb2d307ab1d
+  $fShowTextOperation_$cshowsPrec ::
+    GHC.Types.Int -> OT.TextOperation -> GHC.Show.ShowS
+  {- Arity: 3, Strictness: <S(S),1*U(U)><L,1*U><L,U>,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (3, True, False)
+                (\ (w :: GHC.Types.Int)
+                   (w1 :: OT.TextOperation)
+                   (w2 :: GHC.Base.String) ->
+                 case w of ww { GHC.Types.I# ww1 -> OT.$w$cshowsPrec ww1 w1 w2 }) -}
+0cf8801f310ab21ca025ac18b7b67e2e
+  $tc'C:Document :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   12980850306258579356##
+                   3591239223837181674##
+                   OT.$trModule
+                   OT.$tc'C:Document1) -}
+9a36e1dfdda0cffaee7408572c2a36ad
+  $tc'C:Document1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'C:Document"#) -}
+93edebc02c112918ac6d2b1eb33ff59a
+  $tc'C:Operation :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   11111174827303799346##
+                   8615121635189389238##
+                   OT.$trModule
+                   OT.$tc'C:Operation1) -}
+28b129b854812b7605623223236e7b2e
+  $tc'C:Operation1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'C:Operation"#) -}
+71af6fa50e4b90f2d8741f470952e0f0
+  $tc'Client :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   2196116228416214062##
+                   12931141657888414894##
+                   OT.$trModule
+                   OT.$tc'Client1) -}
+31681e6a8ba2519de56ceba06e899342
+  $tc'Client1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'Client"#) -}
+217f1ed83a8c437f7aa4095c748c2558
+  $tc'Delete :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   14024771467994328409##
+                   17530053874971402902##
+                   OT.$trModule
+                   OT.$tc'Delete1) -}
+7587c298a38d0d20b04dc718837c4422
+  $tc'Delete1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'Delete"#) -}
+0539b3cb917d9a7ab849dbaa86681dcc
+  $tc'Insert :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   16168137629587413239##
+                   9551541505227732953##
+                   OT.$trModule
+                   OT.$tc'Insert1) -}
+72635004b89da749f445423a5dc51da0
+  $tc'Insert1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'Insert"#) -}
+dd55eaaa99148ee12f8d78fceff45f5f
+  $tc'Retain :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   2828769529265533361##
+                   8070375238032456186##
+                   OT.$trModule
+                   OT.$tc'Retain1) -}
+30e25e1a25dbd4a4744b1ec8f01a3b10
+  $tc'Retain1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'Retain"#) -}
+e0e98947ba218e28d2df7727a4f62eb8
+  $tc'Server :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   5333242463694786187##
+                   1681720621047018376##
+                   OT.$trModule
+                   OT.$tc'Server1) -}
+e8f16272e7bbc7ccb47b62b16445283d
+  $tc'Server1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'Server"#) -}
+8911bdbb71861fade9fa52e2e6fcdf16
+  $tc'TextOperation :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   16315676112336594159##
+                   12247659662117924880##
+                   OT.$trModule
+                   OT.$tc'TextOperation1) -}
+f8382e7fd48a4abe3c1f0d39db44ff22
+  $tc'TextOperation1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'TextOperation"#) -}
+a705c99293e983cc85c23261503dc4f2
+  $tcClient :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   15476161234444132615##
+                   311610252888821882##
+                   OT.$trModule
+                   OT.$tcClient1) -}
+d01ad3106cecdf33daab205cc961cac8
+  $tcClient1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "Client"#) -}
+45773a980bf36efff2ceb5133cf54611
+  $tcDocument :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   799138283750402440##
+                   3103431974100431191##
+                   OT.$trModule
+                   OT.$tcDocument1) -}
+193bca356ba6efd044895696dbbdcbee
+  $tcDocument1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "Document"#) -}
+bf2d65f491d868468010e178ebbd1c3a
+  $tcOperation :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   12442579362858181756##
+                   12698204423257191336##
+                   OT.$trModule
+                   OT.$tcOperation1) -}
+2a37ec11beafb6441a0ad3903a60e684
+  $tcOperation1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "Operation"#) -}
+f5b878c712dcc811083bd057890a4e13
+  $tcServer :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   6546940439368186971##
+                   1418174571684517011##
+                   OT.$trModule
+                   OT.$tcServer1) -}
+7d4b006bb03fa7bf3a7e1d8e21070550
+  $tcServer1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "Server"#) -}
+e96b3114fb34974a98afd6dd1ec86796
+  $tcTextAction :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   17102210425127387903##
+                   2671575734054632035##
+                   OT.$trModule
+                   OT.$tcTextAction1) -}
+cd05f2e9f9d778b7331278b1a85c80a1
+  $tcTextAction1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "TextAction"#) -}
+cb4bbdac5334bd5e10bffa9c7d9f63a1
+  $tcTextOperation :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   6912240755495895969##
+                   11495404423687445002##
+                   OT.$trModule
+                   OT.$tcTextOperation1) -}
+cd990559a919d1030629f8aabe3175fc
+  $tcTextOperation1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "TextOperation"#) -}
+9ccf7e047be75abf70349226acb591d5
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module OT.$trModule2 OT.$trModule1) -}
+b8d5c45df360d983060285f2dc968e09
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "OT"#) -}
+7e20648aa7b02e31c003adef6919d2ba
+  $trModule2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   "OT-0.1.0-1gqFYEXZiYEIActA72Dzk7"#) -}
+41451b989fca416ac6bebeb2d307ab1d
+  $w$cshowsPrec ::
+    GHC.Prim.Int#
+    -> OT.TextOperation -> GHC.Base.String -> GHC.Base.String
+  {- Arity: 3, Strictness: <S,U><L,1*U><L,U>, Inline: [0],
+     Unfolding: (\ (ww :: GHC.Prim.Int#)
+                   (w :: OT.TextOperation)
+                   (w1 :: GHC.Base.String) ->
+                 case GHC.Prim.tagToEnum#
+                        @ GHC.Types.Bool
+                        (GHC.Prim.>=# ww 11#) of wild {
+                   GHC.Types.False
+                   -> GHC.Base.++
+                        @ GHC.Types.Char
+                        OT.$fShowTextOperation2
+                        (GHC.Show.showList__
+                           @ OT.TextAction
+                           OT.$fShowTextAction1
+                           w `cast` (OT.N:TextOperation[0])
+                           w1)
+                   GHC.Types.True
+                   -> GHC.Types.:
+                        @ GHC.Types.Char
+                        GHC.Show.shows7
+                        (GHC.Base.++
+                           @ GHC.Types.Char
+                           OT.$fShowTextOperation2
+                           (GHC.Show.showList__
+                              @ OT.TextAction
+                              OT.$fShowTextAction1
+                              w `cast` (OT.N:TextOperation[0])
+                              (GHC.Types.: @ GHC.Types.Char GHC.Show.shows4 w1))) }) -}
+2ed074ef2407c744ea075d517109afde
+  $wappendOperation ::
+    OT.Document d o =>
+    d -> [o] -> o -> GHC.Types.Int -> (# o, OT.Server o d #)
+  {- Arity: 5, HasNoCafRefs,
+     Strictness: <L,U(U,U,U)><L,U><L,U><L,U><L,1*U(U)>, Inline: [0],
+     Unfolding: (\ @ o
+                   @ d
+                   (ww :: OT.Document d o)
+                   (ww1 :: d)
+                   (ww2 :: [o])
+                   (w :: o)
+                   (w1 :: GHC.Types.Int) ->
+                 let {
+                   $dOperation :: OT.Operation o = OT.$p1Document @ d @ o ww
+                 } in
+                 let {
+                   op' :: o
+                   = case w1 of wild { GHC.Types.I# x ->
+                     case GHC.Prim.tagToEnum#
+                            @ GHC.Types.Bool
+                            (GHC.Prim.<=# x 0#) of wild1 {
+                       GHC.Types.False
+                       -> letrec {
+                            go :: [o] -> o -> o {- Arity: 2, Strictness: <S,1*U><L,U> -}
+                            = \ (ds :: [o]) (eta :: o) ->
+                              case ds of wild2 {
+                                [] -> eta
+                                : y ys
+                                -> go
+                                     ys
+                                     (case OT.transform
+                                             @ o
+                                             $dOperation
+                                             eta
+                                             y of wild3 { (,) x1 ds1 ->
+                                      x1 }) }
+                          } in
+                          go (OT.$wunsafeDrop @ o x ww2) w
+                       GHC.Types.True
+                       -> letrec {
+                            go :: [o] -> o -> o {- Arity: 2, Strictness: <S,1*U><L,U> -}
+                            = \ (ds :: [o]) (eta :: o) ->
+                              case ds of wild2 {
+                                [] -> eta
+                                : y ys
+                                -> go
+                                     ys
+                                     (case OT.transform
+                                             @ o
+                                             $dOperation
+                                             eta
+                                             y of wild3 { (,) x1 ds1 ->
+                                      x1 }) }
+                          } in
+                          go ww2 w } }
+                 } in
+                 (# op',
+                    OT.Server
+                      @ o
+                      @ d
+                      $dOperation
+                      ww
+                      ww1
+                      (GHC.Base.++
+                         @ o
+                         ww2
+                         (GHC.Types.: @ o op' (GHC.Types.[] @ o))) #)) -}
+7c0b11cc2312fbf22031df57f05deb1d
+  $wlocalEdit ::
+    OT.Document d o =>
+    GHC.Integer.Type.Integer
+    -> GHC.Base.Maybe o
+    -> GHC.Base.Maybe o
+    -> o
+    -> (# GHC.Types.Bool, OT.Client o d #)
+  {- Arity: 5, HasNoCafRefs,
+     Strictness: <L,U(U,U,U)><L,U><L,U><L,1*U><L,U>, Inline: [0],
+     Unfolding: (\ @ o
+                   @ d
+                   (ww :: OT.Document d o)
+                   (ww1 :: GHC.Integer.Type.Integer)
+                   (ww2 :: GHC.Base.Maybe o)
+                   (ww3 :: GHC.Base.Maybe o)
+                   (w :: o) ->
+                 (# Data.Foldable.$fFoldableMaybe_$cnull @ o ww2,
+                    let {
+                      $dOperation :: OT.Operation o = OT.$p1Document @ d @ o ww
+                    } in
+                    OT.Client
+                      @ o
+                      @ d
+                      $dOperation
+                      ww
+                      ww1
+                      (case ww2 of wild {
+                         GHC.Base.Nothing -> GHC.Base.Just @ o w
+                         GHC.Base.Just ipv -> wild })
+                      (case ww2 of wild {
+                         GHC.Base.Nothing -> GHC.Base.Nothing @ o
+                         GHC.Base.Just _m1
+                         -> case ww3 of wild1 {
+                              GHC.Base.Nothing -> GHC.Base.Nothing @ o
+                              GHC.Base.Just x
+                              -> GHC.Base.Just @ o (OT.compose @ o $dOperation x w) } }) #)) -}
+a594df30041ab6f94cfdc1188602190b
+  $wremoteEdit ::
+    OT.Document d o =>
+    GHC.Integer.Type.Integer
+    -> GHC.Base.Maybe o
+    -> GHC.Base.Maybe o
+    -> o
+    -> (# o, OT.Client o d #)
+  {- Arity: 5, Strictness: <L,U(U,U,U)><L,1*U><S,1*U><S,1*U><L,U>,
+     Inline: [0],
+     Unfolding: (\ @ o
+                   @ d
+                   (ww :: OT.Document d o)
+                   (ww1 :: GHC.Integer.Type.Integer)
+                   (ww2 :: GHC.Base.Maybe o)
+                   (ww3 :: GHC.Base.Maybe o)
+                   (w :: o) ->
+                 let {
+                   $dOperation :: OT.Operation o = OT.$p1Document @ d @ o ww
+                 } in
+                 case ww2 of wild {
+                   GHC.Base.Nothing
+                   -> case ww3 of wild1 {
+                        GHC.Base.Nothing
+                        -> (# w,
+                              OT.Client
+                                @ o
+                                @ d
+                                $dOperation
+                                ww
+                                (GHC.Integer.Type.plusInteger ww1 OT.ack1)
+                                (GHC.Base.Nothing @ o)
+                                (GHC.Base.Nothing @ o) #)
+                        GHC.Base.Just ipv
+                        -> case OT.remoteEdit1 ret_ty (# o, OT.Client o d #) of {} }
+                   GHC.Base.Just p
+                   -> case ww3 of wild1 {
+                        GHC.Base.Nothing
+                        -> let {
+                             ds :: (o, o) = OT.transform @ o $dOperation p w
+                           } in
+                           (# case ds of wild2 { (,) p' o' -> o' },
+                              OT.Client
+                                @ o
+                                @ d
+                                $dOperation
+                                ww
+                                (GHC.Integer.Type.plusInteger ww1 OT.ack1)
+                                (GHC.Base.Just @ o (case ds of wild2 { (,) p' o' -> p' }))
+                                (GHC.Base.Nothing @ o) #)
+                        GHC.Base.Just b
+                        -> let {
+                             o' :: o
+                             = case OT.transform @ o $dOperation p w of wild2 { (,) p' o'1 ->
+                               o'1 }
+                           } in
+                           let {
+                             ds :: (o, o) = OT.transform @ o $dOperation b o'
+                           } in
+                           (# case ds of wild2 { (,) b' o'' -> o'' },
+                              OT.Client
+                                @ o
+                                @ d
+                                $dOperation
+                                ww
+                                (GHC.Integer.Type.plusInteger ww1 OT.ack1)
+                                (GHC.Base.Just @ o o')
+                                (GHC.Base.Just
+                                   @ o
+                                   (case ds of wild2 { (,) b' o'' -> b' })) #) } }) -}
+0ea902093f43d5ca04725a8ca63d7c0c
+  $wserverState :: OT.Document d o => d -> [o] -> d
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <L,1*U(A,A,1*U)><L,U><S,1*U>, Inline: [0],
+     Unfolding: (\ @ o
+                   @ d
+                   (ww :: OT.Document d o)
+                   (ww1 :: d)
+                   (ww2 :: [o]) ->
+                 let {
+                   k :: d -> o -> d = OT.applyOp @ d @ o ww
+                 } in
+                 letrec {
+                   go :: [o] -> d -> d {- Arity: 2, Strictness: <S,1*U><L,U> -}
+                   = \ (ds :: [o]) (eta :: d) ->
+                     case ds of wild { [] -> eta : y ys -> go ys (k eta y) }
+                 } in
+                 go ww2 ww1) -}
+ad015cb9cdf4814c86057bd3bc4344a5
+  $wserverStateOp :: OT.Document d o => d -> [o] -> o
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <L,U(1*U,1*C1(U),A)><L,U><S,1*U>, Inline: [0],
+     Unfolding: (\ @ o
+                   @ d
+                   (ww :: OT.Document d o)
+                   (ww1 :: d)
+                   (ww2 :: [o]) ->
+                 let {
+                   k :: OT.Operation o = OT.$p1Document @ d @ o ww
+                 } in
+                 let {
+                   k1 :: o -> o -> o = OT.compose @ o k
+                 } in
+                 letrec {
+                   go :: [o] -> o -> o {- Arity: 2, Strictness: <S,1*U><L,U> -}
+                   = \ (ds :: [o]) (eta :: o) ->
+                     case ds of wild { [] -> eta : y ys -> go ys (k1 eta y) }
+                 } in
+                 go ww2 (OT.noop @ d @ o ww ww1)) -}
+82398d97d2c5338905691bb1bd9e8900
+  $wtransform' ::
+    [OT.TextAction]
+    -> [OT.TextAction] -> (# [OT.TextAction], [OT.TextAction] #)
+  {- Arity: 2, Strictness: <S,U><S,U>, Inline: [0] -}
+0d3c82fed42d7ab32a4db6f549500111
+  $wtransformCursor ::
+    OT.TextOperation -> GHC.Prim.Int# -> GHC.Prim.Int#
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,1*U><S,U>, Inline: [0],
+     Unfolding: (\ (w :: OT.TextOperation) (ww :: GHC.Prim.Int#) ->
+                 case GHC.Prim.tagToEnum#
+                        @ GHC.Types.Bool
+                        (GHC.Prim.<# 0# ww) of wild {
+                   GHC.Types.False -> ww
+                   GHC.Types.True
+                   -> letrec {
+                        $wgo :: [OT.TextAction] -> GHC.Prim.Int# -> GHC.Prim.Int#
+                          {- Arity: 2, Strictness: <S,1*U><L,1*U>, Inline: [0] -}
+                        = \ (w1 :: [OT.TextAction]) (ww1 :: GHC.Prim.Int#) ->
+                          case w1 of wild1 {
+                            [] -> ww
+                            : y ys
+                            -> case ww1 of ds1 {
+                                 DEFAULT
+                                 -> case y of wild2 {
+                                      OT.Retain -> $wgo ys (GHC.Prim.-# ds1 1#)
+                                      OT.Insert ds
+                                      -> case $wgo ys (GHC.Prim.-# ds1 1#) of ww2 { DEFAULT ->
+                                         GHC.Prim.+# ww2 1# }
+                                      OT.Delete
+                                      -> case $wgo ys (GHC.Prim.-# ds1 1#) of ww2 { DEFAULT ->
+                                         GHC.Prim.-# ww2 1# } }
+                                 1#
+                                 -> case y of wild2 {
+                                      OT.Retain -> ww
+                                      OT.Insert ds -> GHC.Prim.+# ww 1#
+                                      OT.Delete -> GHC.Prim.-# ww 1# } } }
+                      } in
+                      $wgo w `cast` (OT.N:TextOperation[0]) ww }) -}
+634a4e6d29f021451b32e9a2ddb089ac
+  $wunsafeDrop :: GHC.Prim.Int# -> [a1] -> [a1]
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,1*U><S,1*U>,
+     Inline: [0] -}
+4b713216ade05127134b4a0d824d3c53
+  type role Client nominal nominal
+  data Client o d where
+    Client :: (OT.Operation o, OT.Document d o) =>
+              {clientRevision :: GHC.Integer.Type.Integer,
+               pending :: GHC.Base.Maybe o,
+               buffer :: GHC.Base.Maybe o}
+              -> Client o d
+fa1989619d88b5e7102c6c4819657fd1
+  type Cursor = GHC.Types.Int
+9d59a4278afe0bf23ff5e0ecbcc248fb
+  class OT.Operation o => Document d o where
+    noop :: d -> o
+    applyOp :: d -> o -> d
+    {-# MINIMAL noop, applyOp #-}
+4573e9d514142bb2174310719489c5fd
+  class Operation o where
+    compose :: o -> o -> o
+    transform :: o -> o -> (o, o)
+    {-# MINIMAL compose, transform #-}
+c568d50b2e468771812b21c46d2c850d
+  type role Server nominal nominal
+  data Server o d where
+    Server :: (OT.Operation o, OT.Document d o) =>
+              {initialState :: d, history :: [o]} -> Server o d
+99e3d370ea816f0367a2a4a1e20d85c4
+  data TextAction = Retain | Insert GHC.Types.Char | Delete
+41451b989fca416ac6bebeb2d307ab1d
+  newtype TextOperation = TextOperation [OT.TextAction]
+348e32ecee395bfca619fa5663f58b59
+  ack :: OT.Client o d -> (GHC.Base.Maybe o, OT.Client o d)
+  {- Arity: 1, Strictness: <S,1*U(A,U(U,U,U),1*U,A,U)>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ @ o @ d (ds :: OT.Client o d) ->
+                 case ds of wild { OT.Client $dOperation $dDocument rev pending1 buffer1 ->
+                 (buffer1,
+                  OT.Client
+                    @ o
+                    @ d
+                    (OT.$p1Document @ d @ o $dDocument)
+                    $dDocument
+                    (GHC.Integer.Type.plusInteger rev OT.ack1)
+                    buffer1
+                    (GHC.Base.Nothing @ o)) }) -}
+8790378603ede49e2bcfc05a11b6f373
+  ack1 :: GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Unfolding: (1) -}
+e24072a99b59bda28d46e66bec57acd6
+  appendOperation ::
+    OT.Server o d -> o -> GHC.Types.Int -> (o, OT.Server o d)
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <S,1*U(A,U(U,U,U),U,U)><L,U><L,1*U(U)>m,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (3, True, False)
+                (\ @ o @ d (w :: OT.Server o d) (w1 :: o) (w2 :: GHC.Types.Int) ->
+                 case w of ww { OT.Server ww1 ww2 ww3 ww4 ->
+                 case OT.$wappendOperation
+                        @ o
+                        @ d
+                        ww2
+                        ww3
+                        ww4
+                        w1
+                        w2 of ww5 { (#,#) ww6 ww7 ->
+                 (ww6, ww7) } }) -}
+606f0f29a58281bbb013db8ef5d59499
+  buffer :: OT.Client o d -> GHC.Base.Maybe o
+  RecSel Left OT.Client
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(LLLLS),1*U(A,A,A,A,1*U)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ @ o @ d (ds :: OT.Client o d) ->
+                 case ds of wild { OT.Client $dOperation $dDocument ds1 ds2 ds3 ->
+                 ds3 }) -}
+7ebcda1f55e7904bc8feb0a005227ba8
+  clientRevision :: OT.Client o d -> GHC.Integer.Type.Integer
+  RecSel Left OT.Client
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(LLSLL),1*U(A,A,1*U,A,A)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ @ o @ d (ds :: OT.Client o d) ->
+                 case ds of wild { OT.Client $dOperation $dDocument ds1 ds2 ds3 ->
+                 ds1 }) -}
+d71cf0d2f5177c9b6e52cac79c268e50
+  history :: OT.Server o d -> [o]
+  RecSel Left OT.Server
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(LLLS),1*U(A,A,A,1*U)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ @ o @ d (ds :: OT.Server o d) ->
+                 case ds of wild { OT.Server $dOperation $dDocument ds1 ds2 ->
+                 ds2 }) -}
+6fc54f08f5be4656c7f6ab85ff55ddd0
+  initialState :: OT.Server o d -> d
+  RecSel Left OT.Server
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(LLSL),1*U(A,A,1*U,A)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ @ o @ d (ds :: OT.Server o d) ->
+                 case ds of wild { OT.Server $dOperation $dDocument ds1 ds2 ->
+                 ds1 }) -}
+790ed82a45b20f10581a1cc401568fcb
+  isSynchronized :: OT.Client o d -> GHC.Types.Bool
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(LLLSL),1*U(A,A,A,1*U,A)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ @ o @ d (ds :: OT.Client o d) ->
+                 case ds of wild { OT.Client $dOperation $dDocument rev pending1 buffer1 ->
+                 Data.Foldable.$fFoldableMaybe_$cnull @ o pending1 }) -}
+6095daa2fa6ee9f2294a2136772af8a5
+  localEdit :: OT.Client o d -> o -> (GHC.Types.Bool, OT.Client o d)
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S,1*U(A,U(U,U,U),U,U,1*U)><L,U>m, Inline: INLINE[0],
+     Unfolding: InlineRule (2, True, False)
+                (\ @ o @ d (w :: OT.Client o d) (w1 :: o) ->
+                 case w of ww { OT.Client ww1 ww2 ww3 ww4 ww5 ->
+                 case OT.$wlocalEdit
+                        @ o
+                        @ d
+                        ww2
+                        ww3
+                        ww4
+                        ww5
+                        w1 of ww6 { (#,#) ww7 ww8 ->
+                 (ww7, ww8) } }) -}
+683d47527357534759a96debf09c6614
+  newClient :: (OT.Operation o, OT.Document d o) => OT.Client o d
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,A><L,U(U,U,U)>m,
+     Unfolding: InlineRule (2, True, False)
+                (\ @ o
+                   @ d
+                   ($dOperation :: OT.Operation o)
+                   ($dDocument :: OT.Document d o) ->
+                 OT.Client
+                   @ o
+                   @ d
+                   (OT.$p1Document @ d @ o $dDocument)
+                   $dDocument
+                   OT.newClient1
+                   (GHC.Base.Nothing @ o)
+                   (GHC.Base.Nothing @ o)) -}
+e28115b397d97e9056fbc5defbede76d
+  newClient1 :: GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Unfolding: (0) -}
+35eca214c4ebc873fc0c0a0c712e258e
+  pending :: OT.Client o d -> GHC.Base.Maybe o
+  RecSel Left OT.Client
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(LLLSL),1*U(A,A,A,1*U,A)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ @ o @ d (ds :: OT.Client o d) ->
+                 case ds of wild { OT.Client $dOperation $dDocument ds1 ds2 ds3 ->
+                 ds2 }) -}
+905d63afcd505510a8f1b59a91e5667f
+  remoteEdit :: OT.Client o d -> o -> (o, OT.Client o d)
+  {- Arity: 2,
+     Strictness: <S(LLLSS),1*U(A,U(U,U,U),1*U,1*U,1*U)><L,U>m,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (2, True, False)
+                (\ @ o @ d (w :: OT.Client o d) (w1 :: o) ->
+                 case w of ww { OT.Client ww1 ww2 ww3 ww4 ww5 ->
+                 case OT.$wremoteEdit
+                        @ o
+                        @ d
+                        ww2
+                        ww3
+                        ww4
+                        ww5
+                        w1 of ww6 { (#,#) ww7 ww8 ->
+                 (ww7, ww8) } }) -}
+6f60512bdc5b1efab76421be4d135c76
+  remoteEdit1 :: (o, OT.Client o d)
+  {- Strictness: x -}
+22230d587301a11f4dcba5b0ab37bedd
+  serverRevision :: OT.Server o d -> GHC.Types.Int
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(LLLS),1*U(A,A,A,1*U)>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ @ o @ d (ds :: OT.Server o d) ->
+                 case ds of wild { OT.Server $dOperation $dDocument start ops ->
+                 case GHC.List.$wlenAcc @ o ops 0# of ww2 { DEFAULT ->
+                 GHC.Types.I# ww2 } }) -}
+00542e39fb060a36b5903553e3e3d7d5
+  serverState :: OT.Server o d -> d
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <S(LLLS),1*U(A,1*U(A,A,1*U),U,1*U)>, Inline: INLINE[0],
+     Unfolding: InlineRule (1, True, False)
+                (\ @ o @ d (w :: OT.Server o d) ->
+                 case w of ww { OT.Server ww1 ww2 ww3 ww4 ->
+                 OT.$wserverState @ o @ d ww2 ww3 ww4 }) -}
+4ada68f850c9de6c29d7ea17f3ce8dcc
+  serverStateOp :: OT.Server o d -> o
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <S(LLLS),1*U(A,U(1*U,1*C1(U),A),U,1*U)>,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (1, True, False)
+                (\ @ o @ d (w :: OT.Server o d) ->
+                 case w of ww { OT.Server ww1 ww2 ww3 ww4 ->
+                 OT.$wserverStateOp @ o @ d ww2 ww3 ww4 }) -}
+68af981620cddc41af6a50b56e82bfcf
+  transformCursor :: OT.TextOperation -> OT.Cursor -> OT.Cursor
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,1*U><S(S),1*U(U)>m,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (2, True, False)
+                (\ (w :: OT.TextOperation) (w1 :: OT.Cursor) ->
+                 case w1 of ww { GHC.Types.I# ww1 ->
+                 case OT.$wtransformCursor w ww1 of ww2 { DEFAULT ->
+                 GHC.Types.I# ww2 } }) -}
+instance [safe] OT.Document [[], OT.TextOperation]
+  = OT.$fDocument[]TextOperation
+instance [safe] OT.Operation [OT.TextOperation]
+  = OT.$fOperationTextOperation
+instance [safe] GHC.Show.Show [OT.TextAction] = OT.$fShowTextAction
+instance [safe] GHC.Show.Show [OT.TextOperation]
+  = OT.$fShowTextOperation
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: safe
+require own pkg trusted: False
+
