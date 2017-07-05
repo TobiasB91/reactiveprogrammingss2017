@@ -16,53 +16,44 @@
 {06.07.2017} % Abgabe-Datum
 
 \exercise{Hoogle Docs}%
-\\
-\textbf{Server}\\
-messages und serialisierung
+
+\textbf{Server}
+Die Messages sowie das JSON Encoding und Decoding wurden erweitert. So senden wir in der ClientMessage die Position des Cursors des Clients mit. Außerdem wurde die ServerMessage um sowohl eine Map von Cursorn, welche momentan an dem Sheet sind, bei der RemoteEdit-Message erweitert als auch um eine komplett neue Message, welche wir recht eloquent als \textit{HelloGuys} bezeichnet haben. Diese ist dafür zuständig, bei einer neuen Clientverbindung den anderen Clients zu signalisieren, einen neuen Cursor zu ihrer lokalen Version des Sheets hinzuzufügen.\\\\
+Im Zuge der dritten Aufgabe wurden außerdem \textit{Retain}, \textit{Insert} und \textit{Delete} um \textit{Int} bzw. ein \textit{String}-Feld beim Encoding sowie Decoding erweitert. Für die neuen Messages sowie Anpassungen wurden ebenfalls die bereits vorhandenen En- und Decodings angepasst.
 \IncludeFun{9}{48}{../app/Messages.hs}
-\\\\
-server cursor
+
+Da der Server für die konsistente Verwaltung der Cursor zuständig ist, haben wir den ServerState um \textit{cursors} erweitert, welches den Cursor als Int für jeden jeweiligen Client mit seiner id identifiziert in einer Map verwaltet. Dies ist selbstverständlich im anfänglichen ServerState \textit{initialState} eingebaut.
 \IncludeFun{21}{35}{../app/Main.hs}
-\\\\
-server cursor2
+Die Verarbeitung einer \textit{ClientEdit}-Nachricht, welche um den Cursor erweitert ist, wurde ebenfalls angepasst. Diese muss nun nämlich zum einen den neuen Cursor so transformieren, dass dieser mit dem aktuellen ServerState konsistent ist (\textit{transform}) und zum anderen werden die bereits vom Server verwalteten Cursor durch die neu vom Client geschickte Operation angepasst. Somit bilden wir die neue Map von Cursorn, welche wir nun den anderen Clients zukommen lassen; bis auf den eigenen Cursor des Clients, welcher von diesem selbst verwaltet wird.
 \IncludeFun{37}{67}{../app/Main.hs}
-\\\\
-server cursor3
+Verbindet sich ein neuer Client, so wird dessen Cursor zum Cursor in seiner Map hinzugefügt sowie den übrigen Clients eine \textit{HelloGuys}-Message gesandt, um kundzutun, dass sich ein neuer Client connected hat und dessen Cursor dargestellt werden soll.
 \IncludeFun{77}{91}{../app/Main.hs}
-\\\\
-ot
+Analog zu der transform-Funktion der Operationen wurde eine Transformations-Funktion für die Cursor hinzugefügt. Diese verschiebt den jeweiligen Cursor nach rechts, wenn links von diesem etwas Neues hinzugefügt wurde und nach links, wenn links von diesem etwas gelöscht wurde. Das Verschieben ist hierbei angepasst auf die Anzahl der neuen bzw. gelöschten Elemente links vom jeweiligen Cursor. So wird dieser bei zwei neuen Elementen auch um zwei Stellen verschoben.
 \IncludeFun{116}{139}{../src/OT.hs}
-\\\\
-ot2
+Für Aufgabe 3 wurde eine effizientere Darstellung der Retains, Inserts und Delete konstruiert.
 \IncludeFun{16}{18}{../src/OT.hs}
-\\\\
-ot3
+Im Zuge dieser Veränderung mussten selbstverständlich auch \textit{noop} und \textit{applyOp} angepasst werden.
 \IncludeFun{65}{75}{../src/OT.hs}
-\\\\
-ot4
+Die Funktionen \textit{compose} und \textit{transform} wurden ebenfalls angepasst auf die neue Darstellungsform. Da im Grunde dasselbe passiert wie bei der simpleren Repräsentation der Retains, Inserts und Deletes, werden wir diese nicht bis ins kleinste Detail erklären. Das einzig Interessante an der Anpassung ist, dass für jeden Fall, welcher nicht ein beliebiges Element auf linker oder rechter Seite hat, nun überprüft werden muss, ob die linke Anfangsoperationsfolge oder die rechte kleiner ist. Die kleinere wird nun genommen, analog zu den vorherigen Fällen verarbeitet und die größere so gesplittet, dass genau so viele Aktionen wie im kleineren verarbeitet werden und der Rest weiter angekettet an den Rest nun mit den nachfolgenden Folgen des kleineren rekursiv weiterverarbeitet wird.
 \IncludeFun{22}{63}{../src/OT.hs}
-\\\\
+
 \textbf{Client}\\
-move cursor bei actions
+Um leere Retains (durch die neue Darstellung) zu vermeiden, wurden einige zusätzliche Fälle zur Hinzufügefunktion von Zeichen hinzugefügt. Ansonsten funktioniert diese Funktion allerdings analog zur vorherigen Version.
 \IncludeFun{11}{41}{../client/src/main/scala/Editor.scala}
-\\\\
-empfangen von edits und mehr :) 
+Die neue Message \textit{HelloGuys} wird nun verarbeitet und fügt einen neuen Cursor im jeweiligen Client hinzu. Dieser speichert die Cursor der anderen Clients nun in seinem Editor. \textit{RemoteEdits} wurden so angepasst, dass nun der Cursor des Client durch die \textit{RemoteEdit}-Operation transformiert werden muss. Zusätzlich, da nun in einem \textit{RemoteEdit} die Cursor des mit dem Server konsistenten Zustandes mitgesandt werden, müssen diese ebenfalls in einen mit dem jeweiligen Client konsistenten Zustand gebracht werden. Dies bedeutet, die Cursor mit der Operation aus dem pending und dem buffer zu transformieren. Da pending und buffer auch leer sein können, werden diese beiden Optionen abgeprüft.
 \IncludeFun{58}{106}{../client/src/main/scala/Main.scala}
-\\\\
-Transformcursor und apply op
+Analog zu dem Server wurden die Funktionen \textit{transformCursor} und \textit{applyOp} auf die neue Datenrepräsentation angepasst.
 \IncludeFun{117}{151}{../client/src/main/scala/OT.scala}
-\\\\
-rendern der cursor angepasst
+Da nun zusätzliche Cursor gerendert werden müssen, wurde die \textit{render}-Funktion angepasst, sowie dem eigenen Cursor eine rote Farbe (zur besseren Unterscheidung) gegeben.
 \IncludeFun{59}{77}{../client/src/main/scala/Editor.scala}
-\\\\
-compose und transform
+Analog zum Server wurden \textit{transform} und \textit{compose} auch auf dem Client für die neue effizientere Repräsentation der Aktionen angepasst.
 \IncludeFun{35}{115}{../client/src/main/scala/OT.scala}
-\\\\
-reduce der inserts
+Eine Reduce-Funktion wurde hinzugefügt, da mehrmalig aufeinanderfolgende \textit{Inserts} zusammengefasst werden können, welche innerhalb von \textit{localEdit} benutzt wird, da dort neue \textit{Inserts} für das gesamte Sheet-System hinzugefügt werden.
 \IncludeFun{174}{180}{../client/src/main/scala/OT.scala}
-\\\\
+
 
 \textbf{Tests}\\
-\LARGE TODO
+Die Cursor sowie die Konsistenz der Cursors sowie des Sheet-Inhaltes auf allen jeweiligen Clients wurde durch Tests mit mehreren (mehr als 3) Clients und gleichzeitiger Bearbeitung des Sheets getestet. Alle Tests wurden hierbei erfüllt.\\\\
+Dass die effizientere Repräsentation der TextAktionen verwendet wurde sowie das \textit{reduce} funktioniert, wurde mithilfe von prints und logs auf Client- sowie Serverseite getestet und die Tests wurden bestanden. 
 \end{document}
 
