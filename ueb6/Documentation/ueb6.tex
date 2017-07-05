@@ -1,0 +1,68 @@
+\documentclass{rp}
+
+\begin{document}
+
+%% Daten der Übungsgruppe (am besten in separater Datei defs.tex ablegen,
+%% und mit \input{defs} immer wieder einbinden):
+
+% Name des Tutors:
+\tutor{Martin Ring}
+% Nummer der Übungsgruppe:
+\uebungsgruppe{1} 
+% Teilnehmer (bis zu drei, mit '\\' getrennt):
+\teilnehmer{Tobias Brandt \\ Stefan Heitmann \\ }
+
+\maketitle{6}          % Übungsblatt-Nr.
+{06.07.2017} % Abgabe-Datum
+
+\exercise{Hoogle Docs}%
+\\
+\textbf{Server}\\
+messages und serialisierung
+\IncludeFun{9}{48}{../app/Messages.hs}
+\\\\
+server cursor
+\IncludeFun{21}{35}{../app/Main.hs}
+\\\\
+server cursor2
+\IncludeFun{37}{67}{../app/Main.hs}
+\\\\
+server cursor3
+\IncludeFun{77}{91}{../app/Main.hs}
+\\\\
+ot
+\IncludeFun{116}{139}{../src/OT.hs}
+\\\\
+ot2
+\IncludeFun{16}{18}{../src/OT.hs}
+\\\\
+ot3
+\IncludeFun{65}{75}{../src/OT.hs}
+\\\\
+ot4
+\IncludeFun{22}{63}{../src/OT.hs}
+\\\\
+\textbf{Client}\\
+move cursor bei actions
+\IncludeFun{11}{41}{../client/src/main/scala/Editor.scala}
+\\\\
+empfangen von edits und mehr :) 
+\IncludeFun{58}{106}{../client/src/main/scala/Main.scala}
+\\\\
+Transformcursor und apply op
+\IncludeFun{117}{151}{../client/src/main/scala/OT.scala}
+\\\\
+rendern der cursor angepasst
+\IncludeFun{59}{77}{../client/src/main/scala/Editor.scala}
+\\\\
+compose und transform
+\IncludeFun{35}{115}{../client/src/main/scala/OT.scala}
+\\\\
+reduce der inserts
+\IncludeFun{174}{180}{../client/src/main/scala/OT.scala}
+\\\\
+
+\textbf{Tests}\\
+\LARGE TODO
+\end{document}
+

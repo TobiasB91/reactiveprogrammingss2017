@@ -1,3 +1,4 @@
+import org.scalajs.dom.{document, html, console}
 trait Operation {
   type Operation
   type Document
@@ -7,68 +8,146 @@ trait Operation {
   def transform(a: Operation, b: Operation): (Operation,Operation)  
   def applyOp(doc: Document, op: Operation): Document
   def transformCursor(a: Operation, cursor: Int) : Int
+  def reduce(op: Operation) : Operation
 }
 
 sealed trait TextAction
-case object Retain extends TextAction
-case class Insert(c: Char) extends TextAction
-case object Delete extends TextAction
+case class Retain(n: Int) extends TextAction
+case class Insert(cs: String) extends TextAction
+case class Delete(n: Int) extends TextAction
 
 object TextOperation extends Operation {
   type Operation = List[TextAction]
   type Document = String
 
-  def retain(n: Int): Operation = List.fill(n)(Retain)
-  def delete(n: Int): Operation = List.fill(n)(Delete)
-  def insert(s: String): Operation = s.map(Insert).toList
+  def reduce(op: Operation) : Operation = op match {
+    case (Insert(a)::Insert(b)::as) => reduce(Insert(a+b) :: as)
+    case (a :: as) => a :: reduce(as)
+    case Nil => Nil
+  }
 
-  def noop(doc: Document): Operation = doc.map(_ => Retain).toList
+  def retain(n: Int): Operation = List(Retain(n))
+  def delete(n: Int): Operation = List(Delete(n))
+  def insert(s: String): Operation = List(Insert(s))
+
+  def noop(doc: Document): Operation = List(Retain(doc.length))
 
   def compose(a: Operation, b: Operation): Operation = (a,b) match {
     case (Nil, Nil)       => Nil
-    case (Delete::as, bs) => Delete :: compose(as, bs)
-    case (as, Insert(c)::bs) => Insert(c) :: compose(as, bs)
-    case (Retain::as, Retain::bs) => Retain :: compose(as, bs)
-    case (Retain :: as, Delete::bs)   => Delete :: compose(as, bs)
-    case (Insert(c) :: as, Retain::bs) => Insert(c) :: compose(as, bs)
-    case (Insert(_) :: as, Delete::bs) => compose(as, bs)
+    case (Delete(n)::as, bs) => Delete(n) :: compose(as, bs)
+    case (as, Insert(cs)::bs) => 
+      Insert(cs) :: compose(as, bs)
+    case (Retain(n)::as, Retain(n2)::bs) => 
+      if (n > n2) Retain(n2)::compose(Retain(n-n2)::as,bs)
+      else if (n < n2) Retain(n)::compose(as,Retain(n2-n)::bs)
+      else Retain(n)::compose(as, bs)
+    case (Retain(n):: as, Delete(n2)::bs) =>
+      if(n > n2) Delete(n2)::compose(Retain(n-n2)::as,bs)
+      else if(n < n2) Delete(n)::compose(as,Retain(n2-n)::bs)
+      else Delete(n)::compose(as,bs)
+    case (Insert(cs)::as,Retain(n)::bs) =>
+      if(n > cs.length) Insert(cs)::compose(as,Retain(n-cs.length)::bs)
+      else if(n < cs.length) Insert(cs.take(n))::compose(Insert(cs.drop(n))::as, bs)
+      else Insert(cs) :: compose(as, bs)
+    case (Insert(cs)::as, Delete(n)::bs) =>
+      if(n > cs.length) compose(as,Delete(n-cs.length)::bs)
+      else if(n < cs.length) compose(Insert(cs.drop(n))::as,bs)
+      else compose(as, bs)
   }
 
   def transform(a: Operation, b: Operation): (Operation,Operation) = (a,b) match {      
     case (Nil,Nil) => (Nil,Nil)
-    case (Insert(c) :: as, bs) => 
+    case (Insert(cs)::as, bs) => 
       val (as_,bs_) = transform(as,bs)
-      (Insert(c) :: as_, Retain :: bs_)
-    case (as, Insert(c) :: bs) =>
+      (Insert(cs)::as_,Retain(cs.length)::bs_)
+    case (as, Insert(cs) :: bs) =>
       val (as_,bs_) = transform(as,bs)
-      (Retain :: as_, Insert(c) :: bs_)
-    case (Retain :: as, Retain :: bs) =>
-      val (as_,bs_) = transform(as,bs)
-      (Retain :: as_, Retain :: bs_)
-    case (Delete :: as, Delete :: bs) => 
-      transform(as,bs)
-    case (Retain :: as, Delete :: bs) =>
-      val (as_,bs_) = transform(as,bs)
-      (as_, Delete :: bs_)
-    case (Delete :: as, Retain :: bs) =>
-      val (as_,bs_) = transform(as,bs)
-      (Delete :: as_, bs_)
+      (Retain(cs.length)::as_, Insert(cs)::bs_)
+    case (Retain(n):: as, Retain(n2):: bs) =>
+      if (n > n2) {
+        val (as_,bs_) = transform(Retain(n-n2)::as,bs)
+        (Retain(n2)::as_,Retain(n2)::bs_)
+      }
+      else if (n < n2) {
+        val (as_,bs_) = transform(as,Retain(n2-n)::bs)
+        (Retain(n)::as_, Retain(n)::bs_)
+      }
+      else { 
+        val (as_,bs_) = transform(as,bs)
+        (Retain(n):: as_, Retain(n2):: bs_)
+      }
+    case (Delete(n)::as, Delete(n2)::bs) =>
+      if(n > n2) {
+        transform(Delete(n-n2)::as,bs)
+      }
+      else if(n > n2) {
+        transform(as,Delete(n2-n)::bs)
+      }
+      else {
+        transform(as,bs)
+      }
+    case (Retain(n):: as, Delete(n2)::bs) =>
+      if(n > n2) {
+        val (as_,bs_) = transform(Retain(n-n2)::as,bs)
+        (as_,Delete(n2)::bs_)
+      } 
+      else if(n < n2) {
+        val (as_,bs_) = transform(as,Delete(n2-n)::bs)
+        (as_,Delete(n)::bs_)
+      }
+      else {
+        val (as_,bs_) = transform(as,bs)
+        (as_, Delete(n)::bs_)
+      }
+    case (Delete(n):: as, Retain(n2)::bs) =>
+      if (n > n2) {
+        val (as_,bs_) = transform(Delete(n-n2)::as, bs)
+        (Delete(n2)::as_,bs_)
+      }
+      else if(n < n2) {
+        val (as_,bs_) = transform(as,Retain(n2-n)::bs)
+        (Delete(n)::as_,bs_)
+      }
+      else {
+        val (as_,bs_) = transform(as,bs)
+        (Delete(n)::as_,bs_)
+      }
   }
 
   def transformCursor(op: Operation, cursor: Int) : Int = 
-    op.take(cursor).foldRight(cursor) { 
+    TextOperation.split(op,cursor).foldRight(cursor) { 
       (o, acc) => o match {
-        case Retain => acc
-        case Delete => acc - 1
-        case Insert(_) => acc + 1
+        case Retain(n) => acc
+        case Delete(n) => acc - n
+        case Insert(cs) => acc + cs.length
       }
     }
-
-  def applyOp(doc: Document, op: Operation): Document = (doc,op) match {
+  
+  def split(op: Operation, c : Int) : Operation = {
+    op match {
+      case Nil => Nil 
+      case (x::xs) => 
+        if (c <= 0) Nil 
+        else x match {
+          case Retain(n) => 
+            if (n <= c) x :: split(xs,c-n) 
+            else List(Retain(c))
+          case Delete(n) =>
+            if (n <= c) x :: split(xs,c-n)
+            else List(Delete(c))
+          case Insert(cs) =>
+            if (cs.length <= c) x :: split(xs,c-cs.length) 
+            else List(Insert(cs.take(c)))
+        }
+    }
+  }
+    def applyOp(doc: Document, op: Operation): Document = (doc,op) match {
     case ("",Nil) => ""
-    case (d,Retain::as) if d.nonEmpty => d.head + applyOp(d.tail,as)
-    case (d,Insert(c)::as) => c + applyOp(d,as)
-    case (d,Delete::as) if d.nonEmpty => applyOp(d.tail,as)
+    case (d,Retain(0)::as) => applyOp(d,as)
+    case (d,Retain(n)::as) if d.nonEmpty => d.head + applyOp(d.tail,Retain(n-1)::as)
+    case (d,Insert(cs)::as) => cs ++ applyOp(d,as)
+    case (d,Delete(0)::as) => applyOp(d,as)
+    case (d,Delete(n)::as) if d.nonEmpty => applyOp(d.tail, Delete(n-1)::as)
   }
 }
 
@@ -96,7 +175,7 @@ trait Client[T <: Operation] { self =>
     val newPending = pending orElse Some(op)
     val newBuffer = for {
       pending <- pending
-    } yield buffer.map(ot.compose(_,op)).getOrElse(op)
+    } yield buffer.map(ot.compose(_,op)).map(ot.reduce(_)).getOrElse(op)
     (pending.isEmpty, copy(pending = newPending, buffer = newBuffer))
   }
 

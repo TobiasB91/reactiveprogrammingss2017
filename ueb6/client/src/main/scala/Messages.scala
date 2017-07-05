@@ -1,5 +1,6 @@
 import io.circe.{Decoder, DecodingFailure, Encoder, Json}
 import io.circe.syntax._
+import org.scalajs.dom.{document, html, console}
 
 sealed trait ClientMessage
 case class ClientEdit(
@@ -18,9 +19,9 @@ case class RemoteEdit(
 object ClientMessage {
   implicit val encodeAction =
     Encoder.instance[TextAction] {
-      case Retain => 1.asJson
-      case Insert(c) => c.asJson
-      case Delete => (-1).asJson
+      case Retain(n) => n.asJson
+      case Insert(cs) => cs.asJson
+      case Delete(n) => (-n).asJson
     }
 
   implicit val encodeClientMessage = Encoder.instance[ClientMessage] {
@@ -34,11 +35,12 @@ object ClientMessage {
 
 object ServerMessage {
   implicit val parseAction =
-    Decoder.decodeChar.map[TextAction](Insert) or
-    Decoder.decodeInt.emap[TextAction] {
-      case -1 => Right(Delete)
-      case 1 => Right(Retain)
-      case other => Left("invalid text action")
+    Decoder.decodeString.map[TextAction](Insert) or
+    Decoder.decodeInt.map[TextAction] { n => 
+      if (n < 0)
+        Delete(-n)
+      else  
+        Retain(n)
     }
 
   val parseAckAndHello = Decoder.decodeString.emap[ServerMessage] {

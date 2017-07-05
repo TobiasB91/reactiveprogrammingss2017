@@ -37,7 +37,8 @@ object Main extends JSApp {
         .map(e => e.data.toString)
         .map(decode[ServerMessage](_))
         .mapConcat {
-          case Right(msg) => List(Receive(msg))
+          case Right(msg) => 
+            List(Receive(msg))
           case Left(err) =>
             console.error("could not decode server message", err.getMessage)
             Nil

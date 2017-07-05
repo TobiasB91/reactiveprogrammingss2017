@@ -46,12 +46,13 @@ handleSocket conn id offset server = do
   msg <- catch (WS.receiveData conn) disconnect
   case decode msg of
     Just (ClientEdit rev op cursor) -> do
-      print cursor
+      print op
       op' <- modifyMVar server $ \s -> do
         let (op',ot') = appendOperation (ot s) op (offset + rev)
-        let newCursor = foldl (flip transformCursor) cursor $ drop rev $ history . ot $ s
-        let newOtherCursors = M.map (transformCursor op) $ cursors s 
+        let newCursor = foldl (flip transformCursor) cursor $ drop (offset + rev) $ history . ot $ s
+        let newOtherCursors = M.map (transformCursor op) $ cursors s
         let newCursors = M.insert id newCursor newOtherCursors
+        print newCursors
         forM_ (clients s) $ \(cid,client) -> do
           let cursors' = M.filterWithKey (\k _ -> cid/=k) newCursors
           if cid /= id

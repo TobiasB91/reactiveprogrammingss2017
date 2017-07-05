@@ -13,38 +13,66 @@ class Operation o => Document d o where
 
 ---
 
-data TextAction = Retain
-                | Insert Char
-                | Delete deriving Show
+data TextAction = Retain Int
+                | Insert String
+                | Delete Int deriving Show
 
 newtype TextOperation = TextOperation [TextAction] deriving Show
 
 instance Operation TextOperation where
   compose (TextOperation a) (TextOperation b) = TextOperation $ compose' a b where
     compose' [] [] = []
-    compose' (Delete : as) bs            = Delete : compose' as bs
-    compose' as (Insert c : bs)          = Insert c : compose' as bs
-    compose' (Retain : as) (Retain:bs)   = Retain : compose' as bs
-    compose' (Retain : as) (Delete:bs)   = Delete : compose' as bs
-    compose' (Insert c : as) (Retain:bs) = Insert c : compose' as bs
-    compose' (Insert _ : as) (Delete:bs) = compose' as bs
+    compose' (Delete n: as) bs   = Delete n : compose' as bs
+    compose' as (Insert cs : bs) = Insert cs : compose' as bs
+    compose' (Retain n : as) (Retain n' : bs) 
+      | n > n'  = Retain n' : compose' (Retain (n-n') : as) bs
+      | n < n'  = Retain n : compose' as (Retain (n'-n) : bs)
+      | otherwise = Retain n : compose' as bs
+    compose' (Retain n : as) (Delete n' : bs) 
+      | n > n'  = Delete n' : compose' (Retain (n-n') : as) bs
+      | n < n'  = Delete n : compose' as (Retain (n'-n) : bs)
+      | otherwise = Delete n : compose' as bs
+    compose' (Insert cs : as) (Retain n : bs) 
+      | n > length cs = Insert cs : compose' as (Retain (n-length cs) : bs)
+      | n < length cs = Insert (take n cs) : compose' (Insert (drop n cs) : as) bs
+      | otherwise     = Insert cs : compose' as bs
+    compose' (Insert cs : as) (Delete n :bs)  
+      | n > length cs = compose' as $ Delete (n - length cs) : bs 
+      | n < length cs = compose' ((Insert $ drop n cs) : as) bs
+      | otherwise     = compose' as bs
   transform (TextOperation a) (TextOperation b) = pair $ transform' a b where
     pair (as',bs') = (TextOperation as', TextOperation bs')
     transform' [] [] = ([],[])
-    transform' (Insert c : as) bs          = case transform' as bs of (as',bs') -> (Insert c : as', Retain : bs')
-    transform' as (Insert c : bs)          = case transform' as bs of (as',bs') -> (Retain : as', Insert c : bs')
-    transform' (Retain : as) (Retain : bs) = case transform' as bs of (as',bs') -> (Retain : as', Retain : bs')
-    transform' (Delete : as) (Delete : bs) = transform' as bs
-    transform' (Retain : as) (Delete : bs) = case transform' as bs of (as',bs') -> (as', Delete : bs')
-    transform' (Delete : as) (Retain : bs) = case transform' as bs of (as',bs') -> (Delete : as', bs')
+    transform' (Insert cs : as) bs = case transform' as bs of (as',bs') -> (Insert cs : as', Retain (length cs) : bs')
+    transform' as (Insert cs : bs) = case transform' as bs of (as',bs') -> (Retain (length cs) : as', Insert cs : bs')
+    transform' (Retain n: as) (Retain n': bs) 
+      | n > n' = case transform' (Retain (n-n') : as) bs of (as',bs') -> (Retain n' : as', Retain n' : bs')
+      | n < n' = case transform' as (Retain (n'-n) : bs) of (as',bs') -> (Retain n : as', Retain n : bs')  
+      | otherwise = case transform' as bs of (as',bs') -> (Retain n: as', Retain n': bs')
+    transform' (Delete n : as) (Delete n' : bs)
+      | n > n' = transform' (Delete (n-n') : as) bs
+      | n < n' = transform' as $ Delete (n'-n) : bs 
+      | otherwise = transform' as bs
+    transform' (Retain n : as) (Delete n' : bs) 
+      | n > n' = case transform' (Retain (n-n') : as) bs of (as',bs') -> (as', Delete n' : bs') 
+      | n < n' = case transform' as (Delete (n'-n) : bs) of (as',bs') -> (as', Delete n : bs') 
+      | otherwise = case transform' as bs of (as',bs') -> (as', Delete n : bs')
+    transform' (Delete n : as) (Retain n' : bs) 
+      | n > n' = case transform' (Delete (n-n') : as) bs of (as',bs') -> (Delete n' : as', bs')
+      | n < n' = case transform' as (Retain (n'-n) : bs) of (as',bs') -> (Delete n : as', bs')
+      | otherwise = case transform' as bs of (as',bs') -> (Delete n: as', bs')
 
 instance Document String TextOperation where
-  noop = TextOperation . map (\_ -> Retain)
+  noop d 
+    | length d == 0 = TextOperation [] 
+    | otherwise = TextOperation [Retain $ length d]
   applyOp d (TextOperation as) = apply' as d where
     apply' [] [] = []
-    apply' (Retain : as) (c:cs) = c : apply' as cs
-    apply' (Insert c : as) d = c : apply' as d
-    apply' (Delete : as) (_:cs) = apply' as cs
+    apply' (Retain 0 : as) cs = apply' as cs
+    apply' (Retain n : as) (c:cs) = c : apply' (Retain (n-1) : as) cs
+    apply' (Insert cs : as) d = cs ++ apply' as d
+    apply' (Delete 0 : as) cs = apply' as cs
+    apply' (Delete n : as) (_:cs) = apply' (Delete (n-1) : as) cs
 
 ---
 
@@ -88,11 +116,27 @@ data Server o d = (Operation o, Document d o) => Server {
 type Cursor = Int 
 
 transformCursor :: TextOperation -> Cursor -> Cursor
-transformCursor (TextOperation op) c = foldr transf c $ take c op where 
+transformCursor (TextOperation op) c = foldr transf c $ split op c where 
   transf op c = case op of
-    Retain -> c 
-    Insert _ -> c + 1
-    Delete -> c - 1
+    Retain n -> c 
+    Insert str -> c + length str
+    Delete n -> c - n
+  split [] _ = []
+  split (x:xs) c 
+    | c <= 0 = [] 
+    | otherwise = case x of
+        Retain n -> 
+          if n <= c 
+          then x : split xs (c-n) 
+          else [Retain c]
+        Delete n ->
+          if n <= c
+          then x : split xs (c-n)
+          else [Delete c]
+        Insert cs -> 
+          if length cs <= c 
+          then x : split xs (c - length cs)
+          else [Insert $ take c cs]
 
 serverState :: Server o d -> d
 serverState (Server start ops) = foldl applyOp start ops

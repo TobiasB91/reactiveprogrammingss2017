@@ -9,24 +9,34 @@ case class Editor(content: String, cursor: Editor.Cursor, cursors: List[Editor.C
   def applyOperation(operation: TextOperation.Operation): Editor = copy(TextOperation.applyOp(content,operation))
 
   def insert(c: Char) = {
-    val operation = List.fill(cursor)(Retain) ++ (Insert(c) :: List.fill(content.length - cursor)(Retain))
+    val operation = if (cursor == 0 && content.length == 0) {
+      List(Insert(c.toString()))
+    } else if(cursor == 0) {
+      List(Insert(c.toString()),Retain(content.length))
+    } else if(content.length == 0) {
+      List(Insert(c.toString()))
+    } else if(content.length == cursor) {
+      List(Retain(cursor),Insert(c.toString()))
+    } else {
+      List(Retain(cursor),Insert(c.toString()),Retain(content.length - cursor))
+    }
     (Option(operation),Editor(TextOperation.applyOp(content,operation),cursor + 1,
       cursors.map(c => TextOperation.transformCursor(operation, c))))
   }
 
   def backspace = if (cursor > 0) {
-    val operation = List.fill(cursor - 1)(Retain) ++ (Delete :: List.fill(content.length - cursor)(Retain))
+    val operation = List(Retain(cursor - 1), Delete(1) , Retain(content.length - cursor)).filter(op => op!=Retain(0))
     (Option(operation),Editor(TextOperation.applyOp(content,operation),cursor - 1,
       cursors.map(c => TextOperation.transformCursor(operation, c))))
   } else (None,this)
 
   def moveLeft = {
-    val operation = List.fill(content.length)(Retain) 
+    val operation = List(Retain(content.length)) 
     (Option(operation), Editor(content, Math.max(0,cursor - 1),cursors)) 
   }
 
   def moveRight = {
-    val operation = List.fill(content.length)(Retain)
+    val operation = List(Retain(content.length))
     (Option(operation), Editor(content, Math.min(content.length, cursor + 1),cursors))
   }
 
@@ -56,7 +66,6 @@ case class Editor(content: String, cursor: Editor.Cursor, cursors: List[Editor.C
     elem.appendChild(ownCursor)
     
     cursors.foldRight(elem)((c,e) => {
-      console.log("In Render:" + c)
       val (w,h) = measure(content.take(c))
       val cursor = document.createElement("div").asInstanceOf[html.Div]
       cursor.style.left = w + "px"

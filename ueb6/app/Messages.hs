@@ -15,10 +15,9 @@ data ServerMessage = RemoteEdit TextOperation (M.Map Int Cursor)
 instance FromJSON TextAction where
   parseJSON (Number x) = do
     n <- parseJSON (Number x)
-    case (n :: Int) of
-      -1  -> return Delete
-      1   -> return Retain
-      o   -> error $ "num: " ++ show o
+    return $ 
+      if n < 0 then Delete $ abs n
+      else Retain n 
   parseJSON (String t) = do
     c <- parseJSON (String t)
     return $ Insert c
@@ -35,8 +34,8 @@ instance FromJSON ClientMessage where
     <*> o .: "cursor" 
 
 instance ToJSON TextAction where
-  toJSON Retain = toJSON (1 :: Int)
-  toJSON Delete = toJSON (-1 :: Int)
+  toJSON (Retain n) = toJSON (n :: Int)
+  toJSON (Delete n) = toJSON (-n :: Int)
   toJSON (Insert c) = toJSON c
 
 instance ToJSON TextOperation where

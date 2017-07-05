@@ -1,0 +1,136 @@
+%%
+%% Typesetting Literate Haskell
+%%
+%% Package options:
+%% numbers/nonumbers       -- turns on/off numbered listsings (default off)
+%% shortinline/noshortline -- turns ~ into a shortcut for inline, as in 
+%%                         -- ~data Foo~; turned off by default
+ 
+\ProvidesPackage{haskell-code}[2016/10/27/v1.1]
+
+\newif\if@numbers
+\@numbersfalse
+
+\newif\if@shortinline
+\@shortinlinefalse
+
+\DeclareOption{nonumbers}{\@numbersfalse}
+\DeclareOption{numbers}{\@numberstrue}
+\DeclareOption{shortinline}{\@shortinlinetrue} 
+\DeclareOption{noshortinline}{\@shortinlinefalse}
+
+\ProcessOptions{}
+
+\RequirePackage{amsmath}
+\RequirePackage{listings}
+\RequirePackage{verbatim}
+\RequirePackage{color}
+% \RequirePackage{LuxiMono}
+
+%% Haskell code in code environments is typeset with 
+%% the listings package. The following language definition is 
+%% based Peter Bartke's from that package, but suited to our needs.
+\lstdefinelanguage{Haskell}
+  {columns=fixed,%
+   basicstyle=\sffamily,
+   keywordstyle=\bfseries,
+   commentstyle=\rmfamily,
+   flexiblecolumns=false,
+   morekeywords={if,then,else,case,class,data,default,deriving,do,%
+      hiding,if,in,infix,infixl,infixr,import,instance,forall,let,module,%
+      newtype,of,qualified,type,where,do} 
+   sensitive=False, %
+   morecomment=[l]--, %
+   morecomment=[n]{\{-}{-\}}, %
+   morestring=[b]", %
+   showspaces=false, %
+   texcl=True, %  Comments are typeset as Latex
+%%   escapechar=@, % Make at-sign escape to LaTeX in Haskell 
+%%   ^^ exceedingly bad idea with named patterns!
+   literate= %
+    {[]}{\ensuremath{[\hskip 0.2em]}}2%    
+    {+}{{$+$}}1 {/}{{$/$}}1 {*}{{$*$}}1 {=}{{$=$}}1 %
+    {>}{{$>$}}1 {<}{{$<$}}1 %
+    {->}{$\rightarrow$}2 %
+    {=>}{$\Rightarrow$}2 %
+    {==>}{$\Longrightarrow$}3 % %%% For quickCheck prop's
+    {<-}{$\leftarrow$}2 %
+    {|}{{$\mid$}}1 %
+    {...}{{\ldots}}1 % 
+    {(.)}{{($\circ$)}}2 %
+    {\ .\ }{{$\circ$}}2 %
+%%  {==}{$\equiv$}1 %
+    {/=}{$\neq$}1 %
+%%  {!=}{$\neq$}1 %
+    {>=}{$\geq$}1 %
+    {<=}{$\leq$}1 %
+    {>>}{$\gg$}1 %
+    {>>=}{${\gg}{=}$}2 %
+    {++}{${+}\!\!\!{+}$}2 %
+    {::}{{${::}$}}2 %
+%%    {\\\\}{{\char`\\\char`\\}}1 % what was this...?
+    {\\}{$\lambda$}1 %
+    {\\n}{\textbackslash{}n}2 % Only a few escape sequences as these will interfere
+    {\\t}{\textbackslash{}t}2 % with the lambda notation-- eg. in \n-> foo !
+    {\\"}{\textbackslash{}"}2 % These can't clash because ", 0 can't
+    {\\0}{\textbackslash{}0}2 % ... start a valid variable name.
+%%% {::}{${:}\!{:}$}1%  --- this looks pretty stupid
+%% Greek Haskell-- replace some identifiers (alpha, beta, etc.) by
+%% greek letters. USE WITH CAUTION, as it can break in various
+%% places e.g. when these occur in function or variable identifiers
+%% (this is why we don't do rho and tau).
+    {alpha}{$\alpha$}1 %
+    {beta}{$\beta$}1 %
+    {gamma}{$\gamma$}1 %
+    {delta}{$\delta$}1 %
+    {sigma}{$\sigma$}1 %
+%% Encoding Umlauts with their Latex control sequences, b/c the listings
+%% package does no do UTF-8 (wtf??). Not Haskell-specific.
+    {Ö}{{\"O}}1 %
+    {Ä}{{\"A}}1 %
+    {Ü}{{\"U}}1 %
+    {ß}{{\ss}}1 %
+    {ü}{{\"u}}1 %
+    {ä}{{\"a}}1 %
+    {ö}{{\"o}}1 %
+  }[keywords,comments,strings]
+
+
+%% The exercise sheet style for Haskell (numbers on the side)
+\lstdefinestyle{HaskellNumbers}
+  {language=Haskell,%
+   basewidth={0.5em,0.45em},
+   numbers=left,
+   numberstyle=\tiny
+  }
+
+%% A normal style for Haskell (no numbers)
+\lstdefinestyle{Haskell}
+  {language=Haskell,%
+   basewidth={0.5em,0.45em}
+  }
+
+
+%% Select the Haskell default style (needed for \lstinline),
+%% and define the code environment
+\if@numbers
+  \lstset{style=HaskellNumbers}
+  \lstnewenvironment{code}{\lstset{style=HaskellNumbers}}{}
+\else
+  \lstset{style=Haskell}
+  \lstnewenvironment{code}{\lstset{style=Haskell}}{}
+\fi
+
+% %% For brief snippets of Haskell code:
+% \newcommand{\scode}[1]{\text{\expandafter\lstinline{#1}}}
+%% This is for when scode is used in a math environment:
+\newcommand{\mcode}[1]{\textsf{#1}}
+
+%% This allows you to write inline code enclosed in tildes: ~type = ...~
+\newcommand{\ShortInlineOn}{\lstMakeShortInline[style=Haskell]~}
+%% ... but if we need tildes, we can turn this off:
+\newcommand{\ShortInlineOff}{\lstDeleteShortInline~}
+%% Turn it on if required:
+\if@shortinline{\ShortInlineOn}\fi
+%% The choice of tilde is debatable here, but all other symbols I could
+%% think of are either used in Latex or in Haskell (e.g. !, ", |, /, ^,)
